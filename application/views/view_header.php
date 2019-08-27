@@ -19,7 +19,7 @@
 
 	<?php
 	foreach ($language as $lang) {
-		define($lang['name'], $lang['value']);
+		define($lang['name'], $lang['idn']);
 	}
 
 	if($slug_arr[0] == '')
@@ -472,10 +472,21 @@
 									<li><a href="<?php echo base_url(); ?>portfolio"><?php echo PORTFOLIO; ?></a></li>
 									<li><a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a></li>
 									<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
-									<!-- <li><a href="<?php echo base_url(); ?>faq"><?php echo FAQ; ?></a></li> -->
-								</ul>
-							</div>
+									<li class="menu-item-has-children"><a href="javascript:void();"><i style="width: 20px;" class="fa fa-globe" aria-hidden="true"></i>
+									</a>
+									<ul class="sub-menu">
+										<li><a href="#" onclick="myFunction()">IDN</a></li>
+										<li><a href="#" onclick="myFunction()">ENG</a></li>
+										<script>
+											function myFunction() {
+												alert(" Dalam Pengembangan.. ");
+											}
+										</script>
+									</ul>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>

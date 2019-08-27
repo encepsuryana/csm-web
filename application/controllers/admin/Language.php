@@ -32,7 +32,7 @@ class Language extends CI_Controller
 
 				for($i=0;$i<count($new_arr2);$i++) {
 					$form_data = array(
-						'value' => $new_arr2[$i]
+						'eng' => $new_arr2[$i]
 					);
 					$this->Model_language->update($new_arr3[$i],$form_data);
 				}
@@ -57,7 +57,7 @@ class Language extends CI_Controller
 
 				for($i=0;$i<count($new_arr2);$i++) {
 					$form_data = array(
-						'value2' => $new_arr2[$i]
+						'idn' => $new_arr2[$i]
 					);
 					$this->Model_language->update($new_arr3[$i],$form_data);
 				}

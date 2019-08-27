@@ -3032,3 +3032,781 @@ ERROR - 2019-08-27 15:47:10 --> Severity: Warning --> Use of undefined constant 
 ERROR - 2019-08-27 15:47:10 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
 ERROR - 2019-08-27 15:47:11 --> 404 Page Not Found!: Public/style.css
 ERROR - 2019-08-27 15:47:11 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:31:37 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:31:38 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:31:38 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:31:38 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:31:38 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:31:38 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:31:39 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:31:39 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:32:50 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:32:50 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:32:50 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:32:50 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:32:50 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:32:50 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:32:51 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:33:21 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:33:21 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:33:21 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:33:21 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:33:21 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:33:21 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:33:21 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:33:25 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:33:25 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:33:25 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:33:25 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:33:25 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:33:25 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:33:25 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:33:25 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:37:26 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:37:26 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:37:26 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:37:26 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:37:26 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:37:26 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:37:27 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:37:27 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:38:15 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:38:15 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:38:15 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:38:15 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:38:15 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:38:15 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:38:16 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:38:16 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:38:21 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:38:21 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:38:22 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:38:22 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:38:22 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:38:22 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:38:22 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:38:22 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:40:08 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:40:08 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:40:08 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:40:08 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:40:08 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:40:08 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:40:09 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:40:09 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:40:58 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:40:58 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:40:58 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:40:58 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:40:58 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:40:58 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:40:59 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:40:59 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:41:49 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:41:49 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:41:49 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:41:49 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:41:49 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:41:49 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:41:50 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:41:50 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:42:01 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:42:01 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:42:01 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:42:01 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:42:01 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:42:01 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:42:02 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:42:02 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:42:32 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-27 16:43:50 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:43:50 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:43:50 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:43:50 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:43:50 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:43:50 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:43:51 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:43:51 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:43:55 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-27 16:45:07 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:45:08 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:45:08 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:45:08 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:45:08 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:45:08 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:45:08 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:45:08 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:45:13 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-27 16:45:50 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:45:50 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:45:50 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:45:50 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:45:50 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:45:51 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:45:51 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:45:51 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:45:54 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-27 16:46:30 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:46:30 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:46:30 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:46:30 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:46:30 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:46:30 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:46:30 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:46:31 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:46:56 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:46:56 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:46:56 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:46:56 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:46:56 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:46:56 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:46:56 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:46:57 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:09 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:53:09 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:09 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:09 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:53:09 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:09 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:09 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:11 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:53:11 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:11 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:11 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:53:11 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:11 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:11 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:11 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:13 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:53:13 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:13 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:13 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:53:13 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:13 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:13 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:13 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:16 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:53:16 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:16 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:16 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:53:16 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:16 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:16 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:16 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:18 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:53:18 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:18 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:18 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:53:18 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:18 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:18 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:18 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:20 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:53:20 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:20 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:20 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:53:20 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:20 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:20 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:20 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:22 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:53:22 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:22 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:22 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:53:22 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:22 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:22 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:22 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:24 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:53:24 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:24 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:24 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:53:24 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:24 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:24 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:24 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:32 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:53:32 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:32 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:32 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:53:32 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:32 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:32 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:42 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 16:53:42 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:42 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 16:53:42 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 16:53:42 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:42 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 16:53:42 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 16:53:43 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:06:37 --> Query error: Table 'csm_web.tbl_language' doesn't exist - Invalid query: SELECT * from tbl_language
+ERROR - 2019-08-27 17:08:32 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:08:32 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:08:32 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:08:32 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:08:32 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:08:32 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:08:32 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:08:33 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:10:22 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:10:22 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:10:22 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:10:22 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:10:22 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:10:22 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:10:23 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:53 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:54 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:55 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:56 --> Severity: Notice --> Constant  already defined C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:11:57 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:11:57 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:11:57 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:11:57 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant HOME - assumed 'HOME' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 466
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant ABOUT - assumed 'ABOUT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 467
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant GALLERY - assumed 'GALLERY' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 468
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant PRODUCT - assumed 'PRODUCT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 469
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant SERVICE - assumed 'SERVICE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 470
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant FACILITY - assumed 'FACILITY' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 471
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant PORTFOLIO - assumed 'PORTFOLIO' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 472
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant NEWS - assumed 'NEWS' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 473
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant CONTACT - assumed 'CONTACT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 474
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant LATEST_NEWS - assumed 'LATEST_NEWS' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 45
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 63
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant SEE_MORE - assumed 'SEE_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 110
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant OUR_PRODUCT - assumed 'OUR_PRODUCT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 110
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 141
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 141
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 141
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 141
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 141
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 141
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 179
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 179
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 179
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 179
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 179
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant READ_MORE - assumed 'READ_MORE' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 179
+ERROR - 2019-08-27 17:11:57 --> Severity: Warning --> Use of undefined constant CONTACT - assumed 'CONTACT' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_home.php 330
+ERROR - 2019-08-27 17:11:57 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:11:58 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:12:27 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:12:27 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:12:27 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:12:27 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:12:27 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:12:27 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:12:28 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:12:28 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:02 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\view_header.php 22
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:13:03 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:13:03 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:13:03 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:13:04 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:13:04 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:14:03 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:14:03 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:14:03 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:14:04 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:14:04 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:14:04 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:14:04 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:14:04 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:14:07 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:14:08 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:14:08 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:14:08 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:14:08 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:14:08 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:14:08 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:14:09 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:14:09 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:14:09 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:14:09 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:14:10 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:14:10 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:14:10 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:14:10 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:14:11 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:14:12 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:14:12 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:14:12 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:14:12 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:14:12 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:14:12 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:26 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:14:27 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:09 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:09 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:09 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:09 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:09 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:09 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:09 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:09 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:10 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 21
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:50 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:15:51 --> Severity: Notice --> Undefined index: idn C:\xampp\htdocs\csm-web\application\views\admin\view_language.php 22
+ERROR - 2019-08-27 17:25:17 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:25:17 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:17 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:17 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:25:17 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:17 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:17 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:25:19 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:25:19 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:19 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:19 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:25:19 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:19 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:19 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:25:19 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:25:20 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:25:20 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:20 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:20 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:25:21 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:21 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:21 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:25:22 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:25:22 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:22 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:22 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:25:22 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:22 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:22 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:25:23 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:25:29 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:25:29 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:29 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:29 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:25:29 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:29 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:29 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:25:30 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:25:55 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:25:55 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:55 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:25:55 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:25:55 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:55 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:25:55 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:25:55 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:34:38 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-27 17:34:38 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:34:39 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-27 17:34:39 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-27 17:34:39 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:34:39 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-27 17:34:39 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:34:39 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-27 17:34:50 --> 404 Page Not Found!: En/index

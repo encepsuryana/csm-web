@@ -18,12 +18,16 @@ $arr4 = array();
 foreach ($language as $row) {
 	$arr1[$i] = $row['id'];
 	$arr2[$i] = $row['name'];
-	$arr3[$i] = $row['value'];
-	$arr4[$i] = $row['value2'];
+	$arr3[$i] = $row['eng'];
+	$arr4[$i] = $row['idn'];
 	$i++;
 }
 ?>
-
+<div class="col-md-12" style="padding-top: 10px;">
+	<div class="col-md-12 warning">
+		<i class="fa fa-info" aria-hidden="true"> <span>In this section, you will be able to change those text in your language that are not possible to change from other sections.</span></i>
+	</div>
+</div>
 <section class="content">
 	<div class="row">
 		<div class="col-md-12">
@@ -40,6 +44,7 @@ foreach ($language as $row) {
 					<p><?php echo $success; ?></p>
 				</div>
 			<?php endif; ?>
+
 			<div class="nav-tabs-custom">
 				<ul class="nav nav-tabs">
 					<li class="active"><a href="#tab_1" data-toggle="tab">English</a></li>
@@ -51,9 +56,6 @@ foreach ($language as $row) {
 
 						<div class="box box-info b-box">
 							<div class="box-body">
-								<div class="col-md-12 warning">
-									<i class="fa fa-info" aria-hidden="true"> <span>In this section, you will be able to change those text in your language that are not possible to change from other sections.</span></i>
-								</div>
 
 								<?php for($i=0;$i<count($arr1);$i++): ?>
 									<div class="form-group">
@@ -64,7 +66,6 @@ foreach ($language as $row) {
 									</div>
 									<input type="hidden" name="new_arr1[]" value="<?php echo $arr1[$i]; ?>">
 								<?php endfor; ?>
-
 
 								<div class="form-group">
 									<label for="" class="col-sm-4 control-label"></label>
@@ -82,10 +83,6 @@ foreach ($language as $row) {
 
 						<div class="box box-info b-box">
 							<div class="box-body">
-								<div class="col-md-12 warning">
-									<i class="fa fa-info" aria-hidden="true"> <span>In this section, you will be able to change those text in your language that are not possible to change from other sections.</span></i>
-								</div>
-
 								<?php for($i=0;$i<count($arr1);$i++): ?>
 									<div class="form-group">
 										<label for="" class="col-sm-4 control-label"><?php echo $arr2[$i]; ?></label>

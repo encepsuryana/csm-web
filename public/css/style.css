@@ -723,7 +723,7 @@ ul.nav-menu li:hover a {
 
 ul.nav-menu li ul {
 	position: absolute;
-	width: 150px;
+	width: 50px;
 	top: 38px;
 	left: 0;
 	border-top: 3px solid #f8be2e;
@@ -751,10 +751,9 @@ ul.nav-menu li ul li a {
 	display: block;
 	position: relative;
 	font-size: 14px;
-	
 	text-transform: capitalize;
 	border-bottom: 1px solid #ddd;
-	padding: 12px 20px;
+	padding: 10px 12px;
 	background: #fff;
 	color: #333;
 	transition: all 0.4s;
