@@ -42,20 +42,23 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Style *</label>
 							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="facility_style" value="<?php echo $facility['facility_style']; ?>">
+								<input id="style" readonly="readonly" type="text" autocomplete="off" class="form-control" name="facility_style" value="<?php echo $facility['facility_style']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Short Content *</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="short_content" style="height:140px;"><?php echo $facility['short_content']; ?></textarea>
+							<label for="" class="col-sm-2 control-label"><span></span></label>
+							<div class="col-sm-4" style="text-align: center;">
+								<div class="style-select" > 
+									<i class="fa fa-info-circle" aria-hidden="true"></i>
+									<span>Select Style: </span>
+								</div>
+								<input id="add" type="button" onclick='ik(this.value);' value='col-page col-sm-6 col-md-4' style="padding: 40px 50px;">
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Content *</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="content" id="editor1"><?php echo $facility['content']; ?></textarea>
-							</div>
+							<script type="text/javascript">
+								function ik(val){
+									document.getElementById('style').value = val;  
+								}
+							</script>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Existing Photo</label>
@@ -79,6 +82,18 @@ if(!$this->session->userdata('id')) {
 							<label for="" class="col-sm-2 control-label">Banner </label>
 							<div class="col-sm-6" style="padding-top:5px">
 								<input type="file" name="banner">(Only jpg, jpeg, gif and png are allowed)
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Short Content *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="short_content" style="height:140px;"><?php echo $facility['short_content']; ?></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Content *</label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="content" id="editor1"><?php echo $facility['content']; ?></textarea>
 							</div>
 						</div>
 						<h3 class="seo-info">SEO Information</h3>

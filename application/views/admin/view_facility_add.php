@@ -46,7 +46,34 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Style *</label>
 							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="facility_style" value="<?php if(isset($_POST['facility_style'])){echo $_POST['facility_style'];} ?>">
+								<input id="style" readonly="readonly" type="text" autocomplete="off" class="form-control" name="facility_style" value="<?php if(isset($_POST['facility_style'])){echo $_POST['facility_style'];} ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label"><span></span></label>
+							<div class="col-sm-4" style="text-align: center;">
+								<div class="style-select" > 
+									<i class="fa fa-info-circle" aria-hidden="true"></i>
+									<span>Select Style: </span>
+								</div>
+								<input id="add" type="button" onclick='ik(this.value);' value='col-page col-sm-6 col-md-4' style="padding: 40px 50px;">
+							</div>
+							<script type="text/javascript">
+								function ik(val){
+									document.getElementById('style').value = val;  
+								}
+							</script>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Photo *</label>
+							<div class="col-sm-9" style="padding-top:5px">
+								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Banner *</label>
+							<div class="col-sm-9" style="padding-top:5px">
+								<input type="file" name="banner">(Only jpg, jpeg, gif and png are allowed)
 							</div>
 						</div>
 						<div class="form-group">
@@ -59,18 +86,6 @@ if(!$this->session->userdata('id')) {
 							<label for="" class="col-sm-2 control-label">Content *</label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="content" id="editor1"><?php if(isset($_POST['content'])){echo $_POST['content'];} ?></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Photo *</label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Banner *</label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="banner">(Only jpg, jpeg, gif and png are allowed)
 							</div>
 						</div>
 						<h3 class="seo-info">SEO Information</h3>

@@ -38,16 +38,32 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Slug News <span>*</span></label>
-							<div class="col-sm-6">
-								<input type="text" class="form-control" name="slug" value="<?php if(isset($_POST['slug'])) {echo $_POST['slug'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">News Title <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" class="form-control" name="news_title" value="<?php if(isset($_POST['news_title'])) {echo $_POST['news_title'];} ?>">
 							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Style News <span>*</span></label>
+							<div class="col-sm-6">
+								<input id="style" readonly="readonly" type="text" class="form-control" name="slug" value="<?php if(isset($_POST['slug'])) {echo $_POST['slug'];} ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label"><span></span></label>
+							<div class="col-sm-4" style="text-align: center;">
+								<div class="style-select" > 
+									<i class="fa fa-info-circle" aria-hidden="true"></i>
+									<span>Select Style: </span>
+								</div>
+								<input id="add" type="button" onclick='ik(this.value);' value='col-page col-sm-8 col-md-6' style="padding: 40px 30px;">
+								<input id="add" type="button" onclick='ik(this.value);' value='col-page col-sm-4 col-md-3' style="padding: 40px 5px;">
+							</div>
+							<script type="text/javascript">
+								function ik(val){
+									document.getElementById('style').value = val;  
+								}
+							</script>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">News Short Content <span>*</span></label>

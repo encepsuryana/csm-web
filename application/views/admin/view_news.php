@@ -26,7 +26,6 @@ if(!$this->session->userdata('id')) {
 							<thead>
 								<tr>
 									<th>No</th>
-									<th>Style</th>
 									<th>Photo</th>
 									<th>Banner</th>
 									<th>Title</th>
@@ -42,7 +41,6 @@ if(!$this->session->userdata('id')) {
 									?>
 									<tr>
 										<td><?php echo $i; ?></td>
-										<td><?php echo $row['slug']; ?></td>
 										<td>
 											<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['news_title']; ?>" style="width:100px;">
 										</td>
