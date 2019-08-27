@@ -44,6 +44,31 @@ class Language extends CI_Controller
 				$this->load->view('admin/view_language',$data);
 				$this->load->view('admin/view_footer');
 
+			} elseif(isset($_POST['form2'])) 
+			{
+
+				foreach ($_POST['new_arr'] as $val) {
+					$new_arr2[] = $val;
+				}
+
+				foreach ($_POST['new_arr1'] as $val) {
+					$new_arr3[] = $val;
+				}
+
+				for($i=0;$i<count($new_arr2);$i++) {
+					$form_data = array(
+						'value2' => $new_arr2[$i]
+					);
+					$this->Model_language->update($new_arr3[$i],$form_data);
+				}
+
+				$data['success'] = 'Language data is updated successfully';
+
+				$data['language'] = $this->Model_language->show();
+				$this->load->view('admin/view_header',$header);
+				$this->load->view('admin/view_language',$data);
+				$this->load->view('admin/view_footer');
+
 			} else {
 				$data['language'] = $this->Model_language->show();
 				$this->load->view('admin/view_header',$header);

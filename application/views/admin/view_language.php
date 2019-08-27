@@ -14,67 +14,101 @@ $i=0;
 $arr1 = array();
 $arr2 = array();
 $arr3 = array();				
+$arr4 = array();				
 foreach ($language as $row) {
 	$arr1[$i] = $row['id'];
 	$arr2[$i] = $row['name'];
 	$arr3[$i] = $row['value'];
+	$arr4[$i] = $row['value2'];
 	$i++;
 }
 ?>
 
 <section class="content">
-
 	<div class="row">
 		<div class="col-md-12">
+			<div class="nav-tabs-custom">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab_1" data-toggle="tab">Home</a></li>
+					<li><a href="#tab_2" data-toggle="tab">About</a></li>
+				</ul>
 
-			<?php if($error): ?>
-				<div class="callout callout-danger">
-					<p>
-						<?php echo $error; ?>
-					</p>
-				</div>
-			<?php endif; ?>
-
-			<?php if($success): ?>
-				<div class="callout callout-success">
-					<p><?php echo $success; ?></p>
-				</div>
-			<?php endif; ?>
-
-			<?php echo form_open(base_url().$this->session->userdata('role').'/language',array('class' => 'form-horizontal')); ?>
-
-			<div class="box box-info  b-box">
-
-				<div class="box-body">
-					<div class="col-md-12 warning">
-							<i class="fa fa-info" aria-hidden="true"> <span>In this section, you will be able to change those text in your language that are not possible to change from other sections.</span></i>
+				<?php if($error): ?>
+					<div class="callout callout-danger">
+						<p>
+							<?php echo $error; ?>
+						</p>
 					</div>
+				<?php endif; ?>
 
-					<?php for($i=0;$i<count($arr1);$i++): ?>
-						<div class="form-group">
-							<label for="" class="col-sm-4 control-label"><?php echo $arr2[$i]; ?></label>
-							<div class="col-sm-7">
-								<input type="text" class="form-control" name="new_arr[]" value="<?php echo $arr3[$i]; ?>">
+				<?php if($success): ?>
+					<div class="callout callout-success">
+						<p><?php echo $success; ?></p>
+					</div>
+				<?php endif; ?>
+				<div class="tab-content">
+					<div class="tab-pane active" id="tab_1">
+						<?php echo form_open(base_url().$this->session->userdata('role').'/language',array('class' => 'form-horizontal')); ?>
+
+						<div class="box box-info b-box">
+							<div class="box-body">
+								<div class="col-md-12 warning">
+									<i class="fa fa-info" aria-hidden="true"> <span>In this section, you will be able to change those text in your language that are not possible to change from other sections.</span></i>
+								</div>
+
+								<?php for($i=0;$i<count($arr1);$i++): ?>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label"><?php echo $arr2[$i]; ?></label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="new_arr[]" value="<?php echo $arr3[$i]; ?>">
+										</div>
+									</div>
+									<input type="hidden" name="new_arr1[]" value="<?php echo $arr1[$i]; ?>">
+								<?php endfor; ?>
+
+
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label"></label>
+									<div class="col-sm-7">
+										<button type="submit" class="btn btn-success pull-left" name="form1">Update</button>
+									</div>
+								</div>
 							</div>
 						</div>
-						<input type="hidden" name="new_arr1[]" value="<?php echo $arr1[$i]; ?>">
-					<?php endfor; ?>
-
-
-					<div class="form-group">
-						<label for="" class="col-sm-4 control-label"></label>
-						<div class="col-sm-7">
-							<button type="submit" class="btn btn-success pull-left" name="form1">Update</button>
-						</div>
+						<?php echo form_close(); ?>
 					</div>
 
-				</div>
+					<div class="tab-pane" id="tab_2">
+						<?php echo form_open(base_url().$this->session->userdata('role').'/language',array('class' => 'form-horizontal')); ?>
 
+						<div class="box box-info b-box">
+							<div class="box-body">
+								<div class="col-md-12 warning">
+									<i class="fa fa-info" aria-hidden="true"> <span>In this section, you will be able to change those text in your language that are not possible to change from other sections.</span></i>
+								</div>
+
+								<?php for($i=0;$i<count($arr1);$i++): ?>
+									<div class="form-group">
+										<label for="" class="col-sm-4 control-label"><?php echo $arr2[$i]; ?></label>
+										<div class="col-sm-7">
+											<input type="text" class="form-control" name="new_arr[]" value="<?php echo $arr4[$i]; ?>">
+										</div>
+									</div>
+									<input type="hidden" name="new_arr1[]" value="<?php echo $arr1[$i]; ?>">
+								<?php endfor; ?>
+
+
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label"></label>
+									<div class="col-sm-7">
+										<button type="submit" class="btn btn-success pull-left" name="form2">Update</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<?php echo form_close(); ?>
+					</div>
+				</div>
 			</div>
 
-			<?php echo form_close(); ?>
-
-		</div>
-	</div>
-
-</section>
+		</section>
