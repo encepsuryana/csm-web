@@ -1,0 +1,48 @@
+
+<div class="slider">
+	<div class="choose-area">
+		<?php
+		foreach ($content_home_photo as $row) {
+			$content_home_main_photo = $row['main_photo'];
+		}
+		?>
+		<div class="choose-left" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $content_home_main_photo; ?>); margin: 0;">
+			<div class="choose-right">
+				<div class="bg-choose"></div>
+				<div class="choose-item">
+					<div class="slide-carousel owl-carousel">		
+						<?php
+						foreach ($slider as $row) {
+							?>
+							<div class="slider-item" style="background-image:url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>);">
+								<div class="bg"></div>
+								<div class="slider-table">
+									<div class="slider-text">
+										<div class="slider-animated">
+											<h2><?php echo $row['heading']; ?></h2>
+										</div>
+										<div class="slider-animated">
+											<p>
+												<?php echo nl2br($row['content']); ?>
+											</p>
+										</div>
+										<div class="slider-animated">
+											<ul>												
+												<li>
+													<a href="<?php echo $row['button2_url']; ?>"><?php echo $row['button2_text']; ?></a>
+													<a href="<?php echo $row['button1_url']; ?>"><?php echo $row['button1_text']; ?></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<?php
+						}
+						?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
