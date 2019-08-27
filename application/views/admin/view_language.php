@@ -27,25 +27,24 @@ foreach ($language as $row) {
 <section class="content">
 	<div class="row">
 		<div class="col-md-12">
+			<?php if($error): ?>
+				<div class="callout callout-danger">
+					<p>
+						<?php echo $error; ?>
+					</p>
+				</div>
+			<?php endif; ?>
+
+			<?php if($success): ?>
+				<div class="callout callout-success">
+					<p><?php echo $success; ?></p>
+				</div>
+			<?php endif; ?>
 			<div class="nav-tabs-custom">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="#tab_1" data-toggle="tab">Home</a></li>
-					<li><a href="#tab_2" data-toggle="tab">About</a></li>
+					<li class="active"><a href="#tab_1" data-toggle="tab">English</a></li>
+					<li><a href="#tab_2" data-toggle="tab">Indonesia</a></li>
 				</ul>
-
-				<?php if($error): ?>
-					<div class="callout callout-danger">
-						<p>
-							<?php echo $error; ?>
-						</p>
-					</div>
-				<?php endif; ?>
-
-				<?php if($success): ?>
-					<div class="callout callout-success">
-						<p><?php echo $success; ?></p>
-					</div>
-				<?php endif; ?>
 				<div class="tab-content">
 					<div class="tab-pane active" id="tab_1">
 						<?php echo form_open(base_url().$this->session->userdata('role').'/language',array('class' => 'form-horizontal')); ?>
