@@ -159,11 +159,18 @@
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Company Profile</a></li>
 								</ul>
 							</li>
-
-							<li class="treeview <?php if( ($final_url_other == 'admin/setting') ) {echo 'active';} ?>">
-								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/setting">
-									<i class="fa fa-cog"></i> <span>Settings</span>
+							<li class="treeview <?php if( ($final_url_other == 'admin/news/add')||($final_url_other == 'admin/news')||($final_url_other == 'admin/news/edit')||($final_url_other == 'admin/news-category/add')||($final_url_other == 'admin/news-category')||($final_url_other == 'admin/news-category/edit') ) {echo 'active';} ?>">
+								<a href="#">
+									<i class="fa fa-newspaper-o"></i>
+									<span>News Section</span>
+									<span class="pull-right-container">
+										<i class="fa fa-angle-left pull-right"></i>
+									</span>
 								</a>
+								<ul class="treeview-menu">
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news-category"><i class="fa fa-plus-square-o"></i> News Category</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news"><i class="fa fa-file-text-o"></i> News</a></li>
+								</ul>
 							</li>
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/slider/add')||($final_url_other == 'admin/slider')||($final_url_other == 'admin/slider/edit') ) {echo 'active';} ?>">
@@ -183,18 +190,22 @@
 									<i class="fa fa-industry"></i> <span>Facility</span>
 								</a>
 							</li>
+							<li class="treeview <?php if( ($final_url_other == 'admin/partner/add')||($final_url_other == 'admin/partner')||($final_url_other == 'admin/partner/edit') ) {echo 'active';} ?>">
+								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/partner">
+									<i class="fa fa-clipboard"></i> <span>Partner</span>
+								</a>
+							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'admin/faq/add')||($final_url_other == 'admin/faq')||($final_url_other == 'admin/faq/edit')||($final_url_other == 'admin/faq/main-photo') ) {echo 'active';} ?>">
+							<li class="treeview <?php if( ($final_url_other == 'admin/product/add')||($final_url_other == 'admin/product')||($final_url_other == 'admin/product/edit') ) {echo 'active';} ?>">
 								<a href="#">
-									<i class="fa fa-random"></i>
-									<span>FAQ</span>
+									<i class="fa fa-cubes"></i>
+									<span>Photo Product</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/faq"><i class="fa fa-question-circle"></i>FAQ</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/faq/main-photo"><i class="fa fa-picture-o "></i> Main Photo</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/product"><i class="fa fa fa-cube"></i>Product</a></li>
 								</ul>
 							</li>
 
@@ -208,19 +219,6 @@
 								</a>
 								<ul class="treeview-menu">
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/photo"><i class="fa fa-camera-retro"></i>Photo</a></li>
-								</ul>
-							</li>
-
-							<li class="treeview <?php if( ($final_url_other == 'admin/product/add')||($final_url_other == 'admin/product')||($final_url_other == 'admin/product/edit') ) {echo 'active';} ?>">
-								<a href="#">
-									<i class="fa fa-cubes"></i>
-									<span>Photo Product</span>
-									<span class="pull-right-container">
-										<i class="fa fa-angle-left pull-right"></i>
-									</span>
-								</a>
-								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/product"><i class="fa fa fa-cube"></i>Product</a></li>
 								</ul>
 							</li>
 
@@ -252,6 +250,20 @@
 								</ul>
 							</li>
 
+							<li class="treeview <?php if( ($final_url_other == 'admin/faq/add')||($final_url_other == 'admin/faq')||($final_url_other == 'admin/faq/edit')||($final_url_other == 'admin/faq/main-photo') ) {echo 'active';} ?>">
+								<a href="#">
+									<i class="fa fa-random"></i>
+									<span>FAQ</span>
+									<span class="pull-right-container">
+										<i class="fa fa-angle-left pull-right"></i>
+									</span>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/faq"><i class="fa fa-question-circle"></i>FAQ</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/faq/main-photo"><i class="fa fa-picture-o "></i> Main Photo</a></li>
+								</ul>
+							</li>
+
 							<li class="treeview <?php if( ($final_url_other == 'admin/testimonial/add')||($final_url_other == 'admin/testimonial')||($final_url_other == 'admin/testimonial/edit')||($final_url_other == 'admin/testimonial/main-photo') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-user-plus"></i>
@@ -264,14 +276,7 @@
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/testimonial"><i class="fa fa-comments-o"></i>Testimonial</a></li>
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/testimonial/main-photo"><i class="fa fa-picture-o"></i> Main Photo</a></li>
 								</ul>
-							</li>
-
-							<li class="treeview <?php if( ($final_url_other == 'admin/partner/add')||($final_url_other == 'admin/partner')||($final_url_other == 'admin/partner/edit') ) {echo 'active';} ?>">
-								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/partner">
-									<i class="fa fa-clipboard"></i> <span>Partner</span>
-								</a>
-							</li>
-							
+							</li>	
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/page') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/page">
@@ -279,19 +284,6 @@
 								</a>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'admin/news/add')||($final_url_other == 'admin/news')||($final_url_other == 'admin/news/edit')||($final_url_other == 'admin/news-category/add')||($final_url_other == 'admin/news-category')||($final_url_other == 'admin/news-category/edit') ) {echo 'active';} ?>">
-								<a href="#">
-									<i class="fa fa-newspaper-o"></i>
-									<span>News Section</span>
-									<span class="pull-right-container">
-										<i class="fa fa-angle-left pull-right"></i>
-									</span>
-								</a>
-								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news-category"><i class="fa fa-plus-square-o"></i> News Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news"><i class="fa fa-file-text-o"></i> News</a></li>
-								</ul>
-							</li>
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/comment') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/comment">
@@ -308,6 +300,11 @@
 							<li class="treeview <?php if( ($final_url_other == 'admin/social-media') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/social-media">
 									<i class="fa fa-address-book"></i> <span>Social Media</span>
+								</a>
+							</li>
+							<li class="treeview <?php if( ($final_url_other == 'admin/setting') ) {echo 'active';} ?>">
+								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/setting">
+									<i class="fa fa-cog"></i> <span>Settings</span>
 								</a>
 							</li>
 						<?php endif; ?>   
