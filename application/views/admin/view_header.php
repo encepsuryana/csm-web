@@ -185,23 +185,17 @@
 								</a>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'admin/facility/add')||($final_url_other == 'admin/facility')||($final_url_other == 'admin/facility/edit') ) {echo 'active';} ?>">
-								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility">
-									<i class="fa fa-industry"></i> <span>Facility</span>
-								</a>
-							</li>
-
-							<li class="treeview <?php if( ($final_url_other == 'admin/newfacility/add')||($final_url_other == 'admin/newfacility')||($final_url_other == 'admin/newfacility/edit')||($final_url_other == 'admin/newfacility-category/add')||($final_url_other == 'admin/newfacility-category')||($final_url_other == 'admin/newfacility-category/edit') ) {echo 'active';} ?>">
+							<li class="treeview <?php if( ($final_url_other == 'admin/facility/add')||($final_url_other == 'admin/facility')||($final_url_other == 'admin/facility/edit')||($final_url_other == 'admin/facility-category/add')||($final_url_other == 'admin/facility-category')||($final_url_other == 'admin/facility-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-list-alt"></i>
-									<span>Facility v2</span>
+									<span>Facility</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/newfacility-category"><i class="fa fa-list-ul"></i> Facility Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/newfacility"><i class="fa fa-list-ol"></i> Facility v2</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category"><i class="fa fa-list-ul"></i> Facility Category</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility"><i class="fa fa-list-ol"></i> Facility</a></li>
 								</ul>
 							</li>
 
@@ -369,23 +363,17 @@
 								</a>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'hrd/facility/add')||($final_url_other == 'hrd/facility')||($final_url_other == 'hrd/service/edit') ) {echo 'active';} ?>">
-								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility">
-									<i class="fa fa-industry"></i> <span>Facility</span>
-								</a>
-							</li>
-
-							<li class="treeview <?php if(($final_url_other == 'hrd/newfacility')||($final_url_other == 'hrd/newfacility-category')) {echo 'active';} ?>">
+							<li class="treeview <?php if(($final_url_other == 'hrd/facility')||($final_url_other == 'hrd/facility-category')) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-list-alt"></i>
-									<span>Facility V2</span>
+									<span>Facility</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/newfacility-category"><i class="fa fa-list-ul"></i> Facility Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/newfacility"><i class="fa fa-list-ol"></i> Facility V2</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category"><i class="fa fa-list-ul"></i> Facility Category</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility"><i class="fa fa-list-ol"></i> Facility</a></li>
 								</ul>
 							</li>
 
@@ -527,23 +515,17 @@
 								</a>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'staff/facility/add')||($final_url_other == 'staff/facility')||($final_url_other == 'staff/facility/edit') ) {echo 'active';} ?>">
-								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility">
-									<i class="fa fa-industry"></i> <span>Facility</span>
-								</a>
-							</li>
-
-							<li class="treeview <?php if( ($final_url_other == 'staff/newfacility/add')||($final_url_other == 'staff/newfacility')||($final_url_other == 'staff/newfacility/edit')||($final_url_other == 'staff/newfacility-category/add')||($final_url_other == 'staff/portfolio-category')||($final_url_other == 'staff/newfacility-category/edit') ) {echo 'active';} ?>">
+							<li class="treeview <?php if( ($final_url_other == 'staff/facility/add')||($final_url_other == 'staff/facility')||($final_url_other == 'staff/facility/edit')||($final_url_other == 'staff/facility-category/add')||($final_url_other == 'staff/portfolio-category')||($final_url_other == 'staff/facility-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-list-alt"></i>
-									<span>Facility V2</span>
+									<span>Facility</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/newfacility-category"><i class="fa fa-list-ul"></i> Facility Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/newfacility"><i class="fa fa-list-ol"></i> Facility V2</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category"><i class="fa fa-list-ul"></i> Facility Category</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility"><i class="fa fa-list-ol"></i> Facility</a></li>
 								</ul>
 							</li>
 

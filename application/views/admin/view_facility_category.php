@@ -6,10 +6,10 @@ if(!$this->session->userdata('id')) {
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
   <section class="content-header">
    <div class="content-header-left">
-    <h1>View newfacility Categories</h1>
+    <h1>View facility Categories</h1>
   </div>
   <div class="content-header-right">
-    <a href="<?php echo base_url().$this->session->userdata('role'); ?>/newfacility-category/add" class="btn btn-primary btn-sm">Add New</a>
+    <a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category/add" class="btn btn-primary btn-sm">Add New</a>
   </div>
 </section>
 
@@ -35,7 +35,7 @@ if(!$this->session->userdata('id')) {
            <tbody>
              <?php
              $i=0;
-             foreach ($newfacility_category as $row) {
+             foreach ($facility_category as $row) {
               $i++;
               ?>
               <tr>
@@ -44,10 +44,10 @@ if(!$this->session->userdata('id')) {
                <td><?php echo $row['status']; ?></td>
                <td>
                 <?php if ($this->session->userdata('role') == 'admin') { ?>
-                 <a href="<?php echo base_url().$this->session->userdata('role'); ?>/newfacility-category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
-                 <a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/newfacility-category/delete/<?php echo $row['category_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
+                 <a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
+                 <a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category/delete/<?php echo $row['category_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
                <?php } elseif ($this->session->userdata('role') == 'staff') { ?>
-                <a href="<?php echo base_url().$this->session->userdata('role'); ?>/newfacility-category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
+                <a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
               <?php } else { ?>
                 akses tidak tersedia
               <?php } ?>     

@@ -22,7 +22,7 @@ class Facility extends CI_Controller
 			$this->load->view('admin/view_footer');
 		} else {
 			show_404();
-		}
+		} 
 	}
 
 	public function add()
@@ -38,8 +38,7 @@ class Facility extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('heading', 'Heading', 'trim|required');
-				$this->form_validation->set_rules('facility_style', 'facility Styles', 'trim|required');
+				$this->form_validation->set_rules('name', 'Name', 'trim|required');
 				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
 				$this->form_validation->set_rules('content', 'Content', 'trim|required');
 
@@ -94,21 +93,67 @@ class Facility extends CI_Controller
 					move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
 
 					$form_data = array(
-						'heading' => $_POST['heading'],
-						'facility_style' => $_POST['facility_style'],
-						'short_content' => $_POST['short_content'],
-						'content' => $_POST['content'],
-						'photo' => $final_name,
-						'banner' => $final_name1,
-						'meta_title' => $_POST['meta_title'],
-						'meta_keyword' => $_POST['meta_keyword'],
+						'name'             => $_POST['name'],
+						'short_content'    => $_POST['short_content'],
+						'content'          => $_POST['content'],
+						'category_id'      => $_POST['category_id'],
+						'photo'            => $final_name,
+						'banner'           => $final_name1,
+						'meta_title'       => $_POST['meta_title'],
+						'meta_keyword'     => $_POST['meta_keyword'],
 						'meta_description' => $_POST['meta_description']
 					);
 					$this->Model_facility->add($form_data);
 
-					$data['success'] = 'facility is added successfully!';
-					unset($_POST['facility_style']);
-					unset($_POST['heading']);
+
+					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) )
+					{
+						$photos = array();
+						$photos = $_FILES['photos']["name"];
+						$photos = array_values(array_filter($photos));
+
+						$photos_temp = array();
+						$photos_temp = $_FILES['photos']["tmp_name"];
+						$photos_temp = array_values(array_filter($photos_temp));
+
+						$next_id1 = $this->Model_facility->get_auto_increment_id1();
+						foreach ($next_id1 as $row1) {
+							$ai_id1 = $row1['Auto_increment'];
+						}
+
+						$z = $ai_id1;
+
+						$m=0;
+						$final_names = array();
+						for($i=0;$i<count($photos);$i++)
+						{
+
+							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
+							$ext_check = $this->Model_header->extension_check_photo($ext);
+							if($ext_check == FALSE) {
+				        	// Nothing to do, just skip
+							} else {
+								$final_names[$m] = $z.'.'.$ext;
+								move_uploaded_file($photos_temp[$i],"./public/uploads/facility_photos/".$final_names[$m]);
+								$m++;
+								$z++;
+							}
+						}
+					}
+
+					for($i=0;$i<count($final_names);$i++)
+					{
+						$form_data = array(
+							'facility_id' => $ai_id,
+							'photo'        => $final_names[$i]
+						);
+						$this->Model_facility->add_photos($form_data);
+					}
+
+
+					$data['success'] = 'Facility is added successfully!';
+
+					unset($_POST['name']);
 					unset($_POST['short_content']);
 					unset($_POST['content']);
 					unset($_POST['meta_title']);
@@ -120,12 +165,13 @@ class Facility extends CI_Controller
 					$data['error'] = $error;
 				}
 
+				$data['all_photo_category'] = $this->Model_facility->get_all_photo_category();
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_facility_add',$data);
 				$this->load->view('admin/view_footer');
 
 			} else {
-
+				$data['all_photo_category'] = $this->Model_facility->get_all_photo_category();
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_facility_add',$data);
 				$this->load->view('admin/view_footer');
@@ -133,15 +179,13 @@ class Facility extends CI_Controller
 
 		} else {
 			show_404();
-		} 
+		}
 	}
-
 
 	public function edit($id)
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
-			
-    	// If there is no facility in this id, then redirect
+    	// If there is no service in this id, then redirect
 			$tot = $this->Model_facility->facility_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/facility');
@@ -159,8 +203,7 @@ class Facility extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('heading', 'Heading', 'trim|required');
-				$this->form_validation->set_rules('facility_style', 'facility Styles', 'trim|required');
+				$this->form_validation->set_rules('name', 'Name', 'trim|required');
 				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
 				$this->form_validation->set_rules('content', 'Content', 'trim|required');
 
@@ -201,12 +244,12 @@ class Facility extends CI_Controller
 
 					if($path == '' && $path1 == '') {
 						$form_data = array(
-							'heading' => $_POST['heading'],
-							'facility_style' => $_POST['facility_style'],
-							'short_content' => $_POST['short_content'],
-							'content' => $_POST['content'],
-							'meta_title' => $_POST['meta_title'],
-							'meta_keyword' => $_POST['meta_keyword'],
+							'name'             => $_POST['name'],
+							'short_content'    => $_POST['short_content'],
+							'content'          => $_POST['content'],
+							'category_id'      => $_POST['category_id'],
+							'meta_title'       => $_POST['meta_title'],
+							'meta_keyword'     => $_POST['meta_keyword'],
 							'meta_description' => $_POST['meta_description']
 						);
 						$this->Model_facility->update($id,$form_data);
@@ -218,13 +261,13 @@ class Facility extends CI_Controller
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
 						$form_data = array(
-							'heading' => $_POST['heading'],
-							'facility_style' => $_POST['facility_style'],
-							'short_content' => $_POST['short_content'],
-							'content' => $_POST['content'],
-							'photo' => $final_name,
-							'meta_title' => $_POST['meta_title'],
-							'meta_keyword' => $_POST['meta_keyword'],
+							'name'             => $_POST['name'],
+							'short_content'    => $_POST['short_content'],
+							'content'          => $_POST['content'],
+							'category_id'      => $_POST['category_id'],
+							'photo'            => $final_name,
+							'meta_title'       => $_POST['meta_title'],
+							'meta_keyword'     => $_POST['meta_keyword'],
 							'meta_description' => $_POST['meta_description']
 						);
 						$this->Model_facility->update($id,$form_data);
@@ -236,13 +279,13 @@ class Facility extends CI_Controller
 						move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
 
 						$form_data = array(
-							'heading' => $_POST['heading'],
-							'facility_style' => $_POST['facility_style'],
-							'short_content' => $_POST['short_content'],
-							'content' => $_POST['content'],
-							'banner' => $final_name1,
-							'meta_title' => $_POST['meta_title'],
-							'meta_keyword' => $_POST['meta_keyword'],
+							'name'             => $_POST['name'],
+							'short_content'    => $_POST['short_content'],
+							'content'          => $_POST['content'],
+							'category_id'      => $_POST['category_id'],
+							'banner'           => $final_name1,
+							'meta_title'       => $_POST['meta_title'],
+							'meta_keyword'     => $_POST['meta_keyword'],
 							'meta_description' => $_POST['meta_description']
 						);
 						$this->Model_facility->update($id,$form_data);
@@ -259,17 +302,61 @@ class Facility extends CI_Controller
 						move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
 
 						$form_data = array(
-							'heading' => $_POST['heading'],
-							'facility_style' => $_POST['facility_style'],
-							'short_content' => $_POST['short_content'],
-							'content' => $_POST['content'],
-							'photo' => $final_name,
-							'banner' => $final_name1,
-							'meta_title' => $_POST['meta_title'],
-							'meta_keyword' => $_POST['meta_keyword'],
+							'name'             => $_POST['name'],
+							'short_content'    => $_POST['short_content'],
+							'content'          => $_POST['content'],
+							'category_id'      => $_POST['category_id'],
+							'photo'            => $final_name,
+							'banner'           => $final_name1,
+							'meta_title'       => $_POST['meta_title'],
+							'meta_keyword'     => $_POST['meta_keyword'],
 							'meta_description' => $_POST['meta_description']
 						);
 						$this->Model_facility->update($id,$form_data);
+					}
+
+					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) )
+					{
+						$photos = array();
+						$photos = $_FILES['photos']["name"];
+						$photos = array_values(array_filter($photos));
+
+						$photos_temp = array();
+						$photos_temp = $_FILES['photos']["tmp_name"];
+						$photos_temp = array_values(array_filter($photos_temp));
+
+						$next_id1 = $this->Model_facility->get_auto_increment_id1();
+						foreach ($next_id1 as $row1) {
+							$ai_id1 = $row1['Auto_increment'];
+						}
+
+						$z = $ai_id1;
+
+						$m=0;
+						$final_names = array();
+						for($i=0;$i<count($photos);$i++)
+						{
+
+							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
+							$ext_check = $this->Model_header->extension_check_photo($ext);
+							if($ext_check == FALSE) {
+				        	// Nothing to do, just skip
+							} else {
+								$final_names[$m] = $z.'.'.$ext;
+								move_uploaded_file($photos_temp[$i],"./public/uploads/facility_photos/".$final_names[$m]);
+								$m++;
+								$z++;
+							}
+						}
+					}
+
+					for($i=0;$i<count($final_names);$i++)
+					{
+						$form_data = array(
+							'facility_id' => $id,
+							'photo'        => $final_names[$i]
+						);
+						$this->Model_facility->add_photos($form_data);
 					}
 
 					$data['success'] = 'facility is updated successfully';
@@ -280,12 +367,16 @@ class Facility extends CI_Controller
 				}
 
 				$data['facility'] = $this->Model_facility->getData($id);
+				$data['all_photo_category'] = $this->Model_facility->get_all_photo_category();
+				$data['all_photos_by_id'] = $this->Model_facility->get_all_photos_by_category_id($id);
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_facility_edit',$data);
 				$this->load->view('admin/view_footer');
 
 			} else {
 				$data['facility'] = $this->Model_facility->getData($id);
+				$data['all_photo_category'] = $this->Model_facility->get_all_photo_category();
+				$data['all_photos_by_id'] = $this->Model_facility->get_all_photos_by_category_id($id);
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_facility_edit',$data);
 				$this->load->view('admin/view_footer');
@@ -299,8 +390,7 @@ class Facility extends CI_Controller
 
 	public function delete($id) 
 	{
-		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
-
+		if ($this->session->userdata('role') == 'admin') {
 		// If there is no facility in this id, then redirect
 			$tot = $this->Model_facility->facility_check($id);
 			if(!$tot) {
@@ -314,8 +404,30 @@ class Facility extends CI_Controller
 				unlink('./public/uploads/'.$data['facility']['banner']);
 			}
 
+			$facility_photos = $this->Model_facility->get_all_photos_by_category_id($id);
+			foreach($facility_photos as $row) {
+				unlink('./public/uploads/facility_photos/'.$row['photo']);
+			}
+
 			$this->Model_facility->delete($id);
+			$this->Model_facility->delete_photos($id);
+
 			redirect(base_url().'admin/facility');
+		} else {
+			show_404();
+		}
+	}
+
+	public function single_photo_delete($photo_id=0,$facility_id=0) {
+		if ($this->session->userdata('role') == 'admin') {
+
+			$facility_photo = $this->Model_facility->facility_photo_by_id($photo_id);
+			unlink('./public/uploads/facility_photos/'.$facility_photo['photo']);
+
+			$this->Model_facility->delete_facility_photo($photo_id);
+
+			redirect(base_url().'admin/facility/edit/'.$facility_id);
+
 		} else {
 			show_404();
 		}

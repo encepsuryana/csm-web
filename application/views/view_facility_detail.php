@@ -1,34 +1,75 @@
-<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $res['banner']; ?>)">
+<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $facility['banner']; ?>)">
 	<div class="bannder-table">
 		<div class="banner-text">
-			<h1><?php echo $res['heading']; ?></h1>
+			<h1><?php echo $facility['name']; ?></h1>
 		</div>
 	</div>
 
-	<div class="container single-service-area pt_20 pb_60 bg-news">
+	<div class="container single-service-area pt_30 pb_60 bg-news">
 		<div class="row">
 			<div class="col-lg-9 col-md-8">
+				<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+					<?php
+					$j=0;
+					?>
 
-				<div class="service-main-photo">
-					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $res['photo']; ?>" alt="facility photo">
+					<div class="carousel-inner">
+
+						<div class="item active" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $facility['photo']; ?>)">
+							<div class="lightbox-inner">
+								<a href="<?php echo base_url(); ?>public/uploads/<?php echo $facility['photo']; ?>" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+							</div>
+						</div>
+
+						<?php						
+						foreach ($facility_photo as $row) {
+							?>
+							<div class="item" style="background-image: url(<?php echo base_url(); ?>public/uploads/facility_photos/<?php echo $row['photo']; ?>)">
+								<div class="lightbox-inner">
+									<a href="<?php echo base_url(); ?>public/uploads/facility_photos/<?php echo $row['photo']; ?>" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+								</div>
+							</div>
+							<?php
+						}
+						?>
+
+					</div>
+
+					<?php if($facility_photo_total>=1): ?>
+						<ul class="carousel-indicators single-carousel owl-carousel">
+
+							<li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive" src="<?php echo base_url(); ?>public/uploads/<?php echo $facility['photo']; ?>" alt=""></li>
+
+							<?php
+							foreach ($facility_photo as $row) {
+								$j++;
+								?>
+								<li data-target="#quote-carousel" data-slide-to="<?php echo $j; ?>"><img class="img-responsive" src="<?php echo base_url(); ?>public/uploads/facility_photos/<?php echo $row['photo']; ?>" alt=""></li>
+								<?php
+							}
+							?>
+
+						</ul>
+					<?php endif; ?>
 				</div>
 
-				<div class="single-service-text recent-single-text pt_20">
+				<div class="single-service-text recent-single-text pt_30">
+					<h4><?php echo DESCRIPTION; ?></h4>
 					<p>
-						<?php echo $res['content']; ?>
+						<?php echo $facility['content']; ?>
 					</p>
-				</div>
+				</div>			
 			</div>
 
 			<div class="col-lg-3 col-md-4">
 				<div class="sidebar">
 					<div class="sidebar-item category">
-						<h3><?php echo FACILITY; ?></h3>
+						<h3><?php echo PROJECTS; ?></h3>
 						<ul>
 							<?php
-							foreach ($facility_by_heading as $row) {
+							foreach ($facility_order_by_name as $row) {
 								?>
-								<li><a href="<?php echo base_url(); ?>facility/detail/<?php echo $row['id'].'.html'; ?>"><?php echo $row['heading']; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>facility/view/<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a></li>
 								<?php
 							}
 							?>

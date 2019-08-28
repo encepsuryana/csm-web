@@ -153,39 +153,51 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <div class="caption-product-area gridGallery">
-	<div class="container">
+	<div class="container recent-works">
 		<h3><?php echo $setting['facility_title']; ?></h3>
 		<div class="row-product">
-
-			<section class="csmpublic-home">
-				<div class="container">
-					<div class="row-page row">
+			<div class="recent-menu">
+				<ul>
+					<li data-filter="all"><?php echo ALL; ?></li>
+					<?php
+					foreach ($facility_category as $row) {
+						?>
+						<li data-filter="<?php echo $row['category_id']; ?>"><?php echo $row['category_name']; ?></li>
 						<?php
-						$i=0;
-						foreach ($facility as $row) {
-							$i++;
-							?>
-							<div class="<?php echo $row['facility_style']; ?> no-merg">
-								<a href="<?php echo base_url(); ?>facility/detail/<?php echo $row['id'].'.html'; ?>" class="public-csm-home">
-									<div class="img-publicacion-home">
-										<img class="" src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
+					}
+					?>
+				</ul>
+			</div>
+			<div class="filtr-container">			
+				<?php
+				foreach ($facility as $row) {
+					?>
+					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three bg-about" data-category="<?php echo $row['category_id']; ?>" data-sort="value">
+						<div class="recent-item">
+							<div class="lightbox-item">
+								<div class="recent-photo" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)">
+									<div class="lightbox-text">
+										<div class="lightbox-table">
+											<div class="lightbox-icon">
+												<a href="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+											</div>
+										</div>
 									</div>
-									<div class="public-partcsm-home">
-										<h3 style="border-bottom: 0;"><?php echo $row['heading']; ?></h3>
-										<p><?php echo $row['short_content']; ?></p>
+								</div>
+								<div class="recent-text">
+									<h4><?php echo $row['name']; ?></h4>
+									<?php echo $row['short_content']; ?>
+									<div class="services-link">
+										<a href="<?php echo base_url(); ?>facility/detail/<?php echo $row['id'].'.html'; ?>"><?php echo READ_MORE; ?></a>
 									</div>
-									<div class="csm-blog-home" style="top:0;">
-										<h4><?php echo $row['heading']; ?></h4>
-										<span><?php echo READ_MORE; ?></span>
-									</div>
-								</a>
+								</div>
 							</div>
-							<?php
-						}
-						?>	
+						</div>
 					</div>
-				</div>
-			</section>
+					<?php
+				}
+				?>
+			</div>
 		</div>
 	</div>
 </div>

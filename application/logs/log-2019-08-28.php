@@ -1124,3 +1124,38 @@ ERROR - 2019-08-28 14:46:58 --> 404 Page Not Found!: Public/css
 ERROR - 2019-08-28 14:51:45 --> 404 Page Not Found!: Public/style.css
 ERROR - 2019-08-28 14:51:45 --> 404 Page Not Found!: Public/style.css
 ERROR - 2019-08-28 14:51:47 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 14:54:31 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 14:54:51 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 14:58:37 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 14:58:48 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 15:01:49 --> 404 Page Not Found!: Facility/index
+ERROR - 2019-08-28 15:02:00 --> 404 Page Not Found!: Facility/index
+ERROR - 2019-08-28 15:07:10 --> Query error: Table 'csm_web.tbl_facility_category' doesn't exist - Invalid query: SELECT * FROM tbl_facility_category ORDER BY category_name ASC
+ERROR - 2019-08-28 15:07:37 --> Query error: Table 'csm_web.tbl_facility_category' doesn't exist - Invalid query: SELECT * FROM tbl_facility_category ORDER BY category_name ASC
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: facility_style C:\xampp\htdocs\csm-web\application\views\view_home.php 168
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 174
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 178
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: facility_style C:\xampp\htdocs\csm-web\application\views\view_home.php 168
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 174
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 178
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: facility_style C:\xampp\htdocs\csm-web\application\views\view_home.php 168
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 174
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 178
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: facility_style C:\xampp\htdocs\csm-web\application\views\view_home.php 168
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 174
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 178
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: facility_style C:\xampp\htdocs\csm-web\application\views\view_home.php 168
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 174
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 178
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: facility_style C:\xampp\htdocs\csm-web\application\views\view_home.php 168
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 174
+ERROR - 2019-08-28 15:10:03 --> Severity: Notice --> Undefined index: heading C:\xampp\htdocs\csm-web\application\views\view_home.php 178
+ERROR - 2019-08-28 15:11:32 --> Severity: Notice --> Undefined variable: facility_category C:\xampp\htdocs\csm-web\application\views\view_home.php 164
+ERROR - 2019-08-28 15:11:32 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_home.php 164
+ERROR - 2019-08-28 15:12:49 --> Severity: error --> Exception: Call to undefined method Model_home::get_facility_category() C:\xampp\htdocs\csm-web\application\controllers\Home.php 28
+ERROR - 2019-08-28 15:15:30 --> 404 Page Not Found!: admin/Newfacility/index
+ERROR - 2019-08-28 15:15:41 --> Query error: Unknown column 'facility_id' in 'where clause' - Invalid query: SELECT * 
+    			FROM tbl_facility_photo 
+    			WHERE facility_id='1'
+ERROR - 2019-08-28 15:16:05 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 15:16:49 --> 404 Page Not Found!: Public/css

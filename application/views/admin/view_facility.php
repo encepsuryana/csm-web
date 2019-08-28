@@ -4,9 +4,10 @@ if(!$this->session->userdata('id')) {
 }
 ?>
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
+
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>View Facility</h1>
+			<h1>View facility</h1>
 		</div>
 		<div class="content-header-right">
 			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility/add" class="btn btn-primary btn-sm">Add New</a>
@@ -22,29 +23,31 @@ if(!$this->session->userdata('id')) {
 							<thead>
 								<tr>
 									<th>SL</th>
+									<th>Name</th>
+									<th>Category</th>
 									<th>Photo</th>
-									<th>Banner</th>
-									<th>Heading</th>
 									<th width="140">Action</th>
 								</tr>
 							</thead>
 							<tbody>
 								<?php
-								$i=0;							
+								$i=0;						
 								foreach ($facility as $row) {
 									$i++;
 									?>
 									<tr>
 										<td style="width:100px;"><?php echo $i; ?></td>
-										<td style="width:200px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['heading']; ?>" style="width:200px;"></td>
-										<td style="width:300px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['banner']; ?>" alt="<?php echo $row['heading']; ?>" style="width:200px;"></td>
-										<td><?php echo $row['heading']; ?></td>
+										<td><?php echo $row['name']; ?></td>
+										<td><?php echo $row['category_name']; ?></td>
+										<td style="width:250px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:150px;"></td>
 										<td>
-											<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
+											<?php if ($this->session->userdata('role') == 'admin') { ?>
 												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 												<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/facility/delete/<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
-											<?php } elseif ($this->session->userdata('role') == 'hrd') { ?>
+											<?php } elseif ($this->session->userdata('role') == 'staff') {?>
 												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
+											<?php } elseif ($this->session->userdata('role') == 'hrd') {?>
+												Akses tidak tersedia
 											<?php } else { ?>
 												Akses tidak tersedia
 											<?php } ?>

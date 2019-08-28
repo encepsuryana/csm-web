@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Newfacility_category extends CI_Controller 
+class Facility_category extends CI_Controller 
 {
 	function __construct() 
 	{
 		parent::__construct();
 		$this->load->model('admin/Model_header');
-		$this->load->model('admin/Model_newfacility_category');
+		$this->load->model('admin/Model_facility_category');
 	}
 
 	public function index()
@@ -16,10 +16,10 @@ class Newfacility_category extends CI_Controller
 
 			$header['setting'] = $this->Model_header->get_setting_data();
 
-			$data['newfacility_category'] = $this->Model_newfacility_category->show();
+			$data['facility_category'] = $this->Model_facility_category->show();
 
 			$this->load->view('admin/view_header',$header);
-			$this->load->view('admin/view_newfacility_category',$data);
+			$this->load->view('admin/view_facility_category',$data);
 			$this->load->view('admin/view_footer');
 		} else {
 			show_404();
@@ -53,19 +53,19 @@ class Newfacility_category extends CI_Controller
 						'category_name'=> $_POST['category_name'],
 						'status'       => $_POST['status']
 					);
-					$this->Model_newfacility_category->add($form_data);
+					$this->Model_facility_category->add($form_data);
 
-					$data['success'] = 'newfacility category is added successfully!';
+					$data['success'] = 'facility category is added successfully!';
 				}
 
 				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_newfacility_category_add',$data);
+				$this->load->view('admin/view_facility_category_add',$data);
 				$this->load->view('admin/view_footer');
 
 			} else {
 
 				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_newfacility_category_add',$data);
+				$this->load->view('admin/view_facility_category_add',$data);
 				$this->load->view('admin/view_footer');
 			}
 		} else {
@@ -79,9 +79,9 @@ class Newfacility_category extends CI_Controller
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
 		
     	// If there is no service in this id, then redirect
-			$tot = $this->Model_newfacility_category->newfacility_category_check($id);
+			$tot = $this->Model_facility_category->facility_category_check($id);
 			if(!$tot) {
-				redirect(base_url().'admin/newfacility-category');
+				redirect(base_url().'admin/facility-category');
 				exit;
 			}
 
@@ -104,8 +104,8 @@ class Newfacility_category extends CI_Controller
 				} else {
 
             	// Duplicate Category Checking
-					$data['newfacility_category'] = $this->Model_newfacility_category->getData($id);
-					$total = $this->Model_newfacility_category->duplicate_check($_POST['category_name'],$data['newfacility_category']['category_name']);				
+					$data['facility_category'] = $this->Model_facility_category->getData($id);
+					$total = $this->Model_facility_category->duplicate_check($_POST['category_name'],$data['facility_category']['category_name']);				
 					if($total) {
 						$valid = 0;
 						$data['error'] = 'Category name already exists';
@@ -119,20 +119,20 @@ class Newfacility_category extends CI_Controller
 						'category_name'=> $_POST['category_name'],
 						'status'       => $_POST['status']
 					);
-					$this->Model_newfacility_category->update($id,$form_data);
+					$this->Model_facility_category->update($id,$form_data);
 
-					$data['success'] = 'newfacility Category is updated successfully';
+					$data['success'] = 'facility Category is updated successfully';
 				}
 
-				$data['newfacility_category'] = $this->Model_newfacility_category->getData($id);
+				$data['facility_category'] = $this->Model_facility_category->getData($id);
 				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_newfacility_category_edit',$data);
+				$this->load->view('admin/view_facility_category_edit',$data);
 				$this->load->view('admin/view_footer');
 
 			} else {
-				$data['newfacility_category'] = $this->Model_newfacility_category->getData($id);
+				$data['facility_category'] = $this->Model_facility_category->getData($id);
 				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_newfacility_category_edit',$data);
+				$this->load->view('admin/view_facility_category_edit',$data);
 				$this->load->view('admin/view_footer');
 			}
 
@@ -146,17 +146,17 @@ class Newfacility_category extends CI_Controller
 	{
 		if ($this->session->userdata('role') == 'admin') {
 
-		// If there is no newfacility category in this id, then redirect
-			$tot = $this->Model_newfacility_category->newfacility_category_check($id);
+		// If there is no facility category in this id, then redirect
+			$tot = $this->Model_facility_category->facility_category_check($id);
 			if(!$tot) {
-				redirect(base_url().'admin/newfacility-category');
+				redirect(base_url().'admin/facility-category');
 				exit;
 			}
 
 
-			$result = $this->Model_newfacility_category->getData1($id);
+			$result = $this->Model_facility_category->getData1($id);
 			foreach ($result as $row) {
-				$result1 = $this->Model_newfacility_category->show_newfacility_by_id($row['id']);
+				$result1 = $this->Model_facility_category->show_facility_by_id($row['id']);
 				foreach ($result1 as $row1) {
 					$photo = $row1['photo'];
 					$banner = $row1['banner'];
@@ -167,18 +167,18 @@ class Newfacility_category extends CI_Controller
 				if($banner!='') {
 					unlink('./public/uploads/'.$banner);
 				}
-				$result1 = $this->Model_newfacility_category->show_newfacility_photo_by_newfacility_id($row['id']);
+				$result1 = $this->Model_facility_category->show_facility_photo_by_facility_id($row['id']);
 				foreach ($result1 as $row1) {
 					$photo = $row1['photo'];
 					unlink('./public/uploads/facility_photos/'.$photo);
 				}
 
-				$this->Model_newfacility_category->delete1($row['id']);
-				$this->Model_newfacility_category->delete2($row['id']);
+				$this->Model_facility_category->delete1($row['id']);
+				$this->Model_facility_category->delete2($row['id']);
 			}
-			$this->Model_newfacility_category->delete($id);
+			$this->Model_facility_category->delete($id);
 
-			redirect(base_url().'admin/newfacility-category');
+			redirect(base_url().'admin/facility-category');
 		} else {
 			show_404();
 		}

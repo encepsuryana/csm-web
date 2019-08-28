@@ -20,6 +20,7 @@ class Facility extends CI_Controller {
 		$header['latest_news'] = $this->Model_common->get_latest_news();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 
+		$header['facility_category'] = $this->Model_facility->get_facility_category();
 		$header['facility'] = $this->Model_facility->get_facility_data();
 
 		$this->load->view('view_header',$header);
@@ -37,9 +38,11 @@ class Facility extends CI_Controller {
 		$header['latest_news'] = $this->Model_common->get_latest_news();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 
-		$header['facility_by_heading'] = $this->Model_facility->get_facility_data_order_by_heading();
+		$header['facility_order_by_name'] = $this->Model_facility->get_facility_data_order_by_name();
 
-		$data['res'] = $this->Model_facility->get_facility_detail($id);
+		$data['facility'] = $this->Model_facility->get_facility_detail($id);
+		$data['facility_photo'] = $this->Model_facility->get_facility_photo($id);
+		$data['facility_photo_total'] = $this->Model_facility->get_facility_photo_number($id);
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_facility_detail',$data);
