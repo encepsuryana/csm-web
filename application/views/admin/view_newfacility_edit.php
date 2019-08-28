@@ -54,49 +54,6 @@ if(!$this->session->userdata('id')) {
 								<textarea class="form-control" name="content" id="editor1"><?php echo $newfacility['content']; ?></textarea>
 							</div>
 						</div>
-						
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Name</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="client_name" value="<?php echo $newfacility['client_name']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Company</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="client_company" value="<?php echo $newfacility['client_company']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Start Date</label>
-							<div class="col-sm-4">
-								<input type="text" name="start_date" class="form-control" id="datepicker" value="<?php echo $newfacility['start_date']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">End Date</label>
-							<div class="col-sm-4">
-								<input type="text" name="end_date" class="form-control" id="datepicker1" value="<?php echo $newfacility['end_date']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Website</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="website" value="<?php echo $newfacility['website']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Cost</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="cost" value="<?php echo $newfacility['cost']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Comment</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="client_comment" style="height:250px;"><?php echo $newfacility['client_comment']; ?></textarea>
-							</div>
-						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Select Category *</label>
 							<div class="col-sm-4">
@@ -134,7 +91,7 @@ if(!$this->session->userdata('id')) {
 										?>
 										<tr>
 											<td>
-												<img src="<?php echo base_url(); ?>public/uploads/newfacility_photos/<?php echo $row['photo']; ?>" alt="" style="width:120px;">
+												<img src="<?php echo base_url(); ?>public/uploads/facility_photos/<?php echo $row['photo']; ?>" alt="" style="width:120px;">
 											</td>
 											<td><a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/newfacility/single-photo-delete/<?php echo $row['id']; ?>/<?php echo $newfacility['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a></td>
 										</tr>

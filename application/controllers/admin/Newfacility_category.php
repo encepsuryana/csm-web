@@ -170,7 +170,7 @@ class Newfacility_category extends CI_Controller
 				$result1 = $this->Model_newfacility_category->show_newfacility_photo_by_newfacility_id($row['id']);
 				foreach ($result1 as $row1) {
 					$photo = $row1['photo'];
-					unlink('./public/uploads/newfacility_photos/'.$photo);
+					unlink('./public/uploads/facility_photos/'.$photo);
 				}
 
 				$this->Model_newfacility_category->delete1($row['id']);

@@ -24,9 +24,9 @@
 						<?php						
 						foreach ($newfacility_photo as $row) {
 							?>
-							<div class="item" style="background-image: url(<?php echo base_url(); ?>public/uploads/newfacility_photos/<?php echo $row['photo']; ?>)">
+							<div class="item" style="background-image: url(<?php echo base_url(); ?>public/uploads/facility_photos/<?php echo $row['photo']; ?>)">
 								<div class="lightbox-inner">
-									<a href="<?php echo base_url(); ?>public/uploads/newfacility_photos/<?php echo $row['photo']; ?>" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
+									<a href="<?php echo base_url(); ?>public/uploads/facility_photos/<?php echo $row['photo']; ?>" data-lightbox="lightbox-item"><i class="fa fa-search-plus"></i></a>
 								</div>
 							</div>
 							<?php
@@ -44,7 +44,7 @@
 							foreach ($newfacility_photo as $row) {
 								$j++;
 								?>
-								<li data-target="#quote-carousel" data-slide-to="<?php echo $j; ?>"><img class="img-responsive" src="<?php echo base_url(); ?>public/uploads/newfacility_photos/<?php echo $row['photo']; ?>" alt=""></li>
+								<li data-target="#quote-carousel" data-slide-to="<?php echo $j; ?>"><img class="img-responsive" src="<?php echo base_url(); ?>public/uploads/facility_photos/<?php echo $row['photo']; ?>" alt=""></li>
 								<?php
 							}
 							?>
@@ -58,36 +58,7 @@
 					<p>
 						<?php echo $newfacility['content']; ?>
 					</p>
-				</div>
-
-				<div class="single-service-text recent-single-text pt_10">
-					<div class="table-responsive">
-						<table class="table table-bordered project-desc">
-							<tr>
-								<td><h4><?php echo CLIENT_NAME; ?></h4></td>
-								<td><?php echo $newfacility['client_name']; ?></td>
-							</tr>
-							<tr>
-								<td><h4><?php echo CLIENT_COMPANY; ?></h4></td>
-								<td><?php echo $newfacility['client_company']; ?></td>
-							</tr>
-							<tr>
-								<td><h4><?php echo PROJECT_START_DATE; ?></h4></td>
-								<td><?php echo $newfacility['start_date']; ?></td>
-							</tr>
-							<tr>
-								<td><h4><?php echo PROJECT_END_DATE; ?></h4></td>
-								<td><?php echo $newfacility['end_date']; ?></td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<div class="single-service-text recent-single-text">
-					<h4><?php echo CLIENT_COMMENT; ?></h4>
-					<div class="client-comment">
-						<?php echo $newfacility['client_comment']; ?>
-					</div>
-				</div>				
+				</div>			
 			</div>
 
 			<div class="col-lg-3 col-md-4">

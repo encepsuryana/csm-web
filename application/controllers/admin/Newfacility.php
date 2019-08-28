@@ -96,13 +96,6 @@ class Newfacility extends CI_Controller
 						'name'             => $_POST['name'],
 						'short_content'    => $_POST['short_content'],
 						'content'          => $_POST['content'],
-						'client_name'      => $_POST['client_name'],
-						'client_company'   => $_POST['client_company'],
-						'start_date'       => $_POST['start_date'],
-						'end_date'         => $_POST['end_date'],
-						'website'          => $_POST['website'],
-						'cost'             => $_POST['cost'],
-						'client_comment'   => $_POST['client_comment'],
 						'category_id'      => $_POST['category_id'],
 						'photo'            => $final_name,
 						'banner'           => $final_name1,
@@ -141,7 +134,7 @@ class Newfacility extends CI_Controller
 				        	// Nothing to do, just skip
 							} else {
 								$final_names[$m] = $z.'.'.$ext;
-								move_uploaded_file($photos_temp[$i],"./public/uploads/newfacility_photos/".$final_names[$m]);
+								move_uploaded_file($photos_temp[$i],"./public/uploads/facility_photos/".$final_names[$m]);
 								$m++;
 								$z++;
 							}
@@ -158,18 +151,11 @@ class Newfacility extends CI_Controller
 					}
 
 
-					$data['success'] = 'newfacility is added successfully!';
+					$data['success'] = 'Facility is added successfully!';
 
 					unset($_POST['name']);
 					unset($_POST['short_content']);
 					unset($_POST['content']);
-					unset($_POST['client_name']);
-					unset($_POST['client_company']);
-					unset($_POST['start_date']);
-					unset($_POST['end_date']);
-					unset($_POST['website']);
-					unset($_POST['cost']);
-					unset($_POST['client_comment']);
 					unset($_POST['meta_title']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
@@ -261,13 +247,6 @@ class Newfacility extends CI_Controller
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
 							'content'          => $_POST['content'],
-							'client_name'      => $_POST['client_name'],
-							'client_company'   => $_POST['client_company'],
-							'start_date'       => $_POST['start_date'],
-							'end_date'         => $_POST['end_date'],
-							'website'          => $_POST['website'],
-							'cost'             => $_POST['cost'],
-							'client_comment'   => $_POST['client_comment'],
 							'category_id'      => $_POST['category_id'],
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
@@ -285,13 +264,6 @@ class Newfacility extends CI_Controller
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
 							'content'          => $_POST['content'],
-							'client_name'      => $_POST['client_name'],
-							'client_company'   => $_POST['client_company'],
-							'start_date'       => $_POST['start_date'],
-							'end_date'         => $_POST['end_date'],
-							'website'          => $_POST['website'],
-							'cost'             => $_POST['cost'],
-							'client_comment'   => $_POST['client_comment'],
 							'category_id'      => $_POST['category_id'],
 							'photo'            => $final_name,
 							'meta_title'       => $_POST['meta_title'],
@@ -310,13 +282,6 @@ class Newfacility extends CI_Controller
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
 							'content'          => $_POST['content'],
-							'client_name'      => $_POST['client_name'],
-							'client_company'   => $_POST['client_company'],
-							'start_date'       => $_POST['start_date'],
-							'end_date'         => $_POST['end_date'],
-							'website'          => $_POST['website'],
-							'cost'             => $_POST['cost'],
-							'client_comment'   => $_POST['client_comment'],
 							'category_id'      => $_POST['category_id'],
 							'banner'           => $final_name1,
 							'meta_title'       => $_POST['meta_title'],
@@ -340,13 +305,6 @@ class Newfacility extends CI_Controller
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
 							'content'          => $_POST['content'],
-							'client_name'      => $_POST['client_name'],
-							'client_company'   => $_POST['client_company'],
-							'start_date'       => $_POST['start_date'],
-							'end_date'         => $_POST['end_date'],
-							'website'          => $_POST['website'],
-							'cost'             => $_POST['cost'],
-							'client_comment'   => $_POST['client_comment'],
 							'category_id'      => $_POST['category_id'],
 							'photo'            => $final_name,
 							'banner'           => $final_name1,
@@ -385,7 +343,7 @@ class Newfacility extends CI_Controller
 				        	// Nothing to do, just skip
 							} else {
 								$final_names[$m] = $z.'.'.$ext;
-								move_uploaded_file($photos_temp[$i],"./public/uploads/newfacility_photos/".$final_names[$m]);
+								move_uploaded_file($photos_temp[$i],"./public/uploads/facility_photos/".$final_names[$m]);
 								$m++;
 								$z++;
 							}
@@ -446,9 +404,9 @@ class Newfacility extends CI_Controller
 				unlink('./public/uploads/'.$data['newfacility']['banner']);
 			}
 
-			$newfacility_photos = $this->Model_newfacility->get_all_photos_by_category_id($id);
-			foreach($newfacility_photos as $row) {
-				unlink('./public/uploads/newfacility_photos/'.$row['photo']);
+			$facility_photos = $this->Model_newfacility->get_all_photos_by_category_id($id);
+			foreach($facility_photos as $row) {
+				unlink('./public/uploads/facility_photos/'.$row['photo']);
 			}
 
 			$this->Model_newfacility->delete($id);
@@ -464,7 +422,7 @@ class Newfacility extends CI_Controller
 		if ($this->session->userdata('role') == 'admin') {
 
 			$newfacility_photo = $this->Model_newfacility->newfacility_photo_by_id($photo_id);
-			unlink('./public/uploads/newfacility_photos/'.$newfacility_photo['photo']);
+			unlink('./public/uploads/facility_photos/'.$newfacility_photo['photo']);
 
 			$this->Model_newfacility->delete_newfacility_photo($photo_id);
 
