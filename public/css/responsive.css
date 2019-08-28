@@ -147,6 +147,11 @@
 	}
 	.logo img {
 		margin-top: 5px;
+		height: 50px;
+	}
+
+	.logo2 img {
+		height: 0px;
 	}
 
 	.slider-text {
@@ -375,6 +380,11 @@
 	}
 	.logo img {
 		margin-top: 5px;
+		height: 50px;
+	}
+
+	.logo2 img {
+		height: 0px;
 	}
 	.slider-text {
 		top:0;
@@ -518,6 +528,11 @@
 	}
 	.logo img {
 		margin-top: 5px;
+		height: 50px;
+	}
+
+	.logo2 img {
+		height: 0px;
 	}
 	.slider-animated ul {
 		margin-left: 0;

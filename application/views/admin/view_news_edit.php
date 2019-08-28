@@ -4,6 +4,14 @@ if(!$this->session->userdata('id')) {
 }
 ?>
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) { ?>
+	<section class="content-header">
+		<div class="content-header-left">
+			<h1>Edit News</h1>
+		</div>
+		<div class="content-header-right">
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/news" class="btn btn-primary btn-sm">View All</a>
+		</div>
+	</section>
 
 	<section class="content">
 

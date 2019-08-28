@@ -1162,3 +1162,12 @@ ERROR - 2019-08-28 15:16:49 --> 404 Page Not Found!: Public/css
 ERROR - 2019-08-28 15:25:36 --> Query error: Unknown column 'facility_id' in 'where clause' - Invalid query: SELECT * 
     			FROM tbl_facility_photo 
     			WHERE facility_id='4'
+ERROR - 2019-08-28 15:28:06 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 15:28:57 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 15:36:20 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 15:46:27 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 16:04:54 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 16:07:11 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 16:07:44 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 16:08:03 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 16:09:04 --> 404 Page Not Found!: Public/css

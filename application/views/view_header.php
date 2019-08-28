@@ -467,7 +467,7 @@
 										<li><a href="#" onclick="myFunction()">ENG</a></li>
 										<script>
 											function myFunction() {
-												alert(" Dalam Pengembangan.. ");
+												alert(" Under Development :)");
 											}
 										</script>
 									</ul>

@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									?>
 								</ul>
 								<div class="all-news">
-									<a target="_blank" href="<?php echo base_url(); ?>news/page"><?php echo READ_MORE; ?></a>
+									<a target="_blank" href="<?php echo base_url(); ?>news/page"><?php echo SEE_MORE; ?></a>
 								</div>
 							</div>
 						</div>
@@ -156,7 +156,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="container recent-works">
 		<h3><?php echo $setting['facility_title']; ?></h3>
 		<div class="row-product">
-			<div class="recent-menu">
+			<div class="recent-menu" style="text-align: right;">
 				<ul>
 					<li data-filter="all"><?php echo ALL; ?></li>
 					<?php
