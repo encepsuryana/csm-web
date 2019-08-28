@@ -19,7 +19,7 @@
 
 	<?php
 	foreach ($language as $lang) {
-		define($lang['name'], $lang['idn']);
+		define($lang['name'], $lang['eng']);
 	}
 
 	if($slug_arr[0] == '')

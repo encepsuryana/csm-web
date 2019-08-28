@@ -21,7 +21,6 @@ class Language extends CI_Controller
 
 			if(isset($_POST['form1'])) 
 			{
-
 				foreach ($_POST['new_arr'] as $val) {
 					$new_arr2[] = $val;
 				}

@@ -36,26 +36,32 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Upload Photo <span>*</span></label>
+							<div class="col-sm-5" style="padding-top:6px;">
+								<input type="file" name="product"> (Only jpg, jpeg, gif and png are allowed)
+							</div>
+						</div>
+						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Product Caption <span>*</span></label>
-							<div class="col-sm-4">
+							<div class="col-sm-5">
 								<input type="text" class="form-control" name="product_caption">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Product Style <span>*</span></label>
-							<div class="col-sm-4">
+							<div class="col-sm-5">
 								<input id='style' type="text" class="form-control" name="product_style" readonly="readonly">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"><span></span></label>
-							<div class="col-sm-4" style="text-align: center;">
+							<div class="col-sm-5" style="text-align: center;">
 								<div class="style-select" > 
 									<i class="fa fa-info-circle" aria-hidden="true"></i>
 									<span>Select Style: </span>
 								</div>
-								<input id="add" type="button" onclick='ik(this.value);' value='col-sm-6 col-xs-6 box' style="padding: 40px 50px;">
-								<input id="add" type="button" onclick='ik(this.value);' value='col-sm-3 col-xs-6 box' style="padding: 40px 5px;">
+								<input id="add" type="button" onclick='ik(this.value);' value='col-sm-6 col-xs-6 box' style="padding: 35px 40px;">
+								<input id="add" type="button" onclick='ik(this.value);' value='col-sm-3 col-xs-6 box' style="padding: 35px 5px;">
 							</div>
 							<script type="text/javascript">
 								function ik(val){
@@ -64,14 +70,8 @@ if(!$this->session->userdata('id')) {
 							</script>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Upload Photo <span>*</span></label>
-							<div class="col-sm-4" style="padding-top:6px;">
-								<input type="file" name="product"> (Only jpg, jpeg, gif and png are allowed)
-							</div>
-						</div>
-						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Product Description <span>*</span></label>
-							<div class="col-sm-4">
+							<div class="col-sm-5">
 								<textarea type="text" class="form-control" name="product_desc" style="height: 100px;"> </textarea>
 							</div>
 						</div>

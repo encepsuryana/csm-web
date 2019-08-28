@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Agu 2019 pada 11.07
+-- Waktu pembuatan: 28 Agu 2019 pada 08.03
 -- Versi server: 10.3.16-MariaDB
 -- Versi PHP: 7.3.7
 
@@ -140,7 +140,7 @@ INSERT INTO `tbl_facility` (`id`, `heading`, `facility_style`, `short_content`, 
 (1, 'HIGH-SPEED CNC MILLING MACHINING CENTER', 'col-page col-sm-6 col-md-4', 'Our process production support with high-speed CNC Milling Machining center for high-speed cutting tools.', '<p align=\"justify\">Our process production support with <b>High-Speed CNC Machining Center</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b> products and competitive, so that the products will be used by the clients does not doubt the quality, the following specifications of <b>CNC Milling Machines</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">MATRIX 560AH / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 12000 rpm, Travel: 560x430x450<br></p></td><td align=\"center\">80%<br></td><td align=\"center\">156.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">F1-LG 1000SP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 8000 rpm, Travel: 1000x510x510<br></p></td><td align=\"center\">90%<br></td><td align=\"center\">186.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">3.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">PRO-1000SP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 10000 rpm, Travel: 1000x600x630<br></p></td><td align=\"center\">70%<br></td><td align=\"center\">166.000<br></td><td align=\"center\">0,007/300<br></td></tr><tr><td align=\"center\">4.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">S-PLUSH 10AP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 8000 rpm, Travel: 1020x520x530<br></p></td><td align=\"center\">70%<br></td><td align=\"center\">205.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">5.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">SMC-5 / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x850<br></p></td><td align=\"center\">50%<br></td><td align=\"center\">156.000<br></td><td align=\"center\">0,005<br></td></tr></tbody></table><p>With the guarantee of providing quality and tested products. <br></p>', 'service-1.jpg', 'service-banner-1.png', 'HIGH-SPEED CNC MILLING MACHINING CENTER', '', ''),
 (2, 'HIGH-SPEED CNC TURNING MACHINING CENTER', 'col-page col-sm-6 col-md-4', 'The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools.', '<p align=\"justify\">The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools. We offer a variety of coatings to help optimize performance and extend the life of your cutting tools and inserts. Process production support with <b>High-Speed CNC Turning Machining Center</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b>\r\n products and competitive, so that the products will be used by the \r\nclients does not doubt the quality, the following specifications of <b>CNC </b><b><b>Turning </b> Machines</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CNC TURNING MACHINE<br></td><td align=\"center\">CAK 4085D / SHEN YANG<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x850</p></td><td align=\"center\">50%<br></td><td align=\"center\">136.000<br></td><td align=\"center\">0,012<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CNC TURNING MACHINE</td><td align=\"center\">MAZAK QT T6<br></td><td align=\"center\"><p>Spindle Speed 7000 rpm, Travel: 100x100</p></td><td align=\"center\">50%<br></td><td align=\"center\">123.000<br></td><td align=\"center\">0,002<br></td></tr></tbody></table><p>Have a special spec? We can help match the proper coating to the tool and task.</p>', 'service-2.jpg', 'service-banner-2.png', 'HIGH-SPEED CNC TURNING MACHINING CENTER', '', ''),
 (3, 'CONV. MILLING & TURNING MACHINING CENTER AND SURFACE GRINDING', 'col-page col-sm-6 col-md-4', 'Our process production support with Conv. Machining center and surface grinding for high-speed cutting tools.', '<p align=\"justify\">Our process production support with <b>High-Speed Conv. Machining Center and Surface Grinding</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b> products and competitive, so that the products will be used by the clients does not doubt the quality, the following specifications of&nbsp;<b><b>Conv. </b> Machines</b> <b>and Surface Grinding</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">SM5 / STANDARD</td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 1000x450x450<br></p></td><td align=\"center\">60%<br></td><td align=\"center\">56.000<br></td><td align=\"center\">0,015<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">SM4 / PHOEBUS<br></td><td align=\"center\"><p>Spindle Speed 1800 rpm, Travel: 775x400x400<br></p></td><td align=\"center\">50%<br></td><td align=\"center\">56.000<br></td><td align=\"center\">0,05<br></td></tr><tr><td align=\"center\">3.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">MAZAK<br></td><td align=\"center\"><p>Spindle Speed 2500 rpm, Travel: 775x400x401</p></td><td align=\"center\">60%<br></td><td align=\"center\">60.000<br></td><td align=\"center\">0,05<br></td></tr><tr><td align=\"center\">4.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">MV-11<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 600x200x250<br></p></td><td align=\"center\">60%<br></td><td align=\"center\">30.000<br></td><td align=\"center\">0,08<br></td></tr><tr><td align=\"center\">5.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">RONG FU<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 600x200x250</p></td><td align=\"center\">60%<br></td><td align=\"center\">30.000<br></td><td align=\"center\">0,08</td></tr><tr><td align=\"center\">6.<br></td><td align=\"center\">CONV. TURNING MACHINE</td><td align=\"center\">COLCHESTER<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 200x600</p></td><td align=\"center\">80%<br></td><td align=\"center\">50.000<br></td><td align=\"center\">0,01</td></tr><tr><td align=\"center\">7.<br></td><td align=\"center\">SURFACE GRINDING<br></td><td align=\"center\">SG 2040 / STANDARD<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x200x300</p></td><td align=\"center\">40%<br></td><td align=\"center\">60.000<br></td><td align=\"center\">0,003</td></tr></tbody></table><p>With the guarantee of providing quality and tested products. <br></p>', 'service-3.jpg', 'service-banner-3.png', 'CONV. MILLING & TURNING MACHINING CENTER AND SURFACE GRINDING', '', ''),
-(4, 'PRODUCTION WORKSHOP AREA', 'col-page col-sm-6 col-md-4', 'n the production workshop process, we use the total area: 500m2 where CNC Workshop (154m2), Car parking area (60m2), Workshop Conventional + Motorcycle park area, 160m2 and other 126m2 to provide comfort and flexibility in the production process so that the productivity in the production process goes well and facilitate the data collection and the placement of the production.', 'In the production workshop process, we use the total area: 500m2 where CNC Workshop (154m2), Car parking area (60m2), Workshop Conventional + Motorcycle park area, 160m2 and other 126m2 to provide comfort and flexibility in the production process so that the productivity in the production process goes well and facilitate the data collection and the placement of the production. for the sake of convenience and safety at work, we established safety procedures to give a warning or lane line safety at work and we also write the symbols of safety in the work, because safety is the main thing in the work.<br>', 'service-4.jpg', 'service-banner-4.png', 'PRODUCTION WORKSHOP AREA', '', ''),
+(4, 'PRODUCTION WORKSHOP AREA', 'col-page col-sm-6 col-md-4', 'n the production workshop process, we use the total area: 500m2 to provide comfort and flexibility in the production process so that the productivity in the production process goes well and facilitate the data collection and the placement of the production.', '<p>In the production workshop process, we use the total area: 500m2 where: </p><p><br></p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Workshop</b><br></td><td align=\"center\"><b>Area</b><br></td></tr><tr><td align=\"center\"><b>1<br></b></td><td align=\"center\">CNC Workshop<br></td><td align=\"center\">154 m2<br></td></tr><tr><td align=\"center\"><b>2<br></b></td><td align=\"center\">Workshop Conventional<br></td><td align=\"center\">160 m2<br></td></tr><tr><td align=\"center\"><b>3<br></b></td><td align=\"center\">Car parking area<br></td><td align=\"center\">60 m2<br></td></tr><tr><td align=\"center\"><b>4<br></b></td><td align=\"center\">Motorcycle parking area<br></td><td align=\"center\">60 m2<br></td></tr><tr><td align=\"center\"><b>5<br></b></td><td align=\"center\">Others<br></td><td align=\"center\">66 m2<br></td></tr></tbody></table><p>To provide comfort and flexibility in the production process so that the productivity in the production process goes well and facilitate the data collection and the placement of the production. for the sake of convenience and safety at work, we established safety procedures to give a warning or lane line safety at work and we also write the symbols of safety in the work, because safety is the main thing in the work.<br></p>', 'service-4.jpg', 'service-banner-4.png', 'PRODUCTION WORKSHOP AREA', '', ''),
 (5, 'OFFICE AREA', 'col-page col-sm-6 col-md-4', 'In the work of asset management and all production data, we use an area of 70m2 located on the 2nd floor above the production area precisely at the top of the CNC Machine Center area.', 'In the work of asset management and all production data, we use an area of 70m2 located on the 2nd floor above the production area precisely at the top of the CNC Machine Center area. not only the staff in the office, all the tool designers, toolmakers, CAD-CAM Engineering and Production Planner are in the office, so the whole can coordinate directly.<br>', 'service-5.jpg', 'service-banner-5.png', 'OFFICE AREA', '', ''),
 (6, 'LAND AREA', 'col-page col-sm-6 col-md-4', 'We use an area of approximately 1,400 m2 of land area for all activities such as outdoor soccer court, gathering hall, ping pong sports area and mess area for students/college for an internship program.', 'We use an area of approximately 1,400 m2 of land area for all activities such as outdoor soccer court, gathering hall, ping pong sports area and mess area for students/college for an internship program. We also provide comfort to all employees and staff as a whole by providing large areas of green that can be comfortable after working.<br>', 'service-6.jpg', 'service-banner-6.png', 'LAND AREA', '', '');
 
@@ -197,75 +197,165 @@ INSERT INTO `tbl_faq_photo` (`id`, `main_photo`) VALUES
 CREATE TABLE `tbl_language` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL,
-  `value` text NOT NULL,
-  `value2` varchar(255) NOT NULL
+  `eng` text NOT NULL,
+  `idn` text NOT NULL,
+  `temp` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `tbl_language`
 --
 
-INSERT INTO `tbl_language` (`id`, `name`, `value`, `value2`) VALUES
-(1, 'HOME', 'Home', 'Beranda'),
-(2, 'PAGE', 'Page', 'Halaman'),
-(3, 'ABOUT', 'About', 'Tentang'),
-(4, 'GALLERY', 'Gallery', 'Galeri'),
-(5, 'FAQ', 'FAQ', 'FAQ'),
-(6, 'SERVICE', 'Service', 'layanan'),
-(7, 'PORTFOLIO', 'Portfolio', 'Portofolio'),
-(8, 'TESTIMONIAL', 'Testimonial', 'Testimonial'),
-(9, 'NEWS', 'News', 'Berita'),
-(10, 'CONTACT', 'Contact', 'Kontak'),
-(11, 'ADDRESS', 'Address', 'Alamat'),
-(12, 'CALL_US', 'Call Us', 'Hubungi Kami'),
-(13, 'WORKING_HOURS', 'Woring Hours', 'Jam Kerja'),
-(14, 'ABOUT_US', 'About Us', 'Tentang Kami'),
-(15, 'LATEST_NEWS', 'Latest News', 'Berita Terbaru'),
-(16, 'POPULAR_NEWS', 'Popular News', 'Berita Poluler'),
-(17, 'QUICK_LINKS', 'Quick Link', 'Quick Link'),
-(18, 'TERMS_AND_CONDITIONS', 'Term and Conditions', 'Term and Conditions'),
-(19, 'PRIVACY_POLICY', 'Privacy Policy', 'Privacy Policy'),
-(20, 'READ_MORE', 'Read More', 'Selengkapnya'),
-(21, 'POSTED_ON', 'Posted On:', 'Posting pada:'),
-(22, 'ADMIN', 'Admin', 'Admin'),
-(23, 'SERVICES', 'Services', 'Jasa'),
-(24, 'ALL', 'All', 'Semua'),
-(26, 'PROJECTS', 'Project', 'Proyek'),
-(27, 'DESCRIPTION', 'Description', 'Deskripsi'),
-(28, 'CLIENT_NAME', 'Client Name', 'Nama klien'),
-(29, 'CLIENT_COMPANY', 'Client Company', 'Perusahaan Klien'),
-(30, 'PROJECT_START_DATE', 'Project Start Date', 'Waktu Mulai Proyek'),
-(31, 'PROJECT_END_DATE', 'Project End Date', 'Waktu Selesai Proyek'),
-(33, 'CLIENT_COMMENT', 'About', 'Tentang'),
-(34, 'SEARCH_NEWS', 'Search News', 'Pencarian Berita'),
-(35, 'CATEGORY', 'Category', 'Kategori'),
-(36, 'SHARE_THIS', 'Share This', 'Bagikan ini'),
-(37, 'COMMENTS', 'Comments', 'Komentar'),
-(38, 'SEARCH_BY', 'Search by:', 'Pencarian Berdasarkan:'),
-(39, 'NO_RESULT_FOUND', 'No Result Found', 'Pencarian tidak ditemukan'),
-(40, 'CONTACT_US_PAGE_FORM_HEADING_TEXT', 'Contact us through the following form:', 'Kontak kami melalui form berikut:'),
-(41, 'PREVIOUS', 'Previos', 'Sebelumnya'),
-(42, 'NEXT', 'Next', 'Selanjutnya'),
-(43, 'FIND_US_ON_MAP', 'Find Us on Map:', 'Tentukan Kami di Maps:'),
-(44, 'NAME', 'Name', 'Nama'),
-(45, 'EMAIL_ADDRESS', 'Email Address', 'Alamat Email'),
-(46, 'PHONE', 'Phone Number', 'Nomor Telp'),
-(47, 'MESSAGE', 'Message', 'Pesan'),
-(48, 'SEND_MESSAGE', 'Send Message', 'Kirim Pesan'),
-(49, 'EMPTY_ERROR_NAME', 'Name can not be empty', 'Nama tidak boleh kosong!'),
-(50, 'EMPTY_ERROR_PHONE', 'Phone number can not be empty', 'Telp tidak boleh kosong!'),
-(51, 'EMPTY_ERROR_EMAIL', 'Email address can not be empty', 'Alamat Email tidak boleh kosong!'),
-(52, 'VALID_ERROR_EMAIL', 'Email address is invalid', 'Alamat Email tidak benar!'),
-(53, 'EMPTY_ERROR_COMMENT', 'Comment can not be empty', 'Komentar tidak boleh kosong!'),
-(54, 'CONTACT_FORM_EMAIL_SUBJECT', 'Contact Form Email - www.ciptasinergi.com', 'Pesan dari Email - www.ciptasinergi.com'),
-(55, 'CONTACT_FORM_EMAIL_SUCCESS_MESSAGE', 'Thank you for sending us the email. We will contact you shortly.', 'Terima kasih telah mengirim pesan, tunggu balasan dari kami..'),
-(56, 'PASSWORD_REQUEST_EMAIL_SUBJECT', 'Password Request - www.ciptasinergi.com', 'Password Request -  www.ciptasinergi.com'),
-(57, 'PRODUCT', 'Product', 'Produk'),
-(58, 'COMPANY_PROFILE', 'Company Profile', 'Profil Perusahaan'),
-(59, 'CAREER', 'Career', 'Karir'),
-(60, 'OUR_PRODUCT', 'Our Product', 'Produk Kami'),
-(61, 'FACILITY', 'Facility', 'Fasilitas'),
-(62, 'SEE_MORE', 'See More', 'Lihat Semua');
+INSERT INTO `tbl_language` (`id`, `name`, `eng`, `idn`, `temp`) VALUES
+(1, 'HOME', 'Home', 'Beranda', ''),
+(2, 'PAGE', 'Page', 'Halaman', ''),
+(3, 'ABOUT', 'About', 'Tentang', ''),
+(4, 'GALLERY', 'Gallery', 'Galeri', ''),
+(5, 'FAQ', 'FAQ', 'FAQ', ''),
+(6, 'SERVICE', 'Service', 'layanan', ''),
+(7, 'PORTFOLIO', 'Portfolio', 'Portofolio', ''),
+(8, 'TESTIMONIAL', 'Testimonial', 'Testimonial', ''),
+(9, 'NEWS', 'News', 'Berita', ''),
+(10, 'CONTACT', 'Contact', 'Kontak', ''),
+(11, 'ADDRESS', 'Address', 'Alamat', ''),
+(12, 'CALL_US', 'Call Us', 'Hubungi Kami', ''),
+(13, 'WORKING_HOURS', 'Woring Hours', 'Jam Kerja', ''),
+(14, 'ABOUT_US', 'About Us', 'Tentang Kami', ''),
+(15, 'LATEST_NEWS', 'Latest News', 'Berita Terbaru', ''),
+(16, 'POPULAR_NEWS', 'Popular News', 'Berita Poluler', ''),
+(17, 'QUICK_LINKS', 'Quick Link', 'Quick Link', ''),
+(18, 'TERMS_AND_CONDITIONS', 'Term and Conditions', 'Term and Conditions', ''),
+(19, 'PRIVACY_POLICY', 'Privacy Policy', 'Privacy Policy', ''),
+(20, 'READ_MORE', 'Read More', 'Selengkapnya', ''),
+(21, 'POSTED_ON', 'Posted On:', 'Posting pada:', ''),
+(22, 'ADMIN', 'Admin', 'Admin', ''),
+(23, 'SERVICES', 'Services', 'Jasa', ''),
+(24, 'ALL', 'All', 'Semua', ''),
+(26, 'PROJECTS', 'Project', 'Proyek', ''),
+(27, 'DESCRIPTION', 'Description', 'Deskripsi', ''),
+(28, 'CLIENT_NAME', 'Client Name', 'Nama klien', ''),
+(29, 'CLIENT_COMPANY', 'Client Company', 'Perusahaan Klien', ''),
+(30, 'PROJECT_START_DATE', 'Project Start Date', 'Waktu Mulai Proyek', ''),
+(31, 'PROJECT_END_DATE', 'Project End Date', 'Waktu Selesai Proyek', ''),
+(33, 'CLIENT_COMMENT', 'About', 'Tentang', ''),
+(34, 'SEARCH_NEWS', 'Search News', 'Pencarian Berita', ''),
+(35, 'CATEGORY', 'Category', 'Kategori', ''),
+(36, 'SHARE_THIS', 'Share This', 'Bagikan ini', ''),
+(37, 'COMMENTS', 'Comments', 'Komentar', ''),
+(38, 'SEARCH_BY', 'Search by:', 'Pencarian Berdasarkan:', ''),
+(39, 'NO_RESULT_FOUND', 'No Result Found', 'Pencarian tidak ditemukan', ''),
+(40, 'CONTACT_US_PAGE_FORM_HEADING_TEXT', 'Contact us through the following form:', 'Kontak kami melalui form berikut:', ''),
+(41, 'PREVIOUS', 'Previos', 'Sebelumnya', ''),
+(42, 'NEXT', 'Next', 'Selanjutnya', ''),
+(43, 'FIND_US_ON_MAP', 'Find Us on Map:', 'Tentukan Kami di Maps:', ''),
+(44, 'NAME', 'Name', 'Nama', ''),
+(45, 'EMAIL_ADDRESS', 'Email Address', 'Alamat Email', ''),
+(46, 'PHONE', 'Phone Number', 'Nomor Telp', ''),
+(47, 'MESSAGE', 'Message', 'Pesan', ''),
+(48, 'SEND_MESSAGE', 'Send Message', 'Kirim Pesan', ''),
+(49, 'EMPTY_ERROR_NAME', 'Name can not be empty', 'Nama tidak boleh kosong!', ''),
+(50, 'EMPTY_ERROR_PHONE', 'Phone number can not be empty', 'Telp tidak boleh kosong!', ''),
+(51, 'EMPTY_ERROR_EMAIL', 'Email address can not be empty', 'Alamat Email tidak boleh kosong!', ''),
+(52, 'VALID_ERROR_EMAIL', 'Email address is invalid', 'Alamat Email tidak benar!', ''),
+(53, 'EMPTY_ERROR_COMMENT', 'Comment can not be empty', 'Komentar tidak boleh kosong!', ''),
+(54, 'CONTACT_FORM_EMAIL_SUBJECT', 'Contact Form Email - www.ciptasinergi.com', 'Pesan dari Email - www.ciptasinergi.com', ''),
+(55, 'CONTACT_FORM_EMAIL_SUCCESS_MESSAGE', 'Thank you for sending us the email. We will contact you shortly.', 'Terima kasih telah mengirim pesan, tunggu balasan dari kami..', ''),
+(56, 'PASSWORD_REQUEST_EMAIL_SUBJECT', 'Password Request - www.ciptasinergi.com', 'Password Request -  www.ciptasinergi.com', ''),
+(57, 'PRODUCT', 'Product', 'Produk', ''),
+(58, 'COMPANY_PROFILE', 'Company Profile', 'Profil Perusahaan', ''),
+(59, 'CAREER', 'Career', 'Karir', ''),
+(60, 'OUR_PRODUCT', 'Our Product', 'Produk Kami', ''),
+(61, 'FACILITY', 'Facility', 'Fasilitas', ''),
+(62, 'SEE_MORE', 'See More', 'Lihat Semua', '');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_newfacility`
+--
+
+CREATE TABLE `tbl_newfacility` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `short_content` text NOT NULL,
+  `content` text NOT NULL,
+  `client_name` varchar(255) NOT NULL,
+  `client_company` varchar(255) NOT NULL,
+  `start_date` varchar(50) NOT NULL,
+  `end_date` varchar(50) NOT NULL,
+  `website` varchar(255) NOT NULL,
+  `cost` varchar(50) NOT NULL,
+  `client_comment` text NOT NULL,
+  `category_id` varchar(255) NOT NULL,
+  `photo` varchar(255) NOT NULL,
+  `banner` varchar(255) NOT NULL,
+  `meta_title` varchar(255) NOT NULL,
+  `meta_keyword` text NOT NULL,
+  `meta_description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tbl_newfacility`
+--
+
+INSERT INTO `tbl_newfacility` (`id`, `name`, `short_content`, `content`, `client_name`, `client_company`, `start_date`, `end_date`, `website`, `cost`, `client_comment`, `category_id`, `photo`, `banner`, `meta_title`, `meta_keyword`, `meta_description`) VALUES
+(1, 'Corporate Work 1', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.', '<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire has.</p><p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.</p><p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad ridens mollis. Ad ius meis suavitate voluptaria.</p><p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p>', 'Darrell S. McClain', 'Waves Music', '01-07-2018', '04-07-2018', 'http://www.abc.com', '$3000', 'Ancillae interpretaris ea has. Id amet impedit qui, eripuit mnesarchum percipitur in eam. Ne sit habeo inimicus, no his liber regione volutpat. Ex quot voluptaria usu, dolor vivendo docendi nec ea. Et atqui vocent integre vim, quod cibo recusabo ei usu, soleat deseruisse percipitur pri no. Aeterno theophrastus id pro.', '1', 'portfolio-1.jpg', 'portfolio-banner-1.jpg', 'Corporate Work 1', '', ''),
+(2, 'Business Work 1', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.', '<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire has.</p><p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.</p><p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad ridens mollis. Ad ius meis suavitate voluptaria.</p><p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p>', 'Richard R. Caldwell', 'Grey Fade', '29-08-2018', '07-09-2018', 'http://www.abc.com', '$2000', 'Ancillae interpretaris ea has. Id amet impedit qui, eripuit mnesarchum percipitur in eam. Ne sit habeo inimicus, no his liber regione volutpat. Ex quot voluptaria usu, dolor vivendo docendi nec ea. Et atqui vocent integre vim, quod cibo recusabo ei usu, soleat deseruisse percipitur pri no. Aeterno theophrastus id pro.', '2', 'portfolio-2.jpg', 'portfolio-banner-2.jpg', 'Business Work 1', '', ''),
+(3, 'Engineering Work 1', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.', '<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire has.</p><p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.</p><p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad ridens mollis. Ad ius meis suavitate voluptaria.</p><p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p>', 'Nicholas Y. Coleman', 'Baltimore Markets', '08-04-2018', '22-06-2018', 'http://www.abc.com', '$3400', 'Ancillae interpretaris ea has. Id amet impedit qui, eripuit mnesarchum percipitur in eam. Ne sit habeo inimicus, no his liber regione volutpat. Ex quot voluptaria usu, dolor vivendo docendi nec ea. Et atqui vocent integre vim, quod cibo recusabo ei usu, soleat deseruisse percipitur pri no. Aeterno theophrastus id pro.', '3', 'portfolio-3.jpg', 'portfolio-banner-3.jpg', 'Engineering Work 1', '', ''),
+(4, 'Business Work 2', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.', '<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire has.</p><p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.</p><p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad ridens mollis. Ad ius meis suavitate voluptaria.</p><p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p>', 'John A. Flesher', 'Magna Solution', '10-04-2018', '25-05-2018', 'http://www.abc.com', '$2300', 'Ancillae interpretaris ea has. Id amet impedit qui, eripuit mnesarchum percipitur in eam. Ne sit habeo inimicus, no his liber regione volutpat. Ex quot voluptaria usu, dolor vivendo docendi nec ea. Et atqui vocent integre vim, quod cibo recusabo ei usu, soleat deseruisse percipitur pri no. Aeterno theophrastus id pro.', '2', 'portfolio-4.jpg', 'portfolio-banner-4.jpg', 'Business Work 2', '', ''),
+(5, 'Corporate Work 2', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.', '<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire has.</p><p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.</p><p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad ridens mollis. Ad ius meis suavitate voluptaria.</p><p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p>', 'Brandon J. Erwin', 'Custom Sound', '15-06-2018', '05-07-2018', 'http://www.abc.com', '$5000', 'Ancillae interpretaris ea has. Id amet impedit qui, eripuit mnesarchum percipitur in eam. Ne sit habeo inimicus, no his liber regione volutpat. Ex quot voluptaria usu, dolor vivendo docendi nec ea. Et atqui vocent integre vim, quod cibo recusabo ei usu, soleat deseruisse percipitur pri no. Aeterno theophrastus id pro.', '1', 'portfolio-5.jpg', 'portfolio-banner-5.jpg', 'Corporate Work 2', '', ''),
+(6, 'Engineering Work 2', 'Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis.', '<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire has.</p><p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.</p><p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad ridens mollis. Ad ius meis suavitate voluptaria.</p><p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p>', 'George L. Perryman', 'The Own Hardware', '05-02-2018', '20-04-2018', 'http://www.abc.com', '$1900', 'Ancillae interpretaris ea has. Id amet impedit qui, eripuit mnesarchum percipitur in eam. Ne sit habeo inimicus, no his liber regione volutpat. Ex quot voluptaria usu, dolor vivendo docendi nec ea. Et atqui vocent integre vim, quod cibo recusabo ei usu, soleat deseruisse percipitur pri no. Aeterno theophrastus id pro.', '3', 'portfolio-6.jpg', 'portfolio-banner-6.jpg', 'Engineering Work 2', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_newfacility_category`
+--
+
+CREATE TABLE `tbl_newfacility_category` (
+  `category_id` int(11) NOT NULL,
+  `category_name` varchar(255) NOT NULL,
+  `status` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tbl_newfacility_category`
+--
+
+INSERT INTO `tbl_newfacility_category` (`category_id`, `category_name`, `status`) VALUES
+(1, 'Corporate', 'Active'),
+(2, 'Business', 'Active'),
+(3, 'Engineering', 'Active');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_newfacility_photo`
+--
+
+CREATE TABLE `tbl_newfacility_photo` (
+  `id` int(11) NOT NULL,
+  `portfolio_id` int(11) NOT NULL,
+  `photo` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tbl_newfacility_photo`
+--
+
+INSERT INTO `tbl_newfacility_photo` (`id`, `portfolio_id`, `photo`) VALUES
+(1, 1, '1.jpg'),
+(2, 1, '2.jpg'),
+(5, 3, '5.jpg'),
+(6, 3, '6.jpg'),
+(7, 4, '7.jpg'),
+(8, 4, '8.jpg'),
+(9, 5, '9.jpg'),
+(10, 5, '10.jpg'),
+(11, 6, '11.jpg'),
+(12, 6, '12.jpg'),
+(15, 2, '15.jpg'),
+(16, 2, '16.jpg');
 
 -- --------------------------------------------------------
 
@@ -600,39 +690,75 @@ CREATE TABLE `tbl_product` (
 --
 
 INSERT INTO `tbl_product` (`product_id`, `product_caption`, `product_style`, `product_name`, `product_desc`, `product_show_home`) VALUES
-(1, 'Produk 1', 'col-sm-6 col-xs-6 box', 'product-1.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(2, 'Produk 2', 'col-sm-3 col-xs-6 box', 'product-2.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(3, 'Produk 3', 'col-sm-3 col-xs-6 box', 'product-3.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(4, 'Produk 4', 'col-sm-3 col-xs-6 box', 'product-4.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(5, 'Produk 5', 'col-sm-6 col-xs-6 box', 'product-5.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(6, 'Produk 6', 'col-sm-3 col-xs-6 box', 'product-6.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(7, 'Produk 7', 'col-sm-3 col-xs-6 box', 'product-7.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(8, 'Produk', 'col-sm-3 col-xs-6 box', 'product-8.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(9, 'Produk', 'col-sm-3 col-xs-6 box', 'product-9.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(10, 'Produk', 'col-sm-3 col-xs-6 box', 'product-10.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(11, 'Produk', 'col-sm-6 col-xs-6 box', 'product-11.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(12, 'Produk', 'col-sm-6 col-xs-6 box', 'product-12.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(13, 'Produk', 'col-sm-6 col-xs-6 box', 'product-13.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(14, 'Produk', 'col-sm-3 col-xs-6 box', 'product-14.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(15, 'Produk', 'col-sm-3 col-xs-6 box', 'product-15.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(16, 'Produk', 'col-sm-3 col-xs-6 box', 'product-16.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(17, 'Produk', 'col-sm-3 col-xs-6 box', 'product-17.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(18, 'Produk', 'col-sm-3 col-xs-6 box', 'product-18.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(19, 'Produk', 'col-sm-3 col-xs-6 box', 'product-19.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(20, 'Produk', 'col-sm-3 col-xs-6 box', 'product-20.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(21, 'Produk', 'col-sm-3 col-xs-6 box', 'product-21.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(22, 'Produk', 'col-sm-3 col-xs-6 box', 'product-22.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(23, 'Produk', 'col-sm-3 col-xs-6 box', 'product-23.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(24, 'Produk', 'col-sm-6 col-xs-6 box', 'product-24.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(25, 'Produk', 'col-sm-3 col-xs-6 box', 'product-25.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(26, 'Produk', 'col-sm-3 col-xs-6 box', 'product-26.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(27, 'Produk', 'col-sm-3 col-xs-6 box', 'product-27.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(28, 'Produk', 'col-sm-3 col-xs-6 box', 'product-28.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(29, 'Produk', 'col-sm-6 col-xs-6 box', 'product-29.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(30, 'Produk', 'col-sm-3 col-xs-6 box', 'product-30.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(31, 'Produk', 'col-sm-3 col-xs-6 box', 'product-31.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(32, 'Produk', 'col-sm-3 col-xs-6 box', 'product-32.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes'),
-(33, 'Produk', 'col-sm-3 col-xs-6 box', 'product-33.jpg', 'Desripsi Produk Seperti Spesifikasi dan Kegunaan', 'Yes');
+(1, 'Air Nozzle Boiler', 'col-sm-3 col-xs-6 box', 'product-1.jpg', 'Air Nozzle Boiler', 'Yes'),
+(2, 'Air Nozzle Boiler-2', 'col-sm-3 col-xs-6 box', 'product-2.jpg', 'Air Nozzle Boiler-2', 'Yes'),
+(3, 'Arm Machining Part', 'col-sm-6 col-xs-6 box', 'product-3.jpg', 'Arm Machining Part', 'Yes'),
+(4, 'Aviation Modul Part assy', 'col-sm-3 col-xs-6 box', 'product-4.jpg', 'Aviation Modul Part assy', 'Yes'),
+(5, 'Ball Valve', 'col-sm-3 col-xs-6 box', 'product-5.jpg', 'Ball Valve', 'Yes'),
+(6, 'Ball Valve-1', 'col-sm-6 col-xs-6 box', 'product-6.jpg', 'Ball Valve', 'Yes'),
+(7, 'BOTTLE YAMALUBE 600ML BLOW MOLD', 'col-sm-3 col-xs-6 box', 'product-7.jpg', 'BOTTLE YAMALUBE 600ML BLOW MOLD', 'Yes'),
+(8, 'Cam machining', 'col-sm-3 col-xs-6 box', 'product-8.jpg', 'Cam machining', 'Yes'),
+(9, 'Can Scroll Cutter set', 'col-sm-3 col-xs-6 box', 'product-9.jpg', 'Can Scroll Cutter set', 'Yes'),
+(10, 'Car Wheel Cavity Mold AHT', 'col-sm-6 col-xs-6 box', 'product-10.jpg', 'Car Wheel Cavity Mold AHT', 'Yes'),
+(11, 'Car Wheel Cavity Mold with Insert Core Cavity', 'col-sm-3 col-xs-6 box', 'product-11.jpg', 'Car Wheel Cavity Mold with Insert Core Cavity.jpg', 'Yes'),
+(12, 'Car Wheel Cavity Mold', 'col-sm-3 col-xs-6 box', 'product-12.jpg', 'Car Wheel Cavity Mold', 'Yes'),
+(13, 'Casting Mold Cavity', 'col-sm-3 col-xs-6 box', 'product-13.jpg', 'Casting Mold Cavity', 'Yes'),
+(14, 'Casting Sand Core Mold', 'col-sm-3 col-xs-6 box', 'product-14.jpg', 'Casting Sand Core Mold', 'Yes'),
+(15, 'Cavity CNC Machining Part', 'col-sm-6 col-xs-6 box', 'product-15.jpg', 'Cavity CNC Machining Part', 'Yes'),
+(16, 'Cavity for Casting Sand Core - 1', 'col-sm-3 col-xs-6 box', 'product-16.jpg', 'Cavity for Casting Sand Core - 1', 'Yes'),
+(17, 'Cavity for Casting Sand Core - 2', 'col-sm-3 col-xs-6 box', 'product-17.jpg', 'Cavity for Casting Sand Core - 2', 'Yes'),
+(18, 'Cavity for Casting Sand Core', 'col-sm-3 col-xs-6 box', 'product-18.jpg', 'Cavity for Casting Sand Core', 'Yes'),
+(19, 'Cockpit Module Case - rear', 'col-sm-3 col-xs-6 box', 'product-19.jpg', 'Cockpit Module Case - rear', 'Yes'),
+(20, 'Cockpit Module Case', 'col-sm-3 col-xs-6 box', 'product-20.jpg', 'Cockpit Module Case', 'Yes'),
+(21, 'Feeder Conveyor Unit', 'col-sm-3 col-xs-6 box', 'product-21.jpg', 'Feeder Conveyor Unit', 'Yes'),
+(22, 'Food Processing Part - Mold Plate', 'col-sm-3 col-xs-6 box', 'product-22.jpg', 'Food Processing Part - Mold Plate', 'Yes'),
+(23, 'Food Processing Part - Steel Mold Plate', 'col-sm-6 col-xs-6 box', 'product-23.jpg', 'Food Processing Part - Steel Mold Plate', 'Yes'),
+(24, 'Horn Antena Radar', 'col-sm-3 col-xs-6 box', 'product-24.jpg', 'Horn Antena Radar', 'Yes'),
+(25, 'Horn Antena Radar-1', 'col-sm-6 col-xs-6 box', 'product-25.jpg', 'Horn Antena Radar-1', 'Yes'),
+(26, 'Housing Pump', 'col-sm-3 col-xs-6 box', 'product-26.jpg', 'Housing Pump', 'Yes'),
+(27, 'Individual Feeder System', 'col-sm-3 col-xs-6 box', 'product-27.jpg', 'Individual Feeder System', 'Yes'),
+(28, 'Jig For Machining Process', 'col-sm-3 col-xs-6 box', 'product-28.jpg', 'Jig For Machining Process', 'Yes'),
+(29, 'Lot Mark Holder SA25&#5 PAKO Karwheel', 'col-sm-3 col-xs-6 box', 'product-29.jpg', 'Lot Mark Holder SA25&#5 PAKO Karwheel', 'Yes'),
+(30, 'Lot Mark Koja FR#7 PAKO Motorcycle M6', 'col-sm-3 col-xs-6 box', 'product-30.jpg', 'Lot Mark Koja FR#7 PAKO Motorcycle M6', 'Yes'),
+(31, 'MDM Food Processing Part', 'col-sm-3 col-xs-6 box', 'product-31.jpg', 'MDM Food Processing Part', 'Yes'),
+(32, 'MDM Food Processing Part-Blade', 'col-sm-6 col-xs-6 box', 'product-32.jpg', 'MDM Food Processing Part-Blade', 'Yes'),
+(33, 'MDM Food Processing Part-Filter', 'col-sm-3 col-xs-6 box', 'product-33.jpg', 'MDM Food Processing Part-Filter', 'Yes'),
+(34, 'Plastic Mold Set', 'col-sm-3 col-xs-6 box', 'product-34.jpg', 'Plastic Mold Set', 'Yes'),
+(35, 'Pump Lube Part - with wear plate', 'col-sm-6 col-xs-6 box', 'product-35.jpg', 'Pump Lube Part - with wear plate', 'Yes'),
+(36, 'Pump Lube Part', 'col-sm-3 col-xs-6 box', 'product-36.jpg', 'Pump Lube Part', 'Yes'),
+(37, 'Pump Part - Lube', 'col-sm-3 col-xs-6 box', 'product-37.jpg', 'Pump Part - Lube', 'Yes'),
+(38, 'Pump Part - Metering gear', 'col-sm-6 col-xs-6 box', 'product-38.jpg', 'Pump Part - Metering gear', 'Yes'),
+(39, 'ROLLER POM BLACK', 'col-sm-3 col-xs-6 box', 'product-39.jpg', 'ROLLER POM BLACK', 'Yes'),
+(40, 'ROTARY CLEANER MACHINE', 'col-sm-3 col-xs-6 box', 'product-40.jpg', 'ROTARY CLEANER MACHINE', 'Yes'),
+(41, 'Rotary Forming Part - Plunger', 'col-sm-3 col-xs-6 box', 'product-41.jpg', 'Rotary Forming Part - Plunger', 'Yes'),
+(42, 'Rotary Forming Part - Plunger', 'col-sm-6 col-xs-6 box', 'product-42.jpg', 'Rotary Forming Part - Plunger', 'Yes'),
+(43, 'Short Plunger Eclair', 'col-sm-3 col-xs-6 box', 'product-43.jpg', 'Short Plunger Eclair', 'Yes'),
+(44, 'Short Plunger Eclair', 'col-sm-3 col-xs-6 box', 'product-44.jpg', 'Short Plunger Eclair', 'Yes'),
+(45, 'Slab Blind Bottling Marble Beat', 'col-sm-3 col-xs-6 box', 'product-45.jpg', 'Slab Blind Bottling Marble Beat', 'Yes'),
+(46, 'Slab Blind Bottling Marble Beat', 'col-sm-3 col-xs-6 box', 'product-46.jpg', 'Slab Blind Bottling Marble Beat', 'Yes'),
+(47, 'Slab Blind Bottling Marble Beat', 'col-sm-3 col-xs-6 box', 'product-47.jpg', 'Slab Blind Bottling Marble Beat', 'Yes'),
+(48, 'Slab Bottle in Line 3x7 Marble Beat', 'col-sm-3 col-xs-6 box', 'product-48.jpg', 'Slab Bottle in Line 3x7 Marble Beat', 'Yes'),
+(49, 'Slab Bottle in Line 3x7 Marble Beat', 'col-sm-3 col-xs-6 box', 'product-49.jpg', 'Slab Bottle in Line 3x7 Marble Beat', 'Yes'),
+(50, 'SPRAY BOTTLE 500ML BLOW MOLD', 'col-sm-6 col-xs-6 box', 'product-50.jpg', 'SPRAY BOTTLE 500ML BLOW MOLD', 'Yes'),
+(51, 'Transfer Pump', 'col-sm-3 col-xs-6 box', 'product-51.jpg', 'Transfer Pump', 'Yes'),
+(52, 'Turbine Impeller assy-2', 'col-sm-3 col-xs-6 box', 'product-52.jpg', 'Turbine Impeller assy-2', 'Yes'),
+(53, 'Turbine Impeller', 'col-sm-3 col-xs-6 box', 'product-53.jpg', 'Turbine Impeller', 'Yes'),
+(54, 'Electronic Support Measures (ESM)', 'col-sm-3 col-xs-6 box', 'product-54.jpg', 'ELectronic INTelligence primarily dedicated to the interception and analysis of radar emissions from surveillance, fire-control or missile guidance radars, and is often allied to an ECM system to provide protection from these.', 'Yes'),
+(55, 'Electronic Support Measures (ESM)', 'col-sm-3 col-xs-6 box', 'product-55.jpg', 'ELectronic INTelligence primarily dedicated to the interception and analysis of radar emissions from surveillance, fire-control or missile guidance radars, and is often allied to an ECM system to provide protection from these.', 'Yes'),
+(56, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-56.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(57, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-57.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(58, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-58.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(59, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-59.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(60, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-60.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(61, 'Unnamed-Product [CSM]', 'col-sm-6 col-xs-6 box', 'product-61.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(62, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-62.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(63, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-63.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(64, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-64.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(65, 'Unnamed-Product [CSM]', 'col-sm-6 col-xs-6 box', 'product-65.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(66, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-66.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(67, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-67.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(68, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-68.jpg', 'Unnamed-Product [CSM]', 'Yes'),
+(69, 'Unnamed-Product [CSM]', 'col-sm-3 col-xs-6 box', 'product-69.jpg', 'Unnamed-Product [CSM]', 'Yes');
 
 -- --------------------------------------------------------
 
@@ -985,6 +1111,24 @@ ALTER TABLE `tbl_language`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `tbl_newfacility`
+--
+ALTER TABLE `tbl_newfacility`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `tbl_newfacility_category`
+--
+ALTER TABLE `tbl_newfacility_category`
+  ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indeks untuk tabel `tbl_newfacility_photo`
+--
+ALTER TABLE `tbl_newfacility_photo`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `tbl_news`
 --
 ALTER TABLE `tbl_news`
@@ -1139,6 +1283,24 @@ ALTER TABLE `tbl_language`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 
 --
+-- AUTO_INCREMENT untuk tabel `tbl_newfacility`
+--
+ALTER TABLE `tbl_newfacility`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_newfacility_category`
+--
+ALTER TABLE `tbl_newfacility_category`
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_newfacility_photo`
+--
+ALTER TABLE `tbl_newfacility_photo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
 -- AUTO_INCREMENT untuk tabel `tbl_news`
 --
 ALTER TABLE `tbl_news`
@@ -1190,7 +1352,7 @@ ALTER TABLE `tbl_portfolio_photo`
 -- AUTO_INCREMENT untuk tabel `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_service`
