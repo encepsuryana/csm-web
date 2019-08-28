@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Agu 2019 pada 10.23
+-- Waktu pembuatan: 28 Agu 2019 pada 10.26
 -- Versi server: 10.3.16-MariaDB
 -- Versi PHP: 7.3.7
 
@@ -173,7 +173,7 @@ INSERT INTO `tbl_facility_category` (`category_id`, `category_name`, `status`) V
 
 CREATE TABLE `tbl_facility_photo` (
   `id` int(11) NOT NULL,
-  `newfacility_id` int(11) NOT NULL,
+  `facility_id` int(11) NOT NULL,
   `photo` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -181,7 +181,7 @@ CREATE TABLE `tbl_facility_photo` (
 -- Dumping data untuk tabel `tbl_facility_photo`
 --
 
-INSERT INTO `tbl_facility_photo` (`id`, `newfacility_id`, `photo`) VALUES
+INSERT INTO `tbl_facility_photo` (`id`, `facility_id`, `photo`) VALUES
 (2, 2, '2.png'),
 (3, 2, '3.png'),
 (4, 1, '4.jpg'),
