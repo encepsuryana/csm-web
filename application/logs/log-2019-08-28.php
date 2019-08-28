@@ -1121,3 +1121,6 @@ ERROR - 2019-08-28 14:46:56 --> Severity: Notice --> Undefined variable: og_phot
 ERROR - 2019-08-28 14:46:56 --> 404 Page Not Found!: Public/style.css
 ERROR - 2019-08-28 14:46:56 --> 404 Page Not Found!: Public/style.css
 ERROR - 2019-08-28 14:46:58 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 14:51:45 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 14:51:45 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 14:51:47 --> 404 Page Not Found!: Public/style.css

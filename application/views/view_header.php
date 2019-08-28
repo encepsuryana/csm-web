@@ -203,17 +203,6 @@
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/responsive.css'>
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/style.css'>
 
-	<?php //if($slug_arr[0] == 'news-single.php'): ?>
-		<!-- <meta property="og:title" content="<?php echo $og_title; ?>">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="<?php echo BASE_URL.'news-single.php?id='.$og_id; ?>">
-		<meta property="og:description" content="<?php echo $og_description; ?>">
-		<meta property="og:image" content="<?php echo BASE_URL; ?>uploads/<?php echo $og_photo; ?>"> -->
-		<?php //endif; ?>
-
-
-
-
 		<style>
 			/* Theme Color 1 */
 			.tooltip.bottom .tooltip-inner,
