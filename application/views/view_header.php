@@ -201,7 +201,6 @@
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/spacing.css'>
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/style.css'>
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/responsive.css'>
-	<link rel='stylesheet' href='<?php echo base_url(); ?>public/style.css'>
 
 		<style>
 			/* Theme Color 1 */
