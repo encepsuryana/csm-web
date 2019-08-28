@@ -20,9 +20,6 @@ class Contact extends CI_Controller {
 		$header['latest_news'] = $this->Model_common->get_latest_news();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 
-		$subject_text = $this->Model_contact->get_subject();
-		$success_text = $this->Model_contact->get_success_text();
-
 		$data['error'] = '';
 		$data['success'] = '';
 
@@ -52,12 +49,12 @@ class Contact extends CI_Controller {
 				$this->email->from($_POST['visitor_email'], $_POST['visitor_name']);
 				$this->email->to($header['setting']['receive_email']);
 
-				$this->email->subject($subject_text['value']);
+				$this->email->subject('Contact Form Email - www.ciptasinergi.com');
 				$this->email->message($msg);
 
 				$this->email->send();
 
-				$data['success'] = $success_text['value'];
+				$data['success'] = 'Thank you for sending us the email. We will contact you shortly.';
             }
 
 		}

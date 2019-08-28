@@ -1177,3 +1177,17 @@ ERROR - 2019-08-28 16:17:57 --> 404 Page Not Found!: Public/css
 ERROR - 2019-08-28 16:18:00 --> 404 Page Not Found!: Public/css
 ERROR - 2019-08-28 16:18:03 --> 404 Page Not Found!: Public/css
 ERROR - 2019-08-28 16:22:29 --> Severity: Warning --> Use of undefined constant WORKING_HOUR - assumed 'WORKING_HOUR' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 422
+ERROR - 2019-08-28 16:28:20 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\controllers\Contact.php 55
+ERROR - 2019-08-28 16:28:23 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\csm-web\system\libraries\Email.php 1902
+ERROR - 2019-08-28 16:28:23 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\controllers\Contact.php 60
+ERROR - 2019-08-28 16:30:11 --> Severity: Notice --> Undefined index: visitor_comment C:\xampp\htdocs\csm-web\application\controllers\Contact.php 55
+ERROR - 2019-08-28 16:30:13 --> Severity: Warning --> mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() C:\xampp\htdocs\csm-web\system\libraries\Email.php 1902
+ERROR - 2019-08-28 16:30:13 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\controllers\Contact.php 60
+ERROR - 2019-08-28 16:33:04 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\controllers\Contact.php 55
+ERROR - 2019-08-28 16:33:19 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\controllers\Contact.php 60
+ERROR - 2019-08-28 16:40:19 --> Severity: Warning --> iconv_strlen() expects parameter 1 to be string, array given C:\xampp\htdocs\csm-web\system\libraries\Email.php 1636
+ERROR - 2019-08-28 16:40:32 --> Severity: Notice --> Array to string conversion C:\xampp\htdocs\csm-web\application\views\view_contact.php 24
+ERROR - 2019-08-28 16:42:09 --> Severity: Warning --> iconv_strlen() expects parameter 1 to be string, array given C:\xampp\htdocs\csm-web\system\libraries\Email.php 1636
+ERROR - 2019-08-28 16:42:22 --> Severity: Notice --> Array to string conversion C:\xampp\htdocs\csm-web\application\views\view_contact.php 24
+ERROR - 2019-08-28 16:44:44 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\controllers\Contact.php 55
+ERROR - 2019-08-28 16:44:56 --> Severity: Notice --> Undefined index: value C:\xampp\htdocs\csm-web\application\controllers\Contact.php 60
