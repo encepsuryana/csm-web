@@ -1171,3 +1171,9 @@ ERROR - 2019-08-28 16:07:11 --> 404 Page Not Found!: Public/css
 ERROR - 2019-08-28 16:07:44 --> 404 Page Not Found!: Public/css
 ERROR - 2019-08-28 16:08:03 --> 404 Page Not Found!: Public/css
 ERROR - 2019-08-28 16:09:04 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 16:16:56 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 16:17:26 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 16:17:57 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 16:18:00 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 16:18:03 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 16:22:29 --> Severity: Warning --> Use of undefined constant WORKING_HOUR - assumed 'WORKING_HOUR' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 422

@@ -411,15 +411,15 @@
 							<ul>
 								<li>
 									<i class="fa fa-envelope-o" aria-hidden="true"></i>
-									<span title="Email Perusahaan" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_email']; ?></span>
+									<span title="<?php echo COMPANY_EMAIL; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_email']; ?></span>
 								</li>
 								<li>
 									<i class="fa fa-phone" aria-hidden="true"></i>
-									<span title="Kontak Telp Perusahaan" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_phone']; ?></span>
+									<span title="<?php echo COMPANY_PHONE; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_phone']; ?></span>
 								</li>
 								<li>
 									<i class="fa fa-building-o" aria-hidden="true"></i>
-									<span title="Jam Kerja Perusahaan" data-toggle="tooltip" data-placement="bottom"><?php echo nl2br($setting['footer_working_hour']); ?></span>
+									<span title="<?php echo WORKING_HOURS; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo nl2br($setting['footer_working_hour']); ?></span>
 								</li>
 							</ul>
 							<script>
