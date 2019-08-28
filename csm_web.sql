@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Agu 2019 pada 09.48
+-- Waktu pembuatan: 28 Agu 2019 pada 10.23
 -- Versi server: 10.3.16-MariaDB
 -- Versi PHP: 7.3.7
 
@@ -121,10 +121,10 @@ INSERT INTO `tbl_designation` (`designation_id`, `designation_name`) VALUES
 
 CREATE TABLE `tbl_facility` (
   `id` int(11) NOT NULL,
-  `heading` varchar(255) NOT NULL,
-  `facility_style` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `short_content` text NOT NULL,
   `content` text NOT NULL,
+  `category_id` varchar(255) NOT NULL,
   `photo` varchar(255) NOT NULL,
   `banner` varchar(255) NOT NULL,
   `meta_title` varchar(255) NOT NULL,
@@ -136,13 +136,60 @@ CREATE TABLE `tbl_facility` (
 -- Dumping data untuk tabel `tbl_facility`
 --
 
-INSERT INTO `tbl_facility` (`id`, `heading`, `facility_style`, `short_content`, `content`, `photo`, `banner`, `meta_title`, `meta_keyword`, `meta_description`) VALUES
-(1, 'HIGH-SPEED CNC MILLING MACHINING CENTER', 'col-page col-sm-6 col-md-4', 'Our process production support with high-speed CNC Milling Machining center for high-speed cutting tools.', '<p align=\"justify\">Our process production support with <b>High-Speed CNC Machining Center</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b> products and competitive, so that the products will be used by the clients does not doubt the quality, the following specifications of <b>CNC Milling Machines</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">MATRIX 560AH / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 12000 rpm, Travel: 560x430x450<br></p></td><td align=\"center\">80%<br></td><td align=\"center\">156.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">F1-LG 1000SP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 8000 rpm, Travel: 1000x510x510<br></p></td><td align=\"center\">90%<br></td><td align=\"center\">186.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">3.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">PRO-1000SP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 10000 rpm, Travel: 1000x600x630<br></p></td><td align=\"center\">70%<br></td><td align=\"center\">166.000<br></td><td align=\"center\">0,007/300<br></td></tr><tr><td align=\"center\">4.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">S-PLUSH 10AP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 8000 rpm, Travel: 1020x520x530<br></p></td><td align=\"center\">70%<br></td><td align=\"center\">205.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">5.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">SMC-5 / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x850<br></p></td><td align=\"center\">50%<br></td><td align=\"center\">156.000<br></td><td align=\"center\">0,005<br></td></tr></tbody></table><p>With the guarantee of providing quality and tested products. <br></p>', 'service-1.jpg', 'service-banner-1.png', 'HIGH-SPEED CNC MILLING MACHINING CENTER', '', ''),
-(2, 'HIGH-SPEED CNC TURNING MACHINING CENTER', 'col-page col-sm-6 col-md-4', 'The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools.', '<p align=\"justify\">The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools. We offer a variety of coatings to help optimize performance and extend the life of your cutting tools and inserts. Process production support with <b>High-Speed CNC Turning Machining Center</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b>\r\n products and competitive, so that the products will be used by the \r\nclients does not doubt the quality, the following specifications of <b>CNC </b><b><b>Turning </b> Machines</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CNC TURNING MACHINE<br></td><td align=\"center\">CAK 4085D / SHEN YANG<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x850</p></td><td align=\"center\">50%<br></td><td align=\"center\">136.000<br></td><td align=\"center\">0,012<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CNC TURNING MACHINE</td><td align=\"center\">MAZAK QT T6<br></td><td align=\"center\"><p>Spindle Speed 7000 rpm, Travel: 100x100</p></td><td align=\"center\">50%<br></td><td align=\"center\">123.000<br></td><td align=\"center\">0,002<br></td></tr></tbody></table><p>Have a special spec? We can help match the proper coating to the tool and task.</p>', 'service-2.jpg', 'service-banner-2.png', 'HIGH-SPEED CNC TURNING MACHINING CENTER', '', ''),
-(3, 'CONV. MILLING & TURNING MACHINING CENTER AND SURFACE GRINDING', 'col-page col-sm-6 col-md-4', 'Our process production support with Conv. Machining center and surface grinding for high-speed cutting tools.', '<p align=\"justify\">Our process production support with <b>High-Speed Conv. Machining Center and Surface Grinding</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b> products and competitive, so that the products will be used by the clients does not doubt the quality, the following specifications of&nbsp;<b><b>Conv. </b> Machines</b> <b>and Surface Grinding</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">SM5 / STANDARD</td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 1000x450x450<br></p></td><td align=\"center\">60%<br></td><td align=\"center\">56.000<br></td><td align=\"center\">0,015<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">SM4 / PHOEBUS<br></td><td align=\"center\"><p>Spindle Speed 1800 rpm, Travel: 775x400x400<br></p></td><td align=\"center\">50%<br></td><td align=\"center\">56.000<br></td><td align=\"center\">0,05<br></td></tr><tr><td align=\"center\">3.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">MAZAK<br></td><td align=\"center\"><p>Spindle Speed 2500 rpm, Travel: 775x400x401</p></td><td align=\"center\">60%<br></td><td align=\"center\">60.000<br></td><td align=\"center\">0,05<br></td></tr><tr><td align=\"center\">4.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">MV-11<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 600x200x250<br></p></td><td align=\"center\">60%<br></td><td align=\"center\">30.000<br></td><td align=\"center\">0,08<br></td></tr><tr><td align=\"center\">5.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">RONG FU<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 600x200x250</p></td><td align=\"center\">60%<br></td><td align=\"center\">30.000<br></td><td align=\"center\">0,08</td></tr><tr><td align=\"center\">6.<br></td><td align=\"center\">CONV. TURNING MACHINE</td><td align=\"center\">COLCHESTER<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 200x600</p></td><td align=\"center\">80%<br></td><td align=\"center\">50.000<br></td><td align=\"center\">0,01</td></tr><tr><td align=\"center\">7.<br></td><td align=\"center\">SURFACE GRINDING<br></td><td align=\"center\">SG 2040 / STANDARD<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x200x300</p></td><td align=\"center\">40%<br></td><td align=\"center\">60.000<br></td><td align=\"center\">0,003</td></tr></tbody></table><p>With the guarantee of providing quality and tested products. <br></p>', 'service-3.jpg', 'service-banner-3.png', 'CONV. MILLING & TURNING MACHINING CENTER AND SURFACE GRINDING', '', ''),
-(4, 'PRODUCTION WORKSHOP AREA', 'col-page col-sm-6 col-md-4', 'n the production workshop process, we use the total area: 500m2 to provide comfort and flexibility in the production process.', '<p>In the production workshop process, we use the total area: 500m2 where: </p><p><br></p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Workshop</b><br></td><td align=\"center\"><b>Area</b><br></td></tr><tr><td align=\"center\"><b>1<br></b></td><td align=\"center\">CNC Workshop<br></td><td align=\"center\">154 m2<br></td></tr><tr><td align=\"center\"><b>2<br></b></td><td align=\"center\">Workshop Conventional<br></td><td align=\"center\">160 m2<br></td></tr><tr><td align=\"center\"><b>3<br></b></td><td align=\"center\">Car parking area<br></td><td align=\"center\">60 m2<br></td></tr><tr><td align=\"center\"><b>4<br></b></td><td align=\"center\">Motorcycle parking area<br></td><td align=\"center\">60 m2<br></td></tr><tr><td align=\"center\"><b>5<br></b></td><td align=\"center\">Others<br></td><td align=\"center\">66 m2<br></td></tr></tbody></table><p>To provide comfort and flexibility in the production process so that the productivity in the production process goes well and facilitate the data collection and the placement of the production. for the sake of convenience and safety at work, we established safety procedures to give a warning or lane line safety at work and we also write the symbols of safety in the work, because safety is the main thing in the work.<br></p>', 'service-4.jpg', 'service-banner-4.png', 'PRODUCTION WORKSHOP AREA', '', ''),
-(5, 'OFFICE AREA', 'col-page col-sm-6 col-md-4', 'In the work of asset management and all production data, we use an area of 70m2 located on the 2nd floor above the production area precisely at the top of the CNC Machine Center area.', 'In the work of asset management and all production data, we use an area of 70m2 located on the 2nd floor above the production area precisely at the top of the CNC Machine Center area. not only the staff in the office, all the tool designers, toolmakers, CAD-CAM Engineering and Production Planner are in the office, so the whole can coordinate directly.<br>', 'service-5.jpg', 'service-banner-5.png', 'OFFICE AREA', '', ''),
-(6, 'LAND AREA', 'col-page col-sm-6 col-md-4', 'We use an area of approximately 1,400 m2 of land area for all activities such as outdoor soccer court, gathering hall, ping pong sports area and mess area for students/college for an internship program.', 'We use an area of approximately 1,400 m2 of land area for all activities such as outdoor soccer court, gathering hall, ping pong sports area and mess area for students/college for an internship program. We also provide comfort to all employees and staff as a whole by providing large areas of green that can be comfortable after working.<br>', 'service-6.jpg', 'service-banner-6.png', 'LAND AREA', '', '');
+INSERT INTO `tbl_facility` (`id`, `name`, `short_content`, `content`, `category_id`, `photo`, `banner`, `meta_title`, `meta_keyword`, `meta_description`) VALUES
+(1, 'HIGH-SPEED CNC MILLING MACHINING CENTER', 'Our process production support with high-speed CNC Milling Machining center for high-speed cutting tools.', '<p align=\"justify\">Our process production support with <b>High-Speed CNC Machining Center</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b>\r\n products and competitive, so that the products will be used by the \r\nclients does not doubt the quality, the following specifications of <b>CNC Milling Machines</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">MATRIX 560AH / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 12000 rpm, Travel: 560x430x450<br></p></td><td align=\"center\">80%<br></td><td align=\"center\">156.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">F1-LG 1000SP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 8000 rpm, Travel: 1000x510x510<br></p></td><td align=\"center\">90%<br></td><td align=\"center\">186.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">3.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">PRO-1000SP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 10000 rpm, Travel: 1000x600x630<br></p></td><td align=\"center\">70%<br></td><td align=\"center\">166.000<br></td><td align=\"center\">0,007/300<br></td></tr><tr><td align=\"center\">4.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">S-PLUSH 10AP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 8000 rpm, Travel: 1020x520x530<br></p></td><td align=\"center\">70%<br></td><td align=\"center\">205.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">5.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">SMC-5 / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x850<br></p></td><td align=\"center\">50%<br></td><td align=\"center\">156.000<br></td><td align=\"center\">0,005<br></td></tr></tbody></table><p>With the guarantee of providing quality and tested products. <br></p>', '1', 'newfacility-1.jpg', 'newfacility-banner-1.png', 'HIGH-SPEED CNC MILLING MACHINING CENTER', '', ''),
+(2, 'HIGH-SPEED CNC TURNING MACHINING CENTER', 'The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools.', '<p align=\"justify\">The proper coating is key to maximizing the \r\noperational efficiency of high-speed metal cutting tools. We offer a \r\nvariety of coatings to help optimize performance and extend the life of \r\nyour cutting tools and inserts. Process production support with <b>High-Speed CNC Turning Machining Center</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b>\r\n products and competitive, so that the products will be used by the \r\nclients does not doubt the quality, the following specifications of <b>CNC </b><b><b>Turning </b> Machines</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CNC TURNING MACHINE<br></td><td align=\"center\">CAK 4085D / SHEN YANG<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x850</p></td><td align=\"center\">50%<br></td><td align=\"center\">136.000<br></td><td align=\"center\">0,012<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CNC TURNING MACHINE</td><td align=\"center\">MAZAK QT T6<br></td><td align=\"center\"><p>Spindle Speed 7000 rpm, Travel: 100x100</p></td><td align=\"center\">50%<br></td><td align=\"center\">123.000<br></td><td align=\"center\">0,002<br></td></tr></tbody></table><p>Have a special spec? We can help match the proper coating to the tool and task.</p>', '1', 'newfacility-2.jpg', 'newfacility-banner-2.jpg', 'HIGH-SPEED CNC TURNING MACHINING CENTER', '', ''),
+(3, 'CONV. MACHINING CENTER AND SURF. GRINDING', 'Our process production support with Conv. Machining center and surface grinding for high-speed cutting tools.', '<p align=\"justify\">Our process production support with <b>High-Speed Conv. Machining Center and Surface Grinding</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b>\r\n products and competitive, so that the products will be used by the \r\nclients does not doubt the quality, the following specifications of <b><b>Conv. </b> Machines</b> <b>and Surface Grinding</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">SM5 / STANDARD</td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 1000x450x450<br></p></td><td align=\"center\">60%<br></td><td align=\"center\">56.000<br></td><td align=\"center\">0,015<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">SM4 / PHOEBUS<br></td><td align=\"center\"><p>Spindle Speed 1800 rpm, Travel: 775x400x400<br></p></td><td align=\"center\">50%<br></td><td align=\"center\">56.000<br></td><td align=\"center\">0,05<br></td></tr><tr><td align=\"center\">3.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">MAZAK<br></td><td align=\"center\"><p>Spindle Speed 2500 rpm, Travel: 775x400x401</p></td><td align=\"center\">60%<br></td><td align=\"center\">60.000<br></td><td align=\"center\">0,05<br></td></tr><tr><td align=\"center\">4.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">MV-11<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 600x200x250<br></p></td><td align=\"center\">60%<br></td><td align=\"center\">30.000<br></td><td align=\"center\">0,08<br></td></tr><tr><td align=\"center\">5.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">RONG FU<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 600x200x250</p></td><td align=\"center\">60%<br></td><td align=\"center\">30.000<br></td><td align=\"center\">0,08</td></tr><tr><td align=\"center\">6.<br></td><td align=\"center\">CONV. TURNING MACHINE</td><td align=\"center\">COLCHESTER<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 200x600</p></td><td align=\"center\">80%<br></td><td align=\"center\">50.000<br></td><td align=\"center\">0,01</td></tr><tr><td align=\"center\">7.<br></td><td align=\"center\">SURFACE GRINDING<br></td><td align=\"center\">SG 2040 / STANDARD<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x200x300</p></td><td align=\"center\">40%<br></td><td align=\"center\">60.000<br></td><td align=\"center\">0,003</td></tr></tbody></table><p>With the guarantee of providing quality and tested products. <br></p>', '1', 'newfacility-3.jpg', 'newfacility-banner-3.png', 'CONV. MILLING & TURNING MACHINING CENTER AND SURFACE GRINDING', '', ''),
+(4, 'PRODUCTION WORKSHOP AND PARKING AREA', 'In the production workshop process, we use the total area: 380m2 to provide comfort and flexibility in the production process so that the productivity in the production process goes well and facilitate of the production.', '<p>In the production workshop process, we use the total area: 500m2 where: </p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Workshop</b><br></td><td align=\"center\"><b>Area</b><br></td></tr><tr><td align=\"center\"><b>1<br></b></td><td align=\"center\">CNC Workshop<br></td><td align=\"center\">154 m2<br></td></tr><tr><td align=\"center\"><b>2<br></b></td><td align=\"center\">Workshop Conventional<br></td><td align=\"center\">160 m2<br></td></tr><tr><td align=\"center\"><b>3<br></b></td><td align=\"center\">Car parking area<br></td><td align=\"center\">60 m2<br></td></tr><tr><td align=\"center\"><b>4<br></b></td><td align=\"center\">Motorcycle parking area<br></td><td align=\"center\">60 m2<br></td></tr><tr><td align=\"center\"><b>5<br></b></td><td align=\"center\">Others<br></td><td align=\"center\">66 m2<br></td></tr></tbody></table><p>To\r\n provide comfort and flexibility in the production process so that the \r\nproductivity in the production process goes well and facilitate the data\r\n collection and the placement of the production. for the sake of \r\nconvenience and safety at work, we established safety procedures to give\r\n a warning or lane line safety at work and we also write the symbols of \r\nsafety in the work, because safety is the main thing in the work.<br></p>', '1', 'newfacility-4.jpg', 'newfacility-banner-4.png', 'PRODUCTION WORKSHOP AND PARKING AREA', '', ''),
+(5, 'OFFICE AREA', 'In the work of asset management and all production data, we use an area of 70m2 located on the 2nd floor above the production area precisely at the top of the CNC Machine Center area.', '<p>In the work of asset management and all production data, we use an area \r\nof 70m2 located on the 2nd floor above the production area precisely at \r\nthe top of the CNC Machine Center area. not only the staff in the \r\noffice, all the tool designers, toolmakers, CAD-CAM Engineering and \r\nProduction Planner are in the office, so the whole can coordinate \r\ndirectly.</p>', '2', 'newfacility-5.jpg', 'newfacility-banner-5.png', 'OFFICE AREA', '', ''),
+(6, 'LAND AREA', 'We use an area of approximately 1,400 m2 of land area for all activities such as outdoor soccer court, gathering hall, ping pong sports area and mess area for students/college for an internship program.', '<p>We use an area of approximately 1,400 m2 of land area for all activities\r\n such as outdoor soccer court, gathering hall, ping pong sports area and\r\n mess area for students/college for an internship program. We also \r\nprovide comfort to all employees and staff as a whole by providing large\r\n areas of green that can be comfortable after working.<br></p>', '3', 'newfacility-6.jpg', 'newfacility-banner-6.png', 'LAND AREA', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_facility_category`
+--
+
+CREATE TABLE `tbl_facility_category` (
+  `category_id` int(11) NOT NULL,
+  `category_name` varchar(255) NOT NULL,
+  `status` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tbl_facility_category`
+--
+
+INSERT INTO `tbl_facility_category` (`category_id`, `category_name`, `status`) VALUES
+(1, 'Workshop', 'Active'),
+(2, 'Office', 'Active'),
+(3, 'Land', 'Active');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_facility_photo`
+--
+
+CREATE TABLE `tbl_facility_photo` (
+  `id` int(11) NOT NULL,
+  `newfacility_id` int(11) NOT NULL,
+  `photo` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tbl_facility_photo`
+--
+
+INSERT INTO `tbl_facility_photo` (`id`, `newfacility_id`, `photo`) VALUES
+(2, 2, '2.png'),
+(3, 2, '3.png'),
+(4, 1, '4.jpg'),
+(5, 2, '5.jpg'),
+(6, 3, '6.jpg'),
+(7, 4, '7.jpg'),
+(8, 5, '8.jpg'),
+(9, 6, '9.jpg');
 
 -- --------------------------------------------------------
 
@@ -267,84 +314,6 @@ INSERT INTO `tbl_language` (`id`, `name`, `eng`, `idn`, `temp`) VALUES
 (60, 'OUR_PRODUCT', 'Our Product', 'Produk Kami', ''),
 (61, 'FACILITY', 'Facility', 'Fasilitas', ''),
 (62, 'SEE_MORE', 'See More', 'Lihat Semua', '');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `tbl_newfacility`
---
-
-CREATE TABLE `tbl_newfacility` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `short_content` text NOT NULL,
-  `content` text NOT NULL,
-  `category_id` varchar(255) NOT NULL,
-  `photo` varchar(255) NOT NULL,
-  `banner` varchar(255) NOT NULL,
-  `meta_title` varchar(255) NOT NULL,
-  `meta_keyword` text NOT NULL,
-  `meta_description` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `tbl_newfacility`
---
-
-INSERT INTO `tbl_newfacility` (`id`, `name`, `short_content`, `content`, `category_id`, `photo`, `banner`, `meta_title`, `meta_keyword`, `meta_description`) VALUES
-(1, 'HIGH-SPEED CNC MILLING MACHINING CENTER', 'Our process production support with high-speed CNC Milling Machining center for high-speed cutting tools.', '<p align=\"justify\">Our process production support with <b>High-Speed CNC Machining Center</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b>\r\n products and competitive, so that the products will be used by the \r\nclients does not doubt the quality, the following specifications of <b>CNC Milling Machines</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">MATRIX 560AH / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 12000 rpm, Travel: 560x430x450<br></p></td><td align=\"center\">80%<br></td><td align=\"center\">156.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">F1-LG 1000SP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 8000 rpm, Travel: 1000x510x510<br></p></td><td align=\"center\">90%<br></td><td align=\"center\">186.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">3.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">PRO-1000SP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 10000 rpm, Travel: 1000x600x630<br></p></td><td align=\"center\">70%<br></td><td align=\"center\">166.000<br></td><td align=\"center\">0,007/300<br></td></tr><tr><td align=\"center\">4.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">S-PLUSH 10AP / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 8000 rpm, Travel: 1020x520x530<br></p></td><td align=\"center\">70%<br></td><td align=\"center\">205.000<br></td><td align=\"center\">0,005<br></td></tr><tr><td align=\"center\">5.<br></td><td align=\"center\">CNC MILLING CENTER<br></td><td align=\"center\">SMC-5 / HARTFORD<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x850<br></p></td><td align=\"center\">50%<br></td><td align=\"center\">156.000<br></td><td align=\"center\">0,005<br></td></tr></tbody></table><p>With the guarantee of providing quality and tested products. <br></p>', '1', 'newfacility-1.jpg', 'newfacility-banner-1.png', 'HIGH-SPEED CNC MILLING MACHINING CENTER', '', ''),
-(2, 'HIGH-SPEED CNC TURNING MACHINING CENTER', 'The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools.', '<p align=\"justify\">The proper coating is key to maximizing the \r\noperational efficiency of high-speed metal cutting tools. We offer a \r\nvariety of coatings to help optimize performance and extend the life of \r\nyour cutting tools and inserts. Process production support with <b>High-Speed CNC Turning Machining Center</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b>\r\n products and competitive, so that the products will be used by the \r\nclients does not doubt the quality, the following specifications of <b>CNC </b><b><b>Turning </b> Machines</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CNC TURNING MACHINE<br></td><td align=\"center\">CAK 4085D / SHEN YANG<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x850</p></td><td align=\"center\">50%<br></td><td align=\"center\">136.000<br></td><td align=\"center\">0,012<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CNC TURNING MACHINE</td><td align=\"center\">MAZAK QT T6<br></td><td align=\"center\"><p>Spindle Speed 7000 rpm, Travel: 100x100</p></td><td align=\"center\">50%<br></td><td align=\"center\">123.000<br></td><td align=\"center\">0,002<br></td></tr></tbody></table><p>Have a special spec? We can help match the proper coating to the tool and task.</p>', '1', 'newfacility-2.jpg', 'newfacility-banner-2.jpg', 'HIGH-SPEED CNC TURNING MACHINING CENTER', '', ''),
-(3, 'CONV. MACHINING CENTER AND SURF. GRINDING', 'Our process production support with Conv. Machining center and surface grinding for high-speed cutting tools.', '<p align=\"justify\">Our process production support with <b>High-Speed Conv. Machining Center and Surface Grinding</b>, aided by a fast machine production process can be more productive and produce <b>High-Quality</b>\r\n products and competitive, so that the products will be used by the \r\nclients does not doubt the quality, the following specifications of <b><b>Conv. </b> Machines</b> <b>and Surface Grinding</b> we use:</p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Machine</b><br></td><td align=\"center\"><b>Type/Merk</b></td><td align=\"center\"><p><b>Specification</b></p></td><td align=\"center\"><p><b>Loading vs Capacity (%)</b></p></td><td align=\"center\"><b>Machine Hour (Rp/Hour)<br></b></td><td align=\"center\"><b>Accuracy Machine (mm) <br></b></td></tr><tr><td align=\"center\">1.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">SM5 / STANDARD</td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 1000x450x450<br></p></td><td align=\"center\">60%<br></td><td align=\"center\">56.000<br></td><td align=\"center\">0,015<br></td></tr><tr><td align=\"center\">2.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">SM4 / PHOEBUS<br></td><td align=\"center\"><p>Spindle Speed 1800 rpm, Travel: 775x400x400<br></p></td><td align=\"center\">50%<br></td><td align=\"center\">56.000<br></td><td align=\"center\">0,05<br></td></tr><tr><td align=\"center\">3.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">MAZAK<br></td><td align=\"center\"><p>Spindle Speed 2500 rpm, Travel: 775x400x401</p></td><td align=\"center\">60%<br></td><td align=\"center\">60.000<br></td><td align=\"center\">0,05<br></td></tr><tr><td align=\"center\">4.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">MV-11<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 600x200x250<br></p></td><td align=\"center\">60%<br></td><td align=\"center\">30.000<br></td><td align=\"center\">0,08<br></td></tr><tr><td align=\"center\">5.<br></td><td align=\"center\">CONV. MILLING MACHINE</td><td align=\"center\">RONG FU<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 600x200x250</p></td><td align=\"center\">60%<br></td><td align=\"center\">30.000<br></td><td align=\"center\">0,08</td></tr><tr><td align=\"center\">6.<br></td><td align=\"center\">CONV. TURNING MACHINE</td><td align=\"center\">COLCHESTER<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 200x600</p></td><td align=\"center\">80%<br></td><td align=\"center\">50.000<br></td><td align=\"center\">0,01</td></tr><tr><td align=\"center\">7.<br></td><td align=\"center\">SURFACE GRINDING<br></td><td align=\"center\">SG 2040 / STANDARD<br></td><td align=\"center\"><p>Spindle Speed 1500 rpm, Travel: 400x200x300</p></td><td align=\"center\">40%<br></td><td align=\"center\">60.000<br></td><td align=\"center\">0,003</td></tr></tbody></table><p>With the guarantee of providing quality and tested products. <br></p>', '1', 'newfacility-3.jpg', 'newfacility-banner-3.png', 'CONV. MILLING & TURNING MACHINING CENTER AND SURFACE GRINDING', '', ''),
-(4, 'PRODUCTION WORKSHOP AND PARKING AREA', 'In the production workshop process, we use the total area: 380m2 to provide comfort and flexibility in the production process so that the productivity in the production process goes well and facilitate of the production.', '<p>In the production workshop process, we use the total area: 500m2 where: </p><table class=\"table table-bordered\"><tbody><tr><td align=\"center\"><b>No.</b><br></td><td align=\"center\"><b>Workshop</b><br></td><td align=\"center\"><b>Area</b><br></td></tr><tr><td align=\"center\"><b>1<br></b></td><td align=\"center\">CNC Workshop<br></td><td align=\"center\">154 m2<br></td></tr><tr><td align=\"center\"><b>2<br></b></td><td align=\"center\">Workshop Conventional<br></td><td align=\"center\">160 m2<br></td></tr><tr><td align=\"center\"><b>3<br></b></td><td align=\"center\">Car parking area<br></td><td align=\"center\">60 m2<br></td></tr><tr><td align=\"center\"><b>4<br></b></td><td align=\"center\">Motorcycle parking area<br></td><td align=\"center\">60 m2<br></td></tr><tr><td align=\"center\"><b>5<br></b></td><td align=\"center\">Others<br></td><td align=\"center\">66 m2<br></td></tr></tbody></table><p>To\r\n provide comfort and flexibility in the production process so that the \r\nproductivity in the production process goes well and facilitate the data\r\n collection and the placement of the production. for the sake of \r\nconvenience and safety at work, we established safety procedures to give\r\n a warning or lane line safety at work and we also write the symbols of \r\nsafety in the work, because safety is the main thing in the work.<br></p>', '1', 'newfacility-4.jpg', 'newfacility-banner-4.png', 'PRODUCTION WORKSHOP AND PARKING AREA', '', ''),
-(5, 'OFFICE AREA', 'In the work of asset management and all production data, we use an area of 70m2 located on the 2nd floor above the production area precisely at the top of the CNC Machine Center area.', '<p>In the work of asset management and all production data, we use an area \r\nof 70m2 located on the 2nd floor above the production area precisely at \r\nthe top of the CNC Machine Center area. not only the staff in the \r\noffice, all the tool designers, toolmakers, CAD-CAM Engineering and \r\nProduction Planner are in the office, so the whole can coordinate \r\ndirectly.</p>', '2', 'newfacility-5.jpg', 'newfacility-banner-5.png', 'OFFICE AREA', '', ''),
-(6, 'LAND AREA', 'We use an area of approximately 1,400 m2 of land area for all activities such as outdoor soccer court, gathering hall, ping pong sports area and mess area for students/college for an internship program.', '<p>We use an area of approximately 1,400 m2 of land area for all activities\r\n such as outdoor soccer court, gathering hall, ping pong sports area and\r\n mess area for students/college for an internship program. We also \r\nprovide comfort to all employees and staff as a whole by providing large\r\n areas of green that can be comfortable after working.<br></p>', '3', 'newfacility-6.jpg', 'newfacility-banner-6.png', 'LAND AREA', '', '');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `tbl_newfacility_category`
---
-
-CREATE TABLE `tbl_newfacility_category` (
-  `category_id` int(11) NOT NULL,
-  `category_name` varchar(255) NOT NULL,
-  `status` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `tbl_newfacility_category`
---
-
-INSERT INTO `tbl_newfacility_category` (`category_id`, `category_name`, `status`) VALUES
-(1, 'Workshop', 'Active'),
-(2, 'Office', 'Active'),
-(3, 'Land', 'Active');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `tbl_newfacility_photo`
---
-
-CREATE TABLE `tbl_newfacility_photo` (
-  `id` int(11) NOT NULL,
-  `newfacility_id` int(11) NOT NULL,
-  `photo` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `tbl_newfacility_photo`
---
-
-INSERT INTO `tbl_newfacility_photo` (`id`, `newfacility_id`, `photo`) VALUES
-(2, 2, '2.png'),
-(3, 2, '3.png'),
-(4, 1, '4.jpg'),
-(5, 2, '5.jpg'),
-(6, 3, '6.jpg'),
-(7, 4, '7.jpg'),
-(8, 5, '8.jpg'),
-(9, 6, '9.jpg');
 
 -- --------------------------------------------------------
 
@@ -1082,6 +1051,18 @@ ALTER TABLE `tbl_facility`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indeks untuk tabel `tbl_facility_category`
+--
+ALTER TABLE `tbl_facility_category`
+  ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indeks untuk tabel `tbl_facility_photo`
+--
+ALTER TABLE `tbl_facility_photo`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `tbl_faq`
 --
 ALTER TABLE `tbl_faq`
@@ -1097,24 +1078,6 @@ ALTER TABLE `tbl_faq_photo`
 -- Indeks untuk tabel `tbl_language`
 --
 ALTER TABLE `tbl_language`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indeks untuk tabel `tbl_newfacility`
---
-ALTER TABLE `tbl_newfacility`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indeks untuk tabel `tbl_newfacility_category`
---
-ALTER TABLE `tbl_newfacility_category`
-  ADD PRIMARY KEY (`category_id`);
-
---
--- Indeks untuk tabel `tbl_newfacility_photo`
---
-ALTER TABLE `tbl_newfacility_photo`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1254,6 +1217,18 @@ ALTER TABLE `tbl_facility`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
+-- AUTO_INCREMENT untuk tabel `tbl_facility_category`
+--
+ALTER TABLE `tbl_facility_category`
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_facility_photo`
+--
+ALTER TABLE `tbl_facility_photo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
 -- AUTO_INCREMENT untuk tabel `tbl_faq`
 --
 ALTER TABLE `tbl_faq`
@@ -1270,24 +1245,6 @@ ALTER TABLE `tbl_faq_photo`
 --
 ALTER TABLE `tbl_language`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
-
---
--- AUTO_INCREMENT untuk tabel `tbl_newfacility`
---
-ALTER TABLE `tbl_newfacility`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT untuk tabel `tbl_newfacility_category`
---
-ALTER TABLE `tbl_newfacility_category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-
---
--- AUTO_INCREMENT untuk tabel `tbl_newfacility_photo`
---
-ALTER TABLE `tbl_newfacility_photo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_news`
