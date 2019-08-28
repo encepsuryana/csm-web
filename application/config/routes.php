@@ -59,6 +59,7 @@ $route['service/detail/(:any)'] = 'service/view/$1';
 $route['facility/detail/(:any)'] = 'facility/view/$1';
 $route['category/detail/(:any)'] = 'category/view/$1';
 $route['portfolio/detail/(:any)'] = 'portfolio/view/$1';
+$route['newfacility/detail/(:any)'] = 'newfacility/view/$1';
 $route['admin/company-profile'] = 'admin/content-home/item-bg';
 
 /** HRD ROLE **/

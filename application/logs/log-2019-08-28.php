@@ -493,3 +493,265 @@ ERROR - 2019-08-28 13:01:51 --> Severity: Notice --> Undefined variable: og_desc
 ERROR - 2019-08-28 13:01:51 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
 ERROR - 2019-08-28 13:01:51 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
 ERROR - 2019-08-28 13:01:52 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:11:17 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:11:17 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:11:18 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:11:18 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:11:18 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:11:18 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:11:18 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:14:12 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:14:12 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:14:12 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:14:12 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:14:12 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:14:12 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:14:12 --> Severity: Notice --> Undefined variable: portfolio_category C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 14
+ERROR - 2019-08-28 13:14:12 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 14
+ERROR - 2019-08-28 13:14:12 --> Severity: Notice --> Undefined variable: portfolio C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 24
+ERROR - 2019-08-28 13:14:12 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 24
+ERROR - 2019-08-28 13:14:12 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:14:12 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:14:30 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:14:30 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:14:30 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:14:30 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:14:30 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:14:30 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:14:30 --> Severity: Notice --> Undefined index: banner_newfacility C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 1
+ERROR - 2019-08-28 13:14:30 --> Severity: Notice --> Undefined index: newfacility_heading C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 4
+ERROR - 2019-08-28 13:14:30 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:14:31 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:15:11 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:15:11 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:15:11 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:15:11 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:15:11 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:15:11 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:15:11 --> Severity: Notice --> Undefined index: banner_newfacility C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 1
+ERROR - 2019-08-28 13:15:11 --> Severity: Notice --> Undefined index: newfacility_heading C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 4
+ERROR - 2019-08-28 13:15:11 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:15:11 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:15:21 --> 404 Page Not Found!: Newfacility/detail
+ERROR - 2019-08-28 13:16:25 --> 404 Page Not Found!: Newfacility/detail
+ERROR - 2019-08-28 13:17:00 --> 404 Page Not Found!: Newfacility/detail
+ERROR - 2019-08-28 13:17:02 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:17:02 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:17:02 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:17:02 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:17:02 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:17:02 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:17:02 --> Severity: Notice --> Undefined index: banner_newfacility C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 1
+ERROR - 2019-08-28 13:17:02 --> Severity: Notice --> Undefined index: newfacility_heading C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 4
+ERROR - 2019-08-28 13:17:02 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:17:03 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:17:03 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:17:03 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:17:03 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:17:03 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:17:03 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:17:05 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:17:05 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:17:05 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:17:05 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:17:05 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:17:05 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:17:05 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:17:07 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:17:07 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:17:07 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:17:08 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:17:08 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:17:08 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:17:08 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:17:08 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:17:09 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:17:09 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:17:09 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:17:09 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:17:09 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:17:09 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:17:10 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:19:24 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:19:24 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:24 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:24 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:19:24 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:24 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:26 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:19:26 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:26 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:26 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:19:26 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:26 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:27 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:19:27 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:27 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:27 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:19:27 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:27 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:29 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:19:29 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:29 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:29 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:19:29 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:29 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:30 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:19:30 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:30 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:30 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:19:30 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:30 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:31 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:19:31 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:31 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:31 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:19:31 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:31 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:32 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:19:32 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:32 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:32 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:19:32 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:32 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:33 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:19:33 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:33 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:33 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:19:33 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:33 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:33 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:19:33 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:33 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:33 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:19:33 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:33 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:38 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:19:38 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:38 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:38 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:19:38 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:38 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:52 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:19:52 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:52 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:19:53 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:19:53 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:53 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:19:53 --> Severity: Notice --> Undefined index: banner_newfacility C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 1
+ERROR - 2019-08-28 13:19:53 --> Severity: Notice --> Undefined index: newfacility_heading C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 4
+ERROR - 2019-08-28 13:19:53 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:20:01 --> 404 Page Not Found!: Newfacility/detail
+ERROR - 2019-08-28 13:21:16 --> 404 Page Not Found!: Newfacility/index
+ERROR - 2019-08-28 13:21:18 --> 404 Page Not Found!: Newfacility/index
+ERROR - 2019-08-28 13:25:54 --> Severity: error --> Exception: Unable to locate the model you have specified: Model_newfacility C:\xampp\htdocs\csm-web\system\core\Loader.php 348
+ERROR - 2019-08-28 13:26:41 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:26:41 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:26:41 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:26:41 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:26:41 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:26:41 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:26:41 --> Severity: Notice --> Undefined index: banner_newfacility C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 1
+ERROR - 2019-08-28 13:26:41 --> Severity: Notice --> Undefined index: newfacility_heading C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 4
+ERROR - 2019-08-28 13:26:42 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:26:42 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:26:51 --> 404 Page Not Found!: Newfacility/detail
+ERROR - 2019-08-28 13:26:52 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:26:52 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:26:52 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:26:52 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:26:52 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:26:52 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:26:52 --> Severity: Notice --> Undefined index: banner_newfacility C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 1
+ERROR - 2019-08-28 13:26:52 --> Severity: Notice --> Undefined index: newfacility_heading C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 4
+ERROR - 2019-08-28 13:27:29 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:27:29 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:27:29 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:27:29 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:27:29 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:27:29 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:27:29 --> Severity: Notice --> Undefined index: banner_newfacility C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 1
+ERROR - 2019-08-28 13:27:29 --> Severity: Notice --> Undefined index: newfacility_heading C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 4
+ERROR - 2019-08-28 13:27:30 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:27:30 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:27:35 --> Query error: Unknown column 'newfacility_id' in 'where clause' - Invalid query: SELECT * from tbl_newfacility_photo WHERE newfacility_id='1.html'
+ERROR - 2019-08-28 13:28:27 --> Query error: Unknown column 'newfacility_id' in 'where clause' - Invalid query: SELECT * from tbl_newfacility_photo WHERE newfacility_id='1.html'
+ERROR - 2019-08-28 13:28:29 --> Query error: Unknown column 'newfacility_id' in 'where clause' - Invalid query: SELECT * from tbl_newfacility_photo WHERE newfacility_id='1.html'
+ERROR - 2019-08-28 13:29:40 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:29:40 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:29:40 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:29:40 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:29:40 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:29:40 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:29:41 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:29:41 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:29:41 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:29:41 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:29:41 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:29:41 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:29:44 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:29:49 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-28 13:29:50 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:31:49 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:31:49 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:31:49 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:31:49 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:31:49 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:31:49 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:31:49 --> Severity: Notice --> Undefined index: banner_newfacility C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 1
+ERROR - 2019-08-28 13:31:49 --> Severity: Notice --> Undefined index: newfacility_heading C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 4
+ERROR - 2019-08-28 13:31:55 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:31:55 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:31:55 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:31:55 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:31:55 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:31:55 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:31:55 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:31:56 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:31:56 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:31:56 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:31:56 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:31:59 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:32:00 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:32:01 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:32:01 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:32:01 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:32:01 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:32:01 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:32:01 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:32:01 --> Severity: Notice --> Undefined index: banner_newfacility C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 1
+ERROR - 2019-08-28 13:32:01 --> Severity: Notice --> Undefined index: newfacility_heading C:\xampp\htdocs\csm-web\application\views\view_newfacility.php 4
+ERROR - 2019-08-28 13:32:01 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:35:34 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:35:34 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:35:34 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:35:34 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:35:34 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:35:34 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:35:34 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:35:35 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:35:42 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:35:42 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:35:42 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:35:42 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:35:42 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:35:42 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:35:42 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:35:42 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:35:55 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:35:55 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:35:55 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:35:55 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:35:55 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:35:55 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:35:55 --> 404 Page Not Found!: Public/style.css
+ERROR - 2019-08-28 13:35:55 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:35:55 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:35:55 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:35:55 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-28 13:36:02 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 207
+ERROR - 2019-08-28 13:36:02 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:36:02 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 209
+ERROR - 2019-08-28 13:36:02 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 210
+ERROR - 2019-08-28 13:36:02 --> Severity: Warning --> Use of undefined constant BASE_URL - assumed 'BASE_URL' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 211
+ERROR - 2019-08-28 13:36:02 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 211
