@@ -360,7 +360,18 @@ img.existing-photo {
 	border: 0;
 	border-top-color: #34495e;
 	border-radius: 20px;
+}
 
+.btn-default {
+	border-color: #3498db !important;
+	color: #3498db !important;
+	background-color: #fff;
+}
+
+.btn-default:hover {
+	border-color: #3498db !important;
+	color: #fff !important;
+	background-color: #3498db !important;
 }
 
 .b-box {
@@ -382,6 +393,14 @@ img.existing-photo {
 }
 .navbar-nav>.user-menu>.dropdown-menu>.user-footer {
 	background-color:  #ffffffcc;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 
 .content .form-horizontal .btn-success {
@@ -502,11 +521,22 @@ label {
 	font-size: 13px;
 }
 
+.btn.btn-flat {
+	border-radius: 20px;
+}
+
 .btn-xs {
 	margin: 5px;
 	font-size: 13px;
 	padding-right: 13px;
 	border-radius: 20px;
+}
+
+tbody td .btn-success:before {
+	margin: 0 8px;
+	font-family: 'FontAwesome', sans-serif;
+	font-size: 13px;
+	content: '\f06e';
 }
 
 tbody td .btn-primary:before {

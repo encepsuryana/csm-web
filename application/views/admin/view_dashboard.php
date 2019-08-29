@@ -14,7 +14,7 @@ if(!$this->session->userdata('id')) {
 
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-green"><i class="fa fa-hand-o-right"></i></span>
+          <span class="info-box-icon bg-green"><i class="fa fa-newspaper-o"></i></span>
 
           <div class="info-box-content">
             <span class="info-box-text">Total News Categories</span>
@@ -25,7 +25,7 @@ if(!$this->session->userdata('id')) {
 
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-green"><i class="fa fa-hand-o-right"></i></span>
+          <span class="info-box-icon bg-green"><i class="fa fa-file-text-o"></i></span>
 
           <div class="info-box-content">
             <span class="info-box-text">Total News</span>
@@ -36,7 +36,7 @@ if(!$this->session->userdata('id')) {
 
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-green"><i class="fa fa-hand-o-right"></i></span>
+          <span class="info-box-icon bg-green"><i class="fa fa-users"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Total Team Members</span>
             <span class="info-box-number"><?php echo $total_team_member; ?></span>
@@ -46,7 +46,7 @@ if(!$this->session->userdata('id')) {
 
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-green"><i class="fa fa-hand-o-right"></i></span>
+          <span class="info-box-icon bg-green"><i class="fa fa-list-alt"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Total Portfolios</span>
             <span class="info-box-number"><?php echo $total_portfolio; ?></span>
@@ -56,7 +56,7 @@ if(!$this->session->userdata('id')) {
 
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-green"><i class="fa fa-hand-o-right"></i></span>
+          <span class="info-box-icon bg-green"><i class="fa fa-user-plus"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Total Testimonials</span>
             <span class="info-box-number"><?php echo $total_testimonial; ?></span>
@@ -66,7 +66,7 @@ if(!$this->session->userdata('id')) {
 
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-green"><i class="fa fa-hand-o-right"></i></span>
+          <span class="info-box-icon bg-green"><i class="fa fa fa-sliders"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Total Sliders</span>
             <span class="info-box-number"><?php echo $total_slider; ?></span>

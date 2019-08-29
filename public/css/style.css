@@ -2230,6 +2230,7 @@ div.wpcf7-response-output {
 }
 
 .blog-author li span {
+	text-transform: uppercase;
 	margin-right: 5px;
 }
 

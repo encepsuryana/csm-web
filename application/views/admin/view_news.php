@@ -27,7 +27,7 @@ if(!$this->session->userdata('id')) {
 								<tr>
 									<th>No</th>
 									<th>Photo</th>
-									<th>Banner</th>
+									<th>Post</th>
 									<th>Title</th>
 									<th>Category</th>
 									<th>Action</th>
@@ -44,8 +44,8 @@ if(!$this->session->userdata('id')) {
 										<td>
 											<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['news_title']; ?>" style="width:100px;">
 										</td>
-										<td>
-											<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['banner']; ?>" alt="<?php echo $row['news_title']; ?>" style="width:180px;">
+										<td style="text-transform: uppercase;">
+											<?php echo $row['user_update']; ?>
 										</td>
 										<td><?php echo $row['news_title']; ?></td>
 										<td>
@@ -53,9 +53,11 @@ if(!$this->session->userdata('id')) {
 										</td>
 										<td>										
 											<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
+												<a class="btn btn-success btn-xs" data-toggle="modal" href="<?php echo base_url(); ?>news/detail/<?php echo $row['news_id'].'.html'; ?>" target="_blank">Details</a>
 												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/news/edit/<?php echo $row['news_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 												<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/news/delete/<?php echo $row['news_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>  
 											<?php } elseif ($this->session->userdata('role') == 'hrd') { ?>
+												<a class="btn btn-success btn-xs" data-toggle="modal" href="<?php echo base_url(); ?>news/detail/<?php echo $row['news_id'].'.html'; ?>" target="_blank">Details</a>
 												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/news/edit/<?php echo $row['news_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 											<?php } else { ?>
 												<div class="forbiden">
