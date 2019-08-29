@@ -154,7 +154,7 @@
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home"><i class="fa fa-list-alt"></i> Main Content</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home"><i class="fa fa-industry"></i> Main Content</a></li>
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home/main-photo"><i class="fa fa fa-sliders"></i> Main Photo</a></li>
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Company Profile</a></li>
 								</ul>
@@ -187,7 +187,7 @@
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/facility/add')||($final_url_other == 'admin/facility')||($final_url_other == 'admin/facility/edit')||($final_url_other == 'admin/facility-category/add')||($final_url_other == 'admin/facility-category')||($final_url_other == 'admin/facility-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
-									<i class="fa fa-list-alt"></i>
+									<i class="fa fa-industry"></i>
 									<span>Facility</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
@@ -233,7 +233,7 @@
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/portfolio/add')||($final_url_other == 'admin/portfolio')||($final_url_other == 'admin/portfolio/edit')||($final_url_other == 'admin/portfolio-category/add')||($final_url_other == 'admin/portfolio-category')||($final_url_other == 'admin/portfolio-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
-									<i class="fa fa-list-alt"></i>
+									<i class="fa fa-industry"></i>
 									<span>Portfolio</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
@@ -365,7 +365,7 @@
 
 							<li class="treeview <?php if(($final_url_other == 'hrd/facility')||($final_url_other == 'hrd/facility-category')) {echo 'active';} ?>">
 								<a href="#">
-									<i class="fa fa-list-alt"></i>
+									<i class="fa fa-industry"></i>
 									<span>Facility</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
@@ -407,7 +407,7 @@
 
 							<li class="treeview <?php if(($final_url_other == 'hrd/portfolio')||($final_url_other == 'hrd/portfolio-category')) {echo 'active';} ?>">
 								<a href="#">
-									<i class="fa fa-list-alt"></i>
+									<i class="fa fa-industry"></i>
 									<span>Portfolio</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
@@ -517,7 +517,7 @@
 
 							<li class="treeview <?php if( ($final_url_other == 'staff/facility/add')||($final_url_other == 'staff/facility')||($final_url_other == 'staff/facility/edit')||($final_url_other == 'staff/facility-category/add')||($final_url_other == 'staff/portfolio-category')||($final_url_other == 'staff/facility-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
-									<i class="fa fa-list-alt"></i>
+									<i class="fa fa-industry"></i>
 									<span>Facility</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
@@ -558,7 +558,7 @@
 
 							<li class="treeview <?php if( ($final_url_other == 'staff/portfolio/add')||($final_url_other == 'staff/portfolio')||($final_url_other == 'staff/portfolio/edit')||($final_url_other == 'staff/portfolio-category/add')||($final_url_other == 'staff/portfolio-category')||($final_url_other == 'staff/portfolio-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
-									<i class="fa fa-list-alt"></i>
+									<i class="fa fa-industry"></i>
 									<span>Portfolio</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
