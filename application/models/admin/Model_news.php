@@ -14,6 +14,7 @@ class Model_news extends CI_Model
     function show() {
         $sql = "SELECT
                 t1.news_id,
+                t1.news_date,
                 t1.news_title,
                 t1.slug,
                 t1.news_content,

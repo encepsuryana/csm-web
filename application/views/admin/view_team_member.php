@@ -26,7 +26,7 @@ if(!$this->session->userdata('id')) {
 									<th>Photo</th>
 									<th>Name</th>
 									<th>Designation</th>
-									<th width="140">Action</th>
+									<th width="200">Action</th>
 								</tr>
 							</thead>
 							<tbody>

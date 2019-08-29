@@ -125,3 +125,16 @@ ERROR - 2019-08-29 15:47:39 --> 404 Page Not Found!: Public/admin
 ERROR - 2019-08-29 15:48:17 --> 404 Page Not Found!: Public/admin
 ERROR - 2019-08-29 15:48:49 --> 404 Page Not Found!: Public/admin
 ERROR - 2019-08-29 15:49:16 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 15:54:14 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 15:54:55 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 15:54:59 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 15:55:02 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 15:55:04 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 15:55:06 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 15:55:09 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 15:56:05 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 15:56:43 --> Severity: Notice --> Undefined index: news_date C:\xampp\htdocs\csm-web\application\views\admin\view_news.php 45
+ERROR - 2019-08-29 15:57:24 --> Severity: Notice --> Undefined index: news_date C:\xampp\htdocs\csm-web\application\views\admin\view_news.php 45
+ERROR - 2019-08-29 15:58:27 --> Severity: Notice --> Undefined index: news_date C:\xampp\htdocs\csm-web\application\views\admin\view_news.php 45
+ERROR - 2019-08-29 15:59:25 --> Severity: Notice --> Undefined index: news_banner C:\xampp\htdocs\csm-web\application\views\admin\view_news.php 45
+ERROR - 2019-08-29 15:59:59 --> Severity: Notice --> Undefined index: total_view C:\xampp\htdocs\csm-web\application\views\admin\view_news.php 45

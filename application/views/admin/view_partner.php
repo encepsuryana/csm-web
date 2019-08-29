@@ -21,9 +21,9 @@ if(!$this->session->userdata('id')) {
 						<table id="example1" class="table table-bordered table-striped">
 							<thead>
 								<tr>
-									<th width="30">SL</th>
+									<th width="10">SL</th>
 									<th>Photo</th>
-									<th width="100">Name</th>
+									<th width="150">Name</th>
 									<th width="80">Action</th>
 								</tr>
 							</thead>
@@ -35,7 +35,7 @@ if(!$this->session->userdata('id')) {
 									?>
 									<tr>
 										<td><?php echo $i; ?></td>
-										<td style="width:130px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:120px;"></td>
+										<td style="width:50px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:120px;"></td>
 										<td><?php echo $row['name']; ?></td>
 										<td>										
 											<a href="<?php echo base_url().$this->session->userdata('role'); ?>/partner/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>

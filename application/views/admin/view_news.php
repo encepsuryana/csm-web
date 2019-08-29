@@ -26,6 +26,7 @@ if(!$this->session->userdata('id')) {
 							<thead>
 								<tr>
 									<th>No</th>
+									<th>Date</th>
 									<th>Photo</th>
 									<th>Post</th>
 									<th>Title</th>
@@ -41,6 +42,7 @@ if(!$this->session->userdata('id')) {
 									?>
 									<tr>
 										<td><?php echo $i; ?></td>
+										<td><?php echo $row['news_date']; ?></td>
 										<td>
 											<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['news_title']; ?>" style="width:100px;">
 										</td>

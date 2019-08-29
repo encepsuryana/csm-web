@@ -23,10 +23,10 @@ if(!$this->session->userdata('id')) {
 							<thead>
 								<tr>
 									<th>SL</th>
+									<th>Photo</th>
 									<th>Name</th>
 									<th>Category</th>
-									<th>Photo</th>
-									<th width="140">Action</th>
+									<th width="200">Action</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -37,9 +37,9 @@ if(!$this->session->userdata('id')) {
 									?>
 									<tr>
 										<td style="width:100px;"><?php echo $i; ?></td>
+										<td style="width:150px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:150px;"></td>
 										<td><?php echo $row['name']; ?></td>
 										<td><?php echo $row['category_name']; ?></td>
-										<td style="width:250px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:150px;"></td>
 										<td>
 											<?php if ($this->session->userdata('role') == 'admin') { ?>
 												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>

@@ -25,11 +25,7 @@ if(!$this->session->userdata('id')) {
 									<th>SL</th>
 									<th>Photo</th>
 									<th>Heading</th>
-									<th>Button1 Text</th>
-									<th>Button1 URL</th>
-									<th>Button2 Text</th>
-									<th>Button2 URL</th>
-									<th width="140">Action</th>
+									<th width="200">Action</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -42,10 +38,6 @@ if(!$this->session->userdata('id')) {
 										<td><?php echo $i; ?></td>
 										<td style="width:150px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['heading']; ?>" style="width:140px;"></td>
 										<td><?php echo $row['heading']; ?></td>
-										<td><?php echo $row['button1_text']; ?></td>
-										<td><?php echo $row['button1_url']; ?></td>
-										<td><?php echo $row['button2_text']; ?></td>
-										<td><?php echo $row['button2_url']; ?></td>
 										<td>										
 											<a href="<?php echo base_url().$this->session->userdata('role'); ?>/slider/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 											<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/slider/delete/<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>  

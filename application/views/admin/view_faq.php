@@ -28,7 +28,7 @@ if(!$this->session->userdata('id')) {
 									<th width="50">SL</th>
 									<th>FAQ Title</th>
 									<th>Show on home?</th>
-									<th width="80">Action</th>
+									<th width="200">Action</th>
 								</tr>
 							</thead>
 							<tbody>

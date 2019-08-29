@@ -29,7 +29,7 @@ if(!$this->session->userdata('id')) {
                <th>Caption</th>
                <th>Description</th>
                <th>Show?</th>
-               <th>Action</th>
+               <th width="200">Action</th>
              </tr>
            </thead>
            <tbody>
