@@ -94,3 +94,11 @@ ERROR - 2019-08-29 14:23:19 --> 404 Page Not Found!: Public/admin
 ERROR - 2019-08-29 14:23:24 --> 404 Page Not Found!: Public/admin
 ERROR - 2019-08-29 14:23:26 --> 404 Page Not Found!: Public/admin
 ERROR - 2019-08-29 14:23:30 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 14:26:05 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-29 14:26:17 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-29 14:26:42 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-29 14:26:51 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-29 14:28:18 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-29 14:30:57 --> 404 Page Not Found!: Service/fonts
+ERROR - 2019-08-29 14:30:58 --> 404 Page Not Found!: Service/fonts
+ERROR - 2019-08-29 14:30:58 --> 404 Page Not Found!: Service/fonts
