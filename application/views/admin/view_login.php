@@ -27,20 +27,20 @@
 
 <body class="hold-transition login-page sidebar-mini">
 
-<div class="login-box">
-	<h4 class="login-box-msg">WILUJENG SUMPING</h4>
-  	<div class="login-box-body">
-  		<div class="login-logo">
-  			<b><img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo_admin']; ?>" alt="" style="max-width: 50%;"></b>
-  		</div>
-    
-	    <?php
-	    if($error != '') {
-			echo '<div class="error">'.$error.'</div>';
-	    }
-	    ?>
+	<div class="login-box">
+		<h4 class="login-box-msg">WILUJENG SUMPING</h4>
+		<div class="login-box-body">
+			<div class="login-logo">
+				<b><img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo_admin']; ?>" alt="" style="max-width: 50%;"></b>
+			</div>
+			
+			<?php
+			if($error != '') {
+				echo '<div class="error">'.$error.'</div>';
+			}
+			?>
 
-		<?php echo form_open(base_url().'admin/login');?>
+			<?php echo form_open(base_url().'admin/login');?>
 			<div class="form-group has-feedback">
 				<input class="form-control" placeholder="Email address" name="email" type="email" autocomplete="off" autofocus>
 			</div>
@@ -55,27 +55,27 @@
 					<input type="submit" class="btn btn-primary btn-block btn-flat login-button" name="form1" value="Login">
 				</div>
 			</div>
-		<?php echo form_close(); ?>
+			<?php echo form_close(); ?>
+		</div>
 	</div>
-</div>
 
 
-<script src="<?php echo base_url(); ?>public/admin/js/jquery-2.2.3.min.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/bootstrap.min.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/jquery.dataTables.min.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/dataTables.bootstrap.min.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/select2.full.min.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.date.extensions.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.extensions.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/moment.min.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/bootstrap-datepicker.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/icheck.min.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/fastclick.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/jquery.sparkline.min.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/jquery.slimscroll.min.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/app.min.js"></script>
-<script src="<?php echo base_url(); ?>public/admin/js/demo.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/jquery-2.2.3.min.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/jquery.dataTables.min.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/dataTables.bootstrap.min.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/select2.full.min.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.date.extensions.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.extensions.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/moment.min.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/bootstrap-datepicker.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/icheck.min.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/fastclick.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/jquery.sparkline.min.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/jquery.slimscroll.min.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/app.min.js"></script>
+	<script src="<?php echo base_url(); ?>public/admin/js/demo.js"></script>
 
 </body>
 </html>

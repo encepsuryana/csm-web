@@ -51,7 +51,11 @@ if(!$this->session->userdata('id')) {
 											<?php } elseif ($this->session->userdata('role') == 'hrd') {?>
 												<a class="btn btn-success btn-xs" data-toggle="modal" data-target="#myModal<?php echo $i; ?>">Details</a>
 											<?php } else { ?>
-												Akses tidak tersedia
+												<div class="forbiden">
+													<i class="fa fa-minus-circle" aria-hidden="true"></i>
+													<span>Akses Tidak tersedia</span>
+													<i class="fa fa-minus-circle" aria-hidden="true"></i>
+												</div>
 											<?php } ?>
 										</td>
 									</tr>
@@ -187,5 +191,9 @@ if(!$this->session->userdata('id')) {
 		</div>
 	</div>
 <?php } else { ?>
-	Akses tidak tersedia
+	<div class="forbiden">
+		<i class="fa fa-minus-circle" aria-hidden="true"></i>
+		<span>Akses Tidak tersedia</span>
+		<i class="fa fa-minus-circle" aria-hidden="true"></i>
+	</div>
 	<?php }?>

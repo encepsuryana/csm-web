@@ -46,7 +46,11 @@ if(!$this->session->userdata('id')) {
 												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 												<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home/delete/<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
 											<?php } else { ?>
-												Akses tidak tersedia
+												<div class="forbiden">
+													<i class="fa fa-minus-circle" aria-hidden="true"></i>
+													<span>Akses Tidak tersedia</span>
+													<i class="fa fa-minus-circle" aria-hidden="true"></i>
+												</div>
 											<?php } ?>
 										</td>
 									</tr>
@@ -80,5 +84,9 @@ if(!$this->session->userdata('id')) {
 		</div>
 	</div>
 <?php } else {?>
-	Akses tidak tersedia
+	<div class="forbiden">
+		<i class="fa fa-minus-circle" aria-hidden="true"></i>
+		<span>Akses Tidak tersedia</span>
+		<i class="fa fa-minus-circle" aria-hidden="true"></i>
+	</div>
 	<?php }?>

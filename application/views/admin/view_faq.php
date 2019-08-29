@@ -46,7 +46,11 @@ if(!$this->session->userdata('id')) {
 											<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd')){ ?>
 												<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/faq/delete/<?php echo $row['faq_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
 											<?php } else { ?>
-												Akses tidak tersedia
+												<div class="forbiden">
+													<i class="fa fa-minus-circle" aria-hidden="true"></i>
+													<span>Akses Tidak tersedia</span>
+													<i class="fa fa-minus-circle" aria-hidden="true"></i>
+												</div>
 											<?php }?>
 										</td>
 									</tr>
@@ -57,10 +61,7 @@ if(!$this->session->userdata('id')) {
 						</table>
 					</div>
 				</div>
-
-
 			</section>
-
 
 			<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
@@ -80,5 +81,9 @@ if(!$this->session->userdata('id')) {
 				</div>
 			</div>
 		<?php } else { ?>
-			Akses tidak tersedia
+			<div class="forbiden">
+				<i class="fa fa-minus-circle" aria-hidden="true"></i>
+				<span>Akses Tidak tersedia</span>
+				<i class="fa fa-minus-circle" aria-hidden="true"></i>
+			</div>
 			<?php }?>

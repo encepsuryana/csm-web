@@ -16,7 +16,6 @@ if(!$this->session->userdata('id')) {
 
 
 	<section class="content">
-
 		<div class="row">
 			<div class="col-md-12">
 
@@ -120,5 +119,9 @@ if(!$this->session->userdata('id')) {
 
 	</section>
 <?php } else { ?>
-	Akses tidak tersedia
+	<div class="forbiden">
+		<i class="fa fa-minus-circle" aria-hidden="true"></i>
+		<span>Akses Tidak tersedia</span>
+		<i class="fa fa-minus-circle" aria-hidden="true"></i>
+	</div>
 	<?php }?>

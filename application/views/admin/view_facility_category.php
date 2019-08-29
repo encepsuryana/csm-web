@@ -49,7 +49,11 @@ if(!$this->session->userdata('id')) {
                <?php } elseif ($this->session->userdata('role') == 'staff') { ?>
                 <a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
               <?php } else { ?>
-                akses tidak tersedia
+                <div class="forbiden">
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                  <span>Akses Tidak tersedia</span>
+                  <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                </div>
               <?php } ?>     
             </td>
           </tr>
@@ -84,5 +88,9 @@ if(!$this->session->userdata('id')) {
 </div>
 
 <?php } else { ?>
-  Akses tidak tersedia
+  <div class="forbiden">
+    <i class="fa fa-minus-circle" aria-hidden="true"></i>
+    <span>Akses Tidak tersedia</span>
+    <i class="fa fa-minus-circle" aria-hidden="true"></i>
+  </div>
   <?php }?>

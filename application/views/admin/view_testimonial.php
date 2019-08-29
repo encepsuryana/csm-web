@@ -51,7 +51,11 @@ if(!$this->session->userdata('id')) {
 											<?php } elseif ($this->session->userdata('role') == 'staff') {?>
 												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/testimonial/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 											<?php } else {?>
-											Akses tidak tersedia
+												<div class="forbiden">
+													<i class="fa fa-minus-circle" aria-hidden="true"></i>
+													<span>Akses Tidak tersedia</span>
+													<i class="fa fa-minus-circle" aria-hidden="true"></i>
+												</div>
 											<?php }?>  
 										</td>
 									</tr>
@@ -64,10 +68,7 @@ if(!$this->session->userdata('id')) {
 				</div>
 			</div>
 		</div>
-
-
 	</section>
-
 
 	<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
@@ -88,5 +89,13 @@ if(!$this->session->userdata('id')) {
 	</div>
 
 <?php } else { ?>
-	Akses tidak tersedia
+	<div class="forbiden">
+		<i class="fa fa-minus-circle" aria-hidden="true"></i>
+		<span><div class="forbiden">
+			<i class="fa fa-minus-circle" aria-hidden="true"></i>
+			<span>Akses Tidak tersedia</span>
+			<i class="fa fa-minus-circle" aria-hidden="true"></i>
+		</div></span>
+		<i class="fa fa-minus-circle" aria-hidden="true"></i>
+	</div>
 	<?php }?>

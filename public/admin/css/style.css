@@ -19,6 +19,26 @@ body,
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
+.forbiden {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+.forbiden span {
+	font-weight: 600;
+	color: #333;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 15px;
+}
+
+.forbiden i {
+	color: red;
+	font-size: 20px;
+}
+
+
 .style-select {
 	text-align: left;
 	margin: 0 25px; 
