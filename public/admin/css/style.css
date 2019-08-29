@@ -352,6 +352,7 @@ img.existing-photo {
 }
 .nav-tabs-custom > .tab-content {
 	border-radius: 20px;
+	padding: 0;
 }
 .nav-tabs-custom>.nav-tabs>li.active {
 	border-top-color: #333333;

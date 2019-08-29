@@ -138,3 +138,114 @@ ERROR - 2019-08-29 15:57:24 --> Severity: Notice --> Undefined index: news_date 
 ERROR - 2019-08-29 15:58:27 --> Severity: Notice --> Undefined index: news_date C:\xampp\htdocs\csm-web\application\views\admin\view_news.php 45
 ERROR - 2019-08-29 15:59:25 --> Severity: Notice --> Undefined index: news_banner C:\xampp\htdocs\csm-web\application\views\admin\view_news.php 45
 ERROR - 2019-08-29 15:59:59 --> Severity: Notice --> Undefined index: total_view C:\xampp\htdocs\csm-web\application\views\admin\view_news.php 45
+ERROR - 2019-08-29 16:48:10 --> Severity: Notice --> Undefined variable: testimonial C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 168
+ERROR - 2019-08-29 16:48:10 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 168
+ERROR - 2019-08-29 16:50:13 --> Severity: Notice --> Undefined variable: profile C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 168
+ERROR - 2019-08-29 16:50:13 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 168
+ERROR - 2019-08-29 16:52:24 --> Severity: error --> Exception: Call to undefined method Model_profile::show() C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 20
+ERROR - 2019-08-29 16:53:09 --> Severity: Notice --> Undefined variable: profile C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 168
+ERROR - 2019-08-29 16:53:09 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 168
+ERROR - 2019-08-29 16:53:28 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 173
+ERROR - 2019-08-29 16:53:28 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 174
+ERROR - 2019-08-29 16:53:28 --> Severity: Notice --> Undefined index: designation C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 175
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: company C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 176
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: comment C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 177
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 173
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 174
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: designation C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 175
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: company C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 176
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: comment C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 177
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 173
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 174
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: designation C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 175
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: company C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 176
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: comment C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 177
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 173
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 174
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: designation C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 175
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: company C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 176
+ERROR - 2019-08-29 16:53:29 --> Severity: Notice --> Undefined index: comment C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 177
+ERROR - 2019-08-29 16:55:25 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 174
+ERROR - 2019-08-29 16:55:25 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 174
+ERROR - 2019-08-29 16:55:25 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 174
+ERROR - 2019-08-29 16:55:25 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 174
+ERROR - 2019-08-29 16:59:06 --> 404 Page Not Found!: admin/Profile/edit
+ERROR - 2019-08-29 17:28:47 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 157
+ERROR - 2019-08-29 17:28:47 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 158
+ERROR - 2019-08-29 17:30:52 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 156
+ERROR - 2019-08-29 17:30:52 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 157
+ERROR - 2019-08-29 17:39:02 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 17:39:02 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 17:39:32 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 17:39:32 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 17:41:36 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 17:41:36 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 17:43:22 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 17:43:22 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 17:48:17 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 17:48:17 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 17:53:37 --> Severity: Notice --> Undefined variable: path C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 17:53:56 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 17:54:25 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 17:54:25 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 17:59:25 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 17:59:25 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 155
+ERROR - 2019-08-29 18:01:02 --> Severity: Notice --> Undefined index: photos C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 18:01:02 --> Severity: Notice --> Undefined index: photos C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 18:02:36 --> 404 Page Not Found!: admin/Profile/add
+ERROR - 2019-08-29 18:04:44 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 53
+ERROR - 2019-08-29 18:04:44 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 54
+ERROR - 2019-08-29 18:09:38 --> Severity: Notice --> Undefined index: profile C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 18:09:38 --> Severity: Notice --> Undefined index: profile C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 18:09:58 --> Severity: Notice --> Undefined index: user C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 18:09:58 --> Severity: Notice --> Undefined index: user C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 18:10:43 --> Severity: Notice --> Undefined index: avatar C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 18:10:43 --> Severity: Notice --> Undefined index: avatar C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 18:11:23 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 18:11:23 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 18:27:22 --> 404 Page Not Found!: admin/Profile/edit
+ERROR - 2019-08-29 18:27:33 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 18:27:33 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 18:32:31 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:34:11 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:34:13 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:34:16 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:34:25 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:34:31 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:34:33 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:34:37 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:34:38 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 18:34:38 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 18:34:40 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:35:27 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:35:27 --> Severity: Notice --> Undefined index: profile C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 18:35:27 --> Severity: Notice --> Undefined index: profile C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 18:35:29 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:37:33 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:37:34 --> Severity: Notice --> Undefined index: photo_avatar C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 153
+ERROR - 2019-08-29 18:37:34 --> Severity: Notice --> Undefined index: photo_avatar C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 154
+ERROR - 2019-08-29 18:37:35 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:38:49 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:38:52 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:39:10 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:39:56 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:40:02 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:40:15 --> 404 Page Not Found!: admin/Profile/edit
+ERROR - 2019-08-29 18:40:18 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:46:04 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:46:07 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:46:10 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:46:12 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:46:36 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:46:40 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:46:42 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:54:14 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:54:18 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:55:25 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 18:55:26 --> 404 Page Not Found!: admin/Profile/edit
+ERROR - 2019-08-29 18:58:25 --> Severity: error --> Exception: Call to undefined method Model_profile::profile_check() C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 226
+ERROR - 2019-08-29 18:59:08 --> Query error: Table 'csm_web.tbl_profile' doesn't exist - Invalid query: SELECT * FROM tbl_profile WHERE id='1'
+ERROR - 2019-08-29 18:59:29 --> Severity: error --> Exception: Call to undefined method Model_profile::getData() C:\xampp\htdocs\csm-web\application\controllers\admin\Profile.php 315
+ERROR - 2019-08-29 18:59:55 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 19:00:47 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-29 19:01:12 --> 404 Page Not Found!: Public/admin
