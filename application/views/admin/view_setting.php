@@ -117,28 +117,25 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_close(); ?>
 						</div>
 
-
 						<div class="tab-pane" id="tab_favicon">
-							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>							
-							<div class="box box-info  b-box">
-								<div class="box-body">
-									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">Existing Photo</label>
-										<div class="col-sm-6" style="padding-top:6px;">
-											<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>" class="existing-photo" style="height:40px;">
-										</div>
+							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Existing Photo</label>
+									<div class="col-sm-6" style="padding-top:6px;">
+										<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>" class="existing-photo" style="height:40px;">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">New Photo</label>
-										<div class="col-sm-6" style="padding-top:6px;">
-											<input type="file" name="photo_favicon">
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">New Photo</label>
+									<div class="col-sm-6" style="padding-top:6px;">
+										<input type="file" name="photo_favicon">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-2 control-label"></label>
-										<div class="col-sm-6">
-											<button type="submit" class="btn btn-success pull-left" name="form_favicon">Update Favicon</button>
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label"></label>
+									<div class="col-sm-6">
+										<button type="submit" class="btn btn-success pull-left" name="form_favicon">Update Favicon</button>
 									</div>
 								</div>
 							</div>
@@ -148,26 +145,24 @@ if(!$this->session->userdata('id')) {
 
 
 						<div class="tab-pane" id="tab_login_bg">
-							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>							
-							<div class="box box-info  b-box">
-								<div class="box-body">
-									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">Existing Photo</label>
-										<div class="col-sm-6" style="padding-top:6px;">
-											<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['login_bg']; ?>" class="existing-photo" style="width:500px;">
-										</div>
+							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>		
+							<div class="box-body">
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Existing Photo</label>
+									<div class="col-sm-6" style="padding-top:6px;">
+										<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['login_bg']; ?>" class="existing-photo" style="width:500px;">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">New Photo</label>
-										<div class="col-sm-6" style="padding-top:6px;">
-											<input type="file" name="login_bg">
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">New Photo</label>
+									<div class="col-sm-6" style="padding-top:6px;">
+										<input type="file" name="login_bg">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-2 control-label"></label>
-										<div class="col-sm-6">
-											<button type="submit" class="btn btn-success pull-left" name="form_login_bg">Update Photo</button>
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label"></label>
+									<div class="col-sm-6">
+										<button type="submit" class="btn btn-success pull-left" name="form_login_bg">Update Photo</button>
 									</div>
 								</div>
 							</div>
@@ -176,55 +171,53 @@ if(!$this->session->userdata('id')) {
 
 						<div class="tab-pane" id="tab_general">
 							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="box box-info  b-box">
-								<div class="box-body">
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label">Footer - Copyright </label>
-										<div class="col-sm-6">
-											<input class="form-control" type="text" name="footer_copyright" value="<?php echo $setting['footer_copyright']; ?>">
-										</div>
-									</div>								
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label">Footer - Address </label>
-										<div class="col-sm-6">
-											<textarea class="form-control" name="footer_address" style="height:70px;"><?php echo $setting['footer_address']; ?></textarea>
-										</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Footer - Copyright </label>
+									<div class="col-sm-6">
+										<input class="form-control" type="text" name="footer_copyright" value="<?php echo $setting['footer_copyright']; ?>">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label">Footer - Phone </label>
-										<div class="col-sm-6">
-											<textarea class="form-control" name="footer_phone" style="height:70px;"><?php echo $setting['footer_phone']; ?></textarea>
-										</div>
+								</div>								
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Footer - Address </label>
+									<div class="col-sm-6">
+										<textarea class="form-control" name="footer_address" style="height:70px;"><?php echo $setting['footer_address']; ?></textarea>
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label">Top Bar - Working Hour </label>
-										<div class="col-sm-6">
-											<textarea class="form-control" name="footer_working_hour" style="height:70px;"><?php echo $setting['footer_working_hour']; ?></textarea>
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Footer - Phone </label>
+									<div class="col-sm-6">
+										<textarea class="form-control" name="footer_phone" style="height:70px;"><?php echo $setting['footer_phone']; ?></textarea>
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label">Top Bar - Email </label>
-										<div class="col-sm-6">
-											<input type="text" class="form-control" name="top_bar_email" value="<?php echo $setting['top_bar_email']; ?>">
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Top Bar - Working Hour </label>
+									<div class="col-sm-6">
+										<textarea class="form-control" name="footer_working_hour" style="height:70px;"><?php echo $setting['footer_working_hour']; ?></textarea>
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label">Top Bar - Phone Number </label>
-										<div class="col-sm-6">
-											<input type="text" class="form-control" name="top_bar_phone" value="<?php echo $setting['top_bar_phone']; ?>">
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Top Bar - Email </label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" name="top_bar_email" value="<?php echo $setting['top_bar_email']; ?>">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label">Contact Map iFrame </label>
-										<div class="col-sm-6">
-											<textarea class="form-control" name="contact_map_iframe" style="height:200px;"><?php echo $setting['contact_map_iframe']; ?></textarea>
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Top Bar - Phone Number </label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" name="top_bar_phone" value="<?php echo $setting['top_bar_phone']; ?>">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label"></label>
-										<div class="col-sm-6">
-											<button type="submit" class="btn btn-success pull-left" name="form_general">Update</button>
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Contact Map iFrame </label>
+									<div class="col-sm-6">
+										<textarea class="form-control" name="contact_map_iframe" style="height:200px;"><?php echo $setting['contact_map_iframe']; ?></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label"></label>
+									<div class="col-sm-6">
+										<button type="submit" class="btn btn-success pull-left" name="form_general">Update</button>
 									</div>
 								</div>
 							</div>
@@ -357,26 +350,24 @@ if(!$this->session->userdata('id')) {
 
 						<div class="tab-pane" id="tab_email">
 							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="box box-info  b-box">
-								<div class="box-body">
-									<div class="form-group">
-										<label for="" class="col-sm-4 control-label">Email Address (Contact Form) <span>*</span></label>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" name="receive_email" value="<?php echo $setting['receive_email']; ?>">
-										</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Email Address (Contact Form) <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="receive_email" value="<?php echo $setting['receive_email']; ?>">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-4 control-label">Reset Password Email Subject <span>*</span></label>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" name="reset_password_email_subject" value="<?php echo $setting['reset_password_email_subject']; ?>">
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Reset Password Email Subject <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="reset_password_email_subject" value="<?php echo $setting['reset_password_email_subject']; ?>">
 									</div>
+								</div>
 
-									<div class="form-group">
-										<label for="" class="col-sm-4 control-label"></label>
-										<div class="col-sm-6">
-											<button type="submit" class="btn btn-success pull-left" name="form_email">Update</button>
-										</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label"></label>
+									<div class="col-sm-6">
+										<button type="submit" class="btn btn-success pull-left" name="form_email">Update</button>
 									</div>
 								</div>
 							</div>
@@ -385,31 +376,29 @@ if(!$this->session->userdata('id')) {
 
 						<div class="tab-pane" id="tab_sidebar_footer">
 							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="box box-info  b-box">
-								<div class="box-body">
-									<div class="form-group">
-										<label for="" class="col-sm-4 control-label">How many recent posts? <span>*</span></label>
-										<div class="col-sm-2">
-											<input type="text" class="form-control" name="total_recent_post" value="<?php echo $setting['total_recent_post']; ?>">
-										</div>
-									</div>		
-									<div class="form-group">
-										<label for="" class="col-sm-4 control-label">How many popular posts? <span>*</span></label>
-										<div class="col-sm-2">
-											<input type="text" class="form-control" name="total_popular_post" value="<?php echo $setting['total_popular_post']; ?>">
-										</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">How many recent posts? <span>*</span></label>
+									<div class="col-sm-2">
+										<input type="text" class="form-control" name="total_recent_post" value="<?php echo $setting['total_recent_post']; ?>">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-4 control-label">How many Product posts? <span>*</span></label>
-										<div class="col-sm-2">
-											<input type="text" class="form-control" name="total_product_post" value="<?php echo $setting['total_product_post']; ?>">
-										</div>
+								</div>		
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">How many popular posts? <span>*</span></label>
+									<div class="col-sm-2">
+										<input type="text" class="form-control" name="total_popular_post" value="<?php echo $setting['total_popular_post']; ?>">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-4 control-label"></label>
-										<div class="col-sm-5">
-											<button type="submit" class="btn btn-success pull-left" name="form_sidebar_footer">Update</button>
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">How many Product posts? <span>*</span></label>
+									<div class="col-sm-2">
+										<input type="text" class="form-control" name="total_product_post" value="<?php echo $setting['total_product_post']; ?>">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label"></label>
+									<div class="col-sm-5">
+										<button type="submit" class="btn btn-success pull-left" name="form_sidebar_footer">Update</button>
 									</div>
 								</div>
 							</div>
@@ -776,25 +765,23 @@ if(!$this->session->userdata('id')) {
 						<div class="tab-pane" id="tab_color">
 
 							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="box box-info  b-box">
-								<div class="box-body">
-									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">Theme Color 1 </label>
-										<div class="col-sm-2">
-											<input type="text" name="theme_color_1" class="form-control jscolor" value="<?php echo $setting['theme_color_1']; ?>">
-										</div>
+							<div class="box-body">
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Theme Color 1 </label>
+									<div class="col-sm-2">
+										<input type="text" name="theme_color_1" class="form-control jscolor" value="<?php echo $setting['theme_color_1']; ?>">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">Theme Color 2 </label>
-										<div class="col-sm-2">
-											<input type="text" name="theme_color_2" class="form-control jscolor" value="<?php echo $setting['theme_color_2']; ?>">
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Theme Color 2 </label>
+									<div class="col-sm-2">
+										<input type="text" name="theme_color_2" class="form-control jscolor" value="<?php echo $setting['theme_color_2']; ?>">
 									</div>
-									<div class="form-group">
-										<label for="" class="col-sm-2 control-label"></label>
-										<div class="col-sm-6">
-											<button type="submit" class="btn btn-success pull-left" name="form_color">Update</button>
-										</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label"></label>
+									<div class="col-sm-6">
+										<button type="submit" class="btn btn-success pull-left" name="form_color">Update</button>
 									</div>
 								</div>
 							</div>

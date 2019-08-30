@@ -32,7 +32,7 @@ if(!$this->session->userdata('id')) {
 
 				<?php echo form_open(base_url().$this->session->userdata('role').'/comment',array('class' => 'form-horizontal')); ?>
 
-				<div class="box box-info  b-box">
+				<div class="box box-info b-box">
 					<div class="box-body">
 						
 						<p style="padding-bottom: 20px;">Go to the facebook developer section (<a href="https://developers.facebook.com/docs/plugins/comments/">https://developers.facebook.com/docs/plugins/comments/</a>) to get your comment codes.</p>
