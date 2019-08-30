@@ -414,7 +414,7 @@ if(!$this->session->userdata('id')) {
                         <?php echo form_close(); ?>
                     </div>
 
-                    <div class="tab-pane" id="tab_7">
+                    <div class="tab-pane" id="tab_8">
                         <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Portfolio Heading </label>
@@ -449,7 +449,8 @@ if(!$this->session->userdata('id')) {
                         <?php echo form_close(); ?>
                     </div>
 
-                    <div class="tab-pane" id="tab_8">
+                    
+                    <div class="tab-pane" id="tab_9">
                         <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Testimonial Heading </label>
@@ -485,7 +486,7 @@ if(!$this->session->userdata('id')) {
                     </div>
 
 
-                    <div class="tab-pane" id="tab_9">
+                    <div class="tab-pane" id="tab_10">
                         <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">News Heading </label>
@@ -521,7 +522,7 @@ if(!$this->session->userdata('id')) {
                     </div>
 
 
-                    <div class="tab-pane" id="tab_10">
+                    <div class="tab-pane" id="tab_11">
                         <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Contact Heading </label>
@@ -557,7 +558,7 @@ if(!$this->session->userdata('id')) {
                     </div>
 
 
-                    <div class="tab-pane" id="tab_11">
+                    <div class="tab-pane" id="tab_12">
                         <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Search Heading </label>
@@ -592,7 +593,7 @@ if(!$this->session->userdata('id')) {
                         <?php echo form_close(); ?>
                     </div>
 
-                    <div class="tab-pane" id="tab_12">
+                    <div class="tab-pane" id="tab_13">
                         <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Term & Condition Heading </label>
@@ -634,7 +635,7 @@ if(!$this->session->userdata('id')) {
                     </div>
 
 
-                    <div class="tab-pane" id="tab_13">
+                    <div class="tab-pane" id="tab_14">
                         <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Privacy Policy Heading </label>
@@ -674,7 +675,7 @@ if(!$this->session->userdata('id')) {
                         </div>                              
                         <?php echo form_close(); ?>
                     </div>
-                    <div class="tab-pane" id="tab_14">
+                    <div class="tab-pane" id="tab_15">
                         <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Meta Title </label>
