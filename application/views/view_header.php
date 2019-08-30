@@ -202,267 +202,283 @@
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/style.css'>
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/responsive.css'>
 
-		<style>
-			/* Theme Color 1 */
-			.tooltip.bottom .tooltip-inner,
-			.lightbox-item:hover .lightbox-icon,
-			.process-row::before,
-			.csm-blog-home,
-			.footer-copyrignt,
-			.mean-container .mean-bar,
-			.faq-gallery .panel-group .panel-heading a:after,
-			.services-text,
-			.team-text,
-			.faq-gallery .panel-default .panel-heading,
-			.caption-text,
-			.footer-main,
-			.mission-icon,
-			.testimonial-area.main-testimonial .testimonial-detail,
-			.main-testimonial .testimonial-carousel .owl-dots .owl-dot {
-				background: #<?php echo $setting['theme_color_1']; ?>!important;
-			}
-			.blog-text h3 a,
-			.box h3,
-			.blog-author li a:hover,
-			.sidebar-item li a:hover,
-			.all-news a,
-			.all-product a,
-			ul.timeline li a,
-			.nav li a,
-			.process-step p,
-			.contact-main-home h4,
-			.caption-product-area h3,
-			.brand-area h3,
-			.banner-text h1,
-			.counter-item a,
-			.content-home h3,
-			.slider-animated li:last-child a,
-			.slide-carousel.owl-carousel .owl-nav .owl-prev:hover, 
-			.slide-carousel.owl-carousel .owl-nav .owl-next:hover,
-			.main-menu .menu-item-has-children:before,
-			ul.nav-menu li a,
-			.header-contact,
-			.team-carousel.owl-carousel .owl-nav .owl-prev, 
-			.team-carousel.owl-carousel .owl-nav .owl-next,
-			.blog-carousel.owl-carousel .owl-nav .owl-prev, 
-			.blog-carousel.owl-carousel .owl-nav .owl-next,
-			.brand-carousel.owl-carousel .owl-nav .owl-prev, 
-			.brand-carousel.owl-carousel .owl-nav .owl-next,
-			.brand-carousel.owl-carousel .owl-nav .owl-prev:hover, 
-			.brand-carousel.owl-carousel .owl-nav .owl-next:hover {
-				color: #<?php echo $setting['theme_color_1']; ?>!important;
-			}
-			.team-carousel.owl-carousel .owl-nav .owl-prev, 
-			.team-carousel.owl-carousel .owl-nav .owl-next,
-			.blog-carousel.owl-carousel .owl-nav .owl-prev, 
-			.blog-carousel.owl-carousel .owl-nav .owl-next {
-				border-color: #<?php echo $setting['theme_color_1']; ?>!important;	
-			}
-			ul.nav-menu li ul {
-				border-top-color: #<?php echo $setting['theme_color_1']; ?>!important;
-			}
-			.btn-circle.act::after {
-				border-bottom-color: #<?php echo $setting['theme_color_1']; ?>!important;
-			}
-			
-			.mean-container .mean-nav ul li a:hover,
-			.counter-item a:hover,
-			ul.nav-menu li a:hover{
-				background: #<?php echo $setting['theme_color_1']; ?>!important;
-				color: #fff !important
-			}
+	<style>
+		/* Theme Color 1 */
+		.tooltip.bottom .tooltip-inner,
+		.lightbox-item:hover .lightbox-icon,
+		.process-row::before,
+		.csm-blog-home,
+		.footer-copyrignt,
+		.mean-container .mean-bar,
+		.faq-gallery .panel-group .panel-heading a:after,
+		.services-text,
+		.team-text,
+		.faq-gallery .panel-default .panel-heading,
+		.caption-text,
+		.footer-main,
+		.mission-icon,
+		.testimonial-area.main-testimonial .testimonial-detail,
+		.main-testimonial .testimonial-carousel .owl-dots .owl-dot {
+			background: #<?php echo $setting['theme_color_1']; ?>!important;
+		}
+		.blog-text h3 a,
+		.box h3,
+		.blog-author li a:hover,
+		.sidebar-item li a:hover,
+		.all-news a,
+		.all-product a,
+		ul.timeline li a,
+		.nav li a,
+		.process-step p,
+		.contact-main-home h4,
+		.caption-product-area h3,
+		.brand-area h3,
+		.banner-text h1,
+		.counter-item a,
+		.content-home h3,
+		.slider-animated li:last-child a,
+		.slide-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.slide-carousel.owl-carousel .owl-nav .owl-next:hover,
+		.main-menu .dropdown:before,
+		ul.nav-menu li a,
+		.header-contact,
+		.team-carousel.owl-carousel .owl-nav .owl-prev, 
+		.team-carousel.owl-carousel .owl-nav .owl-next,
+		.blog-carousel.owl-carousel .owl-nav .owl-prev, 
+		.blog-carousel.owl-carousel .owl-nav .owl-next,
+		.brand-carousel.owl-carousel .owl-nav .owl-prev, 
+		.brand-carousel.owl-carousel .owl-nav .owl-next,
+		.brand-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.brand-carousel.owl-carousel .owl-nav .owl-next:hover {
+			color: #<?php echo $setting['theme_color_1']; ?>!important;
+		}
+		.team-carousel.owl-carousel .owl-nav .owl-prev, 
+		.team-carousel.owl-carousel .owl-nav .owl-next,
+		.blog-carousel.owl-carousel .owl-nav .owl-prev, 
+		.blog-carousel.owl-carousel .owl-nav .owl-next {
+			border-color: #<?php echo $setting['theme_color_1']; ?>!important;	
+		}
 
-			ul.timeline li::before {
-				border-color: #<?php echo $setting['theme_color_1']; ?>!important;
-			}
+		.btn-circle.act::after {
+			border-bottom-color: #<?php echo $setting['theme_color_1']; ?>!important;
+		}
 
-			/* Theme Color 2 */
-			.content-home,
-			.bg-choose {
-				background-color: #<?php echo $setting['theme_color_2']; ?>!important;	
-			}
-			
-			.recent-text,
-			.map-main-home,
-			.blog-text,
-			.mean-container .mean-nav ul li a,
-			ul.nav-menu li ul li a:before,
-			.slider-animated li:last-child a,
-			.header-area,
-			.client-name,
-			.testimonial-carousel .owl-dots .owl-dot.active,
-			.team-social li a:hover,
-			.caption-bg,
-			.lightbox-bg,
-			.hvr-bounce-to-right::before,
-			.footer-contact-area,
-			.sidebar-item h3:before,
-			.single-blog-author li.gro,
-			.scroll-top {
-				background: #<?php echo $setting['theme_color_2']; ?>!important;
-			}
-			.services-link a {
-				background-color: #<?php echo $setting['theme_color_2']; ?>!important;	
-			}
-			.counter-item h2.counter,
-			.footer-contact-item li p,
-			.footer-contact-item li h4,
-			.home-maps-btn h3,
-			.header-social a:hover,
-			.choose-text h3,
-			.services-text h3 a,
-			.lightbox-icon a:hover,
-			.faq-gallery h4.panel-title a:hover,
-			.caption-icon a:hover,
-			.blog-carousel.owl-carousel .owl-nav .owl-prev:hover, 
-			.blog-carousel.owl-carousel .owl-nav .owl-next:hover,
-			.mission-icon,
-			.carousel-inner .lightbox-inner a {
-				color: #<?php echo $setting['theme_color_2']; ?>!important;
-			}
+		.mean-container .mean-nav ul li a:hover,
+		.counter-item a:hover,
+		ul.nav-menu li a:hover{
+			background: #<?php echo $setting['theme_color_1']; ?>!important;
+			color: #fff !important
+		}
 
-			ul.nav-menu li a,
-			.slider-animated li:last-child a,
-			.choose-icon img,
-			.testimonial-carousel .owl-dots .owl-dot.active,
-			.team-social li a:hover,
-			.blog-carousel.owl-carousel .owl-nav .owl-prev:hover, 
-			.blog-carousel.owl-carousel .owl-nav .owl-next:hover,
-			.carousel-indicators li{
-				border-color: #<?php echo $setting['theme_color_2']; ?>!important;
-			}
-			
-			.title-news a:hover{
-				color: #<?php echo $setting['theme_color_1']; ?>!important;
-			}
+		ul.timeline li::before {
+			border-color: #<?php echo $setting['theme_color_1']; ?>!important;
+		}
 
-			.services-text,
-			.blog-text {
-				border-top-color: #<?php echo $setting['theme_color_2']; ?>!important;
-			}
-			.single-service-photo img {
-				border-bottom-color: #<?php echo $setting['theme_color_2']; ?>!important;
-			}
+		/* Theme Color 2 */
+		.content-home,
+		.bg-choose {
+			background-color: #<?php echo $setting['theme_color_2']; ?>!important;	
+		}
 
-			.contact-button-home a,
-			.contact-area button {
-				background: #<?php echo $setting['theme_color_2']; ?>!important;
-				color: #<?php echo $setting['theme_color_1']; ?>!important;
-				border-color: #<?php echo $setting['theme_color_1']; ?>!important;;
-			}
+		.recent-text,
+		.map-main-home,
+		.blog-text,
+		.mean-container .mean-nav ul li a,
+		ul.nav-menu li ul li a:before,
+		.slider-animated li:last-child a,
+		.header-area,
+		.client-name,
+		.testimonial-carousel .owl-dots .owl-dot.active,
+		.team-social li a:hover,
+		.caption-bg,
+		.lightbox-bg,
+		.hvr-bounce-to-right::before,
+		.footer-contact-area,
+		.sidebar-item h3:before,
+		.single-blog-author li.gro,
+		.scroll-top {
+			background: #<?php echo $setting['theme_color_2']; ?>!important;
+		}
+		.services-link a {
+			background-color: #<?php echo $setting['theme_color_2']; ?>!important;	
+		}
+		.counter-item h2.counter,
+		.footer-contact-item li p,
+		.footer-contact-item li h4,
+		.home-maps-btn h3,
+		.header-social a:hover,
+		.choose-text h3,
+		.services-text h3 a,
+		.lightbox-icon a:hover,
+		.faq-gallery h4.panel-title a:hover,
+		.caption-icon a:hover,
+		.blog-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.blog-carousel.owl-carousel .owl-nav .owl-next:hover,
+		.mission-icon,
+		.carousel-inner .lightbox-inner a {
+			color: #<?php echo $setting['theme_color_2']; ?>!important;
+		}
 
-			.btn-default:hover {
-				background: #<?php echo $setting['theme_color_2']; ?>!important;
-				color: #<?php echo $setting['theme_color_1']; ?>!important;
-			}
-			
-			.btn-info,
-			.btn-info:hover,
-			.btn-info:active,
-			.contact-area button:hover,
-			.contact-button-home a:hover {
-				background: #<?php echo $setting['theme_color_1']; ?>!important;
-				color: #<?php echo $setting['theme_color_2']; ?>!important;
-				border-color: #<?php echo $setting['theme_color_1']; ?>!important;;
-			}
+		ul.nav-menu li a,
+		.slider-animated li:last-child a,
+		.choose-icon img,
+		.testimonial-carousel .owl-dots .owl-dot.active,
+		.team-social li a:hover,
+		.blog-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.blog-carousel.owl-carousel .owl-nav .owl-next:hover,
+		.carousel-indicators li{
+			border-color: #<?php echo $setting['theme_color_2']; ?>!important;
+		}
 
-			
-			.slider-animated li a {
-				border-color: #<?php echo $setting['theme_color_2']; ?>!important;
-				color: #<?php echo $setting['theme_color_2']; ?>!important;
-			}
+		.title-news a:hover{
+			color: #<?php echo $setting['theme_color_1']; ?>!important;
+		}
 
-			.recent-menu ul li,
-			.services-link a {
-				background: #<?php echo $setting['theme_color_2']; ?>!important;
-				border-color: #<?php echo $setting['theme_color_1']; ?>!important;
-				color: #<?php echo $setting['theme_color_1']; ?>!important;
-			}
+		.services-text,
+		.blog-text {
+			border-top-color: #<?php echo $setting['theme_color_2']; ?>!important;
+		}
+		.single-service-photo img {
+			border-bottom-color: #<?php echo $setting['theme_color_2']; ?>!important;
+		}
 
-			.services-link a:hover,
-			.nav-sidebar .active a:hover,
-			.nav li a:hover,
-			.nav-sidebar .active a,
-			.slider-animated li a:hover,
-			.slider-animated li:last-child a:hover,
-			.recent-menu ul li:hover {
-				background: #<?php echo $setting['theme_color_1']; ?>!important;
-				border-color: #<?php echo $setting['theme_color_1']; ?>!important;
-				color: #<?php echo $setting['theme_color_2']; ?>!important;
-			}
-		</style>
-	</head>
+		.contact-button-home a,
+		.contact-area button {
+			background: #<?php echo $setting['theme_color_2']; ?>!important;
+			color: #<?php echo $setting['theme_color_1']; ?>!important;
+			border-color: #<?php echo $setting['theme_color_1']; ?>!important;;
+		}
 
-	<body>
-		<?php echo $comment['code_body']; ?>
-		<!-- Loading GIF -->
-		<div id="preloader">
-			<div id="status" style="background-image: url('<?php echo base_url(); ?>public/img/preloader.gif')"></div>
-		</div>
+		.btn-default:hover {
+			background: #<?php echo $setting['theme_color_2']; ?>!important;
+			color: #<?php echo $setting['theme_color_1']; ?>!important;
+		}
 
-		<div class="header-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-4">
+		.btn-info,
+		.btn-info:hover,
+		.btn-info:active,
+		.contact-area button:hover,
+		.contact-button-home a:hover {
+			background: #<?php echo $setting['theme_color_1']; ?>!important;
+			color: #<?php echo $setting['theme_color_2']; ?>!important;
+			border-color: #<?php echo $setting['theme_color_1']; ?>!important;;
+		}
 
-					</div>
-					<div class="col-md-8 col-sm-8">
-						<div class="header-contact">
-							<ul>
-								<li>
-									<i class="fa fa-envelope-o" aria-hidden="true"></i>
-									<span title="<?php echo COMPANY_EMAIL; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_email']; ?></span>
-								</li>
-								<li>
-									<i class="fa fa-phone" aria-hidden="true"></i>
-									<span title="<?php echo COMPANY_PHONE; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_phone']; ?></span>
-								</li>
-								<li>
-									<i class="fa fa-building-o" aria-hidden="true"></i>
-									<span title="<?php echo WORKING_HOURS; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo nl2br($setting['footer_working_hour']); ?></span>
-								</li>
-							</ul>
-							<script>
-								$(document).ready(function(){
-									$('[data-toggle="tooltip"]').tooltip();   
-								});
-							</script>
-						</div>
+
+		.slider-animated li a {
+			border-color: #<?php echo $setting['theme_color_2']; ?>!important;
+			color: #<?php echo $setting['theme_color_2']; ?>!important;
+		}
+
+		.recent-menu ul li,
+		.services-link a {
+			background: #<?php echo $setting['theme_color_2']; ?>!important;
+			border-color: #<?php echo $setting['theme_color_1']; ?>!important;
+			color: #<?php echo $setting['theme_color_1']; ?>!important;
+		}
+
+		.services-link a:hover,
+		.nav-sidebar .active a:hover,
+		.nav li a:hover,
+		.nav-sidebar .active a,
+		.slider-animated li a:hover,
+		.slider-animated li:last-child a:hover,
+		.recent-menu ul li:hover {
+			background: #<?php echo $setting['theme_color_1']; ?>!important;
+			border-color: #<?php echo $setting['theme_color_1']; ?>!important;
+			color: #<?php echo $setting['theme_color_2']; ?>!important;
+		}
+	</style>
+</head>
+
+<body>
+	<?php echo $comment['code_body']; ?>
+	<!-- Loading GIF -->
+	<div id="preloader">
+		<div id="status" style="background-image: url('<?php echo base_url(); ?>public/img/preloader.gif')"></div>
+	</div>
+
+	<div class="header-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+
+				</div>
+				<div class="col-md-8 col-sm-8">
+					<div class="header-contact">
+						<ul>
+							<li>
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								<span title="<?php echo COMPANY_EMAIL; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_email']; ?></span>
+							</li>
+							<li>
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								<span title="<?php echo COMPANY_PHONE; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_phone']; ?></span>
+							</li>
+							<li>
+								<i class="fa fa-building-o" aria-hidden="true"></i>
+								<span title="<?php echo WORKING_HOURS; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo nl2br($setting['footer_working_hour']); ?></span>
+							</li>
+						</ul>
+						<script>
+							$(document).ready(function(){
+								$('[data-toggle="tooltip"]').tooltip();   
+							});
+						</script>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="strickymenu" class="menu-area">
-			<menu>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3 col-sm-12">
-							<div class="logo2">
-								<a href="<?php echo base_url(); ?>">
-									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo2']; ?>" alt="Cipta Sinergi The Art of Manufacturing">
-								</a>
-							</div>
-							<div class="logo">
-								<a href="<?php echo base_url(); ?>">
-									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="Logo">
-								</a>
-							</div>
+	</div>
+	<div id="strickymenu" class="menu-area">
+		<menu>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-12">
+						<div class="logo2">
+							<a href="<?php echo base_url(); ?>">
+								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo2']; ?>" alt="Cipta Sinergi The Art of Manufacturing">
+							</a>
 						</div>
-						<div class="col-md-9 col-sm-12 main-menu" style="display: block;">
-							<div class="main-menu-item">				 	
-								<ul class="nav-menu">
-									<li><a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a></li>
-									<li><a href="<?php echo base_url(); ?>about"><?php echo ABOUT; ?></a></li>
-									<li><a href="<?php echo base_url(); ?>gallery"><?php echo GALLERY; ?></a></li>
-									<li><a href="<?php echo base_url(); ?>product"><?php echo PRODUCT; ?></a></li>
-									<li><a href="<?php echo base_url(); ?>service"><?php echo SERVICE; ?></a></li>
-									<li><a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?></a></li>
-									<li><a href="<?php echo base_url(); ?>portfolio"><?php echo PORTFOLIO; ?></a></li>
-									<li><a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a></li>
-									<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
-									<li class="menu-item-has-children"><a href="javascript:void();"><i style="width: 20px;" class="fa fa-globe" aria-hidden="true"></i>
-									</a>
-									<ul class="sub-menu">
+						<div class="logo">
+							<a href="<?php echo base_url(); ?>">
+								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="Logo">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-9 col-sm-12 main-menu" style="display: block;">
+						<div class="main-menu-item">				 	
+							<ul class="nav nav-mega">
+								<li><a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>about"><?php echo ABOUT; ?></a></li>
+								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo PRODUCT; ?></a>
+									<ul class="dropdown-menu mega-menu" role="menu">
+										<li><a href="<?php echo base_url(); ?>product"><?php echo PRODUCT; ?></a></li>
+										<li><a href="<?php echo base_url(); ?>portfolio"><?php echo PORTFOLIO; ?></a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo FACILITY; ?></a>
+									<ul class="dropdown-menu mega-menu" role="menu">
+										<li><a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?></a></li>
+										<li><a href="<?php echo base_url(); ?>service"><?php echo SERVICE; ?></a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo ELECTRONIC_DIVISION; ?></a>
+									<ul class="dropdown-menu mega-menu">
+										<li><a href="#"><?php echo ELECTRONIC_DIVISION; ?></a></li>
+										<li><a href="#"><?php echo ELECTRONIC_DIVISION; ?></a></li>
+										<li><a href="#"><?php echo ELECTRONIC_DIVISION; ?></a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo PAGE; ?></a>
+									<ul class="dropdown-menu mega-menu">
+										<li><a href="<?php echo base_url(); ?>gallery"><?php echo GALLERY; ?></a></li>
+										<li><a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a></li>
+										<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
+									</ul>
+								</li>
+								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><i style="width: 20px;" class="fa fa-globe" aria-hidden="true"></i>									</a>
+									<ul class="dropdown-menu mega-menu">
 										<li><a href="#" onclick="myFunction()">IDN</a></li>
 										<li><a href="#" onclick="myFunction()">ENG</a></li>
 										<script>
