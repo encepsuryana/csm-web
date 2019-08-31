@@ -665,9 +665,27 @@ img {
 	text-align: right;
 }
 
+.open > .dropdown-menu {
+	-webkit-transform: scale(1, 1);
+	transform: scale(1, 1);  
+	opacity:1;
+}
+
+.dropdown-menu {
+	opacity:.3;
+	-webkit-transform-origin: top;
+	transform-origin: top;
+	-webkit-animation-fill-mode: forwards;  
+	animation-fill-mode: forwards; 
+	-webkit-transform: scale(1, 0);
+	display: block; 
+	transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+}
+
+
 .dropdown-menu li {
 	display: table-cell;
-	height: 50px;
 	line-height: 50px;
 	vertical-align: middle;
 }
@@ -717,18 +735,30 @@ ul.nav-mega li:hover a {
 
 .nav-mega {
 	width: 100%;
+	transition: all .5s ease;
 }
 .nav-mega .dropdown {
 	position: static;
 }
+
+.nav-mega .dropdown a:before {
+	content: "\f0d7";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	margin-right: 5px; 
+}
+
 .nav-mega .dropdown-menu.mega-menu {
 	border-radius: 0;
 	min-width: auto;
 	width: 135%;
+	height: auto;
 	margin-top: 0;
 	padding: 0;
 	left: -300px;
-	height: 200px;
+	transition: all 0.4s;
 }
 .nav-mega .dropdown-menu.mega-menu > li {
 	padding: 20px;
@@ -747,6 +777,110 @@ ul.nav-mega li:hover a {
 .main-menu-item {
 	float: right;
 }
+
+.csm-content-menu {
+	margin-top: -20px;
+	margin-bottom: 20px;
+	border-right: 1px solid #c6c6c6;
+	margin-right: 5px;
+	text-align: right;
+}
+
+.csm-content-menu .csm-category-menu a {
+	padding: 0 10px;
+	border: 0 !important;
+}
+.csm-content-menu .csm-category-menu a:hover {
+	background: transparent !important;
+	color: #134595 !important;
+	font-weight: 700;
+	text-decoration: underline;
+	border-bottom: 0 !important;
+}
+.csm-content-menu .csm-category-menu a:after {
+	content: "\f104" !important;
+	font-family: FontAwesome !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	text-decoration: inherit !important;
+	margin-left: 5px;
+}
+
+.csm-content-menu .csm-category-menu a:before {
+	content: "" !important;
+	font-family: FontAwesome !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	text-decoration: inherit !important;
+}
+
+.product-menu {
+	width: 150px;
+	height: 150px;
+	margin: 22px 8px;
+	background-position: center;
+	background-size: cover;
+}
+
+.nav-mega .dropdown-menu.mega-menu .desc-product-menu {
+	margin: 22px 15px;
+}
+.nav-mega .dropdown-menu.mega-menu .desc-product-menu a {
+	padding: 10px 0 !important;
+	margin: 0 !important;
+	font-size: 12px;
+	text-transform: none !important;
+	text-decoration: none !important;
+	display: block;
+	transition: all 0.4s;
+	border: 0 !important;
+	position: relative;
+	top: -35px;
+}
+.nav-mega .dropdown-menu.mega-menu .desc-product-menu a:hover {
+	background: transparent !important;
+	color: #134595 !important;
+	text-decoration: underline !important;
+}
+.nav-mega .dropdown-menu.mega-menu .desc-product-menu a:before {
+	content: "";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+}
+.nav-mega .dropdown-menu.mega-menu .csm-menu {
+	float: right;
+}
+
+.nav-mega .dropdown-menu.mega-menu .csm-menu > a {
+	padding: 5px;
+	border: 0 !important;
+	text-align: right;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.nav-mega .dropdown-menu.mega-menu .csm-menu > a:hover {
+	background: transparent !important;
+	color: #134595 !important;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.nav-mega .dropdown-menu.mega-menu .csm-menu > a:before {
+	content: "\f0d9";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	margin-right: 5px; 
+}
+.margin-csm {
+	border-left: 1px solid #c6c6c6;
+	height: 200px;
+}
+
 /*Sticky Menu*/
 #strickymenu.sticky {
 	position: fixed;

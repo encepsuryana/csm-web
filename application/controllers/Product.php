@@ -5,10 +5,10 @@ class Product extends CI_Controller {
 
 	function __construct() 
 	{
-        parent::__construct();
-        $this->load->model('Model_common');
-        $this->load->model('Model_product');
-    }
+		parent::__construct();
+		$this->load->model('Model_common');
+		$this->load->model('Model_product');
+	}
 
 	public function index()
 	{
@@ -20,6 +20,14 @@ class Product extends CI_Controller {
 		$header['latest_news'] = $this->Model_common->get_latest_news();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 		
+		$header['product'] = $this->Model_product->get_product_data();
+
+		$header['service'] = $this->Model_product->get_service_data();
+		$header['facility'] = $this->Model_product->get_facility_data();
+		$header['facility_category'] = $this->Model_product->get_facility_category();
+		$header['portfolio_category'] = $this->Model_product->get_portfolio_category();
+		$header['portfolio'] = $this->Model_product->get_portfolio_data();
+		$header['partner'] = $this->Model_product->get_partner_data();
 		$header['product'] = $this->Model_product->get_product_data();
 
 		$this->load->view('view_header',$header);

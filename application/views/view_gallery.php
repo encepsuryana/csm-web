@@ -1,7 +1,7 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner_gallery']; ?>)">
 	<div class="bannder-table">
 		<div class="banner-text">
-			<h1><?php echo $page['gallery_heading']; ?></h1>
+			<h1><?php echo GALLERY; ?></h1>
 		</div>
 	</div>
 

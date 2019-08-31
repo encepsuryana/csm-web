@@ -514,6 +514,32 @@ class Setting extends CI_Controller
 				}        	
 			}
 
+			if(isset($_POST['form_banner_electronics_division'])) {
+				$valid = 1;
+				$path = $_FILES['photo']['name'];
+				$path_tmp = $_FILES['photo']['tmp_name'];
+				if($path!='') {
+					$ext = pathinfo( $path, PATHINFO_EXTENSION );
+					$file_name = basename( $path, '.' . $ext );
+					$ext_check = $this->Model_header->extension_check_photo($ext);
+					if($ext_check == FALSE) {
+						$valid = 0;
+						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+					}
+				} else {
+					$valid = 0;
+					$data['error'] = 'You must have to select a photo<br>';
+				}
+				if($valid == 1) {
+					unlink('./public/uploads/'.$header['setting']['banner_electronics_division']);
+					$final_name = 'banner_electronics_division'.'.'.$ext;
+					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
+					$form_data = array('banner_electronics_division' => $final_name);
+					$this->Model_setting->update($form_data);
+					$data['success'] = 'Electronics Division Page Banner is updated successfully!';		    	
+				}        	
+			}
+
 			if(isset($_POST['form_banner_service'])) {
 				$valid = 1;
 				$path = $_FILES['photo']['name'];

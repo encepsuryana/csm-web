@@ -199,6 +199,20 @@
 								</ul>
 							</li>
 
+							<li class="treeview <?php if( ($final_url_other == 'admin/electronics_division/add')||($final_url_other == 'admin/electronics_division')||($final_url_other == 'admin/electronics_division/edit')||($final_url_other == 'admin/electronics_division-category/add')||($final_url_other == 'admin/electronics_division-category')||($final_url_other == 'admin/electronics_division-category/edit') ) {echo 'active';} ?>">
+								<a href="#">
+									<i class="fa fa-microchip"></i>
+									<span>Electronics Division</span>
+									<span class="pull-right-container">
+										<i class="fa fa-angle-left pull-right"></i>
+									</span>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division-category"><i class="fa fa-braille"></i> Electronics Division Category</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division"><i class="fa fa-trello"></i> Electronics Division</a></li>
+								</ul>
+							</li>
+
 							<li class="treeview <?php if( ($final_url_other == 'admin/partner/add')||($final_url_other == 'admin/partner')||($final_url_other == 'admin/partner/edit') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/partner">
 									<i class="fa fa-clipboard"></i> <span>Partner</span>

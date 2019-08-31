@@ -5,10 +5,10 @@ class Portfolio extends CI_Controller {
 
 	function __construct() 
 	{
-        parent::__construct();
-        $this->load->model('Model_common');
-        $this->load->model('Model_portfolio');
-    }
+		parent::__construct();
+		$this->load->model('Model_common');
+		$this->load->model('Model_portfolio');
+	}
 
 	public function index()
 	{
@@ -22,6 +22,14 @@ class Portfolio extends CI_Controller {
 
 		$header['portfolio_category'] = $this->Model_portfolio->get_portfolio_category();
 		$header['portfolio'] = $this->Model_portfolio->get_portfolio_data();
+
+		$header['service'] = $this->Model_portfolio->get_service_data();
+		$header['facility'] = $this->Model_portfolio->get_facility_data();
+		$header['facility_category'] = $this->Model_portfolio->get_facility_category();
+		$header['portfolio_category'] = $this->Model_portfolio->get_portfolio_category();
+		$header['portfolio'] = $this->Model_portfolio->get_portfolio_data();
+		$header['partner'] = $this->Model_portfolio->get_partner_data();
+		$header['product'] = $this->Model_portfolio->get_product_data();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_portfolio');
@@ -43,6 +51,14 @@ class Portfolio extends CI_Controller {
 		$data['portfolio'] = $this->Model_portfolio->get_portfolio_detail($id);
 		$data['portfolio_photo'] = $this->Model_portfolio->get_portfolio_photo($id);
 		$data['portfolio_photo_total'] = $this->Model_portfolio->get_portfolio_photo_number($id);
+
+		$header['service'] = $this->Model_portfolio->get_service_data();
+		$header['facility'] = $this->Model_portfolio->get_facility_data();
+		$header['facility_category'] = $this->Model_portfolio->get_facility_category();
+		$header['portfolio_category'] = $this->Model_portfolio->get_portfolio_category();
+		$header['portfolio'] = $this->Model_portfolio->get_portfolio_data();
+		$header['partner'] = $this->Model_portfolio->get_partner_data();
+		$header['product'] = $this->Model_portfolio->get_product_data();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_portfolio_detail',$data);

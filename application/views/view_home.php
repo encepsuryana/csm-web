@@ -204,7 +204,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="caption-product-area gridGallery">
 	<div class="container">
-		<h3><?php echo $setting['testimonial_title']; ?></h3>
+		<h3><?php echo TESTIMONIAL_SAY; ?></h3>
 		<div class="row-product">
 			<div class="col-md-12">
 				<div class="testimonial-carousel owl-carousel owl-loaded owl-drag pt-30">
@@ -278,7 +278,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="brand-area">
 	<div class="container">
-		<h3><?php echo $setting['partner_title']; ?></h3>
+		<h3><?php echo OUR_PARTNER; ?></h3>
 		<div class="row">
 			<div class="col-md-12">
 				<div class="brand-carousel owl-carousel">					

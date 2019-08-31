@@ -1,7 +1,7 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner_service']; ?>)">
 	<div class="bannder-table">
 		<div class="banner-text">
-			<h1><?php echo $page['service_heading']; ?></h1>
+			<h1><?php echo SERVICE; ?></h1>
 		</div>
 	</div>
 

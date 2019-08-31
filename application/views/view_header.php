@@ -240,7 +240,8 @@
 		.slide-carousel.owl-carousel .owl-nav .owl-prev:hover, 
 		.slide-carousel.owl-carousel .owl-nav .owl-next:hover,
 		.main-menu .dropdown:before,
-		ul.nav-menu li a,
+		ul.nav-mega li a,
+		.nav li a:focus,
 		.header-contact,
 		.team-carousel.owl-carousel .owl-nav .owl-prev, 
 		.team-carousel.owl-carousel .owl-nav .owl-next,
@@ -265,7 +266,7 @@
 
 		.mean-container .mean-nav ul li a:hover,
 		.counter-item a:hover,
-		ul.nav-menu li a:hover{
+		ul.nav-mega li a:hover{
 			background: #<?php echo $setting['theme_color_1']; ?>!important;
 			color: #fff !important
 		}
@@ -279,7 +280,7 @@
 		.bg-choose {
 			background-color: #<?php echo $setting['theme_color_2']; ?>!important;	
 		}
-
+		.nav li a:focus,
 		.recent-text,
 		.map-main-home,
 		.blog-text,
@@ -319,7 +320,7 @@
 			color: #<?php echo $setting['theme_color_2']; ?>!important;
 		}
 
-		ul.nav-menu li a,
+		ul.nav-mega li a,
 		.slider-animated li:last-child a,
 		.choose-icon img,
 		.testimonial-carousel .owl-dots .owl-dot.active,
@@ -452,22 +453,137 @@
 								<li><a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a></li>
 								<li><a href="<?php echo base_url(); ?>about"><?php echo ABOUT; ?></a></li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo PRODUCT; ?></a>
-									<ul class="dropdown-menu mega-menu" role="menu">
-										<li><a href="<?php echo base_url(); ?>product"><?php echo PRODUCT; ?></a></li>
-										<li><a href="<?php echo base_url(); ?>portfolio"><?php echo PORTFOLIO; ?></a></li>
+									<ul class="dropdown-menu mega-menu">
+										<div class="col-md-7">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>portfolio"><?php echo PORTFOLIO; ?></a>
+												<ul class="csm-content-menu">
+													<?php
+													foreach ($portfolio_category as $row) {
+														?>
+														<li class="csm-category-menu">
+															<a href="<?php echo base_url(); ?>portfolio"><?php echo $row['category_name']; ?></a>
+														</li>
+														<?php
+													}
+													?>
+												</ul>
+											</li>
+										</div>
+										<div class="col-md-5">
+											<div class="col-md-4" style="padding: 0;">
+												<?php
+												$i=0;
+												foreach ($product as $row) {
+													$i++;
+													if($i>1) {break;}
+													?>
+													<div class="product-menu" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['product_name']; ?>);">
+													</div>
+												</div>
+												<div class="col-md-8" style="padding: 0;">
+													<div class="desc-product-menu">
+														<h4><?php echo NEW_PRODUCT; ?></h4>	
+														<a href="<?php echo base_url(); ?>/product">
+															<h4><?php echo $row['product_caption']; ?></h4>	
+															<p><?php echo $row['product_desc']; ?></p>
+														</a>
+													</div>
+													<?php
+												}
+												?>
+											</div>
+										</div>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo FACILITY; ?></a>
-									<ul class="dropdown-menu mega-menu" role="menu">
-										<li><a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?></a></li>
-										<li><a href="<?php echo base_url(); ?>service"><?php echo SERVICE; ?></a></li>
+									<ul class="dropdown-menu mega-menu">
+										<div class="col-md-6">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?></a>
+												<ul class="csm-content-menu">
+													<?php
+													foreach ($facility as $row) {
+														?>
+														<li class="csm-category-menu">
+															<a href="<?php echo base_url(); ?>facility/detail/<?php echo $row['id'].'.html'; ?>"><?php echo $row['name']; ?></a>
+														</li>
+														<?php
+													}
+													?>
+												</ul>
+											</li>
+										</div>
+										<div class="col-md-6">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>service"><?php echo SERVICE; ?></a>
+												<ul class="csm-content-menu">
+													<?php
+													$i=0;
+													foreach ($service as $row) {
+														$i++;
+														?>
+														<li class="csm-category-menu">
+															<a href="<?php echo base_url(); ?>service/detail/<?php echo $row['id'].'.html'; ?>"><?php echo $row['heading']; ?></a>
+														</li>
+														<?php
+													}
+													?>
+												</ul>
+											</li>
+										</div>
 									</ul>
 								</li>
-								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo ELECTRONIC_DIVISION; ?></a>
+								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo ELECTRONICS_DIVISION; ?></a>
 									<ul class="dropdown-menu mega-menu">
-										<li><a href="#"><?php echo ELECTRONIC_DIVISION; ?></a></li>
-										<li><a href="#"><?php echo ELECTRONIC_DIVISION; ?></a></li>
-										<li><a href="#"><?php echo ELECTRONIC_DIVISION; ?></a></li>
+										<div class="col-md-4">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>electronics-division"><?php echo ELECTRONICS_DIVISION; ?></a>
+												<ul class="csm-content-menu">
+													<?php
+													foreach ($portfolio_category as $row) {
+														?>
+														<li class="csm-category-menu">
+															<a href="<?php echo base_url(); ?>"><?php echo $row['category_name']; ?></a>
+														</li>
+														<?php
+													}
+													?>
+												</ul>
+											</li>
+										</div>
+										<div class="col-md-4">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>"><?php echo ELECTRONICS_DIVISION; ?></a>
+												<ul class="csm-content-menu">
+													<?php
+													foreach ($portfolio_category as $row) {
+														?>
+														<li class="csm-category-menu">
+															<a href="<?php echo base_url(); ?>"><?php echo $row['category_name']; ?></a>
+														</li>
+														<?php
+													}
+													?>
+												</ul>
+											</li>
+										</div>
+										<div class="col-md-4">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>"><?php echo ELECTRONICS_DIVISION; ?></a>
+												<ul class="csm-content-menu">
+													<?php
+													foreach ($portfolio_category as $row) {
+														?>
+														<li class="csm-category-menu">
+															<a href="<?php echo base_url(); ?>"><?php echo $row['category_name']; ?></a>
+														</li>
+														<?php
+													}
+													?>
+												</ul>
+											</li>
+										</div>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo PAGE; ?></a>

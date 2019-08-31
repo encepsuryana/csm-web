@@ -2,7 +2,7 @@
 	<div class="bg"></div>
 	<div class="bannder-table">
 		<div class="banner-text">
-			<h1><?php echo $page['faq_heading']; ?></h1>
+			<h1><?php echo FAQ; ?></h1>
 		</div>
 	</div>
 </div>

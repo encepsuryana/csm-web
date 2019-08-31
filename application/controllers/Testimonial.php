@@ -5,10 +5,10 @@ class Testimonial extends CI_Controller {
 
 	function __construct() 
 	{
-        parent::__construct();
-        $this->load->model('Model_common');
-        $this->load->model('Model_testimonial');
-    }
+		parent::__construct();
+		$this->load->model('Model_common');
+		$this->load->model('Model_testimonial');
+	}
 
 	public function index()
 	{
@@ -21,6 +21,14 @@ class Testimonial extends CI_Controller {
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 
 		$header['testimonial'] = $this->Model_testimonial->get_testimonial_data();
+
+		$header['service'] = $this->Model_testimonial->get_service_data();
+		$header['facility'] = $this->Model_testimonial->get_facility_data();
+		$header['facility_category'] = $this->Model_testimonial->get_facility_category();
+		$header['portfolio_category'] = $this->Model_testimonial->get_portfolio_category();
+		$header['portfolio'] = $this->Model_testimonial->get_portfolio_data();
+		$header['partner'] = $this->Model_testimonial->get_partner_data();
+		$header['product'] = $this->Model_testimonial->get_product_data();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_testimonial');

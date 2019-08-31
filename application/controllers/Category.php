@@ -5,10 +5,10 @@ class Category extends CI_Controller {
 
 	function __construct() 
 	{
-        parent::__construct();
-        $this->load->model('Model_common');
-        $this->load->model('Model_category');
-    }
+		parent::__construct();
+		$this->load->model('Model_common');
+		$this->load->model('Model_category');
+	}
 
 	public function view($id)
 	{
@@ -16,7 +16,7 @@ class Category extends CI_Controller {
 		if(!$id)
 		{
 			redirect(base_url());
-            exit;
+			exit;
 		}
 
 		$header['setting'] = $this->Model_common->get_setting_data();
@@ -29,6 +29,14 @@ class Category extends CI_Controller {
 
 		$data['category'] = $this->Model_category->get_category_data($id);
 		$data['news'] = $this->Model_category->get_news_data($id);
+
+		$header['service'] = $this->Model_category->get_service_data();
+		$header['facility'] = $this->Model_category->get_facility_data();
+		$header['facility_category'] = $this->Model_category->get_facility_category();
+		$header['portfolio_category'] = $this->Model_category->get_portfolio_category();
+		$header['portfolio'] = $this->Model_category->get_portfolio_data();
+		$header['partner'] = $this->Model_category->get_partner_data();
+		$header['product'] = $this->Model_category->get_product_data();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_category',$data);

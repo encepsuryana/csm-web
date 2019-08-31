@@ -5,10 +5,10 @@ class Facility extends CI_Controller {
 
 	function __construct() 
 	{
-        parent::__construct();
-        $this->load->model('Model_common');
-        $this->load->model('Model_facility');
-    }
+		parent::__construct();
+		$this->load->model('Model_common');
+		$this->load->model('Model_facility');
+	}
 
 	public function index()
 	{
@@ -22,6 +22,14 @@ class Facility extends CI_Controller {
 
 		$header['facility_category'] = $this->Model_facility->get_facility_category();
 		$header['facility'] = $this->Model_facility->get_facility_data();
+
+		$header['service'] = $this->Model_facility->get_service_data();
+		$header['facility'] = $this->Model_facility->get_facility_data();
+		$header['facility_category'] = $this->Model_facility->get_facility_category();
+		$header['portfolio_category'] = $this->Model_facility->get_portfolio_category();
+		$header['portfolio'] = $this->Model_facility->get_portfolio_data();
+		$header['partner'] = $this->Model_facility->get_partner_data();
+		$header['product'] = $this->Model_facility->get_product_data();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_facility');
@@ -43,6 +51,14 @@ class Facility extends CI_Controller {
 		$data['facility'] = $this->Model_facility->get_facility_detail($id);
 		$data['facility_photo'] = $this->Model_facility->get_facility_photo($id);
 		$data['facility_photo_total'] = $this->Model_facility->get_facility_photo_number($id);
+
+		$header['service'] = $this->Model_facility->get_service_data();
+		$header['facility'] = $this->Model_facility->get_facility_data();
+		$header['facility_category'] = $this->Model_facility->get_facility_category();
+		$header['portfolio_category'] = $this->Model_facility->get_portfolio_category();
+		$header['portfolio'] = $this->Model_facility->get_portfolio_data();
+		$header['partner'] = $this->Model_facility->get_partner_data();
+		$header['product'] = $this->Model_facility->get_product_data();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_facility_detail',$data);

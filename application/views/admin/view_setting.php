@@ -43,7 +43,7 @@ if(!$this->session->userdata('id')) {
 						<li><a href="#tab_general" data-toggle="tab">General Content</a></li>
 						<li><a href="#tab_email" data-toggle="tab">Email Settings</a></li>
 						<li><a href="#tab_sidebar_footer" data-toggle="tab">Sidebar & Footer</a></li>
-						<li><a href="#tab_home" data-toggle="tab">Home Page</a></li>
+						<!-- <li><a href="#tab_home" data-toggle="tab">Home Page</a></li> -->
 						<li><a href="#tab_banner" data-toggle="tab">Banner</a></li>
 						<li><a href="#tab_color" data-toggle="tab">Color</a></li>
 					</ul>
@@ -805,6 +805,21 @@ if(!$this->session->userdata('id')) {
 										<h4>Change About Us Page Banner</h4>
 										Select Photo<input type="file" name="photo">
 										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_about">
+									</td>
+									<?php echo form_close(); ?>
+								</tr>
+								<tr>
+									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
+									<td style="width:50%">
+										<h4>Existing Electronics Dsvision Page Banner</h4>
+										<p>
+											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_electronics_division']; ?>" alt="" style="width: 100%;height:auto;">  
+										</p>                                        
+									</td>
+									<td style="width:50%">
+										<h4>Change Electronics Division Page Banner</h4>
+										Select Photo<input type="file" name="photo">
+										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_electronics_division">
 									</td>
 									<?php echo form_close(); ?>
 								</tr>

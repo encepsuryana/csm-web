@@ -1,7 +1,7 @@
-<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner_portfolio']; ?>)">
+<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner_electronics_division']; ?>)">
 	<div class="bannder-table">
 		<div class="banner-text">
-			<h1><?php echo PORTFOLIO; ?></h1>
+			<h1><?php echo ELECTRONICS_DIVISION; ?></h1>
 		</div>
 	</div>
 
@@ -11,7 +11,7 @@
 				<ul>
 					<li data-filter="all"><?php echo ALL; ?></li>
 					<?php
-					foreach ($portfolio_category as $row) {
+					foreach ($electronics_division_category as $row) {
 						?>
 						<li data-filter="<?php echo $row['category_id']; ?>"><?php echo $row['category_name']; ?></li>
 						<?php
@@ -21,7 +21,7 @@
 			</div>
 			<div class="filtr-container">			
 				<?php
-				foreach ($portfolio as $row) {
+				foreach ($electronics_division as $row) {
 					?>
 					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three bg-about" data-category="<?php echo $row['category_id']; ?>" data-sort="value">
 						<div class="recent-item">
@@ -39,7 +39,7 @@
 									<h4><?php echo $row['name']; ?></h4>
 									<?php echo $row['short_content']; ?>
 									<div class="services-link">
-										<a href="<?php echo base_url(); ?>portfolio/detail/<?php echo $row['id'].'.html'; ?>"><?php echo READ_MORE; ?></a>
+										<a href="<?php echo base_url(); ?>electronics-division/detail/<?php echo $row['id'].'.html'; ?>"><?php echo READ_MORE; ?></a>
 									</div>
 								</div>
 							</div>

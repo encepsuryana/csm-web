@@ -5,10 +5,10 @@ class Gallery extends CI_Controller {
 
 	function __construct() 
 	{
-        parent::__construct();
-        $this->load->model('Model_common');
-        $this->load->model('Model_gallery');
-    }
+		parent::__construct();
+		$this->load->model('Model_common');
+		$this->load->model('Model_gallery');
+	}
 
 	public function index()
 	{
@@ -21,6 +21,14 @@ class Gallery extends CI_Controller {
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 		
 		$header['gallery'] = $this->Model_gallery->get_gallery_data();
+
+		$header['service'] = $this->Model_gallery->get_service_data();
+		$header['facility'] = $this->Model_gallery->get_facility_data();
+		$header['facility_category'] = $this->Model_gallery->get_facility_category();
+		$header['portfolio_category'] = $this->Model_gallery->get_portfolio_category();
+		$header['portfolio'] = $this->Model_gallery->get_portfolio_data();
+		$header['partner'] = $this->Model_gallery->get_partner_data();
+		$header['product'] = $this->Model_gallery->get_product_data();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_gallery');

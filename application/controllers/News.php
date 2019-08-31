@@ -36,6 +36,14 @@ class News extends CI_Controller {
 		$data["results"] = $this->Model_news->fetch_books($config["per_page"], $offset);
 		$data["links"] = $this->pagination->create_links();
 
+		$header['service'] = $this->Model_news->get_service_data();
+		$header['facility'] = $this->Model_news->get_facility_data();
+		$header['facility_category'] = $this->Model_news->get_facility_category();
+		$header['portfolio_category'] = $this->Model_news->get_portfolio_category();
+		$header['portfolio'] = $this->Model_news->get_portfolio_data();
+		$header['partner'] = $this->Model_news->get_partner_data();
+		$header['product'] = $this->Model_news->get_product_data();
+
 		$this->load->view('view_header',$header);
 		$this->load->view('view_news',$data);
 		$this->load->view('view_footer');
@@ -53,6 +61,14 @@ class News extends CI_Controller {
 
 		$data['news'] = $this->Model_news->get_news_detail($id);
 		$data['news_category'] = $this->Model_news->get_news_category();
+
+		$header['service'] = $this->Model_news->get_service_data();
+		$header['facility'] = $this->Model_news->get_facility_data();
+		$header['facility_category'] = $this->Model_news->get_facility_category();
+		$header['portfolio_category'] = $this->Model_news->get_portfolio_category();
+		$header['portfolio'] = $this->Model_news->get_portfolio_data();
+		$header['partner'] = $this->Model_news->get_partner_data();
+		$header['product'] = $this->Model_news->get_product_data();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_news_detail',$data);
