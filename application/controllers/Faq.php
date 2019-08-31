@@ -29,6 +29,8 @@ class Faq extends CI_Controller {
 		$header['portfolio'] = $this->Model_faq->get_portfolio_data();
 		$header['partner'] = $this->Model_faq->get_partner_data();
 		$header['product'] = $this->Model_faq->get_product_data();
+		$header['electronics_division'] = $this->Model_faq->get_electronics_division_data();
+		$header['electronics_division_category'] = $this->Model_faq->get_electronics_division_category();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_faq');

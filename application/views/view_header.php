@@ -82,6 +82,23 @@
 			}
 		}		
 	}
+
+	if($slug_arr[0] == 'electronics-division')
+	{
+		if(!isset($slug_arr[1])) {
+			echo '<meta name="description" content="'.$page['md_electronics_division'].'">';
+			echo '<meta name="keywords" content="'.$page['mk_electronics_division'].'">';
+			echo '<title>'.$page['mt_electronics_division'].'</title>';	
+		} else {
+			$single_electronics_division_data = $this->Model_common->get_single_electronics_division_data($slug_arr[2]);
+			foreach($single_electronics_division_data as $row) {
+				echo '<meta name="description" content="'.$row['meta_description'].'">';
+				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
+				echo '<title>'.$row['meta_title'].' | CV. Cipta Sinergi Manufacturing'.'</title>';	
+			}
+		}		
+	}
+
 	if($slug_arr[0] == 'portfolio')
 	{
 		if(!isset($slug_arr[1])) {
@@ -536,67 +553,70 @@
 								</li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo ELECTRONICS_DIVISION; ?></a>
 									<ul class="dropdown-menu mega-menu">
-										<div class="col-md-4">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>electronics-division"><?php echo ELECTRONICS_DIVISION; ?></a>
-												<ul class="csm-content-menu">
-													<?php
-													foreach ($portfolio_category as $row) {
-														?>
-														<li class="csm-category-menu">
-															<a href="<?php echo base_url(); ?>"><?php echo $row['category_name']; ?></a>
-														</li>
+										<?php
+										foreach ($electronics_division_category as $row) {
+											?>
+											<div class="col-md-4">
+												<li class="csm-menu">
+													<a data-filter="<?php echo $row['category_id']; ?>" href="<?php echo base_url(); ?>electronics-division"><?php echo $row['category_name']; ?></a>
+													<ul class="csm-content-menu">
 														<?php
-													}
-													?>
-												</ul>
-											</li>
-										</div>
-										<div class="col-md-4">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>"><?php echo ELECTRONICS_DIVISION; ?></a>
-												<ul class="csm-content-menu">
-													<?php
-													foreach ($portfolio_category as $row) {
+														foreach ($electronics_division as $row) {
+															?>
+															<li class="csm-category-menu" data-category="<?php echo $row['category_id']; ?>" data-sort="value">
+																<a><?php echo $row['name']; ?></a>
+															</li>
+															<?php
+														}
 														?>
-														<li class="csm-category-menu">
-															<a href="<?php echo base_url(); ?>"><?php echo $row['category_name']; ?></a>
-														</li>
-														<?php
-													}
-													?>
-												</ul>
-											</li>
-										</div>
-										<div class="col-md-4">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>"><?php echo ELECTRONICS_DIVISION; ?></a>
-												<ul class="csm-content-menu">
-													<?php
-													foreach ($portfolio_category as $row) {
-														?>
-														<li class="csm-category-menu">
-															<a href="<?php echo base_url(); ?>"><?php echo $row['category_name']; ?></a>
-														</li>
-														<?php
-													}
-													?>
-												</ul>
-											</li>
-										</div>
+													</ul>
+												</li>
+											</div>
+											<?php
+										}
+										?>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo PAGE; ?></a>
 									<ul class="dropdown-menu mega-menu">
-										<li><a href="<?php echo base_url(); ?>gallery"><?php echo GALLERY; ?></a></li>
-										<li><a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a></li>
-										<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
+										<div class="col-md-3">
+											<li class="csm-menu">
+
+											</li>
+										</div>
+										<div class="col-md-3">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>gallery"><?php echo GALLERY; ?></a>
+											</li>
+										</div>
+										<div class="col-md-3">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a>
+											</li>
+										</div>
+										<div class="col-md-3">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a>
+											</li>
+										</div>
 									</ul>
 								</li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><i style="width: 20px;" class="fa fa-globe" aria-hidden="true"></i>									</a>
 									<ul class="dropdown-menu mega-menu">
-										<li><a href="#" onclick="myFunction()">IDN</a></li>
-										<li><a href="#" onclick="myFunction()">ENG</a></li>
+										<div class="col-md-10">
+											<li class="csm-menu">
+											</li>
+										</div>
+										<div class="col-md-1">
+											<li class="csm-menu">
+												<a href="#" onclick="myFunction()">IDN</a>
+											</li>
+										</div>
+										<div class="col-md-1">
+											<li class="csm-menu">
+												<a href="#" onclick="myFunction()">ENG</a>
+											</li>
+										</div>
 										<script>
 											function myFunction() {
 												alert(" Under Development :)");

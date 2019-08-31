@@ -17,21 +17,21 @@ class Model_news extends CI_Model
 
     public function get_news_detail($id) {
         $sql = "SELECT
-                t1.news_id,
-                t1.news_title,
-                t1.slug,
-                t1.news_content,
-                t1.photo,
-                t1.banner,
-                t1.news_date,
-                t1.user_update,
-                t1.category_id,
-                t2.category_id,
-                t2.category_name
-                FROM tbl_news t1
-                JOIN tbl_news_category t2
-                ON t1.category_id = t2.category_id
-                WHERE news_id=?";
+        t1.news_id,
+        t1.news_title,
+        t1.slug,
+        t1.news_content,
+        t1.photo,
+        t1.banner,
+        t1.news_date,
+        t1.user_update,
+        t1.category_id,
+        t2.category_id,
+        t2.category_name
+        FROM tbl_news t1
+        JOIN tbl_news_category t2
+        ON t1.category_id = t2.category_id
+        WHERE news_id=?";
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }
@@ -101,6 +101,16 @@ class Model_news extends CI_Model
     public function get_partner_data()
     {
         $query = $this->db->query("SELECT * FROM tbl_partner ORDER BY id ASC");
+        return $query->result_array();
+    }
+    public function get_electronics_division_data()
+    {
+        $query = $this->db->query("SELECT * from tbl_electronics_division ORDER BY id ASC");
+        return $query->result_array();
+    }
+    public function get_electronics_division_category()
+    {
+        $query = $this->db->query("SELECT * FROM tbl_electronics_division_category ORDER BY category_name ASC");
         return $query->result_array();
     }
 }

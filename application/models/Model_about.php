@@ -41,4 +41,14 @@ class Model_about extends CI_Model
 		$query = $this->db->query("SELECT * FROM tbl_partner ORDER BY id ASC");
 		return $query->result_array();
 	}
+	public function get_electronics_division_data()
+	{
+		$query = $this->db->query("SELECT * from tbl_electronics_division ORDER BY id ASC");
+		return $query->result_array();
+	}
+	public function get_electronics_division_category()
+	{
+		$query = $this->db->query("SELECT * FROM tbl_electronics_division_category ORDER BY category_name ASC");
+		return $query->result_array();
+	}
 }

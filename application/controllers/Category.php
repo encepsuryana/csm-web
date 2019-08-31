@@ -12,7 +12,7 @@ class Category extends CI_Controller {
 
 	public function view($id)
 	{
-		// If there is no id after category in URL, redirect to the home page
+		// If there is no id after category in URL, redirect to the category page
 		if(!$id)
 		{
 			redirect(base_url());
@@ -37,6 +37,8 @@ class Category extends CI_Controller {
 		$header['portfolio'] = $this->Model_category->get_portfolio_data();
 		$header['partner'] = $this->Model_category->get_partner_data();
 		$header['product'] = $this->Model_category->get_product_data();
+		$header['electronics_division'] = $this->Model_category->get_electronics_division_data();
+		$header['electronics_division_category'] = $this->Model_category->get_electronics_division_category();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_category',$data);

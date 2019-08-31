@@ -30,6 +30,8 @@ class Portfolio extends CI_Controller {
 		$header['portfolio'] = $this->Model_portfolio->get_portfolio_data();
 		$header['partner'] = $this->Model_portfolio->get_partner_data();
 		$header['product'] = $this->Model_portfolio->get_product_data();
+		$header['electronics_division'] = $this->Model_portfolio->get_electronics_division_data();
+		$header['electronics_division_category'] = $this->Model_portfolio->get_electronics_division_category();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_portfolio');
@@ -59,6 +61,8 @@ class Portfolio extends CI_Controller {
 		$header['portfolio'] = $this->Model_portfolio->get_portfolio_data();
 		$header['partner'] = $this->Model_portfolio->get_partner_data();
 		$header['product'] = $this->Model_portfolio->get_product_data();
+		$header['electronics_division'] = $this->Model_portfolio->get_electronics_division_data();
+		$header['electronics_division_category'] = $this->Model_portfolio->get_electronics_division_category();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_portfolio_detail',$data);

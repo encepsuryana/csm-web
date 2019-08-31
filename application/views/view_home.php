@@ -154,9 +154,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="caption-product-area gridGallery">
 	<div class="container recent-works">
-		<h3><?php echo $setting['facility_title']; ?></h3>
-		<div class="row-product">
-			<div class="recent-menu" style="text-align: right;">
+		<h3>
+			<?php echo $setting['facility_title']; ?>
+			<div class="recent-menu">
 				<ul>
 					<li data-filter="all"><?php echo ALL; ?></li>
 					<?php
@@ -168,6 +168,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					?>
 				</ul>
 			</div>
+		</h3>
+		<div class="row-product">
 			<div class="filtr-container">			
 				<?php
 				foreach ($facility as $row) {

@@ -209,6 +209,7 @@
 								</a>
 								<ul class="treeview-menu">
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division-category"><i class="fa fa-braille"></i> Electronics Division Category</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division_desc"><i class="fa fa-pencil-square-o"></i> Electronics Division Desc</a></li>
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division"><i class="fa fa-trello"></i> Electronics Division</a></li>
 								</ul>
 							</li>

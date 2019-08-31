@@ -27,6 +27,9 @@ class Contact extends CI_Controller {
 		$header['portfolio'] = $this->Model_contact->get_portfolio_data();
 		$header['partner'] = $this->Model_contact->get_partner_data();
 		$header['product'] = $this->Model_contact->get_product_data();
+		
+		$header['electronics_division'] = $this->Model_contact->get_electronics_division_data();
+		$header['electronics_division_category'] = $this->Model_contact->get_electronics_division_category();
 
 		$data['error'] = '';
 		$data['success'] = '';

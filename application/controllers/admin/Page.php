@@ -287,6 +287,16 @@ class Page extends CI_Controller
 				$data['success'] = 'Carrier Page Setting is updated successfully!';
 			}
 
+			if(isset($_POST['form_electronic_division'])) {			
+				$form_data = array(
+					'mt_electronics_division'      => $_POST['mt_electronics_division'],
+					'mk_electronics_division'      => $_POST['mk_electronics_division'],
+					'md_electronics_division'      => $_POST['md_electronics_division']
+				);
+				$this->Model_page->update($form_data);        	
+				$data['success'] = 'Electronic Division Page Setting is updated successfully!';
+			}
+
 
 			if(isset($_POST['form_search'])) {			
 				$form_data = array(

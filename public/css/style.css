@@ -130,7 +130,29 @@ section {
 	bottom: auto;
 	top: 50px;
 }
+.image-electronic {
+	vertical-align: middle;
+}
+.electronic-desc {
+	padding: 10px;
+}
 
+.electronic-desc h4 {
+	text-transform: uppercase;
+	margin: 20px 0;
+}
+
+.electronic-desc p {
+	text-transform: capitalize;
+	padding: 0 30px;
+}
+.electronic-desc img {
+	width: 250px;
+	height: 250px;
+	float: right;
+	margin: 10px;
+	padding: 10px;
+}
 .toggleIcon {
 	background: #134595cc;
 	bottom: 10px;
@@ -1302,7 +1324,7 @@ Slider
 	padding-bottom: 100px;
 }
 .recent-menu {
-	text-align: center;
+	text-align: left;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -2727,9 +2749,10 @@ span.page-numbers.current {
 	padding: 50px;
 	padding-bottom: 20px;
 	display: table-cell;
-	text-align: center;
+	text-align: right;
 	vertical-align: middle;
 	position: relative;
+	right: 155px;
 }
 
 .banner-text h1 {

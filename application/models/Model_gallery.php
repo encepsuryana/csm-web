@@ -3,16 +3,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Model_gallery extends CI_Model 
 {
-    public function get_gallery_data()
-    {
-        $query = $this->db->query("SELECT * 
-                        FROM tbl_photo
-                        WHERE photo_show_home=?
-                        ORDER BY photo_id DESC",array('Yes'));
-        return $query->result_array();
-    }
+	public function get_gallery_data()
+	{
+		$query = $this->db->query("SELECT * 
+			FROM tbl_photo
+			WHERE photo_show_home=?
+			ORDER BY photo_id DESC",array('Yes'));
+		return $query->result_array();
+	}
 
-    public function get_service_data()
+	public function get_service_data()
 	{
 		$query = $this->db->query("SELECT * from tbl_service ORDER BY id ASC");
 		return $query->result_array();
@@ -48,6 +48,16 @@ class Model_gallery extends CI_Model
 	public function get_partner_data()
 	{
 		$query = $this->db->query("SELECT * FROM tbl_partner ORDER BY id ASC");
+		return $query->result_array();
+	}
+	public function get_electronics_division_data()
+	{
+		$query = $this->db->query("SELECT * from tbl_electronics_division ORDER BY id ASC");
+		return $query->result_array();
+	}
+	public function get_electronics_division_category()
+	{
+		$query = $this->db->query("SELECT * FROM tbl_electronics_division_category ORDER BY category_name ASC");
 		return $query->result_array();
 	}
 }

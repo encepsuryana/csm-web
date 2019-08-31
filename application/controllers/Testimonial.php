@@ -29,6 +29,8 @@ class Testimonial extends CI_Controller {
 		$header['portfolio'] = $this->Model_testimonial->get_portfolio_data();
 		$header['partner'] = $this->Model_testimonial->get_partner_data();
 		$header['product'] = $this->Model_testimonial->get_product_data();
+		$header['electronics_division'] = $this->Model_testimonial->get_electronics_division_data();
+		$header['electronics_division_category'] = $this->Model_testimonial->get_electronics_division_category();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_testimonial');

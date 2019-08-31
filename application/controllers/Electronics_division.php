@@ -20,12 +20,13 @@ class Electronics_division extends CI_Controller {
 		$header['latest_news'] = $this->Model_common->get_latest_news();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 
-		$header['facility_category'] = $this->Model_electronics_division->get_facility_category();
-		$header['facility'] = $this->Model_electronics_division->get_facility_data();
+		$header['electronics_division'] = $this->Model_electronics_division->get_electronics_division_data();
+		$header['electronics_division_desc'] = $this->Model_electronics_division->show_electronics_division_desc();
+		$header['electronics_division_category'] = $this->Model_electronics_division->get_electronics_division_category();
 
 		$header['service'] = $this->Model_electronics_division->get_service_data();
-		$header['electronics_division'] = $this->Model_electronics_division->get_electronics_division_data();
-		$header['electronics_division_category'] = $this->Model_electronics_division->get_electronics_division_category();
+		$header['facility_category'] = $this->Model_electronics_division->get_facility_category();
+		$header['facility'] = $this->Model_electronics_division->get_facility_data();
 		$header['portfolio_category'] = $this->Model_electronics_division->get_portfolio_category();
 		$header['portfolio'] = $this->Model_electronics_division->get_portfolio_data();
 		$header['partner'] = $this->Model_electronics_division->get_partner_data();
@@ -51,6 +52,7 @@ class Electronics_division extends CI_Controller {
 		$data['electronics_division'] = $this->Model_electronics_division->get_electronics_division_detail($id);
 		$data['electronics_division_photo'] = $this->Model_electronics_division->get_electronics_division_photo($id);
 		$data['electronics_division_photo_total'] = $this->Model_electronics_division->get_electronics_division_photo_number($id);
+
 
 		$header['service'] = $this->Model_electronics_division->get_service_data();
 		$header['facility'] = $this->Model_electronics_division->get_facility_data();

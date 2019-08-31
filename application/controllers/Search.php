@@ -27,6 +27,8 @@ class Search extends CI_Controller {
 		$header['portfolio'] = $this->Model_search->get_portfolio_data();
 		$header['partner'] = $this->Model_search->get_partner_data();
 		$header['product'] = $this->Model_search->get_product_data();
+		$header['electronics_division'] = $this->Model_search->get_electronics_division_data();
+		$header['electronics_division_category'] = $this->Model_search->get_electronics_division_category();
 
 		if(isset($_POST['search_string'])) {
 
@@ -41,6 +43,8 @@ class Search extends CI_Controller {
 			$header['portfolio'] = $this->Model_search->get_portfolio_data();
 			$header['partner'] = $this->Model_search->get_partner_data();
 			$header['product'] = $this->Model_search->get_product_data();
+		$header['electronics_division'] = $this->Model_search->get_electronics_division_data();
+		$header['electronics_division_category'] = $this->Model_search->get_electronics_division_category();
 
 			$this->load->view('view_header',$header);
 			$this->load->view('view_search',$data);

@@ -13,6 +13,7 @@ class Model_common extends CI_Model
         $query = $this->db->query("SELECT * from tbl_page WHERE id=1");
         return $query->first_row('array');
     }   
+    
     public function get_comment_code()
     {
         $query = $this->db->query("SELECT * from tbl_comment WHERE id=1");
@@ -47,6 +48,11 @@ class Model_common extends CI_Model
     public function get_single_facility_data($id)
     {
         $query = $this->db->query("SELECT * from tbl_facility WHERE id=?",array($id));
+        return $query->result_array();
+    }
+    public function get_single_electronics_division_data($id)
+    {
+        $query = $this->db->query("SELECT * from tbl_electronics_division WHERE id=?",array($id));
         return $query->result_array();
     }
     public function get_single_portfolio_data($id)

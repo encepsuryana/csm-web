@@ -13,6 +13,13 @@ class Model_electronics_division extends CI_Model
         $query = $this->db->query("SELECT * from tbl_electronics_division");
         return $query->result_array();
     }
+
+    public function show_electronics_division_desc()
+    {
+        $query = $this->db->query("SELECT * from tbl_electronics_division_desc WHERE id=1");
+        return $query->first_row('array');
+    }
+
     public function get_electronics_division_data_order_by_name()
     {
         $query = $this->db->query("SELECT * from tbl_electronics_division ORDER BY name ASC");

@@ -415,3 +415,114 @@ ERROR - 2019-08-31 15:16:02 --> 404 Page Not Found!: Public/css
 ERROR - 2019-08-31 15:16:17 --> 404 Page Not Found!: Public/css
 ERROR - 2019-08-31 15:17:08 --> 404 Page Not Found!: Public/css
 ERROR - 2019-08-31 15:17:19 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 15:20:56 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 15:22:20 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 15:25:06 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 15:33:47 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 15:33:53 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 15:36:24 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 15:50:11 --> 404 Page Not Found!: admin/Electronics_division_desc/index
+ERROR - 2019-08-31 15:52:07 --> 404 Page Not Found!: admin/Electronics_division_desc/index
+ERROR - 2019-08-31 16:01:17 --> Query error: Table 'csm_web.tbl_electronics_division_desc' doesn't exist - Invalid query: SELECT * from tbl_electronics_division_desc WHERE id=1
+ERROR - 2019-08-31 16:02:06 --> Query error: Table 'csm_web.tbl_electronics_division_desc' doesn't exist - Invalid query: SELECT * from tbl_electronics_division_desc WHERE id=1
+ERROR - 2019-08-31 16:06:04 --> Query error: Unknown column 'id' in 'where clause' - Invalid query: SELECT * from tbl_electronics_division_desc WHERE id=1
+ERROR - 2019-08-31 16:06:05 --> Query error: Unknown column 'id' in 'where clause' - Invalid query: SELECT * from tbl_electronics_division_desc WHERE id=1
+ERROR - 2019-08-31 16:09:05 --> Severity: Notice --> Undefined variable: page C:\xampp\htdocs\csm-web\application\views\admin\view_electronics_division_desc.php 36
+ERROR - 2019-08-31 16:09:05 --> Severity: Notice --> Undefined variable: page C:\xampp\htdocs\csm-web\application\views\admin\view_electronics_division_desc.php 40
+ERROR - 2019-08-31 16:09:05 --> Severity: Notice --> Undefined variable: page C:\xampp\htdocs\csm-web\application\views\admin\view_electronics_division_desc.php 70
+ERROR - 2019-08-31 16:09:05 --> Severity: Notice --> Undefined variable: page C:\xampp\htdocs\csm-web\application\views\admin\view_electronics_division_desc.php 76
+ERROR - 2019-08-31 16:09:05 --> Severity: Notice --> Undefined variable: page C:\xampp\htdocs\csm-web\application\views\admin\view_electronics_division_desc.php 83
+ERROR - 2019-08-31 16:09:05 --> Severity: Notice --> Undefined variable: page C:\xampp\htdocs\csm-web\application\views\admin\view_electronics_division_desc.php 89
+ERROR - 2019-08-31 16:09:05 --> Severity: Notice --> Undefined variable: page C:\xampp\htdocs\csm-web\application\views\admin\view_electronics_division_desc.php 95
+ERROR - 2019-08-31 16:12:28 --> 404 Page Not Found!: Public/uploads
+ERROR - 2019-08-31 16:12:33 --> Severity: Warning --> unlink(./public/uploads/electronics_division_desc-1.jpg): No such file or directory C:\xampp\htdocs\csm-web\application\controllers\admin\Electronics_division_desc.php 34
+ERROR - 2019-08-31 16:19:12 --> Severity: Notice --> Undefined index: profile_heading C:\xampp\htdocs\csm-web\application\controllers\admin\Electronics_division_desc.php 97
+ERROR - 2019-08-31 16:19:12 --> Severity: Notice --> Undefined index: profile_content C:\xampp\htdocs\csm-web\application\controllers\admin\Electronics_division_desc.php 98
+ERROR - 2019-08-31 16:19:12 --> Severity: Notice --> Undefined index: history_heading C:\xampp\htdocs\csm-web\application\controllers\admin\Electronics_division_desc.php 99
+ERROR - 2019-08-31 16:19:12 --> Severity: Notice --> Undefined index: history_content C:\xampp\htdocs\csm-web\application\controllers\admin\Electronics_division_desc.php 100
+ERROR - 2019-08-31 16:19:12 --> Severity: Notice --> Undefined index: structure_heading C:\xampp\htdocs\csm-web\application\controllers\admin\Electronics_division_desc.php 101
+ERROR - 2019-08-31 16:19:12 --> Severity: Notice --> Undefined index: mission_heading C:\xampp\htdocs\csm-web\application\controllers\admin\Electronics_division_desc.php 102
+ERROR - 2019-08-31 16:19:12 --> Severity: Notice --> Undefined index: mission_content C:\xampp\htdocs\csm-web\application\controllers\admin\Electronics_division_desc.php 103
+ERROR - 2019-08-31 16:19:12 --> Severity: Notice --> Undefined index: vision_heading C:\xampp\htdocs\csm-web\application\controllers\admin\Electronics_division_desc.php 104
+ERROR - 2019-08-31 16:19:12 --> Severity: Notice --> Undefined index: vision_content C:\xampp\htdocs\csm-web\application\controllers\admin\Electronics_division_desc.php 105
+ERROR - 2019-08-31 16:19:12 --> Query error: Unknown column 'profile_heading' in 'field list' - Invalid query: UPDATE `tbl_electronics_division_desc` SET `electronics_division_desc_heading` = 'Electronics technology ', `electronics_division_desc_content` = 'Expert on design electronic control systems by Field-Programmable Gate Array (FPGA), Digital Signal Processor&nbsp; (DSP), microcontrollers (ARM, AVR etc) processors', `profile_heading` = NULL, `profile_content` = NULL, `history_heading` = NULL, `history_content` = NULL, `structure_heading` = NULL, `mission_heading` = NULL, `mission_content` = NULL, `vision_heading` = NULL, `vision_content` = NULL, `mt_electronics_division_desc` = 'mt', `mk_electronics_division_desc` = 'mk', `md_electronics_division_desc` = 'md'
+WHERE `id` = 1
+ERROR - 2019-08-31 16:19:12 --> Severity: Warning --> Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\csm-web\system\core\Exceptions.php:271) C:\xampp\htdocs\csm-web\system\core\Common.php 570
+ERROR - 2019-08-31 16:22:07 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-08-31 16:28:19 --> Severity: Notice --> Undefined variable: electronics_division_desc C:\xampp\htdocs\csm-web\application\views\view_electronics_division.php 10
+ERROR - 2019-08-31 16:31:47 --> Severity: Notice --> Undefined index: about_photo C:\xampp\htdocs\csm-web\application\views\view_electronics_division.php 10
+ERROR - 2019-08-31 16:32:26 --> Severity: Notice --> Undefined index: electronics_division_desc_photo C:\xampp\htdocs\csm-web\application\views\view_electronics_division.php 10
+ERROR - 2019-08-31 16:58:54 --> Severity: Notice --> Undefined index: electronics_division_desc_photo C:\xampp\htdocs\csm-web\application\views\view_electronics_division.php 10
+ERROR - 2019-08-31 16:59:20 --> Severity: Notice --> Undefined index: electronics_division_desc_photo C:\xampp\htdocs\csm-web\application\views\view_electronics_division.php 10
+ERROR - 2019-08-31 17:00:39 --> Severity: Notice --> Undefined index: electronics_division_desc_photo C:\xampp\htdocs\csm-web\application\views\view_electronics_division.php 10
+ERROR - 2019-08-31 17:18:53 --> Severity: Notice --> Undefined index: md_electronics-division C:\xampp\htdocs\csm-web\application\views\view_header.php 89
+ERROR - 2019-08-31 17:18:53 --> Severity: Notice --> Undefined index: mk_electronics-division C:\xampp\htdocs\csm-web\application\views\view_header.php 90
+ERROR - 2019-08-31 17:18:53 --> Severity: Notice --> Undefined index: mt_electronics-division C:\xampp\htdocs\csm-web\application\views\view_header.php 91
+ERROR - 2019-08-31 17:19:05 --> Severity: Notice --> Undefined index: md_electronics_division C:\xampp\htdocs\csm-web\application\views\view_header.php 89
+ERROR - 2019-08-31 17:19:05 --> Severity: Notice --> Undefined index: mk_electronics-division C:\xampp\htdocs\csm-web\application\views\view_header.php 90
+ERROR - 2019-08-31 17:19:05 --> Severity: Notice --> Undefined index: mt_electronics-division C:\xampp\htdocs\csm-web\application\views\view_header.php 91
+ERROR - 2019-08-31 17:21:43 --> Severity: Notice --> Undefined index: mt_electronic_division C:\xampp\htdocs\csm-web\application\views\admin\view_page.php 713
+ERROR - 2019-08-31 17:21:43 --> Severity: Notice --> Undefined index: mk_electronic_division C:\xampp\htdocs\csm-web\application\views\admin\view_page.php 719
+ERROR - 2019-08-31 17:21:43 --> Severity: Notice --> Undefined index: md_electronic_division C:\xampp\htdocs\csm-web\application\views\admin\view_page.php 725
+ERROR - 2019-08-31 17:23:04 --> Severity: Notice --> Undefined index: mt_electronic_division C:\xampp\htdocs\csm-web\application\views\admin\view_page.php 713
+ERROR - 2019-08-31 17:23:04 --> Severity: Notice --> Undefined index: mk_electronic_division C:\xampp\htdocs\csm-web\application\views\admin\view_page.php 719
+ERROR - 2019-08-31 17:23:04 --> Severity: Notice --> Undefined index: md_electronic_division C:\xampp\htdocs\csm-web\application\views\admin\view_page.php 725
+ERROR - 2019-08-31 17:26:39 --> Severity: Notice --> Undefined index: md_electronics_division C:\xampp\htdocs\csm-web\application\views\view_header.php 89
+ERROR - 2019-08-31 17:26:39 --> Severity: Notice --> Undefined index: mk_electronics-division C:\xampp\htdocs\csm-web\application\views\view_header.php 90
+ERROR - 2019-08-31 17:26:39 --> Severity: Notice --> Undefined index: mt_electronics-division C:\xampp\htdocs\csm-web\application\views\view_header.php 91
+ERROR - 2019-08-31 17:27:29 --> Severity: Notice --> Undefined index: md_electronics_division C:\xampp\htdocs\csm-web\application\views\view_header.php 89
+ERROR - 2019-08-31 17:27:29 --> Severity: Notice --> Undefined index: mk_electronics_division C:\xampp\htdocs\csm-web\application\views\view_header.php 90
+ERROR - 2019-08-31 17:27:29 --> Severity: Notice --> Undefined index: mt_electronics-division C:\xampp\htdocs\csm-web\application\views\view_header.php 91
+ERROR - 2019-08-31 17:30:54 --> Severity: Notice --> Undefined index: md_electronics_division C:\xampp\htdocs\csm-web\application\views\view_header.php 89
+ERROR - 2019-08-31 17:30:54 --> Severity: Notice --> Undefined index: mk_electronics_division C:\xampp\htdocs\csm-web\application\views\view_header.php 90
+ERROR - 2019-08-31 17:30:54 --> Severity: Notice --> Undefined index: mt_electronics-division C:\xampp\htdocs\csm-web\application\views\view_header.php 91
+ERROR - 2019-08-31 17:31:15 --> Severity: Notice --> Undefined index: md_electronics_division C:\xampp\htdocs\csm-web\application\views\view_header.php 89
+ERROR - 2019-08-31 17:31:15 --> Severity: Notice --> Undefined index: mk_electronics_division C:\xampp\htdocs\csm-web\application\views\view_header.php 90
+ERROR - 2019-08-31 17:31:15 --> Severity: Notice --> Undefined index: mt_electronics_division C:\xampp\htdocs\csm-web\application\views\view_header.php 91
+ERROR - 2019-08-31 17:32:33 --> Severity: Notice --> Undefined index: mt_electronic_division C:\xampp\htdocs\csm-web\application\views\admin\view_page.php 713
+ERROR - 2019-08-31 17:32:33 --> Severity: Notice --> Undefined index: mk_electronic_division C:\xampp\htdocs\csm-web\application\views\admin\view_page.php 719
+ERROR - 2019-08-31 17:32:33 --> Severity: Notice --> Undefined index: md_electronic_division C:\xampp\htdocs\csm-web\application\views\admin\view_page.php 725
+ERROR - 2019-08-31 17:36:39 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:39:50 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:42:02 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:43:59 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:44:11 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:44:22 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:45:15 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:46:07 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:46:22 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:47:59 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:48:05 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:48:15 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:48:42 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:48:49 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:49:31 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:49:57 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:54:06 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 17:55:27 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 18:00:38 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 18:00:52 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 18:05:11 --> Severity: Notice --> Undefined variable: electronics_division_category C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:05:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:06:07 --> Severity: Notice --> Undefined variable: electronics_division_category C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:06:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:06:35 --> Severity: Notice --> Undefined variable: electronics_division_category C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:06:35 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:07:20 --> Severity: Notice --> Undefined variable: electronics_division_category C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:07:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:10:21 --> Severity: Notice --> Undefined variable: electronics_division_category C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:10:21 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:16:50 --> Severity: Notice --> Undefined variable: electronics_division_category C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:16:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:17:36 --> Severity: Notice --> Undefined variable: electronics_division_category C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:17:36 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:17:56 --> Severity: Notice --> Undefined variable: electronics_division_category C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:17:56 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:18:11 --> Severity: Notice --> Undefined variable: electronics_division_category C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:18:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:19:08 --> 404 Page Not Found!: News/index
+ERROR - 2019-08-31 18:19:48 --> Severity: Notice --> Undefined variable: electronics_division_category C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:19:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-08-31 18:20:26 --> Severity: error --> Exception: syntax error, unexpected '$header' (T_VARIABLE) C:\xampp\htdocs\csm-web\application\controllers\Facility.php 65
+ERROR - 2019-08-31 18:33:31 --> 404 Page Not Found!: Public/css
+ERROR - 2019-08-31 18:34:45 --> 404 Page Not Found!: Public/css
