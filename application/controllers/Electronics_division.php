@@ -53,7 +53,6 @@ class Electronics_division extends CI_Controller {
 		$data['electronics_division_photo'] = $this->Model_electronics_division->get_electronics_division_photo($id);
 		$data['electronics_division_photo_total'] = $this->Model_electronics_division->get_electronics_division_photo_number($id);
 
-
 		$header['service'] = $this->Model_electronics_division->get_service_data();
 		$header['facility'] = $this->Model_electronics_division->get_facility_data();
 		$header['facility_category'] = $this->Model_electronics_division->get_facility_category();

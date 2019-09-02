@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 30 Agu 2019 pada 04.13
+-- Waktu pembuatan: 02 Sep 2019 pada 04.15
 -- Versi server: 10.3.16-MariaDB
 -- Versi PHP: 7.3.7
 
@@ -112,6 +112,102 @@ INSERT INTO `tbl_designation` (`designation_id`, `designation_name`) VALUES
 (10, 'CNC CADCAM Shop Section Head'),
 (11, 'Conventional Shop Section Head'),
 (12, 'Design Engineering Section Head');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_electronics_division`
+--
+
+CREATE TABLE `tbl_electronics_division` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `short_content` text NOT NULL,
+  `content` text NOT NULL,
+  `client_name` varchar(255) NOT NULL,
+  `client_company` varchar(255) NOT NULL,
+  `start_date` varchar(50) NOT NULL,
+  `end_date` varchar(50) NOT NULL,
+  `website` varchar(255) NOT NULL,
+  `cost` varchar(50) NOT NULL,
+  `client_comment` text NOT NULL,
+  `category_id` varchar(255) NOT NULL,
+  `photo` varchar(255) NOT NULL,
+  `banner` varchar(255) NOT NULL,
+  `meta_title` varchar(255) NOT NULL,
+  `meta_keyword` text NOT NULL,
+  `meta_description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tbl_electronics_division`
+--
+
+INSERT INTO `tbl_electronics_division` (`id`, `name`, `short_content`, `content`, `client_name`, `client_company`, `start_date`, `end_date`, `website`, `cost`, `client_comment`, `category_id`, `photo`, `banner`, `meta_title`, `meta_keyword`, `meta_description`) VALUES
+(1, 'PLC Controller design and implementations', 'PLC Controller design and implementations', '<p>PLC Controller design and implementations<br></p>', '', '', '', '', '', '', '', '1', 'electronics_division-1.jpg', 'electronics_division-banner-1.png', 'PLC Controller design and implementations', 'PLC Controller design and implementations', 'PLC Controller design and implementations'),
+(2, 'Power electronics design and manufacturing', 'Power electronics design and manufacturing', '<p>Power electronics design and manufacturing <br></p>', '', '', '', '', '', '', '', '1', 'electronics_division-2.jpg', 'electronics_division-banner-2.png', 'Power electronics design and manufacturing ', 'Power electronics design and manufacturing ', 'Power electronics design and manufacturing '),
+(3, 'MMI (Man-Machine Interface)', 'MMI (Man-Machine Interface)', '<p>MMI (Man-Machine Interface)<br></p>', '', '', '', '', '', '', '', '1', 'electronics_division-3.jpg', 'electronics_division-banner-3.png', 'MMI (Man-Machine Interface)', 'MMI (Man-Machine Interface)', 'MMI (Man-Machine Interface)'),
+(4, 'Ruggedized electronic controllers', 'Ruggedized electronic controllers', '<p>Ruggedized electronic controllers<br></p>', '', '', '', '', '', '', '', '2', 'electronics_division-4.jpg', 'electronics_division-banner-4.png', 'Ruggedized electronic controllers', 'Ruggedized electronic controllers', 'Ruggedized electronic controllers'),
+(5, 'Harsh environmental power drivers', 'Harsh environmental power drivers', '<p>Harsh environmental power drivers <br></p>', '', '', '', '', '', '', '', '2', 'electronics_division-5.jpg', 'electronics_division-banner-5.png', 'Harsh environmental power drivers ', 'Harsh environmental power drivers ', 'Harsh environmental power drivers '),
+(6, 'Mission computers', 'Mission computers', '<p>Mission computers <br></p>', '', '', '', '', '', '', '', '3', 'electronics_division-6.jpg', 'electronics_division-banner-6.png', 'Mission computers ', 'Mission computers ', 'Mission computers '),
+(7, 'Display systems (Multi-Function Display-MFD, Moving Map Display, etc)', 'Display systems (Multi-Function Display-MFD, Moving Map Display, etc)', 'Display systems (Multi-Function Display-MFD, Moving Map Display, etc)', '', '', '', '', '', '', '', '3', 'electronics_division-7.jpg', 'electronics_division-banner-7.png', 'Display systems (Multi-Function Display-MFD, Moving Map Display, etc)', 'Display systems (Multi-Function Display-MFD, Moving Map Display, etc)', 'Display systems (Multi-Function Display-MFD, Moving Map Display, etc)'),
+(8, 'Sensor interface units', 'Sensor interface units', '<p>Sensor interface units <br></p>', '', '', '', '', '', '', '', '3', 'electronics_division-8.jpg', 'electronics_division-banner-8.png', 'Sensor interface units ', 'Sensor interface units ', 'Sensor interface units ');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_electronics_division_category`
+--
+
+CREATE TABLE `tbl_electronics_division_category` (
+  `category_id` int(11) NOT NULL,
+  `category_name` varchar(255) NOT NULL,
+  `status` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tbl_electronics_division_category`
+--
+
+INSERT INTO `tbl_electronics_division_category` (`category_id`, `category_name`, `status`) VALUES
+(1, 'Industrial Electronics', 'Active'),
+(2, 'Defense Electronic', 'Active'),
+(3, 'Aviation Electronics', 'Active');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_electronics_division_desc`
+--
+
+CREATE TABLE `tbl_electronics_division_desc` (
+  `id` int(11) NOT NULL,
+  `electronics_division_desc_photo` varchar(255) NOT NULL,
+  `electronics_division_desc_heading` varchar(255) NOT NULL,
+  `electronics_division_desc_content` text NOT NULL,
+  `mt_electronics_division_desc` varchar(255) NOT NULL,
+  `mk_electronics_division_desc` text NOT NULL,
+  `md_electronics_division_desc` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `tbl_electronics_division_desc`
+--
+
+INSERT INTO `tbl_electronics_division_desc` (`id`, `electronics_division_desc_photo`, `electronics_division_desc_heading`, `electronics_division_desc_content`, `mt_electronics_division_desc`, `mk_electronics_division_desc`, `md_electronics_division_desc`) VALUES
+(1, 'electronics_division_desc_photo.png', 'Electronic technology ', '<p><b>Electronic technology</b></p><p>Electronics technology Expert on design electronic control systems by Field-Programmable Gate Array (FPGA), Digital Signal Processor&nbsp; (DSP), microcontrollers (ARM, AVR etc) processors.</p><p><br></p><p><b>Drivers and controllers</b></p><p>Synchro, resolvers, motors,&nbsp; high power, and precision systems by means of IGBT, transformers, power modules, etc.</p>', 'Electronic technology ', 'Electronic technology\r\n\r\nElectronics technology Expert on design electronic control systems by Field-Programmable Gate Array (FPGA), Digital Signal Processor  (DSP), microcontrollers (ARM, AVR etc) processors.\r\n\r\n\r\nDrivers and controllers\r\n\r\nSynchro, resolvers, motors,  high power, and precision systems by means of IGBT, transformers, power modules, etc.', 'Electronic technology\r\n\r\nElectronics technology Expert on design electronic control systems by Field-Programmable Gate Array (FPGA), Digital Signal Processor  (DSP), microcontrollers (ARM, AVR etc) processors.\r\n\r\n\r\nDrivers and controllers\r\n\r\nSynchro, resolvers, motors,  high power, and precision systems by means of IGBT, transformers, power modules, etc.');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_electronics_division_photo`
+--
+
+CREATE TABLE `tbl_electronics_division_photo` (
+  `id` int(11) NOT NULL,
+  `electronics_division_id` int(11) NOT NULL,
+  `photo` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -245,77 +341,81 @@ CREATE TABLE `tbl_language` (
   `id` int(11) NOT NULL,
   `name` text NOT NULL,
   `eng` text NOT NULL,
-  `idn` text NOT NULL,
-  `temp` text NOT NULL
+  `idn` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `tbl_language`
 --
 
-INSERT INTO `tbl_language` (`id`, `name`, `eng`, `idn`, `temp`) VALUES
-(1, 'HOME', 'Home', 'Beranda', ''),
-(2, 'PAGE', 'Page', 'Halaman', ''),
-(3, 'ABOUT', 'About', 'Tentang', ''),
-(4, 'GALLERY', 'Gallery', 'Galeri', ''),
-(5, 'FAQ', 'FAQ', 'FAQ', ''),
-(6, 'SERVICE', 'Service', 'layanan', ''),
-(7, 'PORTFOLIO', 'Portfolio', 'Portofolio', ''),
-(8, 'TESTIMONIAL', 'Testimonial', 'Testimonial', ''),
-(9, 'NEWS', 'News', 'Berita', ''),
-(10, 'CONTACT', 'Contact', 'Kontak', ''),
-(11, 'ADDRESS', 'Address', 'Alamat', ''),
-(12, 'CALL_US', 'Call Us', 'Hubungi Kami', ''),
-(13, 'WORKING_HOURS', 'Woring Hours', 'Jam Kerja', ''),
-(14, 'ABOUT_US', 'About Us', 'Tentang Kami', ''),
-(15, 'LATEST_NEWS', 'Latest News', 'Berita Terbaru', ''),
-(16, 'POPULAR_NEWS', 'Popular News', 'Berita Poluler', ''),
-(17, 'QUICK_LINKS', 'Quick Link', 'Quick Link', ''),
-(18, 'TERMS_AND_CONDITIONS', 'Term and Conditions', 'Term and Conditions', ''),
-(19, 'PRIVACY_POLICY', 'Privacy Policy', 'Privacy Policy', ''),
-(20, 'READ_MORE', 'Read More', 'Selengkapnya', ''),
-(21, 'POSTED_ON', 'Posted On:', 'Posting pada:', ''),
-(22, 'ADMIN', 'Admin', 'Admin', ''),
-(23, 'SERVICES', 'Services', 'Jasa', ''),
-(24, 'ALL', 'All', 'Semua', ''),
-(26, 'PROJECTS', 'Project', 'Proyek', ''),
-(27, 'DESCRIPTION', 'Description', 'Deskripsi', ''),
-(28, 'CLIENT_NAME', 'Client Name', 'Nama klien', ''),
-(29, 'CLIENT_COMPANY', 'Client Company', 'Perusahaan Klien', ''),
-(30, 'PROJECT_START_DATE', 'Project Start Date', 'Waktu Mulai Proyek', ''),
-(31, 'PROJECT_END_DATE', 'Project End Date', 'Waktu Selesai Proyek', ''),
-(33, 'CLIENT_COMMENT', 'Client Comment', 'Komentar Klien', ''),
-(34, 'SEARCH_NEWS', 'Search News', 'Pencarian Berita', ''),
-(35, 'CATEGORY', 'Category', 'Kategori', ''),
-(36, 'SHARE_THIS', 'Share This', 'Bagikan ini', ''),
-(37, 'COMMENTS', 'Comments', 'Komentar', ''),
-(38, 'SEARCH_BY', 'Search by:', 'Pencarian Berdasarkan:', ''),
-(39, 'NO_RESULT_FOUND', 'No Result Found', 'Pencarian tidak ditemukan', ''),
-(40, 'CONTACT_US_PAGE_FORM_HEADING_TEXT', 'Contact us through the following form:', 'Kontak kami melalui form berikut:', ''),
-(41, 'PREVIOUS', 'Previos', 'Sebelumnya', ''),
-(42, 'NEXT', 'Next', 'Selanjutnya', ''),
-(43, 'FIND_US_ON_MAP', 'Find Us on Map:', 'Tentukan Kami di Maps:', ''),
-(44, 'NAME', 'Name', 'Nama', ''),
-(45, 'EMAIL_ADDRESS', 'Email Address', 'Alamat Email', ''),
-(46, 'PHONE', 'Phone Number', 'Nomor Telp', ''),
-(47, 'MESSAGE', 'Message', 'Pesan', ''),
-(48, 'SEND_MESSAGE', 'Send Message', 'Kirim Pesan', ''),
-(49, 'EMPTY_ERROR_NAME', 'Name can not be empty', 'Nama tidak boleh kosong!', ''),
-(50, 'EMPTY_ERROR_PHONE', 'Phone number can not be empty', 'Telp tidak boleh kosong!', ''),
-(51, 'EMPTY_ERROR_EMAIL', 'Email address can not be empty', 'Alamat Email tidak boleh kosong!', ''),
-(52, 'VALID_ERROR_EMAIL', 'Email address is invalid', 'Alamat Email tidak benar!', ''),
-(53, 'EMPTY_ERROR_COMMENT', 'Comment can not be empty', 'Komentar tidak boleh kosong!', ''),
-(54, 'CONTACT_FORM_EMAIL_SUBJECT', 'Contact Form Email - www.ciptasinergi.com', 'Pesan dari Email - www.ciptasinergi.com', ''),
-(55, 'CONTACT_FORM_EMAIL_SUCCESS_MESSAGE', 'Thank you for sending us the email. We will contact you shortly.', 'Terima kasih telah mengirim pesan, tunggu balasan dari kami..', ''),
-(56, 'PASSWORD_REQUEST_EMAIL_SUBJECT', 'Password Request - www.ciptasinergi.com', 'Password Request -  www.ciptasinergi.com', ''),
-(57, 'PRODUCT', 'Product', 'Produk', ''),
-(58, 'COMPANY_PROFILE', 'Company Profile', 'Profil Perusahaan', ''),
-(59, 'CAREER', 'Career', 'Karir', ''),
-(60, 'OUR_PRODUCT', 'Our Product', 'Produk Kami', ''),
-(61, 'FACILITY', 'Facility', 'Fasilitas', ''),
-(62, 'SEE_MORE', 'See More', 'Lihat Semua', ''),
-(63, 'COMPANY_EMAIL', 'Company Email', 'Email Perusahaan', ''),
-(64, 'COMPANY_PHONE', 'Company Phone', 'No.Telp Perusahaan', '');
+INSERT INTO `tbl_language` (`id`, `name`, `eng`, `idn`) VALUES
+(1, 'HOME', 'Home', 'Beranda'),
+(2, 'PAGE', 'Page', 'Halaman'),
+(3, 'ABOUT', 'About', 'Tentang'),
+(4, 'GALLERY', 'Gallery', 'Galeri'),
+(5, 'FAQ', 'FAQ', 'FAQ'),
+(6, 'SERVICE', 'Service', 'layanan'),
+(7, 'PORTFOLIO', 'Portfolio', 'Portofolio'),
+(8, 'TESTIMONIAL', 'Testimonial', 'Testimonial'),
+(9, 'NEWS', 'News', 'Berita'),
+(10, 'CONTACT', 'Contact', 'Kontak'),
+(11, 'ADDRESS', 'Address', 'Alamat'),
+(12, 'CALL_US', 'Call Us', 'Hubungi Kami'),
+(13, 'WORKING_HOURS', 'Woring Hours', 'Jam Kerja'),
+(14, 'ABOUT_US', 'About Us', 'Tentang Kami'),
+(15, 'LATEST_NEWS', 'Latest News', 'Berita Terbaru'),
+(16, 'POPULAR_NEWS', 'Popular News', 'Berita Poluler'),
+(17, 'QUICK_LINKS', 'Quick Link', 'Quick Link'),
+(18, 'TERMS_AND_CONDITIONS', 'Term and Conditions', 'Term and Conditions'),
+(19, 'PRIVACY_POLICY', 'Privacy Policy', 'Privacy Policy'),
+(20, 'READ_MORE', 'Read More', 'Selengkapnya'),
+(21, 'POSTED_ON', 'Posted On:', 'Posting pada:'),
+(22, 'ADMIN', 'Admin', 'Admin'),
+(23, 'SERVICES', 'Services', 'Jasa'),
+(24, 'ALL', 'All', 'Semua'),
+(26, 'PROJECTS', 'Project', 'Proyek'),
+(27, 'DESCRIPTION', 'Description', 'Deskripsi'),
+(28, 'CLIENT_NAME', 'Client Name', 'Nama klien'),
+(29, 'CLIENT_COMPANY', 'Client Company', 'Perusahaan Klien'),
+(30, 'PROJECT_START_DATE', 'Project Start Date', 'Waktu Mulai Proyek'),
+(31, 'PROJECT_END_DATE', 'Project End Date', 'Waktu Selesai Proyek'),
+(33, 'CLIENT_COMMENT', 'Client Comment', 'Komentar Klien'),
+(34, 'SEARCH_NEWS', 'Search News', 'Pencarian Berita'),
+(35, 'CATEGORY', 'Category', 'Kategori'),
+(36, 'SHARE_THIS', 'Share This', 'Bagikan ini'),
+(37, 'COMMENTS', 'Comments', 'Komentar'),
+(38, 'SEARCH_BY', 'Search by:', 'Pencarian Berdasarkan:'),
+(39, 'NO_RESULT_FOUND', 'No Result Found', 'Pencarian tidak ditemukan'),
+(40, 'CONTACT_US_PAGE_FORM_HEADING_TEXT', 'Contact us through the following form:', 'Kontak kami melalui form berikut:'),
+(41, 'PREVIOUS', 'Previos', 'Sebelumnya'),
+(42, 'NEXT', 'Next', 'Selanjutnya'),
+(43, 'FIND_US_ON_MAP', 'Find Us on Map:', 'Tentukan Kami di Maps:'),
+(44, 'NAME', 'Name', 'Nama'),
+(45, 'EMAIL_ADDRESS', 'Email Address', 'Alamat Email'),
+(46, 'PHONE', 'Phone Number', 'Nomor Telp'),
+(47, 'MESSAGE', 'Message', 'Pesan'),
+(48, 'SEND_MESSAGE', 'Send Message', 'Kirim Pesan'),
+(49, 'EMPTY_ERROR_NAME', 'Name can not be empty', 'Nama tidak boleh kosong!'),
+(50, 'EMPTY_ERROR_PHONE', 'Phone number can not be empty', 'Telp tidak boleh kosong!'),
+(51, 'EMPTY_ERROR_EMAIL', 'Email address can not be empty', 'Alamat Email tidak boleh kosong!'),
+(52, 'VALID_ERROR_EMAIL', 'Email address is invalid', 'Alamat Email tidak benar!'),
+(53, 'EMPTY_ERROR_COMMENT', 'Comment can not be empty', 'Komentar tidak boleh kosong!'),
+(54, 'CONTACT_FORM_EMAIL_SUBJECT', 'Contact Form Email - www.ciptasinergi.com', 'Pesan dari Email - www.ciptasinergi.com'),
+(55, 'CONTACT_FORM_EMAIL_SUCCESS_MESSAGE', 'Thank you for sending us the email. We will contact you shortly.', 'Terima kasih telah mengirim pesan, tunggu balasan dari kami..'),
+(56, 'PASSWORD_REQUEST_EMAIL_SUBJECT', 'Password Request - www.ciptasinergi.com', 'Password Request -  www.ciptasinergi.com'),
+(57, 'PRODUCT', 'Product', 'Produk'),
+(58, 'COMPANY_PROFILE', 'Company Profile', 'Profil Perusahaan'),
+(59, 'CAREER', 'Career', 'Karir'),
+(60, 'OUR_PRODUCT', 'Our Product', 'Produk Kami'),
+(61, 'FACILITY', 'Facility', 'Fasilitas'),
+(62, 'SEE_MORE', 'See More', 'Lihat Semua'),
+(63, 'COMPANY_EMAIL', 'Company Email', 'Email Perusahaan'),
+(64, 'COMPANY_PHONE', 'Company Phone', 'No.Telp Perusahaan'),
+(65, 'ELECTRONICS_DIVISION', 'Electronics Division', 'Divisi Elektronik'),
+(66, 'NEW_PRODUCT', 'New Product', 'Produk Baru'),
+(67, 'TESTIMONIAL_SAY', 'What a Client Say', 'Apa yang klien katakan '),
+(68, 'PRODUCT_HOME', 'Our Featured Products', 'Produk Unggulan Kami'),
+(69, 'OUR_PARTNER', 'Our Partner', 'Partner Kami');
 
 -- --------------------------------------------------------
 
@@ -452,17 +552,20 @@ CREATE TABLE `tbl_page` (
   `mt_privacy` varchar(255) NOT NULL,
   `mk_privacy` text NOT NULL,
   `md_privacy` text NOT NULL,
-  `md_carrier` varchar(255) NOT NULL,
-  `mk_carrier` varchar(255) NOT NULL,
-  `mt_carrier` varchar(255) NOT NULL
+  `mt_carrier` varchar(255) NOT NULL,
+  `mk_carrier` text NOT NULL,
+  `md_carrier` text NOT NULL,
+  `mt_electronics_division` varchar(255) NOT NULL,
+  `mk_electronics_division` text NOT NULL,
+  `md_electronics_division` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `tbl_page`
 --
 
-INSERT INTO `tbl_page` (`id`, `mt_home`, `mk_home`, `md_home`, `about_photo`, `about_heading`, `about_content`, `profile_heading`, `profile_content`, `history_heading`, `history_content`, `structure_heading`, `structure_photo`, `mission_heading`, `mission_content`, `vision_heading`, `vision_content`, `mt_about`, `mk_about`, `md_about`, `gallery_heading`, `mt_gallery`, `mk_gallery`, `md_gallery`, `product_heading`, `mt_product`, `mk_product`, `md_product`, `faq_heading`, `mt_faq`, `mk_faq`, `md_faq`, `service_heading`, `mt_service`, `mk_service`, `md_service`, `facility_heading`, `mt_facility`, `mk_facility`, `md_facility`, `portfolio_heading`, `mt_portfolio`, `mk_portfolio`, `md_portfolio`, `testimonial_heading`, `mt_testimonial`, `mk_testimonial`, `md_testimonial`, `news_heading`, `mt_news`, `mk_news`, `md_news`, `contact_heading`, `mt_contact`, `mk_contact`, `md_contact`, `search_heading`, `mt_search`, `mk_search`, `md_search`, `term_heading`, `term_content`, `mt_term`, `mk_term`, `md_term`, `privacy_heading`, `privacy_content`, `mt_privacy`, `mk_privacy`, `md_privacy`, `md_carrier`, `mk_carrier`, `mt_carrier`) VALUES
-(1, 'Home | CV. Cipta Sinergi Manufacturing', '', '', 'about_photo.png', 'Tentang Perusahaan', '<h4>Indonesia :<br></h4><p>Perusahaan yang bergerak di bidang <b>manufaktur</b> untuk mesin yang diperlukan Industri. Didukung oleh <b>Tools Designer, Tools Maker, CAD CAM Engineering, CAD Modeler, CAM Programmer</b> dan<b> Production Planner</b> yang berpengalaman serta didukung oleh Peralatan yang cukup lengkap dan pemrosesan yang cepat didukung oleh mesin yang mempunyai title <b>High Speed Machine Processing</b> dan menghasilkan produk yang sangat berkualitas.</p><h4>English :</h4><p>Companies engaged in <b>manufacturing</b> for machines that are needed by industry. Supported by <b>Tools Designer, Tools Maker</b>, <b>CAD-CAM Engineering, CAM Programmer</b> and <b>Production Planner</b> who are experienced and supported by fairly complete equipment and fast processing supported by machines that have the title <b>High-Speed Machine Processing</b> and produce very high-quality products.<br></p>', 'Identias Perusahaan', '<table><tbody><tr><td><b>Office & Workshop<br></b></td><td><b>:</b> Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512</td></tr><tr><td><b>Phone/Fax<br></b></td><td><b>:</b> (022) 6647945</td></tr><tr><td><b>Website<br></b></td><td><b>:</b> www.ciptasinergi.com</td></tr><tr><td><b>E-Mail<br></b></td><td><b>:</b> marketing@ciptasinergi.com</td></tr><tr><td><b>Date of Established<br></b></td><td><b>:</b> Juni 1997</td></tr><tr><td><b>Legal Form<br></b></td><td><b>:</b> CV (Commanditer Venootschap) No. 5 Tanggal 24 Juli 2003</td></tr><tr><td><b>The number of workers</b></td><td><b>:</b> 30 Orang</td>  </tr></tbody>\r\n</table>', 'Sejarah', '<p>Berawal pada pertengahan tahun 1997, setelah mengikuti Pelatihan Industri Kecil Modern (IKM) yang diadakan oleh Teknik Industri ITB dengan Deperindag, Nandjar Nugraha mendapatkan tawaran untuk mengelola Laboratorium Sistem Produksi Teknik Industri (LSP-TI). Tugas utamanya membantu mahasiswa yang akan melakukan praktek Sistem Produksi. Setelah menjalani aktifitas tersebut, Beliau melihat ada peluang untuk mengoptimalkan mesin-mesin yang ada di Lab. Sisprod yang selama ini kelihatan tidak optimal, karena tidak ada kegiatan produksi.<br></p><p><br>Dengan memanfaatkan jaringan Alumni Polman (Politeknik Manufactur Swiss) akhirnya memberanikan diri untuk mencari order. Dengan tenaga yang sangat terbatas, mulailah menerima & mengerjakan order yang diperoleh. Berawal dari order kecil-kecilan tersebut, maka terpikir untuk merintis sebuah usaha. Sebagai langkah awal, sebelum membentuk usaha, dikumpulkannya beberapa temen alumni Polman untuk bergabung. Beberapa diantaranya adalah M. Syafir Adly, Aman Wardana & Agus Yulian. Juga beberpa temen yang mensupport dari luar (karena pada jadi Karyawan) antara lain Maryadi, Anton Diyanto, Marzuki dll. Kemudian terbentuklah bendara usaha dengan nama Kop. Assakinah. Tidak lama kemudian dengan bertambahnya aktifitas, bergabung lagi alumni Polman yaitu Ius Rusmana yang pernah berpengalaman kerja di Batam. Dan yang terakhir bergabung adalah Ahmad Suparto, yang ini tidak ada hubunganya dengan alumni, hanya semata-mata hubungan pertemanan.</p><p><br>Dengan jumlah SDM yang hanya ber-tujuh orang, mulailah As-Sakinah beraktifitas layaknya sebuah usaha Industri, menerima order, mengerjakan (beli material, produksi internal, subkon) delivery dan lain sebagainya. Secara bergiliran beberapa personil As-Sakinah tersebut diikutkan pada pelatihan Industri Kecil Modern (IKM) setelah angkatan I (Nandjar Nugraha) angkatan II (M. Syafir Adly & Agus Yulian), angkatan III (Aman Wardana & Ius Rusmana) & angkata terakhir (Ahmad Suparto) setelah itu tidak ada lagi Pelatihan yang dibiayai oleh Deperindag Pusat bekerjasama dengan Teknik Indusrti ITB. Seiring dengan berlalunya waktu kurang lebih 1 tahun setelah berjalan usaha, di tengah perjalanan ada Personil yang memilih berpisah, ingin menjalankan aktifitas usaha secara sendiri. Banyak sudah suka & duka yang dialami dalam rentang waktu 1 tahun tersebut. Hikmah dari berpisahnya salah satu teman ini, akhirnya terbentuklah “Cipta Sinergi” Manufacturing.</p><p><br>Berkat ke-murahan Tuhan yang Maha Pemurah jua, tidak disangka-sangka datanglah sebuah tantangan yang sungguh sangat menantang. Betapa tidak, sebuah usaha yang baru belajar untuk bisa bertahan hidup, kemudian ditawari sebuah pekerjaan yang membutuhkan modal tidak sedikit (dilihat dari asset yang dimiliki CSM) waktu itu. Tapi dengan penuh keyakinan Koordinator CSM (NN) memberanikan diri menerima tawaran order tersebut, karena dibalik tantangan ini pasti ada peluang yang bisa dimanfaatkan untuk CSM kedepan. Dengan mensiasati dalam negosiasi penawaran harga, untuk mendapatkan DP (down payment) dari sejumlah PO yang diterima, maka pekerjaan tersebut bisa diambil dan dikerjakan dengan sukses. Dari pekerjaan ini pula-lah akhirnya bisa merekrut beberapa karyawan dan membeli mesin-mesin produksi konvensional. Ajib-nya pekerjaan tersebut berlanjut untuk beberpa project/termin. Rentang waktu project tersebut yaitu antara tahun 1999 – 2000 (termin 1 & 2). Dari pekerjaan tersebut mulailah CSM bisa menyisihkan modal untuk membeli sebidang tanah di daerah Cimahi utara. Tidak lupa juga para perintis CSM bisa membeli sepada motor, walaupun second. Sebagai informasi aja (tapi jangan bilang siapa-siapa) bahwa para “asabiqunal awalun” CSM ini berangkat kerja ke LSP-TI ITB dengan mengendarai sepada kumbang. Nandjar Nugraha berangkat dari Pada Suka Cicaheum, M. Syafir Adly & Aman Wardana berangkat dari batas Kota (Cibeureum), Ius Rusmana berangkat dari Elang & Ahmad Suparto berangkat dari Cibaduyut ada satu lagi dik Maman (operator awal) & dik Hendi Prayitno berangkat dari Kiaracondong. Sunggguh sebuah pengalaman yang bisa dikenang untuk cerita anak cucu.</p><p><br>Empat tahun sudah bayi CSM (1997 – 2000), lahir dan di didik di LSP-TI ITB atau istilahnya di Inkubasi. Dengan bimbingan dari bapak-bapak dosen Teknik Industri ITB, Bp. Isa Setiasah Toha, Bp. Abdul Hakim, Bp. Barmawi, Bp. Drajat Irianto, Bp. Anas Ma’ruf, Bp. Aso, dll yang tidak bisa disebutkan semuanya di sini. Mereka dengan sepenuh hati meberikan saran, masukan & kritik untuk membesarkan bayi CSM tersebut. Terima kasih yang sedalam-dalamnya dari lubuk hati yang paling dalam, mudah-mudahan semua jasa beliau-beliau terhadap CSM baik pribadi maupun institusi mendapatkan balasan yang lebih baik dan lebih banyak dari Tuhan yang Maha Kuasa. Tidak lupa juga terimaksih kepada teteh Yeni & Kang Engkos yang telah berperan aktif memudahkan personel CSM untuk meng ”akses” makan siang yang mak Nyus apalagi gratis, dari even-even pelatihan dan semacamnya. Tahun 2001 merupakan periode ke-2, sebagai langkah berikutnya setelah CSM, memisahkan diri dari induk iknubator LSP-TI ITB. </p><p>Kampung kamarung, kawasan Cimahi Utara merupakan tempat yang telah dipilihkan oleh sang penentu Nasib, setelah berikhtiar mencoba mencari tempat dibeberapa lokasi. Babak baru mulai di gelar, dengan bermodalkan profit usaha selama diinkubator di LSP-TI ITB, sebidang tanah yang dibeli tersebut, dibangunlah sebuah bangunan work shop dan di isi beberapa mesin konvnsional.<br>Tahun pertama di Cimahi, setelah kepindahan dari ITB, kembali mendapatkan anugerah untuk mengerjakan pekerjaan sebagai jilid ke-3 dari lanjutan project yang pernah dikerjakan di ITB selama 2 termin. Dari project jilid – 3 ini kemudian banyak merekrut karyawan yang nantinya menjadi karyawan tetap hingga sekarang ini. Setelah itu ada keberanian untuk mengambil keputusan besar, yang dihubungkan dengan visi CSM kedepan. Yaitu membeli mesin CNC Machining. Walaupun baru bisa membayar DP, dan sisanya dicicil. Detik – demi – detik, menit demi menit, jam demi jam, hari berganti hari, bulan berganti tahun, saat ini (2012) Cipta Sinergi Manufacturing sudah bisa dikatakan tumbuh & berkembang walaupun baru dilihat dari sisi asset dhohiriah/ materi semata, yaitu antara lain jumlah karyawan yang ada 33 orang, sarana produksi antara lain : CNC Machining Center 3 unit, CNC Lathe 1 unit dan beberapa mesin konvensional dll. Mudah-mudahan semua hal tersebut diatas menjadi satu langkah awal dari langkah-langkah berikutnya ke depan hingga masa yang akan datang yang menjadi bagian partisipasi bagi seluruh pribadi maupun institusi CSM untuk ikut berkhidmat kepada kehidupan dunia ini yang akan menjadi wasilah untuk memetik hasil yang hakiki dikehidupan akherat kelak. Amin yaa Mujibas-Sa’ilin<br></p>', 'Struktur Perusahaan', 'structure_photo.png', 'Misi', 'Menghasilkan produk permesinan berkualitas dan tepat waktu disertai layanan yang baik untuk mencapai kepuasan pelanggan dan hubungan yang berkelanjutan. Mewujudkan kualitas kehidupan stakholder yang baik. Meningkatkan shareholder values secara terus menerus', 'Visi', 'Menjadi indusrti permesinan presisi yang menguasai teknologi manufaktur terbaru dan memiliki kemampuan yang baik dalam disain dan rekayasa. Didukung oleh sistem manufaktur yang handal, sehingga mampu menghasilkan produk berupa komponen presisi, cetakan dan sistem makanik yang memberikan kepuasan kepada pelanggan', 'Tentang Kami | CV. Cipta Sinergi Manufacturing', ' ', '', 'Gallery', 'Gallery | CV. Cipta Sinergi Manufacturing', '', '', 'Product', 'Product | CV. Cipta Sinergi Manufacturing', '', '', 'FAQ', 'FAQ | CV. Cipta Sinergi Manufacturing', '', '', 'Service', 'Service | CV. Cipta Sinergi Manufacturing', '', '', 'Facility', 'Facility | CV. Cipta Sinergi Manufacturing', '', '', 'PORTFOLIO', 'Portfolio | CV. Cipta Sinergi Manufacturing', '', '', 'TESTIMONIAL', 'Testimonial | CV. Cipta Sinergi Manufacturing', '', '', 'News', 'News | CV. Cipta Sinergi Manufacturing', '', '', 'Contact', 'Contact | CV. Cipta Sinergi Manufacturing', '', '', 'Search By :', 'Search | CV. Cipta Sinergi Manufacturing', '', '', 'TERMS & CONDITIONS', '<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire has.</p><p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.</p><p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad ridens mollis. Ad ius meis suavitate voluptaria.</p><p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p><p>Ex vix alienum sadipscing, quod melius philosophia id has. Ad qui quem reprimique, quo possit detracto reprimique no, sint reque officiis ei per. Ea regione commune volutpat pro, fabulas facilis omnesque mei ne. Cu unum detracto comprehensam sea, ad vim ancillae principes, ex usu fugit consulatu. Vis te purto equidem voluptatum.</p><p>Detracto contentiones te est, brute ipsum consul an vis. Mea ei regione blandit ullamcorper, definiebas constituam vix ei. At his ludus nonumes gloriatur. Ne vim tamquam nonumes.</p><p>Duo purto pertinax in. Ea noluisse mediocrem qui, nobis melius vis et. Iudico delicatissimi no qui, quando fastidii nam et, ne eum rationibus deseruisse neglegentur. Ei eum populo viderer reprimique, tantas homero abhorreant usu ei, at postulant gloriatur vituperata sit.</p>', 'Terms and Conditions | CV. Cipta Sinergi Manufacturing', '', '', 'PRIVACY POLICY', '<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire has.</p><p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.</p><p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad ridens mollis. Ad ius meis suavitate voluptaria.</p><p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p><p>Ex vix alienum sadipscing, quod melius philosophia id has. Ad qui quem reprimique, quo possit detracto reprimique no, sint reque officiis ei per. Ea regione commune volutpat pro, fabulas facilis omnesque mei ne. Cu unum detracto comprehensam sea, ad vim ancillae principes, ex usu fugit consulatu. Vis te purto equidem voluptatum.</p><p>Detracto contentiones te est, brute ipsum consul an vis. Mea ei regione blandit ullamcorper, definiebas constituam vix ei. At his ludus nonumes gloriatur. Ne vim tamquam nonumes.</p><p>Duo purto pertinax in. Ea noluisse mediocrem qui, nobis melius vis et. Iudico delicatissimi no qui, quando fastidii nam et, ne eum rationibus deseruisse neglegentur. Ei eum populo viderer reprimique, tantas homero abhorreant usu ei, at postulant gloriatur vituperata sit.</p>', 'Privacy Policy | CV. Cipta Sinergi Manufacturing', '', '', '', 'Open Recruitment, Career CSM, PKL CSM, Magang, Praktek Kerja Lapangan CSM Cimahi. Karier CSM', 'Career | CV. Cipta Sinergi Manufacturing');
+INSERT INTO `tbl_page` (`id`, `mt_home`, `mk_home`, `md_home`, `about_photo`, `about_heading`, `about_content`, `profile_heading`, `profile_content`, `history_heading`, `history_content`, `structure_heading`, `structure_photo`, `mission_heading`, `mission_content`, `vision_heading`, `vision_content`, `mt_about`, `mk_about`, `md_about`, `gallery_heading`, `mt_gallery`, `mk_gallery`, `md_gallery`, `product_heading`, `mt_product`, `mk_product`, `md_product`, `faq_heading`, `mt_faq`, `mk_faq`, `md_faq`, `service_heading`, `mt_service`, `mk_service`, `md_service`, `facility_heading`, `mt_facility`, `mk_facility`, `md_facility`, `portfolio_heading`, `mt_portfolio`, `mk_portfolio`, `md_portfolio`, `testimonial_heading`, `mt_testimonial`, `mk_testimonial`, `md_testimonial`, `news_heading`, `mt_news`, `mk_news`, `md_news`, `contact_heading`, `mt_contact`, `mk_contact`, `md_contact`, `search_heading`, `mt_search`, `mk_search`, `md_search`, `term_heading`, `term_content`, `mt_term`, `mk_term`, `md_term`, `privacy_heading`, `privacy_content`, `mt_privacy`, `mk_privacy`, `md_privacy`, `mt_carrier`, `mk_carrier`, `md_carrier`, `mt_electronics_division`, `mk_electronics_division`, `md_electronics_division`) VALUES
+(1, 'Home | CV. Cipta Sinergi Manufacturing', '', '', 'about_photo.png', 'Tentang Perusahaan', '<h4>Indonesia :<br></h4><p>Perusahaan yang bergerak di bidang <b>manufaktur</b> untuk mesin yang diperlukan Industri. Didukung oleh <b>Tools Designer, Tools Maker, CAD CAM Engineering, CAD Modeler, CAM Programmer</b> dan<b> Production Planner</b> yang berpengalaman serta didukung oleh Peralatan yang cukup lengkap dan pemrosesan yang cepat didukung oleh mesin yang mempunyai title <b>High Speed Machine Processing</b> dan menghasilkan produk yang sangat berkualitas.</p><h4>English :</h4><p>Companies engaged in <b>manufacturing</b> for machines that are needed by industry. Supported by <b>Tools Designer, Tools Maker</b>, <b>CAD-CAM Engineering, CAM Programmer</b> and <b>Production Planner</b> who are experienced and supported by fairly complete equipment and fast processing supported by machines that have the title <b>High-Speed Machine Processing</b> and produce very high-quality products.<br></p>', 'Identias Perusahaan', '<table><tbody><tr><td><b>Office & Workshop<br></b></td><td><b>:</b> Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512</td></tr><tr><td><b>Phone/Fax<br></b></td><td><b>:</b> (022) 6647945</td></tr><tr><td><b>Website<br></b></td><td><b>:</b> www.ciptasinergi.com</td></tr><tr><td><b>E-Mail<br></b></td><td><b>:</b> marketing@ciptasinergi.com</td></tr><tr><td><b>Date of Established<br></b></td><td><b>:</b> Juni 1997</td></tr><tr><td><b>Legal Form<br></b></td><td><b>:</b> CV (Commanditer Venootschap) No. 5 Tanggal 24 Juli 2003</td></tr><tr><td><b>The number of workers</b></td><td><b>:</b> 30 Orang</td>  </tr></tbody>\r\n</table>', 'Sejarah', '<p>Berawal pada pertengahan tahun 1997, setelah mengikuti Pelatihan Industri Kecil Modern (IKM) yang diadakan oleh Teknik Industri ITB dengan Deperindag, Nandjar Nugraha mendapatkan tawaran untuk mengelola Laboratorium Sistem Produksi Teknik Industri (LSP-TI). Tugas utamanya membantu mahasiswa yang akan melakukan praktek Sistem Produksi. Setelah menjalani aktifitas tersebut, Beliau melihat ada peluang untuk mengoptimalkan mesin-mesin yang ada di Lab. Sisprod yang selama ini kelihatan tidak optimal, karena tidak ada kegiatan produksi.<br></p><p><br>Dengan memanfaatkan jaringan Alumni Polman (Politeknik Manufactur Swiss) akhirnya memberanikan diri untuk mencari order. Dengan tenaga yang sangat terbatas, mulailah menerima & mengerjakan order yang diperoleh. Berawal dari order kecil-kecilan tersebut, maka terpikir untuk merintis sebuah usaha. Sebagai langkah awal, sebelum membentuk usaha, dikumpulkannya beberapa temen alumni Polman untuk bergabung. Beberapa diantaranya adalah M. Syafir Adly, Aman Wardana & Agus Yulian. Juga beberpa temen yang mensupport dari luar (karena pada jadi Karyawan) antara lain Maryadi, Anton Diyanto, Marzuki dll. Kemudian terbentuklah bendara usaha dengan nama Kop. Assakinah. Tidak lama kemudian dengan bertambahnya aktifitas, bergabung lagi alumni Polman yaitu Ius Rusmana yang pernah berpengalaman kerja di Batam. Dan yang terakhir bergabung adalah Ahmad Suparto, yang ini tidak ada hubunganya dengan alumni, hanya semata-mata hubungan pertemanan.</p><p><br>Dengan jumlah SDM yang hanya ber-tujuh orang, mulailah As-Sakinah beraktifitas layaknya sebuah usaha Industri, menerima order, mengerjakan (beli material, produksi internal, subkon) delivery dan lain sebagainya. Secara bergiliran beberapa personil As-Sakinah tersebut diikutkan pada pelatihan Industri Kecil Modern (IKM) setelah angkatan I (Nandjar Nugraha) angkatan II (M. Syafir Adly & Agus Yulian), angkatan III (Aman Wardana & Ius Rusmana) & angkata terakhir (Ahmad Suparto) setelah itu tidak ada lagi Pelatihan yang dibiayai oleh Deperindag Pusat bekerjasama dengan Teknik Indusrti ITB. Seiring dengan berlalunya waktu kurang lebih 1 tahun setelah berjalan usaha, di tengah perjalanan ada Personil yang memilih berpisah, ingin menjalankan aktifitas usaha secara sendiri. Banyak sudah suka & duka yang dialami dalam rentang waktu 1 tahun tersebut. Hikmah dari berpisahnya salah satu teman ini, akhirnya terbentuklah “Cipta Sinergi” Manufacturing.</p><p><br>Berkat ke-murahan Tuhan yang Maha Pemurah jua, tidak disangka-sangka datanglah sebuah tantangan yang sungguh sangat menantang. Betapa tidak, sebuah usaha yang baru belajar untuk bisa bertahan hidup, kemudian ditawari sebuah pekerjaan yang membutuhkan modal tidak sedikit (dilihat dari asset yang dimiliki CSM) waktu itu. Tapi dengan penuh keyakinan Koordinator CSM (NN) memberanikan diri menerima tawaran order tersebut, karena dibalik tantangan ini pasti ada peluang yang bisa dimanfaatkan untuk CSM kedepan. Dengan mensiasati dalam negosiasi penawaran harga, untuk mendapatkan DP (down payment) dari sejumlah PO yang diterima, maka pekerjaan tersebut bisa diambil dan dikerjakan dengan sukses. Dari pekerjaan ini pula-lah akhirnya bisa merekrut beberapa karyawan dan membeli mesin-mesin produksi konvensional. Ajib-nya pekerjaan tersebut berlanjut untuk beberpa project/termin. Rentang waktu project tersebut yaitu antara tahun 1999 – 2000 (termin 1 & 2). Dari pekerjaan tersebut mulailah CSM bisa menyisihkan modal untuk membeli sebidang tanah di daerah Cimahi utara. Tidak lupa juga para perintis CSM bisa membeli sepada motor, walaupun second. Sebagai informasi aja (tapi jangan bilang siapa-siapa) bahwa para “asabiqunal awalun” CSM ini berangkat kerja ke LSP-TI ITB dengan mengendarai sepada kumbang. Nandjar Nugraha berangkat dari Pada Suka Cicaheum, M. Syafir Adly & Aman Wardana berangkat dari batas Kota (Cibeureum), Ius Rusmana berangkat dari Elang & Ahmad Suparto berangkat dari Cibaduyut ada satu lagi dik Maman (operator awal) & dik Hendi Prayitno berangkat dari Kiaracondong. Sunggguh sebuah pengalaman yang bisa dikenang untuk cerita anak cucu.</p><p><br>Empat tahun sudah bayi CSM (1997 – 2000), lahir dan di didik di LSP-TI ITB atau istilahnya di Inkubasi. Dengan bimbingan dari bapak-bapak dosen Teknik Industri ITB, Bp. Isa Setiasah Toha, Bp. Abdul Hakim, Bp. Barmawi, Bp. Drajat Irianto, Bp. Anas Ma’ruf, Bp. Aso, dll yang tidak bisa disebutkan semuanya di sini. Mereka dengan sepenuh hati meberikan saran, masukan & kritik untuk membesarkan bayi CSM tersebut. Terima kasih yang sedalam-dalamnya dari lubuk hati yang paling dalam, mudah-mudahan semua jasa beliau-beliau terhadap CSM baik pribadi maupun institusi mendapatkan balasan yang lebih baik dan lebih banyak dari Tuhan yang Maha Kuasa. Tidak lupa juga terimaksih kepada teteh Yeni & Kang Engkos yang telah berperan aktif memudahkan personel CSM untuk meng ”akses” makan siang yang mak Nyus apalagi gratis, dari even-even pelatihan dan semacamnya. Tahun 2001 merupakan periode ke-2, sebagai langkah berikutnya setelah CSM, memisahkan diri dari induk iknubator LSP-TI ITB. </p><p>Kampung kamarung, kawasan Cimahi Utara merupakan tempat yang telah dipilihkan oleh sang penentu Nasib, setelah berikhtiar mencoba mencari tempat dibeberapa lokasi. Babak baru mulai di gelar, dengan bermodalkan profit usaha selama diinkubator di LSP-TI ITB, sebidang tanah yang dibeli tersebut, dibangunlah sebuah bangunan work shop dan di isi beberapa mesin konvnsional.<br>Tahun pertama di Cimahi, setelah kepindahan dari ITB, kembali mendapatkan anugerah untuk mengerjakan pekerjaan sebagai jilid ke-3 dari lanjutan project yang pernah dikerjakan di ITB selama 2 termin. Dari project jilid – 3 ini kemudian banyak merekrut karyawan yang nantinya menjadi karyawan tetap hingga sekarang ini. Setelah itu ada keberanian untuk mengambil keputusan besar, yang dihubungkan dengan visi CSM kedepan. Yaitu membeli mesin CNC Machining. Walaupun baru bisa membayar DP, dan sisanya dicicil. Detik – demi – detik, menit demi menit, jam demi jam, hari berganti hari, bulan berganti tahun, saat ini (2012) Cipta Sinergi Manufacturing sudah bisa dikatakan tumbuh & berkembang walaupun baru dilihat dari sisi asset dhohiriah/ materi semata, yaitu antara lain jumlah karyawan yang ada 33 orang, sarana produksi antara lain : CNC Machining Center 3 unit, CNC Lathe 1 unit dan beberapa mesin konvensional dll. Mudah-mudahan semua hal tersebut diatas menjadi satu langkah awal dari langkah-langkah berikutnya ke depan hingga masa yang akan datang yang menjadi bagian partisipasi bagi seluruh pribadi maupun institusi CSM untuk ikut berkhidmat kepada kehidupan dunia ini yang akan menjadi wasilah untuk memetik hasil yang hakiki dikehidupan akherat kelak. Amin yaa Mujibas-Sa’ilin<br></p>', 'Struktur Perusahaan', 'structure_photo.png', 'Misi', 'Menghasilkan produk permesinan berkualitas dan tepat waktu disertai layanan yang baik untuk mencapai kepuasan pelanggan dan hubungan yang berkelanjutan. Mewujudkan kualitas kehidupan stakholder yang baik. Meningkatkan shareholder values secara terus menerus', 'Visi', 'Menjadi indusrti permesinan presisi yang menguasai teknologi manufaktur terbaru dan memiliki kemampuan yang baik dalam disain dan rekayasa. Didukung oleh sistem manufaktur yang handal, sehingga mampu menghasilkan produk berupa komponen presisi, cetakan dan sistem makanik yang memberikan kepuasan kepada pelanggan', 'Tentang Kami | CV. Cipta Sinergi Manufacturing', ' ', '', 'Gallery', 'Gallery | CV. Cipta Sinergi Manufacturing', '', '', 'Product', 'Product | CV. Cipta Sinergi Manufacturing', '', '', 'FAQ', 'FAQ | CV. Cipta Sinergi Manufacturing', '', '', 'Service', 'Service | CV. Cipta Sinergi Manufacturing', '', '', 'Facility', 'Facility | CV. Cipta Sinergi Manufacturing', '', '', 'PORTFOLIO', 'Portfolio | CV. Cipta Sinergi Manufacturing', '', '', 'TESTIMONIAL', 'Testimonial | CV. Cipta Sinergi Manufacturing', '', '', 'News', 'News | CV. Cipta Sinergi Manufacturing', '', '', 'Contact', 'Contact | CV. Cipta Sinergi Manufacturing', '', '', 'Search By :', 'Search | CV. Cipta Sinergi Manufacturing', '', '', 'TERMS & CONDITIONS', '<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire has.</p><p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.</p><p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad ridens mollis. Ad ius meis suavitate voluptaria.</p><p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p><p>Ex vix alienum sadipscing, quod melius philosophia id has. Ad qui quem reprimique, quo possit detracto reprimique no, sint reque officiis ei per. Ea regione commune volutpat pro, fabulas facilis omnesque mei ne. Cu unum detracto comprehensam sea, ad vim ancillae principes, ex usu fugit consulatu. Vis te purto equidem voluptatum.</p><p>Detracto contentiones te est, brute ipsum consul an vis. Mea ei regione blandit ullamcorper, definiebas constituam vix ei. At his ludus nonumes gloriatur. Ne vim tamquam nonumes.</p><p>Duo purto pertinax in. Ea noluisse mediocrem qui, nobis melius vis et. Iudico delicatissimi no qui, quando fastidii nam et, ne eum rationibus deseruisse neglegentur. Ei eum populo viderer reprimique, tantas homero abhorreant usu ei, at postulant gloriatur vituperata sit.</p>', 'Terms and Conditions | CV. Cipta Sinergi Manufacturing', '', '', 'PRIVACY POLICY', '<p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire has.</p><p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.</p><p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad ridens mollis. Ad ius meis suavitate voluptaria.</p><p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p><p>Ex vix alienum sadipscing, quod melius philosophia id has. Ad qui quem reprimique, quo possit detracto reprimique no, sint reque officiis ei per. Ea regione commune volutpat pro, fabulas facilis omnesque mei ne. Cu unum detracto comprehensam sea, ad vim ancillae principes, ex usu fugit consulatu. Vis te purto equidem voluptatum.</p><p>Detracto contentiones te est, brute ipsum consul an vis. Mea ei regione blandit ullamcorper, definiebas constituam vix ei. At his ludus nonumes gloriatur. Ne vim tamquam nonumes.</p><p>Duo purto pertinax in. Ea noluisse mediocrem qui, nobis melius vis et. Iudico delicatissimi no qui, quando fastidii nam et, ne eum rationibus deseruisse neglegentur. Ei eum populo viderer reprimique, tantas homero abhorreant usu ei, at postulant gloriatur vituperata sit.</p>', 'Privacy Policy | CV. Cipta Sinergi Manufacturing', '', '', 'Career | CV. Cipta Sinergi Manufacturing', 'Open Recruitment, Career CSM, PKL CSM, Magang, Praktek Kerja Lapangan CSM Cimahi. Karier CSM', '', 'Electronics Division | CV. Cipta Sinergi Manufacturing', '', '');
 
 -- --------------------------------------------------------
 
@@ -789,6 +892,7 @@ CREATE TABLE `tbl_settings` (
   `banner_faq` varchar(255) NOT NULL,
   `banner_gallery` varchar(255) NOT NULL,
   `banner_product` varchar(255) NOT NULL,
+  `banner_electronics_division` varchar(255) NOT NULL,
   `banner_service` varchar(255) NOT NULL,
   `banner_facility` varchar(255) NOT NULL,
   `banner_portfolio` varchar(255) NOT NULL,
@@ -838,8 +942,8 @@ CREATE TABLE `tbl_settings` (
 -- Dumping data untuk tabel `tbl_settings`
 --
 
-INSERT INTO `tbl_settings` (`id`, `logo`, `logo2`, `logo_admin`, `favicon`, `counter_bg`, `login_bg`, `footer_copyright`, `footer_address`, `footer_phone`, `footer_working_hour`, `footer_address_icon`, `footer_phone_icon`, `footer_working_hour_icon`, `footer_about`, `top_bar_email`, `top_bar_phone`, `contact_map_iframe`, `receive_email`, `reset_password_email_subject`, `total_recent_post`, `total_popular_post`, `total_recent_post_home`, `total_product_post`, `theme_color_1`, `theme_color_2`, `counter1_text`, `counter1_value`, `counter2_text`, `counter2_value`, `counter3_text`, `counter3_value`, `counter4_text`, `counter4_value`, `counter_status`, `banner_about`, `banner_faq`, `banner_gallery`, `banner_product`, `banner_service`, `banner_facility`, `banner_portfolio`, `banner_testimonial`, `banner_news`, `banner_contact`, `banner_search`, `banner_category`, `banner_terms`, `banner_privacy`, `content_home_title`, `content_home_subtitle`, `content_home_status`, `service_title`, `service_subtitle`, `service_status`, `facility_title`, `facility_subtitle`, `facility_status`, `portfolio_title`, `portfolio_subtitle`, `portfolio_status`, `team_title`, `team_subtitle`, `team_status`, `testimonial_title`, `testimonial_subtitle`, `testimonial_status`, `faq_title`, `faq_subtitle`, `faq_status`, `gallery_title`, `gallery_subtitle`, `gallery_status`, `product_title`, `product_subtitle`, `product_status`, `recent_post_title`, `recent_post_subtitle`, `recent_post_status`, `partner_title`, `partner_subtitle`, `partner_status`) VALUES
-(1, 'logo.png', 'logo2.png', 'logo_admin.png', 'favicon.png', 'counter_bg.JPG', 'login_bg.png', 'Copyright © 2019 | CV. Cipta Sinergi Manufacturing', 'Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512', '(022) 6647945', 'Senin - Jumat (8:00 AM - 5:00 PM)', 'footer_address_icon.png', 'footer_phone_icon.png', 'footer_working_hour_icon.png', '', 'marketing@ciptasinergi.com', '(022) 6647945', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.177204490785!2d107.551033!3d-6.8552849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x602a56a5b8d7e0cc!2sCV.+Cipta+Sinergi+Manufacturing!5e0!3m2!1sid!2sid!4v1565082522509!5m2!1sid!2sid\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'marketing@ciptasinergi.com', 'Password Reset Request - www.ciptasinergi.com', 4, 4, 10, 7, '134595', 'FFFFFF', 'Employee\'s', 50, 'Project Finish', 1200, 'Projects On-going', 800, 'Award\'s', 1200, '', 'banner_about.png', 'banner_faq.png', 'banner_gallery.png', 'banner_product.png', 'banner_service.png', 'banner_facility.png', 'banner_portfolio.png', 'banner_testimonial.png', 'banner_news.png', 'banner_contact.png', 'banner_search.png', 'banner_category.png', 'banner_terms.png', 'banner_privacy.png', 'WHY CHOOSE US?', '', 'Show', 'SERVICES', '', 'Show', 'FACILITY', '', 'Show', 'PORTFOLIO', '', 'Show', 'MEET WITH OUR TEAM', '', 'Show', 'WHAT A CLIENT SAY', '', 'Show', 'Have more question ? Just Contact Us', '', 'Show', 'PHOTO GALLERY', '', 'Show', 'Our Featured Products', 'Gallery Produk Unggunal Kami', 'Show', 'LATEST NEWS', '', 'Show', 'OUR PARTNER', '', 'Show');
+INSERT INTO `tbl_settings` (`id`, `logo`, `logo2`, `logo_admin`, `favicon`, `counter_bg`, `login_bg`, `footer_copyright`, `footer_address`, `footer_phone`, `footer_working_hour`, `footer_address_icon`, `footer_phone_icon`, `footer_working_hour_icon`, `footer_about`, `top_bar_email`, `top_bar_phone`, `contact_map_iframe`, `receive_email`, `reset_password_email_subject`, `total_recent_post`, `total_popular_post`, `total_recent_post_home`, `total_product_post`, `theme_color_1`, `theme_color_2`, `counter1_text`, `counter1_value`, `counter2_text`, `counter2_value`, `counter3_text`, `counter3_value`, `counter4_text`, `counter4_value`, `counter_status`, `banner_about`, `banner_faq`, `banner_gallery`, `banner_product`, `banner_electronics_division`, `banner_service`, `banner_facility`, `banner_portfolio`, `banner_testimonial`, `banner_news`, `banner_contact`, `banner_search`, `banner_category`, `banner_terms`, `banner_privacy`, `content_home_title`, `content_home_subtitle`, `content_home_status`, `service_title`, `service_subtitle`, `service_status`, `facility_title`, `facility_subtitle`, `facility_status`, `portfolio_title`, `portfolio_subtitle`, `portfolio_status`, `team_title`, `team_subtitle`, `team_status`, `testimonial_title`, `testimonial_subtitle`, `testimonial_status`, `faq_title`, `faq_subtitle`, `faq_status`, `gallery_title`, `gallery_subtitle`, `gallery_status`, `product_title`, `product_subtitle`, `product_status`, `recent_post_title`, `recent_post_subtitle`, `recent_post_status`, `partner_title`, `partner_subtitle`, `partner_status`) VALUES
+(1, 'logo.png', 'logo2.png', 'logo_admin.png', 'favicon.png', 'counter_bg.JPG', 'login_bg.png', 'Copyright © 2019 | CV. Cipta Sinergi Manufacturing', 'Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512', '(022) 6647945', 'Senin - Jumat (8:00 AM - 5:00 PM)', 'footer_address_icon.png', 'footer_phone_icon.png', 'footer_working_hour_icon.png', '', 'marketing@ciptasinergi.com', '(022) 6647945', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.177204490785!2d107.551033!3d-6.8552849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x602a56a5b8d7e0cc!2sCV.+Cipta+Sinergi+Manufacturing!5e0!3m2!1sid!2sid!4v1565082522509!5m2!1sid!2sid\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'marketing@ciptasinergi.com', 'Password Reset Request - www.ciptasinergi.com', 4, 4, 10, 7, '134595', 'FFFFFF', 'Employee\'s', 50, 'Project Finish', 1200, 'Projects On-going', 800, 'Award\'s', 1200, '', 'banner_about.png', 'banner_faq.png', 'banner_gallery.png', 'banner_product.png', 'banner_electronics_division.png', 'banner_service.png', 'banner_facility.png', 'banner_portfolio.png', 'banner_testimonial.png', 'banner_news.png', 'banner_contact.png', 'banner_search.png', 'banner_category.png', 'banner_terms.png', 'banner_privacy.png', 'WHY CHOOSE US?', '', 'Show', 'SERVICES', '', 'Show', 'FACILITY', '', 'Show', 'PORTFOLIO', '', 'Show', 'MEET WITH OUR TEAM', '', 'Show', 'WHAT A CLIENT SAY', '', 'Show', 'Have more question ? Just Contact Us', '', 'Show', 'PHOTO GALLERY', '', 'Show', 'Our Featured Products', 'Gallery Produk Unggunal Kami', 'Show', 'LATEST NEWS', '', 'Show', 'OUR PARTNER', '', 'Show');
 
 -- --------------------------------------------------------
 
@@ -1039,6 +1143,30 @@ ALTER TABLE `tbl_designation`
   ADD PRIMARY KEY (`designation_id`);
 
 --
+-- Indeks untuk tabel `tbl_electronics_division`
+--
+ALTER TABLE `tbl_electronics_division`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `tbl_electronics_division_category`
+--
+ALTER TABLE `tbl_electronics_division_category`
+  ADD PRIMARY KEY (`category_id`);
+
+--
+-- Indeks untuk tabel `tbl_electronics_division_desc`
+--
+ALTER TABLE `tbl_electronics_division_desc`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `tbl_electronics_division_photo`
+--
+ALTER TABLE `tbl_electronics_division_photo`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indeks untuk tabel `tbl_facility`
 --
 ALTER TABLE `tbl_facility`
@@ -1205,6 +1333,30 @@ ALTER TABLE `tbl_designation`
   MODIFY `designation_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
+-- AUTO_INCREMENT untuk tabel `tbl_electronics_division`
+--
+ALTER TABLE `tbl_electronics_division`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_electronics_division_category`
+--
+ALTER TABLE `tbl_electronics_division_category`
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_electronics_division_desc`
+--
+ALTER TABLE `tbl_electronics_division_desc`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_electronics_division_photo`
+--
+ALTER TABLE `tbl_electronics_division_photo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT untuk tabel `tbl_facility`
 --
 ALTER TABLE `tbl_facility`
@@ -1238,7 +1390,7 @@ ALTER TABLE `tbl_faq_photo`
 -- AUTO_INCREMENT untuk tabel `tbl_language`
 --
 ALTER TABLE `tbl_language`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_news`
