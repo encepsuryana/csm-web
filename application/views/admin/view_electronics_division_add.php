@@ -10,7 +10,7 @@ if(!$this->session->userdata('id')) {
 			<h1>Add Electronics Division</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division" class="btn btn-primary btn-sm">View All</a>
 		</div>
 	</section>
 
@@ -34,7 +34,7 @@ if(!$this->session->userdata('id')) {
 					</div>
 				<?php endif; ?>
 
-				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/electronics_division/add',array('class' => 'form-horizontal')); ?>
+				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/electronics-division/add',array('class' => 'form-horizontal')); ?>
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						

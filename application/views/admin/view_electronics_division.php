@@ -10,7 +10,7 @@ if(!$this->session->userdata('id')) {
 			<h1>View Electronics Division</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division/add" class="btn btn-primary btn-sm">Add New</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division/add" class="btn btn-primary btn-sm">Add New</a>
 		</div>
 	</section>
 
@@ -42,10 +42,10 @@ if(!$this->session->userdata('id')) {
 										<td><?php echo $row['category_name']; ?></td>
 										<td>
 											<?php if ($this->session->userdata('role') == 'admin') { ?>
-												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
-												<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division/delete/<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
+												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
+												<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division/delete/<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
 											<?php } elseif ($this->session->userdata('role') == 'staff') {?>
-												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
+												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 											<?php } elseif ($this->session->userdata('role') == 'hrd') {?>
 												<div class="forbiden">
 													<i class="fa fa-minus-circle" aria-hidden="true"></i>

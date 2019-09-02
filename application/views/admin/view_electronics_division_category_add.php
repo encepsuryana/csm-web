@@ -9,7 +9,7 @@ if(!$this->session->userdata('id')) {
 			<h1>Add Electronic Division Category</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division-category" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category" class="btn btn-primary btn-sm">View All</a>
 		</div>
 	</section>
 
@@ -33,7 +33,7 @@ if(!$this->session->userdata('id')) {
 					</div>
 				<?php endif; ?>
 
-				<?php echo form_open(base_url().$this->session->userdata('role').'/electronics_division-category/add',array('class' => 'form-horizontal')); ?>
+				<?php echo form_open(base_url().$this->session->userdata('role').'/electronics-division-category/add',array('class' => 'form-horizontal')); ?>
 
 				<div class="box box-info  b-box">
 					<div class="box-body">
@@ -60,10 +60,7 @@ if(!$this->session->userdata('id')) {
 						</div>
 					</div>
 				</div>
-
 				<?php echo form_close(); ?>
-
-
 			</div>
 		</div>
 

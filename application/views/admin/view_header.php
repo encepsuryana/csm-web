@@ -64,11 +64,8 @@
 </head>
 
 <body class="hold-transition fixed skin-blue sidebar-mini">
-
 	<div class="wrapper">
-
 		<header class="main-header">
-
 			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/dashboard" class="logo">
 				<span class="logo-lg">
 					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo_admin']; ?>" alt="" style="max-width:100%;max-height:50px;padding:5px 0;">
@@ -85,10 +82,33 @@
 
 				<div class="navbar-custom-menu">
 					<ul class="nav navbar-nav link-visit">
+
 						<li>
 							<a href="<?php echo base_url(); ?>" target="_blank"> <i class="fa fa-sign-in" aria-hidden="true"></i> <span>Visit Website</span></a>
 						</li>
+						<?php
+						$base_url = base_url();
+						$full_url = base_url(uri_string());
+						$final_url = str_replace($base_url, "", $full_url);
 
+						$final_url_other_arr = explode('/',$final_url);
+						if(isset($final_url_other_arr[2])) {
+							$final_url_other = $final_url_other_arr[0].'/'.$final_url_other_arr[1].'/'.$final_url_other_arr[2];
+
+						} else {
+							$final_url_other = $final_url_other_arr[0].'/'.$final_url_other_arr[1];
+						}
+						?>
+
+						<?php if( $this->session->userdata('role') == 'admin' ): ?>
+							<li class="treeview <?php if( ($final_url_other == 'admin/setting') ) {echo 'active';} ?>">
+								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/setting">
+									<i class="fa fa-cog"></i> <span>Settings</span>
+								</a>
+							</li>
+						<?php endif; ?>   
+
+						
 						<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<?php if($this->session->userdata('photo') == ''): ?>
@@ -199,7 +219,7 @@
 								</ul>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'admin/electronics_division/add')||($final_url_other == 'admin/electronics_division')||($final_url_other == 'admin/electronics_division/edit')||($final_url_other == 'admin/electronics_division-category/add')||($final_url_other == 'admin/electronics_division-category')||($final_url_other == 'admin/electronics_division-category/edit') ) {echo 'active';} ?>">
+							<li class="treeview <?php if( ($final_url_other == 'admin/electronics-division/add')||($final_url_other == 'admin/electronics-division')||($final_url_other == 'admin/electronics-division/edit')||($final_url_other == 'admin/electronics-division-category/add')||($final_url_other == 'admin/electronics-division-category')||($final_url_other == 'admin/electronics-division-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-microchip"></i>
 									<span>Electronics Division</span>
@@ -208,9 +228,9 @@
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division-category"><i class="fa fa-braille"></i> Electronics Division Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division_desc"><i class="fa fa-pencil-square-o"></i> Electronics Division Desc</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division"><i class="fa fa-trello"></i> Electronics Division</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i> Electronics Division Category</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Electronics Division Desc</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Electronics Division</a></li>
 								</ul>
 							</li>
 
@@ -326,11 +346,6 @@
 									<i class="fa fa-address-book"></i> <span>Social Media</span>
 								</a>
 							</li>
-							<li class="treeview <?php if( ($final_url_other == 'admin/setting') ) {echo 'active';} ?>">
-								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/setting">
-									<i class="fa fa-cog"></i> <span>Settings</span>
-								</a>
-							</li>
 						<?php endif; ?>   
 						<!-- End admin Role -->
 
@@ -389,6 +404,21 @@
 								<ul class="treeview-menu">
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category"><i class="fa fa-th-list"></i> Facility Category</a></li>
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility"><i class="fa fa-tag"></i> Facility</a></li>
+								</ul>
+							</li>
+
+							<li class="treeview <?php if( ($final_url_other == 'hrd/electronics-division/add')||($final_url_other == 'hrd/electronics-division')||($final_url_other == 'hrd/electronics-division/edit')||($final_url_other == 'hrd/electronics-division-category/add')||($final_url_other == 'hrd/electronics-division-category')||($final_url_other == 'hrd/electronics-division-category/edit') ) {echo 'active';} ?>">
+								<a href="#">
+									<i class="fa fa-microchip"></i>
+									<span>Electronics Division</span>
+									<span class="pull-right-container">
+										<i class="fa fa-angle-left pull-right"></i>
+									</span>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i> Electronics Division Category</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Electronics Division Desc</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Electronics Division</a></li>
 								</ul>
 							</li>
 
@@ -638,7 +668,7 @@
 								</a>
 							</li>
 						<?php endif; ?>   
-						<!-- End admin Role -->    
+						<!-- End STAFF Role -->    
 					</ul>
 				</section>
 			</aside>

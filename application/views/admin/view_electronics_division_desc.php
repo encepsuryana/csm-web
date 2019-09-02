@@ -33,7 +33,7 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info b-box">
 					<div class="box-body table-responsive">
 						<h3 class="seo-info">Photo Description</h3>
-						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/electronics_division_desc/update',array('class' => 'form-horizontal')); ?>
+						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/electronics-division-desc/update',array('class' => 'form-horizontal')); ?>
 
 						<input type="hidden" name="current_electronics_division_desc_photo" value="<?php echo $electronics_division_desc['electronics_division_desc_photo']; ?>">
 						<div class="form-group">

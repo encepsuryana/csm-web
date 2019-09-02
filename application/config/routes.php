@@ -80,6 +80,12 @@ $route['hrd/facility/edit/(:any)'] = 'admin/facility/edit/$1';
 $route['hrd/facility-category'] = 'admin/facility-category';
 $route['hrd/facility-category/add'] = 'admin/facility-category/add';
 $route['hrd/facility-category/edit/(:any)'] = 'admin/facility-category/edit/$1';
+
+$route['hrd/electronics-division'] = 'admin/electronics-division';
+$route['hrd/electronics-division-category'] = 'admin/electronics-division-category';
+$route['hrd/electronics-division-desc/update'] = 'admin/electronics-division-desc/update';
+$route['hrd/electronics-division-desc'] = 'admin/electronics-division-desc';
+
 $route['hrd/faq'] = 'admin/faq';
 $route['hrd/faq/add'] = 'admin/faq/add';
 $route['hrd/faq/edit/(:any)'] = 'admin/faq/edit/$1';
