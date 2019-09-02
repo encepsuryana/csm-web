@@ -86,13 +86,13 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Select Category <span>*</span></label>
 							<div class="col-sm-3">
-								<select class="form-control select2" name="category_id">
+								<select class="form-control select2" name="slug_news_category">
 									<option value="">Select a category</option>
 									<?php
 									$i=0;
 									foreach ($all_category as $row) {
 										?>
-										<option value="<?php echo $row['category_id']; ?>"><?php echo $row['category_name']; ?></option>
+										<option value="<?php echo $row['slug_news_category']; ?>"><?php echo $row['category_name']; ?></option>
 										<?php
 									}
 									?>

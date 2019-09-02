@@ -17,7 +17,7 @@
 							$i++;
 							?>
 							<div class="<?php echo $row->slug; ?> no-merg">
-								<a href="<?php echo base_url(); ?>news/detail/<?php echo $row->news_id.'.html'; ?>" class="public-csm-home">
+								<a href="<?php echo base_url(); ?>news/detail/<?php echo $row->post_slug; ?>" class="public-csm-home">
 									<div class="blog-author ">
 										<ul>
 											<div class="col-sm-6" style="text-align: left; padding-left: 5px;">

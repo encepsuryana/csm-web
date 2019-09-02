@@ -53,7 +53,7 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
 
-$route['csm-career'] = 'category/view/7';
+$route['csm-career'] = 'category/view/career.html';
 $route['news/detail/(:any)'] = 'news/view/$1';
 $route['service/detail/(:any)'] = 'service/view/$1';
 $route['facility/detail/(:any)'] = 'facility/view/$1';

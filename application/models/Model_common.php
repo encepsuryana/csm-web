@@ -60,15 +60,15 @@ class Model_common extends CI_Model
         $query = $this->db->query("SELECT * from tbl_portfolio WHERE id=?",array($id));
         return $query->result_array();
     }
-    public function get_single_news_data($id)
+    public function get_single_news_data($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_news WHERE news_id=?",array($id));
+        $query = $this->db->query("SELECT * from tbl_news WHERE post_slug='$slug'",array($slug));
         return $query->result_array();
     }
 
-    public function get_single_category_data($id)
+    public function get_single_category_data($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_news_category WHERE category_id=?",array($id));
+        $query = $this->db->query("SELECT * from tbl_news_category WHERE slug_news_category='$slug'",array($slug));
         return $query->result_array();
     }
 

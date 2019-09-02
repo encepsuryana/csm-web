@@ -352,7 +352,6 @@
 
 						<!-- HRD Role -->
 						<?php if( $this->session->userdata('role') == 'hrd' ): ?>
-
 							<li class="treeview <?php if(($final_url_other == 'hrd/company-profile')) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-home"></i>

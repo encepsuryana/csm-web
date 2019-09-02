@@ -291,3 +291,295 @@ ERROR - 2019-09-02 13:24:27 --> 404 Page Not Found!:
 ERROR - 2019-09-02 13:24:29 --> 404 Page Not Found!: 
 ERROR - 2019-09-02 13:24:58 --> 404 Page Not Found!: Hrd/product
 ERROR - 2019-09-02 13:41:03 --> 404 Page Not Found!: 
+ERROR - 2019-09-02 14:43:46 --> Severity: Compile Error --> Cannot redeclare News::view() C:\xampp\htdocs\csm-web\application\controllers\News.php 82
+ERROR - 2019-09-02 14:44:21 --> Severity: Notice --> Undefined variable: id C:\xampp\htdocs\csm-web\application\models\Model_news.php 35
+ERROR - 2019-09-02 14:44:21 --> Severity: error --> Exception: Call to a member function num_rows() on null C:\xampp\htdocs\csm-web\application\controllers\News.php 65
+ERROR - 2019-09-02 14:44:39 --> Severity: Notice --> Undefined variable: id C:\xampp\htdocs\csm-web\application\models\Model_news.php 35
+ERROR - 2019-09-02 14:44:39 --> Severity: error --> Exception: Call to a member function num_rows() on null C:\xampp\htdocs\csm-web\application\controllers\News.php 65
+ERROR - 2019-09-02 14:45:36 --> Severity: Notice --> Undefined variable: id C:\xampp\htdocs\csm-web\application\models\Model_news.php 35
+ERROR - 2019-09-02 14:45:36 --> Severity: error --> Exception: Call to a member function num_rows() on null C:\xampp\htdocs\csm-web\application\controllers\News.php 65
+ERROR - 2019-09-02 14:46:28 --> Severity: Notice --> Undefined variable: id C:\xampp\htdocs\csm-web\application\models\Model_news.php 35
+ERROR - 2019-09-02 14:46:28 --> Severity: error --> Exception: Call to a member function num_rows() on array C:\xampp\htdocs\csm-web\application\controllers\News.php 65
+ERROR - 2019-09-02 14:47:26 --> Severity: error --> Exception: Call to a member function num_rows() on array C:\xampp\htdocs\csm-web\application\controllers\News.php 65
+ERROR - 2019-09-02 14:48:28 --> Severity: error --> Exception: Call to a member function num_rows() on array C:\xampp\htdocs\csm-web\application\controllers\News.php 65
+ERROR - 2019-09-02 14:48:29 --> Severity: error --> Exception: Call to a member function num_rows() on array C:\xampp\htdocs\csm-web\application\controllers\News.php 65
+ERROR - 2019-09-02 14:48:31 --> Severity: error --> Exception: Call to a member function num_rows() on array C:\xampp\htdocs\csm-web\application\controllers\News.php 65
+ERROR - 2019-09-02 14:48:31 --> Severity: error --> Exception: Call to a member function num_rows() on array C:\xampp\htdocs\csm-web\application\controllers\News.php 65
+ERROR - 2019-09-02 14:48:32 --> Severity: error --> Exception: Call to a member function num_rows() on array C:\xampp\htdocs\csm-web\application\controllers\News.php 65
+ERROR - 2019-09-02 14:52:50 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 143
+ERROR - 2019-09-02 14:52:50 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-02 14:52:50 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 146
+ERROR - 2019-09-02 14:52:50 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-02 14:53:53 --> Severity: Notice --> Undefined variable: id C:\xampp\htdocs\csm-web\application\controllers\News.php 65
+ERROR - 2019-09-02 14:53:53 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 143
+ERROR - 2019-09-02 14:53:53 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-02 14:53:53 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 146
+ERROR - 2019-09-02 14:53:53 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-02 14:54:05 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 143
+ERROR - 2019-09-02 14:54:05 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-02 14:54:05 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 146
+ERROR - 2019-09-02 14:54:05 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-02 14:58:45 --> Severity: error --> Exception: Call to undefined method News::post() C:\xampp\htdocs\csm-web\application\controllers\admin\News.php 96
+ERROR - 2019-09-02 15:00:17 --> Severity: error --> Exception: Function name must be a string C:\xampp\htdocs\csm-web\application\controllers\admin\News.php 96
+ERROR - 2019-09-02 15:01:24 --> Severity: Notice --> Undefined index: news_title C:\xampp\htdocs\csm-web\application\controllers\admin\News.php 96
+ERROR - 2019-09-02 15:02:07 --> 404 Page Not Found!: News/detail
+ERROR - 2019-09-02 15:05:33 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 143
+ERROR - 2019-09-02 15:05:33 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-02 15:05:33 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 146
+ERROR - 2019-09-02 15:05:33 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-02 15:12:49 --> Severity: Notice --> Undefined index: post_slug C:\xampp\htdocs\csm-web\application\views\admin\view_news.php 62
+ERROR - 2019-09-02 15:15:38 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 143
+ERROR - 2019-09-02 15:15:38 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-02 15:15:38 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 146
+ERROR - 2019-09-02 15:15:38 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-02 15:23:54 --> Severity: error --> Exception: syntax error, unexpected ''post_slug'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' C:\xampp\htdocs\csm-web\application\controllers\admin\News.php 306
+ERROR - 2019-09-02 15:33:21 --> Query error: Column 'post_slug' in where clause is ambiguous - Invalid query: SELECT
+        t1.news_id,
+        t1.news_title,
+        t1.slug,
+        t1.news_content,
+        t1.photo,
+        t1.banner,
+        t1.news_date,
+        t1.user_update,
+        t1.category_id,
+        t2.category_id,
+        t2.category_name
+        FROM tbl_news t1
+        JOIN tbl_news_category t2
+        ON t1.category_id = t2.category_id
+        WHERE post_slug='open-recruitment-agust-20191.html'
+ERROR - 2019-09-02 15:34:03 --> Query error: Column 'post_slug' in where clause is ambiguous - Invalid query: SELECT
+        t1.news_id,
+        t1.news_title,
+        t1.slug,
+        t1.news_content,
+        t1.photo,
+        t1.banner,
+        t1.news_date,
+        t1.user_update,
+        t1.category_id,
+        t2.category_id,
+        t2.post_slug,
+        t2.category_name
+        FROM tbl_news t1
+        JOIN tbl_news_category t2
+        ON t1.category_id = t2.category_id
+        WHERE post_slug='open-recruitment-agust-20191.html'
+ERROR - 2019-09-02 15:34:05 --> Query error: Column 'post_slug' in where clause is ambiguous - Invalid query: SELECT
+        t1.news_id,
+        t1.news_title,
+        t1.slug,
+        t1.news_content,
+        t1.photo,
+        t1.banner,
+        t1.news_date,
+        t1.user_update,
+        t1.category_id,
+        t2.category_id,
+        t2.post_slug,
+        t2.category_name
+        FROM tbl_news t1
+        JOIN tbl_news_category t2
+        ON t1.category_id = t2.category_id
+        WHERE post_slug='open-recruitment-agust-20191.html'
+ERROR - 2019-09-02 15:35:50 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 143
+ERROR - 2019-09-02 15:35:50 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-02 15:35:50 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 146
+ERROR - 2019-09-02 15:35:51 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-02 15:36:05 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 143
+ERROR - 2019-09-02 15:36:05 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-02 15:36:05 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 146
+ERROR - 2019-09-02 15:36:05 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-02 15:36:11 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 165
+ERROR - 2019-09-02 15:36:11 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 167
+ERROR - 2019-09-02 15:36:11 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 168
+ERROR - 2019-09-02 15:36:11 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 15:37:01 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 165
+ERROR - 2019-09-02 15:37:01 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 167
+ERROR - 2019-09-02 15:37:01 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 168
+ERROR - 2019-09-02 15:37:01 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 15:44:30 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 165
+ERROR - 2019-09-02 15:44:30 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 167
+ERROR - 2019-09-02 15:44:30 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 168
+ERROR - 2019-09-02 15:44:36 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 165
+ERROR - 2019-09-02 15:44:36 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 167
+ERROR - 2019-09-02 15:44:36 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 168
+ERROR - 2019-09-02 15:45:11 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 165
+ERROR - 2019-09-02 15:45:11 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 167
+ERROR - 2019-09-02 15:45:11 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 168
+ERROR - 2019-09-02 15:45:50 --> Severity: Notice --> Undefined variable: id C:\xampp\htdocs\csm-web\application\models\Model_category.php 15
+ERROR - 2019-09-02 15:45:50 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 165
+ERROR - 2019-09-02 15:45:50 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 167
+ERROR - 2019-09-02 15:45:50 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 168
+ERROR - 2019-09-02 15:46:03 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 165
+ERROR - 2019-09-02 15:46:03 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 167
+ERROR - 2019-09-02 15:46:03 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 168
+ERROR - 2019-09-02 15:48:14 --> Query error: Unknown column 'post_slug' in 'where clause' - Invalid query: SELECT * from tbl_news_category WHERE post_slug='carrier.html'
+ERROR - 2019-09-02 15:51:32 --> Severity: Notice --> Undefined variable: slug C:\xampp\htdocs\csm-web\application\controllers\Category.php 30
+ERROR - 2019-09-02 15:51:32 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 15:52:04 --> Severity: Notice --> Undefined variable: slug C:\xampp\htdocs\csm-web\application\controllers\Category.php 30
+ERROR - 2019-09-02 15:52:04 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 15:55:47 --> Severity: Notice --> Undefined variable: slug_news_category C:\xampp\htdocs\csm-web\application\controllers\Category.php 30
+ERROR - 2019-09-02 15:55:47 --> Severity: Notice --> Undefined variable: slug C:\xampp\htdocs\csm-web\application\models\Model_category.php 9
+ERROR - 2019-09-02 15:55:47 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 15:56:05 --> Severity: Notice --> Undefined variable: slug_news_category C:\xampp\htdocs\csm-web\application\controllers\Category.php 30
+ERROR - 2019-09-02 15:56:05 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 15:57:11 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 165
+ERROR - 2019-09-02 15:57:11 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 167
+ERROR - 2019-09-02 15:57:11 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 168
+ERROR - 2019-09-02 15:57:11 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 16:01:48 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 16:03:20 --> Severity: Notice --> Undefined variable: id C:\xampp\htdocs\csm-web\application\controllers\Category.php 31
+ERROR - 2019-09-02 16:04:59 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 16:06:33 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 16:06:39 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 16:06:57 --> 404 Page Not Found!: Carrierhtml/index
+ERROR - 2019-09-02 16:06:59 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 16:07:03 --> 404 Page Not Found!: Career/index
+ERROR - 2019-09-02 16:07:09 --> 404 Page Not Found!: Careerhtml/index
+ERROR - 2019-09-02 16:07:12 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 16:10:52 --> 404 Page Not Found!: 
+ERROR - 2019-09-02 16:20:18 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 165
+ERROR - 2019-09-02 16:20:18 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 167
+ERROR - 2019-09-02 16:20:18 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 168
+ERROR - 2019-09-02 16:20:18 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 16:21:08 --> Query error: Unknown column 'slug_news_category' in 'where clause' - Invalid query: SELECT * FROM tbl_news WHERE slug_news_category='career.html' ORDER BY news_id DESC
+ERROR - 2019-09-02 16:22:32 --> Query error: Unknown column 'category_name' in 'where clause' - Invalid query: SELECT * FROM tbl_news WHERE category_name='career.html' ORDER BY news_id DESC
+ERROR - 2019-09-02 16:37:04 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ON t1.category_id = t2.category_id
+        ORDER BY t1.news_id DESC' at line 17 - Invalid query: SELECT
+        t1.news_id,
+        t1.news_title,
+        t1.slug,
+        t1.news_content,
+        t1.photo,
+        t1.banner,
+        t1.news_date,
+        t1.user_update,
+        t1.category_id,
+        t2.category_id,
+        t2.slug_news_category,
+        t2.category_name
+        FROM tbl_news t1
+        JOIN tbl_news_category t2
+        ON t1.category_id = t2.category_id
+        ON t1.category_id = t2.category_id
+        ORDER BY t1.news_id DESC
+ERROR - 2019-09-02 16:37:42 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ON t1.category_id = t2.category_id
+        ORDER BY t1.news_id DESC' at line 17 - Invalid query: SELECT
+        t1.news_id,
+        t1.news_title,
+        t1.slug,
+        t1.news_content,
+        t1.photo,
+        t1.banner,
+        t1.news_date,
+        t1.user_update,
+        t1.category_id,
+        t2.category_id,
+        t2.slug_news_category,
+        t2.category_name
+        FROM tbl_news t1
+        JOIN tbl_news_category t2
+        ON t1.category_id = t2.category_id
+        ON t1.category_id = t2.category_id
+        ORDER BY t1.news_id DESC
+ERROR - 2019-09-02 16:38:22 --> Severity: Notice --> Undefined index: post_slug C:\xampp\htdocs\csm-web\application\views\admin\view_news.php 58
+ERROR - 2019-09-02 16:40:21 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 143
+ERROR - 2019-09-02 16:40:21 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-02 16:40:21 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 146
+ERROR - 2019-09-02 16:40:21 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-02 16:40:26 --> Severity: Notice --> Undefined index: post_slug C:\xampp\htdocs\csm-web\application\views\admin\view_news.php 58
+ERROR - 2019-09-02 16:54:31 --> Severity: Compile Error --> Cannot redeclare Model_category::get_category_data() C:\xampp\htdocs\csm-web\application\models\Model_category.php 12
+ERROR - 2019-09-02 16:55:39 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 17:00:42 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:00:42 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:00:42 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:00:42 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:00:42 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:00:42 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:00:42 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:01:01 --> Query error: Unknown column 't1.category_id' in 'field list' - Invalid query: SELECT
+        t1.news_id,
+        t1.news_title,
+        t1.slug,
+        t1.news_content,
+        t1.photo,
+        t1.banner,
+        t1.news_date,
+        t1.user_update,
+        t1.post_slug,
+        t1.category_id,
+        t2.category_id,
+        t2.slug_news_category,
+        t2.category_name
+        FROM tbl_news t1
+        JOIN tbl_news_category t2
+        ON t1.category_id = t2.category_id
+        ORDER BY t1.news_id DESC
+ERROR - 2019-09-02 17:01:05 --> Query error: Unknown column 't1.category_id' in 'field list' - Invalid query: SELECT
+        t1.news_id,
+        t1.news_title,
+        t1.slug,
+        t1.news_content,
+        t1.photo,
+        t1.banner,
+        t1.news_date,
+        t1.user_update,
+        t1.post_slug,
+        t1.category_id,
+        t2.category_id,
+        t2.slug_news_category,
+        t2.category_name
+        FROM tbl_news t1
+        JOIN tbl_news_category t2
+        ON t1.category_id = t2.category_id
+        ORDER BY t1.news_id DESC
+ERROR - 2019-09-02 17:01:27 --> Query error: Unknown column 't1.category_id' in 'field list' - Invalid query: SELECT
+        t1.news_id,
+        t1.news_title,
+        t1.slug,
+        t1.news_content,
+        t1.photo,
+        t1.banner,
+        t1.news_date,
+        t1.user_update,
+        t1.post_slug,
+        t1.category_id,
+        t2.category_id,
+        t2.slug_news_category,
+        t2.category_name
+        FROM tbl_news t1
+        JOIN tbl_news_category t2
+        ON t1.category_id = t2.category_id
+        ORDER BY t1.news_id DESC
+ERROR - 2019-09-02 17:01:28 --> Query error: Unknown column 't1.category_id' in 'field list' - Invalid query: SELECT
+        t1.news_id,
+        t1.news_title,
+        t1.slug,
+        t1.news_content,
+        t1.photo,
+        t1.banner,
+        t1.news_date,
+        t1.user_update,
+        t1.post_slug,
+        t1.category_id,
+        t2.category_id,
+        t2.slug_news_category,
+        t2.category_name
+        FROM tbl_news t1
+        JOIN tbl_news_category t2
+        ON t1.category_id = t2.category_id
+        ORDER BY t1.news_id DESC
+ERROR - 2019-09-02 17:02:46 --> 404 Page Not Found!: admin/News/update
+ERROR - 2019-09-02 17:02:58 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:02:58 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:02:58 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:02:58 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:02:58 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:02:58 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:02:58 --> Severity: Notice --> Undefined index: category_id C:\xampp\htdocs\csm-web\application\views\admin\view_news_edit.php 91
+ERROR - 2019-09-02 17:03:52 --> Query error: Unknown column 'category_id' in 'field list' - Invalid query: UPDATE `tbl_news` SET `news_title` = 'Open Recruitment Agust 2019', `slug` = 'col-page col-sm-8 col-md-6', `news_content` = '<p>Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019, The requirements are as follows:</p><p><b>Criteria :</b></p><ol><li>Matching CAM design with 5 axis CNC machines for optimal.</li><li>Making CAM designs.</li><li>Able to work in teams and individually.</li></ol><p><b>Qualification<b> :</b></b></p><ol><li><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">Max age</span> <span title=\"\" class=\"\">35 years old, physically and mentally healthy</span></span></li><li>Having experience in the field of Programmer (CNC) ± 2 years specialized in Manufacturing Dies and CF</li><li>Experience using Mastercam & Powermill / other CAM design software</li><li>Experienced using a 5 axis CNC machine</li><li>Mastering 3D & 2D concepts</li><li>Able to work well together and good communication</li></ol><b>If you are personally we needed, please apply for an application to participate in the selection stage.<br>HRD Section</b><p><b><b>CV. Cipta Sinergi Manufacturing</b></b></p><p><b><b>Jl. Kamarung No. 88b RT/RW 004/004 Citeureup Kec. Cimahi Utara, Jawa Barat 40512<br></b></b></p><p>\r\n							</p><br><p><br></p>', `news_short_content` = 'Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019.', `news_date` = '2019-08-01', `category_id` = 'career.html', `comment` = 'On', `meta_title` = 'Open Recruitment Agust 2019', `meta_keyword` = '', `meta_description` = '', `post_slug` = 'open-recruitment-agust-2019.html'
+WHERE `news_id` = '1'
+ERROR - 2019-09-02 17:05:43 --> Query error: Unknown column 'category_id' in 'where clause' - Invalid query: SELECT * FROM tbl_news WHERE category_id='career.html' ORDER BY news_id DESC
+ERROR - 2019-09-02 17:07:00 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10

@@ -16,7 +16,7 @@
 									<li class="gro">
 										<a href="<?php echo base_url(); ?>news/page"><span><?php echo NEWS; ?></span></a>
 										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										<a href="<?php echo base_url(); ?>category/detail/<?php echo $news['category_id'].'.html'; ?>"><span><?php echo $news['category_name']; ?></span></a>
+										<a href="<?php echo base_url(); ?>category/detail/<?php echo $news['slug_news_category']; ?>"><span><?php echo $news['category_name']; ?></span></a>
 									</li>
 								</div>
 								<li class="gro" style="padding-right:0;">
@@ -107,7 +107,7 @@
 							<?php
 							foreach ($news_category as $row) {
 								?>
-								<li><a href="<?php echo base_url(); ?>category/detail/<?php echo $row['category_id'].'.html'; ?>"><?php echo $row['category_name']; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>category/detail/<?php echo $row['slug_news_category']; ?>"><?php echo $row['category_name']; ?></a></li>
 								<?php
 							}
 							?>
@@ -123,7 +123,7 @@
 								$i++;
 								if($i>$setting['total_recent_post']) {break;}
 								?>
-								<li><a href="<?php echo base_url(); ?>news/detail/<?php echo $row['news_id'].'.html'; ?>"><?php echo $row['news_title']; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>news/detail/<?php echo $row['post_slug']; ?>"><?php echo $row['news_title']; ?></a></li>
 								<?php
 							}
 							?>
@@ -140,7 +140,7 @@
 								$i++;
 								if($i>$setting['total_popular_post']) {break;}
 								?>
-								<li><a href="<?php echo base_url(); ?>news/detail/<?php echo $row['news_id'].'.html'; ?>"><?php echo $row['news_title']; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>news/detail/<?php echo $row['post_slug']; ?>"><?php echo $row['news_title']; ?></a></li>
 								<?php
 							}
 							?>

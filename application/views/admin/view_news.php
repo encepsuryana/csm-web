@@ -55,11 +55,11 @@ if(!$this->session->userdata('id')) {
 										</td>
 										<td>										
 											<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
-												<a class="btn btn-success btn-xs" data-toggle="modal" href="<?php echo base_url(); ?>news/detail/<?php echo $row['news_id'].'.html'; ?>" target="_blank">Details</a>
+												<a class="btn btn-success btn-xs" data-toggle="modal" href="<?php echo base_url(); ?>news/detail/<?php echo $row['post_slug']; ?>" target="_blank">Details</a>
 												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/news/edit/<?php echo $row['news_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 												<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/news/delete/<?php echo $row['news_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>  
 											<?php } elseif ($this->session->userdata('role') == 'hrd') { ?>
-												<a class="btn btn-success btn-xs" data-toggle="modal" href="<?php echo base_url(); ?>news/detail/<?php echo $row['news_id'].'.html'; ?>" target="_blank">Details</a>
+												<a class="btn btn-success btn-xs" data-toggle="modal" href="<?php echo base_url(); ?>news/detail/<?php echo $row['post_slug']; ?>" target="_blank">Details</a>
 												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/news/edit/<?php echo $row['news_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 											<?php } else { ?>
 												<div class="forbiden">

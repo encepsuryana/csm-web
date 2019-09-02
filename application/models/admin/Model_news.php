@@ -13,21 +13,22 @@ class Model_news extends CI_Model
 
     function show() {
         $sql = "SELECT
-                t1.news_id,
-                t1.news_date,
-                t1.news_title,
-                t1.slug,
-                t1.news_content,
-                t1.photo,
-                t1.banner,
-                t1.user_update,
-                t1.category_id,
-                t2.category_id,
-                t2.category_name
-                FROM tbl_news t1
-                JOIN tbl_news_category t2
-                ON t1.category_id = t2.category_id
-                ORDER BY t1.news_id DESC";
+        t1.news_id,
+        t1.news_title,
+        t1.slug,
+        t1.news_content,
+        t1.photo,
+        t1.banner,
+        t1.news_date,
+        t1.user_update,
+        t1.post_slug,
+        t1.slug_news_category,
+        t2.slug_news_category,
+        t2.category_name
+        FROM tbl_news t1
+        JOIN tbl_news_category t2
+        ON t1.slug_news_category = t2.slug_news_category
+        ORDER BY t1.news_id DESC";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
@@ -69,5 +70,5 @@ class Model_news extends CI_Model
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }
-   
+
 }

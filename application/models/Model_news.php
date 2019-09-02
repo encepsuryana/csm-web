@@ -15,7 +15,7 @@ class Model_news extends CI_Model
         return $query->result_array();
     }
 
-    public function get_news_detail($id) {
+    public function get_news_detail($slug) {
         $sql = "SELECT
         t1.news_id,
         t1.news_title,
@@ -25,14 +25,14 @@ class Model_news extends CI_Model
         t1.banner,
         t1.news_date,
         t1.user_update,
-        t1.category_id,
-        t2.category_id,
+        t1.slug_news_category,
+        t2.slug_news_category,
         t2.category_name
         FROM tbl_news t1
         JOIN tbl_news_category t2
-        ON t1.category_id = t2.category_id
-        WHERE news_id=?";
-        $query = $this->db->query($sql,array($id));
+        ON t1.slug_news_category = t2.slug_news_category
+        WHERE post_slug='$slug'";
+        $query = $this->db->query($sql,array($slug));
         return $query->first_row('array');
     }
 

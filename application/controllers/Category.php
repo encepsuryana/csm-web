@@ -10,10 +10,10 @@ class Category extends CI_Controller {
 		$this->load->model('Model_category');
 	}
 
-	public function view($id)
+	public function view($slug)
 	{
 		// If there is no id after category in URL, redirect to the category page
-		if(!$id)
+		if(!$slug)
 		{
 			redirect(base_url());
 			exit;
@@ -27,8 +27,8 @@ class Category extends CI_Controller {
 		$header['latest_news'] = $this->Model_common->get_latest_news();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 
-		$data['category'] = $this->Model_category->get_category_data($id);
-		$data['news'] = $this->Model_category->get_news_data($id);
+		$data['category'] = $this->Model_category->get_category_data($slug);
+		$data['news'] = $this->Model_category->get_news_data($slug);
 
 		$header['service'] = $this->Model_category->get_service_data();
 		$header['facility'] = $this->Model_category->get_facility_data();

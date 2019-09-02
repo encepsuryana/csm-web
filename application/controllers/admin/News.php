@@ -41,7 +41,7 @@ class News extends CI_Controller
 				$this->form_validation->set_rules('slug', 'Slug News', 'trim|required');
 				$this->form_validation->set_rules('news_short_content', 'News Short Content', 'trim|required');
 				$this->form_validation->set_rules('news_content', 'News Content', 'trim|required');
-				$this->form_validation->set_rules('category_id', 'Category', 'trim|required');
+				$this->form_validation->set_rules('slug_news_category', 'Category', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -93,6 +93,12 @@ class News extends CI_Controller
 					$final_name1 = 'news-banner-'.$ai_id.'.'.$ext1;
 					move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
 
+					$judul = $_POST['news_title'];
+					$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
+					$trim=trim($string);
+					$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
+					$slug=$pre_slug.'.html';
+
 					$form_data = array(
 						'news_title'         => $_POST['news_title'],
 						'slug'          	 => $_POST['slug'],
@@ -101,13 +107,14 @@ class News extends CI_Controller
 						'news_date'          => $_POST['news_date'],
 						'photo'              => $final_name,
 						'banner'             => $final_name1,
-						'category_id'        => $_POST['category_id'],
+						'slug_news_category'        => $_POST['slug_news_category'],
 						'total_view'         => '',
 						'comment'            => $_POST['comment'],
 						'meta_title'         => $_POST['meta_title'],
 						'meta_keyword'       => $_POST['meta_keyword'],
 						'meta_description'   => $_POST['meta_description'],
-						'user_update'   => $_POST['user_update']
+						'user_update'   	 => $_POST['user_update'],
+						'post_slug'   	 	 => $slug
 					);
 					$this->Model_news->add($form_data);
 
@@ -120,6 +127,7 @@ class News extends CI_Controller
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
 					unset($_POST['user_update']);
+					unset($_POST['post_slug']);
 				} 
 				else
 				{
@@ -161,6 +169,12 @@ class News extends CI_Controller
 
 			if(isset($_POST['form1'])) 
 			{
+
+				$judul = $_POST['news_title'];
+				$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul);
+				$trim=trim($string);
+				$pre_slug=strtolower(str_replace(" ", "-", $trim));
+				$slug=$pre_slug.'.html';
 
 				$valid = 1;
 				$this->form_validation->set_rules('news_title', 'News Title', 'trim|required');
@@ -210,11 +224,12 @@ class News extends CI_Controller
 							'news_content'       => $_POST['news_content'],
 							'news_short_content' => $_POST['news_short_content'],
 							'news_date'          => $_POST['news_date'],
-							'category_id'        => $_POST['category_id'],
+							'slug_news_category'        => $_POST['slug_news_category'],
 							'comment'            => $_POST['comment'],
 							'meta_title'         => $_POST['meta_title'],
 							'meta_keyword'       => $_POST['meta_keyword'],
-							'meta_description'   => $_POST['meta_description']
+							'meta_description'   => $_POST['meta_description'],
+							'post_slug'  		 => $slug
 						);
 						$this->Model_news->update($id,$form_data);
 					}
@@ -224,6 +239,8 @@ class News extends CI_Controller
 						$final_name = 'news-'.$id.'.'.$ext;
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
+						$data['news'] = $this->Model_news->getData($id);
+
 						$form_data = array(
 							'news_title'         => $_POST['news_title'],
 							'slug'	 	         => $_POST['slug'],
@@ -231,11 +248,12 @@ class News extends CI_Controller
 							'news_short_content' => $_POST['news_short_content'],
 							'news_date'          => $_POST['news_date'],
 							'photo'              => $final_name,
-							'category_id'        => $_POST['category_id'],
+							'slug_news_category'        => $_POST['slug_news_category'],
 							'comment'            => $_POST['comment'],
 							'meta_title'         => $_POST['meta_title'],
 							'meta_keyword'       => $_POST['meta_keyword'],
-							'meta_description'   => $_POST['meta_description']
+							'meta_description'   => $_POST['meta_description'],
+							'post_slug'  		 => $slug
 						);
 						$this->Model_news->update($id,$form_data);
 					}
@@ -252,11 +270,12 @@ class News extends CI_Controller
 							'news_short_content' => $_POST['news_short_content'],
 							'news_date'          => $_POST['news_date'],
 							'banner'             => $final_name1,
-							'category_id'        => $_POST['category_id'],
+							'slug_news_category'        => $_POST['slug_news_category'],
 							'comment'            => $_POST['comment'],
 							'meta_title'         => $_POST['meta_title'],
 							'meta_keyword'       => $_POST['meta_keyword'],
-							'meta_description'   => $_POST['meta_description']
+							'meta_description'   => $_POST['meta_description'],
+							'post_slug'   => $slug
 						);
 						$this->Model_news->update($id,$form_data);
 					}
@@ -279,11 +298,12 @@ class News extends CI_Controller
 							'news_date'          => $_POST['news_date'],
 							'photo'              => $final_name,
 							'banner'             => $final_name1,
-							'category_id'        => $_POST['category_id'],
+							'slug_news_category'        => $_POST['slug_news_category'],
 							'comment'            => $_POST['comment'],
 							'meta_title'         => $_POST['meta_title'],
 							'meta_keyword'       => $_POST['meta_keyword'],
-							'meta_description'   => $_POST['meta_description']
+							'meta_description'   => $_POST['meta_description'],
+							'post_slug'  		 => $slug
 						);
 						$this->Model_news->update($id,$form_data);
 					}

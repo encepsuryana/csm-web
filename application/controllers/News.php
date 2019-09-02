@@ -51,7 +51,7 @@ class News extends CI_Controller {
 		$this->load->view('view_footer');
 	}
 
-	public function view($id)
+	public function view($slug)
 	{
 		$header['setting'] = $this->Model_common->get_setting_data();
 		$header['page'] = $this->Model_common->get_page_data();
@@ -61,7 +61,7 @@ class News extends CI_Controller {
 		$header['latest_news'] = $this->Model_common->get_latest_news();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 
-		$data['news'] = $this->Model_news->get_news_detail($id);
+		$data['news'] = $this->Model_news->get_news_detail($slug);
 		$data['news_category'] = $this->Model_news->get_news_category();
 
 		$header['service'] = $this->Model_news->get_service_data();
