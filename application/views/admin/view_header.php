@@ -219,7 +219,7 @@
 								</ul>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'admin/electronics-division/add')||($final_url_other == 'admin/electronics-division')||($final_url_other == 'admin/electronics-division/edit')||($final_url_other == 'admin/electronics-division-category/add')||($final_url_other == 'admin/electronics-division-category')||($final_url_other == 'admin/electronics-division-category/edit') ) {echo 'active';} ?>">
+							<li class="treeview <?php if( ($final_url_other == 'admin/electronics-division/add')||($final_url_other == 'admin/electronics-division')||($final_url_other == 'admin/electronics-division/edit')||($final_url_other == 'admin/electronics-division-category/add')||($final_url_other == 'admin/electronics-division-category')||($final_url_other == 'admin/electronics-division-category/edit')||($final_url_other == 'admin/electronics-division-desc')||($final_url_other == 'admin/electronics-division-category/update') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-microchip"></i>
 									<span>Electronics Division</span>
@@ -407,7 +407,7 @@
 								</ul>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'hrd/electronics-division/add')||($final_url_other == 'hrd/electronics-division')||($final_url_other == 'hrd/electronics-division/edit')||($final_url_other == 'hrd/electronics-division-category/add')||($final_url_other == 'hrd/electronics-division-category')||($final_url_other == 'hrd/electronics-division-category/edit') ) {echo 'active';} ?>">
+							<li class="treeview <?php if( ($final_url_other == 'hrd/electronics-division/add')||($final_url_other == 'hrd/electronics-division')||($final_url_other == 'hrd/electronics-division/edit')||($final_url_other == 'hrd/electronics-division-category/add')||($final_url_other == 'hrd/electronics-division-category')||($final_url_other == 'hrd/electronics-division-category/edit')||($final_url_other == 'hrd/electronics-division-desc/update')||($final_url_other == 'hrd/electronics-division-desc') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-microchip"></i>
 									<span>Electronics Division</span>

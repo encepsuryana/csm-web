@@ -74,15 +74,22 @@ $route['hrd/slider/delete/(:any)'] = 'admin/slider/delete/$1';
 $route['hrd/service'] = 'admin/service';
 $route['hrd/service/add'] = 'admin/service/add';
 $route['hrd/service/edit/(:any)'] = 'admin/service/edit/$1';
+
 $route['hrd/facility'] = 'admin/facility';
 $route['hrd/facility/add'] = 'admin/facility/add';
 $route['hrd/facility/edit/(:any)'] = 'admin/facility/edit/$1';
+$route['hrd/facility/delete/(:any)'] = 'admin/facility/delete/$1';
 $route['hrd/facility-category'] = 'admin/facility-category';
 $route['hrd/facility-category/add'] = 'admin/facility-category/add';
 $route['hrd/facility-category/edit/(:any)'] = 'admin/facility-category/edit/$1';
+$route['hrd/facility-category/delete/(:any)'] = 'admin/facility-category/delete/$1';
 
 $route['hrd/electronics-division'] = 'admin/electronics-division';
+$route['hrd/electronics-division/add'] = 'admin/electronics-division/add';
+$route['hrd/electronics-division/edit/$1'] = 'admin/electronics-division/edit/$1';
 $route['hrd/electronics-division-category'] = 'admin/electronics-division-category';
+$route['hrd/electronics-division-category/add'] = 'admin/electronics-division-category/add';
+$route['hrd/electronics-division-category/edit/$1'] = 'admin/electronics-division-category/edit/$1';
 $route['hrd/electronics-division-desc/update'] = 'admin/electronics-division-desc/update';
 $route['hrd/electronics-division-desc'] = 'admin/electronics-division-desc';
 

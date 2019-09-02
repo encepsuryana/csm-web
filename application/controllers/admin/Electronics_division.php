@@ -27,7 +27,7 @@ class Electronics_division extends CI_Controller
 
 	public function add()
 	{
-		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
+		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
 			$data['error'] = '';
@@ -184,7 +184,7 @@ class Electronics_division extends CI_Controller
 
 	public function edit($id)
 	{
-		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
+		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
     	// If there is no service in this id, then redirect
 			$tot = $this->Model_electronics_division->electronics_division_check($id);
 			if(!$tot) {
@@ -390,7 +390,7 @@ class Electronics_division extends CI_Controller
 
 	public function delete($id) 
 	{
-		if ($this->session->userdata('role') == 'admin') {
+		if (($this->session->userdata('role') == 'admin')  or ($this->session->userdata('role') == 'staff')) {
 		// If there is no electronics_division in this id, then redirect
 			$tot = $this->Model_electronics_division->electronics_division_check($id);
 			if(!$tot) {

@@ -3,7 +3,7 @@ if(!$this->session->userdata('id')) {
 	redirect(base_url().$this->session->userdata('role').'/login');
 }
 ?>
-<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
+<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'herd')) { ?>
 
 	<section class="content-header">
 		<div class="content-header-left">
