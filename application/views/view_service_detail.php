@@ -28,7 +28,7 @@
 							<?php
 							foreach ($service_by_heading as $row) {
 								?>
-								<li><a href="<?php echo base_url(); ?>service/detail/<?php echo $row['id'].'.html'; ?>"><?php echo $row['heading']; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>service/detail/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a></li>
 								<?php
 							}
 							?>

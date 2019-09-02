@@ -40,14 +40,14 @@ class Model_common extends CI_Model
         return $query->result_array();
     }
 
-    public function get_single_service_data($id)
+    public function get_single_service_data($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_service WHERE id=?",array($id));
+        $query = $this->db->query("SELECT * from tbl_service WHERE slug_service='$slug'",array($slug));
         return $query->result_array();
     }
-    public function get_single_facility_data($id)
+    public function get_single_facility_data($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_facility WHERE id=?",array($id));
+        $query = $this->db->query("SELECT * from tbl_facility WHERE slug_facility='$slug'",array($slug));
         return $query->result_array();
     }
     public function get_single_electronics_division_data($id)

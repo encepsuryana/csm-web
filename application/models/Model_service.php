@@ -15,9 +15,9 @@ class Model_service extends CI_Model
         return $query->result_array();
     }
 
-    public function get_service_detail($id) {
-    	$sql = 'SELECT * FROM tbl_service WHERE id=?';
-        $query = $this->db->query($sql,array($id));
+    public function get_service_detail($slug) {
+    	$sql = "SELECT * FROM tbl_service WHERE slug_service='$slug'";
+        $query = $this->db->query($sql,array($slug));
         return $query->first_row('array');
     }
     public function get_facility_data()

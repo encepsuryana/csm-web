@@ -39,7 +39,7 @@
 									<h4><?php echo $row['name']; ?></h4>
 									<?php echo $row['short_content']; ?>
 									<div class="services-link">
-										<a href="<?php echo base_url(); ?>portfolio/detail/<?php echo $row['id'].'.html'; ?>"><?php echo READ_MORE; ?></a>
+										<a href="<?php echo base_url(); ?>portfolio/detail/<?php echo $row['slug_portfolio']; ?>"><?php echo READ_MORE; ?></a>
 									</div>
 								</div>
 							</div>

@@ -18,19 +18,19 @@ class Model_portfolio extends CI_Model
         $query = $this->db->query("SELECT * from tbl_portfolio ORDER BY name ASC");
         return $query->result_array();
     }
-    public function get_portfolio_detail($id) {
-    	$sql = 'SELECT * FROM tbl_portfolio WHERE id=?';
-        $query = $this->db->query($sql,array($id));
+    public function get_portfolio_detail($slug) {
+    	$sql = "SELECT * FROM tbl_portfolio WHERE slug_portfolio='$slug'";
+        $query = $this->db->query($sql,array($slug));
         return $query->first_row('array');
     }
-    public function get_portfolio_photo($id)
+    public function get_portfolio_photo($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_portfolio_photo WHERE portfolio_id=?",array($id));
+        $query = $this->db->query("SELECT * from tbl_portfolio_photo WHERE portfolio_id=?",array($slug));
         return $query->result_array();
     }
-    public function get_portfolio_photo_number($id)
+    public function get_portfolio_photo_number($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_portfolio_photo WHERE portfolio_id=?",array($id));
+        $query = $this->db->query("SELECT * from tbl_portfolio_photo WHERE portfolio_id=?",array($slug));
         return $query->num_rows();
     }
 

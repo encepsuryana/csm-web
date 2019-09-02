@@ -541,7 +541,7 @@
 														$i++;
 														?>
 														<li class="csm-category-menu">
-															<a href="<?php echo base_url(); ?>service/detail/<?php echo $row['id'].'.html'; ?>"><?php echo $row['heading']; ?></a>
+															<a href="<?php echo base_url(); ?>service/detail/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
 														</li>
 														<?php
 													}

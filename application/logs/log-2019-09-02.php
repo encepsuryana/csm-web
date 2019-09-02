@@ -583,3 +583,6 @@ ERROR - 2019-09-02 17:03:52 --> Query error: Unknown column 'category_id' in 'fi
 WHERE `news_id` = '1'
 ERROR - 2019-09-02 17:05:43 --> Query error: Unknown column 'category_id' in 'where clause' - Invalid query: SELECT * FROM tbl_news WHERE category_id='career.html' ORDER BY news_id DESC
 ERROR - 2019-09-02 17:07:00 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 10
+ERROR - 2019-09-02 18:00:53 --> Severity: error --> Exception: syntax error, unexpected '=', expecting ')' C:\xampp\htdocs\csm-web\application\controllers\admin\Service.php 258
+ERROR - 2019-09-02 18:01:17 --> Severity: error --> Exception: syntax error, unexpected '=', expecting ')' C:\xampp\htdocs\csm-web\application\controllers\admin\Service.php 283
+ERROR - 2019-09-02 18:05:40 --> Query error: Unknown column 'slug_service' in 'where clause' - Invalid query: SELECT * from tbl_facility WHERE slug_service='high-speed-cnc-milling-machining-center.html'

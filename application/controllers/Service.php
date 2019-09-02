@@ -37,7 +37,7 @@ class Service extends CI_Controller {
 		$this->load->view('view_footer');
 	}
 
-	public function view($id)
+	public function view($slug)
 	{
 		$header['setting'] = $this->Model_common->get_setting_data();
 		$header['page'] = $this->Model_common->get_page_data();
@@ -49,7 +49,7 @@ class Service extends CI_Controller {
 
 		$header['service_by_heading'] = $this->Model_service->get_service_data_order_by_heading();
 
-		$data['res'] = $this->Model_service->get_service_detail($id);
+		$data['res'] = $this->Model_service->get_service_detail($slug);
 
 		$header['service'] = $this->Model_service->get_service_data();
 		$header['facility'] = $this->Model_service->get_facility_data();

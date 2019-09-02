@@ -17,7 +17,7 @@
 							$i++;
 							?>
 							<div class="<?php echo $row['service_style']; ?> no-merg">
-								<a href="<?php echo base_url(); ?>service/detail/<?php echo $row['id'].'.html'; ?>" class="public-csm-home">
+								<a href="<?php echo base_url(); ?>service/detail/<?php echo $row['slug_service']; ?>" class="public-csm-home">
 									<div class="img-publicacion-home">
 										<img class="" src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
 									</div>

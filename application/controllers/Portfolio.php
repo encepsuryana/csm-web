@@ -38,7 +38,7 @@ class Portfolio extends CI_Controller {
 		$this->load->view('view_footer');
 	}
 
-	public function view($id)
+	public function view($slug)
 	{
 		$header['setting'] = $this->Model_common->get_setting_data();
 		$header['page'] = $this->Model_common->get_page_data();
@@ -50,9 +50,9 @@ class Portfolio extends CI_Controller {
 
 		$header['portfolio_order_by_name'] = $this->Model_portfolio->get_portfolio_data_order_by_name();
 
-		$data['portfolio'] = $this->Model_portfolio->get_portfolio_detail($id);
-		$data['portfolio_photo'] = $this->Model_portfolio->get_portfolio_photo($id);
-		$data['portfolio_photo_total'] = $this->Model_portfolio->get_portfolio_photo_number($id);
+		$data['portfolio'] = $this->Model_portfolio->get_portfolio_detail($slug);
+		$data['portfolio_photo'] = $this->Model_portfolio->get_portfolio_photo($slug);
+		$data['portfolio_photo_total'] = $this->Model_portfolio->get_portfolio_photo_number($slug);
 
 		$header['service'] = $this->Model_portfolio->get_service_data();
 		$header['facility'] = $this->Model_portfolio->get_facility_data();

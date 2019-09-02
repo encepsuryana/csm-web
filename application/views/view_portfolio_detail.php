@@ -98,7 +98,7 @@
 							<?php
 							foreach ($portfolio_order_by_name as $row) {
 								?>
-								<li><a href="<?php echo base_url(); ?>portfolio/detail/<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>portfolio/detail/<?php echo $row['slug_portfolio']; ?>"><?php echo $row['name']; ?></a></li>
 								<?php
 							}
 							?>
