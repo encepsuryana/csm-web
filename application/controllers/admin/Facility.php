@@ -42,6 +42,12 @@ class Facility extends CI_Controller
 				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
 				$this->form_validation->set_rules('content', 'Content', 'trim|required');
 
+				$judul = $_POST['name'];
+				$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
+				$trim=trim($string);
+				$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
+				$slug=$pre_slug.'.html';
+
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
 					$error .= validation_errors();
@@ -101,7 +107,8 @@ class Facility extends CI_Controller
 						'banner'           => $final_name1,
 						'meta_title'       => $_POST['meta_title'],
 						'meta_keyword'     => $_POST['meta_keyword'],
-						'meta_description' => $_POST['meta_description']
+						'meta_description' => $_POST['meta_description'],
+						'slug_facility'    => $slug
 					);
 					$this->Model_facility->add($form_data);
 
@@ -200,7 +207,11 @@ class Facility extends CI_Controller
 
 			if(isset($_POST['form1'])) 
 			{
-
+				$judul = $_POST['name'];
+				$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
+				$trim=trim($string);
+				$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
+				$slug=$pre_slug.'.html';
 				$valid = 1;
 
 				$this->form_validation->set_rules('name', 'Name', 'trim|required');
@@ -250,7 +261,8 @@ class Facility extends CI_Controller
 							'category_id'      => $_POST['category_id'],
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description']
+							'meta_description' => $_POST['meta_description'],
+							'slug_facility'    => $slug
 						);
 						$this->Model_facility->update($id,$form_data);
 					}
@@ -268,7 +280,8 @@ class Facility extends CI_Controller
 							'photo'            => $final_name,
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description']
+							'meta_description' => $_POST['meta_description'],
+							'slug_facility'    => $slug
 						);
 						$this->Model_facility->update($id,$form_data);
 					}
@@ -286,7 +299,8 @@ class Facility extends CI_Controller
 							'banner'           => $final_name1,
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description']
+							'meta_description' => $_POST['meta_description'],
+							'slug_facility'    => $slug
 						);
 						$this->Model_facility->update($id,$form_data);
 					}
@@ -310,7 +324,8 @@ class Facility extends CI_Controller
 							'banner'           => $final_name1,
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description']
+							'meta_description' => $_POST['meta_description'],
+							'slug_facility'    => $slug
 						);
 						$this->Model_facility->update($id,$form_data);
 					}

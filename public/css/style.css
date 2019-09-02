@@ -711,29 +711,29 @@ img {
 	line-height: 50px;
 	vertical-align: middle;
 }
-.nav-mega {
+.nav-ciptasin {
 	width: 100%;
 }
 
-ul.nav-mega {
+ul.nav-ciptasin {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	float: left;
 }
 
-ul.nav-mega li {
+ul.nav-ciptasin li {
 	text-align: left;
 	display: inline-block;
 	position: relative;
 }
 
-ul.nav-mega li.current_page_item a {
+ul.nav-ciptasin li.current_page_item a {
 	color: #f8be2e;
 	text-decoration: none;
 }
 
-ul.nav-mega li a {
+ul.nav-ciptasin li a {
 	font-size: 12px;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -743,27 +743,27 @@ ul.nav-mega li a {
 	border-bottom: 2px solid #f81c51 !important;
 }
 
-ul.nav-mega li a:hover {
+ul.nav-ciptasin li a:hover {
 	border-bottom: 2px solid #f81c51 !important;
 }
 
-ul.nav-mega li a i {
+ul.nav-ciptasin li a i {
 	font-size: 18px;
 }
 
-ul.nav-mega li:hover a {
+ul.nav-ciptasin li:hover a {
 	color: #f8be2e;
 }
 
-.nav-mega {
+.nav-ciptasin {
 	width: 100%;
 	transition: all .5s ease;
 }
-.nav-mega .dropdown {
+.nav-ciptasin .dropdown {
 	position: static;
 }
 
-.nav-mega .dropdown a:before {
+.nav-ciptasin .dropdown a:before {
 	content: "\f0d7";
 	font-family: FontAwesome;
 	font-style: normal;
@@ -772,7 +772,7 @@ ul.nav-mega li:hover a {
 	margin-right: 5px; 
 }
 
-.nav-mega .dropdown-menu.mega-menu {
+.nav-ciptasin .dropdown-menu.ciptasin-menu {
 	border-radius: 0;
 	min-width: auto;
 	width: 135%;
@@ -782,14 +782,14 @@ ul.nav-mega li:hover a {
 	left: -300px;
 	transition: all 0.4s;
 }
-.nav-mega .dropdown-menu.mega-menu > li {
+.nav-ciptasin .dropdown-menu.ciptasin-menu > li {
 	padding: 20px;
 }
-.nav-mega .dropdown-menu.mega-menu .media-list .media {
+.nav-ciptasin .dropdown-menu.ciptasin-menu .media-list .media {
 	padding: 10px;
 	font-size: 13px;
 }
-.nav-mega .dropdown-menu.mega-menu .media-list .media-heading {
+.nav-ciptasin .dropdown-menu.ciptasin-menu .media-list .media-heading {
 	font-size: 16px;
 }
 
@@ -844,10 +844,10 @@ ul.nav-mega li:hover a {
 	background-size: cover;
 }
 
-.nav-mega .dropdown-menu.mega-menu .desc-product-menu {
+.nav-ciptasin .dropdown-menu.ciptasin-menu .desc-product-menu {
 	margin: 22px 15px;
 }
-.nav-mega .dropdown-menu.mega-menu .desc-product-menu a {
+.nav-ciptasin .dropdown-menu.ciptasin-menu .desc-product-menu a {
 	padding: 10px 0 !important;
 	margin: 0 !important;
 	font-size: 12px;
@@ -859,23 +859,23 @@ ul.nav-mega li:hover a {
 	position: relative;
 	top: -35px;
 }
-.nav-mega .dropdown-menu.mega-menu .desc-product-menu a:hover {
+.nav-ciptasin .dropdown-menu.ciptasin-menu .desc-product-menu a:hover {
 	background: transparent !important;
 	color: #134595 !important;
 	text-decoration: underline !important;
 }
-.nav-mega .dropdown-menu.mega-menu .desc-product-menu a:before {
+.nav-ciptasin .dropdown-menu.ciptasin-menu .desc-product-menu a:before {
 	content: "";
 	font-family: FontAwesome;
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: inherit;
 }
-.nav-mega .dropdown-menu.mega-menu .csm-menu {
+.nav-ciptasin .dropdown-menu.ciptasin-menu .csm-menu {
 	float: right;
 }
 
-.nav-mega .dropdown-menu.mega-menu .csm-menu > a {
+.nav-ciptasin .dropdown-menu.ciptasin-menu .csm-menu > a {
 	padding: 5px;
 	border: 0 !important;
 	text-align: right;
@@ -883,14 +883,14 @@ ul.nav-mega li:hover a {
 	font-weight: 700;
 }
 
-.nav-mega .dropdown-menu.mega-menu .csm-menu > a:hover {
+.nav-ciptasin .dropdown-menu.ciptasin-menu .csm-menu > a:hover {
 	background: transparent !important;
 	color: #134595 !important;
 	font-weight: 700;
 	text-decoration: underline;
 }
 
-.nav-mega .dropdown-menu.mega-menu .csm-menu > a:before {
+.nav-ciptasin .dropdown-menu.ciptasin-menu .csm-menu > a:before {
 	content: "\f0d9";
 	font-family: FontAwesome;
 	font-style: normal;
@@ -936,20 +936,20 @@ ul.nav-mega li:hover a {
 .sticky .container-collapse {
 	margin-top: -1px;
 }
-.sticky ul.nav-mega li a {
+.sticky ul.nav-ciptasin li a {
 	text-decoration: none;
 	padding: 20px 15px;
 }
 
-.sticky ul.nav-mega li ul {
+.sticky ul.nav-ciptasin li ul {
 	top: 60px;
 }
 
-.sticky ul.nav-mega li ul li a {
+.sticky ul.nav-ciptasin li ul li a {
 	padding: 10px 12px;
 }
 
-.sticky ul.nav-mega li ul li ul {
+.sticky ul.nav-ciptasin li ul li ul {
 	top: 0;
 }
 

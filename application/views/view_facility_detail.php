@@ -69,7 +69,7 @@
 							<?php
 							foreach ($facility_order_by_name as $row) {
 								?>
-								<li><a href="<?php echo base_url(); ?>facility/view/<?php echo $row['id']; ?>"><?php echo $row['name']; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>facility/view/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a></li>
 								<?php
 							}
 							?>

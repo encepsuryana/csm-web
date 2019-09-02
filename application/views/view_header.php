@@ -257,7 +257,7 @@
 		.slide-carousel.owl-carousel .owl-nav .owl-prev:hover, 
 		.slide-carousel.owl-carousel .owl-nav .owl-next:hover,
 		.main-menu .dropdown:before,
-		ul.nav-mega li a,
+		ul.nav-ciptasin li a,
 		.nav li a:focus,
 		.header-contact,
 		.team-carousel.owl-carousel .owl-nav .owl-prev, 
@@ -283,7 +283,7 @@
 
 		.mean-container .mean-nav ul li a:hover,
 		.counter-item a:hover,
-		ul.nav-mega li a:hover{
+		ul.nav-ciptasin li a:hover{
 			background: #<?php echo $setting['theme_color_1']; ?>!important;
 			color: #fff !important
 		}
@@ -337,7 +337,7 @@
 			color: #<?php echo $setting['theme_color_2']; ?>!important;
 		}
 
-		ul.nav-mega li a,
+		ul.nav-ciptasin li a,
 		.slider-animated li:last-child a,
 		.choose-icon img,
 		.testimonial-carousel .owl-dots .owl-dot.active,
@@ -466,11 +466,11 @@
 					</div>
 					<div class="col-md-9 col-sm-12 main-menu" style="display: block;">
 						<div class="main-menu-item">				 	
-							<ul class="nav nav-mega">
+							<ul class="nav nav-ciptasin">
 								<li><a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a></li>
 								<li><a href="<?php echo base_url(); ?>about"><?php echo ABOUT; ?></a></li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo PRODUCT; ?></a>
-									<ul class="dropdown-menu mega-menu">
+									<ul class="dropdown-menu ciptasin-menu">
 										<div class="col-md-7">
 											<li class="csm-menu">
 												<a href="<?php echo base_url(); ?>portfolio"><?php echo PORTFOLIO; ?></a>
@@ -514,7 +514,7 @@
 									</ul>
 								</li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo FACILITY; ?></a>
-									<ul class="dropdown-menu mega-menu">
+									<ul class="dropdown-menu ciptasin-menu">
 										<div class="col-md-6">
 											<li class="csm-menu">
 												<a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?></a>
@@ -523,7 +523,7 @@
 													foreach ($facility as $row) {
 														?>
 														<li class="csm-category-menu">
-															<a href="<?php echo base_url(); ?>facility/detail/<?php echo $row['id'].'.html'; ?>"><?php echo $row['name']; ?></a>
+															<a href="<?php echo base_url(); ?>facility/detail/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a>
 														</li>
 														<?php
 													}
@@ -552,7 +552,7 @@
 									</ul>
 								</li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo ELECTRONICS_DIVISION; ?></a>
-									<ul class="dropdown-menu mega-menu">
+									<ul class="dropdown-menu ciptasin-menu">
 										<?php
 										foreach ($electronics_division_category as $row) {
 											?>
@@ -578,7 +578,7 @@
 									</ul>
 								</li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo PAGE; ?></a>
-									<ul class="dropdown-menu mega-menu">
+									<ul class="dropdown-menu ciptasin-menu">
 										<div class="col-md-3">
 											<li class="csm-menu">
 
@@ -602,7 +602,7 @@
 									</ul>
 								</li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><i style="width: 20px;" class="fa fa-globe" aria-hidden="true"></i>									</a>
-									<ul class="dropdown-menu mega-menu">
+									<ul class="dropdown-menu ciptasin-menu">
 										<div class="col-md-10">
 											<li class="csm-menu">
 											</li>

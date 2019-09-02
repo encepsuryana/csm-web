@@ -18,19 +18,19 @@ class Model_facility extends CI_Model
         $query = $this->db->query("SELECT * from tbl_facility ORDER BY name ASC");
         return $query->result_array();
     }
-    public function get_facility_detail($id) {
-    	$sql = 'SELECT * FROM tbl_facility WHERE id=?';
-        $query = $this->db->query($sql,array($id));
+    public function get_facility_detail($slug) {
+    	$sql = "SELECT * FROM tbl_facility WHERE slug_facility='$slug'";
+        $query = $this->db->query($sql,array($slug));
         return $query->first_row('array');
     }
-    public function get_facility_photo($id)
+    public function get_facility_photo($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_facility_photo WHERE facility_id=?",array($id));
+        $query = $this->db->query("SELECT * from tbl_facility_photo WHERE facility_id=?",array($slug));
         return $query->result_array();
     }
-    public function get_facility_photo_number($id)
+    public function get_facility_photo_number($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_facility_photo WHERE facility_id=?",array($id));
+        $query = $this->db->query("SELECT * from tbl_facility_photo WHERE facility_id=?",array($slug));
         return $query->num_rows();
     }
 

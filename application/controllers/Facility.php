@@ -38,7 +38,7 @@ class Facility extends CI_Controller {
 		$this->load->view('view_footer');
 	}
 
-	public function view($id)
+	public function view($slug)
 	{
 		$header['setting'] = $this->Model_common->get_setting_data();
 		$header['page'] = $this->Model_common->get_page_data();
@@ -50,9 +50,9 @@ class Facility extends CI_Controller {
 
 		$header['facility_order_by_name'] = $this->Model_facility->get_facility_data_order_by_name();
 
-		$data['facility'] = $this->Model_facility->get_facility_detail($id);
-		$data['facility_photo'] = $this->Model_facility->get_facility_photo($id);
-		$data['facility_photo_total'] = $this->Model_facility->get_facility_photo_number($id);
+		$data['facility'] = $this->Model_facility->get_facility_detail($slug);
+		$data['facility_photo'] = $this->Model_facility->get_facility_photo($slug);
+		$data['facility_photo_total'] = $this->Model_facility->get_facility_photo_number($slug);
 
 		$header['service'] = $this->Model_facility->get_service_data();
 		$header['facility'] = $this->Model_facility->get_facility_data();
