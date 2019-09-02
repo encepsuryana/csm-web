@@ -47,7 +47,7 @@ class Electronics_division_desc extends CI_Controller
 
 	public function update()
 	{
-		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd'))  {
+		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff'))  {
 			$data['error'] = '';
 			$data['success'] = '';
 

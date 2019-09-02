@@ -40,7 +40,7 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Category Name <span>*</span></label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" name="category_name" placeholder="Example: Health Tips">
+								<input type="text" class="form-control" name="category_name" placeholder="Example: CNC Workstation Center">
 							</div>
 						</div>
 						<div class="form-group">

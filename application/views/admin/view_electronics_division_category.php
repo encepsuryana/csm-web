@@ -43,10 +43,10 @@ if(!$this->session->userdata('id')) {
                <td><?php echo $row['category_name']; ?></td>
                <td><?php echo $row['status']; ?></td>
                <td>
-                <?php if ($this->session->userdata('role') == 'admin') { ?>
+                <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
                  <a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
                  <a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category/delete/<?php echo $row['category_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
-               <?php } elseif ($this->session->userdata('role') == 'staff') { ?>
+               <?php } elseif ($this->session->userdata('role') == 'hrd') { ?>
                 <a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
               <?php } else { ?>
                 <div class="forbiden">

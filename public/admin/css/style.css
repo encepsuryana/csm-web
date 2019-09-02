@@ -419,6 +419,20 @@ img.existing-photo {
 	color: #27ae60;
 }
 
+.btn-warning {
+	border-radius: 20px;
+	background: orange;
+	border-color: orange;
+	color: #fff;
+}
+
+.btn-warning:hover {
+	border-radius: 20px;
+	background: transparent;
+	border-color: orange;
+	color: orange;
+}
+
 .pdf-style i {
 	margin-left: 20px;
 	font-size: 30px;

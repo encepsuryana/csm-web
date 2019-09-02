@@ -3,7 +3,7 @@ if(!$this->session->userdata('id')) {
 	redirect(base_url().$this->session->userdata('role').'/login');
 }
 ?>
-<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
+<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
 			<h1>Add Electronic Division Category</h1>
@@ -40,7 +40,7 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Category Name <span>*</span></label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" name="category_name" placeholder="Example: Health Tips">
+								<input type="text" class="form-control" name="category_name" placeholder="Example: Industrial Electronics">
 							</div>
 						</div>
 						<div class="form-group">

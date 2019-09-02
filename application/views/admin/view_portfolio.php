@@ -10,7 +10,11 @@ if(!$this->session->userdata('id')) {
 			<h1>View Portfolio</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio/add" class="btn btn-primary btn-sm">Add New</a>
+			<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
+				<a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio/add" class="btn btn-primary btn-sm">Add New</a>
+			<?php } else {?>
+				
+			<?php }?>
 		</div>
 	</section>
 

@@ -3,7 +3,7 @@ if(!$this->session->userdata('id')) {
 	redirect(base_url().$this->session->userdata('role').'/login');
 }
 ?>
-<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
+<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
 
 	<section class="content-header">
 		<div class="content-header-left">
@@ -95,7 +95,7 @@ if(!$this->session->userdata('id')) {
 								</table>
 							</div>
 							<div class="col-sm-2" style="padding-top:5px">
-								<input type="button" id="btnAddNew" value="Add Item" style="margin-bottom:10px;border:0;color: #fff;font-size: 14px;border-radius:3px;" class="btn btn-warning btn-xs">
+								<input type="button" id="btnAddNew" value="+ Add Item" class="btn btn-warning btn-xs">
 							</div>
 						</div>
 						<h3 class="seo-info">Banner Photo</h3>

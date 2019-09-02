@@ -261,3 +261,33 @@ ERROR - 2019-09-02 10:25:17 --> 404 Page Not Found!: Hrd/localhost
 ERROR - 2019-09-02 10:25:17 --> 404 Page Not Found!: Hrd/localhost
 ERROR - 2019-09-02 10:25:17 --> 404 Page Not Found!: Hrd/localhost
 ERROR - 2019-09-02 10:25:18 --> 404 Page Not Found!: Hrd/localhost
+ERROR - 2019-09-02 11:27:23 --> Severity: error --> Exception: syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\csm-web\application\views\admin\view_electronics_division.php 55
+ERROR - 2019-09-02 11:29:06 --> 404 Page Not Found!: Hrd/electronics_division_category
+ERROR - 2019-09-02 11:31:04 --> 404 Page Not Found!: Hrd/electronics_division_category
+ERROR - 2019-09-02 11:31:31 --> 404 Page Not Found!: Hrd/electronics_division_category
+ERROR - 2019-09-02 11:31:56 --> 404 Page Not Found!: Hrd/electronics_division_category
+ERROR - 2019-09-02 11:31:59 --> 404 Page Not Found!: Hrd/electronics_division_category
+ERROR - 2019-09-02 11:32:28 --> 404 Page Not Found!: Hrd/electronics_division_category
+ERROR - 2019-09-02 11:34:35 --> 404 Page Not Found!: 
+ERROR - 2019-09-02 11:38:37 --> 404 Page Not Found!: Hrd/electronics_division_desc
+ERROR - 2019-09-02 13:03:28 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-09-02 13:04:33 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-09-02 13:05:12 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-09-02 13:05:47 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-09-02 13:06:57 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-09-02 13:09:37 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-09-02 13:10:35 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-09-02 13:15:11 --> 404 Page Not Found!: Public/admin
+ERROR - 2019-09-02 13:16:02 --> 404 Page Not Found!: Hrd/portfolio
+ERROR - 2019-09-02 13:21:16 --> 404 Page Not Found!: 
+ERROR - 2019-09-02 13:21:35 --> 404 Page Not Found!: 
+ERROR - 2019-09-02 13:22:25 --> 404 Page Not Found!: 
+ERROR - 2019-09-02 13:22:30 --> 404 Page Not Found!: Hadmin/service
+ERROR - 2019-09-02 13:22:34 --> 404 Page Not Found!: 
+ERROR - 2019-09-02 13:22:49 --> 404 Page Not Found!: admin/Services/add
+ERROR - 2019-09-02 13:22:51 --> 404 Page Not Found!: 
+ERROR - 2019-09-02 13:22:52 --> 404 Page Not Found!: 
+ERROR - 2019-09-02 13:24:27 --> 404 Page Not Found!: 
+ERROR - 2019-09-02 13:24:29 --> 404 Page Not Found!: 
+ERROR - 2019-09-02 13:24:58 --> 404 Page Not Found!: Hrd/product
+ERROR - 2019-09-02 13:41:03 --> 404 Page Not Found!: 

@@ -86,11 +86,10 @@ $route['hrd/facility-category/delete/(:any)'] = 'admin/facility-category/delete/
 
 $route['hrd/electronics-division'] = 'admin/electronics-division';
 $route['hrd/electronics-division/add'] = 'admin/electronics-division/add';
-$route['hrd/electronics-division/edit/$1'] = 'admin/electronics-division/edit/$1';
+$route['hrd/electronics-division/edit/(:any)'] = 'admin/electronics-division/edit/$1';
 $route['hrd/electronics-division-category'] = 'admin/electronics-division-category';
 $route['hrd/electronics-division-category/add'] = 'admin/electronics-division-category/add';
-$route['hrd/electronics-division-category/edit/$1'] = 'admin/electronics-division-category/edit/$1';
-$route['hrd/electronics-division-desc/update'] = 'admin/electronics-division-desc/update';
+$route['hrd/electronics-division-category/edit/(:any)'] = 'admin/electronics-division-category/edit/$1';
 $route['hrd/electronics-division-desc'] = 'admin/electronics-division-desc';
 
 $route['hrd/faq'] = 'admin/faq';
@@ -150,6 +149,19 @@ $route['staff/facility/delete/(:any)'] = 'admin/facility/delete/$1';
 $route['staff/facility-category'] = 'admin/facility-category';
 $route['staff/facility-category/add'] = 'admin/facility-category/add';
 $route['staff/facility-category/edit/(:any)'] = 'admin/facility-category/edit/$1';
+
+$route['staff/electronics-division'] = 'admin/electronics-division';
+$route['staff/electronics-division/add'] = 'admin/electronics-division/add';
+$route['staff/electronics-division/edit/(:any)'] = 'admin/electronics-division/edit/$1';
+$route['staff/electronics-division/delete/(:any)'] = 'admin/electronics-division/delete/$1';
+$route['staff/electronics-division-category'] = 'admin/electronics-division-category';
+$route['staff/electronics-division-category/add'] = 'admin/electronics-division-category/add';
+$route['staff/electronics-division-category/edit/(:any)'] = 'admin/electronics-division-category/edit/$1';
+$route['staff/electronics-division-category/delete/(:any)'] = 'admin/electronics-division-category/delete/$1';
+$route['staff/electronics-division-desc'] = 'admin/electronics-division-desc';
+$route['staff/electronics-division-desc/update'] = 'admin/electronics-division-desc/update';
+
+
 $route['staff/faq'] = 'admin/faq';
 $route['staff/faq/add'] = 'admin/faq/add';
 $route['staff/faq/edit/(:any)'] = 'admin/faq/edit/$1';

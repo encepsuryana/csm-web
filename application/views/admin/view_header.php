@@ -574,6 +574,21 @@
 								</ul>
 							</li>
 
+							<li class="treeview <?php if( ($final_url_other == 'staff/electronics-division/add')||($final_url_other == 'staff/electronics-division')||($final_url_other == 'staff/electronics-division/edit')||($final_url_other == 'staff/electronics-division-category/add')||($final_url_other == 'staff/electronics-division-category')||($final_url_other == 'staff/electronics-division-category/edit')||($final_url_other == 'staff/electronics-division-desc/update')||($final_url_other == 'staff/electronics-division-desc') ) {echo 'active';} ?>">
+								<a href="#">
+									<i class="fa fa-microchip"></i>
+									<span>Electronics Division</span>
+									<span class="pull-right-container">
+										<i class="fa fa-angle-left pull-right"></i>
+									</span>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i> Electronics Division Category</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Electronics Division Desc</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Electronics Division</a></li>
+								</ul>
+							</li>
+
 							<li class="treeview <?php if( ($final_url_other == 'staff/product/add')||($final_url_other == 'staff/product')||($final_url_other == 'staff/product/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-cubes"></i>

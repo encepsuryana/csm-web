@@ -27,7 +27,7 @@ class Service extends CI_Controller
 
 	public function add()
 	{
-		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
+		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
 			$data['error'] = '';
