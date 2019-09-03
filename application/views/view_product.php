@@ -1,4 +1,4 @@
-<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner_product']; ?>)">
+<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="bannder-table">
 		<div class="banner-text">
 			<h1><?php echo PRODUCT_HOME; ?></h1>

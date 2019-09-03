@@ -1,4 +1,4 @@
-<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner_service']; ?>)">
+<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="bannder-table">
 		<div class="banner-text">
 			<h1><?php echo SERVICE; ?></h1>
@@ -17,7 +17,7 @@
 							$i++;
 							?>
 							<div class="<?php echo $row['service_style']; ?> no-merg">
-								<a href="<?php echo base_url(); ?>service/detail/<?php echo $row['slug_service']; ?>" class="public-csm-home">
+								<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>" class="public-csm-home">
 									<div class="img-publicacion-home">
 										<img class="" src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
 									</div>

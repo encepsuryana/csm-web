@@ -22,7 +22,6 @@ class Model_news extends CI_Model
         t1.slug,
         t1.news_content,
         t1.photo,
-        t1.banner,
         t1.news_date,
         t1.user_update,
         t1.slug_news_category,

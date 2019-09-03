@@ -1,10 +1,9 @@
-<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner_testimonial']; ?>)">
+<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="bannder-table">
 		<div class="banner-text">
 			<h1><?php echo $page['testimonial_heading']; ?></h1>
 		</div>
 	</div>
-
 
 	<div class="testimonial-area main-testimonial ptb-60">
 		<div class="container">
@@ -21,7 +20,7 @@
 										<h4><?php echo $row['name']; ?></h4>
 										<span><?php echo $row['designation'] ?>, <?php echo $row['company']; ?></span>
 									</div>
-									<div class="testimonial-detail">
+									<div class="testimonial-post">
 										<i class="fa fa-quote-left"></i>
 										<p><?php echo nl2br($row['comment']); ?></p>
 									</div>

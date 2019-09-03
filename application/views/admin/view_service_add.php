@@ -70,12 +70,6 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Banner *</label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="banner">(Only jpg, jpeg, gif and png are allowed)
-							</div>
-						</div>
-						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Short Content *</label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="short_content" style="height:140px;"><?php if(isset($_POST['short_content'])){echo $_POST['short_content'];} ?></textarea>

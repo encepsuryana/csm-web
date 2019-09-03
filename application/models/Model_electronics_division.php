@@ -25,19 +25,19 @@ class Model_electronics_division extends CI_Model
         $query = $this->db->query("SELECT * from tbl_electronics_division ORDER BY name ASC");
         return $query->result_array();
     }
-    public function get_electronics_division_detail($id) {
-    	$sql = 'SELECT * FROM tbl_electronics_division WHERE id=?';
-        $query = $this->db->query($sql,array($id));
+    public function get_electronics_division_detail($slug) {
+    	$sql = "SELECT * FROM tbl_electronics_division WHERE slug_electronics='$slug'";
+        $query = $this->db->query($sql,array($slug));
         return $query->first_row('array');
     }
-    public function get_electronics_division_photo($id)
+    public function get_electronics_division_photo($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_electronics_division_photo WHERE electronics_division_id=?",array($id));
+        $query = $this->db->query("SELECT * from tbl_electronics_division_photo WHERE electronics_division_id=?",array($slug));
         return $query->result_array();
     }
-    public function get_electronics_division_photo_number($id)
+    public function get_electronics_division_photo_number($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_electronics_division_photo WHERE electronics_division_id=?",array($id));
+        $query = $this->db->query("SELECT * from tbl_electronics_division_photo WHERE electronics_division_id=?",array($slug));
         return $query->num_rows();
     }
     public function get_facility_category()

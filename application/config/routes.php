@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | so that a different class/function is called than the one
 | corresponding to the URL.
 |
-| Please see the user guide for complete details:
+| Please see the user guide for complete posts:
 |
 |	https://codeigniter.com/user_guide/general/routing.html
 |
@@ -54,12 +54,12 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
 
 $route['csm-career'] = 'category/view/career.html';
-$route['news/detail/(:any)'] = 'news/view/$1';
-$route['service/detail/(:any)'] = 'service/view/$1';
-$route['facility/detail/(:any)'] = 'facility/view/$1';
-$route['category/detail/(:any)'] = 'category/view/$1';
-$route['portfolio/detail/(:any)'] = 'portfolio/view/$1';
-$route['electronics-division/detail/(:any)'] = 'electronics-division/view/$1';
+$route['news/post/(:any)'] = 'news/view/$1';
+$route['service/post/(:any)'] = 'service/view/$1';
+$route['facility/post/(:any)'] = 'facility/view/$1';
+$route['category/post/(:any)'] = 'category/view/$1';
+$route['portfolio/post/(:any)'] = 'portfolio/view/$1';
+$route['electronics-division/post/(:any)'] = 'electronics-division/view/$1';
 $route['admin/company-profile'] = 'admin/content-home/item-bg';
 
 /** HRD ROLE **/
@@ -92,11 +92,6 @@ $route['hrd/electronics-division-category/add'] = 'admin/electronics-division-ca
 $route['hrd/electronics-division-category/edit/(:any)'] = 'admin/electronics-division-category/edit/$1';
 $route['hrd/electronics-division-desc'] = 'admin/electronics-division-desc';
 
-$route['hrd/faq'] = 'admin/faq';
-$route['hrd/faq/add'] = 'admin/faq/add';
-$route['hrd/faq/edit/(:any)'] = 'admin/faq/edit/$1';
-$route['hrd/faq/delete/(:any)'] = 'admin/faq/delete/$1';
-$route['hrd/faq/main-photo'] = 'admin/faq/main-photo';
 $route['hrd/photo'] = 'admin/photo';
 $route['hrd/photo/add'] = 'admin/photo/add';
 $route['hrd/photo/edit/(:any)'] = 'admin/photo/edit/$1';
@@ -162,9 +157,6 @@ $route['staff/electronics-division-desc'] = 'admin/electronics-division-desc';
 $route['staff/electronics-division-desc/update'] = 'admin/electronics-division-desc/update';
 
 
-$route['staff/faq'] = 'admin/faq';
-$route['staff/faq/add'] = 'admin/faq/add';
-$route['staff/faq/edit/(:any)'] = 'admin/faq/edit/$1';
 $route['staff/photo'] = 'admin/photo';
 $route['staff/photo/add'] = 'admin/photo/add';
 $route['staff/photo/edit/(:any)'] = 'admin/photo/edit/$1';

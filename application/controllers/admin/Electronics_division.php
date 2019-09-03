@@ -38,6 +38,12 @@ class Electronics_division extends CI_Controller
 
 				$valid = 1;
 
+				$judul = $_POST['name'];
+				$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
+				$trim=trim($string);
+				$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
+				$slug=$pre_slug.'.html';
+
 				$this->form_validation->set_rules('name', 'Name', 'trim|required');
 				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
 				$this->form_validation->set_rules('content', 'Content', 'trim|required');
@@ -63,21 +69,6 @@ class Electronics_division extends CI_Controller
 					$error .= 'You must have to select a photo for featured photo<br>';
 				}
 
-				$path1 = $_FILES['banner']['name'];
-				$path_tmp1 = $_FILES['banner']['tmp_name'];
-
-				if($path1!='') {
-					$ext1 = pathinfo( $path1, PATHINFO_EXTENSION );
-					$file_name1 = basename( $path1, '.' . $ext1 );
-					$ext_check1 = $this->Model_header->extension_check_photo($ext1);
-					if($ext_check1 == FALSE) {
-						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for banner<br>';
-					}
-				} else {
-					$valid = 0;
-					$error .= 'You must have to select a photo for banner<br>';
-				}
 
 				if($valid == 1) 
 				{
@@ -89,8 +80,6 @@ class Electronics_division extends CI_Controller
 					$final_name = 'electronics_division-'.$ai_id.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
-					$final_name1 = 'electronics_division-banner-'.$ai_id.'.'.$ext1;
-					move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
 
 					$form_data = array(
 						'name'             => $_POST['name'],
@@ -98,10 +87,10 @@ class Electronics_division extends CI_Controller
 						'content'          => $_POST['content'],
 						'category_id'      => $_POST['category_id'],
 						'photo'            => $final_name,
-						'banner'           => $final_name1,
 						'meta_title'       => $_POST['meta_title'],
 						'meta_keyword'     => $_POST['meta_keyword'],
-						'meta_description' => $_POST['meta_description']
+						'meta_description' => $_POST['meta_description'],
+						'slug_electronics' => $slug
 					);
 					$this->Model_electronics_division->add($form_data);
 
@@ -203,6 +192,12 @@ class Electronics_division extends CI_Controller
 
 				$valid = 1;
 
+				$judul = $_POST['name'];
+				$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
+				$trim=trim($string);
+				$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
+				$slug=$pre_slug.'.html';
+
 				$this->form_validation->set_rules('name', 'Name', 'trim|required');
 				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
 				$this->form_validation->set_rules('content', 'Content', 'trim|required');
@@ -225,24 +220,12 @@ class Electronics_division extends CI_Controller
 					}
 				}
 
-				$path1 = $_FILES['banner']['name'];
-				$path_tmp1 = $_FILES['banner']['tmp_name'];
-
-				if($path1!='') {
-					$ext1 = pathinfo( $path1, PATHINFO_EXTENSION );
-					$file_name1 = basename( $path1, '.' . $ext1 );
-					$ext_check1 = $this->Model_header->extension_check_photo($ext1);
-					if($ext_check1 == FALSE) {
-						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for banner<br>';
-					}
-				}
 
 				if($valid == 1) 
 				{
 					$data['electronics_division'] = $this->Model_electronics_division->getData($id);
 
-					if($path == '' && $path1 == '') {
+					if($path == '') {
 						$form_data = array(
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
@@ -250,11 +233,12 @@ class Electronics_division extends CI_Controller
 							'category_id'      => $_POST['category_id'],
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description']
+							'meta_description' => $_POST['meta_description'],
+							'slug_electronics' => $slug
 						);
 						$this->Model_electronics_division->update($id,$form_data);
 					}
-					if($path != '' && $path1 == '') {
+					if($path != '') {
 						unlink('./public/uploads/'.$data['electronics_division']['photo']);
 
 						$final_name = 'electronics_division-'.$id.'.'.$ext;
@@ -268,38 +252,31 @@ class Electronics_division extends CI_Controller
 							'photo'            => $final_name,
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description']
+							'meta_description' => $_POST['meta_description'],
+							'slug_electronics' => $slug
 						);
 						$this->Model_electronics_division->update($id,$form_data);
 					}
-					if($path == '' && $path1 != '') {
-						unlink('./public/uploads/'.$data['electronics_division']['banner']);
-
-						$final_name1 = 'electronics_division-banner-'.$id.'.'.$ext1;
-						move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
-
+					if($path == '') {
+			
 						$form_data = array(
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
 							'content'          => $_POST['content'],
 							'category_id'      => $_POST['category_id'],
-							'banner'           => $final_name1,
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description']
+							'meta_description' => $_POST['meta_description'],
+							'slug_electronics' => $slug
 						);
 						$this->Model_electronics_division->update($id,$form_data);
 					}
-					if($path != '' && $path1 != '') {
+					if($path != '') {
 
 						unlink('./public/uploads/'.$data['electronics_division']['photo']);
-						unlink('./public/uploads/'.$data['electronics_division']['banner']);
 
 						$final_name = 'electronics_division-'.$id.'.'.$ext;
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
-
-						$final_name1 = 'electronics_division-banner-'.$id.'.'.$ext1;
-						move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
 
 						$form_data = array(
 							'name'             => $_POST['name'],
@@ -307,10 +284,10 @@ class Electronics_division extends CI_Controller
 							'content'          => $_POST['content'],
 							'category_id'      => $_POST['category_id'],
 							'photo'            => $final_name,
-							'banner'           => $final_name1,
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description']
+							'meta_description' => $_POST['meta_description'],
+							'slug_electronics' => $slug
 						);
 						$this->Model_electronics_division->update($id,$form_data);
 					}
@@ -359,7 +336,7 @@ class Electronics_division extends CI_Controller
 						$this->Model_electronics_division->add_photos($form_data);
 					}
 
-					$data['success'] = 'electronics_division is updated successfully';
+					$data['success'] = 'Electronics Division is updated successfully';
 				}
 				else
 				{
@@ -401,7 +378,6 @@ class Electronics_division extends CI_Controller
 			$data['electronics_division'] = $this->Model_electronics_division->getData($id);
 			if($data['electronics_division']) {
 				unlink('./public/uploads/'.$data['electronics_division']['photo']);
-				unlink('./public/uploads/'.$data['electronics_division']['banner']);
 			}
 
 			$electronics_division_photos = $this->Model_electronics_division->get_all_photos_by_category_id($id);

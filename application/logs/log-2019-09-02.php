@@ -586,3 +586,5 @@ ERROR - 2019-09-02 17:07:00 --> Severity: Notice --> Undefined variable: categor
 ERROR - 2019-09-02 18:00:53 --> Severity: error --> Exception: syntax error, unexpected '=', expecting ')' C:\xampp\htdocs\csm-web\application\controllers\admin\Service.php 258
 ERROR - 2019-09-02 18:01:17 --> Severity: error --> Exception: syntax error, unexpected '=', expecting ')' C:\xampp\htdocs\csm-web\application\controllers\admin\Service.php 283
 ERROR - 2019-09-02 18:05:40 --> Query error: Unknown column 'slug_service' in 'where clause' - Invalid query: SELECT * from tbl_facility WHERE slug_service='high-speed-cnc-milling-machining-center.html'
+ERROR - 2019-09-02 19:07:32 --> Severity: Notice --> Undefined variable: id C:\xampp\htdocs\csm-web\application\models\Model_common.php 60
+ERROR - 2019-09-02 19:20:53 --> Severity: error --> Exception: syntax error, unexpected 'as' (T_AS) C:\xampp\htdocs\csm-web\application\views\view_header.php 566

@@ -36,7 +36,6 @@ if(!$this->session->userdata('id')) {
               <li><a href="#tab_2" data-toggle="tab">About</a></li>
               <li><a href="#tab_3" data-toggle="tab">Gallery</a></li>
               <li><a href="#tab_4" data-toggle="tab">Product</a></li>
-              <li><a href="#tab_5" data-toggle="tab">FAQ</a></li>
               <li><a href="#tab_6" data-toggle="tab">Service</a></li>
               <li><a href="#tab_7" data-toggle="tab">Facility</a></li>
               <li><a href="#tab_8" data-toggle="tab">Portfolio</a></li>
@@ -305,41 +304,6 @@ if(!$this->session->userdata('id')) {
                         <label for="" class="col-sm-2 control-label"></label>
                         <div class="col-sm-6">
                             <button type="submit" class="btn btn-success pull-left" name="form_product">Update</button>
-                        </div>
-                    </div>                              
-                    <?php echo form_close(); ?>
-                </div>
-
-                <div class="tab-pane" id="tab_5">
-                    <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">FAQ Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="faq_heading" class="form-control" value="<?php echo $page['faq_heading']; ?>">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Meta Title </label>
-                        <div class="col-sm-9">
-                            <input type="text" name="mt_faq" class="form-control" value="<?php echo $page['mt_faq']; ?>">
-                        </div>
-                    </div>      
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Meta Keyword </label>
-                        <div class="col-sm-9">
-                            <textarea class="form-control" name="mk_faq" style="height:60px;"><?php echo $page['mk_faq']; ?></textarea>
-                        </div>
-                    </div>  
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Meta Description </label>
-                        <div class="col-sm-9">
-                            <textarea class="form-control" name="md_faq" style="height:60px;"><?php echo $page['md_faq']; ?></textarea>
-                        </div>
-                    </div>  
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label"></label>
-                        <div class="col-sm-6">
-                            <button type="submit" class="btn btn-success pull-left" name="form_faq">Update</button>
                         </div>
                     </div>                              
                     <?php echo form_close(); ?>

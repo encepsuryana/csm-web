@@ -15,7 +15,7 @@ class Model_home extends CI_Model
     }
     public function get_content_home_photo()
     {
-        $query = $this->db->query("SELECT * from tbl_content_home_photo WHERE id=1");
+        $query = $this->db->query("SELECT * from tbl_content_home_company_profile WHERE id=1");
         return $query->result_array();
     }
     public function get_service_data()
@@ -72,17 +72,6 @@ class Model_home extends CI_Model
     public function get_testimonial_photo()
     {
         $query = $this->db->query("SELECT * FROM tbl_testimonial_photo WHERE id=1");
-        return $query->result_array();
-    }
-    public function get_faq_data()
-    {
-        $sql = "SELECT * FROM tbl_faq WHERE faq_show=? OR faq_show=? ORDER BY faq_id ASC";
-        $query = $this->db->query($sql,array('On Home Page','On Home and FAQ Page'));
-        return $query->result_array();
-    }
-    public function get_faq_photo()
-    {
-        $query = $this->db->query("SELECT * FROM tbl_faq_photo WHERE id=1");
         return $query->result_array();
     }
     public function get_gallery_data()

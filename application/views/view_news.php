@@ -1,4 +1,4 @@
-<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner_news']; ?>)">
+<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="bannder-table">
 		<div class="banner-text">
 			<h1><?php echo $page['news_heading']; ?></h1>
@@ -17,7 +17,7 @@
 							$i++;
 							?>
 							<div class="<?php echo $row->slug; ?> no-merg">
-								<a href="<?php echo base_url(); ?>news/detail/<?php echo $row->post_slug; ?>" class="public-csm-home">
+								<a href="<?php echo base_url(); ?>news/post/<?php echo $row->post_slug; ?>" class="public-csm-home">
 									<div class="blog-author ">
 										<ul>
 											<div class="col-sm-6" style="text-align: left; padding-left: 5px;">

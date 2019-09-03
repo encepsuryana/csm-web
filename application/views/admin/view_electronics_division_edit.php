@@ -9,7 +9,7 @@ if(!$this->session->userdata('id')) {
 			<h1>Edit Electronics Category</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division" class="btn btn-primary btn-sm">View All</a>
 		</div>
 	</section>
 
@@ -32,7 +32,7 @@ if(!$this->session->userdata('id')) {
 					</div>
 				<?php endif; ?>
 
-				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/electronics_division/edit/'.$electronics_division['id'],array('class' => 'form-horizontal')); ?>
+				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/electronics-division/edit/'.$electronics_division['id'],array('class' => 'form-horizontal')); ?>
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						
@@ -118,20 +118,7 @@ if(!$this->session->userdata('id')) {
 								</table>
 							</div>
 							<div class="col-sm-2" style="padding-top:5px">
-								<input type="button" id="btnAddNew" value="Add Item" style="margin-bottom:10px;border:0;color: #fff;font-size: 14px;border-radius:3px;" class="btn btn-warning btn-xs">
-							</div>
-						</div>
-						<h3 class="seo-info">Banner Photo</h3>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Banner</label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $electronics_division['banner']; ?>" alt="" style="width:120px;">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Banner</label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="banner">(Only jpg, jpeg, gif and png are allowed)
+								<input type="button" id="btnAddNew" value="Add Item"  class="btn btn-warning btn-xs">
 							</div>
 						</div>
 						<h3 class="seo-info">SEO Information</h3>

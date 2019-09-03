@@ -165,7 +165,7 @@
 
 						<!-- Admin Role -->
 						<?php if( $this->session->userdata('role') == 'admin' ): ?>
-							<li class="treeview <?php if( ($final_url_other == 'admin/content-home/add')||($final_url_other == 'admin/content-home')||($final_url_other == 'admin/content-home/edit')||($final_url_other == 'admin/content-home/main-photo')||($final_url_other == 'admin/company-profile') ) {echo 'active';} ?>">
+							<li class="treeview <?php if(($final_url_other == 'admin/content-home')||($final_url_other == 'admin/content-home/edit')||($final_url_other == 'admin/content-home/main-photo')||($final_url_other == 'admin/company-profile') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-home"></i>
 									<span>Content Home</span>
@@ -175,7 +175,6 @@
 								</a>
 								<ul class="treeview-menu">
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home"><i class="fa fa-industry"></i> Main Content</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home/main-photo"><i class="fa fa fa-sliders"></i> Main Photo</a></li>
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Company Profile</a></li>
 								</ul>
 							</li>
@@ -294,19 +293,6 @@
 								</ul>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'admin/faq/add')||($final_url_other == 'admin/faq')||($final_url_other == 'admin/faq/edit')||($final_url_other == 'admin/faq/main-photo') ) {echo 'active';} ?>">
-								<a href="#">
-									<i class="fa fa-random"></i>
-									<span>FAQ</span>
-									<span class="pull-right-container">
-										<i class="fa fa-angle-left pull-right"></i>
-									</span>
-								</a>
-								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/faq"><i class="fa fa-question-circle"></i>FAQ</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/faq/main-photo"><i class="fa fa-picture-o "></i> Main Photo</a></li>
-								</ul>
-							</li>
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/testimonial/add')||($final_url_other == 'admin/testimonial')||($final_url_other == 'admin/testimonial/edit')||($final_url_other == 'admin/testimonial/main-photo') ) {echo 'active';} ?>">
 								<a href="#">
@@ -477,19 +463,7 @@
 								</ul>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'hrd/faq/add')||($final_url_other == 'hrd/faq')||($final_url_other == 'hrd/faq/edit')||($final_url_other == 'hrd/faq/main-photo') ) {echo 'active';} ?>">
-								<a href="#">
-									<i class="fa fa-random"></i>
-									<span>FAQ</span>
-									<span class="pull-right-container">
-										<i class="fa fa-angle-left pull-right"></i>
-									</span>
-								</a>
-								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/faq"><i class="fa fa-question-circle"></i>FAQ</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/faq/main-photo"><i class="fa fa-picture-o "></i> Main Photo</a></li>
-								</ul>
-							</li>
+
 							<li class="treeview <?php if(($final_url_other == 'hrd/testimonial')) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-user-plus"></i>
@@ -640,18 +614,6 @@
 								<ul class="treeview-menu">
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/designation"><i class="fa fa-user-md"></i> Designation</a></li>
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/team-member"><i class="fa fa-user"></i> Team Member</a></li>
-								</ul>
-							</li>
-							<li class="treeview <?php if( ($final_url_other == 'staff/faq/add')||($final_url_other == 'staff/faq')||($final_url_other == 'staff/faq/edit')||($final_url_other == 'staff/faq/main-photo') ) {echo 'active';} ?>">
-								<a href="#">
-									<i class="fa fa-random"></i>
-									<span>FAQ</span>
-									<span class="pull-right-container">
-										<i class="fa fa-angle-left pull-right"></i>
-									</span>
-								</a>
-								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/faq"><i class="fa fa-question-circle"></i>FAQ</a></li>
 								</ul>
 							</li>
 

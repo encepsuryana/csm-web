@@ -105,7 +105,7 @@ if(!$this->session->userdata('id')) {
 								</select>
 							</div>
 						</div>
-						<h3 class="seo-info">Photo and Banner</h3>
+						<h3 class="seo-info">Photo</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Existing Featured Photo</label>
 							<div class="col-sm-6" style="padding-top:6px;">
@@ -122,24 +122,6 @@ if(!$this->session->userdata('id')) {
 							<label for="" class="col-sm-2 control-label">Change Featured Photo</label>
 							<div class="col-sm-6" style="padding-top:6px;">
 								<input type="file" name="photo">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Banner</label>
-							<div class="col-sm-6" style="padding-top:6px;">
-								<?php
-								if($news['banner'] == '') {
-									echo 'No photo found';
-								} else {
-									?><img src="<?php echo base_url(); ?>public/uploads/<?php echo $news['banner']; ?>" alt="<?php echo $news['news_title']; ?>" class="existing-photo" style="width:300px;"><?php
-								}
-								?>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Change Banner</label>
-							<div class="col-sm-6" style="padding-top:6px;">
-								<input type="file" name="banner">
 							</div>
 						</div>
 						<h3 class="seo-info">SEO Information</h3>

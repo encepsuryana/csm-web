@@ -72,18 +72,6 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Banner</label>
-							<div class="col-sm-9" style="padding-top:5px;">
-								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $service['banner']; ?>" alt="Service Banner Photo" style="width:600px;">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Banner </label>
-							<div class="col-sm-6" style="padding-top:5px">
-								<input type="file" name="banner">(Only jpg, jpeg, gif and png are allowed)
-							</div>
-						</div>
-						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Short Content *</label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="short_content" style="height:140px;"><?php echo $service['short_content']; ?></textarea>

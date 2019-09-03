@@ -195,18 +195,6 @@ class Page extends CI_Controller
 				$data['success'] = 'Product Page Setting is updated successfully!';
 			}
 
-			if(isset($_POST['form_faq'])) {			
-				$form_data = array(
-					'faq_heading' => $_POST['faq_heading'],
-					'mt_faq'      => $_POST['mt_faq'],
-					'mk_faq'      => $_POST['mk_faq'],
-					'md_faq'      => $_POST['md_faq']
-				);
-				$this->Model_page->update($form_data);        	
-				$data['success'] = 'FAQ Page Setting is updated successfully!';
-			}
-
-
 			if(isset($_POST['form_service'])) {			
 				$form_data = array(
 					'service_heading' => $_POST['service_heading'],

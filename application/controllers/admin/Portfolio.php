@@ -67,22 +67,6 @@ class Portfolio extends CI_Controller
 					$error .= 'You must have to select a photo for featured photo<br>';
 				}
 
-				$path1 = $_FILES['banner']['name'];
-				$path_tmp1 = $_FILES['banner']['tmp_name'];
-
-				if($path1!='') {
-					$ext1 = pathinfo( $path1, PATHINFO_EXTENSION );
-					$file_name1 = basename( $path1, '.' . $ext1 );
-					$ext_check1 = $this->Model_header->extension_check_photo($ext1);
-					if($ext_check1 == FALSE) {
-						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for banner<br>';
-					}
-				} else {
-					$valid = 0;
-					$error .= 'You must have to select a photo for banner<br>';
-				}
-
 				if($valid == 1) 
 				{
 					$next_id = $this->Model_portfolio->get_auto_increment_id();
@@ -93,8 +77,6 @@ class Portfolio extends CI_Controller
 					$final_name = 'portfolio-'.$ai_id.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
-					$final_name1 = 'portfolio-banner-'.$ai_id.'.'.$ext1;
-					move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
 
 					$form_data = array(
 						'name'             => $_POST['name'],
@@ -109,7 +91,6 @@ class Portfolio extends CI_Controller
 						'client_comment'   => $_POST['client_comment'],
 						'category_id'      => $_POST['category_id'],
 						'photo'            => $final_name,
-						'banner'           => $final_name1,
 						'meta_title'       => $_POST['meta_title'],
 						'meta_keyword'     => $_POST['meta_keyword'],
 						'meta_description' => $_POST['meta_description'],
@@ -251,24 +232,12 @@ class Portfolio extends CI_Controller
 					}
 				}
 
-				$path1 = $_FILES['banner']['name'];
-				$path_tmp1 = $_FILES['banner']['tmp_name'];
-
-				if($path1!='') {
-					$ext1 = pathinfo( $path1, PATHINFO_EXTENSION );
-					$file_name1 = basename( $path1, '.' . $ext1 );
-					$ext_check1 = $this->Model_header->extension_check_photo($ext1);
-					if($ext_check1 == FALSE) {
-						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for banner<br>';
-					}
-				}
 
 				if($valid == 1) 
 				{
 					$data['portfolio'] = $this->Model_portfolio->getData($id);
 
-					if($path == '' && $path1 == '') {
+					if($path == '') {
 						$form_data = array(
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
@@ -288,7 +257,7 @@ class Portfolio extends CI_Controller
 						);
 						$this->Model_portfolio->update($id,$form_data);
 					}
-					if($path != '' && $path1 == '') {
+					if($path != '') {
 						unlink('./public/uploads/'.$data['portfolio']['photo']);
 
 						$final_name = 'portfolio-'.$id.'.'.$ext;
@@ -314,11 +283,7 @@ class Portfolio extends CI_Controller
 						);
 						$this->Model_portfolio->update($id,$form_data);
 					}
-					if($path == '' && $path1 != '') {
-						unlink('./public/uploads/'.$data['portfolio']['banner']);
-
-						$final_name1 = 'portfolio-banner-'.$id.'.'.$ext1;
-						move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
+					if($path == '') {
 
 						$form_data = array(
 							'name'             => $_POST['name'],
@@ -332,7 +297,6 @@ class Portfolio extends CI_Controller
 							'cost'             => $_POST['cost'],
 							'client_comment'   => $_POST['client_comment'],
 							'category_id'      => $_POST['category_id'],
-							'banner'           => $final_name1,
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
 							'meta_description' => $_POST['meta_description'],
@@ -340,16 +304,12 @@ class Portfolio extends CI_Controller
 						);
 						$this->Model_portfolio->update($id,$form_data);
 					}
-					if($path != '' && $path1 != '') {
+					if($path != '' ) {
 
 						unlink('./public/uploads/'.$data['portfolio']['photo']);
-						unlink('./public/uploads/'.$data['portfolio']['banner']);
 
 						$final_name = 'portfolio-'.$id.'.'.$ext;
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
-
-						$final_name1 = 'portfolio-banner-'.$id.'.'.$ext1;
-						move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
 
 						$form_data = array(
 							'name'             => $_POST['name'],
@@ -364,7 +324,6 @@ class Portfolio extends CI_Controller
 							'client_comment'   => $_POST['client_comment'],
 							'category_id'      => $_POST['category_id'],
 							'photo'            => $final_name,
-							'banner'           => $final_name1,
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
 							'meta_description' => $_POST['meta_description'],
@@ -459,7 +418,6 @@ class Portfolio extends CI_Controller
 			$data['portfolio'] = $this->Model_portfolio->getData($id);
 			if($data['portfolio']) {
 				unlink('./public/uploads/'.$data['portfolio']['photo']);
-				unlink('./public/uploads/'.$data['portfolio']['banner']);
 			}
 
 			$portfolio_photos = $this->Model_portfolio->get_all_photos_by_category_id($id);

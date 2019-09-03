@@ -70,21 +70,6 @@ class Service extends CI_Controller
 					$error .= 'You must have to select a photo for featured photo<br>';
 				}
 
-				$path1 = $_FILES['banner']['name'];
-				$path_tmp1 = $_FILES['banner']['tmp_name'];
-
-				if($path1!='') {
-					$ext1 = pathinfo( $path1, PATHINFO_EXTENSION );
-					$file_name1 = basename( $path1, '.' . $ext1 );
-					$ext_check1 = $this->Model_header->extension_check_photo($ext1);
-					if($ext_check1 == FALSE) {
-						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for banner<br>';
-					}
-				} else {
-					$valid = 0;
-					$error .= 'You must have to select a photo for banner<br>';
-				}
 
 				if($valid == 1) 
 				{
@@ -96,16 +81,13 @@ class Service extends CI_Controller
 					$final_name = 'service-'.$ai_id.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
-					$final_name1 = 'service-banner-'.$ai_id.'.'.$ext1;
-					move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
-
+					
 					$form_data = array(
 						'heading' => $_POST['heading'],
 						'service_style' => $_POST['service_style'],
 						'short_content' => $_POST['short_content'],
 						'content' => $_POST['content'],
 						'photo' => $final_name,
-						'banner' => $final_name1,
 						'meta_title' => $_POST['meta_title'],
 						'meta_keyword' => $_POST['meta_keyword'],
 						'meta_description' => $_POST['meta_description'],
@@ -193,24 +175,13 @@ class Service extends CI_Controller
 					}
 				}
 
-				$path1 = $_FILES['banner']['name'];
-				$path_tmp1 = $_FILES['banner']['tmp_name'];
-
-				if($path1!='') {
-					$ext1 = pathinfo( $path1, PATHINFO_EXTENSION );
-					$file_name1 = basename( $path1, '.' . $ext1 );
-					$ext_check1 = $this->Model_header->extension_check_photo($ext1);
-					if($ext_check1 == FALSE) {
-						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for banner<br>';
-					}
-				}
+				
 
 				if($valid == 1) 
 				{
 					$data['service'] = $this->Model_service->getData($id);
 
-					if($path == '' && $path1 == '') {
+					if($path == '') {
 						$form_data = array(
 							'heading' => $_POST['heading'],
 							'service_style' => $_POST['service_style'],
@@ -223,7 +194,7 @@ class Service extends CI_Controller
 						);
 						$this->Model_service->update($id,$form_data);
 					}
-					if($path != '' && $path1 == '') {
+					if($path != '') {
 						unlink('./public/uploads/'.$data['service']['photo']);
 
 						$final_name = 'service-'.$id.'.'.$ext;
@@ -242,18 +213,13 @@ class Service extends CI_Controller
 						);
 						$this->Model_service->update($id,$form_data);
 					}
-					if($path == '' && $path1 != '') {
-						unlink('./public/uploads/'.$data['service']['banner']);
-
-						$final_name1 = 'service-banner-'.$id.'.'.$ext1;
-						move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
-
+					if($path == '') {
+						
 						$form_data = array(
 							'heading' => $_POST['heading'],
 							'service_style' => $_POST['service_style'],
 							'short_content' => $_POST['short_content'],
 							'content' => $_POST['content'],
-							'banner' => $final_name1,
 							'meta_title' => $_POST['meta_title'],
 							'meta_keyword' => $_POST['meta_keyword'],
 							'meta_description' => $_POST['meta_description'],
@@ -261,16 +227,12 @@ class Service extends CI_Controller
 						);
 						$this->Model_service->update($id,$form_data);
 					}
-					if($path != '' && $path1 != '') {
+					if($path != '') {
 
 						unlink('./public/uploads/'.$data['service']['photo']);
-						unlink('./public/uploads/'.$data['service']['banner']);
 
 						$final_name = 'service-'.$id.'.'.$ext;
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
-
-						$final_name1 = 'service-banner-'.$id.'.'.$ext1;
-						move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
 
 						$form_data = array(
 							'heading' => $_POST['heading'],
@@ -278,7 +240,6 @@ class Service extends CI_Controller
 							'short_content' => $_POST['short_content'],
 							'content' => $_POST['content'],
 							'photo' => $final_name,
-							'banner' => $final_name1,
 							'meta_title' => $_POST['meta_title'],
 							'meta_keyword' => $_POST['meta_keyword'],
 							'meta_description' => $_POST['meta_description'],
@@ -326,7 +287,6 @@ class Service extends CI_Controller
 			$data['service'] = $this->Model_service->getData($id);
 			if($data['service']) {
 				unlink('./public/uploads/'.$data['service']['photo']);
-				unlink('./public/uploads/'.$data['service']['banner']);
 			}
 
 			$this->Model_service->delete($id);

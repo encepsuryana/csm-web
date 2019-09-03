@@ -108,19 +108,7 @@ if(!$this->session->userdata('id')) {
 								</select>
 							</div>
 						</div>
-						<h3 class="seo-info">Photo and Banner</h3>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Featured Photo *</label>
-							<div class="col-sm-6" style="padding-top:6px;">
-								<input type="file" name="photo">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Banner *</label>
-							<div class="col-sm-6" style="padding-top:6px;">
-								<input type="file" name="banner">
-							</div>
-						</div>
+						
 						<h3 class="seo-info">SEO Information</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Meta Title </label>

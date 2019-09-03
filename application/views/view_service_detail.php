@@ -1,4 +1,4 @@
-<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $res['banner']; ?>)">
+<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="bannder-table">
 		<div class="banner-text">
 			<h1><?php echo $res['heading']; ?></h1>
@@ -28,7 +28,7 @@
 							<?php
 							foreach ($service_by_heading as $row) {
 								?>
-								<li><a href="<?php echo base_url(); ?>service/detail/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a></li>
 								<?php
 							}
 							?>

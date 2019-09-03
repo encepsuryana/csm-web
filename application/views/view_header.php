@@ -46,12 +46,6 @@
 		echo '<meta name="keywords" content="'.$page['mk_gallery'].'">';
 		echo '<title>'.$page['mt_product'].'</title>';
 	}
-	if($slug_arr[0] == 'faq')
-	{
-		echo '<meta name="description" content="'.$page['md_faq'].'">';
-		echo '<meta name="keywords" content="'.$page['mk_faq'].'">';
-		echo '<title>'.$page['mt_faq'].'</title>';
-	}
 	if($slug_arr[0] == 'service')
 	{
 		if(!isset($slug_arr[1])) {
@@ -127,11 +121,11 @@
 			echo '<meta name="keywords" content="'.$page['mk_news'].'">';
 			echo '<title>'.$page['mt_news'].'</title>';	
 		}
-		if($slug_two == 'news/detail')
+		if($slug_two == 'news/post')
 		{
 			$single_news_data = $this->Model_common->get_single_news_data($slug_arr[2]);
 			foreach($single_news_data as $row) {
-				$og_id = $row['news_id'];
+				$og_id = $row['post_slug'];
 				$og_photo = $row['photo'];
 				$og_title = $row['news_title'];
 				$og_description = $row['news_short_content'];
@@ -142,7 +136,7 @@
 			?>
 			<meta property="og:title" content="<?php echo $og_title; ?>">
 			<meta property="og:type" content="website">
-			<meta property="og:url" content="<?php echo base_url().'news/detail/'.$og_id.'.html'; ?>">
+			<meta property="og:url" content="<?php echo base_url().'news/post/'.$og_id; ?>">
 			<meta property="og:description" content="<?php echo $og_description; ?>">
 			<meta property="og:image" content="<?php echo base_url(); ?>public/uploads/<?php echo $og_photo; ?>">
 			<?php
@@ -150,7 +144,7 @@
 	}
 
 	if(isset($slug_two)) {
-		if($slug_two == 'category/detail')
+		if($slug_two == 'category/post')
 		{
 			$category_name = $this->Model_common->get_single_category_data($slug_arr[2]);
 			foreach($category_name as $row) {
@@ -164,7 +158,7 @@
 			?>
 			<meta property="og:title" content="<?php echo $og_title; ?>">
 			<meta property="og:type" content="website">
-			<meta property="og:url" content="<?php echo base_url().'category/detail/'.$og_id.'.html'; ?>">
+			<meta property="og:url" content="<?php echo base_url().'category/post/'.$og_id.'.html'; ?>">
 			<meta property="og:description" content="<?php echo $og_description; ?>">
 			<?php
 		}	
@@ -234,7 +228,7 @@
 		.caption-text,
 		.footer-main,
 		.mission-icon,
-		.testimonial-area.main-testimonial .testimonial-detail,
+		.testimonial-area.main-testimonial .testimonial-post,
 		.main-testimonial .testimonial-carousel .owl-dots .owl-dot {
 			background: #<?php echo $setting['theme_color_1']; ?>!important;
 		}
@@ -501,7 +495,7 @@
 												<div class="col-md-8" style="padding: 0;">
 													<div class="desc-product-menu">
 														<h4><?php echo NEW_PRODUCT; ?></h4>	
-														<a href="<?php echo base_url(); ?>/product">
+														<a href="<?php echo base_url(); ?>product">
 															<h4><?php echo $row['product_caption']; ?></h4>	
 															<p><?php echo $row['product_desc']; ?></p>
 														</a>
@@ -523,7 +517,7 @@
 													foreach ($facility as $row) {
 														?>
 														<li class="csm-category-menu">
-															<a href="<?php echo base_url(); ?>facility/detail/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a>
+															<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a>
 														</li>
 														<?php
 													}
@@ -541,7 +535,7 @@
 														$i++;
 														?>
 														<li class="csm-category-menu">
-															<a href="<?php echo base_url(); ?>service/detail/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
+															<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
 														</li>
 														<?php
 													}
@@ -558,12 +552,12 @@
 											?>
 											<div class="col-md-4">
 												<li class="csm-menu">
-													<a data-filter="<?php echo $row['category_id']; ?>" href="<?php echo base_url(); ?>electronics-division"><?php echo $row['category_name']; ?></a>
+													<a href="<?php echo base_url(); ?>electronics-division"><?php echo $row['category_name']; ?></a>
 													<ul class="csm-content-menu">
 														<?php
 														foreach ($electronics_division as $row) {
 															?>
-															<li class="csm-category-menu" data-category="<?php echo $row['category_id']; ?>" data-sort="value">
+															<li class="csm-category-menu">
 																<a><?php echo $row['name']; ?></a>
 															</li>
 															<?php

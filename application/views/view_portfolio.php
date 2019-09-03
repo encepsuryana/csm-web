@@ -1,4 +1,4 @@
-<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner_portfolio']; ?>)">
+<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="bannder-table">
 		<div class="banner-text">
 			<h1><?php echo PORTFOLIO; ?></h1>
@@ -39,7 +39,7 @@
 									<h4><?php echo $row['name']; ?></h4>
 									<?php echo $row['short_content']; ?>
 									<div class="services-link">
-										<a href="<?php echo base_url(); ?>portfolio/detail/<?php echo $row['slug_portfolio']; ?>"><?php echo READ_MORE; ?></a>
+										<a href="<?php echo base_url(); ?>portfolio/post/<?php echo $row['slug_portfolio']; ?>"><?php echo READ_MORE; ?></a>
 									</div>
 								</div>
 							</div>

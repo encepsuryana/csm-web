@@ -98,13 +98,6 @@ if(!$this->session->userdata('id')) {
 								<input type="button" id="btnAddNew" value="+ Add Item" class="btn btn-warning btn-xs">
 							</div>
 						</div>
-						<h3 class="seo-info">Banner Photo</h3>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Banner *</label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="banner">(Only jpg, jpeg, gif and png are allowed)
-							</div>
-						</div>
 						<h3 class="seo-info">SEO Information</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Meta Title</label>

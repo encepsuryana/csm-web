@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										if($i>$setting['total_recent_post']) {break;}
 										?>
 										<li>
-											<a target="_blank" href="<?php echo base_url(); ?>news/detail/<?php echo $row['news_id'].'.html'; ?>"><?php echo $row['news_title']; ?></a>
+											<a target="_blank" href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>"><?php echo $row['news_title']; ?></a>
 											<a href="<?php echo base_url(); ?>news/view/<?php echo $row['news_id'].'.html'; ?>" target="_blank" style="float: right; font-size: 12px;"><?php echo $row['news_date']; ?></a>
 											<p><?php echo $row['news_short_content']; ?></p>
 										</li>
@@ -128,7 +128,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							$i++;
 							?>
 							<div class="<?php echo $row['service_style']; ?> no-merg">
-								<a href="<?php echo base_url(); ?>service/detail/<?php echo $row['id'].'.html'; ?>" class="public-csm-home">
+								<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>" class="public-csm-home">
 									<div class="img-publicacion-home">
 										<img class="" src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
 									</div>
@@ -190,7 +190,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<h4><?php echo $row['name']; ?></h4>
 									<?php echo $row['short_content']; ?>
 									<div class="services-link">
-										<a href="<?php echo base_url(); ?>facility/detail/<?php echo $row['id'].'.html'; ?>"><?php echo READ_MORE; ?></a>
+										<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo READ_MORE; ?></a>
 									</div>
 								</div>
 							</div>
@@ -219,7 +219,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<h4><?php echo $row['name']; ?></h4>
 									<span><?php echo $row['designation'] ?>, <?php echo $row['company']; ?></span>
 								</div>
-								<div class="testimonial-detail">
+								<div class="testimonial-post">
 									<i class="fa fa-quote-left"></i>
 									<p><?php echo nl2br($row['comment']); ?></p>
 								</div>

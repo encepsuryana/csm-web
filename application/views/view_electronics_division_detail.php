@@ -1,4 +1,4 @@
-<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $electronics_division['banner']; ?>)">
+<div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="bannder-table">
 		<div class="banner-text">
 			<h1><?php echo ELECTRONICS_DIVISION; ?></h1>
@@ -69,7 +69,7 @@
 							<?php
 							foreach ($electronics_division_order_by_name as $row) {
 								?>
-								<li><a href="<?php echo base_url(); ?>electronics-division/detail/<?php echo $row['id'].'.html'; ?>"><?php echo $row['name']; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>electronics-division/post/<?php echo $row['slug_electronics']; ?>"><?php echo $row['name']; ?></a></li>
 								<?php
 							}
 							?>

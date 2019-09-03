@@ -44,7 +44,7 @@ if(!$this->session->userdata('id')) {
 						<li><a href="#tab_email" data-toggle="tab">Email Settings</a></li>
 						<li><a href="#tab_sidebar_footer" data-toggle="tab">Sidebar & Footer</a></li>
 						<!-- <li><a href="#tab_home" data-toggle="tab">Home Page</a></li> -->
-						<li><a href="#tab_banner" data-toggle="tab">Banner</a></li>
+						<li><a href="#tab_banner" data-toggle="tab">Background</a></li>
 						<li><a href="#tab_color" data-toggle="tab">Color</a></li>
 					</ul>
 					<div class="tab-content">
@@ -601,39 +601,6 @@ if(!$this->session->userdata('id')) {
 							</div>								
 							<?php echo form_close(); ?>
 
-
-							<h3 class="seo-info">FAQ</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Title </label>
-								<div class="col-sm-6">
-									<input type="text" name="faq_title" class="form-control" value="<?php echo $setting['faq_title']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Subtitle </label>
-								<div class="col-sm-6">
-									<input type="text" name="faq_subtitle" class="form-control" value="<?php echo $setting['faq_subtitle']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Status </label>
-								<div class="col-sm-2">
-									<select name="faq_status" class="form-control select2">
-										<option value="Show" <?php if($setting['faq_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-										<option value="Hide" <?php if($setting['faq_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_faq">Update</button>
-								</div>
-							</div>								
-							<?php echo form_close(); ?>
-
-
 							<h3 class="seo-info">Gallery</h3>
 							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
 							<div class="form-group">
@@ -796,225 +763,15 @@ if(!$this->session->userdata('id')) {
 								<tr>
 									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
 									<td style="width:50%">
-										<h4>Existing About Us Page Banner</h4>
+										<h4>Existing Background</h4>
 										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_about']; ?>" alt="" style="width: 100%;height:auto;">  
+											<img src="<?php echo base_url().'public/uploads/'.$setting['banner']; ?>" alt="" style="width: 100%;height:auto;">  
 										</p>                                        
 									</td>
 									<td style="width:50%">
-										<h4>Change About Us Page Banner</h4>
+										<h4>Change Background Image</h4>
 										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_about">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Electronics Dsvision Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_electronics_division']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change Electronics Division Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_electronics_division">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing FAQ Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_faq']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change FAQ Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_faq">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Gallery Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_gallery']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change Gallery Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_gallery">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Product Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_product']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change Product Page Banner</h4>
-										Select Photo<input type="file" name="product">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_product">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Service Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_service']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change facility Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_facility">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing facility Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_facility']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change facility Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_facility">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Portfolio Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_portfolio']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change Portfolio Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_portfolio">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Testimonial Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_testimonial']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change Testimonial Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_testimonial">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing News Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_news']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change News Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_news">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Contact Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_contact']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change Contact Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_contact">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Search Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_search']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change Search Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_search">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Category Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_category']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change Category Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_category">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Terms and Conditions Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_terms']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change Terms and Conditions Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_terms">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Privacy Page Banner</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner_privacy']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change Privacy Page Banner</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner_privacy">
+										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner">
 									</td>
 									<?php echo form_close(); ?>
 								</tr>

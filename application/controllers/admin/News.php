@@ -63,23 +63,6 @@ class News extends CI_Controller
 					$valid = 0;
 					$error .= 'You must have to select a photo for featured photo<br>';
 				}
-
-				$path1 = $_FILES['banner']['name'];
-				$path_tmp1 = $_FILES['banner']['tmp_name'];
-
-				if($path1!='') {
-					$ext1 = pathinfo( $path1, PATHINFO_EXTENSION );
-					$file_name = basename( $path1, '.' . $ext1 );
-					$ext_check1 = $this->Model_header->extension_check_photo($ext1);
-					if($ext_check1 == FALSE) {
-						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
-					}
-				} else {
-					$valid = 0;
-					$error .= 'You must have to select a photo for banner<br>';
-				}
-
 				if($valid == 1) 
 				{
 					$next_id = $this->Model_news->get_auto_increment_id();
@@ -90,8 +73,7 @@ class News extends CI_Controller
 					$final_name = 'news-'.$ai_id.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
-					$final_name1 = 'news-banner-'.$ai_id.'.'.$ext1;
-					move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
+				
 
 					$judul = $_POST['news_title'];
 					$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
@@ -106,8 +88,7 @@ class News extends CI_Controller
 						'news_short_content' => $_POST['news_short_content'],
 						'news_date'          => $_POST['news_date'],
 						'photo'              => $final_name,
-						'banner'             => $final_name1,
-						'slug_news_category'        => $_POST['slug_news_category'],
+						'slug_news_category' => $_POST['slug_news_category'],
 						'total_view'         => '',
 						'comment'            => $_POST['comment'],
 						'meta_title'         => $_POST['meta_title'],
@@ -200,31 +181,18 @@ class News extends CI_Controller
 					}
 				}
 
-				$path1 = $_FILES['banner']['name'];
-				$path_tmp1 = $_FILES['banner']['tmp_name'];
-
-				if($path1!='') {
-					$ext1 = pathinfo( $path1, PATHINFO_EXTENSION );
-					$file_name1 = basename( $path1, '.' . $ext1 );
-					$ext_check1 = $this->Model_header->extension_check_photo($ext1);
-					if($ext_check1 == FALSE) {
-						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for banner<br>';
-					}
-				}
-
 				if($valid == 1) 
 				{
 					$data['news'] = $this->Model_news->getData($id);
 
-					if($path == '' && $path1 == '') {
+					if($path == '') {
 						$form_data = array(
 							'news_title'         => $_POST['news_title'],
 							'slug' 		         => $_POST['slug'],
 							'news_content'       => $_POST['news_content'],
 							'news_short_content' => $_POST['news_short_content'],
 							'news_date'          => $_POST['news_date'],
-							'slug_news_category'        => $_POST['slug_news_category'],
+							'slug_news_category' => $_POST['slug_news_category'],
 							'comment'            => $_POST['comment'],
 							'meta_title'         => $_POST['meta_title'],
 							'meta_keyword'       => $_POST['meta_keyword'],
@@ -233,7 +201,7 @@ class News extends CI_Controller
 						);
 						$this->Model_news->update($id,$form_data);
 					}
-					if($path != '' && $path1 == '') {
+					if($path != '') {
 						unlink('./public/uploads/'.$data['news']['photo']);
 
 						$final_name = 'news-'.$id.'.'.$ext;
@@ -248,7 +216,7 @@ class News extends CI_Controller
 							'news_short_content' => $_POST['news_short_content'],
 							'news_date'          => $_POST['news_date'],
 							'photo'              => $final_name,
-							'slug_news_category'        => $_POST['slug_news_category'],
+							'slug_news_category' => $_POST['slug_news_category'],
 							'comment'            => $_POST['comment'],
 							'meta_title'         => $_POST['meta_title'],
 							'meta_keyword'       => $_POST['meta_keyword'],
@@ -257,11 +225,7 @@ class News extends CI_Controller
 						);
 						$this->Model_news->update($id,$form_data);
 					}
-					if($path == '' && $path1 != '') {
-						unlink('./public/uploads/'.$data['news']['banner']);
-
-						$final_name1 = 'news-banner-'.$id.'.'.$ext1;
-						move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
+					if($path == '') {
 
 						$form_data = array(
 							'news_title'         => $_POST['news_title'],
@@ -269,7 +233,6 @@ class News extends CI_Controller
 							'news_content'       => $_POST['news_content'],
 							'news_short_content' => $_POST['news_short_content'],
 							'news_date'          => $_POST['news_date'],
-							'banner'             => $final_name1,
 							'slug_news_category'        => $_POST['slug_news_category'],
 							'comment'            => $_POST['comment'],
 							'meta_title'         => $_POST['meta_title'],
@@ -279,16 +242,13 @@ class News extends CI_Controller
 						);
 						$this->Model_news->update($id,$form_data);
 					}
-					if($path != '' && $path1 != '') {
+					if($path != '') {
 
 						unlink('./public/uploads/'.$data['news']['photo']);
-						unlink('./public/uploads/'.$data['news']['banner']);
 
 						$final_name = 'news-'.$id.'.'.$ext;
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
-						$final_name1 = 'news-banner-'.$id.'.'.$ext1;
-						move_uploaded_file( $path_tmp1, './public/uploads/'.$final_name1 );
 
 						$form_data = array(
 							'news_title'         => $_POST['news_title'],
@@ -297,7 +257,6 @@ class News extends CI_Controller
 							'news_short_content' => $_POST['news_short_content'],
 							'news_date'          => $_POST['news_date'],
 							'photo'              => $final_name,
-							'banner'             => $final_name1,
 							'slug_news_category'        => $_POST['slug_news_category'],
 							'comment'            => $_POST['comment'],
 							'meta_title'         => $_POST['meta_title'],
@@ -348,7 +307,6 @@ class News extends CI_Controller
 			$data['news'] = $this->Model_news->getData($id);
 			if($data['news']) {
 				unlink('./public/uploads/'.$data['news']['photo']);
-				unlink('./public/uploads/'.$data['news']['banner']);
 			}
 
 			$this->Model_news->delete($id);

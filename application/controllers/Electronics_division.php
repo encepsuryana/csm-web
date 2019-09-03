@@ -37,7 +37,7 @@ class Electronics_division extends CI_Controller {
 		$this->load->view('view_footer');
 	}
 
-	public function view($id)
+	public function view($slug)
 	{
 		$header['setting'] = $this->Model_common->get_setting_data();
 		$header['page'] = $this->Model_common->get_page_data();
@@ -49,9 +49,9 @@ class Electronics_division extends CI_Controller {
 
 		$header['electronics_division_order_by_name'] = $this->Model_electronics_division->get_electronics_division_data_order_by_name();
 
-		$data['electronics_division'] = $this->Model_electronics_division->get_electronics_division_detail($id);
-		$data['electronics_division_photo'] = $this->Model_electronics_division->get_electronics_division_photo($id);
-		$data['electronics_division_photo_total'] = $this->Model_electronics_division->get_electronics_division_photo_number($id);
+		$data['electronics_division'] = $this->Model_electronics_division->get_electronics_division_detail($slug);
+		$data['electronics_division_photo'] = $this->Model_electronics_division->get_electronics_division_photo($slug);
+		$data['electronics_division_photo_total'] = $this->Model_electronics_division->get_electronics_division_photo_number($slug);
 
 		$header['service'] = $this->Model_electronics_division->get_service_data();
 		$header['facility'] = $this->Model_electronics_division->get_facility_data();
