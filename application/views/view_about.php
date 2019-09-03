@@ -24,9 +24,9 @@
 				<div class="col-sm-2" style="padding-left: 0;">
 					<nav class="nav-sidebar">
 						<ul class="nav tabs">
-							<li class="active"><a href="#tab1" data-toggle="tab">Profil</a></li>
-							<li class=""><a href="#tab3" data-toggle="tab">Struktur</a></li>
-							<li class=""><a href="#tab4" data-toggle="tab">Visi & Misi</a></li>                               
+							<li class="active"><a href="#tab1" data-toggle="tab">Profile</a></li>
+							<li class=""><a href="#tab3" data-toggle="tab">Structure</a></li>
+							<li class=""><a href="#tab4" data-toggle="tab">Visi & Misi</a></li>    
 						</ul>
 					</nav>
 					<div class="add"></div>
@@ -75,7 +75,6 @@
 		</div>
 	</div>
 </div>
-
 
 <script type="text/javascript">
 	$(function(){
