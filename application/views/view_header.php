@@ -12,15 +12,23 @@
 	$final_url = str_replace($base_url, "", $full_url);
 	$slug_arr = explode("/",$final_url);
 
-	if(isset($slug_arr[1])) {
+	if(isset($slug_arr[1])) { 
 		$slug_two = $slug_arr[0].'/'.$slug_arr[1];
 	}
 	?>
 
 	<?php
-	foreach ($language as $lang) {
-		define($lang['name'], $lang['eng']);
+	if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn'))
+	{
+		foreach ($language as $lang) {
+			define($lang['name'], $lang['idn']);
+		}
+	} else {
+		foreach ($language as $lang) {
+			define($lang['name'], $lang['eng']);
+		}
 	}
+	
 
 	if($slug_arr[0] == '')
 	{
@@ -627,12 +635,12 @@
 										</div>
 										<div class="col-md-1">
 											<li class="csm-menu">
-												<a href="#" onclick="myFunction()">IDN</a>
+												<?php echo anchor ('language/change/idn','Indonesia');?>
 											</li>
 										</div>
 										<div class="col-md-1">
 											<li class="csm-menu">
-												<a href="#" onclick="myFunction()">ENG</a>
+												<?php echo anchor ('language/change/eng','English');?>
 											</li>
 										</div>
 										<script>

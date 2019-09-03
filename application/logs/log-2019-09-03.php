@@ -191,3 +191,4 @@ ERROR - 2019-09-03 14:07:26 --> 404 Page Not Found!: Public/css
 ERROR - 2019-09-03 14:07:29 --> 404 Page Not Found!: Public/css
 ERROR - 2019-09-03 14:08:38 --> 404 Page Not Found!: Public/css
 ERROR - 2019-09-03 14:09:01 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 15:38:28 --> 404 Page Not Found!: Language/change
