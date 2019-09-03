@@ -10,7 +10,12 @@ class Model_electronics_division extends CI_Model
     }
     public function get_electronics_division_data()
     {
-        $query = $this->db->query("SELECT * from tbl_electronics_division");
+       $sql = "SELECT * 
+                FROM tbl_electronics_division t1
+                JOIN tbl_electronics_division_category t2
+                ON t1.category_id = t2.category_id
+                ORDER BY t1.id ASC";
+        $query = $this->db->query($sql);
         return $query->result_array();
     }
 

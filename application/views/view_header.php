@@ -547,28 +547,52 @@
 								</li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo ELECTRONICS_DIVISION; ?></a>
 									<ul class="dropdown-menu ciptasin-menu">
-										<?php
-										foreach ($electronics_division_category as $row) {
-											?>
-											<div class="col-md-4">
-												<li class="csm-menu">
-													<a href="<?php echo base_url(); ?>electronics-division"><?php echo $row['category_name']; ?></a>
-													<ul class="csm-content-menu">
-														<?php
-														foreach ($electronics_division as $row) {
-															?>
-															<li class="csm-category-menu">
-																<a><?php echo $row['name']; ?></a>
-															</li>
-															<?php
-														}
-														?>
-													</ul>
-												</li>
-											</div>
-											<?php
-										}
-										?>
+										<div class="col-md-4">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>electronics-division">AVIATION ELECTRONICS</a>
+												<ul class="csm-content-menu">
+													<li class="csm-category-menu">
+														<a href="<?php echo base_url(); ?>electronics-division/post/display-systems-multi-function-display-mfd-moving-map-display-etc.html">Display systems Multi-Function Display-MFD Moving Map Display etc</a>
+													</li>
+													<li class="csm-category-menu">
+														<a href="<?php echo base_url(); ?>electronics-division/post/mission-computers.html">Mission computers</a>
+													</li>
+													<li class="csm-category-menu">
+														<a href="<?php echo base_url(); ?>electronics-division/post/sensor-interface-units.html">Sensor interface units</a>
+													</li>
+												</ul>
+											</li>
+										</div>
+										<div class="col-md-4">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>electronics-division">DEFENSE ELECTRONICS</a>
+												<ul class="csm-content-menu">
+													<li class="csm-category-menu">
+														<a href="<?php echo base_url(); ?>electronics-division/post/ruggedized-electronic-controllers.html">Ruggedized electronic controllers</a>
+													</li>
+													<li class="csm-category-menu">
+														<a href="<?php echo base_url(); ?>electronics-division/post/harsh-environmental-power-drivers.html">Harsh environmental power drivers</a>
+													</li>
+												</ul>
+											</li>
+										</div>
+										<div class="col-md-4">
+											<li class="csm-menu">
+												<a href="<?php echo base_url(); ?>electronics-division">INDUSTRIAL ELECTRONICS</a>
+												<ul class="csm-content-menu">
+													<li class="csm-category-menu">
+														<a href="<?php echo base_url(); ?>electronics-division/post/plc-controller-design-and-implementations.html">PLC Controller design and implementations</a>
+													</li>
+													<li class="csm-category-menu">
+														<a href="<?php echo base_url(); ?>electronics-division/post/power-electronics-design-and-manufacturing.html">Power electronics design and manufacturing</a>
+													</li>
+													<li class="csm-category-menu">
+														<a href="<?php echo base_url(); ?>electronics-division/post/man-machine-interface.html">Man-Machine Interface</a>
+													</li>
+												</ul>
+											</li>
+										</div>
+
 									</ul>
 								</li>
 								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo PAGE; ?></a>

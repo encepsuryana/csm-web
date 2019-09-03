@@ -113,3 +113,81 @@ ERROR - 2019-09-03 11:03:29 --> Severity: Notice --> Undefined index: banner C:\
 ERROR - 2019-09-03 11:03:29 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
 ERROR - 2019-09-03 11:03:29 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
 ERROR - 2019-09-03 11:03:29 --> 404 Page Not Found!: admin/%3Cdiv%20style=/index
+ERROR - 2019-09-03 11:39:15 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 11:39:15 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 11:39:15 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 11:49:40 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:49:40 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:49:40 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:49:40 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:49:40 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:49:40 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:49:40 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:49:40 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:52:44 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:52:44 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:52:44 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:52:44 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:52:44 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:52:44 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:52:44 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:52:44 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:55:04 --> Severity: error --> Exception: Call to undefined method Model_home::get_get_category_show() C:\xampp\htdocs\csm-web\application\controllers\Home.php 28
+ERROR - 2019-09-03 11:56:05 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:56:05 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:56:05 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:56:05 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:56:05 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:56:05 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:56:05 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 11:56:05 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 555
+ERROR - 2019-09-03 12:02:11 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 12:02:11 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 12:02:11 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 12:41:35 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 12:41:35 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 12:41:35 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 12:42:41 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 12:42:41 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 12:42:41 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 12:45:58 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 12:45:58 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 12:45:58 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 13:05:48 --> Severity: Notice --> Undefined index: category_name C:\xampp\htdocs\csm-web\application\views\view_header.php 553
+ERROR - 2019-09-03 13:11:01 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 13:11:01 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 13:11:01 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 13:11:01 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 13:11:01 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 13:11:01 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 13:11:27 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 13:11:27 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 13:11:27 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_header.php 558
+ERROR - 2019-09-03 13:15:15 --> Severity: error --> Exception: syntax error, unexpected ')' C:\xampp\htdocs\csm-web\application\views\view_header.php 559
+ERROR - 2019-09-03 13:56:27 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 13:57:27 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 13:57:35 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 13:57:53 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 13:58:05 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 13:59:40 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:00:54 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:01:31 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:01:48 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-09-03 14:01:48 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-09-03 14:01:48 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-09-03 14:01:48 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-09-03 14:01:48 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-09-03 14:01:48 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_header.php 557
+ERROR - 2019-09-03 14:01:51 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:02:13 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:02:26 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:04:56 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:05:22 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:05:38 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:06:13 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:06:24 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:07:21 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:07:26 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:07:29 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:08:38 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-03 14:09:01 --> 404 Page Not Found!: Public/css

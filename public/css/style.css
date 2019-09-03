@@ -61,7 +61,6 @@ section {
 	transition: opacity .25s;
 	overflow: hidden;
 	height: 300px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 .hiddenText {
@@ -71,6 +70,7 @@ section {
 .box:hover {
 	cursor: pointer;
 	z-index: 1;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 .full {
@@ -226,7 +226,6 @@ section {
 
 .btn-home li a {
 	font-size: 13px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 	text-transform: uppercase;
 	display: inline-block;
 	background: #134595;
@@ -260,6 +259,7 @@ section {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 240px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 
@@ -708,7 +708,6 @@ img {
 
 .dropdown-menu li {
 	display: table-cell;
-	line-height: 50px;
 	vertical-align: middle;
 }
 .nav-ciptasin {
@@ -723,7 +722,6 @@ ul.nav-ciptasin {
 }
 
 ul.nav-ciptasin li {
-	text-align: left;
 	display: inline-block;
 	position: relative;
 }
@@ -809,7 +807,7 @@ ul.nav-ciptasin li:hover a {
 }
 
 .csm-content-menu .csm-category-menu a {
-	padding: 0 10px;
+	padding: 5px 10px;
 	border: 0 !important;
 }
 .csm-content-menu .csm-category-menu a:hover {
@@ -876,11 +874,12 @@ ul.nav-ciptasin li:hover a {
 }
 
 .nav-ciptasin .dropdown-menu.ciptasin-menu .csm-menu > a {
-	padding: 5px;
+	padding: 15px 10px;
 	border: 0 !important;
 	text-align: right;
 	font-size: 14px;
 	font-weight: 700;
+	margin-bottom: 15px;
 }
 
 .nav-ciptasin .dropdown-menu.ciptasin-menu .csm-menu > a:hover {
@@ -911,7 +910,7 @@ ul.nav-ciptasin li:hover a {
 	width: 100%;
 	background-color: #fff;
 	z-index: 10000;
-	height: 60px;
+	height: 62px;
 }
 
 .sticky .logo {
@@ -1851,8 +1850,7 @@ Slider
 .csmpublic-home h2 b {
 	color: #2BBCDE;
 }
-.csmpublic-home 
-.public-csm-home {
+.csmpublic-home .public-csm-home {
 	background: #ffffff;
 	overflow: hidden;
 	height: 400px;
@@ -1861,15 +1859,12 @@ Slider
 	color: inherit;
 	text-decoration: none;
 	position: relative;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0) !important;
 }
-.csmpublic-home 
-.public-csm-home:hover h3 {
+.csmpublic-home .public-csm-home:hover h3 {
 	text-decoration: underline;
 }
-.csmpublic-home 
-.public-csm-home:hover 
-.csm-blog-home {
+.csmpublic-home .public-csm-home:hover .csm-blog-home {
 	height: 400px;
 	width: 100%;
 	color: #fff;
@@ -1879,9 +1874,12 @@ Slider
 	opacity: 0.95;
 	-webkit-transition: all 0.4s ease-out 0s;
 	-o-transition: all 0.4s ease-out 0s;
-	transition: all 0.4s ease-out 0s;   
-}
+	transition: all 0.4s ease-out 0s;  
 
+}
+.testimonial-post {
+	background-color: white !important;
+}
 .csmpublic-home 
 .public-csm-home 
 .img-csm-home {
