@@ -94,7 +94,7 @@ body,
 }
 
 .login-box {
-	margin: 12% auto;
+	margin: 11% auto;
 }
 
 body {
@@ -505,18 +505,18 @@ iframe {
 }
 
 input[type=submit].btn-block {
-	background: #999;
+	background: #15258a;
 	border-radius: 20px;
 	padding: 5px 0;
 	color: #fff;
-	border-color: #999;
+	border-color: #15258a;
 }
 .btn-primary {
 	border-radius: 20px;
 }
 
 .btn-primary:hover {
-	background: #ecf0f1 !important;
+	background: transparent !important;
 	color: #2c3e50 !important;
 	border-color: #2c3e50;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);

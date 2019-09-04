@@ -8,10 +8,17 @@ class Login extends CI_Controller
     {
         parent::__construct();
         $this->load->model('admin/Model_login');
+        $this->load->library('recaptcha');
     }
 
     public function index()
     {
+        $recaptcha = $this->input->post('g-recaptcha-response');
+        $data = array(
+            'widget' => $this->recaptcha->getWidget(),
+            'script' => $this->recaptcha->getScriptTag(),
+        );
+
         $data['error'] = '';
         $data['setting'] = $this->Model_login->get_setting_data();
 
@@ -35,25 +42,31 @@ class Login extends CI_Controller
                 $pw = $this->Model_login->check_password($email,$password);
 
                 if(!$pw) {
-                    
+
                     $data['error'] = 'Password is wrong!';
                     $this->load->view('admin/view_login',$data);
 
                 } else {
+                    if (!empty($recaptcha)) {
+                        $response = $this->recaptcha->verifyResponse($recaptcha);
+                        if (isset($response['success']) and $response['success'] === true) {
+                           // When email and password both are correct
+                            $array = array(
+                                'id' => $pw['id'],
+                                'full_name' => $pw['full_name'],
+                                'email' => $pw['email'],
+                                'phone' => $pw['phone'],
+                                'photo' => $pw['photo'],
+                                'role' => $pw['role'],
+                                'status' => $pw['status']
+                            );
 
-                    // When email and password both are correct
-                    $array = array(
-                        'id' => $pw['id'],
-                        'full_name' => $pw['full_name'],
-                        'email' => $pw['email'],
-                        'phone' => $pw['phone'],
-                        'photo' => $pw['photo'],
-                        'role' => $pw['role'],
-                        'status' => $pw['status']
-                    );
-
-                    $this->session->set_userdata($array);
-                    redirect(base_url().$this->session->userdata('role').'/dashboard');
+                            $this->session->set_userdata($array);
+                            redirect(base_url().$this->session->userdata('role').'/dashboard');
+                        }
+                    } else {
+                        redirect(base_url().'admin/login');
+                    }
                 }
             }
         } else {

@@ -18,14 +18,14 @@
 	?>
 
 	<?php
-	if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn'))
+	if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='eng'))
 	{
 		foreach ($language as $lang) {
-			define($lang['name'], $lang['idn']);
+			define($lang['name'], $lang['eng']);
 		}
 	} else {
 		foreach ($language as $lang) {
-			define($lang['name'], $lang['eng']);
+			define($lang['name'], $lang['idn']);
 		}
 	}
 	

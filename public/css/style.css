@@ -2599,9 +2599,10 @@ span.page-numbers.current {
 	padding: 50px;
 	padding-bottom: 20px;
 	display: table-cell;
-	text-align: center;
+	text-align: right;
 	vertical-align: middle;
 	position: relative;
+	padding-right: 120px;
 }
 
 .banner-text h1 {
@@ -3136,6 +3137,13 @@ label {
 	padding-left: 20px;
 	border-radius: 20px;
 	padding-top: 7px;
+}
+
+.form-control:focus,
+.btn-default:focus {
+	border-color: #c6c6c6;
+	background-color: #fff !important;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 .contact-area h4 {

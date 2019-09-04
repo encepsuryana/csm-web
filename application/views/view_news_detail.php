@@ -53,16 +53,11 @@
 						</div>
 						<script async src="https://static.addtoany.com/menu/page.js"></script>
 						<!-- AddToAny END -->
-
-						<?php if($comment == 'On'): ?>
+						<div class="pb_20 pt_20">
 							<h3><?php echo COMMENTS; ?></h3>
-							<?php
-						// Getting the full url of the current page
-							$final_url = base_url().'news/view/'.$_REQUEST['id'];
-							?>
 							<!-- Facebook Comment Main Code (got from facebook website) -->
-							<div class="fb-comments" data-href="<?php echo $final_url; ?>" data-numposts="5"></div>
-						<?php endif; ?>
+							<div class="fb-comments" data-numposts="5" data-width="650"></div>
+						</div>
 
 					</div>
 				</div>
@@ -70,7 +65,6 @@
 
 			<div class="col-md-4">
 				<div class="sidebar"> 
-
 					<div class="sidebar-item">
 						<div class="sidebar-item searchbar-item">
 							<?php echo form_open(base_url().'search'); ?>

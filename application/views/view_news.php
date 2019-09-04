@@ -1,10 +1,42 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
-	<div class="bannder-table">
+	<div class="container bannder-table">
 		<div class="banner-text">
 			<h1><?php echo $page['news_heading']; ?></h1>
 		</div>
 	</div>
-
+	<div class="container pt_20 pb_20">
+		<div class="col-md-12">
+			<div class="sidebar-item">
+				<div class="sidebar-item searchbar-item" style="float: right;">
+					<?php echo form_open(base_url().'search'); ?>
+					<div class="input-group" style="width: 300px;">
+						<?php
+						$data = array(
+							'type'         => 'text',
+							'name'         => 'search_string',
+							'class'        => 'form-control',
+							'autocomplete' => 'off',
+							'placeholder'  => SEARCH_NEWS
+						);
+						echo form_input($data);
+						?>
+						<span class="input-group-btn">
+							<?php
+							$data = array(
+								'name'    => 'form1',
+								'class'   => 'btn btn-default',
+								'type'    => 'submit',
+								'content' => '<i class="fa fa-search"></i>'
+							);
+							echo form_button($data);
+							?>
+						</span>
+					</div>
+					<?php echo form_close(); ?>
+				</div>
+			</div>
+		</div>	
+	</div>
 
 	<div class="container pt_20 pb_20">
 		<div class="row">
@@ -21,10 +53,10 @@
 									<div class="blog-author ">
 										<ul>
 											<div class="col-sm-6" style="text-align: left; padding-left: 5px;">
-											<li class="gro">
-												<i class="fa fa-user-circle-o" aria-hidden="true"></i> 
-												<span><?php echo $row->user_update; ?></span>
-											</li>
+												<li class="gro">
+													<i class="fa fa-user-circle-o" aria-hidden="true"></i> 
+													<span><?php echo $row->user_update; ?></span>
+												</li>
 											</div>
 											<li class="gro">
 												<span><?php echo $row->news_date; ?></span> <i class="fa fa-calendar" aria-hidden="true"></i>

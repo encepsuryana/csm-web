@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database', 'session', 'form_validation', 'pagination');
+$autoload['libraries'] = array('database', 'session', 'form_validation', 'pagination', 'recaptcha');
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +89,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url','file','form');
+$autoload['helper'] = array('url','file','form','xss');
 
 /*
 | -------------------------------------------------------------------
@@ -103,7 +103,7 @@ $autoload['helper'] = array('url','file','form');
 | config files.  Otherwise, leave it blank.
 |
 */
-$autoload['config'] = array();
+$autoload['config'] = array('recaptcha');
 
 /*
 | -------------------------------------------------------------------
@@ -133,3 +133,7 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array();
+
+/**
+ * Load the recaptcha library when the spark is loaded
+ */

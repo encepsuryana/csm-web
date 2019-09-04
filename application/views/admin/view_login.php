@@ -47,9 +47,15 @@
 			<div class="form-group has-feedback">
 				<input class="form-control" placeholder="Password" name="password" type="password" autocomplete="off" value="">
 			</div>
+			<div class="form-group has-feedback" style="text-align: center;">
+				<div class="captcha_box" style="margin-left: 10px;">
+					<?php echo $widget;?>
+					<?php echo $script;?>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-xs-8 forget-style">
-					<a href="<?php echo base_url(); ?>admin/forget-password">Forget Password?</a>
+					
 				</div>
 				<div class="col-xs-4">
 					<input type="submit" class="btn btn-primary btn-block btn-flat login-button" name="form1" value="Login">
