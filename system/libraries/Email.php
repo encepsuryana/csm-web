@@ -76,14 +76,14 @@ class CI_Email {
 	 *
 	 * @var	string
 	 */
-	public $smtp_host	= 'ssl://smtp.gmail.com';
+	public $smtp_host	= 'ssl://mail.ciptasinergi.com';
 
 	/**
 	 * SMTP Username
 	 *
 	 * @var	string
 	 */
-	public $smtp_user	= 'encep.suryanajr@gmail.com';
+	public $smtp_user	= 'marketing@ciptasinergi.com';
 
 	/**
 	 * SMTP Password

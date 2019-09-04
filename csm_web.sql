@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 03 Sep 2019 pada 10.52
+-- Waktu pembuatan: 04 Sep 2019 pada 10.05
 -- Versi server: 10.3.16-MariaDB
 -- Versi PHP: 7.3.7
 
@@ -370,7 +370,8 @@ INSERT INTO `tbl_language` (`id`, `name`, `eng`, `idn`) VALUES
 (66, 'NEW_PRODUCT', 'New Product', 'Produk Baru'),
 (67, 'TESTIMONIAL_SAY', 'What a Client Say', 'Apa yang klien katakan '),
 (68, 'PRODUCT_HOME', 'Our Featured Products', 'Produk Unggulan Kami'),
-(69, 'OUR_PARTNER', 'Our Partner', 'Partner Kami');
+(69, 'OUR_PARTNER', 'Our Partner', 'Partner Kami'),
+(70, 'OUR_FUTURE_PRODUCT', 'Our Future Product', 'Produk Unggulan Kami\r\n');
 
 -- --------------------------------------------------------
 
@@ -401,7 +402,7 @@ CREATE TABLE `tbl_news` (
 --
 
 INSERT INTO `tbl_news` (`news_id`, `news_title`, `slug`, `news_content`, `news_short_content`, `news_date`, `photo`, `slug_news_category`, `total_view`, `comment`, `meta_title`, `meta_keyword`, `meta_description`, `user_update`, `post_slug`) VALUES
-(1, 'Open Recruitment Agust 2019', 'col-page col-sm-8 col-md-6', '<p>Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019, The requirements are as follows:</p><p><b>Criteria :</b></p><ol><li>Matching CAM design with 5 axis CNC machines for optimal.</li><li>Making CAM designs.</li><li>Able to work in teams and individually.</li></ol><p><b>Qualification<b> :</b></b></p><ol><li><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">Max age</span> <span title=\"\" class=\"\">35 years old, physically and mentally healthy</span></span></li><li>Having experience in the field of Programmer (CNC) ± 2 years specialized in Manufacturing Dies and CF</li><li>Experience using Mastercam & Powermill / other CAM design software</li><li>Experienced using a 5 axis CNC machine</li><li>Mastering 3D & 2D concepts</li><li>Able to work well together and good communication</li></ol><b>If you are personally we needed, please apply for an application to participate in the selection stage.<br>HRD Section</b><p><b><b>CV. Cipta Sinergi Manufacturing</b></b></p><p><b><b>Jl. Kamarung No. 88b RT/RW 004/004 Citeureup Kec. Cimahi Utara, Jawa Barat 40512<br></b></b></p><p>\r\n							</p><br><p><br></p>', 'Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019.', '2019-08-01', 'news-1.jpg', 'career.html', 0, 'On', 'Open Recruitment Agust 2019', '', '', 'hrd', 'open-recruitment-agust-2019.html');
+(1, 'Open Recruitment Agust 2019', 'col-page col-sm-8 col-md-6', '<p>Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019, The requirements are as follows:</p><p><b>Criteria :</b></p><ol><li>Matching CAM design with 5 axis CNC machines for optimal.</li><li>Making CAM designs.</li><li>Able to work in teams and individually.</li></ol><p><b>Qualification<b> :</b></b></p><ol><li><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">Max age</span> <span title=\"\" class=\"\">35 years old, physically and mentally healthy</span></span></li><li>Having experience in the field of Programmer (CNC) ± 2 years specialized in Manufacturing Dies and CF</li><li>Experience using Mastercam & Powermill / other CAM design software</li><li>Experienced using a 5 axis CNC machine</li><li>Mastering 3D & 2D concepts</li><li>Able to work well together and good communication</li></ol><b>If you are personally we needed, please apply for an application to participate in the selection stage.<br>HRD Section</b><p><b><b>CV. Cipta Sinergi Manufacturing</b></b></p><p><b><b>Jl. Kamarung No. 88b RT/RW 004/004 Citeureup Kec. Cimahi Utara, Jawa Barat 40512<br></b></b></p>', 'Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019.', '2019-08-01', 'news-1.jpg', 'career.html', 0, 'On', 'Open Recruitment Agust 2019', '', '', 'hrd', 'open-recruitment-agust-2019.html');
 
 -- --------------------------------------------------------
 
@@ -1304,7 +1305,7 @@ ALTER TABLE `tbl_facility_photo`
 -- AUTO_INCREMENT untuk tabel `tbl_language`
 --
 ALTER TABLE `tbl_language`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_news`
