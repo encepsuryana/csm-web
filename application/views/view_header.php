@@ -240,6 +240,7 @@
 		.main-testimonial .testimonial-carousel .owl-dots .owl-dot {
 			background: #<?php echo $setting['theme_color_1']; ?>!important;
 		}
+		.dropdown a,
 		.blog-text h3 a,
 		.box h3,
 		.blog-author li a:hover,
@@ -322,11 +323,11 @@
 		.services-link a {
 			background-color: #<?php echo $setting['theme_color_2']; ?>!important;	
 		}
+		.dropdown-menu1 li a:hover,
 		.counter-item h2.counter,
 		.footer-contact-item li p,
 		.footer-contact-item li h4,
 		.home-maps-btn h3,
-		.header-social a:hover,
 		.choose-text h3,
 		.services-text h3 a,
 		.lightbox-icon a:hover,
@@ -396,7 +397,7 @@
 			border-color: #<?php echo $setting['theme_color_1']; ?>!important;
 			color: #<?php echo $setting['theme_color_1']; ?>!important;
 		}
-
+		.dropdown-menu1 li:hover,
 		.services-link a:hover,
 		.nav-sidebar .active a:hover,
 		.nav li a:hover,
@@ -409,6 +410,7 @@
 			color: #<?php echo $setting['theme_color_2']; ?>!important;
 		}
 	</style>
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script> 
 </head>
 
 <body>
@@ -428,22 +430,43 @@
 					<div class="header-contact">
 						<ul>
 							<li>
-								<i class="fa fa-envelope-o" aria-hidden="true"></i>
-								<span title="<?php echo COMPANY_EMAIL; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_email']; ?></span>
+								<i class="fa fa-building-o" aria-hidden="true"></i>
+								<span title="<?php echo WORKING_HOURS; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo nl2br($setting['footer_working_hour']); ?></span>
 							</li>
 							<li>
 								<i class="fa fa-phone" aria-hidden="true"></i>
 								<span title="<?php echo COMPANY_PHONE; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_phone']; ?></span>
 							</li>
 							<li>
-								<i class="fa fa-building-o" aria-hidden="true"></i>
-								<span title="<?php echo WORKING_HOURS; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo nl2br($setting['footer_working_hour']); ?></span>
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								<span title="<?php echo COMPANY_EMAIL; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_email']; ?></span>
+							</li>
+							<li class="dropdown">
+								<i class="fa fa-globe" aria-hidden="true"></i>									
+								<a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown">
+									<span style="cursor: pointer;">
+										<?php if ($this->session->userdata('language')=='eng') {
+											echo "English";
+										} else {
+											echo "Indonesia";
+										}?>
+									</span>
+								</a>
+
+								<ul class="dropdown-menu1">
+									<li>
+										<?php echo anchor ('language/change/eng','English');?>
+									</li>
+									<li>
+										<?php echo anchor ('language/change/idn','Indonesia');?>
+									</li>
+								</ul>
 							</li>
 						</ul>
 						<script>
 							$(document).ready(function(){
-								$('[data-toggle="tooltip"]').tooltip();   
-							});
+								$('[data-toggle="tooltip"]').tooltip();
+							});  
 						</script>
 					</div>
 				</div>
@@ -507,11 +530,11 @@
 															<h4><?php echo $row['product_caption']; ?></h4>	
 															<p><?php echo $row['product_desc']; ?></p>
 														</a>
-													</div>
-													<?php
-												}
-												?>
-											</div>
+													</div>		
+												</div>
+												<?php
+											}
+											?>
 										</div>
 									</ul>
 								</li>
@@ -607,49 +630,45 @@
 									<ul class="dropdown-menu ciptasin-menu">
 										<div class="col-md-3">
 											<li class="csm-menu">
-
 											</li>
 										</div>
-										<div class="col-md-3">
+										<div class="col-md-2">
 											<li class="csm-menu">
 												<a href="<?php echo base_url(); ?>gallery"><?php echo GALLERY; ?></a>
 											</li>
 										</div>
-										<div class="col-md-3">
+										<div class="col-md-2">
 											<li class="csm-menu">
 												<a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a>
 											</li>
 										</div>
-										<div class="col-md-3">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a>
-											</li>
-										</div>
-									</ul>
-								</li>
-								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><i style="width: 20px;" class="fa fa-globe" aria-hidden="true"></i>									</a>
-									<ul class="dropdown-menu ciptasin-menu">
-										<div class="col-md-10">
-											<li class="csm-menu">
-											</li>
-										</div>
-										<div class="col-md-1">
-											<li class="csm-menu">
-												<?php echo anchor ('language/change/idn','Indonesia');?>
-											</li>
-										</div>
-										<div class="col-md-1">
-											<li class="csm-menu">
-												<?php echo anchor ('language/change/eng','English');?>
-											</li>
-										</div>
-										<script>
-											function myFunction() {
-												alert(" Under Development :)");
+										<div class="col-md-5">
+											<div class="col-md-4" style="padding: 0;">
+												<?php
+												$i=0;
+												foreach ($latest_news as $row) {
+													$i++;
+													if($i>1) {break;}
+													?>
+													<div class="product-menu" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>);">
+													</div>
+												</div>
+												<div class="col-md-8" style="padding: 0;">
+													<div class="desc-product-menu">
+														<h4><?php echo LATEST_NEWS; ?></h4>	
+														<a href="<?php echo base_url(); ?>news">
+															<h4><?php echo $row['news_title']; ?></h4>	
+															<p><?php echo $row['news_short_content']; ?></p>
+														</a>
+													</div>		
+												</div>
+												<?php
 											}
-										</script>
+											?>
+										</div>
 									</ul>
 								</li>
+								<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
 							</ul>
 						</div>
 					</div>

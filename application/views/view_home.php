@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										?>
 										<li>
 											<a target="_blank" href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>"><?php echo $row['news_title']; ?></a>
-											<a href="<?php echo base_url(); ?>news/view/<?php echo $row['news_id'].'.html'; ?>" target="_blank" style="float: right; font-size: 12px;"><?php echo $row['news_date']; ?></a>
+											<a href="<?php echo base_url(); ?>news/view/<?php echo $row['post_slug']; ?>" target="_blank" style="float: right; font-size: 12px;"><?php echo $row['news_date']; ?></a>
 											<p><?php echo $row['news_short_content']; ?></p>
 										</li>
 										<?php

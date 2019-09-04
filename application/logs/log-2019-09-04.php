@@ -2734,3 +2734,153 @@ ERROR - 2019-09-04 15:37:09 --> 404 Page Not Found!: V/index
 ERROR - 2019-09-04 15:37:09 --> 404 Page Not Found!: W/index
 ERROR - 2019-09-04 15:37:09 --> 404 Page Not Found!: X/index
 ERROR - 2019-09-04 15:37:09 --> 404 Page Not Found!: Y/index
+ERROR - 2019-09-04 16:21:20 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 16:22:08 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 16:25:06 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 16:30:27 --> Severity: Notice --> Undefined index: product_name C:\xampp\htdocs\csm-web\application\views\view_header.php 625
+ERROR - 2019-09-04 16:40:29 --> Severity: Notice --> Undefined index: product_name C:\xampp\htdocs\csm-web\application\views\view_header.php 626
+ERROR - 2019-09-04 16:42:06 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 16:50:21 --> 404 Page Not Found!: Assets/images
+ERROR - 2019-09-04 16:50:21 --> 404 Page Not Found!: Assets/images
+ERROR - 2019-09-04 16:50:21 --> 404 Page Not Found!: Assets/images
+ERROR - 2019-09-04 16:50:21 --> 404 Page Not Found!: Assets/images
+ERROR - 2019-09-04 16:50:21 --> 404 Page Not Found!: Assets/images
+ERROR - 2019-09-04 16:50:21 --> 404 Page Not Found!: Assets/images
+ERROR - 2019-09-04 16:50:21 --> 404 Page Not Found!: Assets/images
+ERROR - 2019-09-04 16:50:21 --> 404 Page Not Found!: Assets/images
+ERROR - 2019-09-04 16:50:21 --> 404 Page Not Found!: Assets/images
+ERROR - 2019-09-04 16:50:21 --> 404 Page Not Found!: Assets/images
+ERROR - 2019-09-04 17:01:00 --> 404 Page Not Found!: Pagephp/index
+ERROR - 2019-09-04 17:18:19 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:21:19 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:21:26 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:22:09 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:22:17 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:24:05 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:24:52 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:24:57 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:25:29 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:25:34 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:25:43 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:26:21 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 17:35:32 --> Severity: error --> Exception: syntax error, unexpected 'else' (T_ELSE), expecting function (T_FUNCTION) or const (T_CONST) C:\xampp\htdocs\csm-web\application\controllers\admin\Login.php 22
+ERROR - 2019-09-04 17:35:52 --> Severity: error --> Exception: syntax error, unexpected '$data' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) C:\xampp\htdocs\csm-web\application\controllers\admin\Login.php 22
+ERROR - 2019-09-04 17:36:10 --> Severity: error --> Exception: syntax error, unexpected '$data' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) C:\xampp\htdocs\csm-web\application\controllers\admin\Login.php 25
+ERROR - 2019-09-04 17:36:45 --> Severity: error --> Exception: syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\csm-web\application\controllers\admin\Login.php 73
+ERROR - 2019-09-04 17:36:54 --> Severity: error --> Exception: syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\csm-web\application\controllers\admin\Login.php 71
+ERROR - 2019-09-04 18:28:21 --> 404 Page Not Found!: News/index
+ERROR - 2019-09-04 18:28:30 --> 404 Page Not Found!: News/index
+ERROR - 2019-09-04 18:48:22 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 18:56:14 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 18:56:42 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:00:22 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:03:09 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:03:37 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:03:58 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:05:25 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:06:23 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:08:33 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:09:20 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:09:52 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:11:04 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:11:09 --> 404 Page Not Found!: Kontakhtml/index
+ERROR - 2019-09-04 19:11:14 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:11:25 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:15:08 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:15:48 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:16:52 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:18:21 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:18:42 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:20:55 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:22:38 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:23:34 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:26:33 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:27:10 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:27:33 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:27:56 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:29:08 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:30:55 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:31:16 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:34:02 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:37:28 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:37:57 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:38:21 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:38:44 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:39:08 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:39:28 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:39:57 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:41:47 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:43:26 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:43:45 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:44:04 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:45:09 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:46:03 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:48:43 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:49:38 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:50:17 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:53:14 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:54:18 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:55:26 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:56:44 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:57:23 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:58:34 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 19:59:11 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:01:06 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:01:23 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:01:39 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:02:44 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:03:10 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:03:18 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:03:25 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:04:24 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:05:40 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:05:51 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:05:58 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:06:45 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:08:08 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:08:42 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:09:03 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:10:05 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:11:16 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:12:22 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:12:34 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:13:14 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:14:00 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:14:21 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:15:17 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:16:03 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:17:05 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:18:32 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:22:18 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:22:40 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:23:16 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:23:23 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:23:39 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:23:53 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:26:16 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:27:55 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:30:13 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-04 20:30:30 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:31 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:31 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:32 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:32 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:33 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:34 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:34 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:35 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:36 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:37 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:37 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:38 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:39 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:40 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:40 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:41 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:41 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:43 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:43 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:44 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:45 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:30:46 --> Severity: Warning --> Use of undefined constant refresh - assumed 'refresh' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\controllers\Language.php 9
+ERROR - 2019-09-04 20:31:07 --> 404 Page Not Found!: Public/css
