@@ -32,20 +32,22 @@
 							</div>
 						</div>
 					</div>
-					<div class="recent-menu" style="text-align: right;">
-						<ul>
-							<li data-filter="all"><?php echo ALL; ?></li>
-							<?php
-							foreach ($electronics_division_category as $row) {
-								?>
-								<li data-filter="<?php echo $row['category_id']; ?>"><?php echo $row['category_name']; ?></li>
-								<?php
-							}
-							?>
-						</ul>
-					</div>
 				</div>
 			<?php endif; ?>
+			<div class="col-md-12">
+				<div class="recent-menu" style="text-align: right;">
+					<ul>
+						<li data-filter="all"><?php echo ALL; ?></li>
+						<?php
+						foreach ($electronics_division_category as $row) {
+							?>
+							<li data-filter="<?php echo $row['category_id']; ?>"><?php echo $row['category_name']; ?></li>
+							<?php
+						}
+						?>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="container recent-works">

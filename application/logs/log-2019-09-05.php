@@ -156,3 +156,45 @@ ERROR - 2019-09-05 14:25:32 --> Severity: Notice --> Undefined index: smtp_host 
 ERROR - 2019-09-05 14:25:32 --> Severity: Notice --> Undefined index: smtp_port C:\xampp\htdocs\csm-web\application\views\admin\view_setting.php 375
 ERROR - 2019-09-05 14:45:06 --> 404 Page Not Found!: Public/css
 ERROR - 2019-09-05 14:57:44 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 16:42:26 --> 404 Page Not Found!: Csm_web/language
+ERROR - 2019-09-05 16:42:37 --> 404 Page Not Found!: Csm_web/language
+ERROR - 2019-09-05 16:43:03 --> 404 Page Not Found!: Refresh/index
+ERROR - 2019-09-05 16:49:01 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 16:52:24 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 16:54:36 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 16:56:07 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 16:56:37 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 16:58:15 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:00:15 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:01:33 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:01:46 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:02:03 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:07:44 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:08:17 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:08:49 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:09:02 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:09:58 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:10:18 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:10:37 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:10:57 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:13:34 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:13:50 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:15:15 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:15:34 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:18:10 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:18:40 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:20:46 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:20:57 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:21:27 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:21:51 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:22:08 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:23:31 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:23:50 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:24:22 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:24:43 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:24:51 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:26:41 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:29:40 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:31:07 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 17:35:39 --> Severity: Warning --> file_get_contents(): php_network_getaddresses: getaddrinfo failed: No such host is known.  C:\xampp\htdocs\csm-web\system\libraries\Recaptcha.php 58
+ERROR - 2019-09-05 17:35:40 --> Severity: Warning --> file_get_contents(https://www.google.com/recaptcha/api/siteverify?secret=6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe&amp;remoteip=127.0.0.1&amp;response=03AOLTBLTtDqvxc1mU4r-2Uhyj0qtl597RQFsJnULMVZKB042x10liIfQ5_J6fYWDQJ-Q1OQbgrfBsxh0lr2O7flkYVwXE4BiWgsH2Me_d8izuc3vTt6ocedpbDU1gF82nVhXl_J_9sASb5gezH80jsqgJYFdr1Embsz208vhbe5A24-fyLHUqRBXBG-d_AM9cLhWHEb-fOoOUrFyhFYEPtD2sKkoetQDb2_z6TXoagTmaivLdneEnOL1IGo3SXu7x55XS8n2nOgDO8GuMkcwYK_opNr5_p7L-NwC26C70javhHWBDlvPeUvMGrKT12DNE40yp2Rf4bVLlAaNyZl8uSEhD5nbmF7vgIJiadzU7vpgHndx96EOc3lPr630T3YcocWpDx3XJhwGN): failed to open stream: php_network_getaddresses: getaddrinfo failed: No such host is known.  C:\xampp\htdocs\csm-web\system\libraries\Recaptcha.php 58
