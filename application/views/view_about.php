@@ -1,7 +1,15 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
-	<div class="bannder-table">
-		<div class="banner-text">
-			<h1><?php echo ABOUT_US; ?></h1>
+	<div class="container bannder-table">
+		<div class="col-md-12">
+			<div class="col-md-6">
+				<div class="banner-text">
+				</div>
+			</div>
+			<div class="col-md-6" style="padding-right: 0;">
+				<div class="banner-text">
+					<h1><?php echo ABOUT_US; ?></h1>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -21,7 +29,7 @@
 				</p>
 			</div>
 			<div class="container">
-				<div class="col-sm-2" style="padding-left: 0;">
+				<div class="col-sm-2 about-fade" style="padding-left: 0;">
 					<nav class="nav-sidebar">
 						<ul class="nav tabs">
 							<li class="active"><a href="#tab1" data-toggle="tab">Profile</a></li>

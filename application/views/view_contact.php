@@ -1,7 +1,15 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
-	<div class="bannder-table">
-		<div class="banner-text">
-			<h1><?php echo $page['contact_heading']; ?></h1>
+	<div class="container bannder-table">
+		<div class="col-md-12">
+			<div class="col-md-6">
+				<div class="banner-text">
+				</div>
+			</div>
+			<div class="col-md-6" style="padding-right: 0;">
+				<div class="banner-text">
+					<h1><?php echo CONTACT ?></h1>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -63,6 +71,18 @@
 							?>
 						</div>
 						<div class="form-group">
+							<label for=""><?php echo INSTITUTE; ?></label>
+							<?php
+							$data = array(
+								'type'         => 'text',
+								'name'         => 'visitor_company',
+								'class'        => 'form-control',
+								'autocomplete' => 'off'
+							);
+							echo form_input($data);
+							?>
+						</div>
+						<div class="form-group">
 							<label for=""><?php echo MESSAGE; ?></label>
 							<?php
 							$data = array(
@@ -72,15 +92,23 @@
 							echo form_textarea($data);
 							?>
 						</div>
-						<?php
-						$data = array(
-							'name'    => 'form_contact',
-							'class'   => 'btn btn-success',
-							'type'    => 'submit',
-							'content' => SEND_MESSAGE
-						);
-						echo form_button($data);
-						?>
+						<div class="form-group">
+							<div class="col-md-8 captcha_box">
+								<?php echo $widget;?>
+								<?php echo $script;?>
+							</div>
+							<div class="col-md-4">
+								<?php 
+								$data = array(
+									'name'    => 'form_contact',
+									'class'   => 'btn btn-success',
+									'type'    => 'submit',
+									'content' => SEND_MESSAGE
+								);
+								echo form_button($data);
+								?>
+							</div>
+						</div>
 						<?php echo form_close(); ?>
 					</div>						
 				</div>

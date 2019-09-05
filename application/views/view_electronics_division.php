@@ -1,7 +1,15 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
-	<div class="bannder-table">
-		<div class="banner-text">
-			<h1><?php echo ELECTRONICS_DIVISION; ?></h1>
+	<div class="container bannder-table">
+		<div class="col-md-12">
+			<div class="col-md-6">
+				<div class="banner-text">
+				</div>
+			</div>
+			<div class="col-md-6" style="padding-right: 0;">
+				<div class="banner-text">
+					<h1><?php echo ELECTRONICS_DIVISION; ?></h1>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="container bg-about">

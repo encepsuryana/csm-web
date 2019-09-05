@@ -261,7 +261,6 @@
 		.slide-carousel.owl-carousel .owl-nav .owl-next:hover,
 		.main-menu .dropdown:before,
 		ul.nav-ciptasin li a,
-		.nav li a:focus,
 		.header-contact,
 		.team-carousel.owl-carousel .owl-nav .owl-prev, 
 		.team-carousel.owl-carousel .owl-nav .owl-next,
@@ -284,6 +283,7 @@
 			border-bottom-color: #<?php echo $setting['theme_color_1']; ?>!important;
 		}
 
+		.nav li a:focus,
 		.mean-container .mean-nav ul li a:hover,
 		.counter-item a:hover,
 		ul.nav-ciptasin li a:hover{
@@ -300,7 +300,6 @@
 		.bg-choose {
 			background-color: #<?php echo $setting['theme_color_2']; ?>!important;	
 		}
-		.nav li a:focus,
 		.recent-text,
 		.map-main-home,
 		.blog-text,
@@ -656,7 +655,7 @@
 												<div class="col-md-8" style="padding: 0;">
 													<div class="desc-product-menu">
 														<h4><?php echo LATEST_NEWS; ?></h4>	
-														<a href="<?php echo base_url(); ?>news">
+														<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
 															<h4><?php echo $row['news_title']; ?></h4>	
 															<p><?php echo $row['news_short_content']; ?></p>
 														</a>

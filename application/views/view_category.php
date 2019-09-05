@@ -5,9 +5,17 @@ foreach($category as $row) {
 ?>
 
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
-	<div class="bannder-table">
-		<div class="banner-text">
-			<h1>Category: <?php echo $category_name; ?></h1>
+	<div class="container bannder-table">
+		<div class="col-md-12">
+			<div class="col-md-6">
+				<div class="banner-text">
+				</div>
+			</div>
+			<div class="col-md-6" style="padding-right: 0;">
+				<div class="banner-text">
+					<h1>Category: <?php echo $category_name; ?></h1>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -26,10 +34,10 @@ foreach($category as $row) {
 									<div class="blog-author ">
 										<ul>
 											<div class="col-sm-6" style="text-align: left; padding-left: 5px;">
-											<li class="gro">
-												<i class="fa fa-user-circle-o" aria-hidden="true"></i> 
-												<span><?php echo $row['user_update'];?></span>
-											</li>
+												<li class="gro">
+													<i class="fa fa-user-circle-o" aria-hidden="true"></i> 
+													<span><?php echo $row['user_update'];?></span>
+												</li>
 											</div>
 											<li class="gro">
 												<span><?php echo $row['news_date']; ?></span> <i class="fa fa-calendar" aria-hidden="true"></i>

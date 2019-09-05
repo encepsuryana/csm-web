@@ -1,11 +1,19 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
-	<div class="bannder-table">
-		<div class="banner-text">
-			<h1><?php echo $news['news_title']; ?></h1>
+	<div class="container bannder-table">
+		<div class="col-md-12">
+			<div class="col-md-6">
+				<div class="banner-text">
+				</div>
+			</div>
+			<div class="col-md-6" style="padding-right: 0;">
+				<div class="banner-text">
+					<h1><?php echo $news['news_title']; ?></h1>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<div class="container single-service-area pt_20 pb_60 common-text bg-news">
+	<div class="container single-service-area pt_10 pb_60 common-text bg-news">
 		<div class="row">
 			<div class="col-md-8">
 				<div class="single-service-item">
