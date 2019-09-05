@@ -210,6 +210,10 @@ class Setting extends CI_Controller
 			if(isset($_POST['form_email'])) {			
 				$form_data = array(
 					'receive_email'                => $_POST['receive_email'],
+					'receive_password'             => $_POST['receive_password'],
+					'protocol'             		   => $_POST['protocol'],
+					'smtp_host'             	   => $_POST['smtp_host'],
+					'smtp_port'             	   => $_POST['smtp_port'],
 					'reset_password_email_subject' => $_POST['reset_password_email_subject']
 				);
 				$this->Model_setting->update($form_data);   	

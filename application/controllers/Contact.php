@@ -42,11 +42,11 @@ class Contact extends CI_Controller {
 		$config = [
 			'mailtype'  => 'html',
 			'charset'   => 'utf-8',
-			'protocol'  => 'smtp',
-			'smtp_host' => 'ssl://smtp.gmail.com',
-			'smtp_user' => 'encep.suryanajr@gmail.com',    
-			'smtp_pass' => 'password', 
-			'smtp_port' => 465,
+			'protocol'  => $header['setting']['protocol'],
+			'smtp_host' => $header['setting']['smtp_host'],
+			'smtp_user' => $header['setting']['receive_email'],    
+			'smtp_pass' => $header['setting']['receive_password'], 
+			'smtp_port' => $header['setting']['smtp_port'],
 			'crlf'      => "\r\n",
 			'newline'   => "\r\n"
 		];
@@ -60,6 +60,11 @@ class Contact extends CI_Controller {
 			$this->form_validation->set_rules('visitor_phone', 'Phone', 'trim|required');
 			$this->form_validation->set_rules('visitor_company', 'Company', 'trim|required');
 			$this->form_validation->set_rules('visitor_comment', 'Comment', 'trim|required');
+
+			$judul = $_POST['visitor_comment'];
+			$string=preg_replace('/<[^>]*>/', '', $judul); 
+			$trim=trim($string);
+			$visitor_message=$trim;
 			
 			if($this->form_validation->run() == FALSE) {
 				$data['error'] = validation_errors();
@@ -68,18 +73,29 @@ class Contact extends CI_Controller {
 					$response = $this->recaptcha->verifyResponse($recaptcha);
 					if (isset($response['success']) and $response['success'] === true) {
 						$msg = '
-						<h3>Informasi Pengunjung</h3>
-						<b>Nama:</b> '.$_POST['visitor_name'].'<br><br>
-						<b>Email:</b> '.$_POST['visitor_email'].'<br><br>
-						<b>No. Telp:</b> '.$_POST['visitor_phone'].'<br><br>
-						<b>Instansi/Perusahaan:</b> '.$_POST['visitor_company'].'<br><br>
-						<b>Pesan:</b> <br><br>
-						'.nl2br($_POST['visitor_comment']).'
+						<img src="www.ciptasinergi.com/public/uploads/logo.png" alt="Logo CSM" height="auto" width="150"> 
+						<h4 style="background: #134595; color:#fff; padding: 10px; text-transform: uppercase; margin-bottom: 5px;">Informasi Pengirim Pesan</h4>
+						<div style="margin: 10px;">
+						<b>Nama :</b> '.$_POST['visitor_name'].'<br>
+						<b>Email :</b> '.$_POST['visitor_email'].'<br>
+						<b>No. Telp :</b> '.$_POST['visitor_phone'].'<br>
+						<b>Instansi/Perusahaan :</b> '.$_POST['visitor_company'].'<br><br>
+						<b>Pesan :</b> <br>
+						'.nl2br($visitor_message).'
+						</div>
+
+						<br><br>
+						<div style="background: #f2f3f7; color:#999; padding: 10px; margin-top:20px; padding-bottom: 30px; font-size: 10px; text-align: right; border-top: 1px solid #999">
+						<b>CV. Cipta Sinergi Manufacturing</b><br><br>
+						Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat - Indonesia (40512) <br>
+						(022) 6647945<br><br>
+						www.ciptasinergi.com
+						</div>
 						';
 
 						$this->email->from($_POST['visitor_email'], $_POST['visitor_name']);
 						$this->email->to($header['setting']['receive_email']);
-						$this->email->subject('Pesan Dari '.$_POST['visitor_name'].' - www.ciptasinergi.com');
+						$this->email->subject('Email dari '.$_POST['visitor_name'].' - www.ciptasinergi.com');
 						$this->email->message($msg);
 
 						if ($this->email->send()) {

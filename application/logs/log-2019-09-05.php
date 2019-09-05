@@ -144,3 +144,15 @@ ERROR - 2019-09-05 14:03:39 --> Severity: Notice --> Undefined index: banner C:\
 ERROR - 2019-09-05 14:03:39 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
 ERROR - 2019-09-05 14:03:39 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
 ERROR - 2019-09-05 14:03:40 --> 404 Page Not Found!: admin/%3Cdiv%20style=/index
+ERROR - 2019-09-05 14:08:49 --> Severity: Notice --> Undefined variable: setting C:\xampp\htdocs\csm-web\application\controllers\Contact.php 47
+ERROR - 2019-09-05 14:09:22 --> Severity: error --> Exception: syntax error, unexpected 'top_bar_email' (T_STRING), expecting ']' C:\xampp\htdocs\csm-web\application\controllers\Contact.php 47
+ERROR - 2019-09-05 14:09:52 --> Severity: error --> Exception: syntax error, unexpected '.' C:\xampp\htdocs\csm-web\application\controllers\Contact.php 47
+ERROR - 2019-09-05 14:09:54 --> Severity: error --> Exception: syntax error, unexpected '.' C:\xampp\htdocs\csm-web\application\controllers\Contact.php 47
+ERROR - 2019-09-05 14:10:14 --> Severity: Notice --> Undefined variable: setting C:\xampp\htdocs\csm-web\application\controllers\Contact.php 47
+ERROR - 2019-09-05 14:11:21 --> Severity: Notice --> Undefined variable: setting C:\xampp\htdocs\csm-web\application\controllers\Contact.php 47
+ERROR - 2019-09-05 14:11:21 --> Severity: Notice --> Trying to get property 'top_bar_email' of non-object C:\xampp\htdocs\csm-web\application\controllers\Contact.php 47
+ERROR - 2019-09-05 14:25:32 --> Severity: Notice --> Undefined index: protocol C:\xampp\htdocs\csm-web\application\views\admin\view_setting.php 363
+ERROR - 2019-09-05 14:25:32 --> Severity: Notice --> Undefined index: smtp_host C:\xampp\htdocs\csm-web\application\views\admin\view_setting.php 369
+ERROR - 2019-09-05 14:25:32 --> Severity: Notice --> Undefined index: smtp_port C:\xampp\htdocs\csm-web\application\views\admin\view_setting.php 375
+ERROR - 2019-09-05 14:45:06 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 14:57:44 --> 404 Page Not Found!: Public/css

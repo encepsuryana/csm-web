@@ -352,17 +352,42 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
 							<div class="box-body">
 								<div class="form-group">
-									<label for="" class="col-sm-4 control-label">Email Address (Contact Form) <span>*</span></label>
+									<label for="" class="col-sm-4 control-label">Email Address <span>*</span></label>
 									<div class="col-sm-4">
 										<input type="text" class="form-control" name="receive_email" value="<?php echo $setting['receive_email']; ?>">
 									</div>
 								</div>
 								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Password <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="password" class="form-control" name="receive_password" value="<?php echo $setting['receive_password']; ?>">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Protocol <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="protocol" value="<?php echo $setting['protocol']; ?>">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">SMTP HOST <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="smtp_host" value="<?php echo $setting['smtp_host']; ?>">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">SMTP PORT <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="smtp_port" value="<?php echo $setting['smtp_port']; ?>">
+									</div>
+								</div>
+								<div class="form-group" hidden="hidden">
 									<label for="" class="col-sm-4 control-label">Reset Password Email Subject <span>*</span></label>
 									<div class="col-sm-4">
 										<input type="text" class="form-control" name="reset_password_email_subject" value="<?php echo $setting['reset_password_email_subject']; ?>">
 									</div>
 								</div>
+								<h3 class="seo-info">Template Email</h3>
 
 								<div class="form-group">
 									<label for="" class="col-sm-4 control-label"></label>
