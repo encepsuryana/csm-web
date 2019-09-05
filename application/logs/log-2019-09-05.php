@@ -132,3 +132,15 @@ ERROR - 2019-09-05 13:33:38 --> 404 Page Not Found!: Public/js
 ERROR - 2019-09-05 13:46:17 --> 404 Page Not Found!: Public/css
 ERROR - 2019-09-05 13:47:39 --> 404 Page Not Found!: Public/css
 ERROR - 2019-09-05 13:50:39 --> 404 Page Not Found!: Public/css
+ERROR - 2019-09-05 14:00:26 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
+ERROR - 2019-09-05 14:00:26 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
+ERROR - 2019-09-05 14:00:26 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
+ERROR - 2019-09-05 14:00:26 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
+ERROR - 2019-09-05 14:00:26 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
+ERROR - 2019-09-05 14:00:27 --> 404 Page Not Found!: admin/%3Cdiv%20style=/index
+ERROR - 2019-09-05 14:03:39 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
+ERROR - 2019-09-05 14:03:39 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
+ERROR - 2019-09-05 14:03:39 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
+ERROR - 2019-09-05 14:03:39 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
+ERROR - 2019-09-05 14:03:39 --> Severity: Notice --> Undefined index: banner C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 144
+ERROR - 2019-09-05 14:03:40 --> 404 Page Not Found!: admin/%3Cdiv%20style=/index

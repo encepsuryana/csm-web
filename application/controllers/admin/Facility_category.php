@@ -159,13 +159,9 @@ class Facility_category extends CI_Controller
 				$result1 = $this->Model_facility_category->show_facility_by_id($row['id']);
 				foreach ($result1 as $row1) {
 					$photo = $row1['photo'];
-					$banner = $row1['banner'];
 				}
 				if($photo!='') {
 					unlink('./public/uploads/'.$photo);
-				}
-				if($banner!='') {
-					unlink('./public/uploads/'.$banner);
 				}
 				$result1 = $this->Model_facility_category->show_facility_photo_by_facility_id($row['id']);
 				foreach ($result1 as $row1) {

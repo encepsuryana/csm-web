@@ -159,13 +159,9 @@ class Portfolio_category extends CI_Controller
 				$result1 = $this->Model_portfolio_category->show_portfolio_by_id($row['id']);
 				foreach ($result1 as $row1) {
 					$photo = $row1['photo'];
-					$banner = $row1['banner'];
 				}
 				if($photo!='') {
 					unlink('./public/uploads/'.$photo);
-				}
-				if($banner!='') {
-					unlink('./public/uploads/'.$banner);
 				}
 				$result1 = $this->Model_portfolio_category->show_portfolio_photo_by_portfolio_id($row['id']);
 				foreach ($result1 as $row1) {

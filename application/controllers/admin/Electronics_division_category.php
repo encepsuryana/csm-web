@@ -159,13 +159,9 @@ class Electronics_division_category extends CI_Controller
 				$result1 = $this->Model_electronics_division_category->show_electronics_division_by_id($row['id']);
 				foreach ($result1 as $row1) {
 					$photo = $row1['photo'];
-					$banner = $row1['banner'];
 				}
 				if($photo!='') {
 					unlink('./public/uploads/'.$photo);
-				}
-				if($banner!='') {
-					unlink('./public/uploads/'.$banner);
 				}
 				$result1 = $this->Model_electronics_division_category->show_electronics_division_photo_by_electronics_division_id($row['id']);
 				foreach ($result1 as $row1) {

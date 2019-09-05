@@ -139,12 +139,6 @@ if(!$this->session->userdata('id')) {
 															</div>
 														</div>
 														<div class="rTableRow">
-															<div class="rTableHead"><strong>Banner</strong></div>
-															<div class="rTableCell">
-																<img src="<?php echo base_url().'public/uploads/'.$row['banner']; ?>" alt="" style="width:120px;">
-															</div>
-														</div>
-														<div class="rTableRow">
 															<div class="rTableHead"><strong>Other Photos</strong></div>
 															<div class="rTableCell">
 																<?php

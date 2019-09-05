@@ -167,7 +167,6 @@ class News_category extends CI_Controller
 			$result = $this->Model_news_category->getData1($id);
 			foreach ($result as $row) {			
 				unlink('./public/uploads/'.$row['photo']);
-				unlink('./public/uploads/'.$row['banner']);
 			}
 			$this->Model_news_category->delete($id);
 			$this->Model_news_category->delete1($id);
