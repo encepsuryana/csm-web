@@ -75,8 +75,6 @@ if(!$this->session->userdata('id')) {
       </div>
 
     </div>
-
-
   </section>
 <?php } else { ?>
   <div class="forbiden">

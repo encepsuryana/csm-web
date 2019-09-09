@@ -19,9 +19,8 @@ if(!$this->session->userdata('id')) {
 
 		<div class="row">
 			<div class="col-md-12">
-				<div class="box box-info  b-box">
-
-					<div class="box-body table-responsive">
+				<div class="box box-info b-box">
+					<div class="box-body table-responsive" style="overflow-x: hidden;">
 						<table id="example1" class="table table-bordered table-striped">
 							<thead>
 								<tr>
@@ -31,6 +30,7 @@ if(!$this->session->userdata('id')) {
 									<th>Post</th>
 									<th>Title</th>
 									<th>Category</th>
+									<th>Total Views</th>
 									<th>Action</th>
 								</tr>
 							</thead>
@@ -52,6 +52,9 @@ if(!$this->session->userdata('id')) {
 										<td><?php echo $row['news_title']; ?></td>
 										<td>
 											<?php echo $row['category_name']; ?>
+										</td>
+										<td>
+											<?php echo $row['total_view']; ?>
 										</td>
 										<td>										
 											<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>

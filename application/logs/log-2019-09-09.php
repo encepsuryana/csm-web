@@ -129,3 +129,12 @@ ERROR - 2019-09-09 16:27:19 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-09 16:46:44 --> 404 Page Not Found: 
 ERROR - 2019-09-09 16:50:57 --> Severity: error --> Exception: syntax error, unexpected ''admin/login);' (T_CONSTANT_ENCAPSED_STRING), expecting ')' C:\xampp\htdocs\csm-web\application\controllers\admin\Login.php 74
 ERROR - 2019-09-09 16:56:39 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-09 17:31:25 --> Severity: Notice --> Undefined property: News::$news_model C:\xampp\htdocs\csm-web\application\controllers\News.php 91
+ERROR - 2019-09-09 17:31:25 --> Severity: error --> Exception: Call to a member function update_counter() on null C:\xampp\htdocs\csm-web\application\controllers\News.php 91
+ERROR - 2019-09-09 17:34:05 --> Severity: Notice --> Undefined variable: news C:\xampp\htdocs\csm-web\application\views\admin\view_dashboard.php 118
+ERROR - 2019-09-09 17:34:05 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\admin\view_dashboard.php 118
+ERROR - 2019-09-09 17:35:31 --> Severity: Notice --> Undefined variable: news C:\xampp\htdocs\csm-web\application\views\admin\view_dashboard.php 101
+ERROR - 2019-09-09 17:35:31 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\admin\view_dashboard.php 101
+ERROR - 2019-09-09 17:36:21 --> Severity: Notice --> Undefined property: Dashboard::$Model_news C:\xampp\htdocs\csm-web\application\controllers\admin\Dashboard.php 23
+ERROR - 2019-09-09 17:36:21 --> Severity: error --> Exception: Call to a member function show() on null C:\xampp\htdocs\csm-web\application\controllers\admin\Dashboard.php 23
+ERROR - 2019-09-09 17:39:04 --> Severity: Notice --> Undefined index: total_view C:\xampp\htdocs\csm-web\application\views\admin\view_dashboard.php 118

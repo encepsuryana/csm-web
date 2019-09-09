@@ -74,8 +74,21 @@ class News extends CI_Controller {
 		$header['electronics_division'] = $this->Model_news->get_electronics_division_data();
 		$header['electronics_division_category'] = $this->Model_news->get_electronics_division_category();
 
+		$this->add_count($slug);
 		$this->load->view('view_header',$header);
 		$this->load->view('view_news_detail',$data);
 		$this->load->view('view_footer');
+	}
+
+	function add_count($slug)
+	{
+        $this->load->helper('cookie');
+        $check_visitor = $this->input->cookie(urldecode($slug), FALSE);
+        $ip = $this->input->ip_address();
+        if ($check_visitor == false) {
+			$cookie = array("name" => urldecode($slug), "value" => "$ip", "expire" => time() + 7200, "secure" => false);
+			$this->input->set_cookie($cookie);
+			$this->Model_news->update_counter(urldecode($slug));
+		}
 	}
 }

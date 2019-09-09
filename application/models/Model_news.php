@@ -14,6 +14,17 @@ class Model_news extends CI_Model
         $query = $this->db->query("SELECT * from tbl_news ORDER BY heading DESC");
         return $query->result_array();
     }
+    
+    function update_counter($slug)
+    {
+        //return current article views
+        $this->db->where('post_slug', urldecode($slug));
+        $this->db->select('total_view'); $count = $this->db->get('tbl_news')->row();
+        // then increase by one
+        $this->db->where('post_slug', urldecode($slug));
+        $this->db->set('total_view', ($count->total_view + 1));
+        $this->db->update('tbl_news');
+    }
 
     public function get_news_detail($slug) {
         $sql = "SELECT
@@ -34,6 +45,7 @@ class Model_news extends CI_Model
         $query = $this->db->query($sql,array($slug));
         return $query->first_row('array');
     }
+
 
     public function get_total_news()
     {
@@ -105,10 +117,10 @@ class Model_news extends CI_Model
     public function get_electronics_division_data()
     {
         $sql = "SELECT * 
-                FROM tbl_electronics_division t1
-                JOIN tbl_electronics_division_category t2
-                ON t1.category_id = t2.category_id
-                ORDER BY t1.id ASC";
+        FROM tbl_electronics_division t1
+        JOIN tbl_electronics_division_category t2
+        ON t1.category_id = t2.category_id
+        ORDER BY t1.id ASC";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
