@@ -26,7 +26,7 @@ if(!$this->session->userdata('id')) {
 						<table id="example1" class="table table-bordered table-striped">
 							<thead>
 								<tr>
-									<th width="30">SL</th>
+									<th width="30">No</th>
 									<th>Photo</th>
 									<th width="100">Name</th>
 									<th width="100">Designation</th>

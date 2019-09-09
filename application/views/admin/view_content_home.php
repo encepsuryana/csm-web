@@ -23,7 +23,7 @@ if(!$this->session->userdata('id')) {
 					<table id="example1" class="table table-bordered table-striped">
 						<thead>
 							<tr>
-								<th>SL</th>
+								<th>No</th>
 								<th>Img Background</th>
 								<th>Icon</th>
 								<th>Title</th>
