@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 05 Sep 2019 pada 11.27
+-- Waktu pembuatan: 09 Sep 2019 pada 06.01
 -- Versi server: 10.3.16-MariaDB
 -- Versi PHP: 7.3.7
 
@@ -326,7 +326,7 @@ INSERT INTO `tbl_language` (`id`, `name`, `eng`, `idn`) VALUES
 (20, 'READ_MORE', 'Read More', 'Selengkapnya'),
 (21, 'POSTED_ON', 'Posted On:', 'Posting pada:'),
 (22, 'ADMIN', 'Admin', 'Admin'),
-(23, 'SERVICES', 'Services', 'Jasa'),
+(23, 'SERVICES', 'Services', 'Layanan Kami'),
 (24, 'ALL', 'All', 'Semua'),
 (26, 'PROJECTS', 'Project', 'Proyek'),
 (27, 'DESCRIPTION', 'Description', 'Deskripsi'),
@@ -372,7 +372,8 @@ INSERT INTO `tbl_language` (`id`, `name`, `eng`, `idn`) VALUES
 (68, 'PRODUCT_HOME', 'Our Featured Products', 'Produk Unggulan Kami'),
 (69, 'OUR_PARTNER', 'Our Partner', 'Partner Kami'),
 (70, 'OUR_FUTURE_PRODUCT', 'Our Future Product', 'Produk Unggulan Kami\r\n'),
-(71, 'INSTITUTE', 'Institute / Company', 'Institut / Perusahaan');
+(71, 'INSTITUTE', 'Institute / Company', 'Institut / Perusahaan'),
+(72, 'HAVE_A_MORE_QUETIONS', 'Have more questions? Just Contact Us', 'Punya pertanyaan lain? Hubungi Kami');
 
 -- --------------------------------------------------------
 
@@ -887,7 +888,7 @@ CREATE TABLE `tbl_settings` (
 --
 
 INSERT INTO `tbl_settings` (`id`, `logo`, `logo2`, `logo_admin`, `favicon`, `counter_bg`, `login_bg`, `footer_copyright`, `footer_address`, `footer_phone`, `footer_working_hour`, `footer_address_icon`, `footer_phone_icon`, `footer_working_hour_icon`, `footer_about`, `top_bar_email`, `top_bar_phone`, `contact_map_iframe`, `receive_email`, `receive_password`, `protocol`, `smtp_host`, `smtp_port`, `reset_password_email_subject`, `total_recent_post`, `total_popular_post`, `total_recent_post_home`, `total_product_post`, `theme_color_1`, `theme_color_2`, `counter1_text`, `counter1_value`, `counter2_text`, `counter2_value`, `counter3_text`, `counter3_value`, `counter4_text`, `counter4_value`, `counter_status`, `banner`, `content_home_title`, `content_home_subtitle`, `content_home_status`, `service_title`, `service_subtitle`, `service_status`, `facility_title`, `facility_subtitle`, `facility_status`, `portfolio_title`, `portfolio_subtitle`, `portfolio_status`, `team_title`, `team_subtitle`, `team_status`, `testimonial_title`, `testimonial_subtitle`, `testimonial_status`, `faq_title`, `faq_subtitle`, `faq_status`, `gallery_title`, `gallery_subtitle`, `gallery_status`, `product_title`, `product_subtitle`, `product_status`, `recent_post_title`, `recent_post_subtitle`, `recent_post_status`, `partner_title`, `partner_subtitle`, `partner_status`) VALUES
-(1, 'logo.png', 'logo2.png', 'logo_admin.png', 'favicon.png', 'counter_bg.JPG', 'login_bg.png', 'Copyright © 2019 | CV. Cipta Sinergi Manufacturing', 'Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512', '(022) 6647945', 'Monday - Friday (8:00 AM - 5:00 PM)', 'footer_address_icon.png', 'footer_phone_icon.png', 'footer_working_hour_icon.png', '', 'marketing@ciptasinergi.com', '(022) 6647945', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.177204490785!2d107.551033!3d-6.8552849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x602a56a5b8d7e0cc!2sCV.+Cipta+Sinergi+Manufacturing!5e0!3m2!1sid!2sid!4v1565082522509!5m2!1sid!2sid\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'encep.suryanajr@gmail.com', 'Password', 'smtp', 'ssl://smtp.gmail.com', '465', 'Password Reset Request - www.ciptasinergi.com', 4, 4, 10, 7, '134595', 'FFFFFF', 'Employee\'s', 50, 'Project Finish', 1200, 'Projects On-going', 800, 'Award\'s', 1200, '', 'banner.png', 'WHY CHOOSE US?', '', 'Show', 'SERVICES', '', 'Show', 'FACILITY', '', 'Show', 'PORTFOLIO', '', 'Show', 'MEET WITH OUR TEAM', '', 'Show', 'WHAT A CLIENT SAY', '', 'Show', 'Have more question ? Just Contact Us', '', 'Show', 'PHOTO GALLERY', '', 'Show', 'Our Featured Products', 'Gallery Produk Unggunal Kami', 'Show', 'LATEST NEWS', '', 'Show', 'OUR PARTNER', '', 'Show');
+(1, 'logo.png', 'logo2.png', 'logo_admin.png', 'favicon.png', 'counter_bg.JPG', 'login_bg.png', 'Copyright © 2019 | CV. Cipta Sinergi Manufacturing', 'Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512', '(022) 6647945', 'Monday - Friday (8:00 AM - 5:00 PM)', 'footer_address_icon.png', 'footer_phone_icon.png', 'footer_working_hour_icon.png', '', 'marketing@ciptasinergi.com', '(022) 6647945', '<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.177204490785!2d107.551033!3d-6.8552849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x602a56a5b8d7e0cc!2sCV.+Cipta+Sinergi+Manufacturing!5e0!3m2!1sid!2sid!4v1565082522509!5m2!1sid!2sid\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'encep.suryanajr@gmail.com', 'Bee9509*#', 'smtp', 'ssl://smtp.gmail.com', '465', 'Password Reset Request - www.ciptasinergi.com', 4, 4, 10, 7, '134595', 'FFFFFF', 'Employee\'s', 50, 'Project Finish', 1200, 'Projects On-going', 800, 'Award\'s', 1200, '', 'banner.png', 'WHY CHOOSE US?', '', 'Show', 'SERVICES', '', 'Show', 'FACILITY', '', 'Show', 'PORTFOLIO', '', 'Show', 'MEET WITH OUR TEAM', '', 'Show', 'WHAT A CLIENT SAY', '', 'Show', 'Have more question ? Just Contact Us', '', 'Show', 'PHOTO GALLERY', '', 'Show', 'Our Featured Products', 'Gallery Produk Unggunal Kami', 'Show', 'LATEST NEWS', '', 'Show', 'OUR PARTNER', '', 'Show');
 
 -- --------------------------------------------------------
 
@@ -1310,7 +1311,7 @@ ALTER TABLE `tbl_facility_photo`
 -- AUTO_INCREMENT untuk tabel `tbl_language`
 --
 ALTER TABLE `tbl_language`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_news`
