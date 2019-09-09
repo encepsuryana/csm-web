@@ -116,7 +116,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="caption-product-area gridGallery">
 	<div class="container">
-		<h3><?php echo $setting['service_title']; ?></h3>
+		<h3><?php echo SERVICES; ?></h3>
 		<div class="row-product">
 
 			<section class="csmpublic-home">
@@ -155,7 +155,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="caption-product-area gridGallery">
 	<div class="container recent-works">
 		<h3>
-			<?php echo $setting['facility_title']; ?>
+			<?php echo FACILITY; ?>
 			<div class="recent-menu">
 				<ul>
 					<li data-filter="all"><?php echo ALL; ?></li>
@@ -339,7 +339,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<div class="col-md-5 col-sm-5">
 			<div class="contact-main-home">
-				<h4>Have more question ? Just Contact Us</h4>
+				<h4><?php echo HAVE_A_MORE_QUETIONS; ?></h4>
 				<div class="contact-button-home">
 					<a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a>
 				</div>

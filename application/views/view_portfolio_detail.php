@@ -101,7 +101,7 @@
 			<div class="col-lg-3 col-md-4">
 				<div class="sidebar">
 					<div class="sidebar-item category">
-						<h3><?php echo PROJECTS; ?></h3>
+						<h3><?php echo PORTFOLIO; ?></h3>
 						<ul>
 							<?php
 							foreach ($portfolio_order_by_name as $row) {
