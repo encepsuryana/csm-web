@@ -95,7 +95,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					$i++;
 					if($i>$setting['total_product_post']) {break;}
 					?>
-					<div class="<?php echo $row['product_style']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['product_name']; ?>)">
+					<div class="<?php echo $row['product_style']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>)">
 						<div class="toggleIcon">
 							<h4><?php echo $row['product_caption']; ?></h4>							
 						</div>

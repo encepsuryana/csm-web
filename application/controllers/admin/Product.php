@@ -75,7 +75,7 @@ class Product extends CI_Controller
 					}
 
 					$final_name = 'product-'.$ai_id.'.'.$ext;
-					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
+					move_uploaded_file( $path_tmp, './public/uploads/products/'.$final_name );
 
 					$form_data = array(
 						'product_caption' => $_POST['product_caption'],
@@ -171,10 +171,10 @@ class Product extends CI_Controller
 					}
 					else {
 
-						unlink('./public/uploads/'.$data['product']['product_name']);
+						unlink('./public/uploads/products/'.$data['product']['product_name']);
 
 						$final_name = 'product-'.$id.'.'.$ext;
-						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
+						move_uploaded_file( $path_tmp, './public/uploads/products/'.$final_name );
 
 						$form_data = array(
 							'product_caption' => $_POST['product_caption'],
@@ -225,7 +225,7 @@ class Product extends CI_Controller
 
 			$data['product'] = $this->Model_product->getData($id);
 			if($data['product']) {
-				unlink('./public/uploads/'.$data['product']['product_name']);
+				unlink('./public/uploads/products/'.$data['product']['product_name']);
 			}
 
 			$this->Model_product->delete($id);

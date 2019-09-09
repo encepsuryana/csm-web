@@ -142,9 +142,13 @@ section {
 	margin: 20px 0;
 }
 
-.electronic-desc p {
+.electronic-desc p,
+.electronic-desc ul li {
 	text-transform: capitalize;
 	padding: 0 30px;
+}
+.electronic-desc ul li:marker {
+	margin-left: 100px;
 }
 .electronic-desc img {
 	width: 250px;

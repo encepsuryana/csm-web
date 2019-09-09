@@ -519,7 +519,7 @@
 													$i++;
 													if($i>1) {break;}
 													?>
-													<div class="product-menu" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['product_name']; ?>);">
+													<div class="product-menu" style="background-image: url(<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>);">
 													</div>
 												</div>
 												<div class="col-md-8" style="padding: 0;">

@@ -66,6 +66,7 @@ class Login extends CI_Controller
                         }
                     } else {
                         $data['error'] = 'Error! Invalid Captcha, you are not human.';
+                        redirect(base_url().'admin/login');
                     }
                 }
             }

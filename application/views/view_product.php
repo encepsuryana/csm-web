@@ -19,7 +19,7 @@
 				<?php
 				foreach ($product as $row) {
 					?>
-					<div class="<?php echo $row['product_style']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['product_name']; ?>)">
+					<div class="<?php echo $row['product_style']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>)">
 						<div class="toggleIcon">
 							<h4><?php echo $row['product_caption']; ?></h4>							
 						</div>

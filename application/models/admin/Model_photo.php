@@ -13,7 +13,7 @@ class Model_photo extends CI_Model
     }
 	
     function show() {
-        $sql = "SELECT * FROM tbl_photo ORDER BY photo_id ASC";
+        $sql = "SELECT * FROM tbl_photo ORDER BY photo_id DESC";
         $query = $this->db->query($sql);
         return $query->result_array();
     }

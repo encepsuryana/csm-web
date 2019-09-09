@@ -13,7 +13,7 @@ class Model_product extends CI_Model
     }
 	
     function show() {
-        $sql = "SELECT * FROM tbl_product ORDER BY product_id ASC";
+        $sql = "SELECT * FROM tbl_product ORDER BY product_id DESC";
         $query = $this->db->query($sql);
         return $query->result_array();
     }

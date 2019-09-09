@@ -44,7 +44,7 @@ if(!$this->session->userdata('id')) {
               <tr>
                <td><?php echo $i; ?></td>
                <td>
-                <img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['product_name']; ?>" width="140">
+                <img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>" width="140">
               </td>
               <td><?php echo $row['product_caption']; ?></td>
               <td><?php echo $row['product_desc']; ?></td>
