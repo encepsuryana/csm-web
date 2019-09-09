@@ -19,6 +19,9 @@ body,
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
+.table-responsive {
+	overflow-x: hidden;
+}
 .forbiden {
 	height: 100%;
 	width: 100%;
