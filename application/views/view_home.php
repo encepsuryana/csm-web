@@ -95,12 +95,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					$i++;
 					if($i>$setting['total_product_post']) {break;}
 					?>
-					<div class="<?php echo $row['product_style']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>)">
+					<div onclick="openModal();currentSlide(<?php echo $i ?>)" class="<?php echo $row['product_style']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>)">
 						<div class="toggleIcon">
-							<h4><?php echo $row['product_caption']; ?></h4>							
-						</div>
-						<div class="col-sm-6 captionBox hiddenText">
-							<p><?php echo $row['product_desc']; ?></p>
+							<h4><?php echo $row['product_caption']; ?></h4>						
 						</div>
 					</div>
 					<?php
@@ -108,6 +105,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				?>
 				<div class="all-product">
 					<a target="_blank" href="<?php echo base_url(); ?>product"><?php echo SEE_MORE; ?> <?php echo OUR_PRODUCT; ?></a>
+				</div>
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+						<?php
+						foreach ($product as $row) {
+							?>
+							<div class="mySlides">
+								<div class="product-caption">
+									<h4><?php echo $row['product_caption']; ?></h4>
+								</div>
+								<div class="product-desc">
+									<p><?php echo $row['product_desc']; ?></p>
+								</div>
+								<img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>" style="width:100%">
+							</div>
+						<?php }	?>
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -237,113 +254,112 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 	</div>
 </div>
-<script type="text/javascript">
-	$(document).ready(function() {
+<script>
+	function openModal() {
+		document.getElementById("myModal").style.display = "block";
+	}
 
-		$(".box").on("click", function() {
-			$(this).siblings().toggleClass("hidden");
-			$(this).toggleClass("full");
-			$(".product-nav").toggleClass("hiddenText");
-			$(".captionBox").toggleClass("hiddenText");
-			$(this).children().animate({
-				opacity: "1"
-			}, 500, function() {});
-		});
+	function closeModal() {
+		document.getElementById("myModal").style.display = "none";
+	}
 
-		if ($(window).width() < 768) {
-			$(".box").on("click", function() {
-				$("#gridGallery").toggleClass("mobileFunction");
-			});
-		}
+	var slideIndex = 1;
+	showSlides(slideIndex);
 
-		if ($(window).width() >= 768) {
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
 
-			$(".box").hover(function() {
-				$(this).siblings().toggleClass("opacity");
-			});
-		}
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
 
-		$(".horizontal").click(function() {
-			$(this).toggleClass("full");
-			$(".captionBox").toggleClass("hiddenText");
-			$(this).children().animate({
-				opacity: "1"
-			}, 500, function() {});
-		});
-
-		$(".horizontal").hover(function() {
-			$(this).siblings().toggleClass("opacity");
-		});
-	});
-</script>
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("demo");
+		var captionText = document.getElementById("caption");
+		if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += "active";
+				captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
 
 
-<div class="brand-area">
-	<div class="container">
-		<h3><?php echo OUR_PARTNER; ?></h3>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="brand-carousel owl-carousel">					
-					<?php
-					foreach ($partner as $row) {
-						?>
-						<div data-toggle="tooltip" data-placement="bottom" class="brand-item" title="<?php echo $row['name']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)"></div>
-						<?php
-					}
-					?>
+		<div class="brand-area">
+			<div class="container">
+				<h3><?php echo OUR_PARTNER; ?></h3>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="brand-carousel owl-carousel">					
+							<?php
+							foreach ($partner as $row) {
+								?>
+								<div data-toggle="tooltip" data-placement="bottom" class="brand-item" title="<?php echo $row['name']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)"></div>
+								<?php
+							}
+							?>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
 
 
-<div class="counterup-area pt-30 pb-60" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['counter_bg']; ?>)">
-	<div class="bg-counterup"></div>
-	<div class="container">
-		<div class="row">			
-			<div class="col-md-3 col-sm-6 counter-border">
-				<div class="counter-item">
-					<h2 class="counter"><?php echo $setting['counter1_value']; ?></h2>
-					<h4><?php echo $setting['counter1_text']; ?></h4>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 counter-border">
-				<div class="counter-item">
-					<h2 class="counter"><?php echo $setting['counter2_value']; ?></h2>
-					<h4><?php echo $setting['counter2_text']; ?></h4>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 counter-border">
-				<div class="counter-item">
-					<h2 class="counter"><?php echo $setting['counter3_value']; ?></h2>
-					<h4><?php echo $setting['counter3_text']; ?></h4>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 counter-border">
-				<div class="counter-item">
-					<h2 class="counter"><?php echo $setting['counter4_value']; ?></h2>
-					<h4><?php echo $setting['counter4_text']; ?></h4>
+		<div class="counterup-area pt-30 pb-60" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['counter_bg']; ?>)">
+			<div class="bg-counterup"></div>
+			<div class="container">
+				<div class="row">			
+					<div class="col-md-3 col-sm-6 counter-border">
+						<div class="counter-item">
+							<h2 class="counter"><?php echo $setting['counter1_value']; ?></h2>
+							<h4><?php echo $setting['counter1_text']; ?></h4>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 counter-border">
+						<div class="counter-item">
+							<h2 class="counter"><?php echo $setting['counter2_value']; ?></h2>
+							<h4><?php echo $setting['counter2_text']; ?></h4>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 counter-border">
+						<div class="counter-item">
+							<h2 class="counter"><?php echo $setting['counter3_value']; ?></h2>
+							<h4><?php echo $setting['counter3_text']; ?></h4>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 counter-border">
+						<div class="counter-item">
+							<h2 class="counter"><?php echo $setting['counter4_value']; ?></h2>
+							<h4><?php echo $setting['counter4_text']; ?></h4>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
 
-<div class="container map-main-home">
-	<div class="map-home">
-		<div class="col-md-7 col-sm-7">
-			<div class="home-maps-main">
-				<?php echo $setting['contact_map_iframe']; ?>
-			</div>
-		</div>
-		<div class="col-md-5 col-sm-5">
-			<div class="contact-main-home">
-				<h4><?php echo HAVE_A_MORE_QUETIONS; ?></h4>
-				<div class="contact-button-home">
-					<a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a>
+		<div class="container map-main-home">
+			<div class="map-home">
+				<div class="col-md-7 col-sm-7">
+					<div class="home-maps-main">
+						<?php echo $setting['contact_map_iframe']; ?>
+					</div>
+				</div>
+				<div class="col-md-5 col-sm-5">
+					<div class="contact-main-home">
+						<h4><?php echo HAVE_A_MORE_QUETIONS; ?></h4>
+						<div class="contact-button-home">
+							<a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>

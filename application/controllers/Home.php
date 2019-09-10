@@ -30,7 +30,6 @@ class Home extends CI_Controller {
 		$header['facility_category'] = $this->Model_home->get_facility_category();
 		$header['portfolio_category'] = $this->Model_home->get_portfolio_category();
 		$header['portfolio'] = $this->Model_home->get_portfolio_data();
-		$header['team'] = $this->Model_home->get_team_member_data();
 		$header['testimonial'] = $this->Model_home->get_testimonial_data();
 		$header['testimonial_photo'] = $this->Model_home->get_testimonial_photo();
 		$header['gallery'] = $this->Model_home->get_gallery_data();

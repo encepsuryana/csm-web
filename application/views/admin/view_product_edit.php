@@ -71,7 +71,7 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Existing Photo</label>
 							<div class="col-sm-6" style="padding-top:6px;">
-								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $product['product_name']; ?>" class="existing-photo" style="width:300px;">
+								<img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $product['product_name']; ?>" class="existing-photo" style="width:300px;">
 							</div>
 						</div>
 						<div class="form-group">

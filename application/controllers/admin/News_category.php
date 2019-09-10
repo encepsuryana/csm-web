@@ -157,7 +157,6 @@ class News_category extends CI_Controller
 	public function delete($id) 
 	{
 		if ($this->session->userdata('role') == 'admin') {
-		// If there is no designation in this id, then redirect
 			$tot = $this->Model_news_category->news_category_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/news-category');

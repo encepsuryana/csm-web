@@ -60,15 +60,7 @@ class Model_home extends CI_Model
         $query = $this->db->query("SELECT * from tbl_portfolio");
         return $query->result_array();
     }
-    public function get_team_member_data()
-    {
-        $query = $this->db->query("SELECT * 
-            FROM tbl_team_member t1
-            JOIN tbl_designation t2
-            ON t1.designation_id = t2.designation_id
-            ORDER BY t1.id ASC");
-        return $query->result_array();
-    }
+
     public function get_testimonial_data()
     {
         $query = $this->db->query("SELECT * from tbl_testimonial ORDER BY id ASC");

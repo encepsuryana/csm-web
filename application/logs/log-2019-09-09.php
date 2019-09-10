@@ -138,3 +138,8 @@ ERROR - 2019-09-09 17:35:31 --> Severity: Warning --> Invalid argument supplied 
 ERROR - 2019-09-09 17:36:21 --> Severity: Notice --> Undefined property: Dashboard::$Model_news C:\xampp\htdocs\csm-web\application\controllers\admin\Dashboard.php 23
 ERROR - 2019-09-09 17:36:21 --> Severity: error --> Exception: Call to a member function show() on null C:\xampp\htdocs\csm-web\application\controllers\admin\Dashboard.php 23
 ERROR - 2019-09-09 17:39:04 --> Severity: Notice --> Undefined index: total_view C:\xampp\htdocs\csm-web\application\views\admin\view_dashboard.php 118
+ERROR - 2019-09-09 17:54:39 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-09 17:56:37 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-09 17:56:49 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-09 17:57:55 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-09 17:59:33 --> 404 Page Not Found: Public/admin

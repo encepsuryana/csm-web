@@ -280,21 +280,6 @@
 								</ul>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'admin/designation/add')||($final_url_other == 'admin/designation')||($final_url_other == 'admin/designation/edit')||($final_url_other == 'admin/team-member/add')||($final_url_other == 'admin/team-member')||($final_url_other == 'admin/team-member/edit') ) {echo 'active';} ?>">
-								<a href="#">
-									<i class="fa fa-users"></i>
-									<span>Organization</span>
-									<span class="pull-right-container">
-										<i class="fa fa-angle-left pull-right"></i>
-									</span>
-								</a>
-								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/designation"><i class="fa fa-user-md"></i> Designation</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/team-member"><i class="fa fa-user"></i> Team Member</a></li>
-								</ul>
-							</li>
-
-
 							<li class="treeview <?php if( ($final_url_other == 'admin/testimonial/add')||($final_url_other == 'admin/testimonial')||($final_url_other == 'admin/testimonial/edit')||($final_url_other == 'admin/testimonial/main-photo') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-user-plus"></i>
@@ -450,21 +435,6 @@
 								</ul>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'hrd/designation/add')||($final_url_other == 'hrd/designation')||($final_url_other == 'hrd/designation/edit')||($final_url_other == 'hrd/team-member/add')||($final_url_other == 'hrd/team-member')||($final_url_other == 'hrd/team-member/edit') ) {echo 'active';} ?>">
-								<a href="#">
-									<i class="fa fa-users"></i>
-									<span>Team Member</span>
-									<span class="pull-right-container">
-										<i class="fa fa-angle-left pull-right"></i>
-									</span>
-								</a>
-								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/designation"><i class="fa fa-user-md"></i> Designation</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/team-member"><i class="fa fa-user"></i> Team Member</a></li>
-								</ul>
-							</li>
-
-
 							<li class="treeview <?php if(($final_url_other == 'hrd/testimonial')) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-user-plus"></i>
@@ -615,20 +585,6 @@
 								<ul class="treeview-menu">
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/designation"><i class="fa fa-user-md"></i> Designation</a></li>
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/team-member"><i class="fa fa-user"></i> Team Member</a></li>
-								</ul>
-							</li>
-
-							<li class="treeview <?php if( ($final_url_other == 'staff/testimonial/add')||($final_url_other == 'staff/testimonial')||($final_url_other == 'staff/testimonial/edit')||($final_url_other == 'staff/testimonial/main-photo') ) {echo 'active';} ?>">
-								<a href="#">
-									<i class="fa fa-user-plus"></i>
-									<span>Testimonial</span>
-									<span class="pull-right-container">
-										<i class="fa fa-angle-left pull-right"></i>
-									</span>
-								</a>
-								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/testimonial"><i class="fa fa-comments-o"></i>Testimonial</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/testimonial/main-photo"><i class="fa fa-picture-o"></i> Main Photo</a></li>
 								</ul>
 							</li>
 

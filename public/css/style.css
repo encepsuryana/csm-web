@@ -73,41 +73,141 @@ section {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
-.full {
-	float: none;
-	height: 600px !important;
-	width: 1170px;
+.row > .column {
+	padding: 0 8px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
 	position: relative;
-	z-index: 2;
-	background-position: top center;
-	background-size: cover;
-	top: -100px;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
 }
 
-.full:hover {
-	transform: scale(1);
-	box-shadow: none;
-}
-
-.opacity {
-	opacity: .8;
-}
-
-.captionBox {
-	background-color: #134595cc;
-	bottom: 50px;
-	color: white;
-	left: 50%;
-	padding: 25px;
+/* The Close Button */
+.close {
+	color: black;
 	position: absolute;
-	opacity: 0;
-	border-right: 10px solid #fff;
+	top: 15px;
+	right: 15px;
+	font-size: 35px;
+	font-weight: normal;
+	background: white;
+	padding: 0 10px;
+	padding-bottom: 5px;
 }
 
-.captionBox p {
-	font-size: 14px;
-	font-weight:300;
-	margin: 0;
+.close:hover,
+.close:focus {
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	background: transparent;
+}
+
+.mySlides {
+	display: none;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	transition: 0.6s ease;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.next {
+	right: 0;
+}
+.prev:hover,
+.next:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+	color: rgba(0, 0, 0, 0.8);;
+}
+
+.product-caption h4 {
+	color: #f2f2f2;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+	background: #134595cc;
+	border-left: 10px solid #fff;
+	margin: 15px 0;
+}
+
+.product-desc p {
+	color: #f2f2f2;
+	padding: 10px;
+	position: absolute;
+	bottom: 20px;
+	background: #134595cc;
+	border-right: 10px solid #fff;
+	text-align: justify;
+	right: 0;
+	width: 50%;
+}
+
+.caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+}
+
+.demo {
+	opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+	opacity: 1;
+}
+
+img.hover-shadow {
+	transition: 0.3s;
+}
+
+.hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .transition {
@@ -171,21 +271,7 @@ section {
 	padding: 10px 20px;
 }
 
-.box.full .toggleIcon {
-	background-color: #134595;
-	top: 26px;
-	height: 36px;
-	left: 50px;
-	opacity: 0;
-	padding: 0;
-	position: absolute;
-	width: 36px;
-	border-radius: 20px;
-	border: 0;
-}
-.box.full .toggleIcon h4 {
-	width: 400px;
-}
+
 
 .box:hover .toggleIcon {
 	opacity: 1;
@@ -193,18 +279,8 @@ section {
 	transition: all 0.25s ease 0s;
 }
 
-.box.full .toggleIcon {
-	opacity: 1;
-	left: 50px;
-	top: 26px;
-	border-radius: 20px;
-	background-size: 55%;
-}
 
-.box.full .toggleIcon:hover {
-	background-color: #134595cc;
-	transition: all 0s ease 0;
-}
+
 
 .clear {
 	clear: both;
@@ -407,7 +483,7 @@ a:focus {
 	text-decoration: none;
 }
 a:hover{
-	color: #f8be2e;
+	color: #fff;
 }
 h1,
 h2,
@@ -615,8 +691,9 @@ img {
 }
 
 .header-contact li span {
-	margin-left: 8px;
+	margin-left: 5px;
 	cursor: help;
+	font-size: 12px;
 }
 
 /*Menu-Area*/
@@ -749,7 +826,8 @@ ul.nav-ciptasin li.current_page_item a {
 }
 
 ul.nav-ciptasin li a {
-	font-size: 12px;
+	font-size: 11px;
+	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
 	display: block;
@@ -795,8 +873,11 @@ ul.nav-ciptasin li:hover a {
 	height: auto;
 	margin-top: 0;
 	padding: 0;
+	border: none;
 	left: -300px;
 	transition: all 0.4s;
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, 0) !important;
+	border-top: 2px solid #f81c51 !important;
 }
 .nav-ciptasin .dropdown-menu.ciptasin-menu > li {
 	padding: 20px;
@@ -896,7 +977,6 @@ ul.nav-ciptasin li:hover a {
 	border: 0 !important;
 	text-align: right;
 	font-size: 14px;
-	font-weight: 700;
 	margin-bottom: 15px;
 }
 
@@ -4582,7 +4662,7 @@ ul.timeline li a:hover {
 	margin: auto;
 	display: block;
 	width: 80%;
-	max-width: 700px;
+	max-width: 800px;
 }
 
 #caption {
@@ -4604,23 +4684,6 @@ ul.timeline li a:hover {
 @keyframes zoom {
 	from {transform:scale(0)} 
 	to {transform:scale(1)}
-}
-
-.close {
-	position: absolute;
-	top: 15px;
-	right: 35px;
-	color: #f1f1f1;
-	font-size: 40px;
-	font-weight: bold;
-	transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-	color: #bbb;
-	text-decoration: none;
-	cursor: pointer;
 }
 
 @media only screen and (max-width: 700px){

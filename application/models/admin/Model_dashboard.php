@@ -15,12 +15,7 @@ class Model_dashboard extends CI_Model
         $query = $this->db->query($sql);
         return $query->num_rows();
     }
-    public function show_total_team_member()
-    {
-        $sql = 'SELECT * from tbl_team_member';
-        $query = $this->db->query($sql);
-        return $query->num_rows();
-    }
+
     public function show_total_portfolio()
     {
         $sql = 'SELECT * from tbl_portfolio';

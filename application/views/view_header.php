@@ -18,14 +18,14 @@
 	?>
 
 	<?php
-	if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='eng'))
+	if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn'))
 	{
 		foreach ($language as $lang) {
-			define($lang['name'], $lang['eng']);
+			define($lang['name'], $lang['idn']);
 		}
 	} else {
 		foreach ($language as $lang) {
-			define($lang['name'], $lang['idn']);
+			define($lang['name'], $lang['eng']);
 		}
 	}
 	
@@ -451,7 +451,6 @@
 										}?>
 									</span>
 								</a>
-
 								<ul class="dropdown-menu1">
 									<li>
 										<?php echo anchor ('language/change/eng','English');?>

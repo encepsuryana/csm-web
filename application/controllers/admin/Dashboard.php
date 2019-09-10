@@ -16,7 +16,6 @@ class Dashboard extends CI_Controller
 
 			$data['total_news_category'] = $this->Model_dashboard->show_total_news_category();
 			$data['total_news'] = $this->Model_dashboard->show_total_news();
-			$data['total_team_member'] = $this->Model_dashboard->show_total_team_member();
 			$data['total_portfolio'] = $this->Model_dashboard->show_total_portfolio();
 			$data['total_testimonial'] = $this->Model_dashboard->show_total_testimonial();
 			$data['total_slider'] = $this->Model_dashboard->show_total_slider();

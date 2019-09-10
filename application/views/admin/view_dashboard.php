@@ -36,16 +36,6 @@ if(!$this->session->userdata('id')) {
 
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="info-box">
-          <span class="info-box-icon bg-green"><i class="fa fa-users"></i></span>
-          <div class="info-box-content">
-            <span class="info-box-text">Total Team Members</span>
-            <span class="info-box-number"><?php echo $total_team_member; ?></span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <div class="info-box">
           <span class="info-box-icon bg-green"><i class="fa fa-list-alt"></i></span>
           <div class="info-box-content">
             <span class="info-box-text">Total Portfolios</span>
