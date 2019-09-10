@@ -1,11 +1,9 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
-	<div class="container bannder-table">
-		<div class="col-md-12">
+	<div class="container bannder-table" style="padding: 0;">
+		<div class="col-md-12" style="padding: 0;">
 			<div class="col-md-6">
-				<div class="banner-text">
-				</div>
 			</div>
-			<div class="col-md-6" style="padding-right: 0;">
+			<div class="col-md-6" style="padding: 0;">
 				<div class="banner-text">
 					<h1><?php echo ELECTRONICS_DIVISION; ?></h1>
 				</div>
@@ -16,21 +14,17 @@
 		<div class="row">
 			<?php if($electronics_division_desc['electronics_division_desc_photo']!=""): ?>
 				<div class="col-md-12">
+					<div class="image-electronic">
+						<img src="<?php echo base_url(); ?>public/uploads/<?php echo $electronics_division_desc['electronics_division_desc_photo']; ?>" alt="">
+					</div>	
 					<div class="electronic-desc">
-						<div class="col-md-9">
-							<h4>
-								<i class="fa fa-microchip" aria-hidden="true"></i>
-								<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>
-							</h4>
-							<p>
-								<?php echo $electronics_division_desc['electronics_division_desc_content']; ?>
-							</p>
-						</div>
-						<div class="col-md-3">
-							<div class="image-electronic">
-								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $electronics_division_desc['electronics_division_desc_photo']; ?>" alt="">
-							</div>
-						</div>
+						<h4>
+							<i class="fa fa-microchip" aria-hidden="true"></i>
+							<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>
+						</h4>
+						<p>
+							<?php echo $electronics_division_desc['electronics_division_desc_content']; ?>
+						</p>
 					</div>
 				</div>
 			<?php endif; ?>

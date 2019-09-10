@@ -1,47 +1,43 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
-		<div class="container bannder-table">
-		<div class="col-md-12">
+	<div class="container bannder-table" style="padding: 0;">
+		<div class="col-md-12" style="padding: 0;">
 			<div class="col-md-6">
-				<div class="banner-text">
-				</div>
 			</div>
-			<div class="col-md-6" style="padding-right: 0;">
+			<div class="col-md-6" style="padding: 0;">
 				<div class="banner-text">
 					<h1><?php echo NEWS; ?></h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container pt_20 pb_20">
-		<div class="col-md-12">
-			<div class="sidebar-item">
-				<div class="sidebar-item searchbar-item" style="float: right;">
-					<?php echo form_open(base_url().'search'); ?>
-					<div class="input-group" style="width: 300px;">
+	<div class="container pt_20 pb_20" style="padding: 0;">
+		<div class="sidebar-item">
+			<div class="sidebar-item searchbar-item" style="float: right;">
+				<?php echo form_open(base_url().'search'); ?>
+				<div class="input-group" style="width: 300px;">
+					<?php
+					$data = array(
+						'type'         => 'text',
+						'name'         => 'search_string',
+						'class'        => 'form-control',
+						'autocomplete' => 'off',
+						'placeholder'  => SEARCH_NEWS
+					);
+					echo form_input($data);
+					?>
+					<span class="input-group-btn">
 						<?php
 						$data = array(
-							'type'         => 'text',
-							'name'         => 'search_string',
-							'class'        => 'form-control',
-							'autocomplete' => 'off',
-							'placeholder'  => SEARCH_NEWS
+							'name'    => 'form1',
+							'class'   => 'btn btn-default',
+							'type'    => 'submit',
+							'content' => '<i class="fa fa-search"></i>'
 						);
-						echo form_input($data);
+						echo form_button($data);
 						?>
-						<span class="input-group-btn">
-							<?php
-							$data = array(
-								'name'    => 'form1',
-								'class'   => 'btn btn-default',
-								'type'    => 'submit',
-								'content' => '<i class="fa fa-search"></i>'
-							);
-							echo form_button($data);
-							?>
-						</span>
-					</div>
-					<?php echo form_close(); ?>
+					</span>
 				</div>
+				<?php echo form_close(); ?>
 			</div>
 		</div>	
 	</div>

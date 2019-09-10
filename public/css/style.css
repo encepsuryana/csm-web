@@ -233,6 +233,13 @@ img.hover-shadow {
 .image-electronic {
 	vertical-align: middle;
 }
+.image-electronic img {
+	width: 100%;
+	height: auto;
+	padding: 15px 0;
+	background-repeat: no-repeat;
+	background-image: center;
+}
 .electronic-desc {
 	padding: 10px;
 }
@@ -240,6 +247,7 @@ img.hover-shadow {
 .electronic-desc h4 {
 	text-transform: uppercase;
 	margin: 20px 0;
+	margin-top: 0;
 }
 
 .electronic-desc p,
@@ -459,8 +467,8 @@ img.hover-shadow {
 
 .bg-about {
 	text-align: justify;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 	background: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 hr {
 	margin-top: 0;
@@ -470,6 +478,11 @@ a {
 	text-decoration: none;
 }
 
+.lb-outerContainer,
+.lightbox .lb-image {
+	border: 0 !important;
+	border-radius: 0 !important;
+}
 a:focus {
 	outline: none;
 }
@@ -1009,6 +1022,8 @@ ul.nav-ciptasin li:hover a {
 	background-color: #fff;
 	z-index: 10000;
 	height: 62px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	
 }
 
 .sticky .logo {
@@ -2474,10 +2489,13 @@ span.page-numbers.current {
 	font-size: 14px;
 	margin: 0;
 	margin-bottom: 5px;
+	color: #8F8F8F;
 }
 
 .footer-contact-item li p {
 	margin-top: 5px;
+	color: #8F8F8F;
+
 }
 
 /*Footer-area*/
@@ -2539,39 +2557,6 @@ span.page-numbers.current {
 	display: none;
 }
 
-.footer-item.footer-link ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.footer-item.footer-link ul li {
-	vertical-align: top;
-	display: block;
-	padding-bottom: 0;
-}
-
-.footer-item.footer-link ul li a {
-	float: left;
-	width: 50%;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	text-decoration: none;
-}
-
-.footer-item.footer-recent ul li a {
-	text-decoration: none;
-	padding-left: 10px!important;
-}
-
-.footer-item.footer-recent ul li a:before {
-	position: absolute;
-	content: '\f0da';
-	font-family: fontawesome;
-	top: 0;
-	left: 0;
-}
-
 .footer-item li p {
 	font-size: 13px;
 	margin: 0;
@@ -2611,7 +2596,7 @@ span.page-numbers.current {
 /*Footer-Copyright*/
 
 .footer-copyrignt {
-	background: #0a1424;
+	background: #eee;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -2675,6 +2660,7 @@ span.page-numbers.current {
 
 .scroll-top:hover {
 	background: #f8be2e;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
 }
 
 /*Banner*/
