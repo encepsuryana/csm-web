@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 09 Sep 2019 pada 11.58
+-- Waktu pembuatan: 10 Sep 2019 pada 11.58
 -- Versi server: 10.3.16-MariaDB
 -- Versi PHP: 7.3.7
 
@@ -82,35 +82,6 @@ CREATE TABLE `tbl_content_home_company_profile` (
 
 INSERT INTO `tbl_content_home_company_profile` (`id`, `item_bg`) VALUES
 (1, 'Company_profile.pdf');
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `tbl_designation`
---
-
-CREATE TABLE `tbl_designation` (
-  `designation_id` int(11) NOT NULL,
-  `designation_name` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `tbl_designation`
---
-
-INSERT INTO `tbl_designation` (`designation_id`, `designation_name`) VALUES
-(1, 'Director'),
-(2, 'Manufacturing Team Leader'),
-(3, 'Commercial & Human Resources'),
-(4, 'Administration'),
-(5, 'PPIC & QC Manager'),
-(6, 'Manufacturing Manager'),
-(7, 'HRD & GA Manager'),
-(8, 'Finance & Purchase Manager'),
-(9, 'Marketing'),
-(10, 'CNC CADCAM Shop Section Head'),
-(11, 'Conventional Shop Section Head'),
-(12, 'Design Engineering Section Head');
 
 -- --------------------------------------------------------
 
@@ -404,7 +375,7 @@ CREATE TABLE `tbl_news` (
 --
 
 INSERT INTO `tbl_news` (`news_id`, `news_title`, `slug`, `news_content`, `news_short_content`, `news_date`, `photo`, `slug_news_category`, `total_view`, `comment`, `meta_title`, `meta_keyword`, `meta_description`, `user_update`, `post_slug`) VALUES
-(1, 'Open Recruitment Agust 2019', 'col-page col-sm-8 col-md-6', '<p>Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019, The requirements are as follows:</p><p><b>Criteria :</b></p><ol><li>Matching CAM design with 5 axis CNC machines for optimal.</li><li>Making CAM designs.</li><li>Able to work in teams and individually.</li></ol><p><b>Qualification<b> :</b></b></p><ol><li><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">Max age</span> <span title=\"\" class=\"\">35 years old, physically and mentally healthy</span></span></li><li>Having experience in the field of Programmer (CNC) ± 2 years specialized in Manufacturing Dies and CF</li><li>Experience using Mastercam & Powermill / other CAM design software</li><li>Experienced using a 5 axis CNC machine</li><li>Mastering 3D & 2D concepts</li><li>Able to work well together and good communication</li></ol><b>If you are personally we needed, please apply for an application to participate in the selection stage.<br>HRD Section</b><p><b><b>CV. Cipta Sinergi Manufacturing</b></b></p><p><b><b>Jl. Kamarung No. 88b RT/RW 004/004 Citeureup Kec. Cimahi Utara, Jawa Barat 40512<br></b></b></p>', 'Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019.', '2019-08-01', 'news-1.jpg', 'career.html', 0, 'On', 'Open Recruitment Agust 2019', '', '', 'hrd', 'open-recruitment-agust-2019.html');
+(1, 'Open Recruitment Agust 2019', 'col-page col-sm-8 col-md-6', '<p>Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019, The requirements are as follows:</p><p><b>Criteria :</b></p><ol><li>Matching CAM design with 5 axis CNC machines for optimal.</li><li>Making CAM designs.</li><li>Able to work in teams and individually.</li></ol><p><b>Qualification<b> :</b></b></p><ol><li><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">Max age</span> <span title=\"\" class=\"\">35 years old, physically and mentally healthy</span></span></li><li>Having experience in the field of Programmer (CNC) ± 2 years specialized in Manufacturing Dies and CF</li><li>Experience using Mastercam & Powermill / other CAM design software</li><li>Experienced using a 5 axis CNC machine</li><li>Mastering 3D & 2D concepts</li><li>Able to work well together and good communication</li></ol><b>If you are personally we needed, please apply for an application to participate in the selection stage.<br>HRD Section</b><p><b><b>CV. Cipta Sinergi Manufacturing</b></b></p><p><b><b>Jl. Kamarung No. 88b RT/RW 004/004 Citeureup Kec. Cimahi Utara, Jawa Barat 40512<br></b></b></p>', 'Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019.', '2019-08-01', 'news-1.jpg', 'career.html', 7, 'On', 'Open Recruitment Agust 2019', '', '', 'hrd', 'open-recruitment-agust-2019.html');
 
 -- --------------------------------------------------------
 
@@ -764,7 +735,19 @@ INSERT INTO `tbl_product` (`product_id`, `product_caption`, `product_style`, `pr
 (62, 'SPRAY BOTTLE 500ML BLOW MOLD', 'col-sm-6 col-xs-6 box', 'product-62.jpg', 'SPRAY BOTTLE 500ML BLOW MOLD', 'Yes'),
 (63, 'Transfer Pump', 'col-sm-3 col-xs-6 box', 'product-63.jpg', 'Transfer Pump', 'Yes'),
 (64, 'Turbine Impeller assy', 'col-sm-3 col-xs-6 box', 'product-64.jpg', 'Turbine Impeller assy', 'Yes'),
-(65, 'Turbine Impeller', 'col-sm-6 col-xs-6 box', 'product-65.jpg', 'Turbine Impeller', 'Yes');
+(65, 'Turbine Impeller', 'col-sm-6 col-xs-6 box', 'product-65.jpg', 'Turbine Impeller', 'Yes'),
+(66, 'Electronic Support Measures (ESM) - Without Cover', 'col-sm-3 col-xs-6 box', 'product-66.jpg', 'ELectronic INTelligence primarily dedicated to the interception and analysis of radar emissions from surveillance, fire-control or missile guidance radars, and is often allied to an ECM system to provide protection from these.', 'Yes'),
+(67, 'Electronic Support Measures (ESM) - With Cover', 'col-sm-3 col-xs-6 box', 'product-67.jpg', 'ELectronic INTelligence primarily dedicated to the interception and analysis of radar emissions from surveillance, fire-control or missile guidance radars, and is often allied to an ECM system to provide protection from these.', 'Yes'),
+(68, 'Electronic Support Measures (ESM)', 'col-sm-6 col-xs-6 box', 'product-68.jpg', 'ELectronic INTelligence primarily dedicated to the interception and analysis of radar emissions from surveillance, fire-control or missile guidance radars, and is often allied to an ECM system to provide protection from these.', 'Yes'),
+(69, 'Knife Pocket - Upper', 'col-sm-6 col-xs-6 box', 'product-69.jpg', 'Knife Pocket - Upper', 'Yes'),
+(70, 'Knife Pocket - side by side', 'col-sm-3 col-xs-6 box', 'product-70.jpg', 'Knife Pocket - side by side', 'Yes'),
+(71, 'Knife Pocket - Side', 'col-sm-3 col-xs-6 box', 'product-71.jpg', 'Knife Pocket - Side', 'Yes'),
+(72, 'Knife Pocket - Other Side', 'col-sm-6 col-xs-6 box', 'product-72.jpg', 'Knife Pocket - Other Side', 'Yes'),
+(74, 'K15GRR Upper Insert', 'col-sm-3 col-xs-6 box', 'product-74.jpg', 'K15GRR Upper Insert', 'Yes'),
+(75, 'K15GRR Upper Insert - Side', 'col-sm-3 col-xs-6 box', 'product-75.jpg', 'K15GRR Upper Insert - Side', 'Yes'),
+(76, 'Tip Capper Cordial white cap sealer', 'col-sm-6 col-xs-6 box', 'product-76.jpg', 'Tip Capper Cordial white cap sealer', 'Yes'),
+(77, 'Tip Capper Cordial white cap sealer - Side', 'col-sm-3 col-xs-6 box', 'product-77.jpg', 'Tip Capper Cordial white cap sealer - Side', 'Yes'),
+(78, 'Tip Capper Cordial white cap sealer - Other Side', 'col-sm-3 col-xs-6 box', 'product-78.jpg', 'Tip Capper Cordial white cap sealer - Other Side', 'Yes');
 
 -- --------------------------------------------------------
 
@@ -949,44 +932,6 @@ INSERT INTO `tbl_social` (`social_id`, `social_name`, `social_url`, `social_icon
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tbl_team_member`
---
-
-CREATE TABLE `tbl_team_member` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `designation_id` int(11) NOT NULL,
-  `photo` varchar(255) NOT NULL,
-  `facebook` varchar(255) NOT NULL,
-  `twitter` varchar(255) NOT NULL,
-  `linkedin` varchar(255) NOT NULL,
-  `youtube` varchar(255) NOT NULL,
-  `google_plus` varchar(255) NOT NULL,
-  `instagram` varchar(255) NOT NULL,
-  `flickr` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data untuk tabel `tbl_team_member`
---
-
-INSERT INTO `tbl_team_member` (`id`, `name`, `designation_id`, `photo`, `facebook`, `twitter`, `linkedin`, `youtube`, `google_plus`, `instagram`, `flickr`) VALUES
-(1, 'Nanjar Nugraha', 1, 'team-member-1.png', 'http://www.facebook.com', 'http://www.twitter.com', 'http://www.linkedin.com', 'http://www.youtube.com', '', '', ''),
-(2, 'Iyus Rusmana', 2, 'team-member-2.png', 'http://www.facebook.com', 'http://www.twitter.com', 'http://www.linkedin.com', 'http://www.youtube.com', '', '', ''),
-(3, 'Aman Wardana', 3, 'team-member-3.png', 'http://www.facebook.com', 'http://www.twitter.com', 'http://www.linkedin.com', 'http://www.youtube.com', '', '', ''),
-(4, 'Ripki Budiman', 4, 'team-member-4.png', 'http://www.facebook.com', 'http://www.twitter.com', 'http://www.linkedin.com', 'http://www.youtube.com', '', '', ''),
-(5, 'Harkat', 5, 'team-member-5.png', 'http://www.facebook.com', 'http://www.twitter.com', 'http://www.linkedin.com', 'http://www.youtube.com', '', '', ''),
-(6, 'Hendi Priyono', 6, 'team-member-6.png', '', '', '', '', '', '', ''),
-(7, 'Ahmad Suparto', 7, 'team-member-7.png', '', '', '', '', '', '', ''),
-(8, 'Bakti Ramdani', 8, 'team-member-8.png', '', '', '', '', '', '', ''),
-(9, 'Aman Wardana', 9, 'team-member-9.png', '#', '#', '#', '#', '', '', ''),
-(10, 'Rahmat Satuhu', 10, 'team-member-10.png', '#', '#', '#', '#', '', '', ''),
-(11, 'Taupik', 11, 'team-member-11.png', '#', '#', '#', '#', '', '', ''),
-(12, 'Hendi Prayitno', 12, 'team-member-12.png', '#', '#', '#', '#', '', '', '');
-
--- --------------------------------------------------------
-
---
 -- Struktur dari tabel `tbl_testimonial`
 --
 
@@ -1076,12 +1021,6 @@ ALTER TABLE `tbl_content_home`
 --
 ALTER TABLE `tbl_content_home_company_profile`
   ADD PRIMARY KEY (`id`);
-
---
--- Indeks untuk tabel `tbl_designation`
---
-ALTER TABLE `tbl_designation`
-  ADD PRIMARY KEY (`designation_id`);
 
 --
 -- Indeks untuk tabel `tbl_electronics_division`
@@ -1210,12 +1149,6 @@ ALTER TABLE `tbl_social`
   ADD PRIMARY KEY (`social_id`);
 
 --
--- Indeks untuk tabel `tbl_team_member`
---
-ALTER TABLE `tbl_team_member`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indeks untuk tabel `tbl_testimonial`
 --
 ALTER TABLE `tbl_testimonial`
@@ -1254,12 +1187,6 @@ ALTER TABLE `tbl_content_home`
 --
 ALTER TABLE `tbl_content_home_company_profile`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT untuk tabel `tbl_designation`
---
-ALTER TABLE `tbl_designation`
-  MODIFY `designation_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_electronics_division`
@@ -1361,7 +1288,7 @@ ALTER TABLE `tbl_portfolio_photo`
 -- AUTO_INCREMENT untuk tabel `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_service`
@@ -1386,12 +1313,6 @@ ALTER TABLE `tbl_slider`
 --
 ALTER TABLE `tbl_social`
   MODIFY `social_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
-
---
--- AUTO_INCREMENT untuk tabel `tbl_team_member`
---
-ALTER TABLE `tbl_team_member`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_testimonial`
