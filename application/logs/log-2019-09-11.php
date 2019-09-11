@@ -493,3 +493,45 @@ ERROR - 2019-09-11 16:47:49 --> Query error: Table 'csm_web.tbl_testimonial_phot
 ERROR - 2019-09-11 16:47:49 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\csm-web\application\models\Model_home.php 72
 ERROR - 2019-09-11 16:47:55 --> Query error: Table 'csm_web.tbl_testimonial_photo' doesn't exist - Invalid query: SELECT * FROM tbl_testimonial_photo WHERE id=1
 ERROR - 2019-09-11 16:47:55 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\csm-web\application\models\Model_home.php 72
+ERROR - 2019-09-11 16:58:20 --> Severity: Notice --> Undefined variable: portfolio_category C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 16:58:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 16:58:20 --> Severity: Notice --> Undefined variable: product C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 16:58:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 16:58:20 --> Severity: Notice --> Undefined variable: facility C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 16:58:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 16:58:20 --> Severity: Notice --> Undefined variable: service C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 16:58:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 16:58:35 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 16:59:25 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 16:59:48 --> Severity: Notice --> Undefined variable: portfolio_category C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 16:59:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 16:59:48 --> Severity: Notice --> Undefined variable: product C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 16:59:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 16:59:48 --> Severity: Notice --> Undefined variable: facility C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 16:59:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 16:59:48 --> Severity: Notice --> Undefined variable: service C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 16:59:48 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 16:59:49 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:00:27 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:01:17 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:01:31 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:01:40 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:01:46 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:01:52 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:01:54 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:02:00 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:02:11 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:02:19 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:02:28 --> Severity: Notice --> Undefined variable: portfolio_category C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 17:02:28 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 17:02:28 --> Severity: Notice --> Undefined variable: product C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 17:02:28 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 17:02:28 --> Severity: Notice --> Undefined variable: facility C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 17:02:28 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 17:02:28 --> Severity: Notice --> Undefined variable: service C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 17:02:28 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 17:02:29 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:02:50 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:03:28 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:03:48 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:04:00 --> 404 Page Not Found: Public/css
