@@ -25,6 +25,11 @@
 				<div class="copyright-text">
 					<p><?php echo $setting['footer_copyright']; ?></p>
 				</div>
+				<div class="link-footer">
+					<p>
+						<a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a> | <a href="<?php echo base_url(); ?>terms-and-conditions"><?php echo TERMS_AND_CONDITIONS; ?></a> | <a href="<?php echo base_url(); ?>privacy-policy"><?php echo PRIVACY_POLICY; ?></a>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>

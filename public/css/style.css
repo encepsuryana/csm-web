@@ -47,7 +47,7 @@ section {
 }
 .bg-news {
 	background: #fff;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
 }
 
 #gridGallery .row {
@@ -70,7 +70,7 @@ section {
 .box:hover {
 	cursor: pointer;
 	z-index: 1;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
 }
 
 .row > .column {
@@ -346,7 +346,7 @@ img.hover-shadow {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 240px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
 }
 
 
@@ -468,7 +468,7 @@ img.hover-shadow {
 .bg-about {
 	text-align: justify;
 	background: #fff;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
 }
 hr {
 	margin-top: 0;
@@ -1022,7 +1022,7 @@ ul.nav-ciptasin li:hover a {
 	background-color: #fff;
 	z-index: 10000;
 	height: 62px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
 	
 }
 
@@ -1463,7 +1463,7 @@ Slider
 
 .recent-menu ul li:hover {
 	background: #333;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
 }
 .hvr-bounce-to-right::before {
 	background: #F8BE2E !important;
@@ -2604,9 +2604,27 @@ span.page-numbers.current {
 .copyright-text p {
 	color: #fff;
 	margin: 0;
-	margin-top: 55px;
+	margin-top: 50px;
 	text-align: right;
 	margin-right: 60px;
+}
+
+.link-footer p {
+	color: #fff;
+	margin: 0;
+	margin-top: 5px;
+	text-align: right;
+	margin-right: 60px;
+	margin-bottom: 10px;
+}
+
+.link-footer a {
+	color: #eee !important;
+	font-size: 11px;
+}
+
+.link-footer a:hover {
+	text-decoration: underline;
 }
 
 .footer-menu {
@@ -2660,7 +2678,7 @@ span.page-numbers.current {
 
 .scroll-top:hover {
 	background: #f8be2e;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
 }
 
 /*Banner*/
@@ -3221,7 +3239,7 @@ label {
 .btn-default:focus {
 	border-color: #c6c6c6;
 	background-color: #fff !important;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
 }
 .g-recaptcha iframe {
 	min-height: 0;

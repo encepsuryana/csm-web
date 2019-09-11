@@ -21,7 +21,7 @@
 			<?php endif; ?>
 
 			<div class="col-md-12">
-				<h3><?php echo $page['about_heading']; ?></h3>
+				<h3><?php echo ABOUT_COMPANY; ?></h3>
 				<p>
 					<?php echo $page['about_content']; ?>
 				</p>
@@ -30,9 +30,11 @@
 				<div class="col-sm-2 about-fade" style="padding-left: 0;">
 					<nav class="nav-sidebar">
 						<ul class="nav tabs">
-							<li class="active"><a href="#tab1" data-toggle="tab">Profile</a></li>
-							<li class=""><a href="#tab3" data-toggle="tab">Structure</a></li>
-							<li class=""><a href="#tab4" data-toggle="tab">Visi & Misi</a></li>    
+							<li class="active"><a href="#tab1" data-toggle="tab"><?php echo PROFILE; ?></a></li>
+							<li class=""><a href="#tab3" data-toggle="tab"><?php echo STRUCTURE; ?></a></li>
+							<li class=""><a href="#tab4" data-toggle="tab"><?php echo VISION_MISION; ?></a></li>    
+							<li class=""><a href="#tab5" data-toggle="tab"><?php echo CULTURE; ?></a></li>    
+							<li class=""><a href="#tab6" data-toggle="tab"><?php echo COMMITMENT; ?></a></li>    
 						</ul>
 					</nav>
 					<div class="add"></div>
@@ -40,7 +42,7 @@
 				<!-- tab content -->
 				<div class="tab-content">
 					<div class="tab-pane active text-style" id="tab1">
-						<h2><?php echo $page['profile_heading']; ?></h2>
+						<h2><?php echo PROFILE_IDENTITY; ?></h2>
 						<div class="col-md-10">
 							<p>
 								<?php echo $page['profile_content']; ?>
@@ -48,14 +50,14 @@
 						</div>
 					</div>
 					<div class="tab-pane " id="tab3">
-						<h2><?php echo $page['structure_heading']; ?></h2>
+						<h2><?php echo STRUCTURE_ORGANIZATION; ?></h2>
 						<div class="col-md-10">
 							<img src="<?php echo base_url(); ?>public/uploads/<?php echo $page['structure_photo']; ?>">
 						</div>
 					</div>
 					<div class="tab-pane" id="tab4">
 						<!-- Vision & Mision Area-->
-						<h2><?php echo $page['vision_heading']; ?> & <?php echo $page['mission_heading']; ?></h2>
+						<h2><?php echo VISION_AND_MISSION ?></h2>
 
 						<div class="col-md-5 col-sm-5">
 							<div class="about-mission">
@@ -72,6 +74,22 @@
 									<?php echo $page['mission_content']; ?>
 								</p>
 							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab5">
+						<h2><?php echo CULTURE; ?></h2>
+						<div class="col-md-10">
+							<p>
+								<?php echo $page['culture_content']; ?>
+							</p>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab6">
+						<h2><?php echo COMMITMENT; ?></h2>
+						<div class="col-md-10">
+							<p>
+								<?php echo $page['quality_content']; ?>
+							</p>
 						</div>
 					</div>
 				</div>

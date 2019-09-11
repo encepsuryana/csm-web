@@ -143,71 +143,50 @@ if(!$this->session->userdata('id')) {
                         <h3 class="seo-info">Other Information Section</h3>
                         <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">About Heading </label>
-                            <div class="col-sm-6">
-                                <input type="text" name="about_heading" class="form-control" value="<?php echo $page['about_heading']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">About Content </label>
+                            <label for="" class="col-sm-2 control-label">Tentang Perusahaan </label>
                             <div class="col-sm-9">
                                 <textarea name="about_content" class="form-control" cols="30" rows="10" id="editor1"><?php echo $page['about_content']; ?></textarea>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Profile Heading </label>
-                            <div class="col-sm-6">
-                                <input type="text" name="profile_heading" class="form-control" value="<?php echo $page['profile_heading']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Profile Content </label>
+                            <label for="" class="col-sm-2 control-label">Profile Perusahaan </label>
                             <div class="col-sm-9">
                                 <textarea name="profile_content" class="form-control" cols="30" rows="10" id="editor2"><?php echo $page['profile_content']; ?></textarea>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">History Heading </label>
-                            <div class="col-sm-6">
-                                <input type="text" name="history_heading" class="form-control" value="<?php echo $page['history_heading']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">History Content </label>
+                            <label for="" class="col-sm-2 control-label">Nilai & Budaya </label>
                             <div class="col-sm-9">
-                                <textarea name="history_content" class="form-control" cols="30" rows="10" id="editor3"><?php echo $page['history_content']; ?></textarea>
+                                <textarea name="culture_content" class="form-control" cols="30" rows="10" id="editor3"><?php echo $page['culture_content']; ?></textarea>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Structure Heading </label>
-                            <div class="col-sm-6">
-                                <input type="text" name="structure_heading" class="form-control" value="<?php echo $page['structure_heading']; ?>">
+                            <label for="" class="col-sm-2 control-label">Komitmen Mutu </label>
+                            <div class="col-sm-9">
+                                <textarea name="quality_content" class="form-control" cols="30" rows="10" id="editor4"><?php echo $page['quality_content']; ?></textarea>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Mission Heading </label>
+                            <label for="" class="col-sm-2 control-label">Misi Judul </label>
                             <div class="col-sm-6">
                                 <input type="text" name="mission_heading" class="form-control" value="<?php echo $page['mission_heading']; ?>">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Mission Content </label>
+                            <label for="" class="col-sm-2 control-label">Misi Perusahaan </label>
                             <div class="col-sm-9">
                                 <textarea name="mission_content" class="form-control" cols="30" rows="10" id=""><?php echo $page['mission_content']; ?></textarea>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Vision Heading </label>
+                            <label for="" class="col-sm-2 control-label">Visi Judul </label>
                             <div class="col-sm-6">
                                 <input type="text" name="vision_heading" class="form-control" value="<?php echo $page['vision_heading']; ?>">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Vision Content </label>
+                            <label for="" class="col-sm-2 control-label">Visi Perusahaan </label>
                             <div class="col-sm-9">
                                 <textarea name="vision_content" class="form-control" cols="30" rows="10" id=""><?php echo $page['vision_content']; ?></textarea>
                             </div>
@@ -241,12 +220,6 @@ if(!$this->session->userdata('id')) {
 
                     <div class="tab-pane" id="tab_3">
                        <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
-                       <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">About Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="gallery_heading" class="form-control" value="<?php echo $page['gallery_heading']; ?>">
-                        </div>
-                    </div>
                     <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Meta Title </label>
                         <div class="col-sm-9">
@@ -277,12 +250,6 @@ if(!$this->session->userdata('id')) {
                 <div class="tab-pane" id="tab_4">
                     <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                     <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">About Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="product_heading" class="form-control" value="<?php echo $page['product_heading']; ?>">
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Meta Title </label>
                         <div class="col-sm-9">
                             <input type="text" name="mt_product" class="form-control" value="<?php echo $page['mt_product']; ?>">
@@ -311,12 +278,6 @@ if(!$this->session->userdata('id')) {
 
                 <div class="tab-pane" id="tab_6">
                     <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Service Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="service_heading" class="form-control" value="<?php echo $page['service_heading']; ?>">
-                        </div>
-                    </div>
                     <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Meta Title </label>
                         <div class="col-sm-9">
@@ -347,12 +308,6 @@ if(!$this->session->userdata('id')) {
                 <div class="tab-pane" id="tab_7">
                     <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                     <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Facility Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="facility_heading" class="form-control" value="<?php echo $page['facility_heading']; ?>">
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Meta Title </label>
                         <div class="col-sm-9">
                             <input type="text" name="mt_facility" class="form-control" value="<?php echo $page['mt_facility']; ?>">
@@ -381,12 +336,6 @@ if(!$this->session->userdata('id')) {
 
                 <div class="tab-pane" id="tab_8">
                     <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Portfolio Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="portfolio_heading" class="form-control" value="<?php echo $page['portfolio_heading']; ?>">
-                        </div>
-                    </div>
                     <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Meta Title </label>
                         <div class="col-sm-9">
@@ -418,12 +367,6 @@ if(!$this->session->userdata('id')) {
                 <div class="tab-pane" id="tab_9">
                     <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                     <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Testimonial Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="testimonial_heading" class="form-control" value="<?php echo $page['testimonial_heading']; ?>">
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Meta Title </label>
                         <div class="col-sm-9">
                             <input type="text" name="mt_testimonial" class="form-control" value="<?php echo $page['mt_testimonial']; ?>">
@@ -453,12 +396,6 @@ if(!$this->session->userdata('id')) {
 
                 <div class="tab-pane" id="tab_10">
                     <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">News Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="news_heading" class="form-control" value="<?php echo $page['news_heading']; ?>">
-                        </div>
-                    </div>
                     <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Meta Title </label>
                         <div class="col-sm-9">
@@ -490,12 +427,6 @@ if(!$this->session->userdata('id')) {
                 <div class="tab-pane" id="tab_11">
                     <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                     <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Contact Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="contact_heading" class="form-control" value="<?php echo $page['contact_heading']; ?>">
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Meta Title </label>
                         <div class="col-sm-9">
                             <input type="text" name="mt_contact" class="form-control" value="<?php echo $page['mt_contact']; ?>">
@@ -526,12 +457,6 @@ if(!$this->session->userdata('id')) {
                 <div class="tab-pane" id="tab_12">
                     <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                     <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Search Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="search_heading" class="form-control" value="<?php echo $page['search_heading']; ?>">
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Meta Title </label>
                         <div class="col-sm-9">
                             <input type="text" name="mt_search" class="form-control" value="<?php echo $page['mt_search']; ?>">
@@ -560,12 +485,6 @@ if(!$this->session->userdata('id')) {
 
                 <div class="tab-pane" id="tab_13">
                     <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Term & Condition Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="term_heading" class="form-control" value="<?php echo $page['term_heading']; ?>">
-                        </div>
-                    </div>
                     <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Term & Condition Content </label>
                         <div class="col-sm-9">
@@ -602,12 +521,6 @@ if(!$this->session->userdata('id')) {
 
                 <div class="tab-pane" id="tab_14">
                     <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
-                    <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Privacy Policy Heading </label>
-                        <div class="col-sm-6">
-                            <input type="text" name="privacy_heading" class="form-control" value="<?php echo $page['privacy_heading']; ?>">
-                        </div>
-                    </div>
                     <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Privacy Policy Content </label>
                         <div class="col-sm-9">
@@ -704,6 +617,7 @@ if(!$this->session->userdata('id')) {
 </div>
 </div>
 </section>
+
 <?php } elseif (($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
     <section class="content-header">
      <div class="content-header-left">
@@ -739,9 +653,9 @@ if(!$this->session->userdata('id')) {
             <div class="tab-content">
                 <div class="tab-pane active" id="tab_1">
                  <h3 class="seo-info">Photo Header</h3>
-                 <?php echo form_open_multipart(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
-                 <input type="hidden" name="current_about_photo" value="<?php echo $page['about_photo']; ?>">
-                 <div class="form-group">
+                <?php echo form_open_multipart(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
+                <input type="hidden" name="current_about_photo" value="<?php echo $page['about_photo']; ?>">
+                <div class="form-group">
                     <label for="" class="col-sm-2 control-label">Existing Photo </label>
                     <div class="col-sm-9">
                         <?php if($page['about_photo'] == ''): ?>
@@ -751,6 +665,7 @@ if(!$this->session->userdata('id')) {
                                 <br>
                                 <a href="<?php echo base_url().$this->session->userdata('role'); ?>/page/delete_about_photo" class="btn btn-danger btn-xs" onClick="return confirm('Are you sure?');">Delete Photo</a>
                             <?php endif; ?>
+
                         </div>
                     </div>
                     <div class="form-group">
@@ -766,7 +681,7 @@ if(!$this->session->userdata('id')) {
                         </div>
                     </div>
                     <?php echo form_close(); ?>
-                    
+
                     <h3 class="seo-info">Structure Image</h3>
                     <?php echo form_open_multipart(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                     <input type="hidden" name="current_structure_photo" value="<?php echo $page['structure_photo']; ?>">
@@ -795,75 +710,54 @@ if(!$this->session->userdata('id')) {
                             </div>
                         </div>
                         <?php echo form_close(); ?>
-                        
+
                         <h3 class="seo-info">Other Information Section</h3>
                         <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">About Heading </label>
-                            <div class="col-sm-6">
-                                <input type="text" name="about_heading" class="form-control" value="<?php echo $page['about_heading']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">About Content </label>
+                            <label for="" class="col-sm-2 control-label">Tentang Perusahaan </label>
                             <div class="col-sm-9">
                                 <textarea name="about_content" class="form-control" cols="30" rows="10" id="editor1"><?php echo $page['about_content']; ?></textarea>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Profile Heading </label>
-                            <div class="col-sm-6">
-                                <input type="text" name="profile_heading" class="form-control" value="<?php echo $page['profile_heading']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Profile Content </label>
+                            <label for="" class="col-sm-2 control-label">Profile Perusahaan </label>
                             <div class="col-sm-9">
                                 <textarea name="profile_content" class="form-control" cols="30" rows="10" id="editor2"><?php echo $page['profile_content']; ?></textarea>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">History Heading </label>
-                            <div class="col-sm-6">
-                                <input type="text" name="history_heading" class="form-control" value="<?php echo $page['history_heading']; ?>">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">History Content </label>
+                            <label for="" class="col-sm-2 control-label">Nilai & Budaya </label>
                             <div class="col-sm-9">
-                                <textarea name="history_content" class="form-control" cols="30" rows="10" id="editor3"><?php echo $page['history_content']; ?></textarea>
+                                <textarea name="culture_content" class="form-control" cols="30" rows="10" id="editor3"><?php echo $page['culture_content']; ?></textarea>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Structure Heading </label>
-                            <div class="col-sm-6">
-                                <input type="text" name="structure_heading" class="form-control" value="<?php echo $page['structure_heading']; ?>">
+                            <label for="" class="col-sm-2 control-label">Komitmen Mutu </label>
+                            <div class="col-sm-9">
+                                <textarea name="quality_content" class="form-control" cols="30" rows="10" id="editor4"><?php echo $page['quality_content']; ?></textarea>
                             </div>
                         </div>
-
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Mission Heading </label>
+                            <label for="" class="col-sm-2 control-label">Misi Judul </label>
                             <div class="col-sm-6">
                                 <input type="text" name="mission_heading" class="form-control" value="<?php echo $page['mission_heading']; ?>">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Mission Content </label>
+                            <label for="" class="col-sm-2 control-label">Misi Perusahaan </label>
                             <div class="col-sm-9">
                                 <textarea name="mission_content" class="form-control" cols="30" rows="10" id=""><?php echo $page['mission_content']; ?></textarea>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Vision Heading </label>
+                            <label for="" class="col-sm-2 control-label">Visi Judul </label>
                             <div class="col-sm-6">
                                 <input type="text" name="vision_heading" class="form-control" value="<?php echo $page['vision_heading']; ?>">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Vision Content </label>
+                            <label for="" class="col-sm-2 control-label">Visi Perusahaan </label>
                             <div class="col-sm-9">
                                 <textarea name="vision_content" class="form-control" cols="30" rows="10" id=""><?php echo $page['vision_content']; ?></textarea>
                             </div>
@@ -891,7 +785,7 @@ if(!$this->session->userdata('id')) {
                             <div class="col-sm-6">
                                 <button type="submit" class="btn btn-success pull-left" name="form_about">Update Information</button>
                             </div>
-                        </div>                           
+                        </div>                              
                         <?php echo form_close(); ?>
                     </div>
                 </div>

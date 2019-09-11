@@ -5,7 +5,7 @@
 			</div>
 			<div class="col-md-6" style="padding: 0;">
 				<div class="banner-text">
-					<h1><?php echo TERM_AND_CONDITIONS; ?></h1>
+					<h1><?php echo TERMS_AND_CONDITIONS; ?></h1>
 				</div>
 			</div>
 		</div>

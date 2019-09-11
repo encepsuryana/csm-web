@@ -154,13 +154,10 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_about'])) {			
 				$form_data = array(
-					'about_heading' => $_POST['about_heading'],
 					'about_content' => $_POST['about_content'],
-					'profile_heading' => $_POST['profile_heading'],
 					'profile_content' => $_POST['profile_content'],
-					'history_heading' => $_POST['history_heading'],
-					'history_content' => $_POST['history_content'],
-					'structure_heading' => $_POST['structure_heading'],
+					'culture_content' => $_POST['culture_content'],
+					'quality_content' => $_POST['quality_content'],
 					'mission_heading' => $_POST['mission_heading'],
 					'mission_content' => $_POST['mission_content'],
 					'vision_heading' => $_POST['vision_heading'],
@@ -175,7 +172,6 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_gallery'])) {			
 				$form_data = array(
-					'gallery_heading' => $_POST['gallery_heading'],
 					'mt_gallery'      => $_POST['mt_gallery'],
 					'mk_gallery'      => $_POST['mk_gallery'],
 					'md_gallery'      => $_POST['md_gallery']
@@ -186,7 +182,6 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_product'])) {			
 				$form_data = array(
-					'product_heading' => $_POST['product_heading'],
 					'mt_product'      => $_POST['mt_product'],
 					'mk_product'      => $_POST['mk_product'],
 					'md_product'      => $_POST['md_product']
@@ -197,7 +192,6 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_service'])) {			
 				$form_data = array(
-					'service_heading' => $_POST['service_heading'],
 					'mt_service'      => $_POST['mt_service'],
 					'mk_service'      => $_POST['mk_service'],
 					'md_service'      => $_POST['md_service']
@@ -208,7 +202,6 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_facility'])) {			
 				$form_data = array(
-					'facility_heading' => $_POST['facility_heading'],
 					'mt_facility'      => $_POST['mt_facility'],
 					'mk_facility'      => $_POST['mk_facility'],
 					'md_facility'      => $_POST['md_facility']
@@ -220,7 +213,6 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_portfolio'])) {			
 				$form_data = array(
-					'portfolio_heading' => $_POST['portfolio_heading'],
 					'mt_portfolio'      => $_POST['mt_portfolio'],
 					'mk_portfolio'      => $_POST['mk_portfolio'],
 					'md_portfolio'      => $_POST['md_portfolio']
@@ -232,7 +224,6 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_testimonial'])) {			
 				$form_data = array(
-					'testimonial_heading' => $_POST['testimonial_heading'],
 					'mt_testimonial'      => $_POST['mt_testimonial'],
 					'mk_testimonial'      => $_POST['mk_testimonial'],
 					'md_testimonial'      => $_POST['md_testimonial']
@@ -244,7 +235,6 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_news'])) {			
 				$form_data = array(
-					'news_heading' => $_POST['news_heading'],
 					'mt_news'      => $_POST['mt_news'],
 					'mk_news'      => $_POST['mk_news'],
 					'md_news'      => $_POST['md_news']
@@ -256,7 +246,6 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_contact'])) {			
 				$form_data = array(
-					'contact_heading' => $_POST['contact_heading'],
 					'mt_contact'      => $_POST['mt_contact'],
 					'mk_contact'      => $_POST['mk_contact'],
 					'md_contact'      => $_POST['md_contact']
@@ -288,7 +277,6 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_search'])) {			
 				$form_data = array(
-					'search_heading' => $_POST['search_heading'],
 					'mt_search'      => $_POST['mt_search'],
 					'mk_search'      => $_POST['mk_search'],
 					'md_search'      => $_POST['md_search']
@@ -300,7 +288,6 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_term'])) {			
 				$form_data = array(
-					'term_heading' => $_POST['term_heading'],
 					'term_content' => $_POST['term_content'],
 					'mt_term'      => $_POST['mt_term'],
 					'mk_term'      => $_POST['mk_term'],
@@ -312,7 +299,6 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_privacy'])) {			
 				$form_data = array(
-					'privacy_heading' => $_POST['privacy_heading'],
 					'privacy_content' => $_POST['privacy_content'],
 					'mt_privacy'      => $_POST['mt_privacy'],
 					'mk_privacy'      => $_POST['mk_privacy'],
@@ -329,6 +315,7 @@ class Page extends CI_Controller
 			$this->load->view('admin/view_header',$header);
 			$this->load->view('admin/view_page',$data);
 			$this->load->view('admin/view_footer');
+
 		} elseif (($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd'))  {
 			$data['error'] = '';
 			$data['success'] = '';
@@ -409,13 +396,10 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_about'])) {			
 				$form_data = array(
-					'about_heading' => $_POST['about_heading'],
 					'about_content' => $_POST['about_content'],
-					'profile_heading' => $_POST['profile_heading'],
 					'profile_content' => $_POST['profile_content'],
-					'history_heading' => $_POST['history_heading'],
-					'history_content' => $_POST['history_content'],
-					'structure_heading' => $_POST['structure_heading'],
+					'culture_content' => $_POST['culture_content'],
+					'quality_content' => $_POST['quality_content'],
 					'mission_heading' => $_POST['mission_heading'],
 					'mission_content' => $_POST['mission_content'],
 					'vision_heading' => $_POST['vision_heading'],

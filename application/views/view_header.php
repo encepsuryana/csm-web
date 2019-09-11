@@ -34,32 +34,32 @@
 	{
 		echo '<meta name="description" content="'.$page['md_home'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_home'].'">';
-		echo '<title>'.$page['mt_home'].'</title>';
+		echo '<title>'.HOME.$page['mt_home'].'</title>';
 	}
 	if($slug_arr[0] == 'about')
 	{
 		echo '<meta name="description" content="'.$page['md_about'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_about'].'">';
-		echo '<title>'.$page['mt_about'].'</title>';
+		echo '<title>'.ABOUT_US.$page['mt_about'].'</title>';
 	}
 	if($slug_arr[0] == 'gallery')
 	{
 		echo '<meta name="description" content="'.$page['md_gallery'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_gallery'].'">';
-		echo '<title>'.$page['mt_gallery'].'</title>';
+		echo '<title>'.GALLERY.$page['mt_gallery'].'</title>';
 	}
 	if($slug_arr[0] == 'product')
 	{
 		echo '<meta name="description" content="'.$page['md_gallery'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_gallery'].'">';
-		echo '<title>'.$page['mt_product'].'</title>';
+		echo '<title>'.PRODUCT.$page['mt_product'].'</title>';
 	}
 	if($slug_arr[0] == 'service')
 	{
 		if(!isset($slug_arr[1])) {
 			echo '<meta name="description" content="'.$page['md_service'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_service'].'">';
-			echo '<title>'.$page['mt_service'].'</title>';	
+			echo '<title>'.SERVICE.$page['mt_service'].'</title>';	
 		} else {
 			$single_service_data = $this->Model_common->get_single_service_data($slug_arr[2]);
 			foreach($single_service_data as $row) {
@@ -74,7 +74,7 @@
 		if(!isset($slug_arr[1])) {
 			echo '<meta name="description" content="'.$page['md_facility'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_facility'].'">';
-			echo '<title>'.$page['mt_facility'].'</title>';	
+			echo '<title>'.FACILITY.$page['mt_facility'].'</title>';	
 		} else {
 			$single_facility_data = $this->Model_common->get_single_facility_data($slug_arr[2]);
 			foreach($single_facility_data as $row) {
@@ -90,7 +90,7 @@
 		if(!isset($slug_arr[1])) {
 			echo '<meta name="description" content="'.$page['md_electronics_division'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_electronics_division'].'">';
-			echo '<title>'.$page['mt_electronics_division'].'</title>';	
+			echo '<title>'.ELECTRONICS_DIVISION.$page['mt_electronics_division'].'</title>';	
 		} else {
 			$single_electronics_division_data = $this->Model_common->get_single_electronics_division_data($slug_arr[2]);
 			foreach($single_electronics_division_data as $row) {
@@ -106,7 +106,7 @@
 		if(!isset($slug_arr[1])) {
 			echo '<meta name="description" content="'.$page['md_portfolio'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_portfolio'].'">';
-			echo '<title>'.$page['mt_portfolio'].'</title>';	
+			echo '<title>'.PORTFOLIO.$page['mt_portfolio'].'</title>';	
 		} else {
 			$single_portfolio_data = $this->Model_common->get_single_portfolio_data($slug_arr[2]);
 			foreach($single_portfolio_data as $row) {
@@ -120,14 +120,14 @@
 	{
 		echo '<meta name="description" content="'.$page['md_testimonial'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_testimonial'].'">';
-		echo '<title>'.$page['mt_testimonial'].'</title>';
+		echo '<title>'.TESTIMONIAL.$page['mt_testimonial'].'</title>';
 	}
 	if(isset($slug_two)) {
 		if($slug_two == 'news/page')
 		{
 			echo '<meta name="description" content="'.$page['md_news'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_news'].'">';
-			echo '<title>'.$page['mt_news'].'</title>';	
+			echo '<title>'.NEWS.$page['mt_news'].'</title>';	
 		}
 		if($slug_two == 'news/post')
 		{
@@ -172,35 +172,35 @@
 		}	
 	}
 
-	if($slug_arr[0] == 'csm-career')
+	if($slug_arr[0] == 'ciptasinergi-career.html')
 	{
 		echo '<meta name="description" content="'.$page['md_carrier'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_carrier'].'">';
-		echo '<title>'.$page['mt_carrier'].'</title>';
+		echo '<title>'.CAREER.$page['mt_carrier'].'</title>';
 	}
 	if($slug_arr[0] == 'contact')
 	{
 		echo '<meta name="description" content="'.$page['md_contact'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_contact'].'">';
-		echo '<title>'.$page['mt_contact'].'</title>';
+		echo '<title>'.CONTACT.$page['mt_contact'].'</title>';
 	}
 	if($slug_arr[0] == 'search')
 	{
 		echo '<meta name="description" content="'.$page['md_search'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_search'].'">';
-		echo '<title>'.$page['mt_search'].'</title>';
+		echo '<title>'.SEARCH_NEWS.$page['mt_search'].'</title>';
 	}
 	if($slug_arr[0] == 'terms-and-conditions')
 	{
 		echo '<meta name="description" content="'.$page['md_term'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_term'].'">';
-		echo '<title>'.$page['mt_term'].'</title>';
+		echo '<title>'.TERMS_AND_CONDITIONS.$page['mt_term'].'</title>';
 	}
 	if($slug_arr[0] == 'privacy-policy')
 	{
 		echo '<meta name="description" content="'.$page['md_privacy'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_privacy'].'">';
-		echo '<title>'.$page['mt_privacy'].'</title>';
+		echo '<title>'.PRIVACY_POLICY.$page['mt_privacy'].'</title>';
 	}	
 	?>
 
