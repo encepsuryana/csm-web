@@ -489,3 +489,7 @@ ERROR - 2019-09-11 15:46:27 --> Severity: Warning --> unlink(./public/uploads/te
 ERROR - 2019-09-11 15:48:18 --> 404 Page Not Found: admin/Testimonial/main_photo
 ERROR - 2019-09-11 16:28:29 --> 404 Page Not Found: admin/Photo/index
 ERROR - 2019-09-11 16:28:41 --> 404 Page Not Found: admin/Product/index
+ERROR - 2019-09-11 16:47:49 --> Query error: Table 'csm_web.tbl_testimonial_photo' doesn't exist - Invalid query: SELECT * FROM tbl_testimonial_photo WHERE id=1
+ERROR - 2019-09-11 16:47:49 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\csm-web\application\models\Model_home.php 72
+ERROR - 2019-09-11 16:47:55 --> Query error: Table 'csm_web.tbl_testimonial_photo' doesn't exist - Invalid query: SELECT * FROM tbl_testimonial_photo WHERE id=1
+ERROR - 2019-09-11 16:47:55 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\csm-web\application\models\Model_home.php 72
