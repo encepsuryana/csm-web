@@ -7,10 +7,10 @@ if(!$this->session->userdata('id')) {
 <?php if ($this->session->userdata('role') == 'admin') { ?>
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Edit Content Home</h1>
+			<h1>Edit Koneten Beranda</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 	<section class="content">
@@ -35,25 +35,25 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Bg</label>
+							<label for="" class="col-sm-2 control-label">Gambar tersedia </label>
 							<div class="col-sm-9" style="padding-top:5px;">
 								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $content_home['photo']; ?>" alt="Slider Photo" style="width:100px;background: #ddd;padding:5px;">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Choose </label>
+							<label for="" class="col-sm-2 control-label">Pilih </label>
 							<div class="col-sm-6" style="padding-top:5px">
-								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Icon <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Ikon <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="heading" value="<?php echo $content_home['heading']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Title <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="content" value="<?php echo $content_home['content']; ?>">
 							</div>

@@ -42,7 +42,7 @@ class News_category extends CI_Controller
 				$pre_slug = strtolower(str_replace(" ", "-", $trim)); 
 				$slug_news_category = $pre_slug.'.html';
 
-				$this->form_validation->set_rules('category_name', 'Category Name', 'trim|required');
+				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -60,7 +60,7 @@ class News_category extends CI_Controller
 					);
 					$this->Model_news_category->add($form_data);
 
-					$data['success'] = 'News Category is added successfully!';
+					$data['success'] = 'Kategory Berita berhasil ditambahkan!';
 				}
 
 				$this->load->view('admin/view_header',$header);
@@ -105,7 +105,7 @@ class News_category extends CI_Controller
 				$trim = trim($string);
 				$pre_slug = strtolower(str_replace(" ", "-", $trim)); 
 				$slug_news_category = $pre_slug.'.html';
-				$this->form_validation->set_rules('category_name', 'Category Name', 'trim|required');
+				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -117,7 +117,7 @@ class News_category extends CI_Controller
 					$total = $this->Model_news_category->duplicate_check($_POST['category_name'],$data['news_category']['category_name']);
 					if($total) {
 						$valid = 0;
-						$data['error'] = 'Category name already exists';
+						$data['error'] = 'Nama Kategori sudah ada';
 					}
 				}
 
@@ -134,7 +134,7 @@ class News_category extends CI_Controller
 					);
 					$this->Model_news_category->update($id,$form_data);
 
-					$data['success'] = 'Category Name is updated successfully';
+					$data['success'] = 'Nama Kategori telah berhasil diupdate';
 				}
 
 				$data['news_category'] = $this->Model_news_category->getData($id);

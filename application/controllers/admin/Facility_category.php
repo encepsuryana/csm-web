@@ -39,7 +39,7 @@ class Facility_category extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('category_name', 'Category Name', 'trim|required');
+				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -55,7 +55,7 @@ class Facility_category extends CI_Controller
 					);
 					$this->Model_facility_category->add($form_data);
 
-					$data['success'] = 'facility category is added successfully!';
+					$data['success'] = 'Kategori Fasilitas berhasil ditambahkan!';
 				}
 
 				$this->load->view('admin/view_header',$header);
@@ -96,7 +96,7 @@ class Facility_category extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('category_name', 'Category Name', 'trim|required');
+				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -108,7 +108,7 @@ class Facility_category extends CI_Controller
 					$total = $this->Model_facility_category->duplicate_check($_POST['category_name'],$data['facility_category']['category_name']);				
 					if($total) {
 						$valid = 0;
-						$data['error'] = 'Category name already exists';
+						$data['error'] = 'Nama Kategori sudah ada';
 					}
 				}
 
@@ -121,7 +121,7 @@ class Facility_category extends CI_Controller
 					);
 					$this->Model_facility_category->update($id,$form_data);
 
-					$data['success'] = 'facility Category is updated successfully';
+					$data['success'] = 'Kategori Fasilitas telah berhasil diupdate';
 				}
 
 				$data['facility_category'] = $this->Model_facility_category->getData($id);
@@ -146,7 +146,7 @@ class Facility_category extends CI_Controller
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) {
 
-		// If there is no facility category in this id, then redirect
+		// If there is no Kategori Fasilitas in this id, then redirect
 			$tot = $this->Model_facility_category->facility_category_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/facility-category');

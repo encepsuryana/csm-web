@@ -52,7 +52,7 @@ class Profile extends CI_Controller
 						'phone'     => $_POST['phone']
 					);
 					$this->Model_profile->update($form_data);
-					$data['success'] = 'Profile Information is updated successfully!';
+					$data['success'] = 'Informasi Profil telah berhasil diupdate!';
 
 					$this->session->set_userdata($form_data);
 				}
@@ -69,11 +69,11 @@ class Profile extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 		    	// removing the existing photo
@@ -87,7 +87,7 @@ class Profile extends CI_Controller
 						'photo' => $final_name
 					);
 					$this->Model_profile->update($form_data);
-					$data['success'] = 'Photo is updated successfully!';
+					$data['success'] = 'Photo telah berhasil diupdate!';
 
 					$this->session->set_userdata($form_data);
 				}        	
@@ -110,7 +110,7 @@ class Profile extends CI_Controller
 						'password' => md5($_POST['password'])
 					);
 					$this->Model_profile->update($form_data);
-					$data['success'] = 'Password is updated successfully!';
+					$data['success'] = 'Password telah berhasil diupdate!';
 
 					$this->session->set_userdata($form_data);
 				}
@@ -160,11 +160,11 @@ class Profile extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				} else {
 					$valid = 0;
-					$error .= 'You must have to select a photo for featured photo<br>';
+					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
 				if($valid == 1) 
@@ -189,7 +189,7 @@ class Profile extends CI_Controller
 					);
 					$this->Model_profile->add_user($form_data);
 
-					$data['success'] = 'profile is added successfully!';
+					$data['success'] = 'profile berhasil ditambahkan!';
 
 					unset($_POST['full_name']);
 					unset($_POST['email']);
@@ -261,7 +261,7 @@ class Profile extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				}
 
@@ -301,7 +301,7 @@ class Profile extends CI_Controller
 						$this->Model_profile->update($id,$form_data);
 					}
 
-					$data['success'] = 'profile is updated successfully';
+					$data['success'] = 'profile telah berhasil diupdate';
 				}
 				else
 				{

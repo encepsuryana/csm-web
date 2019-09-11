@@ -7,10 +7,10 @@ if(!$this->session->userdata('id')) {
 
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Add News</h1>
+			<h1>Tambah Berita</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/news" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/news" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -37,14 +37,15 @@ if(!$this->session->userdata('id')) {
 				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/news/add',array('class' => 'form-horizontal')); ?>
 				<div class="box box-info  b-box">
 					<div class="box-body">
+
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">News Title <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" class="form-control" name="news_title" value="<?php if(isset($_POST['news_title'])) {echo $_POST['news_title'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Style News <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Label Berita <span>*</span></label>
 							<div class="col-sm-6">
 								<input id="style" readonly="readonly" type="text" class="form-control" name="slug" value="<?php if(isset($_POST['slug'])) {echo $_POST['slug'];} ?>">
 							</div>
@@ -66,28 +67,35 @@ if(!$this->session->userdata('id')) {
 							</script>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">News Short Content <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Foto Berita <span>*</span></label>
+							<div class="col-sm-6" style="padding-top:6px;">
+								<input type="file" name="photo">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Berita Singkat <span>*</span></label>
 							<div class="col-sm-9">
 								<textarea class="form-control" name="news_short_content" style="height:100px;"><?php if(isset($_POST['news_short_content'])) {echo $_POST['news_short_content'];} ?></textarea>
 							</div>
 						</div>
+						
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">News Content <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-9">
 								<textarea class="form-control" name="news_content" id="editor1"><?php if(isset($_POST['news_content'])) {echo $_POST['news_content'];} ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">News Publish Date <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Tanggal <span>*</span></label>
 							<div class="col-sm-2">
-								<input type="text" class="form-control" name="news_date" id="datepicker" value="<?php echo date('Y-m-d'); ?>">(Format: yy-mm-dd)
+								<input type="text" class="form-control" name="news_date" id="datepicker" value="<?php echo date('D, d-M-Y'); ?>">(Format: D, dd-M-yyyy)
 							</div>
 						</div>						
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Select Category <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Pilih Kategori <span>*</span></label>
 							<div class="col-sm-3">
 								<select class="form-control select2" name="slug_news_category">
-									<option value="">Select a category</option>
+									<option value="">Pilih satu kategori</option>
 									<?php
 									$i=0;
 									foreach ($all_category as $row) {
@@ -99,7 +107,7 @@ if(!$this->session->userdata('id')) {
 								</select>
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group" hidden="hidden">
 							<label for="" class="col-sm-2 control-label">Comment <span>*</span></label>
 							<div class="col-sm-3">
 								<select class="form-control select2" name="comment">
@@ -128,7 +136,7 @@ if(!$this->session->userdata('id')) {
 								<textarea class="form-control" name="meta_description" style="height:100px;"><?php if(isset($_POST['meta_description'])) {echo $_POST['meta_description'];} ?></textarea>
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group" hidden="hidden">
 							<label for="" class="col-sm-2 control-label">User Post </label>
 							<div class="col-sm-9">
 								<input type="text" class="form-control" name="user_update" value="<?php echo $this->session->userdata('role'); ?>" readonly="readonly">

@@ -6,10 +6,10 @@ if(!$this->session->userdata('id')) {
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Edit Photo</h1>
+			<h1>Edit Foto</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="photo.php" class="btn btn-primary btn-sm">View All</a>
+			<a href="photo.php" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -37,13 +37,13 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Photo Caption <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
 							<div class="col-sm-4">
 								<input type="text" class="form-control" name="photo_caption" value="<?php echo $photo['photo_caption']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Photo Style <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Ukuran Foto <span>*</span></label>
 							<div class="col-sm-4">
 								<input id="style" type="text" class="form-control" name="photo_style" value="<?php echo $photo['photo_style']; ?>" readonly="readonly">
 							</div>
@@ -65,25 +65,25 @@ if(!$this->session->userdata('id')) {
 							</script>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Photo</label>
+							<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
 							<div class="col-sm-6" style="padding-top:6px;">
 								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $photo['photo_name']; ?>" class="existing-photo" style="width:300px;">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Upload New Photo <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Pilih <span>*</span></label>
 							<div class="col-sm-4" style="padding-top:6px;">
-								<input type="file" name="photo"> (Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo"> (Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Photo Description <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Deskripsi <span>*</span></label>
 							<div class="col-sm-4">
 								<textarea type="text" class="form-control" name="photo_desc" style="height:100px;"><?php echo $photo['photo_desc']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Show on home? <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Tampilkan? <span>*</span></label>
 							<div class="col-sm-2" style="padding-top:6px;">
 								<select name="photo_show_home" class="form-control select2">
 									<option value="Yes" <?php if($photo['photo_show_home']=='Yes') {echo 'selected';} ?>>Yes</option>

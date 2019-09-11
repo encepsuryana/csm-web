@@ -6,10 +6,10 @@ if(!$this->session->userdata('id')) {
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Add Portfolio Category</h1>
+			<h1>Tambah Kategori Portofolio</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio-category" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio-category" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -37,13 +37,13 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Category Name <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Nama Kategori <span>*</span></label>
 							<div class="col-sm-4">
 								<input type="text" class="form-control" name="category_name" placeholder="Example: Health Tips">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Status *</label>
+							<label for="" class="col-sm-2 control-label">Status <span>*</span></label>
 							<div class="col-sm-4">
 								<select name="status" class="form-control select2">
 									<option value="Active">Active</option>

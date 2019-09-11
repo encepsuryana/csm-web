@@ -7,10 +7,10 @@ if(!$this->session->userdata('id')) {
 
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Add Product</h1>
+			<h1>Tambah Produk</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/product" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/product" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -35,19 +35,19 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Upload Photo <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Unggah Foto <span>*</span></label>
 							<div class="col-sm-5" style="padding-top:6px;">
-								<input type="file" name="product"> (Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="product"> (Hanya file: jpg, jpeg, gif dan png yang diperbolehkan) 
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Product Caption <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
 							<div class="col-sm-5">
 								<input type="text" class="form-control" name="product_caption">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Product Style <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Ukuran Foto <span>*</span></label>
 							<div class="col-sm-5">
 								<input id='style' type="text" class="form-control" name="product_style" readonly="readonly">
 							</div>
@@ -69,13 +69,13 @@ if(!$this->session->userdata('id')) {
 							</script>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Product Description <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Deskripsi <span>*</span></label>
 							<div class="col-sm-5">
 								<textarea type="text" class="form-control" name="product_desc" style="height: 100px;"> </textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Show on home? <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Tampilkan? <span>*</span></label>
 							<div class="col-sm-2" style="padding-top:6px;">
 								<select name="product_show_home" class="form-control select2">
 									<option value="Yes">Yes</option>

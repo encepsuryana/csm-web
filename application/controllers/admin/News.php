@@ -37,11 +37,12 @@ class News extends CI_Controller
 			if(isset($_POST['form1'])) {
 
 				$valid = 1;
-				$this->form_validation->set_rules('news_title', 'News Title', 'trim|required');
-				$this->form_validation->set_rules('slug', 'Slug News', 'trim|required');
-				$this->form_validation->set_rules('news_short_content', 'News Short Content', 'trim|required');
-				$this->form_validation->set_rules('news_content', 'News Content', 'trim|required');
-				$this->form_validation->set_rules('slug_news_category', 'Category', 'trim|required');
+				$this->form_validation->set_rules('news_title', 'Judul', 'trim|required');
+				$this->form_validation->set_rules('slug', 'Label Berita', 'trim|required');
+				$this->form_validation->set_rules('news_short_content', 'Berita Singkat', 'trim|required');
+				$this->form_validation->set_rules('news_content', 'Konten', 'trim|required');
+				$this->form_validation->set_rules('news_date', 'Tanggal', 'trim|required');
+				$this->form_validation->set_rules('slug_news_category', 'Kategori', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -57,11 +58,11 @@ class News extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				} else {
 					$valid = 0;
-					$error .= 'You must have to select a photo for featured photo<br>';
+					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 				if($valid == 1) 
 				{
@@ -99,7 +100,7 @@ class News extends CI_Controller
 					);
 					$this->Model_news->add($form_data);
 
-					$data['success'] = 'News is added successfully!';
+					$data['success'] = 'Berita berhasil ditambahkan!';
 					unset($_POST['news_title']);
 					unset($_POST['slug']);
 					unset($_POST['news_content']);
@@ -177,7 +178,7 @@ class News extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				}
 
@@ -267,7 +268,7 @@ class News extends CI_Controller
 						$this->Model_news->update($id,$form_data);
 					}
 
-					$data['success'] = 'News is updated successfully';
+					$data['success'] = 'News telah berhasil diupdate';
 				}
 				else
 				{

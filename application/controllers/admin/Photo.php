@@ -39,9 +39,9 @@ class Photo extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('photo_caption', 'Photo Caption', 'trim|required');
-				$this->form_validation->set_rules('photo_style', 'Photo Styles', 'trim|required');
-				$this->form_validation->set_rules('photo_desc', 'Photo Description', 'trim|required');
+				$this->form_validation->set_rules('photo_caption', 'Judul', 'trim|required');
+				$this->form_validation->set_rules('photo_style', 'Ukuran Foto', 'trim|required');
+				$this->form_validation->set_rules('photo_desc', 'Deskripsi Foto', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -57,11 +57,11 @@ class Photo extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				} else {
 					$valid = 0;
-					$error .= 'You must have to select a photo for featured photo<br>';
+					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
 				if($valid == 1) 
@@ -83,7 +83,7 @@ class Photo extends CI_Controller
 					);
 					$this->Model_photo->add($form_data);
 
-					$data['success'] = 'Photo is added successfully!';
+					$data['success'] = 'Foto berhasil ditambahkan!';
 
 				} 
 				else
@@ -129,9 +129,9 @@ class Photo extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('photo_caption', 'Photo Caption', 'trim|required');
-				$this->form_validation->set_rules('photo_style', 'Photo Style', 'trim|required');
-				$this->form_validation->set_rules('photo_desc', 'Photo Description', 'trim|required');
+				$this->form_validation->set_rules('photo_caption', 'Judul', 'trim|required');
+				$this->form_validation->set_rules('photo_style', 'Foto Style', 'trim|required');
+				$this->form_validation->set_rules('photo_desc', 'Deskripsi Foto', 'trim|required');
 
 
 				if($this->form_validation->run() == FALSE) {
@@ -148,7 +148,7 @@ class Photo extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				}
 
@@ -183,7 +183,7 @@ class Photo extends CI_Controller
 					}
 
 
-					$data['success'] = 'Photo is updated successfully';
+					$data['success'] = 'Foto telah berhasil diupdate';
 				}
 				else
 				{

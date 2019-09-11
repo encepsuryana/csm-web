@@ -23,7 +23,7 @@
 						foreach ($service as $row) {
 							$i++;
 							?>
-							<div class="<?php echo $row['service_style']; ?> no-merg">
+							<div class="col-page col-sm-6 col-md-4 no-merg">
 								<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>" class="public-csm-home">
 									<div class="img-publicacion-home">
 										<img class="" src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">

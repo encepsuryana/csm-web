@@ -7,10 +7,10 @@ if(!$this->session->userdata('id')) {
 
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>View News</h1>
+			<h1>Lihat Berita</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/news/add" class="btn btn-primary btn-sm">Add New</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/news/add" class="btn btn-primary btn-sm">Tambah Baru</a>
 		</div>
 	</section>
 
@@ -25,12 +25,12 @@ if(!$this->session->userdata('id')) {
 							<thead>
 								<tr>
 									<th>No</th>
-									<th>Date</th>
-									<th>Photo</th>
-									<th>Post</th>
-									<th>Title</th>
-									<th>Category</th>
-									<th>Total Views</th>
+									<th>Tanggal</th>
+									<th>Foto</th>
+									<th>Posting</th>
+									<th>Judul</th>
+									<th>Kategori</th>
+									<th>Jumlah View</th>
 									<th>Action</th>
 								</tr>
 							</thead>
@@ -89,10 +89,10 @@ if(!$this->session->userdata('id')) {
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+					<h4 class="modal-title" id="myModalLabel">Konfirmasi Hapus</h4>
 				</div>
 				<div class="modal-body">
-					<p>Are you sure want to delete this item?</p>
+					<p>Anda yakin ingin menghapus?</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>

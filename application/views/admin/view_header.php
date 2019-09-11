@@ -85,7 +85,7 @@
 					<ul class="nav navbar-nav link-visit">
 
 						<li>
-							<a href="<?php echo base_url(); ?>" target="_blank"> <i class="fa fa-sign-in" aria-hidden="true"></i> <span>Visit Website</span></a>
+							<a href="<?php echo base_url(); ?>" target="_blank"> <i class="fa fa-sign-in" aria-hidden="true"></i> <span>Lihat Website</span></a>
 						</li>
 						<?php
 						$base_url = base_url();
@@ -169,27 +169,27 @@
 							<li class="treeview <?php if(($final_url_other == 'admin/content-home')||($final_url_other == 'admin/content-home/edit')||($final_url_other == 'admin/content-home/main-photo')||($final_url_other == 'admin/company-profile') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-home"></i>
-									<span>Content Home</span>
+									<span>Konten Beranda</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home"><i class="fa fa-industry"></i> Main Content</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Company Profile</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home"><i class="fa fa-industry"></i> Konten Utama</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Profile Perusahaan</a></li>
 								</ul>
 							</li>
 							<li class="treeview <?php if( ($final_url_other == 'admin/news/add')||($final_url_other == 'admin/news')||($final_url_other == 'admin/news/edit')||($final_url_other == 'admin/news-category/add')||($final_url_other == 'admin/news-category')||($final_url_other == 'admin/news-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-newspaper-o"></i>
-									<span>News Section</span>
+									<span>Kelola Berita</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news-category"><i class="fa fa-plus-square-o"></i> News Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news"><i class="fa fa-file-text-o"></i> News</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news-category"><i class="fa fa-plus-square-o"></i> Kategori Berita</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news"><i class="fa fa-file-text-o"></i> Berita</a></li>
 								</ul>
 							</li>
 
@@ -201,36 +201,36 @@
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/service/add')||($final_url_other == 'admin/service')||($final_url_other == 'admin/service/edit') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/service">
-									<i class="fa fa-briefcase"></i> <span>Service</span>
+									<i class="fa fa-briefcase"></i> <span>Layanan</span>
 								</a>
 							</li>
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/facility/add')||($final_url_other == 'admin/facility')||($final_url_other == 'admin/facility/edit')||($final_url_other == 'admin/facility-category/add')||($final_url_other == 'admin/facility-category')||($final_url_other == 'admin/facility-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-industry"></i>
-									<span>Facility</span>
+									<span>Fasilitas</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category"><i class="fa fa-th-list"></i> Facility Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility"><i class="fa fa-tag"></i> Facility</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category"><i class="fa fa-th-list"></i> Kategori Fasilitas</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility"><i class="fa fa-tag"></i> Fasilitas</a></li>
 								</ul>
 							</li>
 
-							<li class="treeview <?php if( ($final_url_other == 'admin/electronics-division/add')||($final_url_other == 'admin/electronics-division')||($final_url_other == 'admin/electronics-division/edit')||($final_url_other == 'admin/electronics-division-category/add')||($final_url_other == 'admin/electronics-division-category')||($final_url_other == 'admin/electronics-division-category/edit')||($final_url_other == 'admin/electronics-division-desc')||($final_url_other == 'admin/electronics-division-category/update') ) {echo 'active';} ?>">
+							<li class="treeview <?php if(($final_url_other == 'admin/electronics-division/add')||($final_url_other == 'admin/electronics-division')||($final_url_other == 'admin/electronics-division/edit')||($final_url_other == 'admin/electronics-division-category/add')||($final_url_other == 'admin/electronics-division-category')||($final_url_other == 'admin/electronics-division-category/edit')||($final_url_other == 'admin/electronics-division-desc')||($final_url_other == 'admin/electronics-division-desc/update')||($final_url_other == 'admin/electronics-division-category/update')) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-microchip"></i>
-									<span>Electronics Division</span>
+									<span>Divisi Elektronik</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i> Electronics Division Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Electronics Division Desc</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Electronics Division</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i> Kategori Divisi Elektronik</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Des. Divisi Elektronik</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Divisi Elektronik</a></li>
 								</ul>
 							</li>
 
@@ -243,40 +243,40 @@
 							<li class="treeview <?php if( ($final_url_other == 'admin/product/add')||($final_url_other == 'admin/product')||($final_url_other == 'admin/product/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-cubes"></i>
-									<span>Photo Product</span>
+									<span>Produk Galeri</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/product"><i class="fa fa fa-cube"></i>Product</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/product"><i class="fa fa fa-cube"></i>Produk</a></li>
 								</ul>
 							</li>
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/photo/add')||($final_url_other == 'admin/photo')||($final_url_other == 'admin/photo/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-camera"></i>
-									<span>Photo Gallery</span>
+									<span>Galeri Foto</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/photo"><i class="fa fa-camera-retro"></i>Photo</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/photo"><i class="fa fa-camera-retro"></i>Foto</a></li>
 								</ul>
 							</li>
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/portfolio/add')||($final_url_other == 'admin/portfolio')||($final_url_other == 'admin/portfolio/edit')||($final_url_other == 'admin/portfolio-category/add')||($final_url_other == 'admin/portfolio-category')||($final_url_other == 'admin/portfolio-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-list-alt"></i>
-									<span>Portfolio</span>
+									<span>Portofolio</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio-category"><i class="fa fa-list-ul"></i> Portfolio Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio"><i class="fa fa-list-ol"></i> Portfolio</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio-category"><i class="fa fa-list-ul"></i> Kategori Portofolio</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio"><i class="fa fa-list-ol"></i> Portofolio</a></li>
 								</ul>
 							</li>
 
@@ -290,32 +290,31 @@
 								</a>
 								<ul class="treeview-menu">
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/testimonial"><i class="fa fa-comments-o"></i>Testimonial</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/testimonial/main-photo"><i class="fa fa-picture-o"></i> Main Photo</a></li>
 								</ul>
 							</li>	
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/page') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/page">
-									<i class="fa fa-file-text"></i> <span>Page</span>
+									<i class="fa fa-file-text"></i> <span>Halaman</span>
 								</a>
 							</li>
 
 
 							<li class="treeview <?php if( ($final_url_other == 'admin/comment') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/comment">
-									<i class="fa fa-comment"></i> <span>Comment</span>
+									<i class="fa fa-comment"></i> <span>Komentar</span>
 								</a>
 							</li>
 							
 							<li class="treeview <?php if( ($final_url_other == 'admin/language') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/language">
-									<i class="fa fa-language"></i> <span>language</span>
+									<i class="fa fa-language"></i> <span>Bahasa</span>
 								</a>
 							</li>
 							
 							<li class="treeview <?php if( ($final_url_other == 'admin/social-media') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/social-media">
-									<i class="fa fa-address-book"></i> <span>Social Media</span>
+									<i class="fa fa-address-book"></i> <span>Media Sosial</span>
 								</a>
 							</li>
 						<?php endif; ?>   
@@ -327,13 +326,13 @@
 							<li class="treeview <?php if(($final_url_other == 'hrd/company-profile')) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-home"></i>
-									<span>Content Home</span>
+									<span>Konten Beranda</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Company Profile</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Profile Perusahaan</a></li>
 								</ul>
 							</li>
 
@@ -341,14 +340,14 @@
 							<li class="treeview <?php if( ($final_url_other == 'hrd/news/add')||($final_url_other == 'hrd/news')||($final_url_other == 'hrd/news/edit')||($final_url_other == 'hrd/news-category/add')||($final_url_other == 'hrd/news-category')||($final_url_other == 'hrd/news-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-newspaper-o"></i>
-									<span>News Section</span>
+									<span>Kelola Berita</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news-category"><i class="fa fa-plus-square-o"></i> News Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news"><i class="fa fa-file-text-o"></i> News</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news-category"><i class="fa fa-plus-square-o"></i> Kategori Berita</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news"><i class="fa fa-file-text-o"></i> Berita</a></li>
 								</ul>
 							</li>
 
@@ -360,66 +359,64 @@
 
 							<li class="treeview <?php if( ($final_url_other == 'hrd/service/add')||($final_url_other == 'hrd/service')||($final_url_other == 'hrd/service/edit') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/service">
-									<i class="fa fa-briefcase"></i> <span>Service</span>
+									<i class="fa fa-briefcase"></i> <span>Layanan</span>
 								</a>
 							</li>
 
 							<li class="treeview <?php if(($final_url_other == 'hrd/facility')||($final_url_other == 'hrd/facility-category')) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-industry"></i>
-									<span>Facility</span>
+									<span>Fasilitas</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category"><i class="fa fa-th-list"></i> Facility Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility"><i class="fa fa-tag"></i> Facility</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category"><i class="fa fa-th-list"></i> Kategori Fasilitas</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility"><i class="fa fa-tag"></i> Fasilitas</a></li>
 								</ul>
 							</li>
 
 							<li class="treeview <?php if( ($final_url_other == 'hrd/electronics-division/add')||($final_url_other == 'hrd/electronics-division')||($final_url_other == 'hrd/electronics-division/edit')||($final_url_other == 'hrd/electronics-division-category/add')||($final_url_other == 'hrd/electronics-division-category')||($final_url_other == 'hrd/electronics-division-category/edit')||($final_url_other == 'hrd/electronics-division-desc/update')||($final_url_other == 'hrd/electronics-division-desc') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-microchip"></i>
-									<span>Electronics Division</span>
+									<span>Divisi Elektronik</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i> Electronics Division Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Electronics Division Desc</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Electronics Division</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i>Kategori Divisi Elektronik</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Des. Divisi Elektronik</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Divisi Elektronik</a></li>
 								</ul>
 							</li>
 
 							<li class="treeview <?php if(($final_url_other == 'hrd/product')) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-cubes"></i>
-									<span>Photo Product</span>
+									<span>Produk Galeri</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/product"><i class="fa fa fa-cube"></i>Product</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/product"><i class="fa fa fa-cube"></i>Produk</a></li>
 								</ul>
 							</li>
 
 							<li class="treeview <?php if( ($final_url_other == 'hrd/photo/add')||($final_url_other == 'hrd/photo')||($final_url_other == 'hrd/photo/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-camera"></i>
-									<span>Photo Gallery</span>
+									<span>Galeri Foto</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/photo"><i class="fa fa-camera-retro"></i>Photo</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/photo"><i class="fa fa-camera-retro"></i>Foto</a></li>
 								</ul>
 							</li>
-
-
 
 							<li class="treeview <?php if(($final_url_other == 'hrd/portfolio')||($final_url_other == 'hrd/portfolio-category')) {echo 'active';} ?>">
 								<a href="#">
@@ -430,7 +427,7 @@
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio-category"><i class="fa fa-list-ul"></i> Portfolio Category</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio-category"><i class="fa fa-list-ul"></i> Kategori Portofolio</a></li>
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio"><i class="fa fa-list-ol"></i> Portfolio</a></li>
 								</ul>
 							</li>
@@ -457,7 +454,7 @@
 
 							<li class="treeview <?php if( ($final_url_other == 'hrd/page') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/page">
-									<i class="fa fa-file-text"></i> <span>Page</span>
+									<i class="fa fa-file-text"></i> <span>Halaman</span>
 								</a>
 							</li>
 						<?php endif; ?> 
@@ -469,27 +466,27 @@
 							<li class="treeview <?php if($final_url_other == 'staff/company-profile') {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-home"></i>
-									<span>Content Home</span>
+									<span>Konten Beranda</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Company Profile</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Profile Perusahaan</a></li>
 								</ul>
 							</li>
 
 							<li class="treeview <?php if( ($final_url_other == 'staff/news/add')||($final_url_other == 'staff/news')||($final_url_other == 'staff/news/edit')||($final_url_other == 'staff/news-category/add')||($final_url_other == 'staff/news-category')||($final_url_other == 'staff/news-category/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-newspaper-o"></i>
-									<span>News Section</span>
+									<span>Kelola Berita</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news-category"><i class="fa fa-plus-square-o"></i> News Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news"><i class="fa fa-file-text-o"></i> News</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news-category"><i class="fa fa-plus-square-o"></i> Kategori Berita</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/news"><i class="fa fa-file-text-o"></i> Berita</a></li>
 								</ul>
 							</li>
 							<li class="treeview <?php if( ($final_url_other == 'staff/slider/add')||($final_url_other == 'staff/slider')||($final_url_other == 'staff/slider/edit') ) {echo 'active';} ?>">
@@ -500,7 +497,7 @@
 
 							<li class="treeview <?php if( ($final_url_other == 'staff/service/add')||($final_url_other == 'staff/service')||($final_url_other == 'staff/service/edit') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/service">
-									<i class="fa fa-briefcase"></i> <span>Service</span>
+									<i class="fa fa-briefcase"></i> <span>Layanan</span>
 								</a>
 							</li>
 
@@ -521,35 +518,35 @@
 							<li class="treeview <?php if( ($final_url_other == 'staff/electronics-division/add')||($final_url_other == 'staff/electronics-division')||($final_url_other == 'staff/electronics-division/edit')||($final_url_other == 'staff/electronics-division-category/add')||($final_url_other == 'staff/electronics-division-category')||($final_url_other == 'staff/electronics-division-category/edit')||($final_url_other == 'staff/electronics-division-desc/update')||($final_url_other == 'staff/electronics-division-desc') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-microchip"></i>
-									<span>Electronics Division</span>
+									<span>Divisi Elektronik</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i> Electronics Division Category</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Electronics Division Desc</a></li>
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Electronics Division</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i> Kategori Divisi Elektronik</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Des. Divisi Elektronik</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Divisi Elektronik</a></li>
 								</ul>
 							</li>
 
 							<li class="treeview <?php if( ($final_url_other == 'staff/product/add')||($final_url_other == 'staff/product')||($final_url_other == 'staff/product/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-cubes"></i>
-									<span>Photo Product</span>
+									<span>Produk Galeri</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/product"><i class="fa fa fa-cube"></i>Product</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/product"><i class="fa fa fa-cube"></i>Produk</a></li>
 								</ul>
 							</li>
 
 							<li class="treeview <?php if( ($final_url_other == 'staff/photo/add')||($final_url_other == 'staff/photo')||($final_url_other == 'staff/photo/edit') ) {echo 'active';} ?>">
 								<a href="#">
 									<i class="fa fa-camera"></i>
-									<span>Photo Gallery</span>
+									<span>Galeri Foto</span>
 									<span class="pull-right-container">
 										<i class="fa fa-angle-left pull-right"></i>
 									</span>
@@ -569,7 +566,7 @@
 									</span>
 								</a>
 								<ul class="treeview-menu">
-									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio-category"><i class="fa fa-list-ul"></i> Portfolio Category</a></li>
+									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio-category"><i class="fa fa-list-ul"></i> Kategori Portofolio</a></li>
 									<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio"><i class="fa fa-list-ol"></i> Portfolio</a></li>
 								</ul>
 							</li>
@@ -597,7 +594,7 @@
 
 							<li class="treeview <?php if( ($final_url_other == 'staff/page') ) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/page">
-									<i class="fa fa-file-text"></i> <span>Page</span>
+									<i class="fa fa-file-text"></i> <span>Halaman</span>
 								</a>
 							</li>
 						<?php endif; ?>   

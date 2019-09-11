@@ -6,11 +6,11 @@ if(!$this->session->userdata('id')) {
 <?php if ($this->session->userdata('role') == 'admin') { ?>
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Content Home</h1>
+			<h1>Konten Beranda</h1>
 		</div>
 		<!--
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home/add" class="btn btn-primary btn-sm">Add New</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home/add" class="btn btn-primary btn-sm">Tambah Baru</a>
 		</div>
 		-->
 </section>
@@ -24,9 +24,9 @@ if(!$this->session->userdata('id')) {
 						<thead>
 							<tr>
 								<th>No</th>
-								<th>Img Background</th>
-								<th>Icon</th>
-								<th>Title</th>
+								<th>Background</th>
+								<th>Ikon</th>
+								<th>Judul</th>
 								<th>Link</th>
 								<th width="140">Action</th>
 							</tr>

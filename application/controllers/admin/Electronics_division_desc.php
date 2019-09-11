@@ -63,11 +63,11 @@ class Electronics_division_desc extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 
@@ -85,7 +85,7 @@ class Electronics_division_desc extends CI_Controller
 						'electronics_division_desc_photo' => $final_name
 					);
 					$this->Model_electronics_division_desc->update($form_data);
-					$data['success'] = 'Electronics Division Desc Photo is updated successfully!';		    	
+					$data['success'] = 'Des. Divisi Elektronik Photo telah berhasil diupdate!';		    	
 				}        	
 			}
 
@@ -99,7 +99,7 @@ class Electronics_division_desc extends CI_Controller
 					'md_electronics_division_desc'      => $_POST['md_electronics_division_desc']
 				);
 				$this->Model_electronics_division_desc->update($form_data);        	
-				$data['success'] = 'Electronics Division Desc is updated successfully!';
+				$data['success'] = 'Des. Divisi Elektronik telah berhasil diupdate!';
 			}
 
 			$header['setting'] = $this->Model_header->get_setting_data();

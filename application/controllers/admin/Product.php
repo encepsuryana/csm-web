@@ -41,9 +41,9 @@ class Product extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('product_caption', 'Product Caption', 'trim|required');
-				$this->form_validation->set_rules('product_style', 'Product Style', 'trim|required');
-				$this->form_validation->set_rules('product_desc', 'Product Description', 'trim|required');
+				$this->form_validation->set_rules('product_caption', 'Judul', 'trim|required');
+				$this->form_validation->set_rules('product_style', 'Ukuran Foto', 'trim|required');
+				$this->form_validation->set_rules('product_desc', 'Deskripsi Produk', 'trim|required');
 
 
 				if($this->form_validation->run() == FALSE) {
@@ -60,11 +60,11 @@ class Product extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				} else {
 					$valid = 0;
-					$error .= 'You must have to select a photo for featured photo<br>';
+					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
 				if($valid == 1) 
@@ -86,7 +86,7 @@ class Product extends CI_Controller
 					);
 					$this->Model_product->add($form_data);
 
-					$data['success'] = 'Product is added successfully!';
+					$data['success'] = 'Produk berhasil ditambahkan!';
 
 				} 
 				else
@@ -133,9 +133,9 @@ class Product extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('product_caption', 'Product Caption', 'trim|required');
-				$this->form_validation->set_rules('product_style', 'Product Style', 'trim|required');
-				$this->form_validation->set_rules('product_desc', 'Product Description', 'trim|required');
+				$this->form_validation->set_rules('product_caption', 'Judul', 'trim|required');
+				$this->form_validation->set_rules('product_style', 'Ukuran Foto', 'trim|required');
+				$this->form_validation->set_rules('product_desc', 'Deskripsi Produk', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -151,7 +151,7 @@ class Product extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				}
 
@@ -187,7 +187,7 @@ class Product extends CI_Controller
 					}
 
 
-					$data['success'] = 'Product is updated successfully';
+					$data['success'] = 'Produk telah berhasil diupdate';
 				}
 				else
 				{

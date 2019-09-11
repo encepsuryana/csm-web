@@ -39,7 +39,7 @@ class Electronics_division_category extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('category_name', 'Category Name', 'trim|required');
+				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -55,7 +55,7 @@ class Electronics_division_category extends CI_Controller
 					);
 					$this->Model_electronics_division_category->add($form_data);
 
-					$data['success'] = 'electronics_division category is added successfully!';
+					$data['success'] = 'electronics_division category berhasil ditambahkan!';
 				}
 
 				$this->load->view('admin/view_header',$header);
@@ -96,7 +96,7 @@ class Electronics_division_category extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('category_name', 'Category Name', 'trim|required');
+				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -108,7 +108,7 @@ class Electronics_division_category extends CI_Controller
 					$total = $this->Model_electronics_division_category->duplicate_check($_POST['category_name'],$data['electronics_division_category']['category_name']);				
 					if($total) {
 						$valid = 0;
-						$data['error'] = 'Category name already exists';
+						$data['error'] = 'Nama Kategori sudah ada';
 					}
 				}
 
@@ -121,7 +121,7 @@ class Electronics_division_category extends CI_Controller
 					);
 					$this->Model_electronics_division_category->update($id,$form_data);
 
-					$data['success'] = 'electronics_division Category is updated successfully';
+					$data['success'] = 'electronics_division Category telah berhasil diupdate';
 				}
 
 				$data['electronics_division_category'] = $this->Model_electronics_division_category->getData($id);

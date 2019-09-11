@@ -36,7 +36,7 @@ class Language extends CI_Controller
 					$this->Model_language->update($new_arr3[$i],$form_data);
 				}
 
-				$data['success'] = 'Language data is updated successfully';
+				$data['success'] = 'Language data telah berhasil diupdate';
 
 				$data['language'] = $this->Model_language->show();
 				$this->load->view('admin/view_header',$header);
@@ -61,7 +61,7 @@ class Language extends CI_Controller
 					$this->Model_language->update($new_arr3[$i],$form_data);
 				}
 
-				$data['success'] = 'Language data is updated successfully';
+				$data['success'] = 'Database Bahasa telah berhasil diupdate';
 
 				$data['language'] = $this->Model_language->show();
 				$this->load->view('admin/view_header',$header);

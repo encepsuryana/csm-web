@@ -41,7 +41,7 @@ class Reset_password extends CI_Controller
                     'token'    => ''
                 );
                 $this->Model_reset_password->update($email,$form_data);
-                $data['success'] = 'Password is updated successfully!';                
+                $data['success'] = 'Password telah berhasil diupdate!';                
             }
             $data['var1'] = $email;
             $data['var2'] = $token;

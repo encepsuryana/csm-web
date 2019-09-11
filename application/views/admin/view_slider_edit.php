@@ -10,7 +10,7 @@ if(!$this->session->userdata('id')) {
 			<h1>Edit Slider</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/slider" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/slider" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -36,49 +36,49 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Photo</label>
+							<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
 							<div class="col-sm-9" style="padding-top:5px">
 								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $slider['photo']; ?>" alt="Slider Photo" style="width:400px;">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Photo </label>
+							<label for="" class="col-sm-2 control-label">Foto </label>
 							<div class="col-sm-6" style="padding-top:5px">
-								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Heading </label>
+							<label for="" class="col-sm-2 control-label">Judul </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="heading" value="<?php echo $slider['heading']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Content </label>
+							<label for="" class="col-sm-2 control-label">Konten </label>
 							<div class="col-sm-6">
 								<textarea class="form-control" name="content" style="height:140px;"><?php echo $slider['content']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Button1 Text </label>
+							<label for="" class="col-sm-2 control-label">Tombol1 Text </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="button1_text" value="<?php echo $slider['button1_text']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Button1 URL </label>
+							<label for="" class="col-sm-2 control-label">Tombol1 URL </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="button1_url" value="<?php echo $slider['button1_url']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Button2 Text </label>
+							<label for="" class="col-sm-2 control-label">Tombol2 Text </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="button2_text" value="<?php echo $slider['button2_text']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Button2 URL </label>
+							<label for="" class="col-sm-2 control-label">Tombol2 URL </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="button2_url" value="<?php echo $slider['button2_url']; ?>">
 							</div>

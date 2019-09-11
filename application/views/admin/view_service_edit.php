@@ -9,7 +9,7 @@ if(!$this->session->userdata('id')) {
 			<h1>Edit Service</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/service" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/service" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -33,52 +33,31 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">						
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Heading *</label>
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="heading" value="<?php echo $service['heading']; ?>">
 							</div>
 						</div>			
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Style *</label>
-							<div class="col-sm-6">
-								<input id="style" type="text" autocomplete="off" class="form-control" name="service_style" value="<?php echo $service['service_style']; ?>" readonly="readonly">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label"><span></span></label>
-							<div class="col-sm-4" style="text-align: center;">
-								<div class="style-select" > 
-									<i class="fa fa-info-circle" aria-hidden="true"></i>
-									<span>Select Style: </span>
-								</div>
-								<input id="add" type="button" onclick='ik(this.value);' value='col-page col-sm-6 col-md-4' style="padding: 40px 50px;">
-							</div>
-							<script type="text/javascript">
-								function ik(val){
-									document.getElementById('style').value = val;  
-								}
-							</script>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Photo</label>
+							<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
 							<div class="col-sm-9" style="padding-top:5px;">
 								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $service['photo']; ?>" alt="Service Photo" style="width:200px;">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Photo </label>
+							<label for="" class="col-sm-2 control-label">Foto </label>
 							<div class="col-sm-6" style="padding-top:5px">
-								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Short Content *</label>
+							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="short_content" style="height:140px;"><?php echo $service['short_content']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Content *</label>
+							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="content" id="editor1"><?php echo $service['content']; ?></textarea>
 							</div>

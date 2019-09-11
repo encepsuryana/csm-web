@@ -80,11 +80,11 @@ class Page extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 
@@ -102,7 +102,7 @@ class Page extends CI_Controller
 						'about_photo' => $final_name
 					);
 					$this->Model_page->update($form_data);
-					$data['success'] = 'About Photo is updated successfully!';		    	
+					$data['success'] = 'Foto Perusahaan telah berhasil diupdate!';		    	
 				}        	
 			}
 
@@ -116,11 +116,11 @@ class Page extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 
@@ -138,7 +138,7 @@ class Page extends CI_Controller
 						'structure_photo' => $final_name
 					);
 					$this->Model_page->update($form_data);
-					$data['success'] = 'Structure Photo is updated successfully!';		    	
+					$data['success'] = 'Struktur Organisasi telah berhasil diupdate!';		    	
 				}        	
 			}
 
@@ -149,7 +149,7 @@ class Page extends CI_Controller
 					'md_home' => $_POST['md_home']
 				);
 				$this->Model_page->update($form_data);
-				$data['success'] = 'Home Page Setting is updated successfully!';
+				$data['success'] = 'Seting Halaman telah berhasil diupdate!';
 			}
 
 			if(isset($_POST['form_about'])) {			
@@ -167,7 +167,7 @@ class Page extends CI_Controller
 					'md_about'      => $_POST['md_about']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'About Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Tentang telah berhasil diupdate!';
 			}
 
 			if(isset($_POST['form_gallery'])) {			
@@ -177,7 +177,7 @@ class Page extends CI_Controller
 					'md_gallery'      => $_POST['md_gallery']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Gallery Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Galeri telah berhasil diupdate!';
 			}
 
 			if(isset($_POST['form_product'])) {			
@@ -187,7 +187,7 @@ class Page extends CI_Controller
 					'md_product'      => $_POST['md_product']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Product Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Produk telah berhasil diupdate!';
 			}
 
 			if(isset($_POST['form_service'])) {			
@@ -197,7 +197,7 @@ class Page extends CI_Controller
 					'md_service'      => $_POST['md_service']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Service Page Setting is updated successfully!';
+				$data['success'] = 'Setting Hamalan Layanan telah berhasil diupdate!';
 			}
 
 			if(isset($_POST['form_facility'])) {			
@@ -207,7 +207,7 @@ class Page extends CI_Controller
 					'md_facility'      => $_POST['md_facility']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Service Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Pelayanan telah berhasil diupdate!';
 			}
 
 
@@ -218,7 +218,7 @@ class Page extends CI_Controller
 					'md_portfolio'      => $_POST['md_portfolio']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Portfolio Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Portofolio telah berhasil diupdate!';
 			}
 
 
@@ -229,7 +229,7 @@ class Page extends CI_Controller
 					'md_testimonial'      => $_POST['md_testimonial']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Testimonial Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Testimonial telah berhasil diupdate!';
 			}
 
 
@@ -240,7 +240,7 @@ class Page extends CI_Controller
 					'md_news'      => $_POST['md_news']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'News Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Berita telah berhasil diupdate!';
 			}
 
 
@@ -251,7 +251,7 @@ class Page extends CI_Controller
 					'md_contact'      => $_POST['md_contact']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Contact Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Beranda telah berhasil diupdate!';
 			}
 
 			if(isset($_POST['form_carrier'])) {			
@@ -261,7 +261,7 @@ class Page extends CI_Controller
 					'md_carrier'      => $_POST['md_carrier']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Carrier Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Karir telah berhasil diupdate!';
 			}
 
 			if(isset($_POST['form_electronic_division'])) {			
@@ -271,7 +271,7 @@ class Page extends CI_Controller
 					'md_electronics_division'      => $_POST['md_electronics_division']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Electronic Division Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Divisi Elektronik telah berhasil diupdate!';
 			}
 
 
@@ -282,7 +282,7 @@ class Page extends CI_Controller
 					'md_search'      => $_POST['md_search']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Search Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Pencarian telah berhasil diupdate!';
 			}
 
 
@@ -294,7 +294,7 @@ class Page extends CI_Controller
 					'md_term'      => $_POST['md_term']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Term Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman Term telah berhasil diupdate!';
 			}
 
 			if(isset($_POST['form_privacy'])) {			
@@ -305,7 +305,7 @@ class Page extends CI_Controller
 					'md_privacy'      => $_POST['md_privacy']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Privacy Page Setting is updated successfully!';
+				$data['success'] = 'Setting Halaman  Privacy telah berhasil diupdate!';
 			}
 
 
@@ -332,11 +332,11 @@ class Page extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 
@@ -354,7 +354,7 @@ class Page extends CI_Controller
 						'about_photo' => $final_name
 					);
 					$this->Model_page->update($form_data);
-					$data['success'] = 'About Photo is updated successfully!';		    	
+					$data['success'] = 'Foto Perusahaan telah berhasil diupdate!';		    	
 				}        	
 			}
 
@@ -368,11 +368,11 @@ class Page extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 
@@ -390,7 +390,7 @@ class Page extends CI_Controller
 						'structure_photo' => $final_name
 					);
 					$this->Model_page->update($form_data);
-					$data['success'] = 'Structure Photo is updated successfully!';		    	
+					$data['success'] = 'Struktur Organisasi telah berhasil diupdate!';		    	
 				}        	
 			}
 
@@ -409,7 +409,7 @@ class Page extends CI_Controller
 					'md_about'      => $_POST['md_about']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'About Page Setting is updated successfully!';
+				$data['success'] = 'Halaman Tentang Setting telah berhasil diupdate!';
 			}
 
 

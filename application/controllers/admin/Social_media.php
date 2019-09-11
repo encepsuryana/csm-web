@@ -39,7 +39,7 @@ class Social_media extends CI_Controller
 				$this->Model_social_media->update('Digg',array('social_url'        => $_POST['digg']));
 
 
-				$data['success'] = 'Social Media is updated successfully';
+				$data['success'] = 'Media Sosial telah berhasil diupdate';
 
 
 				$data['social'] = $this->Model_social_media->show();

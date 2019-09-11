@@ -64,35 +64,6 @@
 					<p>
 						<?php echo $portfolio['content']; ?>
 					</p>
-				</div>
-
-				<div class="single-service-text recent-single-text pt_10">
-					<div class="table-responsive">
-						<table class="table table-bordered project-desc">
-							<tr>
-								<td><h4><?php echo CLIENT_NAME; ?></h4></td>
-								<td><?php echo $portfolio['client_name']; ?></td>
-							</tr>
-							<tr>
-								<td><h4><?php echo CLIENT_COMPANY; ?></h4></td>
-								<td><?php echo $portfolio['client_company']; ?></td>
-							</tr>
-							<tr>
-								<td><h4><?php echo PROJECT_START_DATE; ?></h4></td>
-								<td><?php echo $portfolio['start_date']; ?></td>
-							</tr>
-							<tr>
-								<td><h4><?php echo PROJECT_END_DATE; ?></h4></td>
-								<td><?php echo $portfolio['end_date']; ?></td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<div class="single-service-text recent-single-text">
-					<h4><?php echo CLIENT_COMMENT; ?></h4>
-					<div class="client-comment">
-						<?php echo $portfolio['client_comment']; ?>
-					</div>
 				</div>				
 			</div>
 

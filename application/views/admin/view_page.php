@@ -6,7 +6,7 @@ if(!$this->session->userdata('id')) {
 <?php if ($this->session->userdata('role') == 'admin') { ?>
     <section class="content-header">
      <div class="content-header-left">
-      <h1>Page Section</h1>
+      <h1>Pengaturan Halaman</h1>
   </div>
 </section>
 
@@ -32,21 +32,21 @@ if(!$this->session->userdata('id')) {
 		<div class="col-md-12">
             <div class="nav-tabs-custom">
              <ul class="nav nav-tabs">
-              <li class="active"><a href="#tab_1" data-toggle="tab">Home</a></li>
-              <li><a href="#tab_2" data-toggle="tab">About</a></li>
-              <li><a href="#tab_3" data-toggle="tab">Gallery</a></li>
-              <li><a href="#tab_4" data-toggle="tab">Product</a></li>
-              <li><a href="#tab_6" data-toggle="tab">Service</a></li>
-              <li><a href="#tab_7" data-toggle="tab">Facility</a></li>
-              <li><a href="#tab_8" data-toggle="tab">Portfolio</a></li>
+              <li class="active"><a href="#tab_1" data-toggle="tab">Beranda</a></li>
+              <li><a href="#tab_2" data-toggle="tab">Tentang</a></li>
+              <li><a href="#tab_3" data-toggle="tab">Galeri</a></li>
+              <li><a href="#tab_4" data-toggle="tab">Produk</a></li>
+              <li><a href="#tab_6" data-toggle="tab">Layanan</a></li>
+              <li><a href="#tab_7" data-toggle="tab">Fasilitas</a></li>
+              <li><a href="#tab_8" data-toggle="tab">Portofolio</a></li>
               <li><a href="#tab_9" data-toggle="tab">Testimonial</a></li>
-              <li><a href="#tab_10" data-toggle="tab">News</a></li>
-              <li><a href="#tab_11" data-toggle="tab">Contact</a></li>
-              <li><a href="#tab_12" data-toggle="tab">Search</a></li>
+              <li><a href="#tab_10" data-toggle="tab">Berita</a></li>
+              <li><a href="#tab_11" data-toggle="tab">Kontak</a></li>
+              <li><a href="#tab_12" data-toggle="tab">Pencarian</a></li>
               <li><a href="#tab_13" data-toggle="tab">Terms</a></li>
               <li><a href="#tab_14" data-toggle="tab">Privacy</a></li>
-              <li><a href="#tab_15" data-toggle="tab">Carrier</a></li>
-              <li><a href="#tab_16" data-toggle="tab">Electronics Division</a></li>
+              <li><a href="#tab_15" data-toggle="tab">Karir</a></li>
+              <li><a href="#tab_16" data-toggle="tab">Divisi Elektronik</a></li>
           </ul>
 
           <div class="tab-content">

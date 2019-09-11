@@ -33,7 +33,7 @@ class Login extends CI_Controller
 
             if(!$un) {
 
-                $data['error'] = 'Email address is wrong!';
+                $data['error'] = 'Email address salah!';
                 $this->load->view('admin/view_login',$data);
 
             } else {
@@ -43,7 +43,7 @@ class Login extends CI_Controller
 
                 if(!$pw) {
 
-                    $data['error'] = 'Password is wrong!';
+                    $data['error'] = 'Password salah!';
                     $this->load->view('admin/view_login',$data);
 
                 } else {

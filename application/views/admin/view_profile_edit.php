@@ -10,7 +10,7 @@ if(!$this->session->userdata('id')) {
 			<h1>Edit User</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/profile" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/profile" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -35,7 +35,7 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Full Name <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Nama Lengkap <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="full_name" value="<?php echo $profile['full_name']; ?>">
 							</div>
@@ -47,7 +47,7 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Phone <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">No. Telp <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="number" autocomplete="off" class="form-control" name="phone" value="<?php echo $profile['phone']; ?>">
 							</div>
@@ -59,7 +59,7 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Retype Password </label>
+							<label for="" class="col-sm-2 control-label">Ulangi Password </label>
 							<div class="col-sm-4">
 								<input type="password" class="form-control" name="re_password">
 							</div>
@@ -73,7 +73,7 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Photo </label>
 							<div class="col-sm-6" style="padding-top:5px">
-								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
 

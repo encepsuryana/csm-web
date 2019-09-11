@@ -7,10 +7,10 @@ if(!$this->session->userdata('id')) {
 
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Edit Product</h1>
+			<h1>Edit Produk</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="product.php" class="btn btn-primary btn-sm">View All</a>
+			<a href="product.php" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -38,13 +38,25 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Product Caption <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Foto tersedia</label>
+							<div class="col-sm-6" style="padding-top:6px;">
+								<img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $product['product_name']; ?>" class="existing-photo" style="width:300px;">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Unggah foto baru <span>*</span></label>
+							<div class="col-sm-4" style="padding-top:6px;">
+								<input type="file" name="product">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
 							<div class="col-sm-4">
 								<input type="text" class="form-control" name="product_caption" value="<?php echo $product['product_caption']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Product Style <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Ukuran Foto <span>*</span></label>
 							<div class="col-sm-4">
 								<input id="style" type="text" class="form-control" name="product_style" value="<?php echo $product['product_style']; ?>" readonly="readonly">
 							</div>
@@ -65,29 +77,14 @@ if(!$this->session->userdata('id')) {
 								}
 							</script>
 						</div>
-
-
-
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Photo</label>
-							<div class="col-sm-6" style="padding-top:6px;">
-								<img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $product['product_name']; ?>" class="existing-photo" style="width:300px;">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Upload New Photo <span>*</span></label>
-							<div class="col-sm-4" style="padding-top:6px;">
-								<input type="file" name="product"> (Only jpg, jpeg, gif and png are allowed)
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Product Description <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Deskripsi <span>*</span></label>
 							<div class="col-sm-4">
 								<textarea type="text" class="form-control" name="product_desc" style="height: 100px;"><?php echo $product['product_desc']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Show on home? <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Tampilkan? <span>*</span></label>
 							<div class="col-sm-2" style="padding-top:6px;">
 								<select name="product_show_home" class="form-control select2">
 									<option value="Yes" <?php if($product['product_show_home']=='Yes') {echo 'selected';} ?>>Yes</option>

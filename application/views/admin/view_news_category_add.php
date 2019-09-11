@@ -7,10 +7,10 @@ if(!$this->session->userdata('id')) {
 
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Add News Category</h1>
+			<h1>Tambah Kategori Baru</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/news-category" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/news-category" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -37,7 +37,7 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Category Name <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Nama Kategori <span>*</span></label>
 							<div class="col-sm-4">
 								<input type="text" class="form-control" name="category_name">
 							</div>

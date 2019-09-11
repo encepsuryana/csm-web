@@ -7,11 +7,11 @@ if(!$this->session->userdata('id')) {
 
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>View Portfolio</h1>
+			<h1>Lihat Portofolio</h1>
 		</div>
 		<div class="content-header-right">
 			<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
-				<a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio/add" class="btn btn-primary btn-sm">Add New</a>
+				<a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio/add" class="btn btn-primary btn-sm">Tambah Baru</a>
 			<?php } else {?>
 				
 			<?php }?>
@@ -27,9 +27,9 @@ if(!$this->session->userdata('id')) {
 							<thead>
 								<tr>
 									<th>No</th>
-									<th>Photo</th>
-									<th>Name</th>
-									<th>Category</th>
+									<th>Foto</th>
+									<th>Judul</th>
+									<th>Kategori</th>
 									<th width="300">Action</th>
 								</tr>
 							</thead>
@@ -68,78 +68,36 @@ if(!$this->session->userdata('id')) {
 											<div class="modal-content">
 												<div class="modal-header">
 													<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-													<h4 class="modal-title" id="myModalLabel">View Details</h4>
+													<h4 class="modal-title" id="myModalLabel">Lihat Detail</h4>
 												</div>
 												<div class="modal-body">
 													<div class="rTable">
 														<div class="rTableRow">
-															<div class="rTableHead"><strong>Name</strong></div>
+															<div class="rTableHead"><strong>Judul</strong></div>
 															<div class="rTableCell">
 																<?php echo $row['name']; ?>
 															</div>
 														</div>
 														<div class="rTableRow">
-															<div class="rTableHead"><strong>Content</strong></div>
+															<div class="rTableHead"><strong>Konten</strong></div>
 															<div class="rTableCell">
 																<?php echo $row['content']; ?>
 															</div>
 														</div>
 														<div class="rTableRow">
-															<div class="rTableHead"><strong>Client Name</strong></div>
-															<div class="rTableCell">
-																<?php echo $row['client_name']; ?>
-															</div>
-														</div>
-														<div class="rTableRow">
-															<div class="rTableHead"><strong>Client Company</strong></div>
-															<div class="rTableCell">
-																<?php echo $row['client_company']; ?>
-															</div>
-														</div>
-														<div class="rTableRow">
-															<div class="rTableHead"><strong>Project Start Date</strong></div>
-															<div class="rTableCell">
-																<?php echo $row['start_date']; ?>
-															</div>
-														</div>
-														<div class="rTableRow">
-															<div class="rTableHead"><strong>Project End Date</strong></div>
-															<div class="rTableCell">
-																<?php echo $row['end_date']; ?>
-															</div>
-														</div>
-														<div class="rTableRow">
-															<div class="rTableHead"><strong>Website</strong></div>
-															<div class="rTableCell">
-																<?php echo $row['website']; ?>
-															</div>
-														</div>
-														<div class="rTableRow">
-															<div class="rTableHead"><strong>Cost</strong></div>
-															<div class="rTableCell">
-																<?php echo $row['cost']; ?>
-															</div>
-														</div>
-														<div class="rTableRow">
-															<div class="rTableHead"><strong>Client Comment</strong></div>
-															<div class="rTableCell">
-																<?php echo $row['client_comment']; ?>
-															</div>
-														</div>
-														<div class="rTableRow">
-															<div class="rTableHead"><strong>Category</strong></div>
+															<div class="rTableHead"><strong>Kategori</strong></div>
 															<div class="rTableCell">
 																<?php echo $row['category_name']; ?>
 															</div>
 														</div>
 														<div class="rTableRow">
-															<div class="rTableHead"><strong>Featured Photo</strong></div>
+															<div class="rTableHead"><strong>Foto Unggulan</strong></div>
 															<div class="rTableCell">
 																<img src="<?php echo base_url().'public/uploads/'.$row['photo']; ?>" alt="" style="width:120px;">
 															</div>
 														</div>
 														<div class="rTableRow">
-															<div class="rTableHead"><strong>Other Photos</strong></div>
+															<div class="rTableHead"><strong>Galeri Foto</strong></div>
 															<div class="rTableCell">
 																<?php
 																$all_photos = $this->Model_portfolio->get_all_photos_by_category_id($row['id']);
@@ -176,10 +134,10 @@ if(!$this->session->userdata('id')) {
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+					<h4 class="modal-title" id="myModalLabel">Konfirmasi Hapus</h4>
 				</div>
 				<div class="modal-body">
-					<p>Are you sure want to delete this item?</p>
+					<p>Anda yakin ingin menghapus?</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>

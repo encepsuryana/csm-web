@@ -301,3 +301,191 @@ ERROR - 2019-09-11 11:14:25 --> Severity: Warning --> Invalid argument supplied 
 ERROR - 2019-09-11 11:14:25 --> Severity: Notice --> Undefined variable: service C:\xampp\htdocs\csm-web\application\views\view_header.php 563
 ERROR - 2019-09-11 11:14:25 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 563
 ERROR - 2019-09-11 11:25:05 --> Severity: error --> Exception: syntax error, unexpected 'HOME' (T_STRING), expecting ',' or ';' C:\xampp\htdocs\csm-web\application\views\view_header.php 37
+ERROR - 2019-09-11 11:42:52 --> Severity: error --> Exception: syntax error, unexpected ')', expecting '(' C:\xampp\htdocs\csm-web\application\views\view_category.php 29
+ERROR - 2019-09-11 11:43:16 --> Severity: error --> Exception: syntax error, unexpected '$row' (T_VARIABLE), expecting '(' C:\xampp\htdocs\csm-web\application\views\view_category.php 29
+ERROR - 2019-09-11 11:43:37 --> Severity: error --> Exception: syntax error, unexpected '$news' (T_VARIABLE), expecting '(' C:\xampp\htdocs\csm-web\application\views\view_category.php 29
+ERROR - 2019-09-11 11:43:39 --> Severity: error --> Exception: syntax error, unexpected '$news' (T_VARIABLE), expecting '(' C:\xampp\htdocs\csm-web\application\views\view_category.php 29
+ERROR - 2019-09-11 11:43:55 --> Severity: error --> Exception: syntax error, unexpected 'as' (T_AS) C:\xampp\htdocs\csm-web\application\views\view_category.php 29
+ERROR - 2019-09-11 11:44:07 --> Severity: error --> Exception: syntax error, unexpected 'as' (T_AS) C:\xampp\htdocs\csm-web\application\views\view_category.php 29
+ERROR - 2019-09-11 11:44:08 --> Severity: error --> Exception: syntax error, unexpected 'as' (T_AS) C:\xampp\htdocs\csm-web\application\views\view_category.php 29
+ERROR - 2019-09-11 11:44:14 --> Severity: error --> Exception: syntax error, unexpected ')', expecting '(' C:\xampp\htdocs\csm-web\application\views\view_category.php 29
+ERROR - 2019-09-11 11:47:07 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:47:50 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:48:24 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:49:06 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:49:20 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:51:43 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:52:28 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:53:39 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:54:21 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:54:23 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:54:41 --> Severity: Notice --> Undefined variable: row C:\xampp\htdocs\csm-web\application\views\view_portfolio_detail.php 28
+ERROR - 2019-09-11 11:54:41 --> Severity: Notice --> Trying to get property 'user_update' of non-object C:\xampp\htdocs\csm-web\application\views\view_portfolio_detail.php 28
+ERROR - 2019-09-11 11:54:41 --> Severity: Notice --> Undefined variable: row C:\xampp\htdocs\csm-web\application\views\view_portfolio_detail.php 32
+ERROR - 2019-09-11 11:54:41 --> Severity: Notice --> Trying to get property 'news_date' of non-object C:\xampp\htdocs\csm-web\application\views\view_portfolio_detail.php 32
+ERROR - 2019-09-11 11:54:43 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:55:02 --> Severity: Notice --> Undefined variable: row C:\xampp\htdocs\csm-web\application\views\view_portfolio_detail.php 28
+ERROR - 2019-09-11 11:55:02 --> Severity: Notice --> Trying to get property 'user_update' of non-object C:\xampp\htdocs\csm-web\application\views\view_portfolio_detail.php 28
+ERROR - 2019-09-11 11:55:04 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:55:26 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 11:55:39 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 12:49:20 --> Severity: Notice --> Undefined variable: portfolio_category C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 12:49:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 12:49:20 --> Severity: Notice --> Undefined variable: product C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 12:49:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 12:49:20 --> Severity: Notice --> Undefined variable: facility C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 12:49:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 12:49:20 --> Severity: Notice --> Undefined variable: service C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 12:49:20 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 14:43:57 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-11 14:59:03 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 14:59:03 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 14:59:03 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 14:59:04 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 14:59:39 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 15:00:40 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_name C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 90
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_company C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 96
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: start_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 102
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: end_date C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 108
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: website C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 114
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: cost C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 120
+ERROR - 2019-09-11 15:02:15 --> Severity: Notice --> Undefined index: client_comment C:\xampp\htdocs\csm-web\application\views\admin\view_portfolio.php 126
+ERROR - 2019-09-11 15:39:23 --> Severity: Notice --> Undefined index: service_style C:\xampp\htdocs\csm-web\application\views\view_home.php 147
+ERROR - 2019-09-11 15:39:23 --> Severity: Notice --> Undefined index: service_style C:\xampp\htdocs\csm-web\application\views\view_home.php 147
+ERROR - 2019-09-11 15:39:23 --> Severity: Notice --> Undefined index: service_style C:\xampp\htdocs\csm-web\application\views\view_home.php 147
+ERROR - 2019-09-11 15:39:23 --> Severity: Notice --> Undefined index: service_style C:\xampp\htdocs\csm-web\application\views\view_home.php 147
+ERROR - 2019-09-11 15:39:23 --> Severity: Notice --> Undefined index: service_style C:\xampp\htdocs\csm-web\application\views\view_home.php 147
+ERROR - 2019-09-11 15:39:23 --> Severity: Notice --> Undefined index: service_style C:\xampp\htdocs\csm-web\application\views\view_home.php 147
+ERROR - 2019-09-11 15:46:22 --> 404 Page Not Found: Public/uploads
+ERROR - 2019-09-11 15:46:27 --> Severity: Warning --> unlink(./public/uploads/testimonial-main-photo.png): No such file or directory C:\xampp\htdocs\csm-web\application\controllers\admin\Testimonial.php 269
+ERROR - 2019-09-11 15:48:18 --> 404 Page Not Found: admin/Testimonial/main_photo
+ERROR - 2019-09-11 16:28:29 --> 404 Page Not Found: admin/Photo/index
+ERROR - 2019-09-11 16:28:41 --> 404 Page Not Found: admin/Product/index

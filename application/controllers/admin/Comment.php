@@ -24,7 +24,7 @@ class Comment extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('code_body', 'Comment Body Code', 'trim|required');
+				$this->form_validation->set_rules('code_body', 'Kode Komentar', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -40,7 +40,7 @@ class Comment extends CI_Controller
 					);
 					$this->Model_comment->update($form_data);
 
-					$data['success'] = 'Comment Body Code is updated successfully';
+					$data['success'] = 'Seting Komentar telah berhasil diupdate';
 				}
 
 				$data['comment'] = $this->Model_comment->show();

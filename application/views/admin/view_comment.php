@@ -6,7 +6,7 @@ if(!$this->session->userdata('id')) {
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>Facebook Comment Setup</h1>
+		<h1>Seting Komentar Facebook</h1>
 	</div>
 </section>
 
@@ -35,10 +35,10 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info b-box">
 					<div class="box-body">
 						
-						<p style="padding-bottom: 20px;">Go to the facebook developer section (<a href="https://developers.facebook.com/docs/plugins/comments/">https://developers.facebook.com/docs/plugins/comments/</a>) to get your comment codes.</p>
+						<p style="padding:0 20px;">Buka facebook developer (<a target="_blank" href="https://developers.facebook.com/docs/plugins/comments/">https://developers.facebook.com/docs/plugins/comments/</a>) Untuk mendaparkan kode komentar.</p>
 
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Code to use after the opening &lt;body&gt; tag </label>
+							<label for="" class="col-sm-2 control-label">Kode digunakan setelah tag &lt;body&gt; </label>
 							<div class="col-sm-9">
 								<textarea class="form-control" name="code_body" style="height:300px;"><?php echo $comment['code_body']; ?></textarea>
 							</div>

@@ -10,7 +10,7 @@ if(!$this->session->userdata('id')) {
 			<h1>Edit Testimonial</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/testimonial" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/testimonial" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -35,37 +35,37 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Name <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Nama <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="name" value="<?php echo $testimonial['name']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Designation <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Jabatan <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="designation" value="<?php echo $testimonial['designation']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Company <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Perusahaan <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="company" value="<?php echo $testimonial['company']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Photo</label>
+							<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
 							<div class="col-sm-9" style="padding-top:5px">
 								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $testimonial['photo']; ?>" alt="Slider Photo" style="width:180px;">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Photo </label>
+							<label for="" class="col-sm-2 control-label">Foto </label>
 							<div class="col-sm-6" style="padding-top:5px">
-								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>						
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Comment <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Komentar <span>*</span></label>
 							<div class="col-sm-6">
 								<textarea class="form-control" name="comment" style="height:140px;"><?php echo $testimonial['comment']; ?></textarea>
 							</div>

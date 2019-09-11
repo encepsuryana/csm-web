@@ -6,10 +6,10 @@ if(!$this->session->userdata('id')) {
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Edit Electronics Category</h1>
+			<h1>Edit Divisi Elektronik</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -37,25 +37,25 @@ if(!$this->session->userdata('id')) {
 					<div class="box-body">
 						
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Name *</label>
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="name" value="<?php echo $electronics_division['name']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Short Content *</label>
+							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="short_content" style="height:100px;"><?php echo $electronics_division['short_content']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Content *</label>
+							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="content" id="editor1"><?php echo $electronics_division['content']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Select Category *</label>
+							<label for="" class="col-sm-2 control-label">Pilih Kategori <span>*</span></label>
 							<div class="col-sm-4">
 								<select name="category_id" class="form-control select2">
 									<?php
@@ -68,22 +68,22 @@ if(!$this->session->userdata('id')) {
 								</select>
 							</div>
 						</div>
-						<h3 class="seo-info">Featured Photo</h3>
+						<h3 class="seo-info">Foto Unggulan</h3>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Featuerd Photo</label>
+							<label for="" class="col-sm-2 control-label">Foto tersedia</label>
 							<div class="col-sm-9" style="padding-top:5px">
 								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $electronics_division['photo']; ?>" alt="" style="width:120px;">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Change Featuerd Photo</label>
+							<label for="" class="col-sm-2 control-label">Ubah Foto</label>
 							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
-						<h3 class="seo-info">Other Photos</h3>
+						<h3 class="seo-info">Foto Galeri</h3>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Other Photos</label>
+							<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
 							<div class="col-sm-6" style="padding-top:5px">
 								<table class="table table-bordered">
 									<?php
@@ -102,7 +102,7 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Add Other Photos</label>
+							<label for="" class="col-sm-2 control-label">Ubah Foto</label>
 							<div class="col-sm-6" style="padding-top:5px">
 								<table id="PhotosTable" style="width:100%;">
 									<tbody>
@@ -112,13 +112,13 @@ if(!$this->session->userdata('id')) {
 													<input type="file" name="photos[]">
 												</div>
 											</td>
-											<td style="width:28px;"><a href="javascript:void()" class="Delete btn btn-danger btn-xs">X</a></td>
+											<td style="width:28px;"><a href="javascript:void()" class="Delete btn btn-danger btn-xs">Hapus</a></td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
 							<div class="col-sm-2" style="padding-top:5px">
-								<input type="button" id="btnAddNew" value="Add Item"  class="btn btn-warning btn-xs">
+								<input type="button" id="btnAddNew" value=" + Tambah"  class="btn btn-warning btn-xs">
 							</div>
 						</div>
 						<h3 class="seo-info">SEO Information</h3>
@@ -160,10 +160,10 @@ if(!$this->session->userdata('id')) {
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+					<h4 class="modal-title" id="myModalLabel">Konfirmasi Hapus</h4>
 				</div>
 				<div class="modal-body">
-					<p>Are you sure want to delete this item?</p>
+					<p>Anda yakin ingin menghapus?</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>

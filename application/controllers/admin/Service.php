@@ -44,10 +44,9 @@ class Service extends CI_Controller
 				$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
 				$slug=$pre_slug.'.html';
 
-				$this->form_validation->set_rules('heading', 'Heading', 'trim|required');
-				$this->form_validation->set_rules('service_style', 'Service Styles', 'trim|required');
-				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
-				$this->form_validation->set_rules('content', 'Content', 'trim|required');
+				$this->form_validation->set_rules('heading', 'Judul', 'trim|required');
+				$this->form_validation->set_rules('short_content', 'Konten Singkat', 'trim|required');
+				$this->form_validation->set_rules('content', 'Konten', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -63,11 +62,11 @@ class Service extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				} else {
 					$valid = 0;
-					$error .= 'You must have to select a photo for featured photo<br>';
+					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
 
@@ -84,7 +83,6 @@ class Service extends CI_Controller
 					
 					$form_data = array(
 						'heading' => $_POST['heading'],
-						'service_style' => $_POST['service_style'],
 						'short_content' => $_POST['short_content'],
 						'content' => $_POST['content'],
 						'photo' => $final_name,
@@ -95,8 +93,7 @@ class Service extends CI_Controller
 					);
 					$this->Model_service->add($form_data);
 
-					$data['success'] = 'Service is added successfully!';
-					unset($_POST['service_style']);
+					$data['success'] = 'Layanan berhasil ditambahkan!';
 					unset($_POST['heading']);
 					unset($_POST['short_content']);
 					unset($_POST['content']);
@@ -152,10 +149,9 @@ class Service extends CI_Controller
 				$slug=$pre_slug.'.html';
 				$valid = 1;
 
-				$this->form_validation->set_rules('heading', 'Heading', 'trim|required');
-				$this->form_validation->set_rules('service_style', 'Service Styles', 'trim|required');
-				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
-				$this->form_validation->set_rules('content', 'Content', 'trim|required');
+				$this->form_validation->set_rules('heading', 'Judul', 'trim|required');
+				$this->form_validation->set_rules('short_content', 'Konten Singkat', 'trim|required');
+				$this->form_validation->set_rules('content', 'Konten', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -171,7 +167,7 @@ class Service extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				}
 
@@ -184,7 +180,6 @@ class Service extends CI_Controller
 					if($path == '') {
 						$form_data = array(
 							'heading' => $_POST['heading'],
-							'service_style' => $_POST['service_style'],
 							'short_content' => $_POST['short_content'],
 							'content' => $_POST['content'],
 							'meta_title' => $_POST['meta_title'],
@@ -202,7 +197,6 @@ class Service extends CI_Controller
 
 						$form_data = array(
 							'heading' => $_POST['heading'],
-							'service_style' => $_POST['service_style'],
 							'short_content' => $_POST['short_content'],
 							'content' => $_POST['content'],
 							'photo' => $final_name,
@@ -217,7 +211,6 @@ class Service extends CI_Controller
 						
 						$form_data = array(
 							'heading' => $_POST['heading'],
-							'service_style' => $_POST['service_style'],
 							'short_content' => $_POST['short_content'],
 							'content' => $_POST['content'],
 							'meta_title' => $_POST['meta_title'],
@@ -236,7 +229,6 @@ class Service extends CI_Controller
 
 						$form_data = array(
 							'heading' => $_POST['heading'],
-							'service_style' => $_POST['service_style'],
 							'short_content' => $_POST['short_content'],
 							'content' => $_POST['content'],
 							'photo' => $final_name,
@@ -248,7 +240,7 @@ class Service extends CI_Controller
 						$this->Model_service->update($id,$form_data);
 					}
 
-					$data['success'] = 'Service is updated successfully';
+					$data['success'] = 'Layanan telah berhasil diupdate';
 				}
 				else
 				{

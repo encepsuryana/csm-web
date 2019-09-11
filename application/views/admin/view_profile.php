@@ -6,7 +6,7 @@ if(!$this->session->userdata('id')) {
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Edit Profile</h1>
+			<h1>Edit Profil</h1>
 		</div>
 	</section>
 
@@ -35,8 +35,8 @@ if(!$this->session->userdata('id')) {
 
 					<div class="nav-tabs-custom">
 						<ul class="nav nav-tabs">
-							<li class="active"><a href="#tab_1" data-toggle="tab">Update Information</a></li>
-							<li><a href="#tab_2" data-toggle="tab">Update Photo</a></li>
+							<li class="active"><a href="#tab_1" data-toggle="tab">Update Informasi</a></li>
+							<li><a href="#tab_2" data-toggle="tab">Update Foto</a></li>
 							<li><a href="#tab_3" data-toggle="tab">Update Password</a></li>
 							<li><a href="#tab_4" data-toggle="tab">Kelola Pengguna</a></li>
 						</ul>
@@ -46,7 +46,7 @@ if(!$this->session->userdata('id')) {
 								<?php echo form_open(base_url().$this->session->userdata('role').'/profile/update',array('class' => 'form-horizontal')); ?>
 								<div class="box-body">
 									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">Name <span>*</span></label>
+										<label for="" class="col-sm-2 control-label">Nama <span>*</span></label>
 										<div class="col-sm-4">
 											<input type="text" class="form-control" name="full_name" value="<?php echo $this->session->userdata('full_name'); ?>">
 										</div>										
@@ -58,7 +58,7 @@ if(!$this->session->userdata('id')) {
 										</div>			
 									</div>
 									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">Phone </label>
+										<label for="" class="col-sm-2 control-label">No. Telp </label>
 										<div class="col-sm-4">
 											<input type="text" class="form-control" name="phone" value="<?php echo $this->session->userdata('phone'); ?>">
 										</div>
@@ -72,7 +72,7 @@ if(!$this->session->userdata('id')) {
 									<div class="form-group">
 										<label for="" class="col-sm-2 control-label"></label>
 										<div class="col-sm-6">
-											<button type="submit" class="btn btn-success pull-left" name="form1">Update Information</button>
+											<button type="submit" class="btn btn-success pull-left" name="form1">Update Informasi</button>
 										</div>
 									</div>
 								</div>
@@ -84,7 +84,7 @@ if(!$this->session->userdata('id')) {
 								<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/profile/update',array('class' => 'form-horizontal')); ?>
 								<div class="box-body">
 									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">Existing Photo</label>
+										<label for="" class="col-sm-2 control-label">Avatar Tersedia</label>
 										<div class="col-sm-6" style="padding-top:6px;">
 											<?php if($this->session->userdata('photo') ==''): ?>
 												<img src="<?php echo base_url(); ?>public/img/no-photo.jpg" class="existing-photo" alt="profile photo" width="140">
@@ -94,7 +94,7 @@ if(!$this->session->userdata('id')) {
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="" class="col-sm-2 control-label">New Photo</label>
+											<label for="" class="col-sm-2 control-label">Foto Baru</label>
 											<div class="col-sm-6" style="padding-top:6px;">
 												<input type="file" name="photo">
 											</div>
@@ -120,7 +120,7 @@ if(!$this->session->userdata('id')) {
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="" class="col-sm-2 control-label">Retype Password </label>
+											<label for="" class="col-sm-2 control-label">Ulangi Password </label>
 											<div class="col-sm-4">
 												<input type="password" class="form-control" name="re_password">
 											</div>
@@ -141,7 +141,7 @@ if(!$this->session->userdata('id')) {
 											<div class="col-md-12">
 												<section class="content-header" >
 													<div class="content-header-right">
-														<a href="<?php echo base_url().$this->session->userdata('role'); ?>/profile/add" class="btn btn-primary btn-sm">Add New</a>
+														<a href="<?php echo base_url().$this->session->userdata('role'); ?>/profile/add" class="btn btn-primary btn-sm">Tambah Baru</a>
 													</div>
 												</section>
 												<div class="box-body table-responsive">
@@ -150,9 +150,9 @@ if(!$this->session->userdata('id')) {
 															<tr>
 																<th width="30">No</th>
 																<th>Photo</th>
-																<th width="100">Full Name</th>
+																<th width="100">Nama Lengkap</th>
 																<th width="100">Email</th>
-																<th width="100">Phone</th>
+																<th width="100">No. Telp</th>
 																<th width="100">Role</th>
 																<th width="100">Status</th>
 																<th width="250">Action</th>
@@ -201,10 +201,10 @@ if(!$this->session->userdata('id')) {
 											<div class="modal-content">
 												<div class="modal-header">
 													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-													<h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+													<h4 class="modal-title" id="myModalLabel">Konfirmasi Hapus</h4>
 												</div>
 												<div class="modal-body">
-													<p>Are you sure want to delete this item?</p>
+													<p>Anda yakin ingin menghapus?</p>
 												</div>
 												<div class="modal-footer">
 													<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
@@ -227,8 +227,8 @@ if(!$this->session->userdata('id')) {
 
 					<div class="nav-tabs-custom">
 						<ul class="nav nav-tabs">
-							<li class="active"><a href="#tab_1" data-toggle="tab">Update Information</a></li>
-							<li><a href="#tab_2" data-toggle="tab">Update Photo</a></li>
+							<li class="active"><a href="#tab_1" data-toggle="tab">Update Informasi</a></li>
+							<li><a href="#tab_2" data-toggle="tab">Update Foto</a></li>
 							<li><a href="#tab_3" data-toggle="tab">Update Password</a></li>
 						</ul>
 						<div class="tab-content">
@@ -237,7 +237,7 @@ if(!$this->session->userdata('id')) {
 								<?php echo form_open(base_url().$this->session->userdata('role').'/profile/update',array('class' => 'form-horizontal')); ?>
 								<div class="box-body">
 									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">Name <span>*</span></label>
+										<label for="" class="col-sm-2 control-label">Nama <span>*</span></label>
 										<div class="col-sm-4">
 											<input type="text" class="form-control" name="full_name" value="<?php echo $this->session->userdata('full_name'); ?>">
 										</div>										
@@ -249,7 +249,7 @@ if(!$this->session->userdata('id')) {
 										</div>			
 									</div>
 									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">Phone </label>
+										<label for="" class="col-sm-2 control-label">No. Telp </label>
 										<div class="col-sm-4">
 											<input type="text" class="form-control" name="phone" value="<?php echo $this->session->userdata('phone'); ?>">
 										</div>
@@ -275,7 +275,7 @@ if(!$this->session->userdata('id')) {
 								<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/profile/update',array('class' => 'form-horizontal')); ?>
 								<div class="box-body">
 									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">Existing Photo</label>
+										<label for="" class="col-sm-2 control-label">Avatar Tersedia</label>
 										<div class="col-sm-6" style="padding-top:6px;">
 											<?php if($this->session->userdata('photo') ==''): ?>
 												<img src="<?php echo base_url(); ?>public/img/no-photo.jpg" class="existing-photo" alt="profile photo" width="140">
@@ -285,7 +285,7 @@ if(!$this->session->userdata('id')) {
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="" class="col-sm-2 control-label">New Photo</label>
+											<label for="" class="col-sm-2 control-label">Foto Baru</label>
 											<div class="col-sm-6" style="padding-top:6px;">
 												<input type="file" name="photo">
 											</div>
@@ -311,7 +311,7 @@ if(!$this->session->userdata('id')) {
 											</div>
 										</div>
 										<div class="form-group">
-											<label for="" class="col-sm-2 control-label">Retype Password </label>
+											<label for="" class="col-sm-2 control-label">Ulangi Password </label>
 											<div class="col-sm-4">
 												<input type="password" class="form-control" name="re_password">
 											</div>

@@ -5,7 +5,7 @@ if(!$this->session->userdata('id')) {
 ?>
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>Content Home (Company Profile)</h1>
+		<h1>Konten Beranda (Company Profile)</h1>
 	</div>
 </section>
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')){ ?>
@@ -44,7 +44,7 @@ if(!$this->session->userdata('id')) {
 							});
 						</script>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">File </label>
+							<label for="" class="col-sm-2 control-label">Pilih File: </label>
 							<div class="col-sm-4">
 								<input type="file" name="photo" class="form-control">
 							</div>

@@ -27,7 +27,7 @@ if(!$this->session->userdata('id')) {
 	?>
 	<div class="col-md-12" style="padding-top: 10px;">
 		<div class="col-md-12 warning">
-			<i class="fa fa-info" aria-hidden="true"> <span>In this section, you will be able to change those text in your language that are not possible to change from other sections.</span></i>
+			<i class="fa fa-info" aria-hidden="true"> <span>Untuk merubah bahasa, gunakan fitur dibawah ini untuk menyesuaikan bahasa yang digunakan, belum tersedia untuk menambah bahasa.</span></i>
 		</div>
 	</div>
 	<section class="content">

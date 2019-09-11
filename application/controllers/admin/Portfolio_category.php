@@ -39,7 +39,7 @@ class Portfolio_category extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('category_name', 'Category Name', 'trim|required');
+				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -55,7 +55,7 @@ class Portfolio_category extends CI_Controller
 					);
 					$this->Model_portfolio_category->add($form_data);
 
-					$data['success'] = 'Portfolio category is added successfully!';
+					$data['success'] = 'Kategori Portofolio berhasil ditambahkan!';
 				}
 
 				$this->load->view('admin/view_header',$header);
@@ -96,7 +96,7 @@ class Portfolio_category extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('category_name', 'Category Name', 'trim|required');
+				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -108,7 +108,7 @@ class Portfolio_category extends CI_Controller
 					$total = $this->Model_portfolio_category->duplicate_check($_POST['category_name'],$data['portfolio_category']['category_name']);				
 					if($total) {
 						$valid = 0;
-						$data['error'] = 'Category name already exists';
+						$data['error'] = 'Nama Kategori sudah ada';
 					}
 				}
 
@@ -121,7 +121,7 @@ class Portfolio_category extends CI_Controller
 					);
 					$this->Model_portfolio_category->update($id,$form_data);
 
-					$data['success'] = 'Portfolio Category is updated successfully';
+					$data['success'] = 'Portfolio Category telah berhasil diupdate';
 				}
 
 				$data['portfolio_category'] = $this->Model_portfolio_category->getData($id);

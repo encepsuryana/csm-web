@@ -6,10 +6,10 @@ if(!$this->session->userdata('id')) {
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Add Service</h1>
+			<h1>Add Layanan</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/service" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/service" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -37,46 +37,25 @@ if(!$this->session->userdata('id')) {
 					<div class="box-body">
 
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Heading *</label>
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="heading" value="<?php if(isset($_POST['heading'])){echo $_POST['heading'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Style *</label>
-							<div class="col-sm-6">
-								<input id="style" type="text" autocomplete="off" class="form-control" name="service_style" value="<?php if(isset($_POST['service_style'])){echo $_POST['service_style'];} ?>" readonly="readonly">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label"><span></span></label>
-							<div class="col-sm-4" style="text-align: center;">
-								<div class="style-select" > 
-									<i class="fa fa-info-circle" aria-hidden="true"></i>
-									<span>Select Style: </span>
-								</div>
-								<input id="add" type="button" onclick='ik(this.value);' value='col-page col-sm-6 col-md-4' style="padding: 40px 50px;">
-							</div>
-							<script type="text/javascript">
-								function ik(val){
-									document.getElementById('style').value = val;  
-								}
-							</script>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Photo *</label>
+							<label for="" class="col-sm-2 control-label">Foto <span>*</span></label>
 							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Short Content *</label>
+							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="short_content" style="height:140px;"><?php if(isset($_POST['short_content'])){echo $_POST['short_content'];} ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Content *</label>
+							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="content" id="editor1"><?php if(isset($_POST['content'])){echo $_POST['content'];} ?></textarea>
 							</div>

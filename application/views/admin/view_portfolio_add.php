@@ -7,10 +7,10 @@ if(!$this->session->userdata('id')) {
 
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Add Portfolio</h1>
+			<h1>Tambah Portofolio</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -39,68 +39,25 @@ if(!$this->session->userdata('id')) {
 					<div class="box-body">
 						
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Name *</label>
-							<div class="col-sm-6">
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
+							<div class="col-sm-8">
 								<input type="text" autocomplete="off" class="form-control" name="name" value="<?php if(isset($_POST['name'])){echo $_POST['name'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Short Content *</label>
+							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="short_content" style="height:100px;"><?php if(isset($_POST['short_content'])){echo $_POST['short_content'];} ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Content *</label>
+							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="content" id="editor1"><?php if(isset($_POST['content'])){echo $_POST['content'];} ?></textarea>
 							</div>
 						</div>
-						
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Name</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="client_name" value="<?php if(isset($_POST['client_name'])){echo $_POST['client_name'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Company</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="client_company" value="<?php if(isset($_POST['client_company'])){echo $_POST['client_company'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Start Date</label>
-							<div class="col-sm-4">
-								<input type="text" name="start_date" class="form-control" id="datepicker" value="<?php if(isset($_POST['start_date'])){echo $_POST['start_date'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">End Date</label>
-							<div class="col-sm-4">
-								<input type="text" name="end_date" class="form-control" id="datepicker1" value="<?php if(isset($_POST['end_date'])){echo $_POST['end_date'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Website</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="website" value="<?php if(isset($_POST['website'])){echo $_POST['website'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Cost</label>
-							<div class="col-sm-4">
-								<input type="text" autocomplete="off" class="form-control" name="cost" value="<?php if(isset($_POST['cost'])){echo $_POST['cost'];} ?>">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Client Comment</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="client_comment" style="height:250px;"><?php if(isset($_POST['client_comment'])){echo $_POST['client_comment'];} ?></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Select Category *</label>
+							<label for="" class="col-sm-2 control-label">Pilih Kategori <span>*</span></label>
 							<div class="col-sm-4">
 								<select name="category_id" class="form-control select2">
 									<?php
@@ -113,16 +70,16 @@ if(!$this->session->userdata('id')) {
 								</select>
 							</div>
 						</div>
-						<h3 class="seo-info">Featured Photo</h3>
+						<h3 class="seo-info">Foto Unggulan</h3>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Featuerd Photo *</label>
+							<label for="" class="col-sm-2 control-label">Foto Unggulan <span>*</span></label>
 							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
-						<h3 class="seo-info">Other Photos</h3>
+						<h3 class="seo-info">Foto Galeri</h3>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Other Photos</label>
+							<label for="" class="col-sm-2 control-label">Foto Galeri</label>
 							<div class="col-sm-6" style="padding-top:5px">
 								<table id="PhotosTable" style="width:100%;">
 									<tbody>
@@ -132,13 +89,13 @@ if(!$this->session->userdata('id')) {
 													<input type="file" name="photos[]">
 												</div>
 											</td>
-											<td style="width:28px;"><a href="javascript:void()" class="Delete btn btn-danger btn-xs">X</a></td>
+											<td style="width:28px;"><a href="javascript:void()" class="Delete btn btn-danger btn-xs">Hapus</a></td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
 							<div class="col-sm-2" style="padding-top:5px">
-								<input type="button" id="btnAddNew" value="Add Item" class="btn btn-warning btn-xs">
+								<input type="button" id="btnAddNew" value="+ Tambah" class="btn btn-warning btn-xs">
 							</div>
 						</div>
 						<h3 class="seo-info">SEO Information</h3>

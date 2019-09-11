@@ -6,10 +6,10 @@ if(!$this->session->userdata('id')) {
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')  or ($this->session->userdata('role') == 'hrd')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Edit facility Category</h1>
+			<h1>Edit Fasilitas Kategori</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility-category" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -38,13 +38,13 @@ if(!$this->session->userdata('id')) {
 
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Category Name *</label>
+							<label for="" class="col-sm-2 control-label">Nama Kategori <span>*</span></label>
 							<div class="col-sm-4">
 								<input type="text" class="form-control" name="category_name" value="<?php echo $facility_category['category_name']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Status *</label>
+							<label for="" class="col-sm-2 control-label">Status <span>*</span></label>
 							<div class="col-sm-4">
 								<select name="status" class="form-control select2">
 									<option value="Active" <?php if($facility_category['status']=='Active') {echo 'selected';} ?>>Active</option>
@@ -75,10 +75,10 @@ if(!$this->session->userdata('id')) {
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+					<h4 class="modal-title" id="myModalLabel">Konfirmasi Hapus</h4>
 				</div>
 				<div class="modal-body">
-					Are you sure want to delete this item?
+					Anda yakin ingin menghapus?
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>

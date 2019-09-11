@@ -6,7 +6,7 @@ if(!$this->session->userdata('id')) {
 <?php if ($this->session->userdata('role') == 'admin') { ?>
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Social Media</h1>
+			<h1>Media Sosial</h1>
 		</div>
 	</section>
 
@@ -85,7 +85,7 @@ if(!$this->session->userdata('id')) {
 					<?php echo form_open(base_url().$this->session->userdata('role').'/social-media',array('class' => 'form-horizontal')); ?>
 					<div class="box box-info  b-box">
 						<div class="box-body">						
-							<p style="padding-bottom: 20px;">If you do not want to show a social media in your front end page, just leave the input field blank.</p>
+							<p style="padding-bottom: 20px;">Jika Anda tidak ingin menampilkan media sosial di halaman depan Anda, biarkan kolom input kosong.</p>
 
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Facebook </label>

@@ -43,11 +43,11 @@ class Setting extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 		    	// removing the existing photo
@@ -61,7 +61,7 @@ class Setting extends CI_Controller
 						'logo' => $final_name
 					);
 					$this->Model_setting->update($form_data);
-					$data['success'] = 'Logo is updated successfully!';		    	
+					$data['success'] = 'Logo telah berhasil diupdate!';		    	
 				}        	
 			}
 
@@ -75,11 +75,11 @@ class Setting extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 		    	// removing the existing photo
@@ -93,7 +93,7 @@ class Setting extends CI_Controller
 						'logo2' => $final_name
 					);
 					$this->Model_setting->update($form_data);
-					$data['success'] = 'logo Art is updated successfully!';		    	
+					$data['success'] = 'logo Art telah berhasil diupdate!';		    	
 				}        	
 			}
 
@@ -107,11 +107,11 @@ class Setting extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 		    	// removing the existing photo
@@ -125,7 +125,7 @@ class Setting extends CI_Controller
 						'logo_admin' => $final_name
 					);
 					$this->Model_setting->update($form_data);
-					$data['success'] = 'Admin Logo is updated successfully!';		    	
+					$data['success'] = 'Admin Logo telah berhasil diupdate!';		    	
 				}        	
 			}
 
@@ -139,11 +139,11 @@ class Setting extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 		    	// removing the existing photo
@@ -157,7 +157,7 @@ class Setting extends CI_Controller
 						'favicon' => $final_name
 					);
 					$this->Model_setting->update($form_data);
-					$data['success'] = 'Favicon is updated successfully!';		    	
+					$data['success'] = 'Favicon telah berhasil diupdate!';		    	
 				}        	
 			}
 
@@ -171,11 +171,11 @@ class Setting extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 		    	// removing the existing photo
@@ -189,7 +189,7 @@ class Setting extends CI_Controller
 						'login_bg' => $final_name
 					);
 					$this->Model_setting->update($form_data);
-					$data['success'] = 'Login Background Photo is updated successfully!';		    	
+					$data['success'] = 'Login Background Photo telah berhasil diupdate!';		    	
 				}        	
 			}
 
@@ -204,7 +204,7 @@ class Setting extends CI_Controller
 					'contact_map_iframe'  => $_POST['contact_map_iframe']
 				);
 				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'General Setting is updated successfully!';
+				$data['success'] = 'General Setting telah berhasil diupdate!';
 			}
 
 			if(isset($_POST['form_email'])) {			
@@ -217,7 +217,7 @@ class Setting extends CI_Controller
 					'reset_password_email_subject' => $_POST['reset_password_email_subject']
 				);
 				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Email Setting is updated successfully!';
+				$data['success'] = 'Email Setting telah berhasil diupdate!';
 			}
 
 
@@ -228,110 +228,8 @@ class Setting extends CI_Controller
 					'total_product_post' => $_POST['total_product_post']
 				);
 				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Sidebar and Footer Setting is updated successfully!';
+				$data['success'] = 'Sidebar and Footer Setting telah berhasil diupdate!';
 			}
-
-			if(isset($_POST['form_content_home'])) {			
-				$form_data = array(
-					'content_home_title'    => $_POST['content_home_title'],
-					'content_home_subtitle' => $_POST['content_home_subtitle'],
-					'content_home_status'   => $_POST['content_home_status']
-				);
-				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Why Choose Setting (Home Page) is updated successfully!';
-			}
-
-			if(isset($_POST['form_service'])) {			
-				$form_data = array(
-					'service_title'    => $_POST['service_title'],
-					'service_subtitle' => $_POST['service_subtitle'],
-					'service_status'   => $_POST['service_status']
-				);
-				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Service Setting (Home Page) is updated successfully!';
-			}
-
-			if(isset($_POST['form_facility'])) {			
-				$form_data = array(
-					'facility_title'    => $_POST['facility_title'],
-					'facility_subtitle' => $_POST['facility_subtitle'],
-					'facility_status'   => $_POST['facility_status']
-				);
-				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Facility Setting (Home Page) is updated successfully!';
-			}
-
-			if(isset($_POST['form_portfolio'])) {			
-				$form_data = array(
-					'portfolio_title'    => $_POST['portfolio_title'],
-					'portfolio_subtitle' => $_POST['portfolio_subtitle'],
-					'portfolio_status'   => $_POST['portfolio_status']
-				);
-				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Portfolio Setting (Home Page) is updated successfully!';
-			}
-
-			if(isset($_POST['form_team'])) {			
-				$form_data = array(
-					'team_title'    => $_POST['team_title'],
-					'team_subtitle' => $_POST['team_subtitle'],
-					'team_status'   => $_POST['team_status']
-				);
-				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Team Setting (Home Page) is updated successfully!';
-			}
-
-			if(isset($_POST['form_testimonial'])) {			
-				$form_data = array(
-					'testimonial_title'    => $_POST['testimonial_title'],
-					'testimonial_subtitle' => $_POST['testimonial_subtitle'],
-					'testimonial_status'   => $_POST['testimonial_status']
-				);
-				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Testimonial Setting (Home Page) is updated successfully!';
-			}
-
-			if(isset($_POST['form_gallery'])) {			
-				$form_data = array(
-					'gallery_title'    => $_POST['gallery_title'],
-					'gallery_subtitle' => $_POST['gallery_subtitle'],
-					'gallery_status'   => $_POST['gallery_status']
-				);
-				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Gallery Setting (Home Page) is updated successfully!';
-			}
-
-			if(isset($_POST['form_product'])) {			
-				$form_data = array(
-					'product_title'    => $_POST['product_title'],
-					'product_subtitle' => $_POST['product_subtitle'],
-					'product_status'   => $_POST['product_status']
-				);
-				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Product Setting (Home Page) is updated successfully!';
-			}
-
-
-			if(isset($_POST['form_recent_post'])) {			
-				$form_data = array(
-					'recent_post_title'    => $_POST['recent_post_title'],
-					'recent_post_subtitle' => $_POST['recent_post_subtitle'],
-					'recent_post_status'   => $_POST['recent_post_status']
-				);
-				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Recent Post Setting (Home Page) is updated successfully!';
-			}
-
-			if(isset($_POST['form_partner'])) {			
-				$form_data = array(
-					'partner_title'    => $_POST['partner_title'],
-					'partner_subtitle' => $_POST['partner_subtitle'],
-					'partner_status'   => $_POST['partner_status']
-				);
-				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Partner Setting (Home Page) is updated successfully!';
-			}
-
 
 			if(isset($_POST['form_counter_bg'])) {
 				$valid = 1;
@@ -343,11 +241,11 @@ class Setting extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 		    	// removing the existing photo
@@ -361,7 +259,7 @@ class Setting extends CI_Controller
 						'counter_bg' => $final_name
 					);
 					$this->Model_setting->update($form_data);
-					$data['success'] = 'Counter Background Photo is updated successfully!';		    	
+					$data['success'] = 'Counter Background Photo telah berhasil diupdate!';		    	
 				}        	
 			}
 
@@ -378,18 +276,8 @@ class Setting extends CI_Controller
 					'counter4_value' => $_POST['counter4_value']
 				);
 				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Counter Setting (Home Page) is updated successfully!';
+				$data['success'] = 'Counter Setting (Home Page) telah berhasil diupdate!';
 			}
-
-
-			if(isset($_POST['form_total_recent_post_home'])) {			
-				$form_data = array(
-					'total_recent_post_home' => $_POST['total_recent_post_home']
-				);
-				$this->Model_setting->update($form_data);   	
-				$data['success'] = 'Total Recent Post (Home Page) is updated successfully!';
-			}
-
 
 			if(isset($_POST['form_color'])) {			
 				$form_data = array(
@@ -411,11 +299,11 @@ class Setting extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload jpg, jpeg, gif or png file<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a photo<br>';
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
 					unlink('./public/uploads/'.$header['setting']['banner']);
@@ -423,7 +311,7 @@ class Setting extends CI_Controller
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 					$form_data = array('banner' => $final_name);
 					$this->Model_setting->update($form_data);
-					$data['success'] = 'Background is updated successfully!';		    	
+					$data['success'] = 'Background telah berhasil diupdate!';		    	
 				}        	
 			}
 

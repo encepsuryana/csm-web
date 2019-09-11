@@ -7,10 +7,10 @@ if(!$this->session->userdata('id')) {
 
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Add Slider</h1>
+			<h1>Tambah Slider</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/slider" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/slider" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -38,43 +38,43 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Photo <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Foto <span>*</span></label>
 							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo">(Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Heading </label>
+							<label for="" class="col-sm-2 control-label">Judul </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="heading" value="<?php if(isset($_POST['heading'])){echo $_POST['heading'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Content </label>
+							<label for="" class="col-sm-2 control-label">Konten </label>
 							<div class="col-sm-6">
 								<textarea class="form-control" name="content" style="height:140px;"><?php if(isset($_POST['content'])){echo $_POST['content'];} ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Button1 Text </label>
+							<label for="" class="col-sm-2 control-label">Tombol1 Text </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="button1_text" value="<?php if(isset($_POST['button1_text'])){echo $_POST['button1_text'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Button1 URL </label>
+							<label for="" class="col-sm-2 control-label">Tombol1 URL </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="button1_url" value="<?php if(isset($_POST['button1_url'])){echo $_POST['button1_url'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Button2 Text </label>
+							<label for="" class="col-sm-2 control-label">Tombol2 Text </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="button2_text" value="<?php if(isset($_POST['button2_text'])){echo $_POST['button2_text'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Button2 URL </label>
+							<label for="" class="col-sm-2 control-label">Tombol2 URL </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="button2_url" value="<?php if(isset($_POST['button2_url'])){echo $_POST['button2_url'];} ?>">
 							</div>

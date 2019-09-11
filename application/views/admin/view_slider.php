@@ -7,10 +7,10 @@ if(!$this->session->userdata('id')) {
 
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>View Sliders</h1>
+			<h1>Lihat Slider</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/slider/add" class="btn btn-primary btn-sm">Add Slider</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/slider/add" class="btn btn-primary btn-sm">Tambah Baru</a>
 		</div>
 	</section>
 
@@ -23,8 +23,8 @@ if(!$this->session->userdata('id')) {
 							<thead>
 								<tr>
 									<th>No</th>
-									<th>Photo</th>
-									<th>Heading</th>
+									<th>Foto</th>
+									<th>Judul</th>
 									<th width="200">Action</th>
 								</tr>
 							</thead>
@@ -60,10 +60,10 @@ if(!$this->session->userdata('id')) {
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+					<h4 class="modal-title" id="myModalLabel">Konfirmasi Hapus</h4>
 				</div>
 				<div class="modal-body">
-					<p>Are you sure want to delete this item?</p>
+					<p>Anda yakin ingin menghapus?</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>

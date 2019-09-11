@@ -38,8 +38,8 @@ class Facility extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('name', 'Name', 'trim|required');
-				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
+				$this->form_validation->set_rules('name', 'Judul', 'trim|required');
+				$this->form_validation->set_rules('short_content', 'Konten Singkat', 'trim|required');
 				$this->form_validation->set_rules('content', 'Content', 'trim|required');
 
 				$judul = $_POST['name'];
@@ -62,11 +62,11 @@ class Facility extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				} else {
 					$valid = 0;
-					$error .= 'You must have to select a photo for featured photo<br>';
+					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
 				
@@ -139,7 +139,7 @@ class Facility extends CI_Controller
 					}
 
 
-					$data['success'] = 'Facility is added successfully!';
+					$data['success'] = 'Fasilitas berhasil ditambahkan!';
 
 					unset($_POST['name']);
 					unset($_POST['short_content']);
@@ -213,7 +213,7 @@ class Facility extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				}
 
@@ -334,7 +334,7 @@ class Facility extends CI_Controller
 						$this->Model_facility->add_photos($form_data);
 					}
 
-					$data['success'] = 'Facility is updated successfully';
+					$data['success'] = 'Fasilitas telah berhasil diupdate';
 				}
 				else
 				{

@@ -43,9 +43,7 @@ if(!$this->session->userdata('id')) {
 						<li><a href="#tab_general" data-toggle="tab">General Content</a></li>
 						<li><a href="#tab_email" data-toggle="tab">Email Settings</a></li>
 						<li><a href="#tab_sidebar_footer" data-toggle="tab">Sidebar & Footer</a></li>
-						<!-- <li><a href="#tab_home" data-toggle="tab">Home Page</a></li> -->
-						<li><a href="#tab_banner" data-toggle="tab">Background</a></li>
-						<li><a href="#tab_color" data-toggle="tab">Color</a></li>
+						<li><a href="#tab_banner" data-toggle="tab">Background & Tema</a></li>
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane active" id="tab_logo">							
@@ -53,13 +51,13 @@ if(!$this->session->userdata('id')) {
 							<h3 class="seo-info">Website Logo</h3>
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>								
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Existing Photo</label>
+								<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
 								<div class="col-sm-6" style="padding-top:6px;background: #f2f2f2;">
 									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" class="existing-photo" style="height:80px;">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">New Photo</label>
+								<label for="" class="col-sm-2 control-label">Foto Baru</label>
 								<div class="col-sm-6" style="padding-top:6px;">
 									<input type="file" name="photo_logo">
 								</div>
@@ -75,13 +73,13 @@ if(!$this->session->userdata('id')) {
 							<h3 class="seo-info">Website Logo Art</h3>
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>								
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Existing Photo</label>
+								<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
 								<div class="col-sm-6" style="padding-top:6px;background: #f2f2f2;">
 									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo2']; ?>" class="existing-photo" style="height:80px;">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">New Photo</label>
+								<label for="" class="col-sm-2 control-label">Foto Baru</label>
 								<div class="col-sm-6" style="padding-top:6px;">
 									<input type="file" name="photo_logo2">
 								</div>
@@ -97,13 +95,13 @@ if(!$this->session->userdata('id')) {
 							<h3 class="seo-info">Admin Logo</h3>
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>								
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Existing Photo</label>
+								<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
 								<div class="col-sm-6" style="padding-top:6px;background: #f2f2f2;">
 									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo_admin']; ?>" class="existing-photo" style="height:80px;">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">New Photo</label>
+								<label for="" class="col-sm-2 control-label">Foto Baru</label>
 								<div class="col-sm-6" style="padding-top:6px;">
 									<input type="file" name="photo_logo_admin">
 								</div>
@@ -121,13 +119,13 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
 							<div class="box-body">
 								<div class="form-group">
-									<label for="" class="col-sm-2 control-label">Existing Photo</label>
+									<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
 									<div class="col-sm-6" style="padding-top:6px;">
 										<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>" class="existing-photo" style="height:40px;">
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="" class="col-sm-2 control-label">New Photo</label>
+									<label for="" class="col-sm-2 control-label">Foto Baru</label>
 									<div class="col-sm-6" style="padding-top:6px;">
 										<input type="file" name="photo_favicon">
 									</div>
@@ -148,13 +146,13 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>		
 							<div class="box-body">
 								<div class="form-group">
-									<label for="" class="col-sm-2 control-label">Existing Photo</label>
+									<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
 									<div class="col-sm-6" style="padding-top:6px;">
 										<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['login_bg']; ?>" class="existing-photo" style="width:500px;">
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="" class="col-sm-2 control-label">New Photo</label>
+									<label for="" class="col-sm-2 control-label">Foto Baru</label>
 									<div class="col-sm-6" style="padding-top:6px;">
 										<input type="file" name="login_bg">
 									</div>
@@ -179,19 +177,19 @@ if(!$this->session->userdata('id')) {
 									</div>
 								</div>								
 								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">Footer - Address </label>
+									<label for="" class="col-sm-3 control-label">Footer - Alamat </label>
 									<div class="col-sm-6">
 										<textarea class="form-control" name="footer_address" style="height:70px;"><?php echo $setting['footer_address']; ?></textarea>
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">Footer - Phone </label>
+									<label for="" class="col-sm-3 control-label">Footer - No. Telp </label>
 									<div class="col-sm-6">
 										<textarea class="form-control" name="footer_phone" style="height:70px;"><?php echo $setting['footer_phone']; ?></textarea>
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">Top Bar - Working Hour </label>
+									<label for="" class="col-sm-3 control-label">Top Bar - Jam Kerja </label>
 									<div class="col-sm-6">
 										<textarea class="form-control" name="footer_working_hour" style="height:70px;"><?php echo $setting['footer_working_hour']; ?></textarea>
 									</div>
@@ -203,13 +201,13 @@ if(!$this->session->userdata('id')) {
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">Top Bar - Phone Number </label>
+									<label for="" class="col-sm-3 control-label">Top Bar - No. Telp </label>
 									<div class="col-sm-6">
 										<input type="text" class="form-control" name="top_bar_phone" value="<?php echo $setting['top_bar_phone']; ?>">
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">Contact Map iFrame </label>
+									<label for="" class="col-sm-3 control-label">Kontak Map iFrame </label>
 									<div class="col-sm-6">
 										<textarea class="form-control" name="contact_map_iframe" style="height:200px;"><?php echo $setting['contact_map_iframe']; ?></textarea>
 									</div>
@@ -226,13 +224,13 @@ if(!$this->session->userdata('id')) {
 							<h3 class="seo-info">Counter Background Photo</h3>
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>							
 							<div class="form-group">
-								<label for="" class="col-sm-3 control-label">Previous Photo </label>
+								<label for="" class="col-sm-3 control-label">Foto Sebelumnya </label>
 								<div class="col-sm-9">
 									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['counter_bg']; ?>" alt="" style="width:300px;">
 								</div>
 							</div>		
 							<div class="form-group">
-								<label for="" class="col-sm-3 control-label">Change Photo </label>
+								<label for="" class="col-sm-3 control-label">Ubah Foto </label>
 								<div class="col-sm-9" style="padding-top:5px;">
 									<input type="file" name="counter_bg">
 								</div>
@@ -245,7 +243,7 @@ if(!$this->session->userdata('id')) {
 							</div>								
 							<?php echo form_close(); ?>
 
-							<h3 class="seo-info">Counter Settings</h3>
+							<h3 class="seo-info">Data Setting</h3>
 							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
 							<div class="row">
 								<div class="col-md-6">
@@ -329,22 +327,6 @@ if(!$this->session->userdata('id')) {
 									<button type="submit" class="btn btn-success pull-left" name="form_counter">Update</button>
 								</div>
 							</div>                                
-							<?php echo form_close(); ?>
-
-							<h3 class="seo-info">Total Recent Post (How many last posts will be shown?)</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-3 control-label">Total Recent Posts </label>
-								<div class="col-sm-3">
-									<input type="text" name="total_recent_post_home" class="form-control" value="<?php echo $setting['total_recent_post_home']; ?>">
-								</div>
-							</div>      
-							<div class="form-group">
-								<label for="" class="col-sm-3 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_total_recent_post_home">Update</button>
-								</div>
-							</div>                              
 							<?php echo form_close(); ?>
 						</div>
 
@@ -430,332 +412,25 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_close(); ?>
 						</div>
 
-
-						<div class="tab-pane" id="tab_home">
-
-							<h3 class="seo-info">Content Home</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Title </label>
-								<div class="col-sm-6">
-									<input type="text" name="content_home_title" class="form-control" value="<?php echo $setting['content_home_title']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Subtitle </label>
-								<div class="col-sm-6">
-									<input type="text" name="content_home_subtitle" class="form-control" value="<?php echo $setting['content_home_subtitle']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Status </label>
-								<div class="col-sm-2">
-									<select name="content_home_status" class="form-control select2">
-										<option value="Show" <?php if($setting['content_home_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-										<option value="Hide" <?php if($setting['content_home_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_content_home">Update</button>
-								</div>
-							</div>								
-							<?php echo form_close(); ?>
-
-
-							<h3 class="seo-info">Service</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Title </label>
-								<div class="col-sm-6">
-									<input type="text" name="service_title" class="form-control" value="<?php echo $setting['service_title']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Subtitle </label>
-								<div class="col-sm-6">
-									<input type="text" name="service_subtitle" class="form-control" value="<?php echo $setting['service_subtitle']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Status </label>
-								<div class="col-sm-2">
-									<select name="service_status" class="form-control select2">
-										<option value="Show" <?php if($setting['service_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-										<option value="Hide" <?php if($setting['service_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_service">Update</button>
-								</div>
-							</div>								
-							<?php echo form_close(); ?>
-
-
-
-							<h3 class="seo-info">Facility</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Title </label>
-								<div class="col-sm-6">
-									<input type="text" name="facility_title" class="form-control" value="<?php echo $setting['facility_title']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Subtitle </label>
-								<div class="col-sm-6">
-									<input type="text" name="facility_subtitle" class="form-control" value="<?php echo $setting['facility_subtitle']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Status </label>
-								<div class="col-sm-2">
-									<select name="facility_status" class="form-control select2">
-										<option value="Show" <?php if($setting['facility_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-										<option value="Hide" <?php if($setting['facility_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_facility">Update</button>
-								</div>
-							</div>								
-							<?php echo form_close(); ?>
-
-
-
-							<h3 class="seo-info">Portfolio</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Title </label>
-								<div class="col-sm-6">
-									<input type="text" name="portfolio_title" class="form-control" value="<?php echo $setting['portfolio_title']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Subtitle </label>
-								<div class="col-sm-6">
-									<input type="text" name="portfolio_subtitle" class="form-control" value="<?php echo $setting['portfolio_subtitle']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Status </label>
-								<div class="col-sm-2">
-									<select name="portfolio_status" class="form-control select2">
-										<option value="Show" <?php if($setting['portfolio_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-										<option value="Hide" <?php if($setting['portfolio_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_portfolio">Update</button>
-								</div>
-							</div>								
-							<?php echo form_close(); ?>
-
-
-							<h3 class="seo-info">Team</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Title </label>
-								<div class="col-sm-6">
-									<input type="text" name="team_title" class="form-control" value="<?php echo $setting['team_title']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Subtitle </label>
-								<div class="col-sm-6">
-									<input type="text" name="team_subtitle" class="form-control" value="<?php echo $setting['team_subtitle']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Status </label>
-								<div class="col-sm-2">
-									<select name="team_status" class="form-control select2">
-										<option value="Show" <?php if($setting['team_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-										<option value="Hide" <?php if($setting['team_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_team">Update</button>
-								</div>
-							</div>								
-							<?php echo form_close(); ?>
-
-
-							<h3 class="seo-info">Testimonial</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Title </label>
-								<div class="col-sm-6">
-									<input type="text" name="testimonial_title" class="form-control" value="<?php echo $setting['testimonial_title']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Subtitle </label>
-								<div class="col-sm-6">
-									<input type="text" name="testimonial_subtitle" class="form-control" value="<?php echo $setting['testimonial_subtitle']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Status </label>
-								<div class="col-sm-2">
-									<select name="testimonial_status" class="form-control select2">
-										<option value="Show" <?php if($setting['testimonial_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-										<option value="Hide" <?php if($setting['testimonial_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_testimonial">Update</button>
-								</div>
-							</div>								
-							<?php echo form_close(); ?>
-
-							<h3 class="seo-info">Gallery</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Title </label>
-								<div class="col-sm-6">
-									<input type="text" name="gallery_title" class="form-control" value="<?php echo $setting['gallery_title']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Subtitle </label>
-								<div class="col-sm-6">
-									<input type="text" name="gallery_subtitle" class="form-control" value="<?php echo $setting['gallery_subtitle']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Status </label>
-								<div class="col-sm-2">
-									<select name="gallery_status" class="form-control select2">
-										<option value="Show" <?php if($setting['gallery_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-										<option value="Hide" <?php if($setting['gallery_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_gallery">Update</button>
-								</div>
-							</div>								
-							<?php echo form_close(); ?>
-
-							<h3 class="seo-info">Product</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Title </label>
-								<div class="col-sm-6">
-									<input type="text" name="product_title" class="form-control" value="<?php echo $setting['product_title']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Subtitle </label>
-								<div class="col-sm-6">
-									<input type="text" name="product_subtitle" class="form-control" value="<?php echo $setting['product_subtitle']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Status </label>
-								<div class="col-sm-2">
-									<select name="product_status" class="form-control select2">
-										<option value="Show" <?php if($setting['product_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-										<option value="Hide" <?php if($setting['product_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_product">Update</button>
-								</div>
-							</div>								
-							<?php echo form_close(); ?>
-
-
-							<h3 class="seo-info">Recent Post</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Title </label>
-								<div class="col-sm-6">
-									<input type="text" name="recent_post_title" class="form-control" value="<?php echo $setting['recent_post_title']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Subtitle </label>
-								<div class="col-sm-6">
-									<input type="text" name="recent_post_subtitle" class="form-control" value="<?php echo $setting['recent_post_subtitle']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Status </label>
-								<div class="col-sm-2">
-									<select name="recent_post_status" class="form-control select2">
-										<option value="Show" <?php if($setting['recent_post_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-										<option value="Hide" <?php if($setting['recent_post_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_recent_post">Update</button>
-								</div>
-							</div>								
-							<?php echo form_close(); ?>
-
-
-							<h3 class="seo-info">Partner</h3>
-							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Title </label>
-								<div class="col-sm-6">
-									<input type="text" name="partner_title" class="form-control" value="<?php echo $setting['partner_title']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Subtitle </label>
-								<div class="col-sm-6">
-									<input type="text" name="partner_subtitle" class="form-control" value="<?php echo $setting['partner_subtitle']; ?>">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Status </label>
-								<div class="col-sm-2">
-									<select name="partner_status" class="form-control select2">
-										<option value="Show" <?php if($setting['partner_status'] == 'Show') {echo 'selected';} ?>>Show</option>
-										<option value="Hide" <?php if($setting['partner_status'] == 'Hide') {echo 'selected';} ?>>Hide</option>
-									</select>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_partner">Update</button>
-								</div>
-							</div>								
-							<?php echo form_close(); ?>
-						</div>
-
-
-						<div class="tab-pane" id="tab_color">
-
+						<div class="tab-pane" id="tab_banner">
+							<table class="table table-bordered">
+								<tr>
+									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
+									<td style="width:10%">
+										<h4>Bakground tersedia</h4>
+										<p>
+											<img src="<?php echo base_url().'public/uploads/'.$setting['banner']; ?>" alt="" style="width: 50%;height:auto;">  
+										</p>                                        
+									</td>
+									<td style="width:10%">
+										<h4>Ubah Background</h4>
+										Select Photo<input type="file" name="photo">
+										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner">
+									</td>
+									<?php echo form_close(); ?>
+								</tr>
+							</table>
+							<h3 class="seo-info">Tema</h3>	
 							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
 							<div class="box-body">
 								<div class="form-group">
@@ -778,37 +453,9 @@ if(!$this->session->userdata('id')) {
 								</div>
 							</div>
 							<?php echo form_close(); ?>
-
-
 						</div>
-
-
-						<div class="tab-pane" id="tab_banner">
-							<table class="table table-bordered">
-								<tr>
-									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
-									<td style="width:50%">
-										<h4>Existing Background</h4>
-										<p>
-											<img src="<?php echo base_url().'public/uploads/'.$setting['banner']; ?>" alt="" style="width: 100%;height:auto;">  
-										</p>                                        
-									</td>
-									<td style="width:50%">
-										<h4>Change Background Image</h4>
-										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner">
-									</td>
-									<?php echo form_close(); ?>
-								</tr>
-							</table>
-						</div>
-
-
 					</div>
 				</div>
-
-
-
 				<?php echo form_close(); ?>
 			</div>
 		</div>

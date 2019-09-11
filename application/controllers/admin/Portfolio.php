@@ -42,9 +42,9 @@ class Portfolio extends CI_Controller
 				$trim=trim($string);
 				$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
 				$slug=$pre_slug.'.html';
-				$this->form_validation->set_rules('name', 'Name', 'trim|required');
-				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
-				$this->form_validation->set_rules('content', 'Content', 'trim|required');
+				$this->form_validation->set_rules('name', 'Judul', 'trim|required');
+				$this->form_validation->set_rules('short_content', 'Konten Singkat', 'trim|required');
+				$this->form_validation->set_rules('content', 'Konten', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -60,11 +60,11 @@ class Portfolio extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				} else {
 					$valid = 0;
-					$error .= 'You must have to select a photo for featured photo<br>';
+					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
 				if($valid == 1) 
@@ -82,13 +82,6 @@ class Portfolio extends CI_Controller
 						'name'             => $_POST['name'],
 						'short_content'    => $_POST['short_content'],
 						'content'          => $_POST['content'],
-						'client_name'      => $_POST['client_name'],
-						'client_company'   => $_POST['client_company'],
-						'start_date'       => $_POST['start_date'],
-						'end_date'         => $_POST['end_date'],
-						'website'          => $_POST['website'],
-						'cost'             => $_POST['cost'],
-						'client_comment'   => $_POST['client_comment'],
 						'category_id'      => $_POST['category_id'],
 						'photo'            => $final_name,
 						'meta_title'       => $_POST['meta_title'],
@@ -145,18 +138,11 @@ class Portfolio extends CI_Controller
 					}
 
 
-					$data['success'] = 'Portfolio is added successfully!';
+					$data['success'] = 'Portofolio berhasil ditambahkan!';
 
 					unset($_POST['name']);
 					unset($_POST['short_content']);
 					unset($_POST['content']);
-					unset($_POST['client_name']);
-					unset($_POST['client_company']);
-					unset($_POST['start_date']);
-					unset($_POST['end_date']);
-					unset($_POST['website']);
-					unset($_POST['cost']);
-					unset($_POST['client_comment']);
 					unset($_POST['meta_title']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
@@ -204,9 +190,9 @@ class Portfolio extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('name', 'Name', 'trim|required');
-				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
-				$this->form_validation->set_rules('content', 'Content', 'trim|required');
+				$this->form_validation->set_rules('name', 'Judul', 'trim|required');
+				$this->form_validation->set_rules('short_content', 'Konten Singkat', 'trim|required');
+				$this->form_validation->set_rules('content', 'Konten', 'trim|required');
 
 				$judul = $_POST['name'];
 				$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
@@ -228,7 +214,7 @@ class Portfolio extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				}
 
@@ -242,13 +228,6 @@ class Portfolio extends CI_Controller
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
 							'content'          => $_POST['content'],
-							'client_name'      => $_POST['client_name'],
-							'client_company'   => $_POST['client_company'],
-							'start_date'       => $_POST['start_date'],
-							'end_date'         => $_POST['end_date'],
-							'website'          => $_POST['website'],
-							'cost'             => $_POST['cost'],
-							'client_comment'   => $_POST['client_comment'],
 							'category_id'      => $_POST['category_id'],
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
@@ -267,13 +246,6 @@ class Portfolio extends CI_Controller
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
 							'content'          => $_POST['content'],
-							'client_name'      => $_POST['client_name'],
-							'client_company'   => $_POST['client_company'],
-							'start_date'       => $_POST['start_date'],
-							'end_date'         => $_POST['end_date'],
-							'website'          => $_POST['website'],
-							'cost'             => $_POST['cost'],
-							'client_comment'   => $_POST['client_comment'],
 							'category_id'      => $_POST['category_id'],
 							'photo'            => $final_name,
 							'meta_title'       => $_POST['meta_title'],
@@ -289,14 +261,8 @@ class Portfolio extends CI_Controller
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
 							'content'          => $_POST['content'],
-							'client_name'      => $_POST['client_name'],
-							'client_company'   => $_POST['client_company'],
-							'start_date'       => $_POST['start_date'],
-							'end_date'         => $_POST['end_date'],
-							'website'          => $_POST['website'],
-							'cost'             => $_POST['cost'],
-							'client_comment'   => $_POST['client_comment'],
 							'category_id'      => $_POST['category_id'],
+							'photo'            => $final_name,
 							'meta_title'       => $_POST['meta_title'],
 							'meta_keyword'     => $_POST['meta_keyword'],
 							'meta_description' => $_POST['meta_description'],
@@ -315,13 +281,6 @@ class Portfolio extends CI_Controller
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
 							'content'          => $_POST['content'],
-							'client_name'      => $_POST['client_name'],
-							'client_company'   => $_POST['client_company'],
-							'start_date'       => $_POST['start_date'],
-							'end_date'         => $_POST['end_date'],
-							'website'          => $_POST['website'],
-							'cost'             => $_POST['cost'],
-							'client_comment'   => $_POST['client_comment'],
 							'category_id'      => $_POST['category_id'],
 							'photo'            => $final_name,
 							'meta_title'       => $_POST['meta_title'],
@@ -376,7 +335,7 @@ class Portfolio extends CI_Controller
 						$this->Model_portfolio->add_photos($form_data);
 					}
 
-					$data['success'] = 'Portfolio is updated successfully';
+					$data['success'] = 'Portofolio telah berhasil diupdate';
 				}
 				else
 				{

@@ -49,22 +49,22 @@
 	    $(".select2").select2();
 
 	    //Datemask dd/mm/yyyy
-	    $("#datemask").inputmask("dd-mm-yyyy", {"placeholder": "dd-mm-yyyy"});
+	    $("#datemask").inputmask("dd-MM-yyyy", {"placeholder": "dd-MM-yyyy"});
 	    //Datemask2 mm/dd/yyyy
-	    $("#datemask2").inputmask("mm-dd-yyyy", {"placeholder": "mm-dd-yyyy"});
+	    $("#datemask2").inputmask("MM-dd-yyyy", {"placeholder": "MM-dd-yyyy"});
 	    //Money Euro
 	    $("[data-mask]").inputmask();
 
 	    //Date picker
 	    $('#datepicker').datepicker({
 	    	autoclose: true,
-	    	format: 'yyyy-mm-dd',
+	    	format: 'D, dd-M-yyyy',
 	    	todayBtn: 'linked',
 	    });
 
 	    $('#datepicker1').datepicker({
 	    	autoclose: true,
-	    	format: 'yyyy-mm-dd',
+	    	format: 'D, dd-M-yyyy',
 	    	todayBtn: 'linked',
 	    });
 

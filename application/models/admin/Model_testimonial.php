@@ -46,16 +46,5 @@ class Model_testimonial extends CI_Model
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }
-
-    function get_photo()
-    {
-        $sql = 'SELECT * FROM tbl_testimonial_photo WHERE id=?';
-        $query = $this->db->query($sql,array(1));
-        return $query->first_row('array');
-    }
-    function update_testimonial_photo($data) {
-        $this->db->where('id',1);
-        $this->db->update('tbl_testimonial_photo',$data);
-    }
     
 }

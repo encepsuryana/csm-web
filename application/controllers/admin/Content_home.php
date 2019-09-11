@@ -47,8 +47,8 @@ class content_home extends CI_Controller
 
 				$valid = 1;
 
-				$this->form_validation->set_rules('heading', 'Heading', 'trim|required');
-				$this->form_validation->set_rules('content', 'Content', 'trim|required');
+				$this->form_validation->set_rules('heading', 'Ikon', 'trim|required');
+				$this->form_validation->set_rules('content', 'Judul', 'trim|required');
 				$this->form_validation->set_rules('link', 'Link', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
@@ -65,7 +65,7 @@ class content_home extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				}
 
@@ -96,7 +96,7 @@ class content_home extends CI_Controller
 						$this->Model_content_home->update($id,$form_data);
 					}
 
-					$data['success'] = 'Content Main is updated successfully';
+					$data['success'] = 'Konten Beranda telah berhasil diupdate';
 				}
 				else
 				{
@@ -140,11 +140,11 @@ class content_home extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_file($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$data['error'] = 'You must have to upload PDF Files<br>';
+						$data['error'] = 'Anda harus mengunggah File PDF<br>';
 					}
 				} else {
 					$valid = 0;
-					$data['error'] = 'You must have to select a PDF Files<br>';
+					$data['error'] = 'Anda harus mengunggah File PDF<br>';
 				}
 
 				if($valid == 1) {
@@ -161,12 +161,12 @@ class content_home extends CI_Controller
 					);
 					$this->Model_content_home->update_content_home_photo($form_data);			   
 
-					$data['success'] = 'Content Home (Company Profile) is updated successfully!';
+					$data['success'] = 'Konten Beranda (Company Profile) telah berhasil diupdate!';
 				}
 
 				$data['content_home'] = $this->Model_content_home->get_photo();
 				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_content_home_item_bg',$data);
+				$this->load->view('admin/view_content_home_commpany_profile',$data);
 				$this->load->view('admin/view_footer');
 
 			} else {

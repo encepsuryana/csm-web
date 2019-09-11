@@ -1021,7 +1021,7 @@ ul.nav-ciptasin li:hover a {
 	width: 100%;
 	background-color: #fff;
 	z-index: 10000;
-	height: 62px;
+	height: 60px;
 	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
 	
 }
@@ -3347,7 +3347,6 @@ label {
 }
 
 .recent-single-text ul li {
-	float: left;
 	margin-right: 20px;
 }
 

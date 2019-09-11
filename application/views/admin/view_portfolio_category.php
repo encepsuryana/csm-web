@@ -6,12 +6,12 @@ if(!$this->session->userdata('id')) {
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
   <section class="content-header">
    <div class="content-header-left">
-    <h1>View Portfolio Categories</h1>
+    <h1>Lihat Kategori Portofolio</h1>
   </div>
   <div class="content-header-right">
     <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
 
-      <a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio-category/add" class="btn btn-primary btn-sm">Add New</a>
+      <a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio-category/add" class="btn btn-primary btn-sm">Tambah Baru</a>
     <?php } else {?>
       
     <?php }?>
@@ -29,7 +29,7 @@ if(!$this->session->userdata('id')) {
            <thead>
              <tr>
                <th>No</th>
-               <th>Category Name</th>
+               <th>Nama Kategori</th>
                <th>Status</th>
                <th>Action</th>
              </tr>
@@ -76,10 +76,10 @@ if(!$this->session->userdata('id')) {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
+        <h4 class="modal-title" id="myModalLabel">Konfirmasi Hapus</h4>
       </div>
       <div class="modal-body">
-        Are you sure want to delete this item?
+        Anda yakin ingin menghapus?
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>

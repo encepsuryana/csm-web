@@ -44,8 +44,8 @@ class Electronics_division extends CI_Controller
 				$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
 				$slug=$pre_slug.'.html';
 
-				$this->form_validation->set_rules('name', 'Name', 'trim|required');
-				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
+				$this->form_validation->set_rules('name', 'Judul', 'trim|required');
+				$this->form_validation->set_rules('short_content', 'Konten Singkat', 'trim|required');
 				$this->form_validation->set_rules('content', 'Content', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
@@ -62,11 +62,11 @@ class Electronics_division extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				} else {
 					$valid = 0;
-					$error .= 'You must have to select a photo for featured photo<br>';
+					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
 
@@ -140,7 +140,7 @@ class Electronics_division extends CI_Controller
 					}
 
 
-					$data['success'] = 'electronics_division is added successfully!';
+					$data['success'] = 'Divisi Elektronik berhasil ditambahkan!';
 
 					unset($_POST['name']);
 					unset($_POST['short_content']);
@@ -216,7 +216,7 @@ class Electronics_division extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'You must have to upload jpg, jpeg, gif or png file for featured photo<br>';
+						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				}
 
@@ -336,7 +336,7 @@ class Electronics_division extends CI_Controller
 						$this->Model_electronics_division->add_photos($form_data);
 					}
 
-					$data['success'] = 'Electronics Division is updated successfully';
+					$data['success'] = 'Divisi Elektronik telah berhasil diupdate';
 				}
 				else
 				{

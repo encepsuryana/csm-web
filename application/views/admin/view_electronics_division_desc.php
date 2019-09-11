@@ -6,7 +6,7 @@ if(!$this->session->userdata('id')) {
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Electronics Division Information Section</h1>
+			<h1>Informasi Elektronik Divisi</h1>
 		</div>
 	</section>
 
@@ -32,21 +32,21 @@ if(!$this->session->userdata('id')) {
 			<div class="col-md-12">
 				<div class="box box-info b-box">
 					<div class="box-body table-responsive">
-						<h3 class="seo-info">Photo Description</h3>
+						<h3 class="seo-info">Deskripsi Gambar</h3>
 						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/electronics-division-desc/update',array('class' => 'form-horizontal')); ?>
 
 						<input type="hidden" name="current_electronics_division_desc_photo" value="<?php echo $electronics_division_desc['electronics_division_desc_photo']; ?>">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Existing Photo </label>
+							<label for="" class="col-sm-2 control-label">Gambar </label>
 							<div class="col-sm-9">
 								
 								<?php if($electronics_division_desc['electronics_division_desc_photo'] == ''): ?>
-									<div style="padding-top:6px;color:red;">No Photo Found</div>
+									<div style="padding-top:6px;color:red;">Gambar tidak tersedia</div>
 									<?php else: ?>
 										<img src="<?php echo base_url(); ?>public/uploads/<?php echo $electronics_division_desc['electronics_division_desc_photo']; ?>" style="width:300px;">
 										<br>
 										<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'staff')) { ?>
-											<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division_desc/delete_electronics_division_desc_photo" class="btn btn-danger btn-xs" onClick="return confirm('Are you sure?');">Delete Photo</a>
+											<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division_desc/delete_electronics_division_desc_photo" class="btn btn-danger btn-xs" onClick="return confirm('Are you sure?');">Hapus Gambar</a>
 										<?php } else { ?>
 
 										<?php } ?>
@@ -56,7 +56,7 @@ if(!$this->session->userdata('id')) {
 							<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'staff')) { ?>
 
 								<div class="form-group">
-									<label for="" class="col-sm-2 control-label">Change Photo </label>
+									<label for="" class="col-sm-2 control-label">Pilih </label>
 									<div class="col-sm-6">
 										<input type="file" name="electronics_division_desc_photo" class="form-control">
 									</div>
@@ -69,7 +69,7 @@ if(!$this->session->userdata('id')) {
 								</div>
 							<?php } else { ?>
 								<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Change Photo </label>
+								<label for="" class="col-sm-2 control-label">Pilih </label>
 								<div class="col-sm-6">
 									<input type="file" name="electronics_division_desc_photo" class="form-control" disabled="disabled">
 								</div>
@@ -84,17 +84,17 @@ if(!$this->session->userdata('id')) {
 						<?php echo form_close(); ?>
 
 
-						<h3 class="seo-info">Electronics Division Information Section</h3>
-						<?php echo form_open(base_url().$this->session->userdata('role').'/electronics_division_desc/update',array('class' => 'form-horizontal')); ?>
+						<h3 class="seo-info">Informasi Elektronik Divisi</h3>
+						<?php echo form_open(base_url().$this->session->userdata('role').'/electronics-division-desc/update',array('class' => 'form-horizontal')); ?>
 						<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Heading </label>
+								<label for="" class="col-sm-2 control-label">Judul </label>
 								<div class="col-sm-6">
 									<input type="text" name="electronics_division_desc_heading" class="form-control" value="<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"> Content </label>
+								<label for="" class="col-sm-2 control-label">Konten </label>
 								<div class="col-sm-9">
 									<textarea name="electronics_division_desc_content" class="form-control" cols="30" rows="10" id="editor1"><?php echo $electronics_division_desc['electronics_division_desc_content']; ?></textarea>
 								</div>
@@ -120,7 +120,7 @@ if(!$this->session->userdata('id')) {
 							</div>  
 						<?php } else { ?>
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Heading </label>
+								<label for="" class="col-sm-2 control-label">Judul </label>
 								<div class="col-sm-6">
 									<input type="text" name="electronics_division_desc_heading" class="form-control" value="<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>" readonly="readonly">
 								</div>
@@ -156,14 +156,14 @@ if(!$this->session->userdata('id')) {
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label"></label>
 								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc">Update Information</button>
+									<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc">Update Informasi</button>
 								</div>
 							</div>
 						<?php } else { ?>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label"></label>
 								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc" disabled="disabled">Update Information</button>
+									<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc" disabled="disabled">Update Informasi</button>
 								</div>
 							</div>
 						<?php } ?>                         

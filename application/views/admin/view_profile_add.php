@@ -6,10 +6,10 @@ if(!$this->session->userdata('id')) {
 <?php if ($this->session->userdata('role') == 'admin') { ?>
 	<section class="content-header">
 		<div class="content-header-left">
-			<h1>Add User</h1>
+			<h1>Tambah User</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/profile" class="btn btn-primary btn-sm">View All</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/profile" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -36,7 +36,7 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Full Name <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Nama Lengkap <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="full_name" value="<?php if(isset($_POST['full_name'])){echo $_POST['full_name'];} ?>">
 							</div>
@@ -50,7 +50,7 @@ if(!$this->session->userdata('id')) {
 						</div>
 
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Phone <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">No. Telp <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="number" autocomplete="off" class="form-control" name="phone" value="<?php if(isset($_POST['phone'])){echo $_POST['phone'];} ?>">
 							</div>
@@ -63,16 +63,16 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Password <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Ulangi Password <span>*</span></label>
 							<div class="col-sm-6">
 								<input type="password" autocomplete="off" class="form-control" name="re_password" value="<?php if(isset($_POST['re_password'])){echo $_POST['re_password'];} ?>">
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Photo <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Foto <span>*</span></label>
 							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo_avatar">(Only jpg, jpeg, gif and png are allowed)
+								<input type="file" name="photo_avatar">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>	
 
