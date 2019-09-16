@@ -1,9 +1,9 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="container bannder-table" style="padding: 0;">
 		<div class="col-md-12" style="padding: 0;">
-			<div class="col-md-6">
+			<div class="col-md-4">
 			</div>
-			<div class="col-md-6" style="padding: 0;">
+			<div class="col-md-8" style="padding: 0;">
 				<div class="banner-text">
 					<h1><?php echo CONTACT ?></h1>
 				</div>
@@ -11,7 +11,7 @@
 		</div>
 	</div>
 
-	<div class="contact-area pt-30 pb-60">
+	<div class="contact-area pt-20 pb-60">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">

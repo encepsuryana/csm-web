@@ -9,7 +9,17 @@ body {
 	line-height: 1.5;
 	color: #333;
 }
-
+.link-post {
+	padding: 0;
+	position: absolute;
+	top: 60px;
+	left: 90px;
+}
+.blog-link-content {
+	text-align: left; 
+	padding-left: 0;
+	font-size: 10px;
+}
 .input-group .form-control {
 	border-right: 0;
 }
@@ -2943,7 +2953,7 @@ span.page-numbers.current {
 
 .sidebar {
 	border-left: 1px solid #ddd;
-	padding: 15px;
+	padding: 0 15px;
 }
 
 .searchbar-item button.btn:hover {
@@ -2963,7 +2973,7 @@ span.page-numbers.current {
 	position: relative;
 	padding-bottom: 12px;
 	margin: 0;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .sidebar-item h3:before {

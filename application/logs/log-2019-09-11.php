@@ -535,3 +535,128 @@ ERROR - 2019-09-11 17:02:50 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-11 17:03:28 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-11 17:03:48 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-11 17:04:00 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:05:44 --> Severity: Notice --> Undefined variable: portfolio_category C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 17:05:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 17:05:44 --> Severity: Notice --> Undefined variable: product C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 17:05:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 17:05:44 --> Severity: Notice --> Undefined variable: facility C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 17:05:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 17:05:44 --> Severity: Notice --> Undefined variable: service C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 17:05:45 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 17:05:50 --> Severity: Notice --> Undefined variable: portfolio_category C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 17:05:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 17:05:50 --> Severity: Notice --> Undefined variable: product C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 17:05:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 17:05:50 --> Severity: Notice --> Undefined variable: facility C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 17:05:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 17:05:50 --> Severity: Notice --> Undefined variable: service C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 17:05:50 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 17:05:57 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:15:09 --> Non-existent class: CI_Site_config
+ERROR - 2019-09-11 17:15:24 --> Severity: Notice --> Undefined variable: portfolio_category C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 17:15:24 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 17:15:24 --> Severity: Notice --> Undefined variable: product C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 17:15:24 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 17:15:24 --> Severity: Notice --> Undefined variable: facility C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 17:15:24 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 17:15:24 --> Severity: Notice --> Undefined variable: service C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 17:15:24 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 17:25:50 --> 404 Page Not Found: Visitor/index
+ERROR - 2019-09-11 17:26:33 --> 404 Page Not Found: Visitor/index
+ERROR - 2019-09-11 17:27:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 35
+ERROR - 2019-09-11 17:27:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 36
+ERROR - 2019-09-11 17:27:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 75
+ERROR - 2019-09-11 17:27:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 76
+ERROR - 2019-09-11 17:27:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 151
+ERROR - 2019-09-11 17:27:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 152
+ERROR - 2019-09-11 17:27:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 191
+ERROR - 2019-09-11 17:27:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 192
+ERROR - 2019-09-11 17:27:07 --> 404 Page Not Found: Assets/js
+ERROR - 2019-09-11 17:27:07 --> 404 Page Not Found: Assets/js
+ERROR - 2019-09-11 17:27:07 --> 404 Page Not Found: Assets/js
+ERROR - 2019-09-11 17:27:08 --> 404 Page Not Found: Assets/js
+ERROR - 2019-09-11 17:27:08 --> 404 Page Not Found: Assets/js
+ERROR - 2019-09-11 17:28:00 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 35
+ERROR - 2019-09-11 17:28:00 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 36
+ERROR - 2019-09-11 17:28:00 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 75
+ERROR - 2019-09-11 17:28:00 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 76
+ERROR - 2019-09-11 17:28:00 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 151
+ERROR - 2019-09-11 17:28:00 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 152
+ERROR - 2019-09-11 17:28:00 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 191
+ERROR - 2019-09-11 17:28:00 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 192
+ERROR - 2019-09-11 17:28:01 --> 404 Page Not Found: Assets/js
+ERROR - 2019-09-11 17:28:01 --> 404 Page Not Found: Assets/js
+ERROR - 2019-09-11 17:28:01 --> 404 Page Not Found: Assets/js
+ERROR - 2019-09-11 17:28:01 --> 404 Page Not Found: Assets/js
+ERROR - 2019-09-11 17:28:01 --> 404 Page Not Found: Assets/js
+ERROR - 2019-09-11 17:28:01 --> 404 Page Not Found: Assets/js
+ERROR - 2019-09-11 17:28:45 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 35
+ERROR - 2019-09-11 17:28:45 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 36
+ERROR - 2019-09-11 17:28:45 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 75
+ERROR - 2019-09-11 17:28:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 76
+ERROR - 2019-09-11 17:28:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 151
+ERROR - 2019-09-11 17:28:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 152
+ERROR - 2019-09-11 17:28:46 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 191
+ERROR - 2019-09-11 17:28:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 192
+ERROR - 2019-09-11 17:30:57 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 35
+ERROR - 2019-09-11 17:30:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 36
+ERROR - 2019-09-11 17:30:57 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 75
+ERROR - 2019-09-11 17:30:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 76
+ERROR - 2019-09-11 17:30:57 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 151
+ERROR - 2019-09-11 17:30:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 152
+ERROR - 2019-09-11 17:30:57 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 191
+ERROR - 2019-09-11 17:30:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 192
+ERROR - 2019-09-11 17:31:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 35
+ERROR - 2019-09-11 17:31:33 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 36
+ERROR - 2019-09-11 17:31:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 75
+ERROR - 2019-09-11 17:31:33 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 76
+ERROR - 2019-09-11 17:31:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 151
+ERROR - 2019-09-11 17:31:33 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 152
+ERROR - 2019-09-11 17:31:33 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 191
+ERROR - 2019-09-11 17:31:33 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 192
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 35
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 36
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 75
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 76
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 151
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 152
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 191
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 192
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 35
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 36
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 75
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 76
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 151
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 152
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 191
+ERROR - 2019-09-11 17:32:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 192
+ERROR - 2019-09-11 17:33:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 35
+ERROR - 2019-09-11 17:33:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 36
+ERROR - 2019-09-11 17:33:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 75
+ERROR - 2019-09-11 17:33:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 76
+ERROR - 2019-09-11 17:33:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 151
+ERROR - 2019-09-11 17:33:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 152
+ERROR - 2019-09-11 17:33:07 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\csm-web\application\views\visitor.php 191
+ERROR - 2019-09-11 17:33:07 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\visitor.php 192
+ERROR - 2019-09-11 17:35:31 --> 404 Page Not Found: Visitorcontroller/index
+ERROR - 2019-09-11 17:35:38 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 17:49:37 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-11 18:55:31 --> Severity: Notice --> Undefined variable: portfolio_category C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 18:55:31 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 18:55:31 --> Severity: Notice --> Undefined variable: product C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 18:55:31 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 18:55:31 --> Severity: Notice --> Undefined variable: facility C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 18:55:31 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 18:55:31 --> Severity: Notice --> Undefined variable: service C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 18:55:31 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 18:55:37 --> Severity: Notice --> Undefined variable: portfolio_category C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 18:55:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 502
+ERROR - 2019-09-11 18:55:37 --> Severity: Notice --> Undefined variable: product C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 18:55:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 517
+ERROR - 2019-09-11 18:55:37 --> Severity: Notice --> Undefined variable: facility C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 18:55:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 546
+ERROR - 2019-09-11 18:55:37 --> Severity: Notice --> Undefined variable: service C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 18:55:37 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 563
+ERROR - 2019-09-11 19:20:27 --> 404 Page Not Found: Csm_web/index.php
+ERROR - 2019-09-11 19:20:31 --> 404 Page Not Found: Csm_web/index.php
+ERROR - 2019-09-11 19:22:16 --> 404 Page Not Found: admin//index

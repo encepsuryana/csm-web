@@ -1,17 +1,29 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="container bannder-table" style="padding: 0;">
 		<div class="col-md-12" style="padding: 0;">
-			<div class="col-md-6">
+			<div class="col-md-4">
 			</div>
-			<div class="col-md-6" style="padding: 0;">
+			<div class="col-md-8" style="padding: 0;">
 				<div class="banner-text">
 					<h1><?php echo $facility['name']; ?></h1>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="container single-service-area pt_30 pb_60 bg-news">
+	<div class="container link-post">
+		<div class="blog-author">
+			<ul>
+				<div class="col-sm-8 blog-link-content">
+					<li class="gro" style="padding-left: 0; padding-top: 5px;">
+						<a href="<?php echo base_url(); ?>facility"><span><?php echo FACILITY; ?></span></a>
+						<i class="fa fa-caret-right" aria-hidden="true"></i>
+						<a href="<?php echo base_url(); ?>facility/post/<?php echo $facility['slug_facility']; ?>"><span><?php echo $facility['name']; ?></span></a>
+					</li>
+				</div>
+			</ul>
+		</div>
+	</div>
+	<div class="container single-service-area pt_20 pb_60 bg-news">
 		<div class="row">
 			<div class="col-lg-9 col-md-8">
 				<div class="carousel slide" data-ride="carousel" id="quote-carousel">
@@ -70,7 +82,7 @@
 			<div class="col-lg-3 col-md-4">
 				<div class="sidebar">
 					<div class="sidebar-item category">
-						<h3><?php echo PROJECTS; ?></h3>
+						<h3><?php echo FACILITY; ?></h3>
 						<ul>
 							<?php
 							foreach ($facility_order_by_name as $row) {

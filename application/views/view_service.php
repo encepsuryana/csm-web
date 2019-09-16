@@ -2,9 +2,9 @@
 
 	<div class="container bannder-table" style="padding: 0;">
 		<div class="col-md-12" style="padding: 0;">
-			<div class="col-md-6">
+			<div class="col-md-4">
 			</div>
-			<div class="col-md-6" style="padding: 0;">
+			<div class="col-md-8" style="padding: 0;">
 				<div class="banner-text">
 					<h1><?php echo SERVICE; ?></h1>
 				</div>

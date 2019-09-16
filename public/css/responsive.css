@@ -101,6 +101,15 @@
 /*mobile small layout*/
 
 @media only screen and (max-width:767px) {
+	.link-post { 
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.blog-link-content {
+		text-align: center;
+		padding-left: 15px;
+	}
 	.nav-ciptasin .dropdown-menu.ciptasin-menu {
 		left: 0;
 		width: 100%;
@@ -360,6 +369,15 @@
 /*mobile large layout*/
 
 @media only screen and (min-width: 480px) and (max-width:767px) {
+	.link-post { 
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.blog-link-content {
+		text-align: center;
+		padding-left: 15px;
+	}
 	.box.full .toggleIcon h4 {
 		width: 200px;
 	}
@@ -515,6 +533,18 @@
 /*Other*/
 
 @media only screen and (min-width: 660px) and (max-width:767px) {
+	.link-post { 
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.blog-link-content {
+		text-align: center;
+		padding-left: 15px;
+	}
+	.blog-link-content {
+		text-align: center;
+	}
 	.box.full .toggleIcon h4 {
 		width: 200px;
 	}
@@ -535,7 +565,7 @@
 		text-align: center;
 	}
 
-	
+
 	.box.full {
 		height: inherit;
 		width: 100%;
