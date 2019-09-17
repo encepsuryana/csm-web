@@ -77,7 +77,6 @@ class Portfolio extends CI_Controller
 					$final_name = 'portfolio-'.$ai_id.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
-
 					$form_data = array(
 						'name'             => $_POST['name'],
 						'short_content'    => $_POST['short_content'],
@@ -131,8 +130,8 @@ class Portfolio extends CI_Controller
 					for($i=0;$i<count($final_names);$i++)
 					{
 						$form_data = array(
-							'portfolio_id' => $ai_id,
-							'photo'        => $final_names[$i]
+							'slug_portfolio' => $slug,
+							'photo'        	 => $final_names[$i]
 						);
 						$this->Model_portfolio->add_photos($form_data);
 					}
@@ -172,7 +171,6 @@ class Portfolio extends CI_Controller
 	public function edit($id)
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
-    	// If there is no service in this id, then redirect
 			$tot = $this->Model_portfolio->portfolio_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/portfolio');
@@ -184,10 +182,8 @@ class Portfolio extends CI_Controller
 			$data['success'] = '';
 			$error = '';
 
-
 			if(isset($_POST['form1'])) 
 			{
-
 				$valid = 1;
 
 				$this->form_validation->set_rules('name', 'Judul', 'trim|required');
@@ -218,7 +214,6 @@ class Portfolio extends CI_Controller
 					}
 				}
 
-
 				if($valid == 1) 
 				{
 					$data['portfolio'] = $this->Model_portfolio->getData($id);
@@ -236,42 +231,7 @@ class Portfolio extends CI_Controller
 						);
 						$this->Model_portfolio->update($id,$form_data);
 					}
-					if($path != '') {
-						unlink('./public/uploads/'.$data['portfolio']['photo']);
-
-						$final_name = 'portfolio-'.$id.'.'.$ext;
-						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
-
-						$form_data = array(
-							'name'             => $_POST['name'],
-							'short_content'    => $_POST['short_content'],
-							'content'          => $_POST['content'],
-							'category_id'      => $_POST['category_id'],
-							'photo'            => $final_name,
-							'meta_title'       => $_POST['meta_title'],
-							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_portfolio'   => $slug
-						);
-						$this->Model_portfolio->update($id,$form_data);
-					}
-					if($path == '') {
-
-						$form_data = array(
-							'name'             => $_POST['name'],
-							'short_content'    => $_POST['short_content'],
-							'content'          => $_POST['content'],
-							'category_id'      => $_POST['category_id'],
-							'photo'            => $final_name,
-							'meta_title'       => $_POST['meta_title'],
-							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_portfolio'   => $slug
-						);
-						$this->Model_portfolio->update($id,$form_data);
-					}
-					if($path != '' ) {
-
+					else {
 						unlink('./public/uploads/'.$data['portfolio']['photo']);
 
 						$final_name = 'portfolio-'.$id.'.'.$ext;
@@ -316,7 +276,6 @@ class Portfolio extends CI_Controller
 							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
 							$ext_check = $this->Model_header->extension_check_photo($ext);
 							if($ext_check == FALSE) {
-				        	// Nothing to do, just skip
 							} else {
 								$final_names[$m] = $z.'.'.$ext;
 								move_uploaded_file($photos_temp[$i],"./public/uploads/portfolio_photos/".$final_names[$m]);
@@ -330,10 +289,13 @@ class Portfolio extends CI_Controller
 					{
 						$form_data = array(
 							'portfolio_id' => $id,
+							'slug_portfolio' => $slug,
 							'photo'        => $final_names[$i]
 						);
 						$this->Model_portfolio->add_photos($form_data);
 					}
+
+
 
 					$data['success'] = 'Portofolio telah berhasil diupdate';
 				}

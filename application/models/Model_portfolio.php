@@ -25,12 +25,12 @@ class Model_portfolio extends CI_Model
     }
     public function get_portfolio_photo($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_portfolio_photo WHERE portfolio_id=?",array($slug));
+        $query = $this->db->query("SELECT * from tbl_portfolio_photo WHERE slug_portfolio='$slug'",array($slug));
         return $query->result_array();
     }
     public function get_portfolio_photo_number($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_portfolio_photo WHERE portfolio_id=?",array($slug));
+        $query = $this->db->query("SELECT * from tbl_portfolio_photo WHERE slug_portfolio='$slug'",array($slug));
         return $query->num_rows();
     }
 

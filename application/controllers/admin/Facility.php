@@ -173,7 +173,7 @@ class Facility extends CI_Controller
 	public function edit($id)
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-    	// If there is no service in this id, then redirect
+
 			$tot = $this->Model_facility->facility_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/facility');
@@ -188,12 +188,13 @@ class Facility extends CI_Controller
 
 			if(isset($_POST['form1'])) 
 			{
+				$valid = 1;
+
 				$judul = $_POST['name'];
 				$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
 				$trim=trim($string);
 				$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
 				$slug=$pre_slug.'.html';
-				$valid = 1;
 
 				$this->form_validation->set_rules('name', 'Name', 'trim|required');
 				$this->form_validation->set_rules('short_content', 'Short Content', 'trim|required');
@@ -203,7 +204,7 @@ class Facility extends CI_Controller
 					$valid = 0;
 					$error .= validation_errors();
 				}
-
+				
 				$path = $_FILES['photo']['name'];
 				$path_tmp = $_FILES['photo']['tmp_name'];
 
@@ -213,10 +214,9 @@ class Facility extends CI_Controller
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				}
-
 
 				if($valid == 1) 
 				{
@@ -235,47 +235,12 @@ class Facility extends CI_Controller
 						);
 						$this->Model_facility->update($id,$form_data);
 					}
-					if($path != '') {
+					else {
 						unlink('./public/uploads/'.$data['facility']['photo']);
 
 						$final_name = 'facility-'.$id.'.'.$ext;
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
-						$form_data = array(
-							'name'             => $_POST['name'],
-							'short_content'    => $_POST['short_content'],
-							'content'          => $_POST['content'],
-							'category_id'      => $_POST['category_id'],
-							'photo'            => $final_name,
-							'meta_title'       => $_POST['meta_title'],
-							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_facility'    => $slug
-						);
-						$this->Model_facility->update($id,$form_data);
-					}
-					if($path == '') {
-					
-						$form_data = array(
-							'name'             => $_POST['name'],
-							'short_content'    => $_POST['short_content'],
-							'content'          => $_POST['content'],
-							'category_id'      => $_POST['category_id'],
-							'meta_title'       => $_POST['meta_title'],
-							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_facility'    => $slug
-						);
-						$this->Model_facility->update($id,$form_data);
-					}
-					if($path != '') {
-
-						unlink('./public/uploads/'.$data['facility']['photo']);
-
-						$final_name = 'facility-'.$id.'.'.$ext;
-						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
-
-						
 						$form_data = array(
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
@@ -329,15 +294,14 @@ class Facility extends CI_Controller
 					{
 						$form_data = array(
 							'facility_id' => $id,
+							'slug_facility' => $slug,
 							'photo'        => $final_names[$i]
 						);
 						$this->Model_facility->add_photos($form_data);
 					}
 
 					$data['success'] = 'Fasilitas telah berhasil diupdate';
-				}
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 

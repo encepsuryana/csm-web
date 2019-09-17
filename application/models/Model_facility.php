@@ -25,12 +25,12 @@ class Model_facility extends CI_Model
     }
     public function get_facility_photo($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_facility_photo WHERE facility_id=?",array($slug));
+        $query = $this->db->query("SELECT * from tbl_facility_photo WHERE slug_facility='$slug'",array($slug));
         return $query->result_array();
     }
     public function get_facility_photo_number($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_facility_photo WHERE facility_id=?",array($slug));
+        $query = $this->db->query("SELECT * from tbl_facility_photo WHERE slug_facility='$slug'",array($slug));
         return $query->num_rows();
     }
 

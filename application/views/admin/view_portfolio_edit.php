@@ -92,7 +92,9 @@ if(!$this->session->userdata('id')) {
 											<td>
 												<img src="<?php echo base_url(); ?>public/uploads/portfolio_photos/<?php echo $row['photo']; ?>" alt="" style="width:120px;">
 											</td>
-											<td><a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio/single-photo-delete/<?php echo $row['id']; ?>/<?php echo $portfolio['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a></td>
+											<td>
+												<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio/single-photo-delete/<?php echo $row['id']; ?>/<?php echo $portfolio['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
+											</td>
 										</tr>
 										<?php
 									}

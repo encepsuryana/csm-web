@@ -64,7 +64,7 @@
 				<?php
 				foreach ($electronics_division as $row) {
 					?>
-					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three bg-about" data-category="<?php echo $row['category_id']; ?>" data-sort="value">
+					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three" data-category="<?php echo $row['category_id']; ?>" data-sort="value">
 						<div class="recent-item">
 							<div class="lightbox-item">
 								<div class="recent-photo" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)">
