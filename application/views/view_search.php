@@ -5,12 +5,26 @@
 			</div>
 			<div class="col-md-8" style="padding: 0;">
 				<div class="banner-text">
-					<h1><?php echo $page['search_heading']; ?> <?php echo $search_string; ?></h1>
+					<h1><?php echo SEARCH_NEWS; ?>: <?php echo $search_string; ?></h1>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	<div class="container link-post">
+		<div class="blog-author">
+			<ul>
+				<div class="col-sm-8 blog-link-content">
+					<li class="gro" style="padding-left: 0; padding-top: 5px;">
+						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
+						<i class="fa fa-caret-right" aria-hidden="true"></i>
+						<a href="<?php echo base_url(); ?>news/page"><span><?php echo SEARCH_NEWS; ?></span></a>
+						<i class="fa fa-caret-right" aria-hidden="true"></i>
+						<a href="#"><span><?php echo $search_string; ?></span></a>
+					</li>
+				</div>
+			</ul>
+		</div>
+	</div>
 	<div class="container pt_20 pb_20">
 		<div class="row">
 			<section class="csmpublic-home">

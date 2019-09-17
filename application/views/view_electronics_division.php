@@ -10,6 +10,19 @@
 			</div>
 		</div>
 	</div>
+	<div class="container link-post">
+		<div class="blog-author">
+			<ul>
+				<div class="col-sm-8 blog-link-content">
+					<li class="gro" style="padding-left: 0; padding-top: 5px;">
+						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
+						<i class="fa fa-caret-right" aria-hidden="true"></i>
+						<a href="<?php echo base_url(); ?>electronics-division"><span><?php echo ELECTRONICS_DIVISION; ?></span></a>
+					</li>
+				</div>
+			</ul>
+		</div>
+	</div>
 	<div class="container bg-about">
 		<div class="row">
 			<?php if($electronics_division_desc['electronics_division_desc_photo']!=""): ?>

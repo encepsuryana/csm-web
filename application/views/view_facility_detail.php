@@ -15,6 +15,8 @@
 			<ul>
 				<div class="col-sm-8 blog-link-content">
 					<li class="gro" style="padding-left: 0; padding-top: 5px;">
+						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
+						<i class="fa fa-caret-right" aria-hidden="true"></i>
 						<a href="<?php echo base_url(); ?>facility"><span><?php echo FACILITY; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
 						<a href="<?php echo base_url(); ?>facility/post/<?php echo $facility['slug_facility']; ?>"><span><?php echo $facility['name']; ?></span></a>

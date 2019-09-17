@@ -20,6 +20,8 @@
 							<ul>
 								<div class="col-sm-8" style="text-align: left; padding-left: 5px;">
 									<li class="gro">
+										<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
+										<i class="fa fa-caret-right" aria-hidden="true"></i>
 										<a href="<?php echo base_url(); ?>news/page"><span><?php echo NEWS; ?></span></a>
 										<i class="fa fa-caret-right" aria-hidden="true"></i>
 										<a href="<?php echo base_url(); ?>category/post/<?php echo $news['slug_news_category']; ?>"><span><?php echo $news['category_name']; ?></span></a>

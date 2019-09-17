@@ -605,7 +605,7 @@ if(!$this->session->userdata('id')) {
                     <div class="form-group">
                         <label for="" class="col-sm-2 control-label"></label>
                         <div class="col-sm-6">
-                            <button type="submit" class="btn btn-success pull-left" name="form_electronics_division">Update</button>
+                            <button type="submit" class="btn btn-success pull-left" name="form_electronic_division">Update</button>
                         </div>
                     </div>                              
                     <?php echo form_close(); ?>

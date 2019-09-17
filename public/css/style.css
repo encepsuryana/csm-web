@@ -11,9 +11,6 @@ body {
 }
 .link-post {
 	padding: 0;
-	position: absolute;
-	top: 60px;
-	left: 90px;
 }
 .blog-link-content {
 	text-align: left; 

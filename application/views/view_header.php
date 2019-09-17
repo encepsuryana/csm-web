@@ -240,6 +240,7 @@
 		.main-testimonial .testimonial-carousel .owl-dots .owl-dot {
 			background: #<?php echo $setting['theme_color_1']; ?>!important;
 		}
+		.header-contact li span a,
 		.dropdown a,
 		.blog-text h3 a,
 		.box h3,
@@ -434,11 +435,11 @@
 							</li>
 							<li>
 								<i class="fa fa-phone" aria-hidden="true"></i>
-								<span title="<?php echo COMPANY_PHONE; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_phone']; ?></span>
+								<span title="<?php echo COMPANY_PHONE; ?>" data-toggle="tooltip" data-placement="bottom"><a href="tel:<?php echo $setting['top_bar_phone']; ?>"><?php echo $setting['top_bar_phone']; ?></a></span>
 							</li>
 							<li>
 								<i class="fa fa-envelope-o" aria-hidden="true"></i>
-								<span title="<?php echo COMPANY_EMAIL; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo $setting['top_bar_email']; ?></span>
+								<span title="<?php echo COMPANY_EMAIL; ?>" data-toggle="tooltip" data-placement="bottom"><a href="mailto:<?php echo $setting['top_bar_email']; ?>"><?php echo $setting['top_bar_email']; ?></a></span>
 							</li>
 							<li class="dropdown">
 								<i class="fa fa-globe" aria-hidden="true"></i>									
