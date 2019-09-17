@@ -209,21 +209,19 @@ DROP TABLE IF EXISTS `tbl_facility_photo`;
 CREATE TABLE `tbl_facility_photo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `facility_id` int(11) NOT NULL,
+  `slug_facility` varchar(255) DEFAULT NULL,
   `photo` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_facility_photo` */
 
-insert  into `tbl_facility_photo`(`id`,`facility_id`,`photo`) values 
-(2,2,'2.png'),
-(3,2,'3.png'),
-(4,1,'4.jpg'),
-(5,2,'5.jpg'),
-(6,3,'6.jpg'),
-(7,4,'7.jpg'),
-(8,5,'8.jpg'),
-(9,6,'9.jpg');
+insert  into `tbl_facility_photo`(`id`,`facility_id`,`slug_facility`,`photo`) values 
+(2,1,'high-speed-cnc-milling-machining-center.html','2.jpg'),
+(3,1,'high-speed-cnc-milling-machining-center.html','3.jpg'),
+(4,1,'high-speed-cnc-milling-machining-center.html','4.jpg'),
+(5,1,'high-speed-cnc-milling-machining-center.html','5.jpg'),
+(6,2,'high-speed-cnc-turning-machining-center.html','6.jpg');
 
 /*Table structure for table `tbl_language` */
 
@@ -346,7 +344,7 @@ CREATE TABLE `tbl_news` (
 /*Data for the table `tbl_news` */
 
 insert  into `tbl_news`(`news_id`,`news_title`,`slug`,`news_content`,`news_short_content`,`news_date`,`photo`,`slug_news_category`,`total_view`,`comment`,`meta_title`,`meta_keyword`,`meta_description`,`user_update`,`post_slug`) values 
-(1,'Open Recruitment Agust 2019','col-page col-sm-8 col-md-6','<p>Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019, The requirements are as follows:</p><p><b>Criteria :</b></p><ol><li>Matching CAM design with 5 axis CNC machines for optimal.</li><li>Making CAM designs.</li><li>Able to work in teams and individually.</li></ol><p><b>Qualification<b> :</b></b></p><ol><li><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">Max age</span> <span title=\"\" class=\"\">35 years old, physically and mentally healthy</span></span></li><li>Having experience in the field of Programmer (CNC) ± 2 years specialized in Manufacturing Dies and CF</li><li>Experience using Mastercam & Powermill / other CAM design software</li><li>Experienced using a 5 axis CNC machine</li><li>Mastering 3D & 2D concepts</li><li>Able to work well together and good communication</li></ol><b>If you are personally we needed, please apply for an application to participate in the selection stage.<br>HRD Section</b><p><b><b>CV. Cipta Sinergi Manufacturing</b></b></p><p><b><b>Jl. Kamarung No. 88b RT/RW 004/004 Citeureup Kec. Cimahi Utara, Jawa Barat 40512<br></b></b></p>','Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019.','Wed, 28-Aug-2019','news-1.jpg','career.html',19,'On','Open Recruitment Agust 2019','','','hrd','open-recruitment-agust-2019.html');
+(1,'Open Recruitment Agust 2019','col-page col-sm-8 col-md-6','<p>Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019, The requirements are as follows:</p><p><b>Criteria :</b></p><ol><li>Matching CAM design with 5 axis CNC machines for optimal.</li><li>Making CAM designs.</li><li>Able to work in teams and individually.</li></ol><p><b>Qualification<b> :</b></b></p><ol><li><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">Max age</span> <span title=\"\" class=\"\">35 years old, physically and mentally healthy</span></span></li><li>Having experience in the field of Programmer (CNC) ± 2 years specialized in Manufacturing Dies and CF</li><li>Experience using Mastercam & Powermill / other CAM design software</li><li>Experienced using a 5 axis CNC machine</li><li>Mastering 3D & 2D concepts</li><li>Able to work well together and good communication</li></ol><b>If you are personally we needed, please apply for an application to participate in the selection stage.<br>HRD Section</b><p><b><b>CV. Cipta Sinergi Manufacturing</b></b></p><p><b><b>Jl. Kamarung No. 88b RT/RW 004/004 Citeureup Kec. Cimahi Utara, Jawa Barat 40512<br></b></b></p>','Open Recruitment new employee\'s CV. Cipta Sinergi Manufacturing on Agust 2019.','Wed, 28-Aug-2019','news-1.jpg','career.html',20,'On','Open Recruitment Agust 2019','','','hrd','open-recruitment-agust-2019.html');
 
 /*Table structure for table `tbl_news_category` */
 
@@ -533,13 +531,13 @@ CREATE TABLE `tbl_portfolio` (
   `meta_description` text NOT NULL,
   `slug_portfolio` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_portfolio` */
 
 insert  into `tbl_portfolio`(`id`,`name`,`short_content`,`content`,`category_id`,`photo`,`meta_title`,`meta_keyword`,`meta_description`,`slug_portfolio`) values 
-(1,'FOOD BEVERAGE','In the production process not only made industrial equipment, but the entirety of the customer demand is definitely there.','In the production process not only made industrial equipment, but the entirety of the customer demand is definitely there. of the completeness of the manufacturing infrastructure of food, mold and other requirements we are ready to serve','1','portfolio-1.jpg','FOOD BEVERAGE','','','food-beverage.html'),
-(2,'AUTOMOTIVE','Our production process has always relied on customer satisfaction, and where all the requests of customers we serve, as well as in the manufacture of parts or the whole of the automotive','Our production process has always relied on customer satisfaction, and where all the requests of customers we serve, as well as in the manufacture of automotive parts or in whole. ranging from the mold and the material basis of our own manufacture of ready made','1','portfolio-2.jpg','AUTOMOTIVE','','','automotive.html'),
+(1,'FOOD BEVERAGE','In the production process not only made industrial equipment, but the entirety of the customer demand is definitely there.','In the production process not only made industrial equipment, but the entirety of the customer demand is definitely there. of the completeness of the manufacturing infrastructure of food, mold and other requirements we are ready to serve customers<br>','1','portfolio-1.jpg','FOOD BEVERAGE','','','food-beverage.html'),
+(2,'AUTOMOTIVE','Our production process has always relied on customer satisfaction, and where all the requests of customers we serve, as well as in the manufacture of parts or the whole of the automotive','<p>Our production process has always relied on customer satisfaction, and where all the requests of customers we serve, as well as in the manufacture of automotive parts or in whole. ranging from the mold and the material basis of our own manufacture of ready-made</p>','1','portfolio-2.jpg','AUTOMOTIVE','','','automotive.html'),
 (3,'MECHANICAL SYSTEM OF RADAR','Not just rely on the industry and we are also ready to assist the government and in the defense and security of the country.','Not just rely on the industry and we are also ready to assist the government and in the defense and security of the country. to assist in making the national radar, we are ready to strengthen the resilience and security of the country.','2','portfolio-3.jpg','MECHANICAL SYSTEM OF RADAR','','','mechanical-system-of-radar.html'),
 (4,'COCKPIT SIMULATOR','Improving our service also makes a Head-Up Display (HUD) for the purposes of the cockpit Casing simulator.','Improving our service also makes a Head-Up Display (HUD) for the purposes of the cockpit Casing simulator.','3','portfolio-4.jpg','COCKPIT SIMULATOR','','','cockpit-simulator.html'),
 (5,'RADAR DISPLAY UNIT CASING','Improving our service also makes Radar Display Unit (RDU) Casing for the purposes of cockpit simulator','in improving our service also makes Radar Display Unit (RDU) Casing for the purposes of cockpit simulator','3','portfolio-5.jpg','RADAR DISPLAY UNIT CASING','','','radar-display-unit-casing.html');
@@ -569,25 +567,27 @@ DROP TABLE IF EXISTS `tbl_portfolio_photo`;
 CREATE TABLE `tbl_portfolio_photo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `portfolio_id` int(11) NOT NULL,
+  `slug_portfolio` varchar(255) NOT NULL,
   `photo` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_portfolio_photo` */
 
-insert  into `tbl_portfolio_photo`(`id`,`portfolio_id`,`photo`) values 
-(17,1,'17.jpg'),
-(18,1,'18.jpg'),
-(19,2,'19.jpg'),
-(20,2,'20.jpg'),
-(21,2,'21.jpg'),
-(22,2,'22.jpg'),
-(23,3,'23.jpg'),
-(24,3,'24.jpg'),
-(25,3,'25.jpg'),
-(26,4,'26.jpg'),
-(27,4,'27.jpg'),
-(28,5,'28.jpg');
+insert  into `tbl_portfolio_photo`(`id`,`portfolio_id`,`slug_portfolio`,`photo`) values 
+(1,1,'food-beverage.html','1.jpg'),
+(2,1,'food-beverage.html','2.jpg'),
+(3,1,'food-beverage.html','3.jpg'),
+(7,2,'automotive.html','7.jpg'),
+(9,2,'automotive.html','9.jpg'),
+(11,2,'automotive.html','11.jpg'),
+(12,3,'mechanical-system-of-radar.html','12.jpg'),
+(13,3,'mechanical-system-of-radar.html','13.jpg'),
+(14,5,'radar-display-unit-casing.html','14.jpg'),
+(15,5,'radar-display-unit-casing.html','15.jpg'),
+(16,5,'radar-display-unit-casing.html','16.jpg'),
+(17,3,'mechanical-system-of-radar.html','17.jpg'),
+(18,3,'mechanical-system-of-radar.html','18.jpg');
 
 /*Table structure for table `tbl_product` */
 
