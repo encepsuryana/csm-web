@@ -133,6 +133,7 @@ class Facility extends CI_Controller
 					{
 						$form_data = array(
 							'facility_id' => $ai_id,
+							'slug_facility' => $slug,
 							'photo'        => $final_names[$i]
 						);
 						$this->Model_facility->add_photos($form_data);

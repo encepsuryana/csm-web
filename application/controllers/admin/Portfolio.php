@@ -130,6 +130,7 @@ class Portfolio extends CI_Controller
 					for($i=0;$i<count($final_names);$i++)
 					{
 						$form_data = array(
+							'product_id' 	 => $ai_id,
 							'slug_portfolio' => $slug,
 							'photo'        	 => $final_names[$i]
 						);
