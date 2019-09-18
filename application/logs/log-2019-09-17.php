@@ -201,3 +201,36 @@ ERROR - 2019-09-17 15:57:21 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-17 15:57:30 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-17 15:57:40 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-17 15:58:41 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:26:21 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:26:42 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:27:35 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:28:55 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:29:29 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:38:58 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:40:16 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:42:15 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:44:27 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:46:27 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:46:40 --> 404 Page Not Found: Public/js
+ERROR - 2019-09-17 16:47:55 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:48:54 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-17 16:59:55 --> Severity: Notice --> Trying to get property 'total_view' of non-object C:\xampp\htdocs\csm-web\application\models\Model_news.php 25
+ERROR - 2019-09-17 16:59:55 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-17 16:59:55 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-17 16:59:55 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 148
+ERROR - 2019-09-17 16:59:55 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 149
+ERROR - 2019-09-17 17:00:11 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_news.php 64
+ERROR - 2019-09-17 17:18:14 --> Severity: Notice --> Trying to get property 'total_view' of non-object C:\xampp\htdocs\csm-web\application\models\Model_news.php 25
+ERROR - 2019-09-17 17:18:14 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-17 17:18:14 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-17 17:18:14 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 148
+ERROR - 2019-09-17 17:18:14 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 149
+ERROR - 2019-09-17 17:18:23 --> Severity: Notice --> Trying to get property 'total_view' of non-object C:\xampp\htdocs\csm-web\application\models\Model_news.php 25
+ERROR - 2019-09-17 17:18:23 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-17 17:18:23 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-17 17:18:23 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 148
+ERROR - 2019-09-17 17:18:23 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 149
+ERROR - 2019-09-17 17:18:29 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 145
+ERROR - 2019-09-17 17:18:29 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-17 17:18:29 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 148
+ERROR - 2019-09-17 17:18:29 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 149

@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										?>
 										<li>
 											<a target="_blank" href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>"><?php echo $row['news_title']; ?></a>
-											<a href="<?php echo base_url(); ?>news/view/<?php echo $row['post_slug']; ?>" target="_blank" style="float: right; font-size: 12px;"><?php echo $row['news_date']; ?></a>
+											<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>" target="_blank" style="float: right; font-size: 12px;"><?php echo $row['news_date']; ?></a>
 											<p><?php echo $row['news_short_content']; ?></p>
 										</li>
 										<?php
@@ -293,7 +293,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			}
 		</script>
 
-
 		<div class="brand-area">
 			<div class="container">
 				<h3><?php echo OUR_PARTNER; ?></h3>
@@ -303,7 +302,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<?php
 							foreach ($partner as $row) {
 								?>
-								<div data-toggle="tooltip" data-placement="bottom" class="brand-item" title="<?php echo $row['name']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)"></div>
+								<div data-toggle="tooltip" data-placement="top" class="brand-item" title="<?php echo $row['name']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)"></div>
 								<?php
 							}
 							?>
@@ -312,7 +311,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 		</div>
-
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip();
+			});  
+		</script>
 
 		<div class="counterup-area pt-30 pb-60" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['counter_bg']; ?>)">
 			<div class="bg-counterup"></div>
