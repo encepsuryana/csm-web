@@ -204,8 +204,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</div>
 								</div>
 								<div class="recent-text">
-									<h4><?php echo $row['name']; ?></h4>
-									<?php echo $row['short_content']; ?>
+									<h5><?php echo $row['name']; ?></h5>
+									<p><?php echo $row['short_content']; ?></p>
 									<div class="services-link">
 										<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo READ_MORE; ?></a>
 									</div>
