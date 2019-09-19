@@ -20,6 +20,21 @@ body {
 .input-group .form-control {
 	border-right: 0;
 }
+.site-maps {
+	margin: 0;
+}
+
+.site-maps ul li a {
+	text-transform: uppercase;
+}
+
+.site-maps ul li a:hover {
+	color: #333;
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+
 ul {
 	padding-left: 40px;
 }

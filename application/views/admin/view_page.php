@@ -47,6 +47,7 @@ if(!$this->session->userdata('id')) {
               <li><a href="#tab_14" data-toggle="tab">Privacy</a></li>
               <li><a href="#tab_15" data-toggle="tab">Karir</a></li>
               <li><a href="#tab_16" data-toggle="tab">Divisi Elektronik</a></li>
+              <li><a href="#tab_17" data-toggle="tab">Site Maps</a></li>
           </ul>
 
           <div class="tab-content">
@@ -220,7 +221,7 @@ if(!$this->session->userdata('id')) {
 
                     <div class="tab-pane" id="tab_3">
                        <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
-                    <div class="form-group">
+                       <div class="form-group">
                         <label for="" class="col-sm-2 control-label">Meta Title </label>
                         <div class="col-sm-9">
                             <input type="text" name="mt_gallery" class="form-control" value="<?php echo $page['mt_gallery']; ?>">
@@ -611,6 +612,35 @@ if(!$this->session->userdata('id')) {
                     <?php echo form_close(); ?>
                 </div>
 
+                <div class="tab-pane" id="tab_17">
+                    <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label">Meta Title </label>
+                        <div class="col-sm-9">
+                            <input type="text" name="mt_site_maps" class="form-control" value="<?php echo $page['mt_site_maps']; ?>">
+                        </div>
+                    </div>      
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label">Meta Keyword </label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" name="mk_site_maps" style="height:60px;"><?php echo $page['mk_site_maps']; ?></textarea>
+                        </div>
+                    </div>  
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label">Meta Description </label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" name="md_site_maps" style="height:60px;"><?php echo $page['md_site_maps']; ?></textarea>
+                        </div>
+                    </div>  
+                    <div class="form-group">
+                        <label for="" class="col-sm-2 control-label"></label>
+                        <div class="col-sm-6">
+                            <button type="submit" class="btn btn-success pull-left" name="form_site">Update</button>
+                        </div>
+                    </div>                              
+                    <?php echo form_close(); ?>
+                </div>
+
             </div>
         </div>
     </form>
@@ -653,9 +683,9 @@ if(!$this->session->userdata('id')) {
             <div class="tab-content">
                 <div class="tab-pane active" id="tab_1">
                  <h3 class="seo-info">Photo Header</h3>
-                <?php echo form_open_multipart(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
-                <input type="hidden" name="current_about_photo" value="<?php echo $page['about_photo']; ?>">
-                <div class="form-group">
+                 <?php echo form_open_multipart(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>
+                 <input type="hidden" name="current_about_photo" value="<?php echo $page['about_photo']; ?>">
+                 <div class="form-group">
                     <label for="" class="col-sm-2 control-label">Existing Photo </label>
                     <div class="col-sm-9">
                         <?php if($page['about_photo'] == ''): ?>

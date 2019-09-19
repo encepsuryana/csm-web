@@ -84,8 +84,6 @@
 	    	radioClass: 'iradio_flat-green'
 	    });
 
-
-
 	    $("#example1").DataTable();
 	    $('#example2').DataTable({
 	    	"paging": true,
@@ -107,34 +105,21 @@
 <script type="text/javascript">
 
 	$(document).ready(function () {
-
 		$("#btnAddNew").click(function () {
-
 			var rowNumber = $("#PhotosTable tbody tr").length;
-
 			var trNew = "";              
-
 			var addLink = "<div class=\"upload-btn" + rowNumber + "\"><input type=\"file\" name=\"photos[]\"></div>";
-
 			var deleteRow = "<a href=\"javascript:void()\" class=\"Delete btn btn-danger btn-xs\">X</a>";
-
 			trNew = trNew + "<tr> ";
-
 			trNew += "<td>" + addLink + "</td>";
 			trNew += "<td style=\"width:28px;\">" + deleteRow + "</td>";
-
 			trNew = trNew + " </tr>";
-
 			$("#PhotosTable tbody").append(trNew);
-
 		});
-
 		$('#PhotosTable').delegate('a.Delete', 'click', function () {
 			$(this).parent().parent().fadeOut('slow').remove();
 			return false;
 		});
-
-
 	});
 
 </script>

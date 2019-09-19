@@ -29,7 +29,6 @@
 		}
 	}
 	
-
 	if($slug_arr[0] == '')
 	{
 		echo '<meta name="description" content="'.$page['md_home'].'">';
@@ -201,6 +200,12 @@
 		echo '<meta name="description" content="'.$page['md_privacy'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_privacy'].'">';
 		echo '<title>'.PRIVACY_POLICY.$page['mt_privacy'].'</title>';
+	}
+	if($slug_arr[0] == 'site-maps')
+	{
+		echo '<meta name="description" content="'.$page['md_site_maps'].'">';
+		echo '<meta name="keywords" content="'.$page['mk_site_maps'].'">';
+		echo '<title>'.SITE_MAPS.$page['mt_site_maps'].'</title>';
 	}	
 	?>
 

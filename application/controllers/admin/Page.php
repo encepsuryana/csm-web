@@ -305,7 +305,17 @@ class Page extends CI_Controller
 					'md_privacy'      => $_POST['md_privacy']
 				);
 				$this->Model_page->update($form_data);        	
-				$data['success'] = 'Setting Halaman  Privacy telah berhasil diupdate!';
+				$data['success'] = 'Setting Halaman Privacy telah berhasil diupdate!';
+			}
+
+			if(isset($_POST['form_site'])) {			
+				$form_data = array(
+					'mt_site_maps'      => $_POST['mt_site_maps'],
+					'mk_site_maps'      => $_POST['mk_site_maps'],
+					'md_site_maps'      => $_POST['md_site_maps']
+				);
+				$this->Model_page->update($form_data);        	
+				$data['success'] = 'Setting Halaman Site Maps telah berhasil diupdate!';
 			}
 
 
