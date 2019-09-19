@@ -171,8 +171,6 @@ class Service extends CI_Controller
 					}
 				}
 
-				
-
 				if($valid == 1) 
 				{
 					$data['service'] = $this->Model_service->getData($id);
@@ -188,40 +186,7 @@ class Service extends CI_Controller
 							'slug_service' => $slug
 						);
 						$this->Model_service->update($id,$form_data);
-					}
-					if($path != '') {
-						unlink('./public/uploads/'.$data['service']['photo']);
-
-						$final_name = 'service-'.$id.'.'.$ext;
-						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
-
-						$form_data = array(
-							'heading' => $_POST['heading'],
-							'short_content' => $_POST['short_content'],
-							'content' => $_POST['content'],
-							'photo' => $final_name,
-							'meta_title' => $_POST['meta_title'],
-							'meta_keyword' => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_service' => $slug
-						);
-						$this->Model_service->update($id,$form_data);
-					}
-					if($path == '') {
-						
-						$form_data = array(
-							'heading' => $_POST['heading'],
-							'short_content' => $_POST['short_content'],
-							'content' => $_POST['content'],
-							'meta_title' => $_POST['meta_title'],
-							'meta_keyword' => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_service' => $slug
-						);
-						$this->Model_service->update($id,$form_data);
-					}
-					if($path != '') {
-
+					} else {
 						unlink('./public/uploads/'.$data['service']['photo']);
 
 						$final_name = 'service-'.$id.'.'.$ext;

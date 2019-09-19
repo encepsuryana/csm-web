@@ -238,41 +238,7 @@ class Electronics_division extends CI_Controller
 						);
 						$this->Model_electronics_division->update($id,$form_data);
 					}
-					if($path != '') {
-						unlink('./public/uploads/'.$data['electronics_division']['photo']);
-
-						$final_name = 'electronics_division-'.$id.'.'.$ext;
-						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
-
-						$form_data = array(
-							'name'             => $_POST['name'],
-							'short_content'    => $_POST['short_content'],
-							'content'          => $_POST['content'],
-							'category_id'      => $_POST['category_id'],
-							'photo'            => $final_name,
-							'meta_title'       => $_POST['meta_title'],
-							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_electronics' => $slug
-						);
-						$this->Model_electronics_division->update($id,$form_data);
-					}
-					if($path == '') {
-			
-						$form_data = array(
-							'name'             => $_POST['name'],
-							'short_content'    => $_POST['short_content'],
-							'content'          => $_POST['content'],
-							'category_id'      => $_POST['category_id'],
-							'meta_title'       => $_POST['meta_title'],
-							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_electronics' => $slug
-						);
-						$this->Model_electronics_division->update($id,$form_data);
-					}
-					if($path != '') {
-
+					else {
 						unlink('./public/uploads/'.$data['electronics_division']['photo']);
 
 						$final_name = 'electronics_division-'.$id.'.'.$ext;

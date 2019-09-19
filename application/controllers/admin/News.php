@@ -202,7 +202,7 @@ class News extends CI_Controller
 						);
 						$this->Model_news->update($id,$form_data);
 					}
-					if($path != '') {
+					else {
 						unlink('./public/uploads/'.$data['news']['photo']);
 
 						$final_name = 'news-'.$id.'.'.$ext;
@@ -218,47 +218,6 @@ class News extends CI_Controller
 							'news_date'          => $_POST['news_date'],
 							'photo'              => $final_name,
 							'slug_news_category' => $_POST['slug_news_category'],
-							'comment'            => $_POST['comment'],
-							'meta_title'         => $_POST['meta_title'],
-							'meta_keyword'       => $_POST['meta_keyword'],
-							'meta_description'   => $_POST['meta_description'],
-							'post_slug'  		 => $slug
-						);
-						$this->Model_news->update($id,$form_data);
-					}
-					if($path == '') {
-
-						$form_data = array(
-							'news_title'         => $_POST['news_title'],
-							'slug'         		 => $_POST['slug'],
-							'news_content'       => $_POST['news_content'],
-							'news_short_content' => $_POST['news_short_content'],
-							'news_date'          => $_POST['news_date'],
-							'slug_news_category'        => $_POST['slug_news_category'],
-							'comment'            => $_POST['comment'],
-							'meta_title'         => $_POST['meta_title'],
-							'meta_keyword'       => $_POST['meta_keyword'],
-							'meta_description'   => $_POST['meta_description'],
-							'post_slug'   => $slug
-						);
-						$this->Model_news->update($id,$form_data);
-					}
-					if($path != '') {
-
-						unlink('./public/uploads/'.$data['news']['photo']);
-
-						$final_name = 'news-'.$id.'.'.$ext;
-						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
-
-
-						$form_data = array(
-							'news_title'         => $_POST['news_title'],
-							'slug'		         => $_POST['slug'],
-							'news_content'       => $_POST['news_content'],
-							'news_short_content' => $_POST['news_short_content'],
-							'news_date'          => $_POST['news_date'],
-							'photo'              => $final_name,
-							'slug_news_category'        => $_POST['slug_news_category'],
 							'comment'            => $_POST['comment'],
 							'meta_title'         => $_POST['meta_title'],
 							'meta_keyword'       => $_POST['meta_keyword'],
