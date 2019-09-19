@@ -30,3 +30,7 @@ ERROR - 2019-09-19 14:15:28 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-19 14:18:28 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-19 14:19:27 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-19 14:19:56 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-19 14:21:10 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-19 14:21:26 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-19 14:21:37 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-19 14:21:48 --> 404 Page Not Found: Public/css

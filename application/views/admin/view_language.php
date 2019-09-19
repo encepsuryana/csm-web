@@ -56,7 +56,7 @@ if(!$this->session->userdata('id')) {
 						<div class="tab-pane active" id="tab_1">
 							<?php echo form_open(base_url().$this->session->userdata('role').'/language',array('class' => 'form-horizontal')); ?>
 
-							<div class="box box-info b-box">
+							<div class="box box-info">
 								<div class="box-body">
 
 									<?php for($i=0;$i<count($arr1);$i++): ?>
@@ -83,7 +83,7 @@ if(!$this->session->userdata('id')) {
 						<div class="tab-pane" id="tab_2">
 							<?php echo form_open(base_url().$this->session->userdata('role').'/language',array('class' => 'form-horizontal')); ?>
 
-							<div class="box box-info b-box">
+							<div class="box box-info">
 								<div class="box-body">
 									<?php for($i=0;$i<count($arr1);$i++): ?>
 										<div class="form-group">
