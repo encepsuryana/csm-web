@@ -436,7 +436,7 @@
 						<ul>
 							<li>
 								<i class="fa fa-building-o" aria-hidden="true"></i>
-								<span title="<?php echo WORKING_HOURS; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo nl2br($setting['footer_working_hour']); ?></span>
+								<span title="<?php echo WORKING_HOURS; ?>" data-toggle="tooltip" data-placement="bottom"><?php echo MONDAY_FRIDAY; ?> <?php echo nl2br($setting['footer_working_hour']); ?></span>
 							</li>
 							<li>
 								<i class="fa fa-phone" aria-hidden="true"></i>
