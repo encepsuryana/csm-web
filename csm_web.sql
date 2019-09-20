@@ -212,7 +212,7 @@ CREATE TABLE `tbl_facility_photo` (
   `slug_facility` varchar(255) DEFAULT NULL,
   `photo` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_facility_photo` */
 
@@ -221,7 +221,16 @@ insert  into `tbl_facility_photo`(`id`,`facility_id`,`slug_facility`,`photo`) va
 (3,1,'high-speed-cnc-milling-machining-center.html','3.jpg'),
 (4,1,'high-speed-cnc-milling-machining-center.html','4.jpg'),
 (5,1,'high-speed-cnc-milling-machining-center.html','5.jpg'),
-(6,2,'high-speed-cnc-turning-machining-center.html','6.jpg');
+(6,2,'high-speed-cnc-turning-machining-center.html','6.jpg'),
+(8,4,'production-workshop-and-parking-area.html','8.jpg'),
+(9,4,'production-workshop-and-parking-area.html','9.jpg'),
+(10,4,'production-workshop-and-parking-area.html','10.jpg'),
+(12,3,'conv.-machining-center-and-surf.-grinding.html','12.jpg'),
+(13,3,'conv.-machining-center-and-surf.-grinding.html','13.jpg'),
+(14,3,'conv.-machining-center-and-surf.-grinding.html','14.jpg'),
+(15,3,'conv.-machining-center-and-surf.-grinding.html','15.jpg'),
+(16,3,'conv.-machining-center-and-surf.-grinding.html','16.jpg'),
+(17,4,'production-workshop-and-parking-area.html','17.jpg');
 
 /*Table structure for table `tbl_language` */
 
@@ -233,7 +242,7 @@ CREATE TABLE `tbl_language` (
   `eng` text NOT NULL,
   `idn` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=86 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_language` */
 
@@ -317,7 +326,8 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (79,'STRUCTURE_ORGANIZATION','Structure Organization','Struktur Organisasi'),
 (80,'VISION_AND_MISSION','Vision & Mission','Visi & Misi'),
 (81,'ABOUT_COMPANY','About Company Us','Tentang Perusahaan Kami'),
-(84,'SITE_MAPS','site Maps\r\n','Site Maps');
+(84,'SITE_MAPS','site Maps\r\n','Site Maps'),
+(85,'MONDAY_FRIDAY','Monday - Friday','Senin - Jumat');
 
 /*Table structure for table `tbl_news` */
 
@@ -710,7 +720,7 @@ CREATE TABLE `tbl_service` (
 
 insert  into `tbl_service`(`id`,`heading`,`short_content`,`content`,`photo`,`meta_title`,`meta_keyword`,`meta_description`,`slug_service`) values 
 (1,'CNC CAD-CAM PROFESSIONAL','Have a CAD-CAM CAD experienced and professional in product design for product quality and competitive products.','<p></p><p>Have a great team in <b>CAD CAD-CAM that is experienced and professional</b> for product design and product quality for competitive products, and support with:</p><ul><li><b>- Tools Designer: 2 Person</b></li><li><b>- CAD-CAM Engineer: 2 Person</b></li><li><b>- Tools Maker: 2 Person</b></li><li><b>- CAM Programmer: 4 Person</b></li><li><b>- Production Planner: 1 Person<br></b><br></li></ul><p> </p><p></p>And support by :<p></p><ul><li><b>- CNC Machining with a high-speed machine process</b> makes a product quality and high accuracy. <br></li></ul>','service-1.jpg','CNC CAD-CAM Profesional','','','cnc-cad-cam-professional.html'),
-(2,'TOOLING AND PRECISION PART','The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools.','The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools. We offer a variety of coatings to help optimize performance and extend the life of your cutting tools and inserts. Have a special spec? We can help match the proper coating to the tool and task. We have quite complete<b> tooling and precision parts</b>, including <b>CNC Milling Tools Holder</b>, <b>Standard Clamping</b>, D<b>ial Indicator Setting Tools</b> and <b>Centriofic Settings</b>.<br>','service-2.png','TOOLING AND PRECISION PART','','','tooling-and-precision-part.html'),
+(2,'TOOLING AND PRECISION PART','The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools.','The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools. We offer a variety of coatings to help optimize performance and extend the life of your cutting tools and inserts. Have a special spec? We can help match the proper coating to the tool and task. We have quite complete<b> tooling and precision parts</b>, including <b>CNC Milling Tools Holder</b>, <b>Standard Clamping</b>, D<b>ial Indicator Setting Tools</b> and <b>Centriofic Settings</b>.<br>','service-2.jpg','TOOLING AND PRECISION PART','','','tooling-and-precision-part.html'),
 (3,'MOULD AND PLASTIC COMPONENT','Mould & Plastic Components for industrial applications.','We provide <b>Mold & Plastic Components</b> for industrial applications. with a variety of requests submitted, we make professional modeling and build of high quality.<br>','service-3.jpg','MOULD AND PLASTIC COMPONENT','','','mould-and-plastic-component.html'),
 (4,'DIES AND STAMPING COMPONENT','For the benefit of our Die Stamping customers, Bahrs Die & Stamping offers expert solid die and die component building, design and manufacturing services for progressive dies used in various industries.','For the benefit of our Die Stamping customers, Bahrs Die & Stamping offers expert solid die and die component building, design and manufacturing services for progressive dies used in various industries. Using state-of-the-art design software, our engineering and design team work with each client to manufacture accurate, high quality die components and tooling customized for each application.','service-4.jpg','DIES AND STAMPING COMPONENT','','','dies-and-stamping-component.html'),
 (5,'MECHANICAL SYSTEM','Having components and teams in mechanical systems that are experienced and produce quality products.','Having components and teams in <b>mechanical systems</b> that are experienced and produce quality products. with a professional talent for accuracy processing and engineering build a product.<br>','service-5.jpg','MECHANICAL SYSTEM','','','mechanical-system.html'),
@@ -732,7 +742,6 @@ CREATE TABLE `tbl_settings` (
   `footer_address` text NOT NULL,
   `footer_phone` text NOT NULL,
   `footer_working_hour` text NOT NULL,
-  `footer_about` text NOT NULL,
   `top_bar_email` varchar(255) NOT NULL,
   `top_bar_phone` varchar(255) NOT NULL,
   `contact_map_iframe` text NOT NULL,
@@ -763,8 +772,8 @@ CREATE TABLE `tbl_settings` (
 
 /*Data for the table `tbl_settings` */
 
-insert  into `tbl_settings`(`id`,`logo`,`logo2`,`logo_admin`,`favicon`,`counter_bg`,`login_bg`,`footer_copyright`,`footer_address`,`footer_phone`,`footer_working_hour`,`footer_about`,`top_bar_email`,`top_bar_phone`,`contact_map_iframe`,`receive_email`,`receive_password`,`protocol`,`smtp_host`,`smtp_port`,`reset_password_email_subject`,`total_recent_post`,`total_popular_post`,`total_recent_post_home`,`total_product_post`,`theme_color_1`,`theme_color_2`,`counter1_text`,`counter1_value`,`counter2_text`,`counter2_value`,`counter3_text`,`counter3_value`,`counter4_text`,`counter4_value`,`counter_status`,`banner`) values 
-(1,'logo.png','logo2.png','logo_admin.png','favicon.png','counter_bg.JPG','login_bg.png','Copyright © 2019 | CV. Cipta Sinergi Manufacturing','Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512','(022) 6647945','Monday - Friday (8:00 AM - 5:00 PM)','','marketing@ciptasinergi.com','(022) 6647945','<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.177204490785!2d107.551033!3d-6.8552849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x602a56a5b8d7e0cc!2sCV.+Cipta+Sinergi+Manufacturing!5e0!3m2!1sid!2sid!4v1565082522509!5m2!1sid!2sid\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>','encep.suryanajr@gmail.com','Password','smtp','ssl://smtp.gmail.com','465','Password Reset Request - www.ciptasinergi.com',4,4,10,6,'134595','FFFFFF','Employee\'s',50,'Project Finish',1200,'Projects On-going',800,'Award\'s',1200,'','banner.png');
+insert  into `tbl_settings`(`id`,`logo`,`logo2`,`logo_admin`,`favicon`,`counter_bg`,`login_bg`,`footer_copyright`,`footer_address`,`footer_phone`,`footer_working_hour`,`top_bar_email`,`top_bar_phone`,`contact_map_iframe`,`receive_email`,`receive_password`,`protocol`,`smtp_host`,`smtp_port`,`reset_password_email_subject`,`total_recent_post`,`total_popular_post`,`total_recent_post_home`,`total_product_post`,`theme_color_1`,`theme_color_2`,`counter1_text`,`counter1_value`,`counter2_text`,`counter2_value`,`counter3_text`,`counter3_value`,`counter4_text`,`counter4_value`,`counter_status`,`banner`) values 
+(1,'logo.png','logo2.png','logo_admin.png','favicon.png','counter_bg.JPG','login_bg.png','Copyright © 2019 | CV. Cipta Sinergi Manufacturing','Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512','(022) 6647945','(8:00 AM - 5:00 PM)','marketing@ciptasinergi.com','(022) 6647945','<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.177204490785!2d107.551033!3d-6.8552849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x602a56a5b8d7e0cc!2sCV.+Cipta+Sinergi+Manufacturing!5e0!3m2!1sid!2sid!4v1565082522509!5m2!1sid!2sid\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>','encep.suryanajr@gmail.com','Password','smtp','ssl://smtp.gmail.com','465','Password Reset Request - www.ciptasinergi.com',4,4,10,6,'134595','FFFFFF','Employee\'s',50,'Project Finish',1200,'Projects On-going',800,'Award\'s',1200,'','banner.png');
 
 /*Table structure for table `tbl_slider` */
 
