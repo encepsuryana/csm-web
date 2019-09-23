@@ -106,3 +106,50 @@ ERROR - 2019-09-23 15:21:06 --> Severity: Notice --> Undefined index: total_view
 ERROR - 2019-09-23 15:21:29 --> Severity: Notice --> Undefined index: total_view C:\xampp\htdocs\csm-web\application\views\view_news_detail.php 32
 ERROR - 2019-09-23 15:28:42 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-23 15:29:05 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:34:18 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:35:21 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:35:25 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:35:29 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:35:34 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:35:49 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:35:51 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:35:54 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:35:59 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:36:06 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:36:08 --> Severity: Notice --> Trying to get property 'total_view' of non-object C:\xampp\htdocs\csm-web\application\models\Model_news.php 25
+ERROR - 2019-09-23 15:36:08 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 144
+ERROR - 2019-09-23 15:36:08 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 146
+ERROR - 2019-09-23 15:36:08 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-23 15:36:08 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 148
+ERROR - 2019-09-23 15:36:11 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:36:13 --> Severity: Notice --> Trying to get property 'total_view' of non-object C:\xampp\htdocs\csm-web\application\models\Model_news.php 25
+ERROR - 2019-09-23 15:36:13 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 144
+ERROR - 2019-09-23 15:36:13 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 146
+ERROR - 2019-09-23 15:36:13 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-23 15:36:13 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 148
+ERROR - 2019-09-23 15:36:16 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:36:20 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:36:25 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:36:28 --> Severity: Notice --> Undefined variable: og_title C:\xampp\htdocs\csm-web\application\views\view_header.php 144
+ERROR - 2019-09-23 15:36:28 --> Severity: Notice --> Undefined variable: og_id C:\xampp\htdocs\csm-web\application\views\view_header.php 146
+ERROR - 2019-09-23 15:36:28 --> Severity: Notice --> Undefined variable: og_description C:\xampp\htdocs\csm-web\application\views\view_header.php 147
+ERROR - 2019-09-23 15:36:28 --> Severity: Notice --> Undefined variable: og_photo C:\xampp\htdocs\csm-web\application\views\view_header.php 148
+ERROR - 2019-09-23 15:36:32 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:36:51 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:36:59 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:38:38 --> Severity: error --> Exception: syntax error, unexpected '$row' (T_VARIABLE), expecting '(' C:\xampp\htdocs\csm-web\application\views\view_category.php 46
+ERROR - 2019-09-23 15:38:50 --> Severity: error --> Exception: syntax error, unexpected '$row' (T_VARIABLE), expecting '(' C:\xampp\htdocs\csm-web\application\views\view_category.php 46
+ERROR - 2019-09-23 15:39:06 --> Severity: error --> Exception: syntax error, unexpected ';' C:\xampp\htdocs\csm-web\application\views\view_category.php 46
+ERROR - 2019-09-23 15:39:12 --> Severity: error --> Exception: syntax error, unexpected '}', expecting end of file C:\xampp\htdocs\csm-web\application\views\view_category.php 79
+ERROR - 2019-09-23 15:39:18 --> Severity: error --> Exception: syntax error, unexpected '}', expecting end of file C:\xampp\htdocs\csm-web\application\views\view_category.php 79
+ERROR - 2019-09-23 15:39:20 --> Severity: error --> Exception: syntax error, unexpected '}', expecting end of file C:\xampp\htdocs\csm-web\application\views\view_category.php 79
+ERROR - 2019-09-23 15:39:30 --> Severity: error --> Exception: syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\csm-web\application\views\view_category.php 48
+ERROR - 2019-09-23 15:39:31 --> Severity: error --> Exception: syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\csm-web\application\views\view_category.php 48
+ERROR - 2019-09-23 15:39:33 --> Severity: error --> Exception: syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\csm-web\application\views\view_category.php 48
+ERROR - 2019-09-23 15:39:33 --> Severity: error --> Exception: syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\csm-web\application\views\view_category.php 48
+ERROR - 2019-09-23 15:39:34 --> Severity: error --> Exception: syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\csm-web\application\views\view_category.php 48
+ERROR - 2019-09-23 15:40:37 --> Severity: error --> Exception: syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\csm-web\application\views\view_category.php 48
+ERROR - 2019-09-23 15:40:43 --> Severity: error --> Exception: syntax error, unexpected 'else' (T_ELSE) C:\xampp\htdocs\csm-web\application\views\view_category.php 48
+ERROR - 2019-09-23 15:41:13 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:45:50 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:46:38 --> 404 Page Not Found: Public/css

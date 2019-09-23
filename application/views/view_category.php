@@ -47,7 +47,7 @@ foreach($category as $row) {
 								<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>" class="public-csm-home">
 									<div class="blog-author ">
 										<ul>
-											<div class="col-sm-6" style="text-align: left; padding-left: 5px;">
+											<div class="col-sm-5" style="text-align: left; padding-left: 5px;">
 												<li class="gro">
 													<i class="fa fa-user-circle-o" aria-hidden="true"></i> 
 													<span><?php echo $row['user_update'];?></span>
