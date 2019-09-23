@@ -153,3 +153,7 @@ ERROR - 2019-09-23 15:40:43 --> Severity: error --> Exception: syntax error, une
 ERROR - 2019-09-23 15:41:13 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-23 15:45:50 --> 404 Page Not Found: Public/css
 ERROR - 2019-09-23 15:46:38 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-23 15:48:50 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:49:02 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:49:14 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:50:05 --> 404 Page Not Found: Public/admin
