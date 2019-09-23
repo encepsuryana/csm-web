@@ -151,13 +151,13 @@ class content_home extends CI_Controller
 
 					$data['content_home'] = $this->Model_content_home->get_photo();
 
-					unlink('./public/uploads/file/'.$data['content_home']['item_bg']);
+					unlink('./public/uploads/file/'.$data['content_home']['file_pdf']);
 
 					$final_name = 'Company_profile'.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/file/'.$final_name );
 
 					$form_data = array(
-						'item_bg' => $final_name
+						'file_pdf' => $final_name
 					);
 					$this->Model_content_home->update_content_home_photo($form_data);			   
 

@@ -33,8 +33,10 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<div class="pdf-style">
 								<label for="" class="col-sm-2"></label>
-								<div class="col-sm-4">
-									<i title="<?php echo $content_home['item_bg']; ?>" data-toggle="tooltip" data-placement="right" class="fa fa-file-pdf-o" aria-hidden="true"></i>
+								<div class="col-md-5">
+									<i title="<?php echo $content_home['file_pdf']; ?>" data-toggle="tooltip" data-placement="right" class="fa fa-file-pdf-o" aria-hidden="true"></i>
+									<label for=""><?php echo $content_home['file_pdf']; ?></label>
+
 								</div>
 							</div>
 						</div>

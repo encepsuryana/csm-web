@@ -160,3 +160,28 @@ ERROR - 2019-09-23 15:50:05 --> 404 Page Not Found: Public/admin
 ERROR - 2019-09-23 15:51:11 --> 404 Page Not Found: Public/admin
 ERROR - 2019-09-23 15:51:14 --> 404 Page Not Found: Public/admin
 ERROR - 2019-09-23 15:51:33 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:52:35 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:52:38 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:56:06 --> Severity: Notice --> Undefined variable: row C:\xampp\htdocs\csm-web\application\views\admin\view_content_home_commpany_profile.php 35
+ERROR - 2019-09-23 15:56:06 --> Severity: Notice --> Undefined index: item_bg C:\xampp\htdocs\csm-web\application\views\admin\view_content_home_commpany_profile.php 37
+ERROR - 2019-09-23 15:56:07 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:56:15 --> 404 Page Not Found: admin/Content_home/item_bg
+ERROR - 2019-09-23 15:56:19 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:56:22 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:56:27 --> 404 Page Not Found: admin/Content_home/item_bg
+ERROR - 2019-09-23 15:56:43 --> Severity: Notice --> Undefined variable: row C:\xampp\htdocs\csm-web\application\views\admin\view_content_home_commpany_profile.php 35
+ERROR - 2019-09-23 15:56:43 --> Severity: Notice --> Undefined index: item_bg C:\xampp\htdocs\csm-web\application\views\admin\view_content_home_commpany_profile.php 37
+ERROR - 2019-09-23 15:56:44 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:57:12 --> 404 Page Not Found: admin/Content_home/item_bg
+ERROR - 2019-09-23 15:57:14 --> 404 Page Not Found: admin/Content_home/item_bg
+ERROR - 2019-09-23 15:57:27 --> Severity: Notice --> Undefined variable: row C:\xampp\htdocs\csm-web\application\views\admin\view_content_home_commpany_profile.php 35
+ERROR - 2019-09-23 15:57:29 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:57:46 --> Severity: Notice --> Undefined variable: item_bg C:\xampp\htdocs\csm-web\application\views\admin\view_content_home_commpany_profile.php 35
+ERROR - 2019-09-23 15:57:47 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:57:57 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:58:11 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:58:23 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:58:44 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 15:59:35 --> 404 Page Not Found: Public/admin
+ERROR - 2019-09-23 16:00:47 --> 404 Page Not Found: admin/Content_home/item_bg
+ERROR - 2019-09-23 16:00:49 --> 404 Page Not Found: admin/Content_home/item_bg
