@@ -79,8 +79,6 @@
 					<span class="sr-only">Toggle navigation</span>
 				</a>
 
-				<span style="float:left; line-height:50px; color:#fff;padding-left:15px; font-size:18px; text-transform: capitalize;">Wilujeng Sumping, <?php echo $this->session->userdata('full_name');?> di sistem <?php echo $this->session->userdata('role');?></span>
-
 				<div class="navbar-custom-menu">
 					<ul class="nav navbar-nav link-visit">
 
@@ -109,16 +107,15 @@
 							</li>
 						<?php endif; ?>   
 
-						
 						<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<?php if($this->session->userdata('photo') == ''): ?>
-									<img src="<?php echo base_url(); ?>public/img/no-photo.jpg" class="user-image" alt="user photo">
+									<img src="<?php echo base_url(); ?>public/img/no-photo.png" class="user-image" alt="user photo">
 									<?php else: ?>
 										<img src="<?php echo base_url(); ?>public/uploads/<?php echo $this->session->userdata('photo'); ?>" class="user-image" alt="user photo">
 									<?php endif; ?>
 									
-									<span class="hidden-xs"><?php echo $this->session->userdata('full_name'); ?></span>
+									<span class="hidden-xs"><?php echo $this->session->userdata('full_name'); ?> (<?php echo $this->session->userdata('role');?>)</span>
 								</a>
 								<ul class="dropdown-menu">
 									<li class="user-footer">

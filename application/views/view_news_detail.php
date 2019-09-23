@@ -18,7 +18,7 @@
 					<div class="single-blog-author mb_10">
 						<div class="blog-author">
 							<ul>
-								<div class="col-sm-8" style="text-align: left; padding-left: 5px;">
+								<div class="col-sm-7" style="text-align: left; padding-left: 5px;">
 									<li class="gro">
 										<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
 										<i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -27,13 +27,19 @@
 										<a href="<?php echo base_url(); ?>category/post/<?php echo $news['slug_news_category']; ?>"><span><?php echo $news['category_name']; ?></span></a>
 									</li>
 								</div>
-								<li class="gro" style="padding-right:0;">
-									<i class="fa fa-user-circle-o" aria-hidden="true"></i> 
-									<span><?php echo $news['user_update']; ?></span>
-								</li>
-								<li class="gro" style="padding-right:0;">
-									<span><?php echo $news['news_date']; ?></span> <i class="fa fa-calendar" aria-hidden="true"></i>
-								</li>
+								<div class="col-sm-5">
+									<li class="gro" style="padding-right:0;">
+										<i class="fa fa-eye" aria-hidden="true"></i>
+										<span><?php echo $news['total_view']; ?></span>
+									</li>
+									<li class="gro" style="padding-right:0;">
+										<i class="fa fa-user-circle-o" aria-hidden="true"></i> 
+										<span><?php echo $news['user_update']; ?></span>
+									</li>
+									<li class="gro" style="padding-right:0;">
+										<span><?php echo $news['news_date']; ?></span> <i class="fa fa-calendar" aria-hidden="true"></i>
+									</li>
+								</div>
 							</ul>
 						</div>
 					</div>
@@ -74,7 +80,7 @@
 			<div class="col-md-4">
 				<div class="sidebar"> 
 					<div class="sidebar-item">
-						<div class="sidebar-item searchbar-item">
+						<div class="sidebar-item searchbar-item" >
 							<?php echo form_open(base_url().'search'); ?>
 							<div class="input-group">
 								<?php
