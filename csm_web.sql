@@ -259,7 +259,7 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (10,'CONTACT','Contact','Kontak'),
 (11,'ADDRESS','Address','Alamat'),
 (12,'CALL_US','Call Us','Hubungi Kami'),
-(13,'WORKING_HOURS','Woring Hours','Jam Kerja'),
+(13,'WORKING_HOURS','Working Hours','Jam Kerja'),
 (14,'ABOUT_US','About Us','Tentang Kami'),
 (15,'LATEST_NEWS','Latest News','Berita Terbaru'),
 (16,'POPULAR_NEWS','Popular News','Berita Poluler'),
@@ -326,7 +326,7 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (79,'STRUCTURE_ORGANIZATION','Structure Organization','Struktur Organisasi'),
 (80,'VISION_AND_MISSION','Vision & Mission','Visi & Misi'),
 (81,'ABOUT_COMPANY','About Company Us','Tentang Perusahaan Kami'),
-(84,'SITE_MAPS','Site Maps\r\n','Site Maps'),
+(84,'SITE_MAPS','Site Maps','Site Maps'),
 (85,'MONDAY_FRIDAY','Monday - Friday','Senin - Jumat');
 
 /*Table structure for table `tbl_news` */
