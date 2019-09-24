@@ -37,10 +37,10 @@ class News_category extends CI_Controller
 
 				$valid = 1;
 				$judul = $_POST['category_name'];
-				$string = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
+				$string = preg_replace('/[^A-Za-z0-9\ ]/', '', $judul); 
 				$trim = trim($string);
 				$pre_slug = strtolower(str_replace(" ", "-", $trim)); 
-				$slug_news_category = $pre_slug.'.html';
+				$slug_news_category = $pre_slug;
 
 				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
 
@@ -101,10 +101,10 @@ class News_category extends CI_Controller
 
 				$valid = 1;
 				$judul = $_POST['category_name'];
-				$string = preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
+				$string = preg_replace('/[^A-Za-z0-9\ ]/', '', $judul); 
 				$trim = trim($string);
 				$pre_slug = strtolower(str_replace(" ", "-", $trim)); 
-				$slug_news_category = $pre_slug.'.html';
+				$slug_news_category = $pre_slug;
 				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
@@ -129,7 +129,7 @@ class News_category extends CI_Controller
 						'meta_title'       => $_POST['meta_title'],
 						'meta_keyword'     => $_POST['meta_keyword'],
 						'meta_description' => $_POST['meta_description'],
-						'slug_news_category' 	   => $slug_news_category
+						'slug_news_category' => $slug_news_category
 
 					);
 					$this->Model_news_category->update($id,$form_data);

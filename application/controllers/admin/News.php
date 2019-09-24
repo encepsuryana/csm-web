@@ -77,7 +77,7 @@ class News extends CI_Controller
 				
 
 					$judul = $_POST['news_title'];
-					$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
+					$string=preg_replace('/[^A-Za-z0-9\ ]/', '', $judul); 
 					$trim=trim($string);
 					$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
 					$slug=$pre_slug.'.html';
@@ -153,7 +153,7 @@ class News extends CI_Controller
 			{
 
 				$judul = $_POST['news_title'];
-				$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul);
+				$string=preg_replace('/[^A-Za-z0-9\ ]/', '', $judul);
 				$trim=trim($string);
 				$pre_slug=strtolower(str_replace(" ", "-", $trim));
 				$slug=$pre_slug.'.html';

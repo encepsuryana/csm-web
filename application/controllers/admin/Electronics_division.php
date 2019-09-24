@@ -39,7 +39,7 @@ class Electronics_division extends CI_Controller
 				$valid = 1;
 
 				$judul = $_POST['name'];
-				$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
+				$string=preg_replace('/[^A-Za-z0-9\ ]/', '', $judul); 
 				$trim=trim($string);
 				$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
 				$slug=$pre_slug.'.html';
@@ -193,7 +193,7 @@ class Electronics_division extends CI_Controller
 				$valid = 1;
 
 				$judul = $_POST['name'];
-				$string=preg_replace('/[^a-zA-Z0-9 \&%|{.}=,?!*()"-_+$@;<>\']/', '', $judul); 
+				$string=preg_replace('/[^A-Za-z0-9\ ]/', '', $judul); 
 				$trim=trim($string);
 				$pre_slug=strtolower(str_replace(" ", "-", $trim)); 
 				$slug=$pre_slug.'.html';
