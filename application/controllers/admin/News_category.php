@@ -37,7 +37,7 @@ class News_category extends CI_Controller
 
 				$valid = 1;
 				$judul = $_POST['category_name'];
-				$string = preg_replace('/[^A-Za-z0-9\ ]/', '', $judul); 
+				$string = preg_replace('/[^A-Za-z0-9\- ]/', '', $judul); 
 				$trim = trim($string);
 				$pre_slug = strtolower(str_replace(" ", "-", $trim)); 
 				$slug_news_category = $pre_slug;
@@ -101,7 +101,7 @@ class News_category extends CI_Controller
 
 				$valid = 1;
 				$judul = $_POST['category_name'];
-				$string = preg_replace('/[^A-Za-z0-9\ ]/', '', $judul); 
+				$string = preg_replace('/[^A-Za-z0-9\- ]/', '', $judul); 
 				$trim = trim($string);
 				$pre_slug = strtolower(str_replace(" ", "-", $trim)); 
 				$slug_news_category = $pre_slug;
