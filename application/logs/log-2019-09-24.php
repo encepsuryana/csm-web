@@ -56,3 +56,7 @@ ERROR - 2019-09-24 10:54:00 --> Severity: Notice --> Undefined variable: heading
 ERROR - 2019-09-24 10:54:00 --> Severity: Notice --> Undefined variable: message C:\xampp\htdocs\csm-web\application\views\view_maintenance.php 59
 ERROR - 2019-09-24 10:54:19 --> Severity: Notice --> Undefined variable: heading C:\xampp\htdocs\csm-web\application\views\view_maintenance.php 58
 ERROR - 2019-09-24 10:54:19 --> Severity: Notice --> Undefined variable: message C:\xampp\htdocs\csm-web\application\views\view_maintenance.php 59
+ERROR - 2019-09-24 12:58:55 --> Severity: Notice --> Undefined index: post_slug C:\xampp\htdocs\csm-web\application\views\view_news_detail.php 74
+ERROR - 2019-09-24 13:00:21 --> Severity: Notice --> Undefined index: slug C:\xampp\htdocs\csm-web\application\views\view_news_detail.php 74
+ERROR - 2019-09-24 13:01:27 --> Severity: Notice --> Undefined index: post_slug C:\xampp\htdocs\csm-web\application\views\view_news_detail.php 74
+ERROR - 2019-09-24 13:02:13 --> Severity: Notice --> Undefined variable: results C:\xampp\htdocs\csm-web\application\views\view_news_detail.php 74

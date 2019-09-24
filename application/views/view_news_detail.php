@@ -69,8 +69,12 @@
 						<!-- AddToAny END -->
 						<div class="pb_20 pt_20">
 							<h3><?php echo COMMENTS; ?></h3>
+							<?php
+							// Getting the full url of the current page
+							$final_url = base_url().'news/post/'.$news['post_slug'];
+							?>
 							<!-- Facebook Comment Main Code (got from facebook website) -->
-							<div class="fb-comments" data-numposts="5" data-width="650"></div>
+							<div class="fb-comments" data-href="<?php echo $final_url; ?>" data-numposts="5" data-width="650"></div>
 						</div>
 
 					</div>

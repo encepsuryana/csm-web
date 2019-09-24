@@ -52,11 +52,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="not-found">
             <div class="col-md-12">
                 <div class="col-md-12" style="margin-top: 20px; text-align: center;">
-                    <img width="500px" height="auto" src="https://souzouweb.com/wp-content/uploads/2019/02/Souzou-WebSite-Management-silver-flat-1.svg"></img>
+                    <img width="250px" height="auto" src="https://github.com/encepsuryana/csm-web/raw/master/public/img/maintenance.jpg"></img>
                 </div>
-                <div class="col-md-12" style="margin-top: 20px; text-align: center;">
-                    <h2>Site Under Maintenance</h2>
-                    <p>Sorry for the inconvenience. To improve our services, we have momentarily shutdown our site.</p>
+                <div class="col-md-12" style="margin: 20px; text-align: center;">
+                    <h2 style="font-style: italic;">Site Under Maintenance</h2>
+                    <strong>Sorry for the inconvenience. To improve our services, we have momentarily shutdown our site.</strong>
                 </div>
             </div>
         </div>

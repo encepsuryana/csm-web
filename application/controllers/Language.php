@@ -6,6 +6,6 @@ class Language extends CI_Controller {
 	function change($lang)
 	{
 		$this->session->set_userdata(array('language'=>$lang));
-		 redirect($this->session->flashdata('redirectToCurrent'));
+		 redirect($_SERVER['HTTP_REFERER']);
 	}
 }

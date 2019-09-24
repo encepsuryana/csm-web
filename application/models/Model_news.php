@@ -36,6 +36,7 @@ class Model_news extends CI_Model
         t1.news_date,
         t1.total_view,
         t1.user_update,
+        t1.post_slug,
         t1.slug_news_category,
         t2.slug_news_category,
         t2.category_name
