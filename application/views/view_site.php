@@ -136,7 +136,7 @@
 
 							</li>
 							<li>
-								<a href="javascript:void();"><?php echo PAGE; ?></a>
+								<a href="#page"><?php echo PAGE; ?></a>
 								<ul>
 									<li>
 										<a href="<?php echo base_url(); ?>gallery"><?php echo GALLERY; ?></a>

@@ -55,7 +55,71 @@
 data-moreinfo="<?php base_url();?>terms-and-conditions"
 data-close-text="Got it!">
 </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-3809700210298618",
+		enable_page_level_ads: true
+	});
+</script>
 
+<script type="text/javascript">
+	$(function(){
+		$('.btn-circle').on('click',function(){
+			$('.btn-circle.btn-info').removeClass('btn-info').addClass('btn-default');
+			$(this).addClass('btn-info').removeClass('btn-default').blur();
+		});
 
-</body>
-</html>
+		$('.btn-circle').on('click',function(){
+			$('.btn-circle.act').removeClass('act').addClass('');
+			$(this).addClass('act').removeClass('').blur();
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	function openModal() {
+		document.getElementById("myModal").style.display = "block";
+	}
+
+	function closeModal() {
+		document.getElementById("myModal").style.display = "none";
+	}
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("demo");
+		var captionText = document.getElementById("caption");
+		if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += "active";
+				captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
+		<script>
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip();
+			});  
+		</script>
+
+	</body>
+	</html>

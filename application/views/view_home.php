@@ -254,115 +254,72 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 	</div>
 </div>
-<script>
-	function openModal() {
-		document.getElementById("myModal").style.display = "block";
-	}
 
-	function closeModal() {
-		document.getElementById("myModal").style.display = "none";
-	}
-
-	var slideIndex = 1;
-	showSlides(slideIndex);
-
-	function plusSlides(n) {
-		showSlides(slideIndex += n);
-	}
-
-	function currentSlide(n) {
-		showSlides(slideIndex = n);
-	}
-
-	function showSlides(n) {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementsByClassName("demo");
-		var captionText = document.getElementById("caption");
-		if (n > slides.length) {slideIndex = 1}
-			if (n < 1) {slideIndex = slides.length}
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				}
-				slides[slideIndex-1].style.display = "block";
-				dots[slideIndex-1].className += "active";
-				captionText.innerHTML = dots[slideIndex-1].alt;
-			}
-		</script>
-
-		<div class="brand-area">
-			<div class="container">
-				<h3><?php echo OUR_PARTNER; ?></h3>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="brand-carousel owl-carousel">					
-							<?php
-							foreach ($partner as $row) {
-								?>
-								<div data-toggle="tooltip" data-placement="top" class="brand-item" title="<?php echo $row['name']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)"></div>
-								<?php
-							}
-							?>
-						</div>
-					</div>
+<div class="brand-area">
+	<div class="container">
+		<h3><?php echo OUR_PARTNER; ?></h3>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="brand-carousel owl-carousel">					
+					<?php
+					foreach ($partner as $row) {
+						?>
+						<div data-toggle="tooltip" data-placement="top" class="brand-item" title="<?php echo $row['name']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)"></div>
+						<?php
+					}
+					?>
 				</div>
 			</div>
 		</div>
-		<script>
-			$(document).ready(function(){
-				$('[data-toggle="tooltip"]').tooltip();
-			});  
-		</script>
+	</div>
+</div>
 
-		<div class="counterup-area pt-30 pb-60" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['counter_bg']; ?>)">
-			<div class="bg-counterup"></div>
-			<div class="container">
-				<div class="row">			
-					<div class="col-md-3 col-sm-6 counter-border">
-						<div class="counter-item">
-							<h2 class="counter"><?php echo $setting['counter1_value']; ?></h2>
-							<h4><?php echo $setting['counter1_text']; ?></h4>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 counter-border">
-						<div class="counter-item">
-							<h2 class="counter"><?php echo $setting['counter2_value']; ?></h2>
-							<h4><?php echo $setting['counter2_text']; ?></h4>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 counter-border">
-						<div class="counter-item">
-							<h2 class="counter"><?php echo $setting['counter3_value']; ?></h2>
-							<h4><?php echo $setting['counter3_text']; ?></h4>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 counter-border">
-						<div class="counter-item">
-							<h2 class="counter"><?php echo $setting['counter4_value']; ?></h2>
-							<h4><?php echo $setting['counter4_text']; ?></h4>
-						</div>
-					</div>
+<div class="counterup-area pt-30 pb-60" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['counter_bg']; ?>)">
+	<div class="bg-counterup"></div>
+	<div class="container">
+		<div class="row">			
+			<div class="col-md-3 col-sm-6 counter-border">
+				<div class="counter-item">
+					<h2 class="counter"><?php echo $setting['counter1_value']; ?></h2>
+					<h4><?php echo $setting['counter1_text']; ?></h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 counter-border">
+				<div class="counter-item">
+					<h2 class="counter"><?php echo $setting['counter2_value']; ?></h2>
+					<h4><?php echo $setting['counter2_text']; ?></h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 counter-border">
+				<div class="counter-item">
+					<h2 class="counter"><?php echo $setting['counter3_value']; ?></h2>
+					<h4><?php echo $setting['counter3_text']; ?></h4>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 counter-border">
+				<div class="counter-item">
+					<h2 class="counter"><?php echo $setting['counter4_value']; ?></h2>
+					<h4><?php echo $setting['counter4_text']; ?></h4>
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
 
-		<div class="container map-main-home">
-			<div class="map-home">
-				<div class="col-md-7 col-sm-7">
-					<div class="home-maps-main">
-						<?php echo $setting['contact_map_iframe']; ?>
-					</div>
-				</div>
-				<div class="col-md-5 col-sm-5">
-					<div class="contact-main-home">
-						<h4><?php echo HAVE_A_MORE_QUETIONS; ?></h4>
-						<div class="contact-button-home">
-							<a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a>
-						</div>
-					</div>
+<div class="container map-main-home">
+	<div class="map-home">
+		<div class="col-md-7 col-sm-7">
+			<div class="home-maps-main">
+				<?php echo $setting['contact_map_iframe']; ?>
+			</div>
+		</div>
+		<div class="col-md-5 col-sm-5">
+			<div class="contact-main-home">
+				<h4><?php echo HAVE_A_MORE_QUETIONS; ?></h4>
+				<div class="contact-button-home">
+					<a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a>
 				</div>
 			</div>
 		</div>
+	</div>
+</div>

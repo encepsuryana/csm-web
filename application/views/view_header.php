@@ -467,11 +467,6 @@
 								</ul>
 							</li>
 						</ul>
-						<script>
-							$(document).ready(function(){
-								$('[data-toggle="tooltip"]').tooltip();
-							});  
-						</script>
 					</div>
 				</div>
 			</div>

@@ -111,17 +111,3 @@
 		</div>
 	</div>
 </div>
-
-<script type="text/javascript">
-	$(function(){
-		$('.btn-circle').on('click',function(){
-			$('.btn-circle.btn-info').removeClass('btn-info').addClass('btn-default');
-			$(this).addClass('btn-info').removeClass('btn-default').blur();
-		});
-
-		$('.btn-circle').on('click',function(){
-			$('.btn-circle.act').removeClass('act').addClass('');
-			$(this).addClass('act').removeClass('').blur();
-		});
-	});
-</script>
