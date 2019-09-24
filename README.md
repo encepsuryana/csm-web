@@ -25,7 +25,7 @@
 
 ## Meta
 
-* Encep Suryana – [Linkedin: Encep Suryana](https://www.linkedin.com/in/encep-suryana-b60080113/) – encep.suryanajr@gmail.com
+* (Developer) Encep Suryana – [Linkedin: Encep Suryana](https://www.linkedin.com/in/encep-suryana-b60080113/) – encep.suryanajr@gmail.com
 
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
