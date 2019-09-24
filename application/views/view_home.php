@@ -264,7 +264,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<?php
 					foreach ($partner as $row) {
 						?>
-						<div data-toggle="tooltip" data-placement="top" class="brand-item" title="<?php echo $row['name']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)"></div>
+						<div class="brand-item" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)">
+						</div>
 						<?php
 					}
 					?>

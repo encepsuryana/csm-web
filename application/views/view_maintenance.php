@@ -51,12 +51,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div id="container" style="background-image: url(https://www.gstatic.com/bfe/images/verification/banner_background.svg); background-size: cover;">
         <div class="not-found">
             <div class="col-md-12">
-                <div class="col-md-12" style="margin-top: 20px; text-align: center;">
+                <div style="margin-top: 20px; text-align: center;">
                     <img width="250px" height="auto" src="https://github.com/encepsuryana/csm-web/raw/master/public/img/maintenance.jpg"></img>
                 </div>
-                <div class="col-md-12" style="margin: 20px; text-align: center;">
+                <div style="margin: 20px; text-align: center;">
                     <h2 style="font-style: italic;">Site Under Maintenance</h2>
-                    <strong>Sorry for the inconvenience. To improve our services, we have momentarily shutdown our site.</strong>
+                    <strong>Sorry for the inconvenience. To improve our services, we have momentarily shutdown our site.</strong><br><br><hr>
+                    <p>For more information contact: <br>
+                        <a href="mailto:encep.suryanajr@gmail.com">Developer</a> | <a href="mailto:marketing@ciptasinergi.com">Marketing</a>
+                    </p>
                 </div>
             </div>
         </div>

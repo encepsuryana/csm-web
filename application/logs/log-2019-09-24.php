@@ -60,3 +60,33 @@ ERROR - 2019-09-24 12:58:55 --> Severity: Notice --> Undefined index: post_slug 
 ERROR - 2019-09-24 13:00:21 --> Severity: Notice --> Undefined index: slug C:\xampp\htdocs\csm-web\application\views\view_news_detail.php 74
 ERROR - 2019-09-24 13:01:27 --> Severity: Notice --> Undefined index: post_slug C:\xampp\htdocs\csm-web\application\views\view_news_detail.php 74
 ERROR - 2019-09-24 13:02:13 --> Severity: Notice --> Undefined variable: results C:\xampp\htdocs\csm-web\application\views\view_news_detail.php 74
+ERROR - 2019-09-24 13:50:39 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 13:59:34 --> 404 Page Not Found: 
+ERROR - 2019-09-24 14:05:32 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:07:47 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:10:43 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:16:26 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:23:03 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:24:16 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:26:37 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:28:44 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:29:51 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:30:50 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:32:25 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:32:52 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:33:23 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:37:27 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:38:30 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:46:46 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:55:19 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 14:58:06 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 15:01:30 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 15:05:20 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 15:08:41 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 15:08:49 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 15:09:00 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 15:13:52 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 15:19:11 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 15:21:12 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 15:22:40 --> 404 Page Not Found: Public/css
+ERROR - 2019-09-24 16:08:40 --> Severity: error --> Exception: Call to undefined function base_url() C:\xampp\htdocs\csm-web\application\views\view_maintenance.php 7
