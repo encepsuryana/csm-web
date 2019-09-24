@@ -45,3 +45,14 @@ ERROR - 2019-09-24 09:45:23 --> Severity: Notice --> Undefined variable: og_desc
 ERROR - 2019-09-24 09:45:23 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 14
 ERROR - 2019-09-24 09:45:23 --> Severity: Notice --> Undefined variable: row C:\xampp\htdocs\csm-web\application\views\view_category.php 30
 ERROR - 2019-09-24 09:45:23 --> Severity: Notice --> Undefined variable: category_name C:\xampp\htdocs\csm-web\application\views\view_category.php 30
+ERROR - 2019-09-24 10:49:41 --> Severity: error --> Exception: Call to undefined function base_url() C:\xampp\htdocs\csm-web\application\views\view_maintenance.php 7
+ERROR - 2019-09-24 10:49:57 --> Severity: error --> Exception: Call to undefined function base_url() C:\xampp\htdocs\csm-web\application\views\view_maintenance.php 7
+ERROR - 2019-09-24 10:50:26 --> Severity: error --> Exception: Call to undefined function base_url() C:\xampp\htdocs\csm-web\application\views\maintenance.php 7
+ERROR - 2019-09-24 10:50:27 --> Severity: error --> Exception: Call to undefined function base_url() C:\xampp\htdocs\csm-web\application\views\maintenance.php 7
+ERROR - 2019-09-24 10:50:37 --> Severity: Warning --> include(C:\xampp\htdocs\csm-web\application\views/view_maintenance.php): failed to open stream: No such file or directory C:\xampp\htdocs\csm-web\application\hooks\maintenance_hook.php 17
+ERROR - 2019-09-24 10:50:37 --> Severity: Warning --> include(): Failed opening 'C:\xampp\htdocs\csm-web\application\views/view_maintenance.php' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\csm-web\application\hooks\maintenance_hook.php 17
+ERROR - 2019-09-24 10:50:55 --> Severity: error --> Exception: Call to undefined function base_url() C:\xampp\htdocs\csm-web\application\views\view_maintenance.php 7
+ERROR - 2019-09-24 10:54:00 --> Severity: Notice --> Undefined variable: heading C:\xampp\htdocs\csm-web\application\views\view_maintenance.php 58
+ERROR - 2019-09-24 10:54:00 --> Severity: Notice --> Undefined variable: message C:\xampp\htdocs\csm-web\application\views\view_maintenance.php 59
+ERROR - 2019-09-24 10:54:19 --> Severity: Notice --> Undefined variable: heading C:\xampp\htdocs\csm-web\application\views\view_maintenance.php 58
+ERROR - 2019-09-24 10:54:19 --> Severity: Notice --> Undefined variable: message C:\xampp\htdocs\csm-web\application\views\view_maintenance.php 59
