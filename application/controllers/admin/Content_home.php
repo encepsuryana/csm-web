@@ -22,7 +22,11 @@ class content_home extends CI_Controller
 			$this->load->view('admin/view_content_home',$data);
 			$this->load->view('admin/view_footer');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 

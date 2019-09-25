@@ -1,6 +1,6 @@
 <?php
 if(!$this->session->userdata('id')) {
-	redirect(base_url().$this->session->userdata('role').'/login');
+	redirect(base_url().'admin/login');
 }
 ?>
 <section class="content-header">

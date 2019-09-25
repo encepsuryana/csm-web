@@ -22,7 +22,11 @@ class Portfolio extends CI_Controller
 			$this->load->view('admin/view_portfolio',$data);
 			$this->load->view('admin/view_footer');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		} 
 	}
 
@@ -168,7 +172,11 @@ class Portfolio extends CI_Controller
 			}
 
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -326,7 +334,11 @@ class Portfolio extends CI_Controller
 			}
 
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -359,7 +371,11 @@ class Portfolio extends CI_Controller
 
 			redirect(base_url().'admin/portfolio');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -374,7 +390,11 @@ class Portfolio extends CI_Controller
 			redirect(base_url().'admin/portfolio/edit/'.$portfolio_id);
 
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 

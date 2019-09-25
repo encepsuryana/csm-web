@@ -22,7 +22,11 @@ class Setting extends CI_Controller
 			$this->load->view('admin/view_setting',$data);
 			$this->load->view('admin/view_footer');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 	public function update()
@@ -335,7 +339,11 @@ class Setting extends CI_Controller
 			$this->load->view('admin/view_setting',$data);
 			$this->load->view('admin/view_footer');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 	

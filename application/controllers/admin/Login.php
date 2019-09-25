@@ -47,6 +47,9 @@ class Login extends CI_Controller
 
                 if(!$pw) {
 
+                    //Add Log User
+                    helper_log("login", '[LOGIN] User: '.$email.' Gagal Login');
+
                     $data['error'] = 'Password salah!';
                     $this->load->view('admin/view_login',$data);
 
@@ -73,6 +76,9 @@ class Login extends CI_Controller
                             redirect(base_url().$this->session->userdata('role').'/dashboard');
                         }
                     } else {
+                        //Add Log User
+                        helper_log("login", '[LOGIN] Error! Invalid Captcha, Gagal Login');
+
                         $data['error'] = 'Error! Invalid Captcha, you are not human.';
                         redirect(base_url().'admin/login');
                     }

@@ -23,7 +23,11 @@ class Profile extends CI_Controller
 			$this->load->view('admin/view_profile',$data);
 			$this->load->view('admin/view_footer');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -137,7 +141,11 @@ class Profile extends CI_Controller
 			$this->load->view('admin/view_profile',$data);
 			$this->load->view('admin/view_footer');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -233,7 +241,11 @@ class Profile extends CI_Controller
 			}
 
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -343,7 +355,11 @@ class Profile extends CI_Controller
 			}
 
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -371,7 +387,11 @@ class Profile extends CI_Controller
 
 			redirect(base_url().'admin/profile');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}	
 }

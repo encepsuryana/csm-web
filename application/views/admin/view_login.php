@@ -1,3 +1,8 @@
+<?php
+if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) {
+	redirect(base_url().'admin/dashboard');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>

@@ -72,6 +72,8 @@ function helper_log($tipe = "", $str = ""){
 	$param['log_user']      = $CI->session->userdata('full_name');
 	$param['log_tipe']      = $log_tipe;
 	$param['log_desc']      = $str;
+	$param['log_ipaddress'] = $_SERVER['REMOTE_ADDR'];
+	$param['log_useragen']  = '<i>'.$_SERVER['HTTP_USER_AGENT'].'</i>';
 
     //load model log
 	$CI->load->model('Model_log');

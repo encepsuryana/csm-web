@@ -22,7 +22,11 @@ class Facility extends CI_Controller
 			$this->load->view('admin/view_facility',$data);
 			$this->load->view('admin/view_footer');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		} 
 	}
 
@@ -170,7 +174,11 @@ class Facility extends CI_Controller
 			}
 
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -329,7 +337,11 @@ class Facility extends CI_Controller
 			}
 
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -362,7 +374,11 @@ class Facility extends CI_Controller
 
 			redirect(base_url().'admin/facility');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -377,7 +393,11 @@ class Facility extends CI_Controller
 			redirect(base_url().'admin/facility/edit/'.$facility_id);
 
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 

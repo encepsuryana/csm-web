@@ -80,7 +80,11 @@ class Language extends CI_Controller
 
 		}
 		else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 }

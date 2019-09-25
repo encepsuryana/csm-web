@@ -23,7 +23,11 @@ class Electronics_division_category extends CI_Controller
 			$this->load->view('admin/view_electronics_division_category',$data);
 			$this->load->view('admin/view_footer');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -73,7 +77,11 @@ class Electronics_division_category extends CI_Controller
 				$this->load->view('admin/view_footer');
 			}
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -144,7 +152,11 @@ class Electronics_division_category extends CI_Controller
 			}
 
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -186,7 +198,11 @@ class Electronics_division_category extends CI_Controller
 
 			redirect(base_url().'admin/electronics_division-category');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 

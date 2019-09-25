@@ -1,6 +1,6 @@
 <?php
 if(!$this->session->userdata('id')) {
-	redirect(base_url().$this->session->userdata('role').'/login');
+	redirect(base_url().'admin/login');
 }
 ?>
 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')){ ?>
@@ -67,13 +67,15 @@ if(!$this->session->userdata('id')) {
   <section class="content" style="margin-top: -100px;">
     <div class="row">
       <div class="col-md-12">
-        <div class="box box-info b-box">
+        <div class="box box-info b-box" style="padding-top: 10px;">
           <div class="box-body table-responsive">
             <table id="example1" class="table table-bordered table-striped">
               <thead>
                 <tr>
-                  <th width="30">No</th>
-                  <th width="30">Waktu</th>
+                  <th width="5">No</th>
+                  <th width="80">Waktu</th>
+                  <th width="30">IP Address</th>
+                  <th width="30">Identitas</th>
                   <th width="50">User</th>
                   <th width="250">Aktivitas</th>
                 </tr>
@@ -87,6 +89,8 @@ if(!$this->session->userdata('id')) {
                   <tr>
                     <td><?php echo $i; ?></td>
                     <td><?php echo $row['log_time']; ?></td>
+                    <td><?php echo $row['log_ipaddress']; ?></td>
+                    <td><?php echo $row['log_useragen']; ?></td>
                     <td><?php echo $row['log_user']; ?></td>
                     <td><?php echo $row['log_desc']; ?></td>
                   </tr>

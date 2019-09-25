@@ -36,7 +36,7 @@ class Model_dashboard extends CI_Model
     }
 
     function show_log() {
-        $sql = 'SELECT * FROM tbl_log ORDER BY log_id ASC';
+        $sql = 'SELECT * FROM tbl_log ORDER BY log_id DESC';
         $query = $this->db->query($sql);
         return $query->result_array();
     }

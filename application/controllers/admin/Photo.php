@@ -23,7 +23,11 @@ class Photo extends CI_Controller
 			$this->load->view('admin/view_photo',$data);
 			$this->load->view('admin/view_footer');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -107,7 +111,11 @@ class Photo extends CI_Controller
 			}
 
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -209,7 +217,11 @@ class Photo extends CI_Controller
 			}
 
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 
@@ -236,7 +248,11 @@ class Photo extends CI_Controller
 
 			redirect(base_url().'admin/photo');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 }
