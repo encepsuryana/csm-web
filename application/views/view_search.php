@@ -37,7 +37,7 @@
 								$i++;
 								?>
 								<div class="col-md-4 col-sm-4 clear-item no-merg">
-									<a href="<?php echo base_url(); ?>news/detail/<?php echo $row['news_id'].'.html'; ?>" class="public-csm-home">
+									<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>" class="public-csm-home">
 										<div class="blog-author ">
 											<ul>
 												<li class="gro">
