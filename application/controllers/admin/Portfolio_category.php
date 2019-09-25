@@ -8,6 +8,7 @@ class Portfolio_category extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_portfolio_category');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -29,7 +30,7 @@ class Portfolio_category extends CI_Controller
 	public function add()
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
-		
+
 			$header['setting'] = $this->Model_header->get_setting_data();
 
 			$data['error'] = '';
@@ -55,6 +56,9 @@ class Portfolio_category extends CI_Controller
 					);
 					$this->Model_portfolio_category->add($form_data);
 
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['category_name'].' ditambahkan ke ategori Portfolio');
+
 					$data['success'] = 'Kategori Portofolio berhasil ditambahkan!';
 				}
 
@@ -77,7 +81,7 @@ class Portfolio_category extends CI_Controller
 	public function edit($id)
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
-		
+
     	// If there is no service in this id, then redirect
 			$tot = $this->Model_portfolio_category->portfolio_category_check($id);
 			if(!$tot) {
@@ -120,6 +124,9 @@ class Portfolio_category extends CI_Controller
 						'status'       => $_POST['status']
 					);
 					$this->Model_portfolio_category->update($id,$form_data);
+
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['category_name'].' diupdate pada Kategori Portfolio');
 
 					$data['success'] = 'Portfolio Category telah berhasil diupdate';
 				}
@@ -173,6 +180,9 @@ class Portfolio_category extends CI_Controller
 				$this->Model_portfolio_category->delete2($row['id']);
 			}
 			$this->Model_portfolio_category->delete($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Kategori Portfolio');
 
 			redirect(base_url().'admin/portfolio-category');
 		} else {

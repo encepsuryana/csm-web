@@ -8,6 +8,7 @@ class Portfolio extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_portfolio');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -137,6 +138,8 @@ class Portfolio extends CI_Controller
 						$this->Model_portfolio->add_photos($form_data);
 					}
 
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['name'].' ditambahkan ke Portofolio');
 
 					$data['success'] = 'Portofolio berhasil ditambahkan!';
 
@@ -296,7 +299,8 @@ class Portfolio extends CI_Controller
 						$this->Model_portfolio->add_photos($form_data);
 					}
 
-
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['name'].' diupdate pada Portofolio');
 
 					$data['success'] = 'Portofolio telah berhasil diupdate';
 				}
@@ -349,6 +353,9 @@ class Portfolio extends CI_Controller
 
 			$this->Model_portfolio->delete($id);
 			$this->Model_portfolio->delete_photos($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Portofolio');
 
 			redirect(base_url().'admin/portfolio');
 		} else {

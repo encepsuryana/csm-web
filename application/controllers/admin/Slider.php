@@ -8,6 +8,7 @@ class Slider extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_slider');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -74,7 +75,8 @@ class Slider extends CI_Controller
 						'button2_url'  => $_POST['button2_url']
 					);
 					$this->Model_slider->add($form_data);
-
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['heading'].' ditambahkan ke Slider');
 					$data['success'] = 'Slider is uploaded successfully!';
 				}
 
@@ -115,7 +117,6 @@ class Slider extends CI_Controller
 
 			if(isset($_POST['form1'])) 
 			{
-
 				$valid = 1;
 
 				$path = $_FILES['photo']['name'];
@@ -168,6 +169,10 @@ class Slider extends CI_Controller
 				}
 
 				$data['slider'] = $this->Model_slider->getData($id);
+				
+				//Add Log User
+				helper_log("edit", '[EDIT] Data: '.$_POST['heading'].' diupdate pada Slider');
+
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_slider_edit',$data);
 				$this->load->view('admin/view_footer');
@@ -201,6 +206,10 @@ class Slider extends CI_Controller
 			}
 
 			$this->Model_slider->delete($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Slider');
+
 			redirect(base_url().'admin/slider');
 		} else {
 			show_404();

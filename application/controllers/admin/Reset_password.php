@@ -8,6 +8,7 @@ class Reset_password extends CI_Controller
     {
         parent::__construct();
         $this->load->model('admin/Model_reset_password');
+        $this->load->model('admin/Model_log');
     }
 
     public function index($email=0,$token=0)
@@ -41,6 +42,10 @@ class Reset_password extends CI_Controller
                     'token'    => ''
                 );
                 $this->Model_reset_password->update($email,$form_data);
+
+                //Add Log User
+                helper_log("login", '[RESET PASSWORD] User: '.$this->session->userdata('full_name').' Melakukan Reset Password');
+
                 $data['success'] = 'Password telah berhasil diupdate!';                
             }
             $data['var1'] = $email;

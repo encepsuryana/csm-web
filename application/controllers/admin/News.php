@@ -8,6 +8,7 @@ class News extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_news');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -74,8 +75,6 @@ class News extends CI_Controller
 					$final_name = 'news-'.$ai_id.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
-				
-
 					$judul = $_POST['news_title'];
 					$string=preg_replace('/[^A-Za-z0-9\- ]/', '', $judul); 
 					$trim=trim($string);
@@ -99,6 +98,9 @@ class News extends CI_Controller
 						'post_slug'   	 	 => $slug
 					);
 					$this->Model_news->add($form_data);
+
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['news_title'].' ditambahkan ke Berita');
 
 					$data['success'] = 'Berita berhasil ditambahkan!';
 					unset($_POST['news_title']);
@@ -227,6 +229,9 @@ class News extends CI_Controller
 						$this->Model_news->update($id,$form_data);
 					}
 
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['news_title'].' diupdate pada Berita');
+
 					$data['success'] = 'News telah berhasil diupdate';
 				}
 				else
@@ -270,6 +275,10 @@ class News extends CI_Controller
 			}
 
 			$this->Model_news->delete($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Berita');
+
 			redirect(base_url().'admin/news');
 		} else {
 			show_404();

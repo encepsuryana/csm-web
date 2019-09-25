@@ -8,6 +8,7 @@ class Setting extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_setting');
+		$this->load->model('admin/Model_log');
 	}
 	public function index()
 	{
@@ -31,7 +32,6 @@ class Setting extends CI_Controller
 			$data['success'] = '';
 
 			$header['setting'] = $this->Model_header->get_setting_data();
-
 
 			if(isset($_POST['form_logo'])) {
 				$valid = 1;
@@ -61,6 +61,8 @@ class Setting extends CI_Controller
 						'logo' => $final_name
 					);
 					$this->Model_setting->update($form_data);
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: Logo diupdate pada Settings');
 					$data['success'] = 'Logo telah berhasil diupdate!';		    	
 				}        	
 			}
@@ -93,6 +95,7 @@ class Setting extends CI_Controller
 						'logo2' => $final_name
 					);
 					$this->Model_setting->update($form_data);
+					helper_log("edit", '[EDIT] Data: Logo2 diupdate pada Settings');
 					$data['success'] = 'logo Art telah berhasil diupdate!';		    	
 				}        	
 			}
@@ -125,6 +128,7 @@ class Setting extends CI_Controller
 						'logo_admin' => $final_name
 					);
 					$this->Model_setting->update($form_data);
+					helper_log("edit", '[EDIT] Data: Admin Logo diupdate pada Settings');
 					$data['success'] = 'Admin Logo telah berhasil diupdate!';		    	
 				}        	
 			}
@@ -157,6 +161,7 @@ class Setting extends CI_Controller
 						'favicon' => $final_name
 					);
 					$this->Model_setting->update($form_data);
+					helper_log("edit", '[EDIT] Data: Favicon pada Settings');
 					$data['success'] = 'Favicon telah berhasil diupdate!';		    	
 				}        	
 			}
@@ -189,6 +194,7 @@ class Setting extends CI_Controller
 						'login_bg' => $final_name
 					);
 					$this->Model_setting->update($form_data);
+					helper_log("edit", '[EDIT] Data: Login Background diupdate pada Settings');
 					$data['success'] = 'Login Background Photo telah berhasil diupdate!';		    	
 				}        	
 			}
@@ -204,6 +210,7 @@ class Setting extends CI_Controller
 					'contact_map_iframe'  => $_POST['contact_map_iframe']
 				);
 				$this->Model_setting->update($form_data);   	
+				helper_log("edit", '[EDIT] Data: General diupdate pada Settings');
 				$data['success'] = 'General Setting telah berhasil diupdate!';
 			}
 
@@ -216,7 +223,8 @@ class Setting extends CI_Controller
 					'smtp_port'             	   => $_POST['smtp_port'],
 					'reset_password_email_subject' => $_POST['reset_password_email_subject']
 				);
-				$this->Model_setting->update($form_data);   	
+				$this->Model_setting->update($form_data);
+				helper_log("edit", '[EDIT] Data: Email Settings diupdate pada Settings');   	
 				$data['success'] = 'Email Setting telah berhasil diupdate!';
 			}
 
@@ -227,7 +235,8 @@ class Setting extends CI_Controller
 					'total_popular_post' => $_POST['total_popular_post'],
 					'total_product_post' => $_POST['total_product_post']
 				);
-				$this->Model_setting->update($form_data);   	
+				$this->Model_setting->update($form_data);
+				helper_log("edit", '[EDIT] Data: Sidebar Footer diupdate pada Settings');   	
 				$data['success'] = 'Sidebar and Footer Setting telah berhasil diupdate!';
 			}
 
@@ -259,6 +268,7 @@ class Setting extends CI_Controller
 						'counter_bg' => $final_name
 					);
 					$this->Model_setting->update($form_data);
+					helper_log("edit", '[EDIT] Data: Counter Background diupdate pada Settings');
 					$data['success'] = 'Counter Background Photo telah berhasil diupdate!';		    	
 				}        	
 			}
@@ -275,7 +285,8 @@ class Setting extends CI_Controller
 					'counter4_text'  => $_POST['counter4_text'],
 					'counter4_value' => $_POST['counter4_value']
 				);
-				$this->Model_setting->update($form_data);   	
+				$this->Model_setting->update($form_data);
+				helper_log("edit", '[EDIT] Data: Counter diupdate pada Settings');   	
 				$data['success'] = 'Counter Setting (Home Page) telah berhasil diupdate!';
 			}
 
@@ -284,7 +295,8 @@ class Setting extends CI_Controller
 					'theme_color_1' => $_POST['theme_color_1'],
 					'theme_color_2' => $_POST['theme_color_2']
 				);
-				$this->Model_setting->update($form_data);   	
+				$this->Model_setting->update($form_data);
+				helper_log("edit", '[EDIT] Data: Theme Color diupdate pada Settings');   	
 				$data['success'] = 'Theme Colors are updated successfully!';
 			}
 
@@ -311,6 +323,7 @@ class Setting extends CI_Controller
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 					$form_data = array('banner' => $final_name);
 					$this->Model_setting->update($form_data);
+					helper_log("edit", '[EDIT] Data: Background diupdate pada Settings');
 					$data['success'] = 'Background telah berhasil diupdate!';		    	
 				}        	
 			}

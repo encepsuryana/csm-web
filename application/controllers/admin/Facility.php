@@ -8,6 +8,7 @@ class Facility extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_facility');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -139,6 +140,8 @@ class Facility extends CI_Controller
 						$this->Model_facility->add_photos($form_data);
 					}
 
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['name'].' ditambahkan ke Fasilitas');
 
 					$data['success'] = 'Fasilitas berhasil ditambahkan!';
 
@@ -301,6 +304,9 @@ class Facility extends CI_Controller
 						$this->Model_facility->add_photos($form_data);
 					}
 
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['name'].' diupdate pada Fasilitas');
+
 					$data['success'] = 'Fasilitas telah berhasil diupdate';
 				} else {
 					$data['error'] = $error;
@@ -350,6 +356,9 @@ class Facility extends CI_Controller
 
 			$this->Model_facility->delete($id);
 			$this->Model_facility->delete_photos($id);
+			
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Fasilitas');
 
 			redirect(base_url().'admin/facility');
 		} else {

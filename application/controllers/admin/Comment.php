@@ -9,6 +9,7 @@ class Comment extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_comment');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -44,6 +45,10 @@ class Comment extends CI_Controller
 				}
 
 				$data['comment'] = $this->Model_comment->show();
+
+				//Add Log User
+				helper_log("edit", '(Edit) '.$_POST['code_body']);
+
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_comment',$data);
 				$this->load->view('admin/view_footer');

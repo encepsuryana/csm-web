@@ -9,6 +9,7 @@ class Login extends CI_Controller
         parent::__construct();
         $this->load->model('admin/Model_login');
         $this->load->library('recaptcha');
+        $this->load->model('admin/Model_log');
     }
 
     public function index()
@@ -32,6 +33,9 @@ class Login extends CI_Controller
             $un = $this->Model_login->check_email($email);
 
             if(!$un) {
+
+                //Add Log User
+                helper_log("login", '[LOGIN] User: '.$email.' Gagal Login');
 
                 $data['error'] = 'Email address salah!';
                 $this->load->view('admin/view_login',$data);
@@ -62,6 +66,10 @@ class Login extends CI_Controller
                             );
 
                             $this->session->set_userdata($array);
+
+                            //Add Log User
+                            helper_log("login", '[LOGIN] User: '.$pw['full_name'].' Berhasil Login');
+
                             redirect(base_url().$this->session->userdata('role').'/dashboard');
                         }
                     } else {
@@ -77,6 +85,8 @@ class Login extends CI_Controller
     }
 
     function logout() {
+        //Add Log User
+        helper_log("logout", '[LOGOUT] User: '.$this->session->userdata('full_name').' Telah Logout');
         $this->session->sess_destroy();
         redirect(base_url().'admin/login');
     }

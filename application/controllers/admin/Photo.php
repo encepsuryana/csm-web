@@ -9,6 +9,7 @@ class Photo extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_photo');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -82,6 +83,9 @@ class Photo extends CI_Controller
 						'photo_show_home' => $_POST['photo_show_home']
 					);
 					$this->Model_photo->add($form_data);
+
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['photo_caption'].' ditambahkan ke Galeri');
 
 					$data['success'] = 'Foto berhasil ditambahkan!';
 
@@ -182,6 +186,8 @@ class Photo extends CI_Controller
 						$this->Model_photo->update($id,$form_data);
 					}
 
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['photo_caption'].' diupdate pada Galeri');
 
 					$data['success'] = 'Foto telah berhasil diupdate';
 				}
@@ -224,6 +230,10 @@ class Photo extends CI_Controller
 			}
 
 			$this->Model_photo->delete($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Galeri');
+
 			redirect(base_url().'admin/photo');
 		} else {
 			show_404();

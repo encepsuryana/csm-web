@@ -8,6 +8,7 @@ class content_home extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_content_home');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -44,7 +45,6 @@ class content_home extends CI_Controller
 
 			if(isset($_POST['form1'])) 
 			{
-
 				$valid = 1;
 
 				$this->form_validation->set_rules('heading', 'Ikon', 'trim|required');
@@ -77,7 +77,7 @@ class content_home extends CI_Controller
 						$form_data = array(
 							'heading' => $_POST['heading'],
 							'content' => $_POST['content'],
-							'link' => $_POST['link']
+							'link'    => $_POST['link']
 						);
 						$this->Model_content_home->update($id,$form_data);
 					}
@@ -91,12 +91,13 @@ class content_home extends CI_Controller
 							'photo'   => $final_name,
 							'heading' => $_POST['heading'],
 							'content' => $_POST['content'],
-							'link' => $_POST['link']
+							'link'    => $_POST['link']
 						);
 						$this->Model_content_home->update($id,$form_data);
 					}
-
-					$data['success'] = 'Konten Beranda telah berhasil diupdate';
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['content'].' Berhasil diupdate');
+					$data['success'] = ' Konten Beranda telah berhasil diupdate';
 				}
 				else
 				{
@@ -104,6 +105,7 @@ class content_home extends CI_Controller
 				}
 
 				$data['content_home'] = $this->Model_content_home->getData($id);
+
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_content_home_edit',$data);
 				$this->load->view('admin/view_footer');
@@ -159,12 +161,16 @@ class content_home extends CI_Controller
 					$form_data = array(
 						'file_pdf' => $final_name
 					);
-					$this->Model_content_home->update_content_home_photo($form_data);			   
+					$this->Model_content_home->update_content_home_photo($form_data);	
+					
+					//Add Log User
+					helper_log("edit", '[EDIT] Company Profile diperbaharui');		
 
 					$data['success'] = 'Konten Beranda (Company Profile) telah berhasil diupdate!';
 				}
 
 				$data['content_home'] = $this->Model_content_home->get_photo();
+
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_content_home_commpany_profile',$data);
 				$this->load->view('admin/view_footer');

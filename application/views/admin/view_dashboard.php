@@ -9,9 +9,7 @@ if(!$this->session->userdata('id')) {
   </section>
 
   <section class="content">
-
     <div class="row">
-
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="info-box">
           <span class="info-box-icon bg-green"><i class="fa fa-newspaper-o"></i></span>
@@ -63,7 +61,43 @@ if(!$this->session->userdata('id')) {
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
+  <section class="content" style="margin-top: -100px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-info b-box">
+          <div class="box-body table-responsive">
+            <table id="example1" class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th width="30">No</th>
+                  <th width="30">Waktu</th>
+                  <th width="50">User</th>
+                  <th width="250">Aktivitas</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                $i=0;             
+                foreach ($log_aktivitas as $row) {
+                  $i++;
+                  ?>
+                  <tr>
+                    <td><?php echo $i; ?></td>
+                    <td><?php echo $row['log_time']; ?></td>
+                    <td><?php echo $row['log_user']; ?></td>
+                    <td><?php echo $row['log_desc']; ?></td>
+                  </tr>
+                  <?php
+                }
+                ?>              
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 <?php } else { ?>

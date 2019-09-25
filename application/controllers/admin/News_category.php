@@ -8,6 +8,7 @@ class News_category extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_news_category');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -60,6 +61,9 @@ class News_category extends CI_Controller
 					);
 					$this->Model_news_category->add($form_data);
 
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['category_name'].' ditambahkan ke Kategori Berita');
+
 					$data['success'] = 'Kategory Berita berhasil ditambahkan!';
 				}
 
@@ -78,7 +82,6 @@ class News_category extends CI_Controller
 			show_404();
 		} 
 	}
-
 
 	public function edit($id)
 	{
@@ -134,6 +137,9 @@ class News_category extends CI_Controller
 					);
 					$this->Model_news_category->update($id,$form_data);
 
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['category_name'].' diupdate pada Kategori Berita');
+
 					$data['success'] = 'Nama Kategori telah berhasil diupdate';
 				}
 
@@ -169,6 +175,9 @@ class News_category extends CI_Controller
 			}
 			$this->Model_news_category->delete($id);
 			$this->Model_news_category->delete1($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Kategori Berita');
 
 			redirect(base_url().'admin/news-category');
 		} else {

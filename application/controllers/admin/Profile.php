@@ -8,6 +8,7 @@ class Profile extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_profile');
+		$this->load->model('admin/Model_log');
 	}
 	public function index()
 	{
@@ -38,7 +39,9 @@ class Profile extends CI_Controller
 
 				$valid = 1;
 
+				$this->form_validation->set_rules('full_name', 'Nama Lengkap', 'trim|required');
 				$this->form_validation->set_rules('email', 'Email Address', 'trim|required|valid_email');
+				$this->form_validation->set_rules('phone', 'No. Telp', 'trim|required');
 
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
@@ -52,6 +55,10 @@ class Profile extends CI_Controller
 						'phone'     => $_POST['phone']
 					);
 					$this->Model_profile->update($form_data);
+					
+					//Add Log User
+					helper_log("edit", '[EDIT] Data Informasi: '.$_POST['full_name'].' telah diubah.');
+
 					$data['success'] = 'Informasi Profil telah berhasil diupdate!';
 
 					$this->session->set_userdata($form_data);
@@ -87,6 +94,10 @@ class Profile extends CI_Controller
 						'photo' => $final_name
 					);
 					$this->Model_profile->update($form_data);
+
+					//Add Log User
+					helper_log("edit", '[EDIT] Foto: '.this->session->userdata('full_name').' telah diubah.');
+
 					$data['success'] = 'Photo telah berhasil diupdate!';
 
 					$this->session->set_userdata($form_data);
@@ -110,6 +121,10 @@ class Profile extends CI_Controller
 						'password' => md5($_POST['password'])
 					);
 					$this->Model_profile->update($form_data);
+					
+					//Add Log User
+					helper_log("edit", '[EDIT] Password: '.this->session->userdata('full_name').' telah diubah.');
+
 					$data['success'] = 'Password telah berhasil diupdate!';
 
 					$this->session->set_userdata($form_data);
@@ -188,7 +203,10 @@ class Profile extends CI_Controller
 						'token'     => $_POST['token']
 					);
 					$this->Model_profile->add_user($form_data);
-
+					
+					//Add Log User
+					helper_log("add", '[TAMBAH] User:'.$_POST['full_name'].' ditambahkan oleh '.this->session->userdata('full_name'));
+					
 					$data['success'] = 'profile berhasil ditambahkan!';
 
 					unset($_POST['full_name']);
@@ -301,6 +319,9 @@ class Profile extends CI_Controller
 						$this->Model_profile->update($id,$form_data);
 					}
 
+					//Add Log User
+					helper_log("edit", '[EDIT] Data User:'.$_POST['full_name'].' diubah oleh '.this->session->userdata('full_name'));
+
 					$data['success'] = 'profile telah berhasil diupdate';
 				}
 				else
@@ -309,6 +330,7 @@ class Profile extends CI_Controller
 				}
 
 				$data['profile'] = $this->Model_profile->getData($id);
+				
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_profile_edit',$data);
 				$this->load->view('admin/view_footer');
@@ -343,12 +365,13 @@ class Profile extends CI_Controller
 			}
 
 			$this->Model_profile->delete_user($id);
+
+			//Add Log User
+			helper_log("delete", '[HAPUS] Data User Id:'.$id.' dihapus oleh '.this->session->userdata('full_name'));
+
 			redirect(base_url().'admin/profile');
 		} else {
 			show_404();
 		}
-	}
-
-
-	
+	}	
 }

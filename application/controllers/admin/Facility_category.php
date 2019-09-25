@@ -8,6 +8,7 @@ class Facility_category extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_facility_category');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -29,7 +30,7 @@ class Facility_category extends CI_Controller
 	public function add()
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-		
+
 			$header['setting'] = $this->Model_header->get_setting_data();
 
 			$data['error'] = '';
@@ -55,6 +56,9 @@ class Facility_category extends CI_Controller
 					);
 					$this->Model_facility_category->add($form_data);
 
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['category_name'].' ditambahkan ke Kategori Fasilitas');
+
 					$data['success'] = 'Kategori Fasilitas berhasil ditambahkan!';
 				}
 
@@ -77,7 +81,7 @@ class Facility_category extends CI_Controller
 	public function edit($id)
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-		
+
     	// If there is no service in this id, then redirect
 			$tot = $this->Model_facility_category->facility_category_check($id);
 			if(!$tot) {
@@ -121,6 +125,9 @@ class Facility_category extends CI_Controller
 					);
 					$this->Model_facility_category->update($id,$form_data);
 
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['category_name'].' diupdate pada Kategori Fasilitas');
+
 					$data['success'] = 'Kategori Fasilitas telah berhasil diupdate';
 				}
 
@@ -153,7 +160,6 @@ class Facility_category extends CI_Controller
 				exit;
 			}
 
-
 			$result = $this->Model_facility_category->getData1($id);
 			foreach ($result as $row) {
 				$result1 = $this->Model_facility_category->show_facility_by_id($row['id']);
@@ -173,6 +179,9 @@ class Facility_category extends CI_Controller
 				$this->Model_facility_category->delete2($row['id']);
 			}
 			$this->Model_facility_category->delete($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Kategori Fasilitas');
 
 			redirect(base_url().'admin/facility-category');
 		} else {

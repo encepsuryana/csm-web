@@ -9,6 +9,7 @@ class Product extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_product');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -86,6 +87,9 @@ class Product extends CI_Controller
 					);
 					$this->Model_product->add($form_data);
 
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['product_caption'].' ditambahkan ke Produk');
+					
 					$data['success'] = 'Produk berhasil ditambahkan!';
 
 				} 
@@ -186,6 +190,8 @@ class Product extends CI_Controller
 						$this->Model_product->update($id,$form_data);
 					}
 
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['product_caption'].' diupdate pada Produk');
 
 					$data['success'] = 'Produk telah berhasil diupdate';
 				}
@@ -229,6 +235,10 @@ class Product extends CI_Controller
 			}
 
 			$this->Model_product->delete($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Produk');
+
 			redirect(base_url().'admin/product');
 		} else {
 			show_404();

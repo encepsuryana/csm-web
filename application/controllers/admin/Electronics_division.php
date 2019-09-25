@@ -8,6 +8,7 @@ class Electronics_division extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_electronics_division');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -139,6 +140,8 @@ class Electronics_division extends CI_Controller
 						$this->Model_electronics_division->add_photos($form_data);
 					}
 
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['name'].' ditambahkan ke Divisi Elektronik');
 
 					$data['success'] = 'Divisi Elektronik berhasil ditambahkan!';
 
@@ -302,6 +305,9 @@ class Electronics_division extends CI_Controller
 						$this->Model_electronics_division->add_photos($form_data);
 					}
 
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['name'].' diupdate pada Divisi Elektronik');
+
 					$data['success'] = 'Divisi Elektronik telah berhasil diupdate';
 				}
 				else
@@ -330,7 +336,6 @@ class Electronics_division extends CI_Controller
 		}
 	}
 
-
 	public function delete($id) 
 	{
 		if (($this->session->userdata('role') == 'admin')  or ($this->session->userdata('role') == 'staff')) {
@@ -353,6 +358,9 @@ class Electronics_division extends CI_Controller
 
 			$this->Model_electronics_division->delete($id);
 			$this->Model_electronics_division->delete_photos($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Divisi Elektronik');
 
 			redirect(base_url().'admin/electronics_division');
 		} else {

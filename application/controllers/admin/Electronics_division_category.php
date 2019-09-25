@@ -8,6 +8,7 @@ class Electronics_division_category extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_electronics_division_category');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -29,7 +30,7 @@ class Electronics_division_category extends CI_Controller
 	public function add()
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-		
+
 			$header['setting'] = $this->Model_header->get_setting_data();
 
 			$data['error'] = '';
@@ -55,6 +56,9 @@ class Electronics_division_category extends CI_Controller
 					);
 					$this->Model_electronics_division_category->add($form_data);
 
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['category_name'].' ditambahkan ke Kategori Divisi Elektronik');
+
 					$data['success'] = 'electronics_division category berhasil ditambahkan!';
 				}
 
@@ -77,7 +81,7 @@ class Electronics_division_category extends CI_Controller
 	public function edit($id)
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-		
+
     	// If there is no service in this id, then redirect
 			$tot = $this->Model_electronics_division_category->electronics_division_category_check($id);
 			if(!$tot) {
@@ -120,6 +124,9 @@ class Electronics_division_category extends CI_Controller
 						'status'       => $_POST['status']
 					);
 					$this->Model_electronics_division_category->update($id,$form_data);
+
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['category_name'].' diupdate pada Kategori Divisi Elektronik');
 
 					$data['success'] = 'electronics_division Category telah berhasil diupdate';
 				}
@@ -173,6 +180,9 @@ class Electronics_division_category extends CI_Controller
 				$this->Model_electronics_division_category->delete2($row['id']);
 			}
 			$this->Model_electronics_division_category->delete($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari kategori Divisi Elektronik');
 
 			redirect(base_url().'admin/electronics_division-category');
 		} else {

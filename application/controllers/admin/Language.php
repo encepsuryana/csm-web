@@ -9,6 +9,7 @@ class Language extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_language');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -43,8 +44,7 @@ class Language extends CI_Controller
 				$this->load->view('admin/view_language',$data);
 				$this->load->view('admin/view_footer');
 
-			} elseif(isset($_POST['form2'])) 
-			{
+			} elseif(isset($_POST['form2'])) {
 
 				foreach ($_POST['new_arr'] as $val) {
 					$new_arr2[] = $val;
@@ -60,6 +60,9 @@ class Language extends CI_Controller
 					);
 					$this->Model_language->update($new_arr3[$i],$form_data);
 				}
+
+				//Add Log User
+				helper_log("edit", '[EDIT] Database Bahasa diupdate');
 
 				$data['success'] = 'Database Bahasa telah berhasil diupdate';
 

@@ -8,6 +8,7 @@ class Partner extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_partner');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -76,6 +77,9 @@ class Partner extends CI_Controller
 						'photo' => $final_name
 					);
 					$this->Model_partner->add($form_data);
+
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['name'].' ditambahkan ke Partner');
 
 					$data['success'] = 'Partner berhasil ditambahkan!';
 
@@ -165,6 +169,9 @@ class Partner extends CI_Controller
 						);
 						$this->Model_partner->update($id,$form_data);
 					}
+					
+					//Add Log User
+					helper_log("edit", '[EDIT] Data: '.$_POST['name'].' diupdate pada Partner');
 
 					$data['success'] = 'Partner telah berhasil diupdate';
 				}
@@ -207,6 +214,10 @@ class Partner extends CI_Controller
 			}
 
 			$this->Model_partner->delete($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Partner');
+
 			redirect(base_url().'admin/partner');
 		} else {
 			show_404();

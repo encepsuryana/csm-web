@@ -8,6 +8,7 @@ class Electronics_division_desc extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_electronics_division_desc');
+		$this->load->model('admin/Model_log');
 	}
 	public function index()
 	{
@@ -38,12 +39,14 @@ class Electronics_division_desc extends CI_Controller
 			);
 			$this->Model_electronics_division_desc->electronics_division_desc_photo_update($form_data);
 
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Deskripsi Foto Divisi Elektronik dihapus');
+			
 			redirect(base_url().'admin/electronics_division_desc');
 		} else {
 			show_404();
 		}
 	}
-
 
 	public function update()
 	{
@@ -85,6 +88,10 @@ class Electronics_division_desc extends CI_Controller
 						'electronics_division_desc_photo' => $final_name
 					);
 					$this->Model_electronics_division_desc->update($form_data);
+
+					//Add Log User
+					helper_log("edit", '[EDIT] Foto Des. Divisi Elektronik diupdate');
+
 					$data['success'] = 'Des. Divisi Elektronik Photo telah berhasil diupdate!';		    	
 				}        	
 			}
@@ -98,7 +105,11 @@ class Electronics_division_desc extends CI_Controller
 					'mk_electronics_division_desc'      => $_POST['mk_electronics_division_desc'],
 					'md_electronics_division_desc'      => $_POST['md_electronics_division_desc']
 				);
-				$this->Model_electronics_division_desc->update($form_data);        	
+				$this->Model_electronics_division_desc->update($form_data);
+
+				//Add Log User
+				helper_log("edit", '[EDIT] Des. Divisi Elektronik diupdate');        	
+				
 				$data['success'] = 'Des. Divisi Elektronik telah berhasil diupdate!';
 			}
 

@@ -8,6 +8,7 @@ class Testimonial extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_testimonial');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -84,6 +85,9 @@ class Testimonial extends CI_Controller
 						'comment'     => $_POST['comment']
 					);
 					$this->Model_testimonial->add($form_data);
+
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['name'].' ditambahkan ke Testimonial');
 
 					$data['success'] = 'Testimonial berhasil ditambahkan!';
 
@@ -196,6 +200,10 @@ class Testimonial extends CI_Controller
 				}
 
 				$data['testimonial'] = $this->Model_testimonial->getData($id);
+
+				//Add Log User
+				helper_log("add", '[EDIT] Data: '.$_POST['name'].' diupdate pada Testimonial');
+
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_testimonial_edit',$data);
 				$this->load->view('admin/view_footer');
@@ -230,6 +238,10 @@ class Testimonial extends CI_Controller
 			}
 
 			$this->Model_testimonial->delete($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Testimonial');
+
 			redirect(base_url().'admin/testimonial');
 		} else {
 			show_404();

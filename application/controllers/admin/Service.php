@@ -8,6 +8,7 @@ class Service extends CI_Controller
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_service');
+		$this->load->model('admin/Model_log');
 	}
 
 	public function index()
@@ -92,6 +93,9 @@ class Service extends CI_Controller
 						'slug_service' => $slug
 					);
 					$this->Model_service->add($form_data);
+					
+					//Add Log User
+					helper_log("add", '[TAMBAH] Data: '.$_POST['heading'].' ditambahkan ke Layanan');
 
 					$data['success'] = 'Layanan berhasil ditambahkan!';
 					unset($_POST['heading']);
@@ -213,6 +217,10 @@ class Service extends CI_Controller
 				}
 
 				$data['service'] = $this->Model_service->getData($id);
+
+				//Add Log User
+				helper_log("edit", '[EDIT] Data: '.$_POST['heading'].' diupdate pada Layanan');
+
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_service_edit',$data);
 				$this->load->view('admin/view_footer');
@@ -247,6 +255,10 @@ class Service extends CI_Controller
 			}
 
 			$this->Model_service->delete($id);
+
+			//Add Log User
+			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Layanan');
+
 			redirect(base_url().'admin/service');
 		} else {
 			show_404();
