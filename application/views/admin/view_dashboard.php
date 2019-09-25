@@ -73,9 +73,9 @@ if(!$this->session->userdata('id')) {
               <thead>
                 <tr>
                   <th width="5">No</th>
-                  <th width="80">Waktu</th>
+                  <th width="30">Waktu</th>
                   <th width="30">IP Address</th>
-                  <th width="30">Identitas</th>
+                  <!-- <th width="30">Identitas</th> -->
                   <th width="50">User</th>
                   <th width="250">Aktivitas</th>
                 </tr>
@@ -90,7 +90,7 @@ if(!$this->session->userdata('id')) {
                     <td><?php echo $i; ?></td>
                     <td><?php echo $row['log_time']; ?></td>
                     <td><?php echo $row['log_ipaddress']; ?></td>
-                    <td><?php echo $row['log_useragen']; ?></td>
+                    <!-- <td><?php echo $row['log_useragen']; ?></td> -->
                     <td><?php echo $row['log_user']; ?></td>
                     <td><?php echo $row['log_desc']; ?></td>
                   </tr>
