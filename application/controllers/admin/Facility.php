@@ -197,7 +197,6 @@ class Facility extends CI_Controller
 			$data['success'] = '';
 			$error = '';
 
-
 			if(isset($_POST['form1'])) 
 			{
 				$valid = 1;

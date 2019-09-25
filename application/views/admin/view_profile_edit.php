@@ -49,7 +49,7 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">No. Telp <span>*</span></label>
 							<div class="col-sm-6">
-								<input type="number" autocomplete="off" class="form-control" name="phone" value="<?php echo $profile['phone']; ?>">
+								<input type="text" autocomplete="off" class="form-control" name="phone" value="<?php echo $profile['phone']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
@@ -59,8 +59,8 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Ulangi Password </label>
-							<div class="col-sm-4">
+							<label for="" class="col-sm-2 control-label">Ulangi Password <span>*</span></label>
+							<div class="col-sm-6">
 								<input type="password" class="form-control" name="re_password">
 							</div>
 						</div>
@@ -92,13 +92,13 @@ if(!$this->session->userdata('id')) {
 							<label for="" class="col-sm-2 control-label">Status <span>*</span></label>
 							<div class="col-sm-2" style="padding-top:6px;">
 								<select name="status" class="form-control select2">
-									<option value="admin" <?php if($profile['status']=='Active') {echo 'selected';} ?>>Active</option>
-									<option value="hrd" <?php if($profile['status']=='InActive') {echo 'selected';} ?>>InActive</option>
+									<option value="Active" <?php if($profile['status']=='Active') {echo 'selected';} ?>>Active</option>
+									<option value="InActive" <?php if($profile['status']=='InActive') {echo 'selected';} ?>>InActive</option>
 								</select>
 							</div>
 						</div>	
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Token <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Token </label>
 							<div class="col-sm-6">
 								<input type="text" autocomplete="off" class="form-control" name="token" value="<?php echo $profile['token']; ?>">
 							</div>

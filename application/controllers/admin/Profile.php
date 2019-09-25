@@ -100,7 +100,7 @@ class Profile extends CI_Controller
 					$this->Model_profile->update($form_data);
 
 					//Add Log User
-					helper_log("edit", '[EDIT] Foto: '.this->session->userdata('full_name').' telah diubah.');
+					helper_log("edit", '[EDIT] Foto: '.$this->session->userdata('full_name').' telah diubah');
 
 					$data['success'] = 'Photo telah berhasil diupdate!';
 
@@ -121,13 +121,15 @@ class Profile extends CI_Controller
 
 				if($valid == 1) {
 
+					$hash = $this->bcrypt->hash_password($_POST['password']);
+
 					$form_data = array(
-						'password' => md5($_POST['password'])
+						'password' => $hash
 					);
 					$this->Model_profile->update($form_data);
 					
 					//Add Log User
-					helper_log("edit", '[EDIT] Password: '.this->session->userdata('full_name').' telah diubah.');
+					helper_log("edit", '[EDIT] Password: '.$this->session->userdata('full_name').', Role: '.$this->session->userdata('role').' telah diubah.');
 
 					$data['success'] = 'Password telah berhasil diupdate!';
 
@@ -197,6 +199,8 @@ class Profile extends CI_Controller
 						$ai_id = $row['Auto_increment'];
 					}
 
+					$hash = $this->bcrypt->hash_password($_POST['password']);
+
 					$final_name = 'avatar-'.$ai_id.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
@@ -204,7 +208,7 @@ class Profile extends CI_Controller
 						'full_name'	=> $_POST['full_name'],
 						'email' 	=> $_POST['email'],
 						'phone'     => $_POST['phone'],
-						'password'  => md5($_POST['password']),
+						'password'  => $hash,
 						'photo'     => $final_name,
 						'role'     	=> $_POST['role'],
 						'status'    => $_POST['status'],
@@ -213,7 +217,7 @@ class Profile extends CI_Controller
 					$this->Model_profile->add_user($form_data);
 					
 					//Add Log User
-					helper_log("add", '[TAMBAH] User:'.$_POST['full_name'].' ditambahkan oleh '.this->session->userdata('full_name'));
+					helper_log("add", '[TAMBAH] User:'.$_POST['full_name'].' ditambahkan oleh '.$this->session->userdata('full_name'));
 					
 					$data['success'] = 'profile berhasil ditambahkan!';
 
@@ -221,7 +225,9 @@ class Profile extends CI_Controller
 					unset($_POST['email']);
 					unset($_POST['phone']);
 					unset($_POST['password']);
+					unset($_POST['re_password']);
 					unset($_POST['role']);
+					unset($_POST['status']);
 					unset($_POST['token']);
 				} 
 				else
@@ -251,9 +257,9 @@ class Profile extends CI_Controller
 
 	public function edit($id)
 	{
-		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
+		if ($this->session->userdata('role') == 'admin') {
 
-    	// If there is no profile in this id, then redirect
+    		// If there is no profile in this id, then redirect
 			$tot = $this->Model_profile->profile_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/profile');
@@ -266,9 +272,8 @@ class Profile extends CI_Controller
 			$error = '';
 
 
-			if(isset($_POST['form1'])) 
+			if(isset($_POST['form_update'])) 
 			{
-
 				$valid = 1;
 
 				$this->form_validation->set_rules('full_name', 'Full Name', 'trim|required');
@@ -295,17 +300,18 @@ class Profile extends CI_Controller
 					}
 				}
 
+				$hash = $this->bcrypt->hash_password($_POST['password']);
+
 				if($valid == 1) 
 				{
 					$data['profile'] = $this->Model_profile->getData($id);
-
+					
 					if($path == '') {
 						$form_data = array(
 							'full_name'	=> $_POST['full_name'],
 							'email' 	=> $_POST['email'],
 							'phone'     => $_POST['phone'],
-							'password'  => md5($_POST['password']),
-							'photo'     => $final_name,
+							'password'  => $hash,
 							'role'     	=> $_POST['role'],
 							'status'    => $_POST['status'],
 							'token'     => $_POST['token']
@@ -315,24 +321,24 @@ class Profile extends CI_Controller
 					else {
 						unlink('./public/uploads/'.$data['profile']['photo']);
 
-						$final_name = 'profile-'.$id.'.'.$ext;
+						$final_name = 'avatar-'.$id.'.'.$ext;
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
 						$form_data = array(
 							'full_name'	=> $_POST['full_name'],
 							'email' 	=> $_POST['email'],
 							'phone'     => $_POST['phone'],
-							'password'  => md5($_POST['password']),
+							'password'  => $hash,
 							'photo'     => $final_name,
 							'role'     	=> $_POST['role'],
 							'status'    => $_POST['status'],
 							'token'     => $_POST['token']
 						);
-						$this->Model_profile->update($id,$form_data);
+						$this->Model_profile->update_user($id,$form_data);
 					}
 
 					//Add Log User
-					helper_log("edit", '[EDIT] Data User:'.$_POST['full_name'].' diubah oleh '.this->session->userdata('full_name'));
+					helper_log("edit", '[EDIT] Data User:'.$_POST['full_name'].' diubah oleh '.$this->session->userdata('full_name'));
 
 					$data['success'] = 'profile telah berhasil diupdate';
 				}
@@ -383,7 +389,7 @@ class Profile extends CI_Controller
 			$this->Model_profile->delete_user($id);
 
 			//Add Log User
-			helper_log("delete", '[HAPUS] Data User Id:'.$id.' dihapus oleh '.this->session->userdata('full_name'));
+			helper_log("delete", '[HAPUS] Data User Id:'.$id.' dihapus oleh '.$this->session->userdata('full_name'));
 
 			redirect(base_url().'admin/profile');
 		} else {

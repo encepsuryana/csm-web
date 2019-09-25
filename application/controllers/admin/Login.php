@@ -8,8 +8,9 @@ class Login extends CI_Controller
     {
         parent::__construct();
         $this->load->model('admin/Model_login');
-        $this->load->library('recaptcha');
         $this->load->model('admin/Model_log');
+        $this->load->library('recaptcha');
+        $this->load->library('bcrypt');
     }
 
     public function index()
