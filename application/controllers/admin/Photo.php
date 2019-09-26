@@ -244,7 +244,7 @@ class Photo extends CI_Controller
 			$this->Model_photo->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Galeri');
+			helper_log("Delete", '[HAPUS] Data Id: '.$data['photo']['photo_caption'].' dihapus dari Galeri');
 
 			redirect(base_url().'admin/photo');
 		} else {

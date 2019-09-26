@@ -99,7 +99,6 @@ class Electronics_division extends CI_Controller
 					);
 					$this->Model_electronics_division->add($form_data);
 
-
 					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) )
 					{
 						$photos = array();
@@ -125,7 +124,7 @@ class Electronics_division extends CI_Controller
 							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
 							$ext_check = $this->Model_header->extension_check_photo($ext);
 							if($ext_check == FALSE) {
-				        	// Nothing to do, just skip
+				        	
 							} else {
 								$final_names[$m] = $z.'.'.$ext;
 								move_uploaded_file($photos_temp[$i],"./public/uploads/electronics_division_photos/".$final_names[$m]);
@@ -185,10 +184,10 @@ class Electronics_division extends CI_Controller
 	public function edit($id)
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-    	// If there is no service in this id, then redirect
+    	
 			$tot = $this->Model_electronics_division->electronics_division_check($id);
 			if(!$tot) {
-				redirect(base_url().'admin/electronics_division');
+				redirect(base_url().'admin/electronics-division');
 				exit;
 			}
 
@@ -196,7 +195,6 @@ class Electronics_division extends CI_Controller
 			$data['error'] = '';
 			$data['success'] = '';
 			$error = '';
-
 
 			if(isset($_POST['form1'])) 
 			{
@@ -230,7 +228,6 @@ class Electronics_division extends CI_Controller
 						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
 					}
 				}
-
 
 				if($valid == 1) 
 				{
@@ -294,7 +291,7 @@ class Electronics_division extends CI_Controller
 							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
 							$ext_check = $this->Model_header->extension_check_photo($ext);
 							if($ext_check == FALSE) {
-				        	// Nothing to do, just skip
+				        	
 							} else {
 								$final_names[$m] = $z.'.'.$ext;
 								move_uploaded_file($photos_temp[$i],"./public/uploads/electronics_division_photos/".$final_names[$m]);
@@ -372,7 +369,7 @@ class Electronics_division extends CI_Controller
 			$this->Model_electronics_division->delete_photos($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Divisi Elektronik');
+			helper_log("Delete", '[HAPUS] Data Id: '.$data['electronics_division']['name'].' dihapus dari Divisi Elektronik');
 
 			redirect(base_url().'admin/electronics_division');
 		} else {

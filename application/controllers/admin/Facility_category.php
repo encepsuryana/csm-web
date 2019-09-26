@@ -165,13 +165,13 @@ class Facility_category extends CI_Controller
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) {
 
-		// If there is no Kategori Fasilitas in this id, then redirect
 			$tot = $this->Model_facility_category->facility_category_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/facility-category');
 				exit;
 			}
-
+			$data['facility_category'] = $this->Model_facility_category->getData($id);
+			
 			$result = $this->Model_facility_category->getData1($id);
 			foreach ($result as $row) {
 				$result1 = $this->Model_facility_category->show_facility_by_id($row['id']);
@@ -193,7 +193,7 @@ class Facility_category extends CI_Controller
 			$this->Model_facility_category->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Kategori Fasilitas');
+			helper_log("Delete", '[HAPUS] Data Id: '.$data['facility_category']['category_name'].' dihapus dari Kategori Fasilitas');
 
 			redirect(base_url().'admin/facility-category');
 		} else {

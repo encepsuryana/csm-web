@@ -115,7 +115,7 @@ class Portfolio_category extends CI_Controller
 					$data['error'] = validation_errors();
 				} else {
 
-            	// Duplicate Category Checking
+            		// Duplicate Category Checking
 					$data['portfolio_category'] = $this->Model_portfolio_category->getData($id);
 					$total = $this->Model_portfolio_category->duplicate_check($_POST['category_name'],$data['portfolio_category']['category_name']);				
 					if($total) {
@@ -126,7 +126,7 @@ class Portfolio_category extends CI_Controller
 
 				if($valid == 1) 
 				{
-		    	// Updating Data
+		    		// Updating Data
 					$form_data = array(
 						'category_name'=> $_POST['category_name'],
 						'status'       => $_POST['status']
@@ -172,6 +172,7 @@ class Portfolio_category extends CI_Controller
 				exit;
 			}
 
+			$data['portfolio_category'] = $this->Model_portfolio_category->getData($id);
 
 			$result = $this->Model_portfolio_category->getData1($id);
 			foreach ($result as $row) {
@@ -194,7 +195,7 @@ class Portfolio_category extends CI_Controller
 			$this->Model_portfolio_category->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Kategori Portfolio');
+			helper_log("Delete", '[HAPUS] Data Id: '.$data['portfolio_category']['category_name'].' dihapus dari Kategori Portfolio');
 
 			redirect(base_url().'admin/portfolio-category');
 		} else {

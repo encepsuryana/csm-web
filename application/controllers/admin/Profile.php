@@ -121,10 +121,8 @@ class Profile extends CI_Controller
 
 				if($valid == 1) {
 
-					$hash = $this->bcrypt->hash_password($_POST['password']);
-
 					$form_data = array(
-						'password' => $hash
+						'password' => md5($_POST['password'])
 					);
 					$this->Model_profile->update($form_data);
 					
@@ -199,8 +197,6 @@ class Profile extends CI_Controller
 						$ai_id = $row['Auto_increment'];
 					}
 
-					$hash = $this->bcrypt->hash_password($_POST['password']);
-
 					$final_name = 'avatar-'.$ai_id.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
@@ -208,7 +204,7 @@ class Profile extends CI_Controller
 						'full_name'	=> $_POST['full_name'],
 						'email' 	=> $_POST['email'],
 						'phone'     => $_POST['phone'],
-						'password'  => $hash,
+						'password'  => md5($_POST['password']),
 						'photo'     => $final_name,
 						'role'     	=> $_POST['role'],
 						'status'    => $_POST['status'],
@@ -300,8 +296,6 @@ class Profile extends CI_Controller
 					}
 				}
 
-				$hash = $this->bcrypt->hash_password($_POST['password']);
-
 				if($valid == 1) 
 				{
 					$data['profile'] = $this->Model_profile->getData($id);
@@ -311,7 +305,7 @@ class Profile extends CI_Controller
 							'full_name'	=> $_POST['full_name'],
 							'email' 	=> $_POST['email'],
 							'phone'     => $_POST['phone'],
-							'password'  => $hash,
+							'password'  => md5($_POST['password']),
 							'role'     	=> $_POST['role'],
 							'status'    => $_POST['status'],
 							'token'     => $_POST['token']
@@ -328,7 +322,7 @@ class Profile extends CI_Controller
 							'full_name'	=> $_POST['full_name'],
 							'email' 	=> $_POST['email'],
 							'phone'     => $_POST['phone'],
-							'password'  => $hash,
+							'password'  => md5($_POST['password']),
 							'photo'     => $final_name,
 							'role'     	=> $_POST['role'],
 							'status'    => $_POST['status'],
@@ -382,6 +376,7 @@ class Profile extends CI_Controller
 			}
 
 			$data['profile'] = $this->Model_profile->getData($id);
+
 			if($data['profile']) {
 				unlink('./public/uploads/'.$data['profile']['photo']);
 			}
@@ -389,7 +384,7 @@ class Profile extends CI_Controller
 			$this->Model_profile->delete_user($id);
 
 			//Add Log User
-			helper_log("delete", '[HAPUS] Data User Id:'.$id.' dihapus oleh '.$this->session->userdata('full_name'));
+			helper_log("delete", '[HAPUS] Data User Id:'.$data['profile']['full_name'].' dihapus oleh '.$this->session->userdata('full_name'));
 
 			redirect(base_url().'admin/profile');
 		} else {

@@ -367,7 +367,7 @@ class Portfolio extends CI_Controller
 			$this->Model_portfolio->delete_photos($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Portofolio');
+			helper_log("Delete", '[HAPUS] Data Id: '.$data['portfolio']['name'].' dihapus dari Portofolio');
 
 			redirect(base_url().'admin/portfolio');
 		} else {

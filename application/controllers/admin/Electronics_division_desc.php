@@ -104,7 +104,6 @@ class Electronics_division_desc extends CI_Controller
 				}        	
 			}
 
-
 			if(isset($_POST['form_electronics_division_desc'])) {			
 				$form_data = array(
 					'electronics_division_desc_heading' => $_POST['electronics_division_desc_heading'],

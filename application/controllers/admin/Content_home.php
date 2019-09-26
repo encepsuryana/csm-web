@@ -34,8 +34,7 @@ class content_home extends CI_Controller
 	{
 		if ($this->session->userdata('role') == 'admin') {
 
-    	// If there is no why choose in this id, then redirect
-			$tot = $this->Model_content_home->content_home_check($id);
+    		$tot = $this->Model_content_home->content_home_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/content-home');
 				exit;
@@ -45,7 +44,6 @@ class content_home extends CI_Controller
 			$data['error'] = '';
 			$data['success'] = '';
 			$error = '';
-
 
 			if(isset($_POST['form1'])) 
 			{
@@ -99,8 +97,10 @@ class content_home extends CI_Controller
 						);
 						$this->Model_content_home->update($id,$form_data);
 					}
+
 					//Add Log User
 					helper_log("edit", '[EDIT] Data: '.$_POST['content'].' Berhasil diupdate');
+
 					$data['success'] = ' Konten Beranda telah berhasil diupdate';
 				}
 				else
@@ -125,7 +125,6 @@ class content_home extends CI_Controller
 		}
 
 	}
-
 	
 	public function item_bg() {
 		if ( ($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or($this->session->userdata('role') == 'staff') ) {

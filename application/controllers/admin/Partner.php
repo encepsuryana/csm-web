@@ -228,7 +228,7 @@ class Partner extends CI_Controller
 			$this->Model_partner->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Partner');
+			helper_log("Delete", '[HAPUS] Data Id: '.$data['partner']['name'].' dihapus dari Partner');
 
 			redirect(base_url().'admin/partner');
 		} else {

@@ -63,7 +63,7 @@ class Electronics_division_category extends CI_Controller
 					//Add Log User
 					helper_log("add", '[TAMBAH] Data: '.$_POST['category_name'].' ditambahkan ke Kategori Divisi Elektronik');
 
-					$data['success'] = 'electronics_division category berhasil ditambahkan!';
+					$data['success'] = 'Kategori Divisi Elektronik berhasil ditambahkan!';
 				}
 
 				$this->load->view('admin/view_header',$header);
@@ -85,15 +85,13 @@ class Electronics_division_category extends CI_Controller
 		}
 	}
 
-
 	public function edit($id)
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
-    	// If there is no service in this id, then redirect
-			$tot = $this->Model_electronics_division_category->electronics_division_category_check($id);
+    		$tot = $this->Model_electronics_division_category->electronics_division_category_check($id);
 			if(!$tot) {
-				redirect(base_url().'admin/electronics_division-category');
+				redirect(base_url().'admin/electronics-division-category');
 				exit;
 			}
 
@@ -102,10 +100,8 @@ class Electronics_division_category extends CI_Controller
 			$data['success'] = '';
 			$error = '';
 
-
 			if(isset($_POST['form1'])) 
 			{
-
 				$valid = 1;
 
 				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
@@ -115,7 +111,7 @@ class Electronics_division_category extends CI_Controller
 					$data['error'] = validation_errors();
 				} else {
 
-            	// Duplicate Category Checking
+            		// Duplicate Category Checking
 					$data['electronics_division_category'] = $this->Model_electronics_division_category->getData($id);
 					$total = $this->Model_electronics_division_category->duplicate_check($_POST['category_name'],$data['electronics_division_category']['category_name']);				
 					if($total) {
@@ -126,7 +122,7 @@ class Electronics_division_category extends CI_Controller
 
 				if($valid == 1) 
 				{
-		    	// Updating Data
+		    		// Updating Data
 					$form_data = array(
 						'category_name'=> $_POST['category_name'],
 						'status'       => $_POST['status']
@@ -136,7 +132,7 @@ class Electronics_division_category extends CI_Controller
 					//Add Log User
 					helper_log("edit", '[EDIT] Data: '.$_POST['category_name'].' diupdate pada Kategori Divisi Elektronik');
 
-					$data['success'] = 'electronics_division Category telah berhasil diupdate';
+					$data['success'] = 'Kategori Divisi Elektronik telah berhasil diupdate';
 				}
 
 				$data['electronics_division_category'] = $this->Model_electronics_division_category->getData($id);
@@ -168,10 +164,11 @@ class Electronics_division_category extends CI_Controller
 		// If there is no electronics_division category in this id, then redirect
 			$tot = $this->Model_electronics_division_category->electronics_division_category_check($id);
 			if(!$tot) {
-				redirect(base_url().'admin/electronics_division-category');
+				redirect(base_url().'admin/electronics-division-category');
 				exit;
 			}
 
+			$data['electronics_division_category'] = $this->Model_electronics_division_category->getData($id);
 
 			$result = $this->Model_electronics_division_category->getData1($id);
 			foreach ($result as $row) {
@@ -194,9 +191,9 @@ class Electronics_division_category extends CI_Controller
 			$this->Model_electronics_division_category->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari kategori Divisi Elektronik');
+			helper_log("Delete", '[HAPUS] Data Id: '.$data['electronics_division_category']['category_name'].' dihapus dari kategori Divisi Elektronik');
 
-			redirect(base_url().'admin/electronics_division-category');
+			redirect(base_url().'admin/electronics-division-category');
 		} else {
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');

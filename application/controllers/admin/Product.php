@@ -249,7 +249,7 @@ class Product extends CI_Controller
 			$this->Model_product->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Produk');
+			helper_log("Delete", '[HAPUS] Data Id: '.$data['product']['product_caption'].' dihapus dari Produk');
 
 			redirect(base_url().'admin/product');
 		} else {

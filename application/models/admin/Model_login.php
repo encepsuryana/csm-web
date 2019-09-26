@@ -26,7 +26,7 @@ class Model_login extends CI_Model
     {      
         $where = array(
             'email' => $email,
-            'password' => $this->bcrypt->check_password($password, $stored_hash)
+            'password' => md5($password)
         );
         $this->db->select('*');
         $this->db->from('tbl_user');

@@ -36,9 +36,11 @@ class Language extends CI_Controller
 					);
 					$this->Model_language->update($new_arr3[$i],$form_data);
 				}
+				//Add Log User
+				helper_log("edit", '[EDIT] Database Bahasa Inggris diupdate');
 
-				$data['success'] = 'Language data telah berhasil diupdate';
-
+				$data['success'] = 'Database Bahasa Inggris telah berhasil diupdate';
+				
 				$data['language'] = $this->Model_language->show();
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_language',$data);
@@ -62,9 +64,9 @@ class Language extends CI_Controller
 				}
 
 				//Add Log User
-				helper_log("edit", '[EDIT] Database Bahasa diupdate');
+				helper_log("edit", '[EDIT] Database Bahasa Indonesia diupdate');
 
-				$data['success'] = 'Database Bahasa telah berhasil diupdate';
+				$data['success'] = 'Database Bahasa Indonesia telah berhasil diupdate';
 
 				$data['language'] = $this->Model_language->show();
 				$this->load->view('admin/view_header',$header);

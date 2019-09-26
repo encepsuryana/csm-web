@@ -269,7 +269,7 @@ class Service extends CI_Controller
 			$this->Model_service->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Layanan');
+			helper_log("Delete", '[HAPUS] Data Id: '.$data['service']['heading'].' dihapus dari Layanan');
 
 			redirect(base_url().'admin/service');
 		} else {

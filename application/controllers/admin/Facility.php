@@ -124,7 +124,6 @@ class Facility extends CI_Controller
 							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
 							$ext_check = $this->Model_header->extension_check_photo($ext);
 							if($ext_check == FALSE) {
-				        	// Nothing to do, just skip
 							} else {
 								$final_names[$m] = $z.'.'.$ext;
 								move_uploaded_file($photos_temp[$i],"./public/uploads/facility_photos/".$final_names[$m]);
@@ -287,7 +286,6 @@ class Facility extends CI_Controller
 						$final_names = array();
 						for($i=0;$i<count($photos);$i++)
 						{
-
 							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
 							$ext_check = $this->Model_header->extension_check_photo($ext);
 							if($ext_check == FALSE) {
@@ -348,7 +346,7 @@ class Facility extends CI_Controller
 	public function delete($id) 
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) {
-		// If there is no facility in this id, then redirect
+
 			$tot = $this->Model_facility->facility_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/facility');
@@ -369,7 +367,7 @@ class Facility extends CI_Controller
 			$this->Model_facility->delete_photos($id);
 			
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$id.' dihapus dari Fasilitas');
+			helper_log("Delete", '[HAPUS] Data Id: '.$data['facility']['name'].' dihapus dari Fasilitas');
 
 			redirect(base_url().'admin/facility');
 		} else {
