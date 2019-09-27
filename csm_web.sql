@@ -77,13 +77,6 @@ CREATE TABLE `tbl_electronics_division` (
   `name` varchar(255) NOT NULL,
   `short_content` text NOT NULL,
   `content` text NOT NULL,
-  `client_name` varchar(255) NOT NULL,
-  `client_company` varchar(255) NOT NULL,
-  `start_date` varchar(50) NOT NULL,
-  `end_date` varchar(50) NOT NULL,
-  `website` varchar(255) NOT NULL,
-  `cost` varchar(50) NOT NULL,
-  `client_comment` text NOT NULL,
   `category_id` varchar(255) NOT NULL,
   `photo` varchar(255) NOT NULL,
   `meta_title` varchar(255) NOT NULL,
@@ -95,15 +88,15 @@ CREATE TABLE `tbl_electronics_division` (
 
 /*Data for the table `tbl_electronics_division` */
 
-insert  into `tbl_electronics_division`(`id`,`name`,`short_content`,`content`,`client_name`,`client_company`,`start_date`,`end_date`,`website`,`cost`,`client_comment`,`category_id`,`photo`,`meta_title`,`meta_keyword`,`meta_description`,`slug_electronics`) values 
-(1,'PLC Controller design and implementations','PLC Controller design and implementations','<p>PLC Controller design and implementations<br></p>','','','','','','','','1','electronics_division-1.jpg','PLC Controller design and implementations','PLC Controller design and implementations','PLC Controller design and implementations','plc-controller-design-and-implementations.html'),
-(2,'Power electronics design and manufacturing','Power electronics design and manufacturing','<p>Power electronics design and manufacturing <br></p>','','','','','','','','1','electronics_division-2.jpg','Power electronics design and manufacturing ','Power electronics design and manufacturing ','Power electronics design and manufacturing ','power-electronics-design-and-manufacturing.html'),
-(3,'Man-Machine Interface','MMI (Man-Machine Interface)','<p>MMI (Man-Machine Interface)<br></p>','','','','','','','','1','electronics_division-3.jpg','MMI (Man-Machine Interface)','MMI (Man-Machine Interface)','MMI (Man-Machine Interface)','man-machine-interface.html'),
-(4,'Ruggedized electronic controllers','Ruggedized electronic controllers','<p>Ruggedized electronic controllers<br></p>','','','','','','','','2','electronics_division-4.jpg','Ruggedized electronic controllers','Ruggedized electronic controllers','Ruggedized electronic controllers','ruggedized-electronic-controllers.html'),
-(5,'Harsh environmental power drivers','Harsh environmental power drivers','<p>Harsh environmental power drivers <br></p>','','','','','','','','2','electronics_division-5.jpg','Harsh environmental power drivers ','Harsh environmental power drivers ','Harsh environmental power drivers ','harsh-environmental-power-drivers.html'),
-(6,'Mission computers','Mission computers','<p>Mission computers <br></p>','','','','','','','','3','electronics_division-6.jpg','Mission computers ','Mission computers ','Mission computers ','mission-computers.html'),
-(7,'Display systems Multi-Function Display-MFD Moving Map Display etc','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','','','','','','','','3','electronics_division-7.jpg','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','display-systems-multi-function-display-mfd-moving-map-display-etc.html'),
-(8,'Sensor interface units','Sensor interface units','<p>Sensor interface units <br></p>','','','','','','','','3','electronics_division-8.jpg','Sensor interface units ','Sensor interface units ','Sensor interface units ','sensor-interface-units.html');
+insert  into `tbl_electronics_division`(`id`,`name`,`short_content`,`content`,`category_id`,`photo`,`meta_title`,`meta_keyword`,`meta_description`,`slug_electronics`) values 
+(1,'PLC Controller design and implementations','PLC Controller design and implementations','<p>PLC Controller design and implementations<br></p>','1','electronics_division-1.jpg','PLC Controller design and implementations','PLC Controller design and implementations','PLC Controller design and implementations','plc-controller-design-and-implementations.html'),
+(2,'Power electronics design and manufacturing','Power electronics design and manufacturing','<p>Power electronics design and manufacturing <br></p>','1','electronics_division-2.jpg','Power electronics design and manufacturing ','Power electronics design and manufacturing ','Power electronics design and manufacturing ','power-electronics-design-and-manufacturing.html'),
+(3,'Man-Machine Interface','MMI (Man-Machine Interface)','<p>MMI (Man-Machine Interface)<br></p>','1','electronics_division-3.jpg','MMI (Man-Machine Interface)','MMI (Man-Machine Interface)','MMI (Man-Machine Interface)','man-machine-interface.html'),
+(4,'Ruggedized electronic controllers','Ruggedized electronic controllers','<p>Ruggedized electronic controllers<br></p>','2','electronics_division-4.jpg','Ruggedized electronic controllers','Ruggedized electronic controllers','Ruggedized electronic controllers','ruggedized-electronic-controllers.html'),
+(5,'Harsh environmental power drivers','Harsh environmental power drivers','<p>Harsh environmental power drivers <br></p>','2','electronics_division-5.jpg','Harsh environmental power drivers ','Harsh environmental power drivers ','Harsh environmental power drivers ','harsh-environmental-power-drivers.html'),
+(6,'Mission computers','Mission computers','<p>Mission computers <br></p>','3','electronics_division-6.jpg','Mission computers ','Mission computers ','Mission computers ','mission-computers.html'),
+(7,'Display systems Multi-Function Display-MFD Moving Map Display etc','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','3','electronics_division-7.jpg','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','display-systems-multi-function-display-mfd-moving-map-display-etc.html'),
+(8,'Sensor interface units','Sensor interface units','<p>Sensor interface units <br></p>','3','electronics_division-8.jpg','Sensor interface units ','Sensor interface units ','Sensor interface units ','sensor-interface-units.html');
 
 /*Table structure for table `tbl_electronics_division_category` */
 
@@ -193,7 +186,7 @@ CREATE TABLE `tbl_facility_category` (
   `category_name` varchar(255) NOT NULL,
   `status` varchar(30) NOT NULL,
   PRIMARY KEY (`category_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_facility_category` */
 
@@ -242,7 +235,7 @@ CREATE TABLE `tbl_language` (
   `eng` text NOT NULL,
   `idn` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=86 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_language` */
 
@@ -326,8 +319,8 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (79,'STRUCTURE_ORGANIZATION','Structure Organization','Struktur Organisasi'),
 (80,'VISION_AND_MISSION','Vision & Mission','Visi & Misi'),
 (81,'ABOUT_COMPANY','About Company Us','Tentang Perusahaan Kami'),
-(84,'SITE_MAPS','Site Maps','Site Maps'),
-(85,'MONDAY_FRIDAY','Monday - Friday','Senin - Jumat');
+(82,'SITE_MAPS','Site Maps','Site Maps'),
+(83,'MONDAY_FRIDAY','Monday - Friday','Senin - Jumat');
 
 /*Table structure for table `tbl_logging` */
 
