@@ -290,7 +290,7 @@
 								</ul>
 							</li>	
 
-							<li class="treeview <?php if( ($final_url_other == 'admin/page') ) {echo 'active';} ?>">
+							<li class="treeview <?php if( ($final_url_other == 'admin/page') || ($final_url_other == 'admin/page/update')) {echo 'active';} ?>">
 								<a href="<?php echo base_url().$this->session->userdata('role'); ?>/page">
 									<i class="fa fa-file-text"></i> <span>Halaman</span>
 								</a>

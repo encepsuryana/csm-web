@@ -252,7 +252,7 @@ class Testimonial extends CI_Controller
 			$this->Model_testimonial->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '..$data['testimonial']['company'].' dihapus dari Testimonial');
+			helper_log("Delete", '[HAPUS] Data Id: '.$data['testimonial']['company'].' dihapus dari Testimonial');
 
 			redirect(base_url().'admin/testimonial');
 		} else {

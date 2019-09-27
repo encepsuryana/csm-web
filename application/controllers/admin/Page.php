@@ -244,7 +244,7 @@ class Page extends CI_Controller
 				//Add Log User
 				helper_log("edit", '[EDIT] Halaman Layanan telah diupdate');
 
-				$data['success'] = 'Setting Hamalan Layanan telah berhasil diupdate!';
+				$data['success'] = 'Setting Halaman Layanan telah berhasil diupdate!';
 			}
 
 			if(isset($_POST['form_facility'])) {			
@@ -258,7 +258,7 @@ class Page extends CI_Controller
 				//Add Log User
 				helper_log("edit", '[EDIT] Halaman Fasilitas telah diupdate');
 
-				$data['success'] = 'Setting Halaman Pelayanan telah berhasil diupdate!';
+				$data['success'] = 'Setting Halaman Fasilitas telah berhasil diupdate!';
 			}
 
 			if(isset($_POST['form_portfolio'])) {			

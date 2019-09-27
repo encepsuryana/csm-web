@@ -36,7 +36,7 @@ class Model_content_home extends CI_Model
         return $query->first_row('array');
     }
 
-    function get_photo()
+    function get_file()
     {
         $sql = 'SELECT * FROM tbl_content_home_company_profile WHERE id=?';
         $query = $this->db->query($sql,array(1));

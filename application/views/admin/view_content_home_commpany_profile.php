@@ -34,21 +34,15 @@ if(!$this->session->userdata('id')) {
 							<div class="pdf-style">
 								<label for="" class="col-sm-2"></label>
 								<div class="col-md-5">
-									<i title="<?php echo $content_home['file_pdf']; ?>" data-toggle="tooltip" data-placement="right" class="fa fa-file-pdf-o" aria-hidden="true"></i>
-									<label for=""><?php echo $content_home['file_pdf']; ?></label>
-
+									<i title="<?php echo $content_home['file_pdf']; ?>" data-toggle="tooltip" data-placement="top" class="fa fa-file-pdf-o" aria-hidden="true"></i>
+									<label style="margin-left: 5px;" for="">File Pdf: Company Profile</label>
 								</div>
 							</div>
 						</div>
-						<script>
-							$(document).ready(function(){
-								$('[data-toggle="tooltip"]').tooltip();   
-							});
-						</script>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Pilih File: </label>
 							<div class="col-sm-4">
-								<input type="file" name="photo" class="form-control">
+								<input type="file" name="file" class="form-control">
 							</div>
 						</div>
 						<div class="form-group">

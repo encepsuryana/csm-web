@@ -47,7 +47,7 @@ class Comment extends CI_Controller
 				$data['comment'] = $this->Model_comment->show();
 
 				//Add Log User
-				helper_log("edit", '(Edit) '.$_POST['code_body']);
+				helper_log("edit", '[EDIT] Data Komentar berhasil diperbaharui.');
 
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_comment',$data);

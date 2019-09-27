@@ -136,8 +136,8 @@ class content_home extends CI_Controller
 			if(isset($_POST['form1'])) {
 				$valid = 1;
 
-				$path = $_FILES['photo']['name'];
-				$path_tmp = $_FILES['photo']['tmp_name'];
+				$path = $_FILES['file']['name'];
+				$path_tmp = $_FILES['file']['tmp_name'];
 
 				if($path!='') {
 					$ext = pathinfo( $path, PATHINFO_EXTENSION );
@@ -154,7 +154,7 @@ class content_home extends CI_Controller
 
 				if($valid == 1) {
 
-					$data['content_home'] = $this->Model_content_home->get_photo();
+					$data['content_home'] = $this->Model_content_home->get_file();
 
 					unlink('./public/uploads/file/'.$data['content_home']['file_pdf']);
 
@@ -167,19 +167,19 @@ class content_home extends CI_Controller
 					$this->Model_content_home->update_content_home_photo($form_data);	
 					
 					//Add Log User
-					helper_log("edit", '[EDIT] Company Profile diperbaharui');		
+					helper_log("edit", '[EDIT] Data Company Profile diperbaharui');		
 
 					$data['success'] = 'Konten Beranda (Company Profile) telah berhasil diupdate!';
 				}
 
-				$data['content_home'] = $this->Model_content_home->get_photo();
+				$data['content_home'] = $this->Model_content_home->get_file();
 
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_content_home_commpany_profile',$data);
 				$this->load->view('admin/view_footer');
 
 			} else {
-				$data['content_home'] = $this->Model_content_home->get_photo();
+				$data['content_home'] = $this->Model_content_home->get_file();
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_content_home_commpany_profile',$data);
 				$this->load->view('admin/view_footer');

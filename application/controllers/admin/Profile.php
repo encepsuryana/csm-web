@@ -332,7 +332,7 @@ class Profile extends CI_Controller
 					}
 
 					//Add Log User
-					helper_log("edit", '[EDIT] Data User:'.$_POST['full_name'].' diubah oleh '.$this->session->userdata('full_name'));
+					helper_log("edit", '[EDIT] Data User: '.$_POST['full_name'].' diubah oleh '.$this->session->userdata('full_name'));
 
 					$data['success'] = 'profile telah berhasil diupdate';
 				}
