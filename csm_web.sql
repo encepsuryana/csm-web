@@ -329,6 +329,28 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (84,'SITE_MAPS','Site Maps','Site Maps'),
 (85,'MONDAY_FRIDAY','Monday - Friday','Senin - Jumat');
 
+/*Table structure for table `tbl_logging` */
+
+DROP TABLE IF EXISTS `tbl_logging`;
+
+CREATE TABLE `tbl_logging` (
+  `log_id` int(11) NOT NULL AUTO_INCREMENT,
+  `log_time` timestamp NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `log_user` varchar(255) DEFAULT NULL,
+  `log_tipe` int(11) DEFAULT NULL,
+  `log_desc` varchar(255) DEFAULT NULL,
+  `log_ipaddress` varchar(255) DEFAULT NULL,
+  `log_useragen` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`log_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+/*Data for the table `tbl_logging` */
+
+insert  into `tbl_logging`(`log_id`,`log_time`,`log_user`,`log_tipe`,`log_desc`,`log_ipaddress`,`log_useragen`) values 
+(1,'2019-09-27 10:17:23','Encep Suryana',3,'[EDIT] Data User:HRD diubah oleh Encep Suryana','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(2,'2019-09-27 10:17:49','Encep Suryana',3,'[EDIT] Data User:Staff diubah oleh Encep Suryana','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(3,'2019-09-27 10:18:17','Encep Suryana',3,'[EDIT] Data User:Admin diubah oleh Encep Suryana','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>');
+
 /*Table structure for table `tbl_news` */
 
 DROP TABLE IF EXISTS `tbl_news`;
@@ -872,9 +894,9 @@ CREATE TABLE `tbl_user` (
 
 insert  into `tbl_user`(`id`,`full_name`,`email`,`phone`,`password`,`photo`,`role`,`status`,`token`) values 
 (1,'Encep Suryana','encep.suryanajr@gmail.com','082129714260','e4e05d342730456fcf3d8c87e95d5748','avatar-1.png','admin','Active',''),
-(2,'HRD','hrd@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-2.png','hrd','Active',''),
-(3,'Staff','staff@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-3.png','staff','Active',''),
-(4,'Admin','admin@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-4.png','admin','Active','');
+(2,'HRD','hrd@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-2.jpg','hrd','Active',''),
+(3,'Staff','staff@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-3.jpg','staff','Active',''),
+(4,'Admin','admin@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-4.jpg','admin','Active','');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

@@ -10,7 +10,6 @@ class Login extends CI_Controller
         $this->load->model('admin/Model_login');
         $this->load->model('admin/Model_log');
         $this->load->library('recaptcha');
-        $this->load->library('bcrypt');
     }
 
     public function index()
