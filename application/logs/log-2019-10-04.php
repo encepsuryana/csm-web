@@ -102,3 +102,16 @@ ERROR - 2019-10-04 13:38:30 --> 404 Page Not Found: Public/css
 ERROR - 2019-10-04 13:38:54 --> 404 Page Not Found: Public/css
 ERROR - 2019-10-04 13:39:22 --> 404 Page Not Found: Public/css
 ERROR - 2019-10-04 13:39:38 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-04 14:06:45 --> 404 Page Not Found: admin/All/square
+ERROR - 2019-10-04 14:06:45 --> 404 Page Not Found: admin/All/minimal
+ERROR - 2019-10-04 14:06:45 --> 404 Page Not Found: admin/All/futurico
+ERROR - 2019-10-04 14:06:45 --> 404 Page Not Found: admin/All/flat
+ERROR - 2019-10-04 14:06:45 --> 404 Page Not Found: admin/All/polaris
+ERROR - 2019-10-04 14:06:45 --> 404 Page Not Found: admin/All/line
+ERROR - 2019-10-04 14:06:45 --> 404 Page Not Found: Fonts/fontawesome_webfont.woff2
+ERROR - 2019-10-04 14:06:46 --> 404 Page Not Found: Fonts/glyphicons_halflings_regular.woff2
+ERROR - 2019-10-04 14:06:46 --> 404 Page Not Found: Fonts/fontawesome_webfont.woff
+ERROR - 2019-10-04 14:06:46 --> 404 Page Not Found: Fonts/glyphicons_halflings_regular.woff
+ERROR - 2019-10-04 14:06:46 --> 404 Page Not Found: Fonts/fontawesome_webfont.ttf
+ERROR - 2019-10-04 14:06:46 --> 404 Page Not Found: Fonts/glyphicons_halflings_regular.ttf
+ERROR - 2019-10-04 14:17:11 --> 404 Page Not Found: Public/admin

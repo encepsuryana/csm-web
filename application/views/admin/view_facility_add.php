@@ -10,13 +10,11 @@ if(!$this->session->userdata('id')) {
 			<h1>Tambah Fasilitas</h1>
 		</div>
 		<div class="content-header-right">
-				<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility" class="btn btn-primary btn-sm">Lihat Semua</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
-
 	<section class="content">
-
 		<div class="row">
 			<div class="col-md-12">
 
@@ -51,13 +49,20 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Konten *</label>
+							<label for="" class="col-sm-2 control-label">Foto Unggulan <span>*</span></label>
+							<div class="col-sm-9" style="padding-top:5px">
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
+
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="content" id="editor1"><?php if(isset($_POST['content'])){echo $_POST['content'];} ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Pilih Kategori *</label>
+							<label for="" class="col-sm-2 control-label">Pilih Kategori <span>*</span></label>
 							<div class="col-sm-4">
 								<select name="category_id" class="form-control select2">
 									<?php
@@ -68,14 +73,6 @@ if(!$this->session->userdata('id')) {
 									}
 									?>
 								</select>
-							</div>
-						</div>
-						<h3 class="seo-info">Foto Unggulan</h3>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Foto Unggulan <span>*</span></label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
-
 							</div>
 						</div>
 						<h3 class="seo-info">Foto Galeri</h3>

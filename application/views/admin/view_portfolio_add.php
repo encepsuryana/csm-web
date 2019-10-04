@@ -51,6 +51,12 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Foto Unggulan <span>*</span></label>
+							<div class="col-sm-9" style="margin-top:5px">
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
+							</div>
+						</div>
+						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="content" id="editor1"><?php if(isset($_POST['content'])){echo $_POST['content'];} ?></textarea>
@@ -68,13 +74,6 @@ if(!$this->session->userdata('id')) {
 									}
 									?>
 								</select>
-							</div>
-						</div>
-						<h3 class="seo-info">Foto Unggulan</h3>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Foto Unggulan <span>*</span></label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
 						<h3 class="seo-info">Foto Galeri</h3>

@@ -48,13 +48,25 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Konten *</label>
+							<label for="" class="col-sm-2 control-label"> </label>
+							<div class="col-sm-9" style="padding-top:5px">
+								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $portfolio['photo']; ?>" alt="" style="width:120px;">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Ubah Cover</label>
+							<div class="col-sm-9" style="padding-top:5px">
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="content" id="editor1"><?php echo $portfolio['content']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Pilih Kategori *</label>
+							<label for="" class="col-sm-2 control-label">Pilih Kategori <span>*</span></label>
 							<div class="col-sm-4">
 								<select name="category_id" class="form-control select2">
 									<?php
@@ -65,19 +77,6 @@ if(!$this->session->userdata('id')) {
 									}
 									?>	
 								</select>
-							</div>
-						</div>
-						<h3 class="seo-info">Foto Unggulan</h3>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Foto Unggulan</label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $portfolio['photo']; ?>" alt="" style="width:120px;">
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Ubah Foto</label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
 						<h3 class="seo-info">Foto Galeri</h3>

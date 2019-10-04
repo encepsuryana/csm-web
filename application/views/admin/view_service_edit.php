@@ -39,21 +39,21 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>			
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
+							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="short_content" style="height:140px;"><?php echo $service['short_content']; ?></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label"> </label>
 							<div class="col-sm-9" style="padding-top:5px;">
 								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $service['photo']; ?>" alt="Service Photo" style="width:200px;">
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Foto </label>
+							<label for="" class="col-sm-2 control-label">Ubah Cover </label>
 							<div class="col-sm-6" style="padding-top:5px">
 								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="short_content" style="height:140px;"><?php echo $service['short_content']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
