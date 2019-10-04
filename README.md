@@ -10,15 +10,17 @@
 ## Server Requirement
 > Before starting to install our item, make sure you fulfill the following requirements:
 ```sh
-* Required PHP version in server >= 7.0
-* mod_rewrite must be enabled in the server.
+1. Required PHP version in server >= 7.0
+2. mod_rewrite must be enabled in the server.
 ```
 
 ## Installation
+1. Change on application > config > config.php
 ```sh
-* Change on application > config > config.php
-	* $config['base_url'] = 'url.com';
-* Change on application > config > database.php
+	$config['base_url'] = 'url.com';
+```
+2. Change on application > config > database.php
+```sh
 	* 'hostname' => 'localhost',
 	* 'username' => 'root',
 	* 'password' => '',
