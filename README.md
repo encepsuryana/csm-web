@@ -16,6 +16,7 @@
 * [Installation](https://github.com/encepsuryana/csm-web#installation)
 * [Credit](https://github.com/encepsuryana/csm-web#credit)
 * [Support](https://github.com/encepsuryana/csm-web#support)
+* [Release History](https://github.com/encepsuryana/csm-web#release-history)
 
 ## Welcome
 > Welcome to Ciptasin website, website of CV. Cipta Sinergi Manufacturing
@@ -62,7 +63,7 @@ This theme has the following features:
 * Secure with Google Captcha authorize
 
 ## Server Requirement
-> Before starting to install our item, make sure you fulfill the following requirements:
+Before starting to install our item, make sure you fulfill the following requirements:
 1. Required PHP version in server >= **7.0**
 2. mod_rewrite must be enabled in the server.
 3. For Local Server installation, you need to have **XAMPP**, **WAMP** or any **apache server with PHP and MySQL**.
@@ -106,6 +107,9 @@ note: change these values
 ## Support
 Thank you for using our script. We are always here to give you necessary support for our items. If you have any query, contact us through the support section of envato or drop us an email here: encep.suryanajr@gmail.com
 
+## Release History
+* 1.0
+	** Release all future
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
