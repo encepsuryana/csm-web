@@ -82,7 +82,7 @@ date_default_timezone_set('Asia/Jakarta')
 $config['base_url'] = 'yourwebsite.com';
 --> This is the main URL where you will setup the script. It can be domain or sub-domain
 ```
-5. Change on application > config > database.php
+5. Change on **application** > **config** > **database.php**
 ```sh
 'hostname' => 'localhost',
 'username' => 'root',
