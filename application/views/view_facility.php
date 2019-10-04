@@ -56,7 +56,7 @@
 									</div>
 								</div>
 								<div class="recent-text">
-									<h5><?php echo $row['name']; ?></h5>
+									<h4><?php echo $row['name']; ?></h4>
 									<p><?php echo $row['short_content']; ?></p>
 									<div class="services-link">
 										<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo READ_MORE; ?></a>

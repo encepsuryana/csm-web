@@ -257,6 +257,8 @@
 		.process-step p,
 		.contact-main-home h4,
 		.caption-product-area h3,
+		.recent-text h4,
+		.slider-animated li:last-child a,
 		.brand-area h3,
 		.banner-text h1,
 		.counter-item a,

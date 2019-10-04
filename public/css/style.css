@@ -331,7 +331,6 @@ img.hover-shadow {
 
 .btn-home li a {
 	font-size: 13px;
-	text-transform: uppercase;
 	display: inline-block;
 	background: #134595;
 	background-repeat: repeat;
@@ -368,7 +367,6 @@ img.hover-shadow {
 }
 
 .caption-product-area h3 {
-	text-transform: uppercase;
 	margin-top: 30px;
 	border-bottom: 1px solid #f81c51;
 }
@@ -402,17 +400,15 @@ img.hover-shadow {
 }
 
 .contact-main-home h4 {
-	text-transform: uppercase;
 	margin: 50px;
 	margin-top: 90px;
 }
 
 .contact-button-home {
-	text-transform: uppercase;
 	margin: 50px;
 }
 .contact-button-home a {
-	padding: 10px 20px;
+	padding: 8px 15px;
 	background: #222;
 	color: #fff;
 	border: 1px solid #222;
@@ -423,7 +419,6 @@ img.hover-shadow {
 
 .contact-button-home a:hover {
 	text-decoration: none;
-	padding: 10px 20px;
 	background: #fff;
 	color: #222;
 }
@@ -440,13 +435,11 @@ img.hover-shadow {
 
 .home-last h3 {
 	margin: 30px 0;
-	text-transform: uppercase;
 	border-bottom: 1px solid #f81c51;
 }
 
 .all-news a{
 	font-size: 14px;
-	text-transform: uppercase;
 	float: right;
 	margin-bottom: 20px;
 	border-bottom: 1px solid #f81c51;
@@ -460,7 +453,6 @@ img.hover-shadow {
 
 .all-product a{
 	font-size: 14px;
-	text-transform: uppercase;
 	float: right;
 	margin: 20px 6px;
 	border-bottom: 1px solid #f81c51;
@@ -847,10 +839,9 @@ ul.nav-ciptasin li.current_page_item a {
 }
 
 ul.nav-ciptasin li a {
-	font-size: 11px;
-	font-weight: 700;
-	text-transform: uppercase;
+	font-size: 13px;
 	text-decoration: none;
+	font-weight: bold;
 	display: block;
 	padding: 10px 15px;
 	transition: all 0.4s;
@@ -1059,7 +1050,7 @@ ul.nav-ciptasin li:hover a {
 }
 .sticky ul.nav-ciptasin li a {
 	text-decoration: none;
-	padding: 20px 15px;
+	padding: 19px 15px;
 }
 
 .sticky ul.nav-ciptasin li ul {
@@ -1163,7 +1154,6 @@ Slider
 .slider-animated h2 {
 	font-size: 25px;
 	color: #fff;
-	text-transform: uppercase;
 	margin: 0;
 	margin-bottom: 15px;
 	margin-left: 80px;
@@ -1204,13 +1194,12 @@ Slider
 
 .slider-animated li a {
 	font-size: 13px;
-	text-transform: uppercase;
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
 	border: 1px solid #13233b;
 	-webkit-border-radius: 3px;
-	padding: 10px 25px;
+	padding: 8px 15px;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	border-radius: 20px;
@@ -1366,7 +1355,6 @@ Slider
 .services-text h3 a {
 	color: #134595;
 	text-decoration: none;
-	text-transform: uppercase;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 }
@@ -1390,8 +1378,7 @@ Slider
 	border-radius: 20px;
 	border: 1px solid #333;	
 	background-color: #134595;
-	padding: 10px 30px;
-	text-transform: uppercase;
+	padding: 8px 15px;
 	text-decoration: none;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
@@ -1461,11 +1448,10 @@ Slider
 .recent-menu ul li {
 	cursor: pointer;
 	font-size: 14px;
-	text-transform: uppercase;
 	display: inline-block;
 	background: #fff;
 	border: 1px solid #ddd;
-	padding: 10px 15px;
+	padding: 5px 15px;
 	margin-top: 10px;
 	border-radius: 20px;
 	transition: all 0.4s;
@@ -1572,8 +1558,7 @@ Slider
 	height: 200px;
 }
 
-.recent-text h5 {
-	text-transform: uppercase;
+.recent-text h4 {
 	margin-top: 2px;
 }
 
@@ -1854,9 +1839,7 @@ Slider
 	padding: 10px 35px;
 	margin-top: 20px;
 }
-.counter-text h3 {
-	text-transform: uppercase;
-}
+
 .counter-link {
 	padding: 10px 0 ;
 }
@@ -1960,7 +1943,6 @@ Slider
 
 .caption-text p {
 	margin: 0;
-	text-transform: uppercase;
 }
 
 /*Blog-Area*/
@@ -2048,7 +2030,6 @@ Slider
 .contenido-publicacion-home h3 {
 	font-weight: 900;
 	font-size: 20px;
-	text-transform: uppercase;
 }
 
 .csmpublic-home 
@@ -2103,7 +2084,6 @@ Slider
 .csmpublic-home .to-csmpub-home span {
 	color: #fff;
 	font-weight: 900;
-	text-transform: uppercase;
 	font-size: 25px;
 	line-height: 26px;
 }
@@ -2156,7 +2136,6 @@ Slider
 }
 
 .blog-author li span {
-	text-transform: uppercase;
 	margin-right: 5px;
 }
 
@@ -2285,7 +2264,6 @@ span.page-numbers.current {
 }
 
 .brand-area h3 {
-	text-transform: uppercase;
 	margin: 30px 0;
 	border-bottom: 1px solid #f81c51;
 }
@@ -2716,7 +2694,6 @@ span.page-numbers.current {
 
 .banner-text h1 {
 	font-size: 34px;
-	text-transform: uppercase;
 	color: #fff;
 	margin: 0;
 }
@@ -4439,6 +4416,7 @@ ul.timeline li {
 	margin: 20px 0;
 	padding-left: 50px;
 	text-align: justify;
+	font-size: 13px;
 }
 
 ul.timeline li:before {
@@ -4456,7 +4434,7 @@ ul.timeline li:before {
 
 ul.timeline li a {
 	font-size: 14px;
-	text-transform: uppercase;
+	line-height: 2.5em;
 }
 
 ul.timeline li a:hover {
