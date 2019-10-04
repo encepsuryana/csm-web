@@ -9,8 +9,8 @@
 
 ## Table of Contents
 * [Ciptasin-Web](https://github.com/encepsuryana/csm-web#ciptasin-web)
-* [Welcome](https://github.com/encepsuryana/csm-web#welcome)
 * [Table of Contents](https://github.com/encepsuryana/csm-web#table-of-content)
+* [Welcome](https://github.com/encepsuryana/csm-web#welcome)
 * [Server Requirement](https://github.com/encepsuryana/csm-web#server-requirement)
 * [Future](https://github.com/encepsuryana/csm-web#future)
 * [Installation](https://github.com/encepsuryana/csm-web#installation)
