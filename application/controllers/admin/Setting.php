@@ -225,6 +225,13 @@ class Setting extends CI_Controller
 					'protocol'             		   => $_POST['protocol'],
 					'smtp_host'             	   => $_POST['smtp_host'],
 					'smtp_port'             	   => $_POST['smtp_port'],
+					'logo_image' 				   => $_POST['logo_image'],
+					'logo_alt' 					   => $_POST['logo_alt'],
+					'background' 	  	     	   => $_POST['background'],
+					'text_color' 				   => $_POST['text_color'],
+					'company_name' 				   => $_POST['company_name'],
+					'company_address' 			   => $_POST['company_address'],
+					'company_telp' 				   => $_POST['company_telp'],
 					'reset_password_email_subject' => $_POST['reset_password_email_subject']
 				);
 				$this->Model_setting->update($form_data);

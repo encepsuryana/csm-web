@@ -370,7 +370,48 @@ if(!$this->session->userdata('id')) {
 									</div>
 								</div>
 								<h3 class="seo-info">Template Email</h3>
-
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Logo Perusahaan <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="logo_image" value="<?php echo $setting['logo_image']; ?>">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Logo Alt <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="logo_alt" value="<?php echo $setting['logo_alt']; ?>">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Background Header <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control jscolor" name="background" value="<?php echo $setting['background']; ?>">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Warna Text <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control jscolor" name="text_color" value="<?php echo $setting['text_color']; ?>">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Nama Perusahaan <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="company_name" value="<?php echo $setting['company_name']; ?>">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Alamat Perusahaan <span>*</span></label>
+									<div class="col-sm-4">
+										<textarea type="text" class="form-control" name="company_address"><?php echo $setting['company_address']; ?></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">No. Telp <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="company_telp" value="<?php echo $setting['company_telp']; ?>">
+									</div>
+								</div>
 								<div class="form-group">
 									<label for="" class="col-sm-4 control-label"></label>
 									<div class="col-sm-6">

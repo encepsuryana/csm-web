@@ -115,3 +115,13 @@ ERROR - 2019-10-04 14:06:46 --> 404 Page Not Found: Fonts/glyphicons_halflings_r
 ERROR - 2019-10-04 14:06:46 --> 404 Page Not Found: Fonts/fontawesome_webfont.ttf
 ERROR - 2019-10-04 14:06:46 --> 404 Page Not Found: Fonts/glyphicons_halflings_regular.ttf
 ERROR - 2019-10-04 14:17:11 --> 404 Page Not Found: Public/admin
+ERROR - 2019-10-04 16:20:04 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-04 16:31:13 --> 404 Page Not Found: Public/admin
+ERROR - 2019-10-04 16:42:47 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-04 16:43:10 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-04 16:45:19 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-04 16:45:30 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-04 16:47:52 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-04 16:48:49 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-04 16:49:16 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-04 16:49:48 --> 404 Page Not Found: Public/css

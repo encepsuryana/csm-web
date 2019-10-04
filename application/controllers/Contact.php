@@ -73,8 +73,8 @@ class Contact extends CI_Controller {
 					$response = $this->recaptcha->verifyResponse($recaptcha);
 					if (isset($response['success']) and $response['success'] === true) {
 						$msg = '
-						<img src="www.ciptasinergi.com/public/uploads/logo.png" alt="Logo CSM" height="auto" width="150"> 
-						<h4 style="background: #134595; color:#fff; padding: 10px; text-transform: uppercase; margin-bottom: 5px;">Informasi Pengirim Pesan</h4>
+						<img src='.$header['setting']['logo_image'].' alt='.$header['setting']['logo_alt'].' height="auto" width="150"> 
+						<h4 style="background: #'.$header['setting']['background'].'; color: #'.$header['setting']['text_color'].'; padding: 10px; margin-bottom: 5px;">Informasi Pengirim Pesan</h4>
 						<div style="margin: 10px;">
 						<b>Nama :</b> '.$_POST['visitor_name'].'<br>
 						<b>Email :</b> '.$_POST['visitor_email'].'<br>
@@ -86,9 +86,9 @@ class Contact extends CI_Controller {
 
 						<br><br>
 						<div style="background: #f2f3f7; color:#999; padding: 10px; margin-top:20px; padding-bottom: 30px; font-size: 10px; text-align: right; border-top: 1px solid #999">
-						<b>CV. Cipta Sinergi Manufacturing</b><br><br>
-						Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat - Indonesia (40512) <br>
-						(022) 6647945<br><br>
+						<b>'.$header['setting']['company_name'].'</b><br><br>
+						'.$header['setting']['company_address'].' <br>
+						'.$header['setting']['company_telp'].'<br><br>
 						www.ciptasinergi.com
 						</div>
 						';
