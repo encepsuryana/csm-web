@@ -5,7 +5,7 @@
 			</div>
 			<div class="col-md-8" style="padding: 0;">
 				<div class="banner-text">
-					<h1><?php echo ELECTRONICS_DIVISION; ?></h1>
+					<h1><?php echo $electronics_division['name']; ?></h1>
 				</div>
 			</div>
 		</div>
