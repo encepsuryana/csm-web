@@ -7,6 +7,16 @@
 
 ![](public/uploads/logo.png)
 
+## Table of Contents
+* [Ciptasin-Web](https://github.com/encepsuryana/csm-web#ciptasin-web)
+* [Welcome](https://github.com/encepsuryana/csm-web#welcome)
+* [Table of Contents](https://github.com/encepsuryana/csm-web#table-of-content)
+* [Server Requirement](https://github.com/encepsuryana/csm-web#server-requirement)
+* [Future](https://github.com/encepsuryana/csm-web#future)
+* [Installation](https://github.com/encepsuryana/csm-web#installation)
+* [Credit](https://github.com/encepsuryana/csm-web#credit)
+* [Support](https://github.com/encepsuryana/csm-web#support)
+
 ## Welcome
 > Welcome to Ciptasin website, website of CV. Cipta Sinergi Manufacturing
 * Created      : Agust 23, 2019
@@ -16,15 +26,6 @@
 * Email: encep.suryanajr@gmail.com
 * Instagram: [@encepsuryana_](https://www.instagram.com/encepsuryana_/)
 * Link web     : [Ciptasin website](https://www.ciptasinergi.com)
-
-## Table of Contents
-* [Ciptasin-Web](https://github.com/encepsuryana/csm-web#ciptasin-web)
-* [Welcome](https://github.com/encepsuryana/csm-web#welcome)
-* [Server Requirement](https://github.com/encepsuryana/csm-web#server-requirement)
-* [Future](https://github.com/encepsuryana/csm-web#future)
-* [Installation](https://github.com/encepsuryana/csm-web#installation)
-* [Credit](https://github.com/encepsuryana/csm-web#credit)
-* [Support](https://github.com/encepsuryana/csm-web#support)
 
 ## Server Requirement
 > Before starting to install our item, make sure you fulfill the following requirements:
