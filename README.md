@@ -29,7 +29,7 @@
 ## Introduction
 Ciptasin website is a responsive Manufacturing Company profile related Website Content Management System (CMS). This CMS is built completely with PHP and MySQL. It has a nice and attractive front end and back end interface that are really awesome and eyecatching. The back end has a lot of nice and maintainable features that are needed for a modern and professional website to handle the contents easily by client. Almost all kinds of changes are possible to do using the admin panel without having any kind or programming language knowledge.
 
-This CMS is built using the Codeigniter PHP Framework. For this reason, it can be customized easily by other developers and they can understand the code flow easily. This CMS is strong against SQL injection, XSS & CSRF attack. Also in all pages, admin level security is implemented. 
+This CMS is built using the Codeigniter PHP Framework. For this reason, it can be customized easily by other developers and they can understand the code flow easily. This CMS is strong against **SQL injection**, **XSS & CSRF attack**. Also in all pages, admin level **security is implemented**. 
 
 ## Future
 This theme has the following features:
@@ -58,16 +58,15 @@ This theme has the following features:
 * Unlimited file uploading system
 * Customizable in own language
 * All major social media URL setup for top bar and sidebar
-* Bckground and Theme color changing option
+* Background and Theme color changing option
+* Secure with Google Captcha authorize
 
 ## Server Requirement
 > Before starting to install our item, make sure you fulfill the following requirements:
-```sh
-1. Required PHP version in server >= 7.0
+1. Required PHP version in server >= **7.0**
 2. mod_rewrite must be enabled in the server.
 3. For Local Server installation, you need to have **XAMPP**, **WAMP** or any apache server with PHP and MySQL.
 4. **mod_rewrite** must be enabled in the server. 
-```
 
 ## Installation
 1. Create mysql database using cpanel or your hosting provider's system. Then import the **ciptasin-web.sql** file (that you got into the script's folder) into your created database.
