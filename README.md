@@ -20,10 +20,9 @@
 ## Welcome
 > Welcome to Ciptasin website, website of CV. Cipta Sinergi Manufacturing
 * Created      : Agust 23, 2019
-* Author       : Encep Suryana (Developer)
-* Author email : encep.suryanajr@gmail.com
+* Author       : Encep Suryana
+* Email : encep.suryanajr@gmail.com
 * Linkedin: [Encep Suryana](https://www.linkedin.com/in/encep-suryana-b60080113/)
-* Email: encep.suryanajr@gmail.com
 * Instagram: [@encepsuryana_](https://www.instagram.com/encepsuryana_/)
 * Link web     : [Ciptasin website](https://www.ciptasinergi.com)
 
