@@ -109,7 +109,7 @@ Thank you for using our script. We are always here to give you necessary support
 
 ## Release History
 * 1.0
-	** Release all future
+	* Release all future
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
