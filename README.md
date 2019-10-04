@@ -27,9 +27,9 @@
 * Link web     : [Ciptasin website](https://www.ciptasinergi.com)
 
 ## Introduction
-Ciptasin website is a responsive Manufacturing Company profile related Website Content Management System (CMS). This CMS is built completely with PHP and MySQL. It has a nice and attractive front end and back end interface that are really awesome and eyecatching. The back end has a lot of nice and maintainable features that are needed for a modern and professional website to handle the contents easily by client. Almost all kinds of changes are possible to do using the admin panel without having any kind or programming language knowledge.
+Ciptasin website is a responsive Manufacturing Company profile related Website **Content Management System (CMS)**. This CMS is built completely with **PHP** and **MySQL**. It has a nice and attractive front end and back end interface that are really awesome and eyecatching. The back end has a lot of nice and maintainable features that are needed for a modern and professional website to handle the contents easily by client. Almost all kinds of changes are possible to do using the admin panel without having any kind or programming language knowledge.
 
-This CMS is built using the Codeigniter PHP Framework. For this reason, it can be customized easily by other developers and they can understand the code flow easily. This CMS is strong against **SQL injection**, **XSS & CSRF attack**. Also in all pages, admin level **security is implemented**. 
+This CMS is built using the **Codeigniter PHP Framework**. For this reason, it can be customized easily by other developers and they can understand the code flow easily. This CMS is strong against **SQL injection**, **XSS & CSRF attack**. Also in all pages, admin level **security is implemented**. 
 
 ## Future
 This theme has the following features:
@@ -65,19 +65,19 @@ This theme has the following features:
 > Before starting to install our item, make sure you fulfill the following requirements:
 1. Required PHP version in server >= **7.0**
 2. mod_rewrite must be enabled in the server.
-3. For Local Server installation, you need to have **XAMPP**, **WAMP** or any apache server with PHP and MySQL.
+3. For Local Server installation, you need to have **XAMPP**, **WAMP** or any **apache server with PHP and MySQL**.
 4. **mod_rewrite** must be enabled in the server. 
 
 ## Installation
 1. Create mysql database using cpanel or your hosting provider's system. Then import the **ciptasin-web.sql** file (that you got into the script's folder) into your created database.
 
-2. upload all file using **FTP** or **Cpanel**, You can use our cms into root domain or subdomain. Become sure that you have uploaded the .htaccess file correctly. When you will extract the zip file staying on server via cpanel, the .htaccess file may not be extracted properly in the server and then the script will show error. So after extracting, you may have to manually upload the **.htaccess** file into the server that comes with the script file. 
+2. upload all file using **FTP** or **Cpanel**, You can use our cms into root domain or subdomain. Become sure that you have uploaded the .htaccess file correctly. When you will extract the zip file staying on server via cpanel, the **.htaccess** file may not be extracted properly in the server and then the script will show error. So after extracting, you may have to manually upload the **.htaccess** file into the server that comes with the script file. 
 
-3. Now you will have to setup the config and database file. If you are familier with codeigniter, you should know about it. But don't worry! We will tell step by step. 
-4. Change on application > config > config.php
+3. Now you will have to setup the config and database file. If you are familier with **codeigniter**, you should know about it. But don't worry! We will tell step by step. 
+4. Change on **application** > **config** > **config.php**
 ```sh
 date_default_timezone_set('Asia/Jakarta') 
---> You have to setup this timezon to your desired timezone for the script
+--> You have to setup this timezone to your desired timezone for the script
 
 $config['base_url'] = 'yourwebsite.com';
 --> This is the main URL where you will setup the script. It can be domain or sub-domain
