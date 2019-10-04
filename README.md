@@ -9,11 +9,13 @@
 
 ## Server Requirement
 > Before starting to install our item, make sure you fulfill the following requirements:
-
+```sh
 * Required PHP version in server >= 7.0
 * mod_rewrite must be enabled in the server.
+```
 
 ## Installation
+```sh
 * Change on application > config > config.php
 	* $config['base_url'] = 'url.com';
 * Change on application > config > database.php
@@ -22,6 +24,8 @@
 	* 'password' => '',
 	* 'database' => 'csm_web',
 	* 'dbdriver' => 'mysqli',
+```
+## Meta
 
 ## Meta
 
