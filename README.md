@@ -35,9 +35,9 @@
 4. **mod_rewrite** must be enabled in the server. 
 ```
 ## Introduction
-> Ciptasin website is a responsive Manufacturing Company profile related Website Content Management System (CMS). This CMS is built completely with PHP and MySQL. It has a nice and attractive front end and back end interface that are really awesome and eyecatching. The back end has a lot of nice and maintainable features that are needed for a modern and professional website to handle the contents easily by client. Almost all kinds of changes are possible to do using the admin panel without having any kind or programming language knowledge.
+Ciptasin website is a responsive Manufacturing Company profile related Website Content Management System (CMS). This CMS is built completely with PHP and MySQL. It has a nice and attractive front end and back end interface that are really awesome and eyecatching. The back end has a lot of nice and maintainable features that are needed for a modern and professional website to handle the contents easily by client. Almost all kinds of changes are possible to do using the admin panel without having any kind or programming language knowledge.
 
-> This CMS is built using the Codeigniter PHP Framework. For this reason, it can be customized easily by other developers and they can understand the code flow easily. This CMS is strong against SQL injection, XSS & CSRF attack. Also in all pages, admin level security is implemented. 
+This CMS is built using the Codeigniter PHP Framework. For this reason, it can be customized easily by other developers and they can understand the code flow easily. This CMS is strong against SQL injection, XSS & CSRF attack. Also in all pages, admin level security is implemented. 
 
 ## Future
 This theme has the following features:
