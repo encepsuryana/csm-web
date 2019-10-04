@@ -22,9 +22,9 @@
 4. mod_rewrite must be enabled in the server. 
 ```
 ## Introduction
->  Ciptasin website is a responsive Manufacturing related Website Content Management System (CMS). This CMS is built completely with PHP and MySQL. It has a nice and attractive front end and back end interface that are really awesome and eyecatching. The back end has a lot of nice and maintainable features that are needed for a modern and professional website to handle the contents easily by client. Almost all kinds of changes are possible to do using the admin panel without having any kind or programming language knowledge.
+> Ciptasin website is a responsive Manufacturing Company profile related Website Content Management System (CMS). This CMS is built completely with PHP and MySQL. It has a nice and attractive front end and back end interface that are really awesome and eyecatching. The back end has a lot of nice and maintainable features that are needed for a modern and professional website to handle the contents easily by client. Almost all kinds of changes are possible to do using the admin panel without having any kind or programming language knowledge.
 
-This CMS is built using the Codeigniter PHP Framework. For this reason, it can be customized easily by other developers and they can understand the code flow easily. This CMS is strong against SQL injection, XSS & CSRF attack. Also in all pages, admin level security is implemented. 
+> This CMS is built using the Codeigniter PHP Framework. For this reason, it can be customized easily by other developers and they can understand the code flow easily. This CMS is strong against SQL injection, XSS & CSRF attack. Also in all pages, admin level security is implemented. 
 
 ## Future
 This theme has the following features:
@@ -62,8 +62,11 @@ This theme has the following features:
 3. Now you will have to setup the config and database file. If you are familier with codeigniter, you should know about it. But don't worry! We will tell step by step. 
 4. Change on application > config > config.php
 ```sh
-date_default_timezone_set('Asia/Jakarta') --> You have to setup this timezon to your desired timezone for the script
-$config['base_url'] = 'yourwebsite.com'; --> This is the main URL where you will setup the script. It can be domain or sub-domain
+date_default_timezone_set('Asia/Jakarta') 
+--> You have to setup this timezon to your desired timezone for the script
+
+$config['base_url'] = 'yourwebsite.com';
+--> This is the main URL where you will setup the script. It can be domain or sub-domain
 ```
 5. Change on application > config > database.php
 ```sh
@@ -76,11 +79,11 @@ $config['base_url'] = 'yourwebsite.com'; --> This is the main URL where you will
 note: change these values
 ```
 6. Make sure that you have enabled mod_rewrite on your server. Otherwise, our script will not work properly. 
-## Meta
 
 ## Meta
 
 * (Developer) Encep Suryana – [Linkedin: Encep Suryana](https://www.linkedin.com/in/encep-suryana-b60080113/) – encep.suryanajr@gmail.com
+* [Instagram: @encepsuryana_](https://www.instagram.com/encepsuryana_/)
 
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
