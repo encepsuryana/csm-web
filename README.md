@@ -6,20 +6,33 @@
 [![Downloads Stats][npm-downloads]][npm-url]
 
 ![](public/uploads/logo.png)
+
 ## Welcome
 > Welcome to Ciptasin website, website of CV. Cipta Sinergi Manufacturing
 * Created      : Agust 23, 2019
 * Author       : Encep Suryana (Developer)
 * Author email : encep.suryanajr@gmail.com
+* Linkedin: [Encep Suryana](https://www.linkedin.com/in/encep-suryana-b60080113/)
+* Email: encep.suryanajr@gmail.com
+* Instagram: [@encepsuryana_](https://www.instagram.com/encepsuryana_/)
 * Link web     : [Ciptasin website](https://www.ciptasinergi.com)
+
+## Table of Contents
+* [Ciptasin-Web](https://github.com/encepsuryana/csm-web#ciptasin-web)
+* [Welcome](https://github.com/encepsuryana/csm-web#welcome)
+* [Server Requirement](https://github.com/encepsuryana/csm-web#server-requirement)
+* [Future](https://github.com/encepsuryana/csm-web#future)
+* [Installation](https://github.com/encepsuryana/csm-web#installation)
+* [Credit](https://github.com/encepsuryana/csm-web#credit)
+* [Support](https://github.com/encepsuryana/csm-web#support)
 
 ## Server Requirement
 > Before starting to install our item, make sure you fulfill the following requirements:
 ```sh
 1. Required PHP version in server >= 7.0
 2. mod_rewrite must be enabled in the server.
-3. For Local Server installation, you need to have XAMPP, WAMP or any apache server with PHP and MySQL.
-4. mod_rewrite must be enabled in the server. 
+3. For Local Server installation, you need to have **XAMPP**, **WAMP** or any apache server with PHP and MySQL.
+4. **mod_rewrite** must be enabled in the server. 
 ```
 ## Introduction
 > Ciptasin website is a responsive Manufacturing Company profile related Website Content Management System (CMS). This CMS is built completely with PHP and MySQL. It has a nice and attractive front end and back end interface that are really awesome and eyecatching. The back end has a lot of nice and maintainable features that are needed for a modern and professional website to handle the contents easily by client. Almost all kinds of changes are possible to do using the admin panel without having any kind or programming language knowledge.
@@ -57,8 +70,10 @@ This theme has the following features:
 
 
 ## Installation
-1. Create mysql database using cpanel or your hosting provider's system. Then import the ciptasin-web.sql file (that you got into the script's folder) into your created database.
-2. upload all file using FTP or Cpanel, You can use our cms into root domain or subdomain. Become sure that you have uploaded the .htaccess file correctly. When you will extract the zip file staying on server via cpanel, the .htaccess file may not be extracted properly in the server and then the script will show error. So after extracting, you may have to manually upload the .htaccess file into the server that comes with the script file. 
+1. Create mysql database using cpanel or your hosting provider's system. Then import the **ciptasin-web.sql** file (that you got into the script's folder) into your created database.
+
+2. upload all file using **FTP** or **Cpanel**, You can use our cms into root domain or subdomain. Become sure that you have uploaded the .htaccess file correctly. When you will extract the zip file staying on server via cpanel, the .htaccess file may not be extracted properly in the server and then the script will show error. So after extracting, you may have to manually upload the **.htaccess** file into the server that comes with the script file. 
+
 3. Now you will have to setup the config and database file. If you are familier with codeigniter, you should know about it. But don't worry! We will tell step by step. 
 4. Change on application > config > config.php
 ```sh
@@ -80,10 +95,17 @@ note: change these values
 ```
 6. Make sure that you have enabled mod_rewrite on your server. Otherwise, our script will not work properly. 
 
-## Meta
+## Credit
+* [jQuery](https://jquery.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Font Awesome](http://fontawesome.io/)
+* [Francois One](https://fonts.google.com/specimen/Francois+One)
+* [Lato](https://fonts.google.com/specimen/Lato)
+* [OwlCarousel](https://owlcarousel2.github.io/OwlCarousel2/)
+* [Magnefic Popup](http://dimsemenov.com/plugins/magnific-popup/)
 
-* (Developer) Encep Suryana – [Linkedin: Encep Suryana](https://www.linkedin.com/in/encep-suryana-b60080113/) – encep.suryanajr@gmail.com
-* [Instagram: @encepsuryana_](https://www.instagram.com/encepsuryana_/)
+## Support
+Thank you for using our script. We are always here to give you necessary support for our items. If you have any query, contact us through the support section of envato or drop us an email here: encep.suryanajr@gmail.com
 
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
