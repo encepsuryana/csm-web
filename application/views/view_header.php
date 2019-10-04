@@ -261,7 +261,6 @@
 		.banner-text h1,
 		.counter-item a,
 		.content-home h3,
-		.slider-animated li:last-child a,
 		.slide-carousel.owl-carousel .owl-nav .owl-prev:hover, 
 		.slide-carousel.owl-carousel .owl-nav .owl-next:hover,
 		.main-menu .dropdown:before,

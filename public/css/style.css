@@ -525,8 +525,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Francois One', sans-serif;
-	margin-top: 20px;
-	margin-bottom: 10px;
+	margin: 10px 0;
 }
 
 img {
@@ -1222,7 +1221,9 @@ Slider
 	color: #fff;
 	border: 1px solid #0e1726;
 }
-
+.slider-animated li:last-child a {
+	color: #333 !important;
+}
 /*Slide-Carousel*/
 
 .slide-carousel.owl-carousel .owl-nav {
