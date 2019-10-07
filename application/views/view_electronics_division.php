@@ -1,20 +1,16 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="container bannder-table" style="padding: 0;">
 		<div class="col-md-12" style="padding: 0;">
-			<div class="col-md-4">
-			</div>
-			<div class="col-md-8" style="padding: 0;">
-				<div class="banner-text">
-					<h1><?php echo ELECTRONICS_DIVISION; ?></h1>
-				</div>
+			<div class="banner-text">
+				<h1><?php echo ELECTRONICS_DIVISION; ?></h1>
 			</div>
 		</div>
 	</div>
 	<div class="container link-post">
 		<div class="blog-author">
 			<ul>
-				<div class="col-sm-8 blog-link-content">
-					<li class="gro" style="padding-left: 0; padding-top: 5px;">
+				<div class="col-sm-12 menu-link-content">
+					<li class="gro" style="padding-right: 0; padding-top: 5px;">
 						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
 						<a href="<?php echo base_url(); ?>electronics-division"><span><?php echo ELECTRONICS_DIVISION; ?></span></a>
@@ -64,7 +60,7 @@
 				<?php
 				foreach ($electronics_division as $row) {
 					?>
-					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three" data-category="<?php echo $row['category_id']; ?>" data-sort="value">
+					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three bg-about" data-category="<?php echo $row['category_id']; ?>" data-sort="value">
 						<div class="recent-item">
 							<div class="lightbox-item">
 								<div class="recent-photo" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)">

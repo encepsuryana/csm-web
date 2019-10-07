@@ -58,7 +58,7 @@ if(!$this->session->userdata('id')) {
 										</div>			
 									</div>
 									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">No. Telp </label>
+										<label for="" class="col-sm-2 control-label">No. Telp <span>*</span></label>
 										<div class="col-sm-4">
 											<input type="text" class="form-control" name="phone" value="<?php echo $this->session->userdata('phone'); ?>">
 										</div>
@@ -249,7 +249,7 @@ if(!$this->session->userdata('id')) {
 										</div>			
 									</div>
 									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">No. Telp </label>
+										<label for="" class="col-sm-2 control-label">No. Telp <span>*</span></label>
 										<div class="col-sm-4">
 											<input type="text" class="form-control" name="phone" value="<?php echo $this->session->userdata('phone'); ?>">
 										</div>

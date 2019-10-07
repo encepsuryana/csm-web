@@ -5,7 +5,7 @@
 				<div class="footer-contact-item">
 					<ul>
 						<li>
-							<h4>CV. Cipta Sinergi Manufacturing</h4>
+							<h4><?php echo nl2br($setting['general_companyname']); ?></h4>
 							<p>
 								<i class="fa fa-map-marker" aria-hidden="true"></i>
 								<span><?php echo nl2br($setting['footer_address']); ?></span>
@@ -34,7 +34,6 @@
 		</div>
 	</div>
 </div>
-
 
 <div class="scroll-top" style="display: block;">
 	<i class="fa fa-angle-up"></i>

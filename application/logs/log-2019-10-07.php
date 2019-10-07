@@ -1,0 +1,76 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2019-10-07 09:37:03 --> 404 Page Not Found: Upload/index
+ERROR - 2019-10-07 10:12:39 --> Severity: Notice --> Undefined variable: users C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 170
+ERROR - 2019-10-07 10:12:39 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 170
+ERROR - 2019-10-07 10:12:46 --> Severity: Notice --> Undefined variable: users C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 170
+ERROR - 2019-10-07 10:12:46 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\admin\view_profile.php 170
+ERROR - 2019-10-07 10:52:43 --> 404 Page Not Found: Public/admizn
+ERROR - 2019-10-07 14:17:18 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:18:18 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:18:33 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:32:01 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:33:22 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:34:47 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:35:40 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:50:01 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:53:46 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:55:00 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:55:37 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:56:08 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 14:59:18 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:00:31 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:02:48 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:03:35 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:03:55 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:05:00 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:05:58 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:09:52 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:10:01 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:11:40 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:12:36 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:13:18 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:17:22 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:18:43 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:19:55 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:21:00 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:22:32 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:23:17 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:23:42 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:24:37 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:25:27 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:25:35 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:26:18 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:28:37 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:30:11 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:31:17 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:35:12 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:36:41 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:38:04 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:38:21 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:39:20 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:39:44 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:40:22 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:40:26 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:40:45 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:40:53 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:42:01 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:42:12 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:42:30 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:43:10 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:43:48 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:49:25 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:53:17 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:53:37 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:54:16 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:57:07 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:57:29 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:58:24 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 15:58:57 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 16:05:54 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 16:09:02 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 16:11:38 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 16:12:26 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 16:13:02 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 16:13:15 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-07 16:13:36 --> 404 Page Not Found: Public/css

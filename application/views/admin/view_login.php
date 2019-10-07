@@ -33,7 +33,7 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 </head>
 
 <body class="hold-transition login-page sidebar-mini">
-
+	
 	<div class="login-box">
 		<h4 class="login-box-msg">WILUJENG SUMPING</h4>
 		<div class="login-box-body">
@@ -71,7 +71,6 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 			<?php echo form_close(); ?>
 		</div>
 	</div>
-
 
 	<script src="<?php echo base_url(); ?>public/admin/js/jquery-2.2.3.min.js"></script>
 	<script src="<?php echo base_url(); ?>public/admin/js/bootstrap.min.js"></script>

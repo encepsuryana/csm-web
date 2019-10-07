@@ -24,7 +24,7 @@ if(!$this->session->userdata('id')) {
 									<th>No</th>
 									<th>Foto</th>
 									<th>Judul</th>
-									<th>Konten Singkat</th>
+									<th>Konten</th>
 									<th width="200">Action</th>
 								</tr>
 							</thead>
@@ -38,7 +38,7 @@ if(!$this->session->userdata('id')) {
 										<td style="width:100px;"><?php echo $i; ?></td>
 										<td style="width:200px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['heading']; ?>" style="width:200px;"></td>
 										<td><?php echo $row['heading']; ?></td>
-										<td><?php echo $row['short_content']; ?></td>
+										<td><?php echo $row['content']; ?></td>
 										<td>
 											<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
 												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/service/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>

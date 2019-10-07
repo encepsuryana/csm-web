@@ -11,7 +11,6 @@ if(!$this->session->userdata('id')) {
 		</div>
 	</section>
 
-
 	<section class="content" style="min-height:auto;margin-bottom: -30px;">
 		<div class="row">
 			<div class="col-md-12">
@@ -140,8 +139,6 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_close(); ?>
 						</div>
 
-
-
 						<div class="tab-pane" id="tab_login_bg">
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>		
 							<div class="box-body">
@@ -170,6 +167,12 @@ if(!$this->session->userdata('id')) {
 						<div class="tab-pane" id="tab_general">
 							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
 							<div class="box-body">
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Nama Perusahaan </label>
+									<div class="col-sm-6">
+										<input class="form-control" type="text" name="general_companyname" value="<?php echo $setting['general_companyname']; ?>">
+									</div>
+								</div>
 								<div class="form-group">
 									<label for="" class="col-sm-3 control-label">Footer - Copyright </label>
 									<div class="col-sm-6">

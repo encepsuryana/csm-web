@@ -1,51 +1,16 @@
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="container bannder-table" style="padding: 0;">
 		<div class="col-md-12" style="padding: 0;">
-			<div class="col-md-4">
-			</div>
-			<div class="col-md-8" style="padding: 0;">
-				<div class="banner-text">
-					<h1><?php echo NEWS; ?></h1>
-				</div>
+			<div class="banner-text">
+				<h1><?php echo NEWS; ?></h1>
 			</div>
 		</div>
-	</div>
-	<div class="container pt_20 pb_20" style="padding: 0;">
-		<div class="sidebar-item">
-			<div class="sidebar-item searchbar-item" style="float: right;">
-				<?php echo form_open(base_url().'search'); ?>
-				<div class="input-group" style="width: 300px;">
-					<?php
-					$data = array(
-						'type'         => 'text',
-						'name'         => 'search_string',
-						'class'        => 'form-control',
-						'autocomplete' => 'off',
-						'placeholder'  => SEARCH_NEWS
-					);
-					echo form_input($data);
-					?>
-					<span class="input-group-btn">
-						<?php
-						$data = array(
-							'name'    => 'form1',
-							'class'   => 'btn btn-default',
-							'type'    => 'submit',
-							'content' => '<i class="fa fa-search"></i>'
-						);
-						echo form_button($data);
-						?>
-					</span>
-				</div>
-				<?php echo form_close(); ?>
-			</div>
-		</div>	
 	</div>
 	<div class="container link-post">
 		<div class="blog-author">
 			<ul>
-				<div class="col-sm-8 blog-link-content">
-					<li class="gro" style="padding-left: 0; padding-top: 5px;">
+				<div class="col-sm-12 menu-link-content">
+					<li class="gro" style="padding-right: 0; padding-top: 5px;">
 						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
 						<a href="<?php echo base_url(); ?>news"><span><?php echo NEWS; ?></span></a>
@@ -54,7 +19,38 @@
 			</ul>
 		</div>
 	</div>
-	<div class="container pt_20 pb_20">
+
+	<div class="container pt_10 pb_20" style="padding: 0;">
+		<div class="searchbar-item" style="float: left;">
+			<?php echo form_open(base_url().'search'); ?>
+			<div class="input-group" style="width: 290px;">
+				<?php
+				$data = array(
+					'type'         => 'text',
+					'name'         => 'search_string',
+					'class'        => 'form-control',
+					'autocomplete' => 'off',
+					'placeholder'  => SEARCH_NEWS
+				);
+				echo form_input($data);
+				?>
+				<span class="input-group-btn">
+					<?php
+					$data = array(
+						'name'    => 'form1',
+						'class'   => 'btn btn-default',
+						'type'    => 'submit',
+						'content' => '<i class="fa fa-search"></i>'
+					);
+					echo form_button($data);
+					?>
+				</span>
+			</div>
+			<?php echo form_close(); ?>
+		</div>
+	</div>
+
+	<div class="container pt_15 pb_20">
 		<div class="row">
 			<section class="csmpublic-home">
 				<div class="container">

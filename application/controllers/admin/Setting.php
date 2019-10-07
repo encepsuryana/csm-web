@@ -205,6 +205,7 @@ class Setting extends CI_Controller
 
 			if(isset($_POST['form_general'])) {			
 				$form_data = array(
+					'general_companyname' => $_POST['general_companyname'],
 					'footer_copyright'    => $_POST['footer_copyright'],
 					'footer_address'      => $_POST['footer_address'],
 					'footer_phone'        => $_POST['footer_phone'],
@@ -284,7 +285,6 @@ class Setting extends CI_Controller
 				}        	
 			}
 
-
 			if(isset($_POST['form_counter'])) {			
 				$form_data = array(
 					'counter1_text'  => $_POST['counter1_text'],
@@ -311,7 +311,6 @@ class Setting extends CI_Controller
 				$data['success'] = 'Theme Colors are updated successfully!';
 			}
 
-
 			if(isset($_POST['form_banner'])) {
 				$valid = 1;
 				$path = $_FILES['photo']['name'];
@@ -324,10 +323,12 @@ class Setting extends CI_Controller
 						$valid = 0;
 						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
+					
 				} else {
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+
 				if($valid == 1) {
 					unlink('./public/uploads/'.$header['setting']['banner']);
 					$final_name = 'banner'.'.'.$ext;

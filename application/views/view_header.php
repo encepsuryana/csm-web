@@ -288,7 +288,6 @@
 			border-bottom-color: #<?php echo $setting['theme_color_1']; ?>!important;
 		}
 
-		.nav li a:focus,
 		.mean-container .mean-nav ul li a:hover,
 		.counter-item a:hover,
 		ul.nav-ciptasin li a:hover{
@@ -525,7 +524,7 @@
 													<div class="desc-product-menu">
 														<h4><?php echo NEW_PRODUCT; ?></h4>	
 														<a href="<?php echo base_url(); ?>product">
-															<h4><?php echo $row['product_caption']; ?></h4>	
+															<h5><?php echo $row['product_caption']; ?></h5>	
 															<p><?php echo $row['product_desc']; ?></p>
 														</a>
 													</div>		
@@ -655,7 +654,7 @@
 													<div class="desc-product-menu">
 														<h4><?php echo LATEST_NEWS; ?></h4>	
 														<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
-															<h4><?php echo $row['news_title']; ?></h4>	
+															<h5><?php echo $row['news_title']; ?></h5>	
 															<p><?php echo $row['news_short_content']; ?></p>
 														</a>
 													</div>		

@@ -20,6 +20,11 @@ ol {
 	padding-left: 0;
 	font-size: 10px;
 }
+.menu-link-content {
+	text-align: right; 
+	padding-right: 0;
+	font-size: 10px;
+}
 .input-group .form-control {
 	border-right: 0;
 }
@@ -73,7 +78,7 @@ section {
 }
 .bg-news {
 	background: #fff;
-	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 }
 
 #gridGallery .row {
@@ -96,7 +101,7 @@ section {
 .box:hover {
 	cursor: pointer;
 	z-index: 1;
-	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 }
 
 .row > .column {
@@ -233,7 +238,7 @@ img.hover-shadow {
 }
 
 .hover-shadow:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 }
 
 .transition {
@@ -363,7 +368,7 @@ img.hover-shadow {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 240px;
-	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 }
 
 .caption-product-area h3 {
@@ -408,7 +413,7 @@ img.hover-shadow {
 	margin: 50px;
 }
 .contact-button-home a {
-	padding: 8px 15px;
+	padding: 5px 20px;
 	background: #222;
 	color: #fff;
 	border: 1px solid #222;
@@ -442,26 +447,32 @@ img.hover-shadow {
 	font-size: 14px;
 	float: right;
 	margin-bottom: 20px;
-	border-bottom: 1px solid #f81c51;
+	border-radius: 20px;
+	border: 1px solid #134595;
+	padding: 5px 20px;
 }
 
 .all-news a:hover,
 .all-news a:active {
-	font-weight: 700;
 	text-decoration: none;
+	background: #134595;
+	color: #fff !important;
 }
 
 .all-product a{
 	font-size: 14px;
 	float: right;
 	margin: 20px 6px;
-	border-bottom: 1px solid #f81c51;
+	border-radius: 20px;
+	border: 1px solid #134595;
+	padding: 5px 20px;
 }
 
 .all-product a:hover,
 .all-product a:active {
-	font-weight: 700;
 	text-decoration: none;
+	background: #134595;
+	color: #fff !important;
 }
 
 .home-maps-btn h3 {
@@ -477,7 +488,7 @@ img.hover-shadow {
 .bg-about {
 	text-align: justify;
 	background: #fff;
-	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 }
 
 hr {
@@ -790,7 +801,7 @@ img {
 	position: absolute;
 	z-index: 9999;
 	background: #fff;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0) !important;
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2) !important;
 	width: 115px;
 	border: 1px solid #c6c6c6;
 }
@@ -843,15 +854,11 @@ ul.nav-ciptasin li a {
 	text-decoration: none;
 	font-weight: bold;
 	display: block;
-	padding: 10px 15px;
+	padding: 5px 20px;
+	margin: 10px 0;
+	border-radius: 20px;
 	transition: all 0.4s;
-	border-bottom: 2px solid #f81c51 !important;
 	color: #333 !important;
-}
-
-ul.nav-ciptasin li a:hover,
-ul.nav-ciptasin li a:focus {
-	border-bottom: 2px solid #f81c51 !important;
 }
 
 ul.nav-ciptasin li a i {
@@ -884,13 +891,13 @@ ul.nav-ciptasin li:hover a {
 	min-width: auto;
 	width: 135%;
 	height: auto;
-	margin-top: 0;
 	padding: 0;
 	border: none;
 	left: -300px;
+	margin-top: 0;
 	transition: all 0.4s;
-	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, 0) !important;
-	border-top: 2px solid #f81c51 !important;
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2) !important;
+	border-top: 2px solid #134595 !important;
 }
 .nav-ciptasin .dropdown-menu.ciptasin-menu > li {
 	padding: 20px;
@@ -921,6 +928,7 @@ ul.nav-ciptasin li:hover a {
 .csm-content-menu .csm-category-menu a {
 	padding: 5px 10px;
 	border: 0 !important;
+	margin: 3px;
 }
 .csm-content-menu .csm-category-menu a:hover {
 	background: transparent !important;
@@ -969,6 +977,14 @@ ul.nav-ciptasin li:hover a {
 	position: relative;
 	top: -35px;
 }
+.nav-ciptasin .dropdown-menu.ciptasin-menu .desc-product-menu h4 {
+	color: #134595 !important;
+}
+
+.nav-ciptasin .dropdown-menu.ciptasin-menu .desc-product-menu p {
+	font-weight: 500;
+}
+
 .nav-ciptasin .dropdown-menu.ciptasin-menu .desc-product-menu a:hover {
 	background: transparent !important;
 	color: #134595 !important;
@@ -1022,7 +1038,7 @@ ul.nav-ciptasin li:hover a {
 	background-color: #fff;
 	z-index: 10000;
 	height: 60px;
-	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 	
 }
 
@@ -1050,8 +1066,12 @@ ul.nav-ciptasin li:hover a {
 }
 .sticky ul.nav-ciptasin li a {
 	text-decoration: none;
-	padding: 19px 15px;
+	padding: 5px 20px;
+	margin-top: 15px;
+	border-radius: 20px;
 }
+
+
 
 .sticky ul.nav-ciptasin li ul {
 	top: 60px;
@@ -1199,7 +1219,7 @@ Slider
 	text-decoration: none;
 	border: 1px solid #13233b;
 	-webkit-border-radius: 3px;
-	padding: 8px 15px;
+	padding: 5px 20px;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
 	border-radius: 20px;
@@ -1378,7 +1398,7 @@ Slider
 	border-radius: 20px;
 	border: 1px solid #333;	
 	background-color: #134595;
-	padding: 8px 15px;
+	padding: 5px 20px;
 	text-decoration: none;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
@@ -1451,8 +1471,7 @@ Slider
 	display: inline-block;
 	background: #fff;
 	border: 1px solid #ddd;
-	padding: 5px 15px;
-	margin-top: 10px;
+	padding: 5px 20px;
 	border-radius: 20px;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
@@ -1460,7 +1479,7 @@ Slider
 
 .recent-menu ul li:hover {
 	background: #333;
-	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 }
 .hvr-bounce-to-right::before {
 	background: #134595 !important;
@@ -1476,7 +1495,6 @@ Slider
 .filtr-item {
 	margin:5px 3px;
 	padding:5px 3px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0) !important;
 }
 
 .lightbox-bg {
@@ -1968,7 +1986,7 @@ Slider
 	color: inherit;
 	text-decoration: none;
 	position: relative;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0) !important;
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 }
 .csmpublic-home .public-csm-home:hover h3 {
 	text-decoration: underline;
@@ -2669,7 +2687,7 @@ span.page-numbers.current {
 
 .scroll-top:hover {
 	background: #134595;
-	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 }
 
 /*Banner*/
@@ -3230,7 +3248,7 @@ label {
 .btn-default:focus {
 	border-color: #c6c6c6;
 	background-color: #fff !important;
-	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 }
 .g-recaptcha iframe {
 	min-height: 0;
@@ -4505,7 +4523,7 @@ ul.timeline li a:hover {
 	border-radius:0;
 	margin-bottom:10px
 }
-.nav li a:focus,
+
 .btn-blog:hover,
 .btn-blog:focus,
 .btn-blog:active,

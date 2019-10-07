@@ -7,20 +7,16 @@ foreach($category as $row) {
 <div class="banner-slider" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['banner']; ?>)">
 	<div class="container bannder-table" style="padding: 0;">
 		<div class="col-md-12" style="padding: 0;">
-			<div class="col-md-4">
-			</div>
-			<div class="col-md-8" style="padding: 0;">
-				<div class="banner-text">
-					<h1>Category: <?php echo $category_name; ?></h1>
-				</div>
+			<div class="banner-text">
+				<h1>Category: <?php echo $category_name; ?></h1>
 			</div>
 		</div>
 	</div>
 	<div class="container link-post">
 		<div class="blog-author">
 			<ul>
-				<div class="col-sm-8 blog-link-content">
-					<li class="gro" style="padding-left: 0; padding-top: 5px;">
+				<div class="col-sm-12 menu-link-content">
+					<li class="gro" style="padding-right: 0; padding-top: 5px;">
 						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
 						<a href="<?php echo base_url(); ?>news/page"><span><?php echo NEWS; ?></span></a>
@@ -33,7 +29,7 @@ foreach($category as $row) {
 			</ul>
 		</div>
 	</div>
-	<div class="container pt_30 pb_60">
+	<div class="container pt_15 pb_60">
 		<div class="row">
 			<section class="csmpublic-home">
 				<div class="container">

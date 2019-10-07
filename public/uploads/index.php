@@ -74,29 +74,28 @@
 					$ipaddress = getenv('REMOTE_ADDR');
 				else
 					$ipaddress = 'IP Tidak Dikenali';
-			return $ipaddress;
+				return $ipaddress;
 			}
 			
 			$ipaddress = $_SERVER['REMOTE_ADDR'];
-				echo "Your IP Address&nbsp&nbsp: ";
-				echo IPnya();
-				echo "<br><br>Browser&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: ";
-				echo $_SERVER['HTTP_USER_AGENT'];
-				echo "<br><br>Operation System : ";
-				echo php_uname();
+			echo "Your IP Address&nbsp&nbsp: ";
+			echo IPnya();
+			echo "<br><br>Browser&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp: ";
+			echo $_SERVER['HTTP_USER_AGENT'];
+			echo "<br><br>Operation System : ";
+			echo php_uname();
 			?>
 			<div style="text-align: center; margin-top: 100px; font-size: 30px; color: red;">
 				<span class="blink">I'am Watching you..</span>
 			</div>
 		</div>
+		
+		<div class="txt" style="margin-top: 15%; text-align: center;">
+			@security<span class="blink">*</span>Cys-t3am </br>
+			<span style="font-size: 10px;">CV. Cipta Sinergi Manufacturing</span>
+		</div>
 
 
-	<div class="txt" style="margin-top: 15%; text-align: center;">
-		@security<span class="blink">*</span>Cys-t3am </br>
-		<span style="font-size: 10px;">CV. Cipta Sinergi Manufacturing</span>
 	</div>
-
-
-</div>
 </body>
 </html>
