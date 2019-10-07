@@ -9,9 +9,9 @@
 
 	<div class="container single-service-area pt_15 pb_60 common-text bg-news">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-8 pl-30">
 				<div class="single-service-item">
-					<div class="single-blog-author mb_10">
+					<div class="single-blog-author">
 						<div class="blog-author">
 							<ul>
 								<div class="col-sm-7" style="text-align: left; padding-left: 5px;">
@@ -23,8 +23,8 @@
 										<a href="<?php echo base_url(); ?>category/post/<?php echo $news['slug_news_category']; ?>"><span><?php echo $news['category_name']; ?></span></a>
 									</li>
 								</div>
-								<div class="col-sm-5">
-									<li class="gro" style="padding-right:0;">
+								<div class="col-sm-5" style="padding-right: 0px;">
+									<li class="gro">
 										<i class="fa fa-eye" aria-hidden="true"></i>
 										<span><?php echo $news['total_view']; ?></span>
 									</li>

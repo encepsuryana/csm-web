@@ -103,7 +103,7 @@
 								<?php echo $widget;?>
 								<?php echo $script;?>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4" style="text-align: right; margin-top: 20px;">
 								<?php 
 								$data = array(
 									'name'    => 'form_contact',

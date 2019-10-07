@@ -2343,6 +2343,38 @@ span.page-numbers.current {
 
 /*Footer-Contact*/
 
+.footer-social {
+	text-align: left;
+}
+
+.footer-social ul{
+	padding-left: 0;
+}
+
+.footer-social li {
+	text-align: center;
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 5px;
+}
+
+.footer-social li:last-child {
+	margin-right: 0px;
+}
+
+.footer-social a {
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.footer-social a:hover {
+	color: #f8be2e;
+}
 
 .footer-main {
 	width: 100%;
@@ -2613,7 +2645,7 @@ span.page-numbers.current {
 .copyright-text p {
 	color: #fff;
 	margin: 0;
-	margin-top: 50px;
+	margin-top: 75px;
 	text-align: right;
 	margin-right: 60px;
 }
@@ -2714,6 +2746,7 @@ span.page-numbers.current {
 	font-size: 34px;
 	color: #fff;
 	margin: 0;
+	margin-bottom: 10px;
 }
 
 /*Main-Testimonial*/
@@ -2882,7 +2915,8 @@ span.page-numbers.current {
 	display: inline-block;
 	font-size: 13px;
 	font-weight: 600;
-	padding: 12px;
+	padding: 0 5px;
+	margin-bottom: 10px;
 }
 
 .single-blog-author li.gro {
@@ -3260,7 +3294,6 @@ label {
 
 .contact-area button {
 	font-size: 14px;
-	text-transform: uppercase;
 	display: inline-block;
 	background: #13233b;
 	color: #fff;

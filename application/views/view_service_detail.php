@@ -21,10 +21,9 @@
 			</ul>
 		</div>
 	</div>
-	<div class="container single-service-area pt_20 pb_60 bg-news">
+	<div class="container single-service-area pt_30 pb_60 bg-news">
 		<div class="row">
-			<div class="col-lg-9 col-md-8">
-
+			<div class="col-lg-9 col-md-8" style="padding-left: 30px;">
 				<div class="service-main-photo">
 					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $res['photo']; ?>" alt="service photo">
 				</div>

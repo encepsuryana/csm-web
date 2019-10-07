@@ -114,6 +114,10 @@ Thank you for using our script. We are always here to give you necessary support
 	* Fix error Settings
 	* Add General setting Company Name
 	* Fix wrong facility admin page
+	* Remove Unuse Database Content
+	* Update Database Structure
+	* Update Page for About Company & SEO Setting Pages
+	* Improve Media Social Link already used
 
 * v.1.0
 	* Release all future

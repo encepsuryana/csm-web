@@ -101,6 +101,10 @@ img {
 
 
 /*Shortcode*/
+.pl-30 {
+	padding-left: 30px !important;
+}
+
 .ptb-60 {
 	padding: 60px 0px !important;
 }

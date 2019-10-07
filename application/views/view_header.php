@@ -33,38 +33,38 @@
 	{
 		echo '<meta name="description" content="'.$page['md_home'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_home'].'">';
-		echo '<title>'.HOME.$page['mt_home'].'</title>';
+		echo '<title>'.HOME.' | '.$setting['general_companyname'].'</title>';
 	}
 	if($slug_arr[0] == 'about')
 	{
 		echo '<meta name="description" content="'.$page['md_about'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_about'].'">';
-		echo '<title>'.ABOUT_US.$page['mt_about'].'</title>';
+		echo '<title>'.ABOUT_US.' | '.$setting['general_companyname'].'</title>';
 	}
 	if($slug_arr[0] == 'gallery')
 	{
 		echo '<meta name="description" content="'.$page['md_gallery'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_gallery'].'">';
-		echo '<title>'.GALLERY.$page['mt_gallery'].'</title>';
+		echo '<title>'.GALLERY.' | '.$setting['general_companyname'].'</title>';
 	}
 	if($slug_arr[0] == 'product')
 	{
 		echo '<meta name="description" content="'.$page['md_gallery'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_gallery'].'">';
-		echo '<title>'.PRODUCT.$page['mt_product'].'</title>';
+		echo '<title>'.PRODUCT.' | '.$setting['general_companyname'].'</title>';
 	}
 	if($slug_arr[0] == 'service')
 	{
 		if(!isset($slug_arr[1])) {
 			echo '<meta name="description" content="'.$page['md_service'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_service'].'">';
-			echo '<title>'.SERVICE.$page['mt_service'].'</title>';	
+			echo '<title>'.SERVICE.' | '.$setting['general_companyname'].'</title>';	
 		} else {
 			$single_service_data = $this->Model_common->get_single_service_data($slug_arr[2]);
 			foreach($single_service_data as $row) {
 				echo '<meta name="description" content="'.$row['meta_description'].'">';
 				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
-				echo '<title>'.$row['meta_title'].' | CV. Cipta Sinergi Manufacturing'.'</title>';	
+				echo '<title>'.$row['meta_title'].' | '.$setting['general_companyname'].'</title>';	
 			}
 		}		
 	}
@@ -79,7 +79,7 @@
 			foreach($single_facility_data as $row) {
 				echo '<meta name="description" content="'.$row['meta_description'].'">';
 				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
-				echo '<title>'.$row['meta_title'].' | CV. Cipta Sinergi Manufacturing'.'</title>';	
+				echo '<title>'.$row['meta_title'].' | '.$setting['general_companyname'].'</title>';	
 			}
 		}		
 	}
@@ -95,7 +95,7 @@
 			foreach($single_electronics_division_data as $row) {
 				echo '<meta name="description" content="'.$row['meta_description'].'">';
 				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
-				echo '<title>'.$row['meta_title'].' | CV. Cipta Sinergi Manufacturing'.'</title>';	
+				echo '<title>'.$row['meta_title'].' | '.$setting['general_companyname'].'</title>';	
 			}
 		}		
 	}
@@ -105,13 +105,13 @@
 		if(!isset($slug_arr[1])) {
 			echo '<meta name="description" content="'.$page['md_portfolio'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_portfolio'].'">';
-			echo '<title>'.PORTFOLIO.$page['mt_portfolio'].'</title>';	
+			echo '<title>'.PORTFOLIO.' | '.$setting['general_companyname'].'</title>';	
 		} else {
 			$single_portfolio_data = $this->Model_common->get_single_portfolio_data($slug_arr[2]);
 			foreach($single_portfolio_data as $row) {
 				echo '<meta name="description" content="'.$row['meta_description'].'">';
 				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
-				echo '<title>'.$row['meta_title'].'</title>';	
+				echo '<title>'.$row['meta_title'].' | '.$setting['general_companyname'].'</title>';	
 			}
 		}		
 	}
@@ -119,14 +119,14 @@
 	{
 		echo '<meta name="description" content="'.$page['md_testimonial'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_testimonial'].'">';
-		echo '<title>'.TESTIMONIAL.$page['mt_testimonial'].'</title>';
+		echo '<title>'.TESTIMONIAL.' | '.$setting['general_companyname'].'</title>';
 	}
 	if(isset($slug_two)) {
 		if($slug_two == 'news/page')
 		{
 			echo '<meta name="description" content="'.$page['md_news'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_news'].'">';
-			echo '<title>'.NEWS.$page['mt_news'].'</title>';	
+			echo '<title>'.NEWS.' | '.$setting['general_companyname'].'</title>';	
 		}
 		if($slug_two == 'news/post')
 		{
@@ -138,7 +138,7 @@
 				$og_description = $row['news_short_content'];
 				echo '<meta name="description" content="'.$row['meta_description'].'">';
 				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
-				echo '<title>'.$row['meta_title'].' | CV. Cipta Sinergi Manufacturing'.'</title>';	
+				echo '<title>'.$row['meta_title'].' | '.$setting['general_companyname'].'</title>';	
 			}
 			?>
 			<meta property="og:title" content="<?php echo $og_title; ?>">
@@ -160,7 +160,7 @@
 				$og_description = $row['meta_description'];
 				echo '<meta name="description" content="'.$row['meta_description'].'">';
 				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
-				echo '<title>'.$row['meta_title'].' | CV. Cipta Sinergi Manufacturing'.'</title>';	
+				echo '<title>'.$row['meta_title'].' | '.$setting['general_companyname'].'</title>';	
 			}
 			?>
 			<meta property="og:title" content="<?php echo $og_title; ?>">
@@ -175,37 +175,37 @@
 	{
 		echo '<meta name="description" content="'.$page['md_carrier'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_carrier'].'">';
-		echo '<title>'.CAREER.$page['mt_carrier'].'</title>';
+		echo '<title>'.CAREER.' | '.$setting['general_companyname'].'</title>';
 	}
 	if($slug_arr[0] == 'contact')
 	{
 		echo '<meta name="description" content="'.$page['md_contact'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_contact'].'">';
-		echo '<title>'.CONTACT.$page['mt_contact'].'</title>';
+		echo '<title>'.CONTACT.' | '.$setting['general_companyname'].'</title>';
 	}
 	if($slug_arr[0] == 'search')
 	{
 		echo '<meta name="description" content="'.$page['md_search'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_search'].'">';
-		echo '<title>'.SEARCH_NEWS.$page['mt_search'].'</title>';
+		echo '<title>'.SEARCH_NEWS.' | '.$setting['general_companyname'].'</title>';
 	}
 	if($slug_arr[0] == 'terms-and-conditions')
 	{
 		echo '<meta name="description" content="'.$page['md_term'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_term'].'">';
-		echo '<title>'.TERMS_AND_CONDITIONS.$page['mt_term'].'</title>';
+		echo '<title>'.TERMS_AND_CONDITIONS.' | '.$setting['general_companyname'].'</title>';
 	}
 	if($slug_arr[0] == 'privacy-policy')
 	{
 		echo '<meta name="description" content="'.$page['md_privacy'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_privacy'].'">';
-		echo '<title>'.PRIVACY_POLICY.$page['mt_privacy'].'</title>';
+		echo '<title>'.PRIVACY_POLICY.' | '.$setting['general_companyname'].'</title>';
 	}
 	if($slug_arr[0] == 'site-maps')
 	{
 		echo '<meta name="description" content="'.$page['md_site_maps'].'">';
 		echo '<meta name="keywords" content="'.$page['mk_site_maps'].'">';
-		echo '<title>'.SITE_MAPS.$page['mt_site_maps'].'</title>';
+		echo '<title>'.SITE_MAPS.' | '.$setting['general_companyname'].'</title>';
 	}	
 	?>
 
@@ -367,7 +367,7 @@
 		}
 
 		.contact-button-home a,
-		.contact-area button {
+		.contact-area button:hover {
 			background: #<?php echo $setting['theme_color_2']; ?>!important;
 			color: #<?php echo $setting['theme_color_1']; ?>!important;
 			border-color: #<?php echo $setting['theme_color_1']; ?>!important;;
@@ -381,7 +381,7 @@
 		.btn-info,
 		.btn-info:hover,
 		.btn-info:active,
-		.contact-area button:hover,
+		.contact-area button,
 		.contact-button-home a:hover {
 			background: #<?php echo $setting['theme_color_1']; ?>!important;
 			color: #<?php echo $setting['theme_color_2']; ?>!important;

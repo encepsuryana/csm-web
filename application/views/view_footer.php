@@ -20,6 +20,19 @@
 						</li>
 					</ul>
 				</div>
+				<div class="footer-social">
+					<ul>
+						<?php
+						foreach ($social as $row) 
+						{
+							if($row['social_url']!='')
+							{
+								echo '<li><a href="'.$row['social_url'].'"><i class="'.$row['social_icon'].'"></i></a></li>';
+							}
+						}
+						?>
+					</ul>
+				</div>
 			</div>
 			<div class="col-md-6">
 				<div class="copyright-text">
