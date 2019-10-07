@@ -61,6 +61,7 @@ This theme has the following features:
 * All major social media URL setup for top bar and sidebar
 * Background and Theme color changing option
 * Secure with Google Captcha authorize
+* Function Option for Site Under Construction
 
 ## Server Requirement
 Before starting to install our item, make sure you fulfill the following requirements:
@@ -108,13 +109,13 @@ note: change these values
 Thank you for using our script. We are always here to give you necessary support for our items. If you have any query, contact us through the support section of envato or drop us an email here: encep.suryanajr@gmail.com
 
 ## Release History
-* 1.1
+* v.1.1
 	* Improve UI
 	* Fix error Settings
 	* Add General setting Company Name
 	* Fix wrong facility admin page
 
-* 1.0
+* v.1.0
 	* Release all future
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
