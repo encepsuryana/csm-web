@@ -108,6 +108,12 @@ note: change these values
 Thank you for using our script. We are always here to give you necessary support for our items. If you have any query, contact us through the support section of envato or drop us an email here: encep.suryanajr@gmail.com
 
 ## Release History
+* 1.1
+	* Improve UI
+	* Fix error Settings
+	* Add General setting Company Name
+	* Fix wrong facility admin page
+
 * 1.0
 	* Release all future
 <!-- Markdown link & img dfn's -->
