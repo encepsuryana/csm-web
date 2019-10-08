@@ -335,7 +335,7 @@ CREATE TABLE `tbl_logging` (
   `log_ipaddress` varchar(15) DEFAULT NULL,
   `log_useragen` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_logging` */
 
@@ -443,7 +443,37 @@ insert  into `tbl_logging`(`log_id`,`log_time`,`log_user`,`log_tipe`,`log_desc`,
 (101,'2019-10-07 13:05:17','Encep Suryana',3,'[EDIT] Halaman Produk telah diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
 (102,'2019-10-07 15:51:05','Encep Suryana',3,'[EDIT] Data: General diupdate pada Settings','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
 (103,'2019-10-07 15:53:09','Encep Suryana',3,'[EDIT] Data: General diupdate pada Settings','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
-(104,'2019-10-07 18:23:46','Encep Suryana',3,'[EDIT] Halaman Beranda telah diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>');
+(104,'2019-10-07 18:23:46','Encep Suryana',3,'[EDIT] Halaman Beranda telah diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(105,'2019-10-08 08:28:11',NULL,0,'<span style=\"background:red; color:white;\">[LOGIN] User: encep.suryanajr@gmail.com, Password: jajaa, Gagal Login</span>','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(106,'2019-10-08 08:28:25','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(107,'2019-10-08 08:33:23','Encep Suryana',3,'[EDIT] Data User: Admin diubah oleh Encep Suryana','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(108,'2019-10-08 08:33:31','Encep Suryana',1,'[LOGOUT] User: Encep Suryana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(109,'2019-10-08 08:35:07','Admin',0,'[LOGIN] User: Admin Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(110,'2019-10-08 08:35:15','Admin',1,'[LOGOUT] User: Admin Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(111,'2019-10-08 08:35:26','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(112,'2019-10-08 08:46:01','Encep Suryana',1,'[LOGOUT] User: Encep Suryana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(113,'2019-10-08 08:46:37','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(114,'2019-10-08 08:47:19','Encep Suryana',1,'[LOGOUT] User: Encep Suryana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(115,'2019-10-08 08:48:27','Admin',1,'[LOGOUT] User: Admin Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(116,'2019-10-08 08:48:37','Admin',0,'[LOGIN] User: Admin Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(117,'2019-10-08 08:50:42','Admin',1,'[LOGOUT] User: Admin Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(118,'2019-10-08 08:52:25','Admin',1,'[LOGOUT] User: Admin Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(119,'2019-10-08 08:54:30','Admin',1,'[LOGOUT] User: Admin Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(120,'2019-10-08 08:54:53','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(121,'2019-10-08 09:08:16','Encep Suryana',1,'[LOGOUT] User: Encep Suryana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(122,'2019-10-08 09:24:12','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(123,'2019-10-08 09:24:18','Encep Suryana',1,'[LOGOUT] User: Encep Suryana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(124,'2019-10-08 09:38:14','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(125,'2019-10-08 09:52:58','Encep Suryana',1,'[LOGOUT] User: Encep Suryana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(126,'2019-10-08 10:04:08','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(127,'2019-10-08 10:10:39','Encep Suryana',1,'[LOGOUT] User: Encep Suryana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(128,'2019-10-08 10:12:50','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(129,'2019-10-08 10:26:24','Encep Suryana',3,'[EDIT] Data: Email Settings diupdate pada Settings','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(130,'2019-10-08 10:28:01','Encep Suryana',0,'[RESET PASSWORD] User: Encep Suryana Melakukan Reset Password','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(131,'2019-10-08 10:36:10','Encep Suryana',1,'[LOGOUT] User: Encep Suryana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(132,'2019-10-08 10:56:57',NULL,0,'<span style=\"background:red; color:white;\">[RESET PASSWORD] Error! Invalid Captcha, Robot Reset Password</span>','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(133,'2019-10-08 11:00:09',NULL,0,'<span style=\"background:red; color:white;\">[RESET PASSWORD] Email:encep.suryanajr@gmail.com, Requwst Reset Password</span>','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(134,'2019-10-08 11:00:20','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>');
 
 /*Table structure for table `tbl_news` */
 
@@ -857,6 +887,7 @@ CREATE TABLE `tbl_settings` (
   `company_name` varchar(255) NOT NULL,
   `company_address` varchar(255) NOT NULL,
   `company_telp` varchar(50) NOT NULL,
+  `company_website` varchar(255) NOT NULL,
   `reset_password_email_subject` varchar(255) NOT NULL,
   `total_recent_post` int(11) NOT NULL,
   `total_popular_post` int(11) NOT NULL,
@@ -879,8 +910,8 @@ CREATE TABLE `tbl_settings` (
 
 /*Data for the table `tbl_settings` */
 
-insert  into `tbl_settings`(`id`,`logo`,`logo2`,`logo_admin`,`favicon`,`counter_bg`,`login_bg`,`general_companyname`,`footer_copyright`,`footer_address`,`footer_phone`,`footer_working_hour`,`top_bar_email`,`top_bar_phone`,`contact_map_iframe`,`receive_email`,`receive_password`,`protocol`,`smtp_host`,`smtp_port`,`logo_image`,`logo_alt`,`background`,`text_color`,`company_name`,`company_address`,`company_telp`,`reset_password_email_subject`,`total_recent_post`,`total_popular_post`,`total_recent_post_home`,`total_product_post`,`theme_color_1`,`theme_color_2`,`counter1_text`,`counter1_value`,`counter2_text`,`counter2_value`,`counter3_text`,`counter3_value`,`counter4_text`,`counter4_value`,`counter_status`,`banner`) values 
-(1,'logo.png','logo2.png','logo_admin.png','favicon.png','counter_bg.JPG','login_bg.png','CV. Cipta Sinergi Manufacturing','Copyright © 2019 | CV. Cipta Sinergi Manufacturing','Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512','(022) 6647945','(8:00 AM - 5:00 PM)','marketing@ciptasinergi.com','(022) 6647945','<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.177204490785!2d107.551033!3d-6.8552849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x602a56a5b8d7e0cc!2sCV.+Cipta+Sinergi+Manufacturing!5e0!3m2!1sid!2sid!4v1565082522509!5m2!1sid!2sid\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>','pkl.ciptasinergi@gmail.com','Bee9509*#','smtp','ssl://smtp.gmail.com','465','https://www.ciptasinergi.com/public/uploads/logo.png','Logo CV. Cipta Sinergi Manufacturing','134595','FFFFFF','CV. Cipta Sinergi Manufacturing','Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat - Indonesia (40512)','(022) 6647945','Password Reset Request - www.ciptasinergi.com',4,4,10,6,'134595','FFFFFF','Employee\'s',50,'Project Finish',1200,'Projects On-going',800,'Award\'s',1200,'','banner.png');
+insert  into `tbl_settings`(`id`,`logo`,`logo2`,`logo_admin`,`favicon`,`counter_bg`,`login_bg`,`general_companyname`,`footer_copyright`,`footer_address`,`footer_phone`,`footer_working_hour`,`top_bar_email`,`top_bar_phone`,`contact_map_iframe`,`receive_email`,`receive_password`,`protocol`,`smtp_host`,`smtp_port`,`logo_image`,`logo_alt`,`background`,`text_color`,`company_name`,`company_address`,`company_telp`,`company_website`,`reset_password_email_subject`,`total_recent_post`,`total_popular_post`,`total_recent_post_home`,`total_product_post`,`theme_color_1`,`theme_color_2`,`counter1_text`,`counter1_value`,`counter2_text`,`counter2_value`,`counter3_text`,`counter3_value`,`counter4_text`,`counter4_value`,`counter_status`,`banner`) values 
+(1,'logo.png','logo2.png','logo_admin.png','favicon.png','counter_bg.JPG','login_bg.png','CV. Cipta Sinergi Manufacturing','Copyright © 2019 | CV. Cipta Sinergi Manufacturing','Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512','(022) 6647945','(8:00 AM - 5:00 PM)','marketing@ciptasinergi.com','(022) 6647945','<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.177204490785!2d107.551033!3d-6.8552849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x602a56a5b8d7e0cc!2sCV.+Cipta+Sinergi+Manufacturing!5e0!3m2!1sid!2sid!4v1565082522509!5m2!1sid!2sid\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>','pkl.ciptasinergi@gmail.com','Bee9509*#','smtp','ssl://smtp.gmail.com','465','https://www.ciptasinergi.com/public/uploads/logo.png','Logo CV. Cipta Sinergi Manufacturing','134595','FFFFFF','CV. Cipta Sinergi Manufacturing','Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat - Indonesia (40512)','(022) 6647945','www.ciptasinergi.com','Password Reset Request - www.ciptasinergi.com',4,4,10,6,'134595','FFFFFF','Employee\'s',50,'Project Finish',1200,'Projects On-going',800,'Award\'s',1200,'','banner.png');
 
 /*Table structure for table `tbl_slider` */
 
@@ -978,10 +1009,10 @@ CREATE TABLE `tbl_user` (
 /*Data for the table `tbl_user` */
 
 insert  into `tbl_user`(`id`,`full_name`,`email`,`phone`,`password`,`photo`,`role`,`status`,`token`) values 
-(1,'Encep Suryana','encep.suryanajr@gmail.com','082129714260','e4e05d342730456fcf3d8c87e95d5748','avatar-1.png','admin','Active',''),
-(2,'HRD','hrd@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-2.jpg','hrd','Active',''),
+(1,'Encep Suryana','encep.suryanajr@gmail.com','082129714260','e4e05d342730456fcf3d8c87e95d5748','avatar-1.png','admin','Active','df627f2fcbe82f2aecd3071b228b631c'),
+(2,'HRD','hrd@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-2.jpg','hrd','Active','6ebf2c00f0b9f4ccec500f841199e675'),
 (3,'Staff','staff@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-3.jpg','staff','Active',''),
-(4,'Admin','admin@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-4.jpg','admin','Active','');
+(4,'Admin','admin@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-4.jpg','admin','InActive','bb0a1e5648196fac4a64247cae526102');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
