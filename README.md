@@ -125,17 +125,18 @@ Thank you for using this script. We are always here to give you necessary suppor
 
 ## Release History
 * v.1.1
-* Improve UI
-* Fix error Settings
-* Add General setting Company Name
-* Fix wrong facility admin page
-* Remove Unuse Database Content
-* Update Database Structure
-* Update Page for About Company & SEO Setting Pages
-* Improve Media Social Link already used
+	* Improve UI
+	* Fix error Settings
+	* Add General setting Company Name
+	* Fix wrong facility admin page
+	* Remove Unuse Database Content
+	* Update Database Structure
+	* Update Page for About Company & SEO Setting Pages
+	* Improve Media Social Link already used
 
 * v.1.0
-* Release all future
+	* Release all future
+
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
