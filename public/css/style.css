@@ -2356,6 +2356,7 @@ span.page-numbers.current {
 	display: inline-block;
 	margin-right: 20px;
 	margin-top: 5px;
+	margin-bottom: 15px;
 }
 
 .footer-social li:last-child {
@@ -2364,16 +2365,12 @@ span.page-numbers.current {
 
 .footer-social a {
 	display: block;
-	font-size: 14px;
+	font-size: 15px;
 	color: #fff;
 	text-decoration: none;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
-}
-
-.footer-social a:hover {
-	color: #f8be2e;
 }
 
 .footer-main {

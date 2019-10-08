@@ -9,8 +9,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link href="https://fonts.googleapis.com/css?family=Francois+One|Lato:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<style type="text/css">
-		::selection { background-color: #E13300; color: white; }
-		::-moz-selection { background-color: #E13300; color: white; }
+		::selection { background-color: #58A7DD; color: white; }
+		::-moz-selection { background-color: #58A7DD; color: white; }
 
 		body {
 			background-color: #fff;
@@ -38,9 +38,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		#container {
 			margin: 10px;
-			border: 1px solid #D0D0D0;
-			box-shadow: 0 0 8px #D0D0D0;
-			border-radius: 20px;
 		}
 
 		.not-found p {
@@ -51,12 +48,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div id="container" style="background-image: url(https://www.gstatic.com/bfe/images/verification/banner_background.svg); background-size: cover;">
 		<div class="not-found">
 			<div class="col-md-12">
-				<div class="col-md-12" style="margin-top: 20px; text-align: center;">
+				<div class="col-md-12" style="margin-top: 100px; text-align: center;">
 					<img src="https://icon-library.net/images/found-icon/found-icon-20.jpg"></img>
 				</div>
 				<div class="col-md-12" style="margin-top: 20px; text-align: center;">
-					<h2><?php echo $heading; ?></h2>
-					<p><?php echo $message; ?></p>
+					<h1><strong>:(</strong></h1>
+					<h2><strong><?php echo $heading; ?>!</strong></h2>
+					<p><i><?php echo $message; ?></i></p>
 				</div>
 			</div>
 		</div>

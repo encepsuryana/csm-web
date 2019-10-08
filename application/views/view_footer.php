@@ -2,6 +2,19 @@
 	<div class="container" style="width: 100%">
 		<div class="row">
 			<div class="col-md-6">
+				<div class="footer-social">
+					<ul>
+						<?php
+						foreach ($social as $row) 
+						{
+							if($row['social_url']!='')
+							{
+								echo '<li><a href="'.$row['social_url'].'"><i class="'.$row['social_icon'].'"></i></a></li>';
+							}
+						}
+						?>
+					</ul>
+				</div>
 				<div class="footer-contact-item">
 					<ul>
 						<li>
@@ -18,19 +31,6 @@
 								<i class="fa fa-phone" aria-hidden="true"></i> <span><?php echo nl2br($setting['footer_phone']); ?></span>
 							</p>
 						</li>
-					</ul>
-				</div>
-				<div class="footer-social">
-					<ul>
-						<?php
-						foreach ($social as $row) 
-						{
-							if($row['social_url']!='')
-							{
-								echo '<li><a href="'.$row['social_url'].'"><i class="'.$row['social_icon'].'"></i></a></li>';
-							}
-						}
-						?>
 					</ul>
 				</div>
 			</div>

@@ -22,11 +22,12 @@ if(!$this->session->userdata('id')) {
 						<table id="example1" class="table table-bordered table-striped">
 							<thead>
 								<tr>
-									<th>No</th>
+									<th width="10">No</th>
 									<th>Foto</th>
 									<th>Judul</th>
+									<th>Konten</th>
 									<th>Kategori</th>
-									<th width="200">Action</th>
+									<th width="180">Action</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -39,6 +40,7 @@ if(!$this->session->userdata('id')) {
 										<td style="width:100px;"><?php echo $i; ?></td>
 										<td style="width:150px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:150px;"></td>
 										<td><?php echo $row['name']; ?></td>
+										<td><?php echo $row['content']; ?></td>
 										<td><?php echo $row['category_name']; ?></td>
 										<td>
 											<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>

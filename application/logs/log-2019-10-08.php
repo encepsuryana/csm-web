@@ -27,3 +27,31 @@ ERROR - 2019-10-08 10:46:43 --> Severity: Notice --> Undefined variable: script 
 ERROR - 2019-10-08 10:52:32 --> Severity: error --> Exception: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) C:\xampp\htdocs\csm-web\application\controllers\admin\Forget_password.php 121
 ERROR - 2019-10-08 10:53:25 --> Severity: error --> Exception: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) C:\xampp\htdocs\csm-web\application\controllers\admin\Forget_password.php 88
 ERROR - 2019-10-08 10:56:15 --> Severity: error --> Exception: Unable to locate the model you have specified: Model_log C:\xampp\htdocs\csm-web\system\core\Loader.php 348
+ERROR - 2019-10-08 11:46:38 --> Severity: Notice --> Undefined index: mt_electronics_division C:\xampp\htdocs\csm-web\application\views\view_header.php 92
+ERROR - 2019-10-08 11:47:25 --> Severity: Notice --> Undefined index: mt_facility C:\xampp\htdocs\csm-web\application\views\view_header.php 76
+ERROR - 2019-10-08 11:49:51 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 11:52:13 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 11:53:24 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 11:53:32 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 11:53:47 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 13:55:21 --> 404 Page Not Found: admin//index
+ERROR - 2019-10-08 13:56:03 --> 404 Page Not Found: admin//index
+ERROR - 2019-10-08 13:56:26 --> 404 Page Not Found: admin//index
+ERROR - 2019-10-08 13:59:20 --> 404 Page Not Found: admin//index
+ERROR - 2019-10-08 13:59:38 --> 404 Page Not Found: admin//index
+ERROR - 2019-10-08 13:59:48 --> 404 Page Not Found: admin//index
+ERROR - 2019-10-08 14:00:08 --> 404 Page Not Found: admin//index
+ERROR - 2019-10-08 14:00:30 --> 404 Page Not Found: admin//index
+ERROR - 2019-10-08 14:00:36 --> 404 Page Not Found: admin//index
+ERROR - 2019-10-08 14:00:53 --> 404 Page Not Found: admin//index
+ERROR - 2019-10-08 14:01:14 --> 404 Page Not Found: admin//index
+ERROR - 2019-10-08 14:14:55 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 14:17:10 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 14:21:28 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 14:22:36 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 14:22:53 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 14:24:09 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 14:24:26 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 14:24:31 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 14:24:47 --> 404 Page Not Found: Public/css
+ERROR - 2019-10-08 14:24:55 --> 404 Page Not Found: Public/css

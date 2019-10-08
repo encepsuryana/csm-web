@@ -29,8 +29,9 @@ if(!$this->session->userdata('id')) {
 									<th>No</th>
 									<th>Foto</th>
 									<th>Judul</th>
+									<th>Konten</th>
 									<th>Kategori</th>
-									<th width="300">Action</th>
+									<th width="280">Action</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -43,6 +44,7 @@ if(!$this->session->userdata('id')) {
 										<td style="width:50px;"><?php echo $i; ?></td>
 										<td style="width:150px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:150px;"></td>
 										<td><?php echo $row['name']; ?></td>
+										<td><?php echo $row['content']; ?></td>
 										<td><?php echo $row['category_name']; ?></td>
 										<td>
 											<?php if ($this->session->userdata('role') == 'admin') { ?>

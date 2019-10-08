@@ -73,7 +73,7 @@
 		if(!isset($slug_arr[1])) {
 			echo '<meta name="description" content="'.$page['md_facility'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_facility'].'">';
-			echo '<title>'.FACILITY.$page['mt_facility'].'</title>';	
+			echo '<title>'.FACILITY.' | '.$setting['general_companyname'].'</title>';	
 		} else {
 			$single_facility_data = $this->Model_common->get_single_facility_data($slug_arr[2]);
 			foreach($single_facility_data as $row) {
@@ -89,7 +89,7 @@
 		if(!isset($slug_arr[1])) {
 			echo '<meta name="description" content="'.$page['md_electronics_division'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_electronics_division'].'">';
-			echo '<title>'.ELECTRONICS_DIVISION.$page['mt_electronics_division'].'</title>';	
+			echo '<title>'.ELECTRONICS_DIVISION.' | '.$setting['general_companyname'].'</title>';	
 		} else {
 			$single_electronics_division_data = $this->Model_common->get_single_electronics_division_data($slug_arr[2]);
 			foreach($single_electronics_division_data as $row) {
