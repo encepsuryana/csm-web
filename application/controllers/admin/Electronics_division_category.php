@@ -156,12 +156,11 @@ class Electronics_division_category extends CI_Controller
 		}
 	}
 
-
 	public function delete($id) 
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
 
-		// If there is no electronics_division category in this id, then redirect
+			// If there is no electronics_division category in this id, then redirect
 			$tot = $this->Model_electronics_division_category->electronics_division_category_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/electronics-division-category');

@@ -74,7 +74,6 @@ class Facility extends CI_Controller
 					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
-				
 				if($valid == 1) 
 				{
 					$next_id = $this->Model_facility->get_auto_increment_id();
@@ -97,7 +96,6 @@ class Facility extends CI_Controller
 						'slug_facility'    => $slug
 					);
 					$this->Model_facility->add($form_data);
-
 
 					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) )
 					{
@@ -173,6 +171,7 @@ class Facility extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

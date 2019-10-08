@@ -10,6 +10,7 @@ class Electronics_division_desc extends CI_Controller
 		$this->load->model('admin/Model_electronics_division_desc');
 		$this->load->model('admin/Model_log');
 	}
+
 	public function index()
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd'))  {
@@ -22,6 +23,7 @@ class Electronics_division_desc extends CI_Controller
 			$this->load->view('admin/view_header',$header);
 			$this->load->view('admin/view_electronics_division_desc',$data);
 			$this->load->view('admin/view_footer');
+
 		} else {
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
@@ -84,11 +86,12 @@ class Electronics_division_desc extends CI_Controller
 
 					if($_POST['current_electronics_division_desc_photo'] != '')
 					{
+			    	
 			    	// removing the existing photo
 						unlink('./public/uploads/'.$_POST['current_electronics_division_desc_photo']);	
 					}
 
-		    	// updating the data
+		    		// updating the data
 					$final_name = 'electronics_division_desc_photo'.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
@@ -100,7 +103,7 @@ class Electronics_division_desc extends CI_Controller
 					//Add Log User
 					helper_log("edit", '[EDIT] Foto Des. Divisi Elektronik diupdate');
 
-					$data['success'] = 'Des. Divisi Elektronik Photo telah berhasil diupdate!';		    	
+					$data['success'] = 'Des. Divisi Elektronik Photo telah berhasil diupdate!';    	
 				}        	
 			}
 
@@ -126,9 +129,12 @@ class Electronics_division_desc extends CI_Controller
 			$this->load->view('admin/view_header',$header);
 			$this->load->view('admin/view_electronics_division_desc',$data);
 			$this->load->view('admin/view_footer');
+
 		} else {
+
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
+			
 			} else {
 				show_404();
 			}

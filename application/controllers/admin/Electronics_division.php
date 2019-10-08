@@ -21,6 +21,7 @@ class Electronics_division extends CI_Controller
 			$this->load->view('admin/view_header',$header);
 			$this->load->view('admin/view_electronics_division',$data);
 			$this->load->view('admin/view_footer');
+
 		} else {
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
@@ -74,7 +75,6 @@ class Electronics_division extends CI_Controller
 					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
-
 				if($valid == 1) 
 				{
 					$next_id = $this->Model_electronics_division->get_auto_increment_id();
@@ -84,7 +84,6 @@ class Electronics_division extends CI_Controller
 
 					$final_name = 'electronics_division-'.$ai_id.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
-
 
 					$form_data = array(
 						'name'             => $_POST['name'],
@@ -348,7 +347,8 @@ class Electronics_division extends CI_Controller
 	public function delete($id) 
 	{
 		if (($this->session->userdata('role') == 'admin')  or ($this->session->userdata('role') == 'staff')) {
-		// If there is no electronics_division in this id, then redirect
+			
+			// If there is no electronics_division in this id, then redirect
 			$tot = $this->Model_electronics_division->electronics_division_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/electronics_division');

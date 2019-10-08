@@ -233,6 +233,7 @@ class Setting extends CI_Controller
 					'company_name' 				   => $_POST['company_name'],
 					'company_address' 			   => $_POST['company_address'],
 					'company_telp' 				   => $_POST['company_telp'],
+					'company_website' 			   => $_POST['company_website'],
 					'reset_password_email_subject' => $_POST['reset_password_email_subject']
 				);
 				$this->Model_setting->update($form_data);

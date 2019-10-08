@@ -38,10 +38,10 @@ if(!$this->session->userdata('id')) {
 					<ul class="nav nav-tabs">
 						<li class="active"><a href="#tab_logo" data-toggle="tab">Logo</a></li>
 						<li><a href="#tab_favicon" data-toggle="tab">Favicon</a></li>
-						<li><a href="#tab_login_bg" data-toggle="tab">Login Background</a></li>
 						<li><a href="#tab_general" data-toggle="tab">General Content</a></li>
 						<li><a href="#tab_email" data-toggle="tab">Email Settings</a></li>
 						<li><a href="#tab_sidebar_footer" data-toggle="tab">Sidebar & Footer</a></li>
+						<li><a href="#tab_login_bg" data-toggle="tab">Login Background</a></li>
 						<li><a href="#tab_banner" data-toggle="tab">Background & Tema</a></li>
 					</ul>
 					<div class="tab-content">
@@ -157,7 +157,7 @@ if(!$this->session->userdata('id')) {
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label"></label>
 									<div class="col-sm-6">
-										<button type="submit" class="btn btn-success pull-left" name="form_login_bg">Update Photo</button>
+										<button type="submit" class="btn btn-success pull-left" name="form_login_bg">Update Foto</button>
 									</div>
 								</div>
 							</div>
@@ -366,12 +366,6 @@ if(!$this->session->userdata('id')) {
 										<input type="text" class="form-control" name="smtp_port" value="<?php echo $setting['smtp_port']; ?>">
 									</div>
 								</div>
-								<div class="form-group" hidden="hidden">
-									<label for="" class="col-sm-4 control-label">Reset Password Email Subject <span>*</span></label>
-									<div class="col-sm-4">
-										<input type="text" class="form-control" name="reset_password_email_subject" value="<?php echo $setting['reset_password_email_subject']; ?>">
-									</div>
-								</div>
 								<h3 class="seo-info">Template Email</h3>
 								<div class="form-group">
 									<label for="" class="col-sm-4 control-label">Logo Perusahaan <span>*</span></label>
@@ -413,6 +407,19 @@ if(!$this->session->userdata('id')) {
 									<label for="" class="col-sm-4 control-label">No. Telp <span>*</span></label>
 									<div class="col-sm-4">
 										<input type="text" class="form-control" name="company_telp" value="<?php echo $setting['company_telp']; ?>">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Website Perusahaan <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="company_website" value="<?php echo $setting['company_website']; ?>">
+									</div>
+								</div>
+								<h3 class="seo-info">Template Reset Password</h3>
+								<div class="form-group">
+									<label for="" class="col-sm-4 control-label">Reset Password Email Subject <span>*</span></label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" name="reset_password_email_subject" value="<?php echo $setting['reset_password_email_subject']; ?>">
 									</div>
 								</div>
 								<div class="form-group">
@@ -460,8 +467,9 @@ if(!$this->session->userdata('id')) {
 							<table class="table table-bordered">
 								<tr>
 									<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
+									<h3 class="seo-info">Bakground tersedia</h3>	
+
 									<td style="width:10%">
-										<h4>Bakground tersedia</h4>
 										<p>
 											<img src="<?php echo base_url().'public/uploads/'.$setting['banner']; ?>" alt="" style="width: 50%;height:auto;">  
 										</p>                                        
@@ -469,7 +477,7 @@ if(!$this->session->userdata('id')) {
 									<td style="width:10%">
 										<h4>Ubah Background</h4>
 										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Change" style="margin-top:10px;" name="form_banner">
+										<input type="submit" class="btn btn-primary" value="Update Foto" style="margin-top:10px;" name="form_banner">
 									</td>
 									<?php echo form_close(); ?>
 								</tr>

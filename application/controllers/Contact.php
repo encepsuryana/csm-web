@@ -89,7 +89,7 @@ class Contact extends CI_Controller {
 						<b>'.$header['setting']['company_name'].'</b><br><br>
 						'.$header['setting']['company_address'].' <br>
 						'.$header['setting']['company_telp'].'<br><br>
-						www.ciptasinergi.com
+						'.$header['setting']['company_website'].'
 						</div>
 						';
 

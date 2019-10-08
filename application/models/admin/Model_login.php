@@ -13,8 +13,8 @@ class Model_login extends CI_Model
     function check_email($email) 
     {
         $where = array(
-         'email' => $email
-     );
+           'email' => $email
+       );
         $this->db->select('*');
         $this->db->from('tbl_user');
         $this->db->where($where);
@@ -35,4 +35,16 @@ class Model_login extends CI_Model
         return $query->first_row('array');
     }
 
+    function check_status($email,$status)
+    {      
+        $where = array(
+            'email' => $email,
+            'status' => $status
+        );
+        $this->db->select('*');
+        $this->db->from('tbl_user');
+        $this->db->where($where);
+        $query = $this->db->get();
+        return $query->first_row('array');
+    }
 }

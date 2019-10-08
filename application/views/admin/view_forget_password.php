@@ -48,37 +48,44 @@
 				</div>
 			<?php endif; ?>
 
-			<?php echo form_open(base_url().$this->session->userdata('role').'/forget-password');?>
+			<?php echo form_open(base_url().'admin/forget-password');?>
 			<div class="form-group has-feedback">
-				<input class="form-control" placeholder="Email address" name="email" type="text" autocomplete="off" autofocus>
+				<input class="form-control" placeholder="Email address" name="email" type="email" autocomplete="off" autofocus>
 			</div>
-			<div class="row">
-				<div class="col-xs-8" style="padding-top:7px;"><a href="<?php echo base_url().$this->session->userdata('role'); ?>/login" style="color:red;">back to login page</a></div>
-				<div class="col-xs-4">
-					<input type="submit" class="btn btn-primary btn-block btn-flat login-button" name="form1" value="Submit">
+			<div class="form-group has-feedback" style="text-align: center;">
+				<div class="captcha_box" style="margin-left: 10px;">
+					<?php echo $widget;?>
+					<?php echo $script;?>
 				</div>
 			</div>
-			<?php echo form_close(); ?>
+			<div class="row">
+				<div class="col-xs-8 forget-style" style="padding-top:7px;">
+					<a href="<?php echo base_url(); ?>admin/login" style="color:#15258a; padding: 5px 10px;">Kembali</a></div>
+					<div class="col-xs-4">
+						<input type="submit" class="btn btn-primary btn-block btn-flat login-button" name="form1" value="Submit">
+					</div>
+				</div>
+				<?php echo form_close(); ?>
+			</div>
 		</div>
-	</div>
 
 
-	<script src="<?php echo base_url(); ?>public/admin/js/jquery-2.2.3.min.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/bootstrap.min.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/jquery.dataTables.min.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/dataTables.bootstrap.min.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/select2.full.min.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.date.extensions.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.extensions.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/moment.min.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/bootstrap-datepicker.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/icheck.min.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/fastclick.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/jquery.sparkline.min.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/jquery.slimscroll.min.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/app.min.js"></script>
-	<script src="<?php echo base_url(); ?>public/admin/js/demo.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/jquery-2.2.3.min.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/bootstrap.min.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/jquery.dataTables.min.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/dataTables.bootstrap.min.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/select2.full.min.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.date.extensions.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/jquery.inputmask.extensions.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/moment.min.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/bootstrap-datepicker.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/icheck.min.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/fastclick.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/jquery.sparkline.min.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/jquery.slimscroll.min.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/app.min.js"></script>
+		<script src="<?php echo base_url(); ?>public/admin/js/demo.js"></script>
 
-</body>
-</html>
+	</body>
+	</html>

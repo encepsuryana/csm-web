@@ -24,7 +24,6 @@
 	</style>
 
 </head>
-
 <body class="hold-transition login-page sidebar-mini">
 
 	<div class="login-box">
@@ -32,7 +31,7 @@
 			<b><img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo_admin']; ?>" alt="" style="max-width: 50%;"></b>
 		</div>
 		<div class="login-box-body">
-			<h4 class="login-box-msg">Reset Password</h4>
+			<h4 class="login-box-msg">Masukkan Password Baru</h4>
 			
 			<?php if($error): ?>
 				<div class="callout callout-danger">
@@ -48,7 +47,7 @@
 				</div>
 			<?php endif; ?>
 
-			<?php echo form_open(base_url().$this->session->userdata('role').'/reset-password/index/'.$var1.'/'.$var2);?>
+			<?php echo form_open(base_url().'admin/reset-password/index/'.$var1.'/'.$var2);?>
 			<div class="form-group has-feedback">
 				<input class="form-control" placeholder="New Password" name="new_password" type="password" autocomplete="off" autofocus>
 			</div>
@@ -64,7 +63,6 @@
 			<?php echo form_close(); ?>
 		</div>
 	</div>
-
 
 	<script src="<?php echo base_url(); ?>public/admin/js/jquery-2.2.3.min.js"></script>
 	<script src="<?php echo base_url(); ?>public/admin/js/bootstrap.min.js"></script>

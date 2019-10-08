@@ -21,4 +21,17 @@ class Model_forget_password extends CI_Model
         $this->db->update('tbl_user',$data);
     }
 
+    function check_status($email,$status)
+    {      
+        $where = array(
+            'email' => $email,
+            'status' => $status
+        );
+        $this->db->select('*');
+        $this->db->from('tbl_user');
+        $this->db->where($where);
+        $query = $this->db->get();
+        return $query->first_row('array');
+    }
+
 }

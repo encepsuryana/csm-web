@@ -11,7 +11,6 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 	<title>Login</title>
 	<link rel="icon" href="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>" type="image/png">
 	
-
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
 	<link rel="stylesheet" href="<?php echo base_url(); ?>public/admin/css/bootstrap.min.css">
@@ -33,7 +32,6 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 </head>
 
 <body class="hold-transition login-page sidebar-mini">
-	
 	<div class="login-box">
 		<h4 class="login-box-msg">WILUJENG SUMPING</h4>
 		<div class="login-box-body">
@@ -62,7 +60,7 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 			</div>
 			<div class="row">
 				<div class="col-xs-8 forget-style">
-					
+					<a href="<?php echo base_url(); ?>admin/forget-password" style="color:#15258a; padding: 5px 10px;">Lupa Password?</a>
 				</div>
 				<div class="col-xs-4">
 					<input type="submit" class="btn btn-primary btn-block btn-flat login-button" name="form1" value="Login">

@@ -380,7 +380,7 @@ img.existing-photo {
 }
 
 .b-box {
-	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 }
 
 .user-footer div {
@@ -398,7 +398,7 @@ img.existing-photo {
 }
 .navbar-nav>.user-menu>.dropdown-menu>.user-footer {
 	background-color:  #ffffffcc;
-	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
@@ -504,7 +504,7 @@ iframe {
 .nav-tabs-custom,
 .login-box-body {
 	border-radius: 20px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
 }
 
 input[type=submit].btn-block {
@@ -522,7 +522,7 @@ input[type=submit].btn-block {
 	background: transparent !important;
 	color: #2c3e50 !important;
 	border-color: #2c3e50;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0);
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.12);
 }
 
 label {
