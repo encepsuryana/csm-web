@@ -83,11 +83,11 @@ Before starting to install our item, make sure you fulfill the following require
 ```sh
 date_default_timezone_set('Asia/Jakarta') 
 ```
-You have to setup this timezone to your desired timezone for the script
+> You have to setup this timezone to your desired timezone for the script
 ```sh
 $config['base_url'] = 'yourwebsite.com';
 ```
-This is the main URL where you will setup the script. It can be domain or sub-domain
+> This is the main URL where you will setup the script. It can be domain or sub-domain
 
 5. Change on **application** > **config** > **database.php**
 ```sh
@@ -97,7 +97,7 @@ This is the main URL where you will setup the script. It can be domain or sub-do
 'database' => 'csm_web',
 'dbdriver' => 'mysqli',
 ```
-note: change these values
+> note: change these values
 
 6. change on  **application** > **config** > **recaptcha.php**
 To use reCAPTCHA, you need to sign up for an API key pair for your site.
@@ -118,9 +118,10 @@ $config['recaptcha_secret_key'] = 'Your_secret_key';
 * [Lato](https://fonts.google.com/specimen/Lato)
 * [OwlCarousel](https://owlcarousel2.github.io/OwlCarousel2/)
 * [Magnefic Popup](http://dimsemenov.com/plugins/magnific-popup/)
+* [Google Recaptcha](http://www.google.com/recaptcha/admin)
 
 ## Support
-Thank you for using our script. We are always here to give you necessary support for our items. If you have any query, contact us through the support section of envato or drop us an email here: encep.suryanajr@gmail.com
+Thank you for using this script. We are always here to give you necessary support for our items. If you have any query, contact us through the support section of envato or drop us an email here: encep.suryanajr@gmail.com
 
 ## Release History
 * v.1.1
