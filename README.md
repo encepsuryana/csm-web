@@ -62,6 +62,8 @@ This theme has the following features:
 * Background and Theme color changing option
 * Secure with Google Captcha authorize
 * Function Option for Site Under Construction
+* Email Template Setting
+* SEO URL Improved
 
 ## Server Requirement
 Before starting to install our item, make sure you fulfill the following requirements:
@@ -77,13 +79,16 @@ Before starting to install our item, make sure you fulfill the following require
 
 3. Now you will have to setup the config and database file. If you are familier with **codeigniter**, you should know about it. But don't worry! We will tell step by step. 
 4. Change on **application** > **config** > **config.php**
+
 ```sh
 date_default_timezone_set('Asia/Jakarta') 
---> You have to setup this timezone to your desired timezone for the script
-
-$config['base_url'] = 'yourwebsite.com';
---> This is the main URL where you will setup the script. It can be domain or sub-domain
 ```
+You have to setup this timezone to your desired timezone for the script
+```sh
+$config['base_url'] = 'yourwebsite.com';
+```
+This is the main URL where you will setup the script. It can be domain or sub-domain
+
 5. Change on **application** > **config** > **database.php**
 ```sh
 'hostname' => 'localhost',
@@ -91,10 +96,19 @@ $config['base_url'] = 'yourwebsite.com';
 'password' => '',
 'database' => 'csm_web',
 'dbdriver' => 'mysqli',
-
-note: change these values
 ```
-6. Make sure that you have enabled mod_rewrite on your server. Otherwise, our script will not work properly. 
+note: change these values
+
+6. change on  **application** > **config** > **recaptcha.php**
+To use reCAPTCHA, you need to sign up for an API key pair for your site.
+link: [http://www.google.com/recaptcha/admin](http://www.google.com/recaptcha/admin)
+
+```sh
+$config['recaptcha_site_key'] = 'Your_site_key';
+$config['recaptcha_secret_key'] = 'Your_secret_key';
+```
+
+7. Make sure that you have enabled mod_rewrite on your server. Otherwise, our script will not work properly. 
 
 ## Credit
 * [jQuery](https://jquery.com/)
@@ -110,17 +124,17 @@ Thank you for using our script. We are always here to give you necessary support
 
 ## Release History
 * v.1.1
-	* Improve UI
-	* Fix error Settings
-	* Add General setting Company Name
-	* Fix wrong facility admin page
-	* Remove Unuse Database Content
-	* Update Database Structure
-	* Update Page for About Company & SEO Setting Pages
-	* Improve Media Social Link already used
+* Improve UI
+* Fix error Settings
+* Add General setting Company Name
+* Fix wrong facility admin page
+* Remove Unuse Database Content
+* Update Database Structure
+* Update Page for About Company & SEO Setting Pages
+* Improve Media Social Link already used
 
 * v.1.0
-	* Release all future
+* Release all future
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/datadog-metrics
