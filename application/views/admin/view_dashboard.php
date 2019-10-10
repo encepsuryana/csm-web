@@ -61,6 +61,16 @@ if(!$this->session->userdata('id')) {
           </div>
         </div>
       </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="info-box">
+          <span class="info-box-icon bg-green"><i class="fa fa-terminal"></i></span>
+          <div class="info-box-content">
+            <span class="info-box-number"><?php echo $total_log; ?></span>
+            <span class="info-box-text">Total Log</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

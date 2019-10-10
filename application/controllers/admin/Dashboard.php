@@ -21,6 +21,7 @@ class Dashboard extends CI_Controller
 			$data['total_portfolio'] = $this->Model_dashboard->show_total_portfolio();
 			$data['total_testimonial'] = $this->Model_dashboard->show_total_testimonial();
 			$data['total_slider'] = $this->Model_dashboard->show_total_slider();
+			$data['total_log'] = $this->Model_dashboard->show_total_log();
 
 			$this->load->view('admin/view_header',$header);
 			$this->load->view('admin/view_dashboard',$data);

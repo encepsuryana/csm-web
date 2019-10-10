@@ -9,6 +9,12 @@ class Model_dashboard extends CI_Model
         $query = $this->db->query($sql);
         return $query->num_rows();
     }
+    public function show_total_log()
+    {
+        $sql = 'SELECT * from tbl_logging';
+        $query = $this->db->query($sql);
+        return $query->num_rows();
+    }
     public function show_total_news()
 	{
 		$sql = 'SELECT * FROM tbl_news';

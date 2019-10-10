@@ -39,6 +39,11 @@ body,
 	text-transform: capitalize !important;
 }
 
+.pagination > .active > a {
+	background-color: #3498db !important;
+	border-color: #3498db !important;
+}
+
 .select2-container--open .select2-dropdown--below {
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
