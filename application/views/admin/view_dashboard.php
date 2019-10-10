@@ -15,8 +15,8 @@ if(!$this->session->userdata('id')) {
           <span class="info-box-icon bg-green"><i class="fa fa-newspaper-o"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Total Kategori Berita</span>
             <span class="info-box-number"><?php echo $total_news_category; ?></span>
+            <span class="info-box-text">Total Kategori Berita</span>
           </div>
         </div>
       </div>
@@ -26,8 +26,8 @@ if(!$this->session->userdata('id')) {
           <span class="info-box-icon bg-green"><i class="fa fa-file-text-o"></i></span>
 
           <div class="info-box-content">
-            <span class="info-box-text">Total Berita</span>
             <span class="info-box-number"><?php echo $total_news; ?></span>
+            <span class="info-box-text">Total Berita</span>
           </div>
         </div>
       </div>
@@ -36,8 +36,8 @@ if(!$this->session->userdata('id')) {
         <div class="info-box">
           <span class="info-box-icon bg-green"><i class="fa fa-list-alt"></i></span>
           <div class="info-box-content">
-            <span class="info-box-text">Total Portofolio</span>
             <span class="info-box-number"><?php echo $total_portfolio; ?></span>
+            <span class="info-box-text">Total Portofolio</span>
           </div>
         </div>
       </div>
@@ -46,8 +46,8 @@ if(!$this->session->userdata('id')) {
         <div class="info-box">
           <span class="info-box-icon bg-green"><i class="fa fa-user-plus"></i></span>
           <div class="info-box-content">
-            <span class="info-box-text">Total Testimonial</span>
             <span class="info-box-number"><?php echo $total_testimonial; ?></span>
+            <span class="info-box-text">Total Testimonial</span>
           </div>
         </div>
       </div>
@@ -56,8 +56,8 @@ if(!$this->session->userdata('id')) {
         <div class="info-box">
           <span class="info-box-icon bg-green"><i class="fa fa fa-sliders"></i></span>
           <div class="info-box-content">
-            <span class="info-box-text">Total Slider</span>
             <span class="info-box-number"><?php echo $total_slider; ?></span>
+            <span class="info-box-text">Total Slider</span>
           </div>
         </div>
       </div>

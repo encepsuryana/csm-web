@@ -10,7 +10,6 @@
 	}
 }
 
-
 @media only screen and (min-width: 991px) and (max-width:1200px) {
 	.full {
 		width: 970px;
@@ -547,7 +546,6 @@
 }
 
 /*Other*/
-
 @media only screen and (min-width: 660px) and (max-width:767px) {
 	.footer-social {
 		text-align: center;

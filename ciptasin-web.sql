@@ -40,7 +40,7 @@ CREATE TABLE `tbl_content_home` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `photo` varchar(255) NOT NULL,
   `heading` varchar(255) NOT NULL,
-  `content` text NOT NULL,
+  `content` varchar(255) NOT NULL,
   `link` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
@@ -49,7 +49,7 @@ CREATE TABLE `tbl_content_home` (
 
 insert  into `tbl_content_home`(`id`,`photo`,`heading`,`content`,`link`) values 
 (1,'content-home-1.png','fa-cloud-download','Company Profile','download'),
-(2,'content-home-2.png','fa-archive','Our Products','product'),
+(2,'content-home-2.png','fa-archive','Our Product','product'),
 (3,'content-home-3.png','fa-briefcase','Career','ciptasinergi-career.html'),
 (4,'content-home-4.png','fa-industry','Facility','facility');
 
@@ -335,7 +335,7 @@ CREATE TABLE `tbl_logging` (
   `log_ipaddress` varchar(15) DEFAULT NULL,
   `log_useragen` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=151 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_logging` */
 
@@ -473,7 +473,23 @@ insert  into `tbl_logging`(`log_id`,`log_time`,`log_user`,`log_tipe`,`log_desc`,
 (131,'2019-10-08 10:36:10','Encep Suryana',1,'[LOGOUT] User: Encep Suryana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
 (132,'2019-10-08 10:56:57',NULL,0,'<span style=\"background:red; color:white;\">[RESET PASSWORD] Error! Invalid Captcha, Robot Reset Password</span>','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
 (133,'2019-10-08 11:00:09',NULL,0,'<span style=\"background:red; color:white;\">[RESET PASSWORD] Email:encep.suryanajr@gmail.com, Requwst Reset Password</span>','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
-(134,'2019-10-08 11:00:20','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>');
+(134,'2019-10-08 11:00:20','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(135,'2019-10-08 14:09:48','Encep Suryana',3,'[EDIT] Data: Social Media diupdate pada Social Media','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(136,'2019-10-08 15:02:40','Encep Suryana',3,'[EDIT] Data: Social Media diupdate pada Social Media','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(137,'2019-10-10 09:00:45','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(138,'2019-10-10 09:06:00','Encep Suryana',3,'[EDIT] Data: Company Profile Berhasil diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(139,'2019-10-10 09:06:13','Encep Suryana',3,'[EDIT] Data: Our Product Berhasil diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(140,'2019-10-10 09:06:21','Encep Suryana',3,'[EDIT] Data: Career Berhasil diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(141,'2019-10-10 09:06:32','Encep Suryana',3,'[EDIT] Data: Facility Berhasil diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(142,'2019-10-10 09:15:24','Encep Suryana',3,'[EDIT] Data: BEING AN EDUCATOR FOR STUDENT INTERNSHIP diupdate pada Slider','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(143,'2019-10-10 09:21:53','Encep Suryana',3,'[EDIT] Data: VERTICAL MACHINING CENTER diupdate pada Slider','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(144,'2019-10-10 09:29:30','Encep Suryana',3,'[EDIT] Data: Tooling and Precision Part diupdate pada Layanan','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(145,'2019-10-10 09:36:36','Encep Suryana',3,'[EDIT] Data: Mold and Plastic Component diupdate pada Layanan','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(146,'2019-10-10 09:37:10','Encep Suryana',3,'[EDIT] Data: Tooling and Precision Part diupdate pada Layanan','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(147,'2019-10-10 09:44:21','Encep Suryana',3,'[EDIT] Data: Dies and Stamping Component diupdate pada Layanan','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(148,'2019-10-10 09:44:44','Encep Suryana',3,'[EDIT] Data: Dies and Stamping Component diupdate pada Layanan','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(149,'2019-10-10 09:52:24','Encep Suryana',3,'[EDIT] Data: Mechanical System diupdate pada Layanan','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(150,'2019-10-10 10:03:17','Encep Suryana',3,'[EDIT] Data: Industry Training diupdate pada Layanan','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>');
 
 /*Table structure for table `tbl_news` */
 
@@ -849,11 +865,11 @@ CREATE TABLE `tbl_service` (
 /*Data for the table `tbl_service` */
 
 insert  into `tbl_service`(`id`,`heading`,`short_content`,`content`,`photo`,`meta_title`,`meta_keyword`,`meta_description`,`slug_service`) values 
-(2,'Tooling and Precision Part','The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools.','The proper coating is key to maximizing the operational efficiency of high-speed metal cutting tools. We offer a variety of coatings to help optimize performance and extend the life of your cutting tools and inserts. Have a special spec? We can help match the proper coating to the tool and task. We have quite complete<b> tooling and precision parts</b>, including <b>CNC Milling Tools Holder</b>, <b>Standard Clamping</b>, D<b>ial Indicator Setting Tools</b> and <b>Centriofic Settings</b>.<br>','service-2.jpg','Tooling and Precision Part','','','tooling-and-precision-part.html'),
-(3,'Mold and Plastic Component','Mold & Plastic Components for industrial applications.','We provide <b>Mold & Plastic Components</b> for industrial applications. with a variety of requests submitted, we make professional modeling and build of high quality.<br>','service-3.jpg','Mold and Plastic Component','','','mold-and-plastic-component.html'),
-(4,'Dies and Stamping Component','For the benefit of our Die Stamping customers, Bahrs Die & Stamping offers expert solid die and die component building, design and manufacturing services for progressive dies used in various industries.','For the benefit of our Die Stamping customers, Bahrs Die & Stamping offers expert solid die and die component building, design and manufacturing services for progressive dies used in various industries. Using state-of-the-art design software, our engineering and design team work with each client to manufacture accurate, high quality die components and tooling customized for each application.','service-4.jpg','Dies and Stamping Component','','','dies-and-stamping-component.html'),
-(5,'Mechanical System','Having components and teams in mechanical systems that are experienced and produce quality products.','Having components and teams in <b>mechanical systems</b> that are experienced and produce quality products. with a professional talent for accuracy processing and engineering build a product.<br>','service-5.jpg','Mechanical System','','','mechanical-system.html'),
-(6,'Industry Training','Industry training for a beginner student in high school and college with work field training','Industry training for a beginner student in high school and college with work field training, and produce new talents in the development of the industry in a very quality factory environment.<br>','service-6.jpg','Industry Training','','','industry-training.html');
+(2,'Tooling and Precision Part','In the production process, we use a variety of cutting tools for metal, so that the products we produce are better and more precise','<p><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">In the production process, we use a variety of cutting tools for metal, so that the products we produce are better and more precise, we use a variety of tools for the cutting process, including <b>tooling and precision parts</b>, including <b>CNC Milling Tools Holder</b>, <b>Standard Clamping</b>, <b>Dial Indicator</b></span><b> </b><span title=\"\" class=\"\"><b>Setting Tools</b>, <b>Centriofic Settings</b> and many more.</span><b><br><br></b><span title=\"\" class=\"\"></span></span><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">By using a complete production machine will make better and more quality products.</span></span></p>','service-2.jpg','Tooling and Precision Part','','','tooling-and-precision-part.html'),
+(3,'Mold and Plastic Component','Mold & Plastic Components for industrial applications.','<p>In addition to producing a wide range of metal products, we also provide the <b>Mold &amp; Plastic components</b> for industry. with various requests submitted by our customers will create with a professional and with a variety of requests from customers to produce high-quality products.</p><p>With a wide range of products made previously from <b>Mold &amp; Plastic Components</b>, we use experts to create concepts and applications to be implemented in the process of application of the product you want.<br></p><p><br></p>','service-3.jpg','Mold and Plastic Component','','','mold-and-plastic-component.html'),
+(4,'Dies and Stamping Component','Die & Stamping Component with expert solid die and die component building professional','To improve the quality of your production, CV. Cipta Sinergi Manufacturing offer <b>Die & Stamping Component</b> with expert solid die and die component building professional, design and manufacturing services for progressive dies used in various industries. Using state-of-the-art design manufacturing, our engineering and design team work with each customer to manufacture accurate, high quality die components and tooling customized for each application industrial component.','service-4.jpg','Dies and Stamping Component','','','dies-and-stamping-component.html'),
+(5,'Mechanical System','mechanical systems experts with a variety of experiences to increase your production','<p>Mechanical systems experts with a variety of experiences to increase your production, with an experienced engineering team are working on various projects to produce high-quality mechanical systems, as well as in workmanship flexible according to customer wishes.</p><p>we accept various kinds of orders for mechanical systems that conform to what it wants to increase production.<br></p>','service-5.jpg','Mechanical System','','','mechanical-system.html'),
+(6,'Industry Training','industry training for beginner students in vocational high schools and colleges with job training, covering work safety, readiness at work, cooperation, responsibility, and increasing motivation','<p>we also provide industry training for beginner students in vocational high schools and colleges with job training, covering work safety, readiness at work, cooperation, responsibility, and increasing motivation to be ready to compete with others, thereby generating new talent in the development industry in an environment of a highly qualified factory.</p><p>by growing a high curiosity, we developed a knack for making every student be able to compete with others in the industry.<br>after participating in industry training students get a certificate to show the experience that has been followed in the industrial training program that has been passed.<br></p>','service-6.jpg','Industry Training','','','industry-training.html');
 
 /*Table structure for table `tbl_settings` */
 
@@ -932,8 +948,8 @@ CREATE TABLE `tbl_slider` (
 /*Data for the table `tbl_slider` */
 
 insert  into `tbl_slider`(`id`,`photo`,`heading`,`content`,`button1_text`,`button1_url`,`button2_text`,`button2_url`) values 
-(1,'slider-1.JPG','BEING AN EDUCATOR FOR STUDENT INTERNSHIP','A place for student internships from various vocational schools in Indonesia, to learn how to use CNC machines and manual machines.','Read More','ciptasinergi-career.html','Contact Us','contact'),
-(2,'slider-2.jpg','VERTICAL MACHINING CENTER','Using machines that are very fast in product processing, with very high accuracy so as to create products that can compete with others.','Read More','facility','About Us','about');
+(1,'slider-1.JPG','BEING AN EDUCATOR FOR STUDENT INTERNSHIP','The place for student internships program from vocational high schools, how to learn work in industrial and learn how to use CNC Machining and Conventional Machining is to work on the industrial.','Read More','ciptasinergi-career.html','Contact Us','contact'),
+(2,'slider-2.jpg','VERTICAL MACHINING CENTER','Using a Machining center like CNC and Conventional Machine with professional operators to processing a production order, and high accuracy to make a product to create high quality and be to compete with others products.','Read More','facility','About Us','about');
 
 /*Table structure for table `tbl_social` */
 
@@ -953,9 +969,9 @@ insert  into `tbl_social`(`social_id`,`social_name`,`social_url`,`social_icon`) 
 (1,'Facebook','#','fa fa-facebook'),
 (2,'Twitter','#','fa fa-twitter'),
 (3,'LinkedIn','#','fa fa-linkedin'),
-(4,'Google Plus','#','fa fa-google-plus'),
+(4,'Google Plus','','fa fa-google-plus'),
 (5,'Pinterest','#','fa fa-pinterest'),
-(6,'YouTube','','fa fa-youtube'),
+(6,'YouTube','#','fa fa-youtube'),
 (7,'Instagram','','fa fa-instagram'),
 (8,'Tumblr','','fa fa-tumblr'),
 (9,'Flickr','','fa fa-flickr'),

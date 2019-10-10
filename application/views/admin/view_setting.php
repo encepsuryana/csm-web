@@ -477,7 +477,7 @@ if(!$this->session->userdata('id')) {
 									<td style="width:10%">
 										<h4>Ubah Background</h4>
 										Select Photo<input type="file" name="photo">
-										<input type="submit" class="btn btn-primary" value="Update Foto" style="margin-top:10px;" name="form_banner">
+										<input type="submit" class="btn btn-success" value="Update Foto" style="margin-top:10px;" name="form_banner">
 									</td>
 									<?php echo form_close(); ?>
 								</tr>
