@@ -1446,6 +1446,9 @@ Slider
 		transform: translateX(-3px);
 	}
 }
+.pl-30 {
+	padding-left: 30px !important;
+}
 
 /*Services-Keyfream End*/
 
