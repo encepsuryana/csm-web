@@ -85,21 +85,23 @@
 		margin-left: 0;
 	}
 
-
 	.blog-clear .clear-item {
 		width: 50%;
 	}
 	.blog-clear .clear-item:nth-of-type(2n+1) {
 		clear: both;
 	}
-
-
 }
 
 
 /*mobile small layout*/
 
 @media only screen and (max-width:767px) {
+	.product-desc p {
+		bottom: -90%;
+	}
+	.menu-link-content,
+	.blog-author,
 	.footer-social {
 		text-align: center;
 	}
@@ -127,6 +129,7 @@
 	}
 	.about-fade {
 		height: 160px;
+		margin-bottom: 100px;
 	}
 	.tab-pane h2{
 		text-align: center;
@@ -381,6 +384,11 @@
 /*mobile large layout*/
 
 @media only screen and (min-width: 480px) and (max-width:767px) {
+	.product-desc p {
+		bottom: -90%;
+	}
+	.menu-link-content,
+	.blog-author,
 	.footer-social {
 		text-align: center;
 	}
@@ -547,6 +555,11 @@
 
 /*Other*/
 @media only screen and (min-width: 660px) and (max-width:767px) {
+	.product-desc p {
+		bottom: -90%;
+	}
+	.menu-link-content,
+	.blog-author,
 	.footer-social {
 		text-align: center;
 	}

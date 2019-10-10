@@ -67,7 +67,7 @@
 					<?php endif; ?>
 				</div>
 
-				<div class="single-service-text recent-single-text pt_30">
+				<div class="single-service-text recent-single-text pt_30 pb_20">
 					<h4><?php echo DESCRIPTION; ?></h4>
 					<p>
 						<?php echo $portfolio['content']; ?>

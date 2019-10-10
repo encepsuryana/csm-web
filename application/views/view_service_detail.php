@@ -28,7 +28,7 @@
 					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $res['photo']; ?>" alt="service photo">
 				</div>
 
-				<div class="single-service-text recent-single-text pt_30">
+				<div class="single-service-text recent-single-text pt_30 pb_20">
 					<p>
 						<?php echo $res['content']; ?>
 					</p>
