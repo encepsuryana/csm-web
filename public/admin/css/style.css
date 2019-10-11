@@ -380,7 +380,7 @@ img.existing-photo {
 }
 
 .skin-blue .sidebar-menu>li:hover>a, .skin-blue .sidebar-menu>li.active>a {
-	background-color: transparent;
+	background: rgba(0,0,0,0.1);
 	border-left-color: #000000;
 	font-weight: 700;
 }
@@ -582,8 +582,9 @@ label {
 
 }
 
-.skin-blue .sidebar-menu>li>a {
+.skin-blue .sidebar-menu>li>a:active {
 	font-size: 13px;
+	border-left: 2px solid #333;
 }
 
 .btn.btn-flat {

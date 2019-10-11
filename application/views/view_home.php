@@ -73,7 +73,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<?php
 						foreach ($content_home as $row) {
 							?>
-							<a target="_blank" href="<?php echo base_url().$row['link']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>);" alt="<?php echo $row['photo']; ?>" href="#"><i class="fa <?php echo $row['heading']; ?>" aria-hidden="true"></i> <span><?php echo $row['content']; ?></span></a>
+							<a target="_blank" href="<?php echo base_url().$row['link']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>);" alt="<?php echo $row['photo']; ?>" href="#">
+
+								<i class="fa <?php echo $row['heading']; ?>" aria-hidden="true"></i> 
+								<span><?php echo $row['content']; ?></span>
+
+							</a>
 							<?php
 						}
 						?>

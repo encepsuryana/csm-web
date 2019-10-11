@@ -9,6 +9,7 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Forget Password</title>
+	<link rel="icon" href="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>" type="image/png">
 
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -31,14 +32,12 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 </head>
 
 <body class="hold-transition login-page sidebar-mini">
-
-	<div class="login-box">
-		<div class="login-logo">
-			<b><img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo_admin']; ?>" alt="" style="max-width: 50%;"></b>
-		</div>
+	<div class="login-box">		
+		<h4 class="login-box-msg">Reset Password</h4>
 		<div class="login-box-body">
-			<h4 class="login-box-msg">Reset Password</h4>
-			
+			<div class="login-logo">
+				<b><img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo_admin']; ?>" alt="" style="max-width: 50%;"></b>
+			</div>
 			<?php if($error): ?>
 				<div class="callout callout-danger">
 					<p>
@@ -73,7 +72,6 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 				<?php echo form_close(); ?>
 			</div>
 		</div>
-
 
 		<script src="<?php echo base_url(); ?>public/admin/js/jquery-2.2.3.min.js"></script>
 		<script src="<?php echo base_url(); ?>public/admin/js/bootstrap.min.js"></script>

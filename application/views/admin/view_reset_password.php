@@ -10,6 +10,7 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Reset Password</title>
+	<link rel="icon" href="<?php echo base_url(); ?>public/uploads/<?php echo $setting['favicon']; ?>" type="image/png">
 
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -33,12 +34,11 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 <body class="hold-transition login-page sidebar-mini">
 
 	<div class="login-box">
-		<div class="login-logo">
-			<b><img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo_admin']; ?>" alt="" style="max-width: 50%;"></b>
-		</div>
+		<h4 class="login-box-msg">Masukkan Password Baru</h4>
 		<div class="login-box-body">
-			<h4 class="login-box-msg">Masukkan Password Baru</h4>
-			
+			<div class="login-logo">
+				<b><img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo_admin']; ?>" alt="" style="max-width: 50%;"></b>
+			</div>			
 			<?php if($error): ?>
 				<div class="callout callout-danger">
 					<p>

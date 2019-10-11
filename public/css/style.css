@@ -334,8 +334,35 @@ img.hover-shadow {
 	padding: 0;
 }
 
+.ciptasin-spanduk-download span {
+	color: #fff;
+	background: #134595cc;
+	padding: 10px 5px;
+	position: relative;
+	left: -15px;
+	border-left: 5px solid;
+}
+
+.ciptasin-spanduk-download a {
+	display: inline-block;
+	background: #134595;
+	background-repeat: repeat;
+	background-image: none;
+	background-size: auto;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px;
+	width: 100%;
+	height: 450px;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 370px;
+	margin-bottom: 5px;
+	margin-left: 3px;
+	text-align: left;
+}
+
 .btn-home li a {
-	font-size: 13px;
 	display: inline-block;
 	background: #134595;
 	background-repeat: repeat;
@@ -685,8 +712,18 @@ img {
 	padding:3px 8px;
 	color:#fff;
 	text-align:center;
-	background-color:#245973;
+	background-color:#134595;
 	border-radius:20px;
+}
+
+.tooltip.top .tooltip-inner{
+	max-width:420px;
+	padding:5px 10px;
+	color:#fff;
+	text-align:center;
+	background-color:#134595;
+	border-radius:0;
+	border-bottom: 3px solid black;
 }
 
 .header-area {

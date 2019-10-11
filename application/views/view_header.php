@@ -41,6 +41,12 @@
 		echo '<meta name="keywords" content="'.$page['mk_about'].'">';
 		echo '<title>'.ABOUT_US.' | '.$setting['general_companyname'].'</title>';
 	}
+	if($slug_arr[0] == 'download')
+	{
+		echo '<meta name="description" content="'.$page['md_about'].'">';
+		echo '<meta name="keywords" content="'.$page['mk_about'].'">';
+		echo '<title>'.DOWNLOAD.' | '.$setting['general_companyname'].'</title>';
+	}
 	if($slug_arr[0] == 'gallery')
 	{
 		echo '<meta name="description" content="'.$page['md_gallery'].'">';

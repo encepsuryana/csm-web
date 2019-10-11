@@ -48,9 +48,6 @@
 		.skin-blue .sidebar-menu>li>.treeview-menu {
 			margin: 0!important;
 		}
-		.skin-blue .sidebar-menu>li>a {
-			border-left: 0!important;
-		}
 
 		.nav-tabs-custom>.nav-tabs>li {
 			border-top-width: 1px!important;
@@ -121,6 +118,7 @@
 										margin: 10px;
 										margin-bottom: 10px;
 										margin-bottom: 20px;">
+										<img src="<?php echo base_url(); ?>public/uploads/<?php echo $this->session->userdata('photo'); ?>" class="user-image" alt="user photo">
 										<?php echo $this->session->userdata('full_name'); ?> (<?php echo $this->session->userdata('role');?>)
 									</div>
 									<div>

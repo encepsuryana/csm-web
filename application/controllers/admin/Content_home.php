@@ -34,7 +34,7 @@ class content_home extends CI_Controller
 	{
 		if ($this->session->userdata('role') == 'admin') {
 
-    		$tot = $this->Model_content_home->content_home_check($id);
+			$tot = $this->Model_content_home->content_home_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/content-home');
 				exit;
@@ -123,7 +123,6 @@ class content_home extends CI_Controller
 		} else {
 			show_404();
 		}
-
 	}
 	
 	public function item_bg() {
@@ -156,34 +155,225 @@ class content_home extends CI_Controller
 
 					$data['content_home'] = $this->Model_content_home->get_file();
 
-					unlink('./public/uploads/file/'.$data['content_home']['file_pdf']);
+					unlink('./public/uploads/file/'.$data['content_home']['file_pdf1']);
 
-					$final_name = 'Company_profile'.'.'.$ext;
+					$final_name = 'profile_perusahaan1'.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/file/'.$final_name );
 
 					$form_data = array(
-						'file_pdf' => $final_name
+						'file_pdf1' => $final_name
 					);
 					$this->Model_content_home->update_content_home_photo($form_data);	
 					
 					//Add Log User
-					helper_log("edit", '[EDIT] Data Company Profile diperbaharui');		
+					helper_log("edit", '[EDIT] Data Profil Perusahaan Engineering diperbaharui');		
 
-					$data['success'] = 'Konten Beranda (Company Profile) telah berhasil diupdate!';
+					$data['success'] = 'Profil Perusahaan Engineering telah berhasil diupdate!';
+				}
+			}
+
+			if(isset($_POST['form2'])) {
+				$valid = 1;
+
+				$path = $_FILES['file']['name'];
+				$path_tmp = $_FILES['file']['tmp_name'];
+
+				if($path!='') {
+					$ext = pathinfo( $path, PATHINFO_EXTENSION );
+					$file_name = basename( $path, '.' . $ext );
+					$ext_check = $this->Model_header->extension_check_file($ext);
+					if($ext_check == FALSE) {
+						$valid = 0;
+						$data['error'] = 'Anda harus mengunggah File PDF<br>';
+					}
+				} else {
+					$valid = 0;
+					$data['error'] = 'Anda harus mengunggah File PDF<br>';
 				}
 
-				$data['content_home'] = $this->Model_content_home->get_file();
+				if($valid == 1) {
 
-				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_content_home_commpany_profile',$data);
-				$this->load->view('admin/view_footer');
+					$data['content_home'] = $this->Model_content_home->get_file();
 
-			} else {
-				$data['content_home'] = $this->Model_content_home->get_file();
-				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_content_home_commpany_profile',$data);
-				$this->load->view('admin/view_footer');
+					unlink('./public/uploads/file/'.$data['content_home']['file_pdf2']);
+
+					$final_name = 'profile_perusahaan2'.'.'.$ext;
+					move_uploaded_file( $path_tmp, './public/uploads/file/'.$final_name );
+
+					$form_data = array(
+						'file_pdf2' => $final_name
+					);
+					$this->Model_content_home->update_content_home_photo($form_data);	
+					
+					//Add Log User
+					helper_log("edit", '[EDIT] Data Profil Perusahaan Divisi Elektronik diperbaharui');		
+
+					$data['success'] = 'Profil Perusahaan Divisi Elektronik telah berhasil diupdate!';
+				}
 			}
+
+			if(isset($_POST['form3'])) {
+				$valid = 1;
+
+				$path = $_FILES['file']['name'];
+				$path_tmp = $_FILES['file']['tmp_name'];
+
+				if($path!='') {
+					$ext = pathinfo( $path, PATHINFO_EXTENSION );
+					$file_name = basename( $path, '.' . $ext );
+					$ext_check = $this->Model_header->extension_check_file($ext);
+					if($ext_check == FALSE) {
+						$valid = 0;
+						$data['error'] = 'Anda harus mengunggah File PDF<br>';
+					}
+				} else {
+					$valid = 0;
+					$data['error'] = 'Anda harus mengunggah File PDF<br>';
+				}
+
+				if($valid == 1) {
+
+					$data['content_home'] = $this->Model_content_home->get_file();
+
+					unlink('./public/uploads/file/'.$data['content_home']['file_pdf3']);
+
+					$final_name = 'profile_perusahaan3'.'.'.$ext;
+					move_uploaded_file( $path_tmp, './public/uploads/file/'.$final_name );
+
+					$form_data = array(
+						'file_pdf3' => $final_name
+					);
+					$this->Model_content_home->update_content_home_photo($form_data);	
+					
+					//Add Log User
+					helper_log("edit", '[EDIT] Data Profil Perusahaan Engineering & Divisi Elektronik diperbaharui');		
+
+					$data['success'] = 'Profil Perusahaan Engineering & Divisi Elektronik telah berhasil diupdate!';
+				}
+			}
+
+			if(isset($_POST['form_spanduk1'])) {
+				$valid = 1;
+				$path = $_FILES['spanduk1']['name'];
+				$path_tmp = $_FILES['spanduk1']['tmp_name'];
+				if($path!='') {
+					$ext = pathinfo( $path, PATHINFO_EXTENSION );
+					$file_name = basename( $path, '.' . $ext );
+					$ext_check = $this->Model_header->extension_check_photo($ext);
+					if($ext_check == FALSE) {
+						$valid = 0;
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
+					}
+				} else {
+					$valid = 0;
+					$data['error'] = 'Anda harus memilih foto<br>';
+				}
+				if($valid == 1) {
+					
+					$data['content_home'] = $this->Model_content_home->get_file();
+		    		
+		    		// removing the existing photo
+					unlink('./public/uploads/file/'.$data['content_home']['spanduk1']);
+
+		    		// updating the data
+					$final_name = 'profile_perusahaan1'.'.'.$ext;
+					move_uploaded_file( $path_tmp, './public/uploads/file/'.$final_name );
+
+					$form_data = array(
+						'spanduk1' => $final_name
+					);
+
+					$this->Model_content_home->update_content_home_photo($form_data);	
+
+					helper_log("edit", '[EDIT] Data: Spanduk Profile Perusahaan Engineering diperbaharui');
+
+					$data['success'] = 'Spanduk Profil Perusahaan Engineering telah berhasil diupdate!'; 
+				}        	
+			}
+
+			if(isset($_POST['form_spanduk2'])) {
+				$valid = 1;
+				$path = $_FILES['spanduk2']['name'];
+				$path_tmp = $_FILES['spanduk2']['tmp_name'];
+				if($path!='') {
+					$ext = pathinfo( $path, PATHINFO_EXTENSION );
+					$file_name = basename( $path, '.' . $ext );
+					$ext_check = $this->Model_header->extension_check_photo($ext);
+					if($ext_check == FALSE) {
+						$valid = 0;
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
+					}
+				} else {
+					$valid = 0;
+					$data['error'] = 'Anda harus memilih foto<br>';
+				}
+				if($valid == 1) {
+					
+					$data['content_home'] = $this->Model_content_home->get_file();
+		    		
+		    		// removing the existing photo
+					unlink('./public/uploads/file/'.$data['content_home']['spanduk2']);
+
+		    		// updating the data
+					$final_name = 'profile_perusahaan2'.'.'.$ext;
+					move_uploaded_file( $path_tmp, './public/uploads/file/'.$final_name );
+
+					$form_data = array(
+						'spanduk2' => $final_name
+					);
+
+					$this->Model_content_home->update_content_home_photo($form_data);	
+
+					helper_log("edit", '[EDIT] Data: Spanduk Profile Perusahaan Divisi Elektronik diperbaharui');
+
+					$data['success'] = 'Spanduk Profil Perusahaan Divisi Elektronik telah berhasil diupdate!'; 
+				}        	
+			}
+
+			if(isset($_POST['form_spanduk3'])) {
+				$valid = 1;
+				$path = $_FILES['spanduk3']['name'];
+				$path_tmp = $_FILES['spanduk3']['tmp_name'];
+				if($path!='') {
+					$ext = pathinfo( $path, PATHINFO_EXTENSION );
+					$file_name = basename( $path, '.' . $ext );
+					$ext_check = $this->Model_header->extension_check_photo($ext);
+					if($ext_check == FALSE) {
+						$valid = 0;
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
+					}
+				} else {
+					$valid = 0;
+					$data['error'] = 'Anda harus memilih foto<br>';
+				}
+				if($valid == 1) {
+					
+					$data['content_home'] = $this->Model_content_home->get_file();
+		    		
+		    		// removing the existing photo
+					unlink('./public/uploads/file/'.$data['content_home']['spanduk3']);
+
+		    		// updating the data
+					$final_name = 'profile_perusahaan3'.'.'.$ext;
+					move_uploaded_file( $path_tmp, './public/uploads/file/'.$final_name );
+
+					$form_data = array(
+						'spanduk3' => $final_name
+					);
+
+					$this->Model_content_home->update_content_home_photo($form_data);	
+
+					helper_log("edit", '[EDIT] Data: Spanduk Profile Perusahaan Engineering & Divisi Elektronik diperbaharui');
+
+					$data['success'] = 'Spanduk Profil Perusahaan Engineering & Divisi Elektronik telah berhasil diupdate!'; 
+				}        	
+			}
+
+			$data['content_home'] = $this->Model_content_home->get_file();
+
+			$this->load->view('admin/view_header',$header);
+			$this->load->view('admin/view_content_home_company_profile',$data);
+			$this->load->view('admin/view_footer');
 		} else {
 			show_404();
 		}
