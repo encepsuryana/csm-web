@@ -33,7 +33,7 @@ ol {
 }
 
 .site-maps ul li a {
-	text-transform: uppercase;
+	color: #333;
 }
 
 .site-maps ul li a:hover {
