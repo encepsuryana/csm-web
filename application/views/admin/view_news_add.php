@@ -60,11 +60,6 @@ if(!$this->session->userdata('id')) {
 								<input id="add" type="button" onclick='ik(this.value);' value='col-page col-sm-8 col-md-6' style="padding: 40px 30px;">
 								<input id="add" type="button" onclick='ik(this.value);' value='col-page col-sm-4 col-md-3' style="padding: 40px 5px;">
 							</div>
-							<script type="text/javascript">
-								function ik(val){
-									document.getElementById('style').value = val;  
-								}
-							</script>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Foto Berita <span>*</span></label>

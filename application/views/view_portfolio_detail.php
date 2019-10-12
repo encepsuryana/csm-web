@@ -46,7 +46,6 @@
 							<?php
 						}
 						?>
-
 					</div>
 
 					<?php if($portfolio_photo_total>=1): ?>
@@ -72,7 +71,11 @@
 					<p>
 						<?php echo $portfolio['content']; ?>
 					</p>
-				</div>				
+				</div>
+				<hr>
+				<div class="all-news">
+					<a target="_blank" href="<?php echo base_url(); ?>product"><?php echo SEE_MORE; ?> <?php echo ALL; ?> <?php echo PRODUCT; ?></a>
+				</div>	
 			</div>
 
 			<div class="col-lg-3 col-md-4">

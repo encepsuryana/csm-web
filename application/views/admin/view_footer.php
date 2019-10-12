@@ -22,6 +22,12 @@
 	
 	<script src="<?php echo base_url(); ?>public/admin/js/demo.js"></script>
 
+	<script type="text/javascript">
+		function ik(val){
+			document.getElementById('style').value = val;  
+		}
+	</script>
+
 	<script>
 		$(document).ready(function() {
 			$('#editor1').summernote({
@@ -128,6 +134,6 @@
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip();   
 	});
-	</script
+	</script>
 </body>
 </html>
