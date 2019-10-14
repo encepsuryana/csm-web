@@ -54,9 +54,7 @@
 		}
 
 	</style>
-
-
-
+	
 </head>
 
 <body class="hold-transition fixed skin-blue sidebar-mini">
@@ -165,7 +163,7 @@
 
 					<!-- Admin Role -->
 					<?php if( $this->session->userdata('role') == 'admin' ): ?>
-						<li class="treeview <?php if(($final_url_other == 'admin/content-home')||($final_url_other == 'admin/content-home/edit')||($final_url_other == 'admin/content-home/main-photo')||($final_url_other == 'admin/company-profile') ) {echo 'active';} ?>">
+						<li class="treeview <?php if(($final_url_other == 'admin/content-home')||($final_url_other == 'admin/content-home/edit')||($final_url_other == 'admin/content-home/company-profile') ) {echo 'active';} ?>">
 							<a href="#">
 								<i class="fa fa-home"></i>
 								<span>Konten Beranda</span>
@@ -175,7 +173,7 @@
 							</a>
 							<ul class="treeview-menu">
 								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home"><i class="fa fa-industry"></i> Konten Utama</a></li>
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Profile Perusahaan</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home/company-profile"><i class="fa fa-file-pdf-o"></i> Profile Perusahaan</a></li>
 							</ul>
 						</li>
 						<li class="treeview <?php if( ($final_url_other == 'admin/news/add')||($final_url_other == 'admin/news')||($final_url_other == 'admin/news/edit')||($final_url_other == 'admin/news-category/add')||($final_url_other == 'admin/news-category')||($final_url_other == 'admin/news-category/edit') ) {echo 'active';} ?>">
@@ -322,7 +320,7 @@
 
 					<!-- HRD Role -->
 					<?php if( $this->session->userdata('role') == 'hrd' ): ?>
-						<li class="treeview <?php if(($final_url_other == 'hrd/company-profile')) {echo 'active';} ?>">
+						<li class="treeview <?php if(($final_url_other == 'hrd/content-home/company-profile')) {echo 'active';} ?>">
 							<a href="#">
 								<i class="fa fa-home"></i>
 								<span>Konten Beranda</span>
@@ -331,7 +329,7 @@
 								</span>
 							</a>
 							<ul class="treeview-menu">
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Profile Perusahaan</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home/company-profile"><i class="fa fa-file-pdf-o"></i> Profile Perusahaan</a></li>
 							</ul>
 						</li>
 
@@ -462,7 +460,7 @@
 
 					<!-- Staff Role -->
 					<?php if( $this->session->userdata('role') == 'staff' ): ?>
-						<li class="treeview <?php if($final_url_other == 'staff/company-profile') {echo 'active';} ?>">
+						<li class="treeview <?php if($final_url_other == 'staff/content-home/company-profile') {echo 'active';} ?>">
 							<a href="#">
 								<i class="fa fa-home"></i>
 								<span>Konten Beranda</span>
@@ -471,7 +469,7 @@
 								</span>
 							</a>
 							<ul class="treeview-menu">
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/company-profile"><i class="fa fa-file-pdf-o"></i> Profile Perusahaan</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/content-home/company-profile"><i class="fa fa-file-pdf-o"></i> Profile Perusahaan</a></li>
 							</ul>
 						</li>
 

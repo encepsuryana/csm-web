@@ -55,7 +55,7 @@ class Login extends CI_Controller
                     if(!$pw) {
 
                     //Add Log User
-                        helper_log("login", '<span style="background:red; color:white;">[LOGIN] User: '.$email.', Password: '.$password.', Gagal Login</span>');
+                        helper_log("login", '<span style="background:red; color:white;">[LOGIN] User: '.$email.', Password salah, Gagal Login</span>');
 
                         $data['error'] = 'Password salah!';
                         $this->load->view('admin/view_login',$data);
@@ -95,7 +95,6 @@ class Login extends CI_Controller
         } else {
             $this->load->view('admin/view_login',$data);    
         }
-        
     }
 
     function logout() {

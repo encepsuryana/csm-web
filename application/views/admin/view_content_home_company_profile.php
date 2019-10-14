@@ -31,20 +31,20 @@ if(!$this->session->userdata('id')) {
 					<div class="box-body">
 						<h3 class="seo-info">Profil Perusahaan Engineering</h3>
 						
-						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/company-profile',array('class' => 'form-horizontal')); ?>
+						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/company-profile',array('class' => 'form-horizontal')); ?>
 						<div class="form-group">
 							<div class="pdf-style">
 								<label for="" class="col-sm-2"></label>
 								<div class="col-md-5">
 									<i title="<?php echo $content_home['file_pdf1']; ?>" data-toggle="tooltip" data-placement="top" class="fa fa-file-pdf-o" aria-hidden="true"></i>
-									<label style="margin-left: 5px;" for="">File Pdf: Profil Perusahaan Engineering</label>
+									<label style="margin-left: 5px;" for="">File Pdf: Profil Perusahaan Mekanik</label>
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Pilih File: </label>
 							<div class="col-sm-4">
-								<input type="file" name="file" class="form-control">
+								<input type="file" name="file1" class="form-control">
 							</div>
 						</div>
 						<div class="form-group">
@@ -54,7 +54,8 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<?php echo form_close(); ?>
-						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/company-profile',array('class' => 'form-horizontal')); ?>
+
+						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/company-profile',array('class' => 'form-horizontal')); ?>
 						<div class="box-body">
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Spanduk</label>
@@ -79,7 +80,7 @@ if(!$this->session->userdata('id')) {
 
 
 						<h3 class="seo-info">Profil Perusahaan Divisi Elektronik</h3>
-						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/company-profile',array('class' => 'form-horizontal')); ?>
+						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/company-profile',array('class' => 'form-horizontal')); ?>
 						<div class="form-group">
 							<div class="pdf-style">
 								<label for="" class="col-sm-2"></label>
@@ -92,7 +93,7 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Pilih File: </label>
 							<div class="col-sm-4">
-								<input type="file" name="file" class="form-control">
+								<input type="file" name="file2" class="form-control">
 							</div>
 						</div>
 						<div class="form-group">
@@ -103,7 +104,7 @@ if(!$this->session->userdata('id')) {
 						</div>
 						<?php echo form_close(); ?>
 
-						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/company-profile',array('class' => 'form-horizontal')); ?>
+						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/company-profile',array('class' => 'form-horizontal')); ?>
 						<div class="box-body">
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Spanduk</label>
@@ -127,7 +128,7 @@ if(!$this->session->userdata('id')) {
 						<?php echo form_close(); ?>
 
 						<h3 class="seo-info">File Pdf: Profil Perusahaan Engineering & Divisi Elektronik</h3>
-						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/company-profile',array('class' => 'form-horizontal')); ?>
+						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/company-profile',array('class' => 'form-horizontal')); ?>
 						<div class="form-group">
 							<div class="pdf-style">
 								<label for="" class="col-sm-2"></label>
@@ -140,7 +141,7 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Pilih File: </label>
 							<div class="col-sm-4">
-								<input type="file" name="file" class="form-control">
+								<input type="file" name="file3" class="form-control">
 							</div>
 						</div>
 						<div class="form-group">
@@ -151,7 +152,7 @@ if(!$this->session->userdata('id')) {
 						</div>
 						<?php echo form_close(); ?>
 
-						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/company-profile',array('class' => 'form-horizontal')); ?>
+						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/company-profile',array('class' => 'form-horizontal')); ?>
 						<div class="box-body">
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Spanduk</label>

@@ -60,13 +60,12 @@ $route['facility/post/(:any)'] = 'facility/view/$1';
 $route['category/post/(:any)'] = 'category/view/$1';
 $route['portfolio/post/(:any)'] = 'portfolio/view/$1';
 $route['electronics-division/post/(:any)'] = 'electronics-division/view/$1';
-$route['admin/company-profile'] = 'admin/content-home/item-bg';
 
 /** HRD ROLE **/
 $route['hrd/profile'] = 'admin/profile';
 $route['hrd/profile/update'] = 'admin/profile/update';
 $route['hrd/dashboard'] = 'admin/dashboard';
-$route['hrd/company-profile'] = 'admin/content-home/item-bg';
+$route['hrd/content-home/company-profile'] = 'admin/content-home/company_profile';
 $route['hrd/slider'] = 'admin/slider';
 $route['hrd/slider/add'] = 'admin/slider/add';
 $route['hrd/slider/edit/(:any)'] = 'admin/slider/edit/$1';
@@ -124,7 +123,7 @@ $route['hrd/login/logout'] = 'admin/login/logout';
 $route['staff/profile'] = 'admin/profile';
 $route['staff/profile/update'] = 'admin/profile/update';
 $route['staff/dashboard'] = 'admin/dashboard';
-$route['staff/company-profile'] = 'admin/content-home/item-bg';
+$route['staff/content-home/company-profile'] = 'admin/content-home/company_profile';
 $route['staff/slider'] = 'admin/slider';
 $route['staff/slider/add'] = 'admin/slider/add';
 $route['staff/slider/edit/(:any)'] = 'admin/slider/edit/$1';

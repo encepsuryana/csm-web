@@ -125,7 +125,7 @@ class content_home extends CI_Controller
 		}
 	}
 	
-	public function item_bg() {
+	public function company_profile() {
 		if ( ($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or($this->session->userdata('role') == 'staff') ) {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -135,8 +135,8 @@ class content_home extends CI_Controller
 			if(isset($_POST['form1'])) {
 				$valid = 1;
 
-				$path = $_FILES['file']['name'];
-				$path_tmp = $_FILES['file']['tmp_name'];
+				$path = $_FILES['file1']['name'];
+				$path_tmp = $_FILES['file1']['tmp_name'];
 
 				if($path!='') {
 					$ext = pathinfo( $path, PATHINFO_EXTENSION );
@@ -153,7 +153,7 @@ class content_home extends CI_Controller
 
 				if($valid == 1) {
 
-					$data['content_home'] = $this->Model_content_home->get_file();
+					$data['content_home'] = $this->Model_content_home->get_file_pdf();
 
 					unlink('./public/uploads/file/'.$data['content_home']['file_pdf1']);
 
@@ -163,7 +163,7 @@ class content_home extends CI_Controller
 					$form_data = array(
 						'file_pdf1' => $final_name
 					);
-					$this->Model_content_home->update_content_home_photo($form_data);	
+					$this->Model_content_home->update_content_home_company($form_data);	
 					
 					//Add Log User
 					helper_log("edit", '[EDIT] Data Profil Perusahaan Engineering diperbaharui');		
@@ -175,8 +175,8 @@ class content_home extends CI_Controller
 			if(isset($_POST['form2'])) {
 				$valid = 1;
 
-				$path = $_FILES['file']['name'];
-				$path_tmp = $_FILES['file']['tmp_name'];
+				$path = $_FILES['file2']['name'];
+				$path_tmp = $_FILES['file2']['tmp_name'];
 
 				if($path!='') {
 					$ext = pathinfo( $path, PATHINFO_EXTENSION );
@@ -193,7 +193,7 @@ class content_home extends CI_Controller
 
 				if($valid == 1) {
 
-					$data['content_home'] = $this->Model_content_home->get_file();
+					$data['content_home'] = $this->Model_content_home->get_file_pdf();
 
 					unlink('./public/uploads/file/'.$data['content_home']['file_pdf2']);
 
@@ -203,7 +203,7 @@ class content_home extends CI_Controller
 					$form_data = array(
 						'file_pdf2' => $final_name
 					);
-					$this->Model_content_home->update_content_home_photo($form_data);	
+					$this->Model_content_home->update_content_home_company($form_data);	
 					
 					//Add Log User
 					helper_log("edit", '[EDIT] Data Profil Perusahaan Divisi Elektronik diperbaharui');		
@@ -215,8 +215,8 @@ class content_home extends CI_Controller
 			if(isset($_POST['form3'])) {
 				$valid = 1;
 
-				$path = $_FILES['file']['name'];
-				$path_tmp = $_FILES['file']['tmp_name'];
+				$path = $_FILES['file3']['name'];
+				$path_tmp = $_FILES['file3']['tmp_name'];
 
 				if($path!='') {
 					$ext = pathinfo( $path, PATHINFO_EXTENSION );
@@ -233,7 +233,7 @@ class content_home extends CI_Controller
 
 				if($valid == 1) {
 
-					$data['content_home'] = $this->Model_content_home->get_file();
+					$data['content_home'] = $this->Model_content_home->get_file_pdf();
 
 					unlink('./public/uploads/file/'.$data['content_home']['file_pdf3']);
 
@@ -243,7 +243,7 @@ class content_home extends CI_Controller
 					$form_data = array(
 						'file_pdf3' => $final_name
 					);
-					$this->Model_content_home->update_content_home_photo($form_data);	
+					$this->Model_content_home->update_content_home_company($form_data);	
 					
 					//Add Log User
 					helper_log("edit", '[EDIT] Data Profil Perusahaan Engineering & Divisi Elektronik diperbaharui');		
@@ -270,7 +270,7 @@ class content_home extends CI_Controller
 				}
 				if($valid == 1) {
 					
-					$data['content_home'] = $this->Model_content_home->get_file();
+					$data['content_home'] = $this->Model_content_home->get_file_spanduk();
 		    		
 		    		// removing the existing photo
 					unlink('./public/uploads/file/'.$data['content_home']['spanduk1']);
@@ -283,7 +283,7 @@ class content_home extends CI_Controller
 						'spanduk1' => $final_name
 					);
 
-					$this->Model_content_home->update_content_home_photo($form_data);	
+					$this->Model_content_home->update_content_home_company($form_data);	
 
 					helper_log("edit", '[EDIT] Data: Spanduk Profile Perusahaan Engineering diperbaharui');
 
@@ -309,7 +309,7 @@ class content_home extends CI_Controller
 				}
 				if($valid == 1) {
 					
-					$data['content_home'] = $this->Model_content_home->get_file();
+					$data['content_home'] = $this->Model_content_home->get_file_spanduk();
 		    		
 		    		// removing the existing photo
 					unlink('./public/uploads/file/'.$data['content_home']['spanduk2']);
@@ -322,7 +322,7 @@ class content_home extends CI_Controller
 						'spanduk2' => $final_name
 					);
 
-					$this->Model_content_home->update_content_home_photo($form_data);	
+					$this->Model_content_home->update_content_home_company($form_data);	
 
 					helper_log("edit", '[EDIT] Data: Spanduk Profile Perusahaan Divisi Elektronik diperbaharui');
 
@@ -348,7 +348,7 @@ class content_home extends CI_Controller
 				}
 				if($valid == 1) {
 					
-					$data['content_home'] = $this->Model_content_home->get_file();
+					$data['content_home'] = $this->Model_content_home->get_file_spanduk();
 		    		
 		    		// removing the existing photo
 					unlink('./public/uploads/file/'.$data['content_home']['spanduk3']);
@@ -361,7 +361,7 @@ class content_home extends CI_Controller
 						'spanduk3' => $final_name
 					);
 
-					$this->Model_content_home->update_content_home_photo($form_data);	
+					$this->Model_content_home->update_content_home_company($form_data);	
 
 					helper_log("edit", '[EDIT] Data: Spanduk Profile Perusahaan Engineering & Divisi Elektronik diperbaharui');
 
@@ -369,7 +369,7 @@ class content_home extends CI_Controller
 				}        	
 			}
 
-			$data['content_home'] = $this->Model_content_home->get_file();
+			$data['content_home'] = $this->Model_content_home->get_file_spanduk();
 
 			$this->load->view('admin/view_header',$header);
 			$this->load->view('admin/view_content_home_company_profile',$data);

@@ -33,11 +33,11 @@ class Download extends CI_Controller{
 		$this->load->view('view_footer');
 	}
 
-	public function file_engineering() {
+	public function file_mechanic() {
 		$this->load->helper('download');
 
 		$data = file_get_contents(base_url().'public/uploads/file/profile_perusahaan1.pdf');
-		$name = 'CV. Cipta Sinergi Manufacturing Engineering Company Profile.pdf';
+		$name = 'CV. Cipta Sinergi Manufacturing Mechanic Company Profile.pdf';
 
 		force_download($name,$data);
 	}
@@ -51,11 +51,11 @@ class Download extends CI_Controller{
 		force_download($name,$data);
 	}
 
-	public function file_engineering_electronic() {
+	public function file_mechanic_electronic() {
 		$this->load->helper('download');
 
 		$data = file_get_contents(base_url().'public/uploads/file/profile_perusahaan3.pdf');
-		$name = 'CV. Cipta Sinergi Manufacturing Electronics Engineering & Division Company Profile.pdf';
+		$name = 'CV. Cipta Sinergi Manufacturing Mechanic & Electronics Division Company Profile.pdf';
 
 		force_download($name,$data);
 	}
