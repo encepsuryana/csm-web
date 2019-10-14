@@ -121,7 +121,11 @@ class content_home extends CI_Controller
 				$this->load->view('admin/view_footer');
 			}
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 	}
 	
@@ -271,7 +275,7 @@ class content_home extends CI_Controller
 				if($valid == 1) {
 					
 					$data['content_home'] = $this->Model_content_home->get_file_spanduk();
-		    		
+					
 		    		// removing the existing photo
 					unlink('./public/uploads/file/'.$data['content_home']['spanduk1']);
 
@@ -310,7 +314,7 @@ class content_home extends CI_Controller
 				if($valid == 1) {
 					
 					$data['content_home'] = $this->Model_content_home->get_file_spanduk();
-		    		
+					
 		    		// removing the existing photo
 					unlink('./public/uploads/file/'.$data['content_home']['spanduk2']);
 
@@ -349,7 +353,7 @@ class content_home extends CI_Controller
 				if($valid == 1) {
 					
 					$data['content_home'] = $this->Model_content_home->get_file_spanduk();
-		    		
+					
 		    		// removing the existing photo
 					unlink('./public/uploads/file/'.$data['content_home']['spanduk3']);
 
@@ -375,7 +379,11 @@ class content_home extends CI_Controller
 			$this->load->view('admin/view_content_home_company_profile',$data);
 			$this->load->view('admin/view_footer');
 		} else {
-			show_404();
+			if(!$this->session->userdata('id')) {
+				redirect(base_url().'admin/login');
+			} else {
+				show_404();
+			}
 		}
 
 	}
