@@ -60,3 +60,6 @@ ERROR - 2019-10-14 15:50:47 --> Severity: Warning --> unlink(./public/uploads/fi
 ERROR - 2019-10-14 15:59:16 --> Severity: Warning --> unlink(./public/uploads/file/profile_perusahaan1.pdf): No such file or directory C:\xampp\htdocs\csm-web\application\controllers\admin\Content_home.php 158
 ERROR - 2019-10-14 16:03:32 --> Severity: Warning --> unlink(./public/uploads/file/profile_perusahaan1.pdf): No such file or directory C:\xampp\htdocs\csm-web\application\controllers\admin\Content_home.php 158
 ERROR - 2019-10-14 16:03:47 --> Severity: Warning --> unlink(./public/uploads/file/profile_perusahaan2.pdf): No such file or directory C:\xampp\htdocs\csm-web\application\controllers\admin\Content_home.php 198
+ERROR - 2019-10-14 16:16:17 --> 404 Page Not Found: Public/admin
+ERROR - 2019-10-14 16:18:38 --> 404 Page Not Found: Public/admin
+ERROR - 2019-10-14 16:19:25 --> 404 Page Not Found: Public/admin
