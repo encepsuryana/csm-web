@@ -329,9 +329,9 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (84,'DOWNLOAD_COMPANY_PROFILE','Download Company Profile','Unduh Profile Perusahaan'),
 (85,'DOWNLOAD','Download','Unduh'),
 (86,'CLICK_FOR_DOWNLOAD','Click for Download','Klik untuk unduh'),
-(87,'COMPANY_PROFILE_ENGINEERING','Company Profile Engineering','Profil Perusahaan Engineering'),
+(87,'COMPANY_PROFILE_ENGINEERING','Company Profile Mechanic','Profil Perusahaan Mekanik'),
 (88,'COMPANY_PROFILE_ELECTRONICS_DIVISION','Company Profile Electronics Division','Profil Perusahaan Divisi Elektronik'),
-(89,'COMPANY_PROFILE_EN_DE','Company Profile Engineering & Electronics Division','Profil Perusahaan Engineering & Divisi Elektronik');
+(89,'COMPANY_PROFILE_EN_DE','Company Profile Mechanic & Electronics Division','Profil Perusahaan Mekanik & Divisi Elektronik');
 
 /*Table structure for table `tbl_logging` */
 
@@ -346,7 +346,7 @@ CREATE TABLE `tbl_logging` (
   `log_ipaddress` varchar(15) DEFAULT NULL,
   `log_useragen` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=238 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=271 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_logging` */
 
@@ -587,7 +587,40 @@ insert  into `tbl_logging`(`log_id`,`log_time`,`log_user`,`log_tipe`,`log_desc`,
 (234,'2019-10-12 09:48:49','Encep Suryana',3,'[EDIT] Data: Lot Mark Holder SA25 PAKO Karwheel diupdate pada Produk','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
 (235,'2019-10-12 09:49:09','Encep Suryana',3,'[EDIT] Data: Lot Mark Holder SA25 PAKO Karwheel - Closer diupdate pada Produk','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
 (236,'2019-10-12 09:49:36','Encep Suryana',3,'[EDIT] Data: Individual Feeder System diupdate pada Produk','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
-(237,'2019-10-12 09:49:47','Encep Suryana',3,'[EDIT] Data: Housing Pump diupdate pada Produk','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>');
+(237,'2019-10-12 09:49:47','Encep Suryana',3,'[EDIT] Data: Housing Pump diupdate pada Produk','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(238,'2019-10-12 09:55:29','Encep Suryana',1,'[LOGOUT] User: Encep Suryana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(239,'2019-10-12 09:55:51','Admin',0,'[LOGIN] User: Admin Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(240,'2019-10-12 09:58:01','Admin',2,'[TAMBAH] User:Aman Wardana ditambahkan oleh Admin','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(241,'2019-10-12 09:58:04','Admin',1,'[LOGOUT] User: Admin Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(242,'2019-10-12 09:58:35','Aman Wardana',0,'[LOGIN] User: Aman Wardana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(243,'2019-10-12 10:00:03','Aman Wardana',1,'[LOGOUT] User: Aman Wardana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(244,'2019-10-12 10:00:12','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(245,'2019-10-12 10:02:29','Encep Suryana',3,'[EDIT] Foto: Encep Suryana telah diubah','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(246,'2019-10-12 10:09:07',NULL,0,'<span style=\"background:red; color:white;\">[LOGIN] User: aman.wardana@gmail.com, Password: hasamani, Gagal Login</span>','192.168.1.199','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36</i>'),
+(247,'2019-10-12 10:09:32','Aman Wardana',0,'[LOGIN] User: Aman Wardana Berhasil Login','192.168.1.199','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36</i>'),
+(248,'2019-10-12 10:23:04','Aman Wardana',3,'[EDIT] Data: Tooling and Precision Part diupdate pada Layanan','192.168.1.199','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36</i>'),
+(249,'2019-10-14 08:59:02','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(250,'2019-10-14 09:06:58','Encep Suryana',1,'[LOGOUT] User: Encep Suryana Telah Logout','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(251,'2019-10-14 09:07:11','HRD',0,'[LOGIN] User: HRD Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(252,'2019-10-14 09:13:03','HRD',3,'[EDIT] Halaman Tentang Perusahaan telah diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(253,'2019-10-14 15:17:22','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(254,'2019-10-14 15:20:31','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering & Divisi Elektronik diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(255,'2019-10-14 15:22:27','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering & Divisi Elektronik diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(256,'2019-10-14 15:36:58','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(257,'2019-10-14 15:37:05','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Divisi Elektronik diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(258,'2019-10-14 15:37:15','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering & Divisi Elektronik diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(259,'2019-10-14 15:41:41','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(260,'2019-10-14 15:42:56','Encep Suryana',3,'[EDIT] Data: Spanduk Profile Perusahaan Engineering diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(261,'2019-10-14 15:43:15','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(262,'2019-10-14 15:43:27','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(263,'2019-10-14 15:45:22','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(264,'2019-10-14 15:45:39','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Divisi Elektronik diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(265,'2019-10-14 15:50:47','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(266,'2019-10-14 15:51:48','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(267,'2019-10-14 15:59:16','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(268,'2019-10-14 16:03:32','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(269,'2019-10-14 16:03:47','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Divisi Elektronik diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(270,'2019-10-14 16:04:03','Encep Suryana',3,'[EDIT] Data Profil Perusahaan Engineering & Divisi Elektronik diperbaharui','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>');
 
 /*Table structure for table `tbl_news` */
 
@@ -963,7 +996,7 @@ CREATE TABLE `tbl_service` (
 /*Data for the table `tbl_service` */
 
 insert  into `tbl_service`(`id`,`heading`,`short_content`,`content`,`photo`,`meta_title`,`meta_keyword`,`meta_description`,`slug_service`) values 
-(2,'Tooling and Precision Part','In the production process, we use a variety of cutting tools for metal, so that the products we produce are better and more precise','<p><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">In the production process, we use a variety of cutting tools for metal, so that the products we produce are better and more precise, we use a variety of tools for the cutting process, including <b>tooling and precision parts</b>, including <b>CNC Milling Tools Holder</b>, <b>Standard Clamping</b>, <b>Dial Indicator</b></span><b> </b><span title=\"\" class=\"\"><b>Setting Tools</b>, <b>Centriofic Settings</b> and many more.</span><b><br><br></b><span title=\"\" class=\"\"></span></span><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">By using a complete production machine will make better and more quality products.</span></span></p>','service-2.jpg','Tooling and Precision Part','','','tooling-and-precision-part.html'),
+(2,'Tooling and Precision Part','In the production process, we use a variety of cutting tools for metal, so that the products we produce are better and more precise','<p><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">In the production process, we use a variety of cutting tools for metal, so that the products we produce are better and more precise, we use a variety of tools for the cutting process, including <b>tooling and precision parts</b>, including <b>CNC Milling Tools Holder</b>, <b>Standard Clamping</b>, <b>Dial Indicator</b></span><b> </b><span title=\"\" class=\"\"><b>Setting Tools</b>, <b>tool Settings</b> and many more.</span><b><br><br></b><span title=\"\" class=\"\"></span></span><span class=\"tlid-translation translation\" lang=\"en\"><span title=\"\" class=\"\">By using a complete production machine will make better and more quality products.</span></span></p>','service-2.jpg','Tooling and Precision Part','','','tooling-and-precision-part.html'),
 (3,'Mold and Plastic Component','Mold & Plastic Components for industrial applications.','<p>In addition to producing a wide range of metal products, we also provide the <b>Mold &amp; Plastic components</b> for industry. with various requests submitted by our customers will create with a professional and with a variety of requests from customers to produce high-quality products.</p><p>With a wide range of products made previously from <b>Mold &amp; Plastic Components</b>, we use experts to create concepts and applications to be implemented in the process of application of the product you want.<br></p><p><br></p>','service-3.jpg','Mold and Plastic Component','','','mold-and-plastic-component.html'),
 (4,'Dies and Stamping Component','Die & Stamping Component with expert solid die and die component building professional','To improve the quality of your production, CV. Cipta Sinergi Manufacturing offer <b>Die & Stamping Component</b> with expert solid die and die component building professional, design and manufacturing services for progressive dies used in various industries. Using state-of-the-art design manufacturing, our engineering and design team work with each customer to manufacture accurate, high quality die components and tooling customized for each application industrial component.','service-4.jpg','Dies and Stamping Component','','','dies-and-stamping-component.html'),
 (5,'Mechanical System','mechanical systems experts with a variety of experiences to increase your production','<p>Mechanical systems experts with a variety of experiences to increase your production, with an experienced engineering team are working on various projects to produce high-quality mechanical systems, as well as in workmanship flexible according to customer wishes.</p><p>we accept various kinds of orders for mechanical systems that conform to what it wants to increase production.<br></p>','service-5.jpg','Mechanical System','','','mechanical-system.html'),
@@ -1118,15 +1151,16 @@ CREATE TABLE `tbl_user` (
   `status` varchar(10) NOT NULL,
   `token` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_user` */
 
 insert  into `tbl_user`(`id`,`full_name`,`email`,`phone`,`password`,`photo`,`role`,`status`,`token`) values 
-(1,'Encep Suryana','encep.suryanajr@gmail.com','082129714260','e4e05d342730456fcf3d8c87e95d5748','avatar-1.png','admin','Active','df627f2fcbe82f2aecd3071b228b631c'),
+(1,'Encep Suryana','encep.suryanajr@gmail.com','082129714260','e4e05d342730456fcf3d8c87e95d5748','avatar-1.jpg','admin','Active','df627f2fcbe82f2aecd3071b228b631c'),
 (2,'HRD','hrd@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-2.jpg','hrd','Active','6ebf2c00f0b9f4ccec500f841199e675'),
 (3,'Staff','staff@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-3.jpg','staff','Active',''),
-(4,'Admin','admin@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-4.jpg','admin','Active','bb0a1e5648196fac4a64247cae526102');
+(4,'Admin','admin@gmail.com','082129714260','e10adc3949ba59abbe56e057f20f883e','avatar-4.jpg','admin','Active','bb0a1e5648196fac4a64247cae526102'),
+(5,'Aman Wardana','aman.wardana@gmail.com','08156243970','71ba8c048487a12de09d371071ffcd7e','avatar-5.png','admin','Active','');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
