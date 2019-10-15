@@ -42,6 +42,13 @@ body,
 .pagination > .active > a {
 	background-color: #3498db !important;
 	border-color: #3498db !important;
+	border-radius: 20px;
+	margin: 0 2px;
+}
+
+.pagination > li > a {
+	border-radius: 20px;
+	margin: 0 2px;
 }
 
 .select2-container--open .select2-dropdown--below {

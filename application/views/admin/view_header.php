@@ -112,18 +112,24 @@
 								</a>
 								<ul class="dropdown-menu">
 									<li class="user-footer">
-										<div style="text-align: center;
+										<div style="text-align: left;
 										margin: 10px;
-										margin-bottom: 10px;
 										margin-bottom: 20px;">
-										<img src="<?php echo base_url(); ?>public/uploads/<?php echo $this->session->userdata('photo'); ?>" class="user-image" alt="user photo">
-										<?php echo $this->session->userdata('full_name'); ?> (<?php echo $this->session->userdata('role');?>)
+
+										<img style="width: 50px; height: 50px; margin: 0; margin-right: 20px;" src="<?php echo base_url(); ?>public/uploads/<?php echo $this->session->userdata('photo'); ?>" class="user-image" alt="user photo">
+
+
+										<a href="<?php echo base_url().$this->session->userdata('role'); ?>/profile"><?php echo $this->session->userdata('full_name'); ?> (<?php echo $this->session->userdata('role');?>)</a>
+
+
+										<span style="margin: 0; font-size: 10px; color: #868686;"><?php echo $this->session->userdata('email'); ?></span>
+
+
 									</div>
-									<div>
-										<a href="<?php echo base_url().$this->session->userdata('role'); ?>/profile" class="btn btn-default btn-flat"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Edit Profile</a>
-									</div>
-									<div>
-										<a href="<?php echo base_url().$this->session->userdata('role'); ?>/login/logout" class="btn btn-default btn-flat"> <i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a>
+									<div style="margin-left: 69%;">
+										<a href="<?php echo base_url().$this->session->userdata('role'); ?>/login/logout">
+											<i class="fa fa-sign-out" aria-hidden="true"></i> Log out
+										</a>
 									</div>
 								</li>
 							</ul>

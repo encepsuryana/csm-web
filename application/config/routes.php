@@ -60,6 +60,7 @@ $route['facility/post/(:any)'] = 'facility/view/$1';
 $route['category/post/(:any)'] = 'category/view/$1';
 $route['portfolio/post/(:any)'] = 'portfolio/view/$1';
 $route['electronics-division/post/(:any)'] = 'electronics-division/view/$1';
+$route['admin'] = 'admin/login';
 
 /** HRD ROLE **/
 $route['hrd/profile'] = 'admin/profile';

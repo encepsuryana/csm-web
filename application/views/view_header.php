@@ -372,7 +372,7 @@
 			border-bottom-color: #<?php echo $setting['theme_color_2']; ?>!important;
 		}
 
-		.contact-button-home a,
+		.contact-button-home a:hover,
 		.contact-area button:hover {
 			background: #<?php echo $setting['theme_color_2']; ?>!important;
 			color: #<?php echo $setting['theme_color_1']; ?>!important;
@@ -388,7 +388,7 @@
 		.btn-info:hover,
 		.btn-info:active,
 		.contact-area button,
-		.contact-button-home a:hover {
+		.contact-button-home a {
 			background: #<?php echo $setting['theme_color_1']; ?>!important;
 			color: #<?php echo $setting['theme_color_2']; ?>!important;
 			border-color: #<?php echo $setting['theme_color_1']; ?>!important;;
