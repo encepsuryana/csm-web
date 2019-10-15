@@ -35,14 +35,14 @@ if(!$this->session->userdata('id')) {
 
 					<div class="nav-tabs-custom">
 						<ul class="nav nav-tabs">
-							<li class="active"><a href="#tab_1" data-toggle="tab">Update Informasi</a></li>
-							<li><a href="#tab_2" data-toggle="tab">Update Foto</a></li>
+							<li class="active"><a href="#tab_2" data-toggle="tab">Update Foto</a></li>
+							<li><a href="#tab_1" data-toggle="tab">Update Informasi</a></li>
 							<li><a href="#tab_3" data-toggle="tab">Update Password</a></li>
 							<li><a href="#tab_4" data-toggle="tab">Kelola Pengguna</a></li>
 						</ul>
 						<div class="tab-content">
 
-							<div class="tab-pane active" id="tab_1">						
+							<div class="tab-pane" id="tab_1">						
 								<?php echo form_open(base_url().$this->session->userdata('role').'/profile/update',array('class' => 'form-horizontal')); ?>
 								<div class="box-body">
 									<div class="form-group">
@@ -80,7 +80,7 @@ if(!$this->session->userdata('id')) {
 							</div>
 
 
-							<div class="tab-pane" id="tab_2">
+							<div class="tab-pane active" id="tab_2">
 								<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/profile/update',array('class' => 'form-horizontal')); ?>
 								<div class="box-body">
 									<div class="form-group">

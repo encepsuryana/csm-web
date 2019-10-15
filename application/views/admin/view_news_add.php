@@ -40,19 +40,19 @@ if(!$this->session->userdata('id')) {
 
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
-							<div class="col-sm-6">
+							<div class="col-sm-9">
 								<input type="text" class="form-control" name="news_title" value="<?php if(isset($_POST['news_title'])) {echo $_POST['news_title'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Label Berita <span>*</span></label>
-							<div class="col-sm-6">
+							<div class="col-sm-9">
 								<input id="style" readonly="readonly" type="text" class="form-control" name="slug" value="<?php if(isset($_POST['slug'])) {echo $_POST['slug'];} ?>">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"><span></span></label>
-							<div class="col-sm-4" style="text-align: center;">
+							<div class="col-sm-9" style="text-align: center;">
 								<div class="style-select" > 
 									<i class="fa fa-info-circle" aria-hidden="true"></i>
 									<span>Select Style: </span>

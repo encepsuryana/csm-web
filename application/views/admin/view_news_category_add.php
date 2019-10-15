@@ -34,11 +34,11 @@ if(!$this->session->userdata('id')) {
 
 				<?php echo form_open(base_url().$this->session->userdata('role').'/news-category/add',array('class' => 'form-horizontal')); ?>
 
-				<div class="box box-info  b-box">
+				<div class="box box-info b-box">
 					<div class="box-body">
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Nama Kategori <span>*</span></label>
-							<div class="col-sm-4">
+							<div class="col-sm-9">
 								<input type="text" class="form-control" name="category_name">
 							</div>
 						</div>

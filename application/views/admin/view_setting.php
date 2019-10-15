@@ -36,27 +36,27 @@ if(!$this->session->userdata('id')) {
 
 				<div class="nav-tabs-custom">
 					<ul class="nav nav-tabs">
-						<li class="active"><a href="#tab_logo" data-toggle="tab">Logo</a></li>
+						<li class="active"><a href="#tab_general" data-toggle="tab">Informasi Website</a></li>
+						<li><a href="#tab_logo" data-toggle="tab">Logo</a></li>
 						<li><a href="#tab_favicon" data-toggle="tab">Favicon</a></li>
-						<li><a href="#tab_general" data-toggle="tab">General Content</a></li>
-						<li><a href="#tab_email" data-toggle="tab">Email Settings</a></li>
-						<li><a href="#tab_sidebar_footer" data-toggle="tab">Sidebar & Footer</a></li>
 						<li><a href="#tab_login_bg" data-toggle="tab">Login Background</a></li>
 						<li><a href="#tab_banner" data-toggle="tab">Background & Tema</a></li>
+						<li><a href="#tab_sidebar_footer" data-toggle="tab">Sidebar & Footer</a></li>
+						<li><a href="#tab_email" data-toggle="tab">Email Settings</a></li>
 					</ul>
 					<div class="tab-content">
-						<div class="tab-pane active" id="tab_logo">							
+						<div class="tab-pane" id="tab_logo">							
 
 							<h3 class="seo-info">Website Logo</h3>
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>								
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
+								<label for="" class="col-sm-2 control-label">Logo Tersedia</label>
 								<div class="col-sm-6" style="padding-top:6px;background: #f2f2f2;">
 									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" class="existing-photo" style="height:80px;">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Foto Baru</label>
+								<label for="" class="col-sm-2 control-label">Ubah</label>
 								<div class="col-sm-6" style="padding-top:6px;">
 									<input type="file" name="photo_logo">
 								</div>
@@ -72,13 +72,13 @@ if(!$this->session->userdata('id')) {
 							<h3 class="seo-info">Website Logo Art</h3>
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>								
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
+								<label for="" class="col-sm-2 control-label">Logo Tersedia</label>
 								<div class="col-sm-6" style="padding-top:6px;background: #f2f2f2;">
 									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo2']; ?>" class="existing-photo" style="height:80px;">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Foto Baru</label>
+								<label for="" class="col-sm-2 control-label">Ubah</label>
 								<div class="col-sm-6" style="padding-top:6px;">
 									<input type="file" name="photo_logo2">
 								</div>
@@ -94,13 +94,13 @@ if(!$this->session->userdata('id')) {
 							<h3 class="seo-info">Admin Logo</h3>
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>								
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
+								<label for="" class="col-sm-2 control-label">Logo Tersedia</label>
 								<div class="col-sm-6" style="padding-top:6px;background: #f2f2f2;">
 									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo_admin']; ?>" class="existing-photo" style="height:80px;">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Foto Baru</label>
+								<label for="" class="col-sm-2 control-label">Ubah</label>
 								<div class="col-sm-6" style="padding-top:6px;">
 									<input type="file" name="photo_logo_admin">
 								</div>
@@ -164,7 +164,7 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_close(); ?>
 						</div>
 
-						<div class="tab-pane" id="tab_general">
+						<div class="tab-pane active" id="tab_general">
 							<?php echo form_open(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>
 							<div class="box-body">
 								<div class="form-group">
