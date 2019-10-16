@@ -559,7 +559,6 @@
 							</ul>
 						</li>
 
-
 						<li class="treeview <?php if( ($final_url_other == 'staff/portfolio/add')||($final_url_other == 'staff/portfolio')||($final_url_other == 'staff/portfolio/edit')||($final_url_other == 'staff/portfolio-category/add')||($final_url_other == 'staff/portfolio-category')||($final_url_other == 'staff/portfolio-category/edit') ) {echo 'active';} ?>">
 							<a href="#">
 								<i class="fa fa-list-alt"></i>
@@ -571,20 +570,6 @@
 							<ul class="treeview-menu">
 								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio-category"><i class="fa fa-list-ul"></i> Kategori Portofolio</a></li>
 								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/portfolio"><i class="fa fa-list-ol"></i> Portfolio</a></li>
-							</ul>
-						</li>
-
-						<li class="treeview <?php if( ($final_url_other == 'staff/designation/add')||($final_url_other == 'staff/designation')||($final_url_other == 'staff/designation/edit')||($final_url_other == 'staff/team-member/add')||($final_url_other == 'staff/team-member')||($final_url_other == 'staff/team-member/edit') ) {echo 'active';} ?>">
-							<a href="#">
-								<i class="fa fa-users"></i>
-								<span>Team Member</span>
-								<span class="pull-right-container">
-									<i class="fa fa-angle-left pull-right"></i>
-								</span>
-							</a>
-							<ul class="treeview-menu">
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/designation"><i class="fa fa-user-md"></i> Designation</a></li>
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/team-member"><i class="fa fa-user"></i> Team Member</a></li>
 							</ul>
 						</li>
 

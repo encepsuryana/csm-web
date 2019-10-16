@@ -58,7 +58,7 @@ if(!$this->session->userdata('id')) {
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Pilih </label>
 									<div class="col-sm-6">
-										<input type="file" name="electronics_division_desc_photo" class="form-control">
+										<input type="file" name="electronics_division_desc_photo">
 									</div>
 								</div>
 								<div class="form-group">

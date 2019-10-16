@@ -64,7 +64,7 @@
 <script src='<?php echo base_url(); ?>public/js/custom.js'></script>
 <script type="text/javascript" id="cookieinfo" 
 src="//cookieinfoscript.com/js/cookieinfo.min.js" 
-data-moreinfo="<?php base_url();?>terms-and-conditions"
+data-moreinfo="<?php base_url();?>privacy-policy"
 data-close-text="Got it!"
 data-divlinkbg="#134595"
 data-divlink="#fff">
