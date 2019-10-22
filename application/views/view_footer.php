@@ -65,9 +65,12 @@
 <script type="text/javascript" id="cookieinfo" 
 src="//cookieinfoscript.com/js/cookieinfo.min.js" 
 data-moreinfo="<?php base_url();?>privacy-policy"
-data-close-text="Got it!"
+data-close-text="<?php echo COOKIES_OK; ?>"
 data-divlinkbg="#134595"
-data-divlink="#fff">
+data-divlink="#fff"
+data-text-align="left"
+data-message="<?php echo COOKIES_MESSAGE; ?>"
+data-linkmsg="<?php echo COOKIES_MORE; ?>">
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
