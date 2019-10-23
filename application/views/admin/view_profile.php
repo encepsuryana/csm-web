@@ -164,29 +164,38 @@ if(!$this->session->userdata('id')) {
 															foreach ($users as $row) {
 																$i++;
 																?>
-																<tr>
-																	<td><?php echo $i; ?></td>
-																	<td style="width:80px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['full_name']; ?>" style="width:80px;"></td>
-																	<td><?php echo $row['full_name']; ?></td>
-																	<td><?php echo $row['email']; ?></td>
-																	<td><?php echo $row['phone']; ?></td>
-																	<td><?php echo $row['role']; ?></td>
-																	<td><?php echo $row['status']; ?></td>
+																<?php if ($this->session->userdata('full_name') == $row['full_name']) {?>
+																	<tr>
+																		<td><?php echo $i; ?></td>
+																		<td style="width:80px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['full_name']; ?>" style="width:80px;"></td>
+																		<td><?php echo $row['full_name']; ?></td>
+																		<td><?php echo $row['email']; ?></td>
+																		<td><?php echo $row['phone']; ?></td>
+																		<td><?php echo $row['role']; ?></td>
+																		<td><?php echo $row['status']; ?></td>
+																		<td>
+																			Tidak ada Action
+																		</td>
+																	</tr>
+																	<?php
+																} else {
+																	?>
+																	<tr>
+																		<td><?php echo $i; ?></td>
+																		<td style="width:80px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['full_name']; ?>" style="width:80px;"></td>
+																		<td><?php echo $row['full_name']; ?></td>
+																		<td><?php echo $row['email']; ?></td>
+																		<td><?php echo $row['phone']; ?></td>
+																		<td><?php echo $row['role']; ?></td>
+																		<td><?php echo $row['status']; ?></td>
 
-																	<td>
-																		<?php if ($this->session->userdata('role') == 'admin') {?>
+																		<td>
 																			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/profile/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 																			<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/profile/delete/<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a> 
-																		<?php } else {?>
-																			<div class="forbiden">
-																				<i class="fa fa-minus-circle" aria-hidden="true"></i>
-																				<span>Akses Tidak tersedia</span>
-																				<i class="fa fa-minus-circle" aria-hidden="true"></i>
-																			</div>
-																		<?php }?>  
-																	</td>
-																</tr>
-																<?php
+																		</td>
+																	</tr>
+																	<?php
+																}
 															}
 															?>							
 														</tbody>
