@@ -90,14 +90,14 @@ CREATE TABLE `tbl_electronics_division` (
 /*Data for the table `tbl_electronics_division` */
 
 insert  into `tbl_electronics_division`(`id`,`name`,`short_content`,`content`,`category_id`,`photo`,`meta_title`,`meta_keyword`,`meta_description`,`slug_electronics`) values 
-(1,'PLC Controller design and implementations','PLC Controller design and implementations','<p>PLC Controller design and implementations<br></p>','1','electronics_division-1.jpg','PLC Controller design and implementations','PLC Controller design and implementations','PLC Controller design and implementations','plc-controller-design-and-implementations.html'),
-(2,'Power electronics design and manufacturing','Power electronics design and manufacturing','<p>Power electronics design and manufacturing <br></p>','1','electronics_division-2.jpg','Power electronics design and manufacturing ','Power electronics design and manufacturing ','Power electronics design and manufacturing ','power-electronics-design-and-manufacturing.html'),
-(3,'Man-Machine Interface','MMI (Man-Machine Interface)','<p>MMI (Man-Machine Interface)<br></p>','1','electronics_division-3.jpg','MMI (Man-Machine Interface)','MMI (Man-Machine Interface)','MMI (Man-Machine Interface)','man-machine-interface.html'),
-(4,'Ruggedized electronic controllers','Ruggedized electronic controllers','<p>Ruggedized electronic controllers<br></p>','2','electronics_division-4.jpg','Ruggedized electronic controllers','Ruggedized electronic controllers','Ruggedized electronic controllers','ruggedized-electronic-controllers.html'),
-(5,'Harsh environmental power drivers','Harsh environmental power drivers','<p>Harsh environmental power drivers <br></p>','2','electronics_division-5.jpg','Harsh environmental power drivers ','Harsh environmental power drivers ','Harsh environmental power drivers ','harsh-environmental-power-drivers.html'),
+(1,'PLC Controller design and implementations','design and integration PLC controlling solutions for Industrial Automation. Our engineering team is an expert on Several PLC controllers, therefore, we provide the most efficient solutions for our customers.','design and integration PLC controlling solutions for Industrial Automation. Our engineering team is an expert on Several PLC controllers, therefore, we provide the most efficient solutions for our customers. <br>','1','electronics_division-1.PNG','PLC Controller design and implementations','design and integration PLC controlling solutions for Industrial Automation. Our engineering team is an expert on Several PLC controllers, therefore, we provide the most efficient solutions for our customers. ','design and integration PLC controlling solutions for Industrial Automation. Our engineering team is an expert on Several PLC controllers, therefore, we provide the most efficient solutions for our customers. ','plc-controller-design-and-implementations.html'),
+(2,'Power electronics design and manufacturing','Up to 400 Amps PWM driving \r\nInput voltage: 18-28 VDC\r\nSmart control (Current, temperature and luck sensing) \r\n...','<ul><li>Up to 400 Amps PWM driving</li><li>Input voltage: 18-28 VDC</li><li>Smart control (Current, temperature and luck sensing)</li><li>Programmable RPM controlling</li><li>Time controlling (programmable delays)</li><li>Soft and fast running, soft and fast stop</li><li>RS-422 serial interface, status and warnings report</li><li>Discrete and digital command interface (controlling by panel or computer interface)<br>Noise isolation</li><li>Harsh environmental operation ( Drop, Shock, Strike, Vibration and temperature (-20 to +60) resistant )<br></li></ul>','1','electronics_division-2.jpg','Power electronics design and manufacturing ','Power electronics design and manufacturing ','Power electronics design and manufacturing ','power-electronics-design-and-manufacturing.html'),
+(3,'Man-Machine Interface','our MMI interface display panels are designed based on customer requirements in order for machinery programming and smart operations inspection.','our MMI interface display panels are designed based on customer requirements in order for machinery programming and smart operations inspection. These products are suitable for industrial automation and special vehicles and portable sets.','1','electronics_division-3.jpg','MMI (Man-Machine Interface)','MMI (Man-Machine Interface)','MMI (Man-Machine Interface)','man-machine-interface.html'),
+(4,'Ruggedized electronic controllers','we design ruggedized electronic controlling and processing systems for all defense applications. Our products','we design ruggedized electronic controlling and processing systems for all defense applications. Our products Are qualified by military standards requirements. The processing systems are designed for army and naval application.<br><br>','2','electronics_division-4.jpg','Ruggedized electronic controllers','Ruggedized electronic controllers','Ruggedized electronic controllers','ruggedized-electronic-controllers.html'),
+(5,'Harsh environmental power drivers','power electronic systems for defense and harsh environmental industrial electronic. \r\nDesigned based on military standards','power electronic systems for defense and harsh environmental industrial electronic. <br>Designed based on military standards <br>','2','electronics_division-5.jpg','Harsh environmental power drivers ','Harsh environmental power drivers ','Harsh environmental power drivers ','harsh-environmental-power-drivers.html'),
 (6,'Mission computers','Mission computers','<p>Mission computers <br></p>','3','electronics_division-6.jpg','Mission computers ','Mission computers ','Mission computers ','mission-computers.html'),
 (7,'Display systems Multi-Function Display-MFD Moving Map Display etc','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','3','electronics_division-7.jpg','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','Display systems (Multi-Function Display-MFD, Moving Map Display, etc)','display-systems-multi-function-display-mfd-moving-map-display-etc.html'),
-(8,'Sensor interface units','Sensor interface units','<p>Sensor interface units <br></p>','3','electronics_division-8.jpg','Sensor interface units ','Sensor interface units ','Sensor interface units ','sensor-interface-units.html');
+(8,'Sensor interface units','SIU converts analog and discrete signals from diverse source and sensors of aircraft to serial interface protocol, such  as ARINC429, RS-422/485, CAN (ARINC 825) or AFDX (ARINC664)','<ul><li>SIU converts analogue and discrete signals from diverse source and sensors of aircraft to serial interface protocol, such  as ARINC429, RS-422/485, CAN (ARINC 825) or AFDX (ARINC664)</li><li>Converts signals from:</li><ul><li>Air pressure sensors</li><li>Free Gyros, compass </li><li>INS systems  </li><li>All Syncro and resolver sensors</li><li>Radio Altimeter</li><li>Fuel sensors</li><li>Engine sensors<br></li></ul></ul>','3','electronics_division-8.jpg','Sensor interface units','Sensor interface units','Sensor interface units','sensor-interface-units.html');
 
 /*Table structure for table `tbl_electronics_division_category` */
 
@@ -144,11 +144,37 @@ DROP TABLE IF EXISTS `tbl_electronics_division_photo`;
 CREATE TABLE `tbl_electronics_division_photo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `electronics_division_id` int(11) NOT NULL,
+  `slug_electronics` varchar(255) NOT NULL,
   `photo` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_electronics_division_photo` */
+
+insert  into `tbl_electronics_division_photo`(`id`,`electronics_division_id`,`slug_electronics`,`photo`) values 
+(1,1,'plc-controller-design-and-implementations.html','1.jpg'),
+(2,1,'plc-controller-design-and-implementations.html','2.jpg'),
+(3,1,'plc-controller-design-and-implementations.html','3.jpg'),
+(4,1,'plc-controller-design-and-implementations.html','4.jpg'),
+(5,1,'plc-controller-design-and-implementations.html','5.jpg'),
+(6,1,'plc-controller-design-and-implementations.html','6.jpg'),
+(7,1,'plc-controller-design-and-implementations.html','7.jpg'),
+(8,1,'plc-controller-design-and-implementations.html','8.jpg'),
+(9,7,'display-systems-multi-function-display-mfd-moving-map-display-etc.html','9.jpg'),
+(10,7,'display-systems-multi-function-display-mfd-moving-map-display-etc.html','10.jpg'),
+(11,7,'display-systems-multi-function-display-mfd-moving-map-display-etc.html','11.jpg'),
+(12,7,'display-systems-multi-function-display-mfd-moving-map-display-etc.html','12.jpg'),
+(13,5,'harsh-environmental-power-drivers.html','13.jpg'),
+(14,5,'harsh-environmental-power-drivers.html','14.jpg'),
+(15,3,'man-machine-interface.html','15.jpg'),
+(16,3,'man-machine-interface.html','16.jpg'),
+(17,6,'mission-computers.html','17.jpg'),
+(18,6,'mission-computers.html','18.jpg'),
+(19,6,'mission-computers.html','19.jpg'),
+(20,2,'power-electronics-design-and-manufacturing.html','20.jpg'),
+(21,4,'ruggedized-electronic-controllers.html','21.jpg'),
+(22,4,'ruggedized-electronic-controllers.html','22.jpg'),
+(23,4,'ruggedized-electronic-controllers.html','23.jpg');
 
 /*Table structure for table `tbl_facility` */
 
@@ -345,7 +371,7 @@ CREATE TABLE `tbl_logging` (
   `log_ipaddress` varchar(15) DEFAULT NULL,
   `log_useragen` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=302 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=319 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_logging` */
 
@@ -354,7 +380,24 @@ insert  into `tbl_logging`(`log_id`,`log_time`,`log_user`,`log_tipe`,`log_desc`,
 (298,'2019-10-17 10:53:39','Encep Suryana',2,'[TAMBAH] Data: COMFORT AT WORKSHOP AREA ditambahkan ke Slider','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
 (299,'2019-10-17 11:43:16','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
 (300,'2019-10-19 21:29:15','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.100','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
-(301,'2019-10-22 17:08:50','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>');
+(301,'2019-10-22 17:08:50','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(302,'2019-10-23 15:29:27',NULL,0,'<span style=\"background:red; color:white;\">[LOGIN] User: encep.suryanajr@gmail.com, Password salah, Gagal Login</span>','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(303,'2019-10-23 15:29:37','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(304,'2019-10-23 15:44:25','Encep Suryana',3,'[EDIT] Data User: HRD diubah oleh Encep Suryana','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(305,'2019-10-23 15:53:56','Encep Suryana',3,'[EDIT] Data: Logo diupdate pada Settings','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(306,'2019-10-23 15:55:53','Encep Suryana',3,'[EDIT] Data: Logo diupdate pada Settings','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(307,'2019-10-24 09:14:17','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(308,'2019-10-24 09:25:01','Encep Suryana',3,'[EDIT] Data: PLC Controller design and implementations diupdate pada Divisi Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(309,'2019-10-24 09:38:21','Encep Suryana',3,'[EDIT] Data: PLC Controller design and implementations diupdate pada Divisi Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(310,'2019-10-24 09:39:40','Encep Suryana',3,'[EDIT] Data: PLC Controller design and implementations diupdate pada Divisi Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(311,'2019-10-24 10:54:43','Encep Suryana',3,'[EDIT] Data: Display systems Multi-Function Display-MFD Moving Map Display etc diupdate pada Divisi Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(312,'2019-10-24 11:11:22','Encep Suryana',3,'[EDIT] Data: Harsh environmental power drivers diupdate pada Divisi Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(313,'2019-10-24 11:15:42','Encep Suryana',3,'[EDIT] Data: Man-Machine Interface diupdate pada Divisi Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(314,'2019-10-24 11:22:55','Encep Suryana',3,'[EDIT] Data: Mission computers diupdate pada Divisi Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(315,'2019-10-24 11:26:50','Encep Suryana',3,'[EDIT] Data: Power electronics design and manufacturing diupdate pada Divisi Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(316,'2019-10-24 11:30:30','Encep Suryana',3,'[EDIT] Data: Ruggedized electronic controllers diupdate pada Divisi Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(317,'2019-10-24 11:34:26','Encep Suryana',3,'[EDIT] Data: Sensor interface units diupdate pada Divisi Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>'),
+(318,'2019-10-24 11:37:59','Encep Suryana',3,'[EDIT] Data: Sensor interface units diupdate pada Divisi Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:69.0) Gecko/20100101 Firefox/69.0</i>');
 
 /*Table structure for table `tbl_news` */
 
