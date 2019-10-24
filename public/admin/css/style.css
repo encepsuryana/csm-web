@@ -14,6 +14,10 @@ body,
 .select2-container--default .select2-search--dropdown .select2-search__field{
 	border-radius: 20px;
 }
+.modal-content {
+	padding: 10px !important;
+	border-radius: 20px !important;
+}
 
 .info-box-icon {
 	border-radius: 50%;

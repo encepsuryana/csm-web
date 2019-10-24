@@ -179,7 +179,6 @@ section {
 	top: 50%;
 	width: auto;
 	padding: 16px;
-	margin-top: -50px;
 	color: white;
 	transition: 0.6s ease;
 	user-select: none;
@@ -2984,7 +2983,7 @@ span.page-numbers.current {
 	line-height: 26px;
 	font-size: 18px;
 	background: #134595cc;
-	color: #13233b;
+	color: #fff;
 	border: 1px solid #134595;
 	margin-top: -15px;
 	border-radius: 1px;

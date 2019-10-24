@@ -37,12 +37,12 @@ class Model_electronics_division extends CI_Model
     }
     public function get_electronics_division_photo($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_electronics_division_photo WHERE electronics_division_id=?",array($slug));
+        $query = $this->db->query("SELECT * from tbl_electronics_division_photo WHERE slug_electronics='$slug'",array($slug));
         return $query->result_array();
     }
     public function get_electronics_division_photo_number($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_electronics_division_photo WHERE electronics_division_id=?",array($slug));
+        $query = $this->db->query("SELECT * from tbl_electronics_division_photo WHERE  slug_electronics='$slug'",array($slug));
         return $query->num_rows();
     }
     public function get_facility_category()

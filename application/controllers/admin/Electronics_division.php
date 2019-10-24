@@ -123,7 +123,7 @@ class Electronics_division extends CI_Controller
 							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
 							$ext_check = $this->Model_header->extension_check_photo($ext);
 							if($ext_check == FALSE) {
-				        	
+
 							} else {
 								$final_names[$m] = $z.'.'.$ext;
 								move_uploaded_file($photos_temp[$i],"./public/uploads/electronics_division_photos/".$final_names[$m]);
@@ -136,8 +136,9 @@ class Electronics_division extends CI_Controller
 					for($i=0;$i<count($final_names);$i++)
 					{
 						$form_data = array(
-							'electronics_division_id' => $ai_id,
-							'photo'        => $final_names[$i]
+							'electronics_division_id' 	=> $ai_id,
+							'slug_electronics' 			=> $slug,
+							'photo'        				=> $final_names[$i]
 						);
 						$this->Model_electronics_division->add_photos($form_data);
 					}
@@ -183,7 +184,7 @@ class Electronics_division extends CI_Controller
 	public function edit($id)
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-    	
+
 			$tot = $this->Model_electronics_division->electronics_division_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/electronics-division');
@@ -290,7 +291,7 @@ class Electronics_division extends CI_Controller
 							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
 							$ext_check = $this->Model_header->extension_check_photo($ext);
 							if($ext_check == FALSE) {
-				        	
+
 							} else {
 								$final_names[$m] = $z.'.'.$ext;
 								move_uploaded_file($photos_temp[$i],"./public/uploads/electronics_division_photos/".$final_names[$m]);
@@ -303,8 +304,9 @@ class Electronics_division extends CI_Controller
 					for($i=0;$i<count($final_names);$i++)
 					{
 						$form_data = array(
-							'electronics_division_id' => $id,
-							'photo'        => $final_names[$i]
+							'electronics_division_id' 	=> $id,
+							'slug_electronics' 			=> $slug,
+							'photo'       				=> $final_names[$i]
 						);
 						$this->Model_electronics_division->add_photos($form_data);
 					}
