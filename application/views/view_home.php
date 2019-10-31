@@ -39,31 +39,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="content-home">
 			<div class="col-md-6 col-sm-6">
 				<div class="home-last">
-					<div class="container mt-6 mb-5">
-						<div class="row">
-							<div class="col-md-6 offset-md-3">
-								<h3><?php echo LATEST_NEWS; ?></h3>
-								<ul class="timeline">
-									<?php
-									$i=0;				
-									foreach ($latest_news as $row) {
-										$i++;
-										if($i>$setting['total_recent_post']) {break;}
-										?>
-										<li>
-											<a target="_blank" href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>"><?php echo $row['news_title']; ?></a>
-											<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>" target="_blank" style="float: right; font-size: 12px;"><?php echo $row['news_date']; ?></a>
-											<p><?php echo $row['news_short_content']; ?></p>
-										</li>
-										<?php
-									}
-									?>
-								</ul>
-								<div class="all-news">
-									<a target="_blank" href="<?php echo base_url(); ?>news/page"><?php echo SEE_MORE; ?></a>
-								</div>
-							</div>
-						</div>
+					<h3><?php echo LATEST_NEWS; ?></h3>
+					<ul class="timeline">
+						<?php
+						$i=0;				
+						foreach ($latest_news as $row) {
+							$i++;
+							if($i>$setting['total_recent_post']) {break;}
+							?>
+							<li>
+								<a target="_blank" href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>"><?php echo $row['news_title']; ?></a>
+								<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>" target="_blank" style="float: right; font-size: 12px;"><?php echo $row['news_date']; ?></a>
+								<p><?php echo $row['news_short_content']; ?></p>
+							</li>
+							<?php
+						}
+						?>
+					</ul>
+					<div class="all-news">
+						<a target="_blank" href="<?php echo base_url(); ?>news/page"><?php echo SEE_MORE; ?></a>
 					</div>
 				</div>
 			</div>

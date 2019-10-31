@@ -234,6 +234,7 @@
 
 	<style>
 		/* Theme Color 1 */
+		ul.nav-menu li ul li a:before,
 		.tooltip.bottom .tooltip-inner,
 		.lightbox-item:hover .lightbox-icon,
 		.process-row::before,
@@ -301,20 +302,22 @@
 			color: #fff !important
 		}
 
-		ul.timeline li::before {
+		ul.timeline li::before,
+		ul.nav-menu li ul {
 			border-color: #<?php echo $setting['theme_color_1']; ?>!important;
 		}
+
 
 		/* Theme Color 2 */
 		.content-home,
 		.bg-choose {
 			background-color: #<?php echo $setting['theme_color_2']; ?>!important;	
 		}
+
 		.recent-text,
 		.map-main-home,
 		.blog-text,
 		.mean-container .mean-nav ul li a,
-		ul.nav-menu li ul li a:before,
 		.slider-animated li:last-child a,
 		.header-area,
 		.client-name,
@@ -450,32 +453,13 @@
 								<i class="fa fa-envelope-o" aria-hidden="true"></i>
 								<span title="<?php echo COMPANY_EMAIL; ?>" data-toggle="tooltip" data-placement="bottom"><a href="mailto:<?php echo $setting['top_bar_email']; ?>"><?php echo $setting['top_bar_email']; ?></a></span>
 							</li>
-							<li class="dropdown">
-								<i class="fa fa-globe" aria-hidden="true"></i>									
-								<a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown">
-									<span style="cursor: pointer;">
-										<?php if ($this->session->userdata('language')=='eng') {
-											echo "English";
-										} else {
-											echo "Indonesia";
-										}?>
-									</span>
-								</a>
-								<ul class="dropdown-menu1">
-									<li>
-										<?php echo anchor ('language/change/eng','English');?>
-									</li>
-									<li>
-										<?php echo anchor ('language/change/idn','Indonesia');?>
-									</li>
-								</ul>
-							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 	<div id="strickymenu" class="menu-area">
 		<menu>
 			<div class="container">
@@ -492,189 +476,174 @@
 							</a>
 						</div>
 					</div>
+
 					<div class="col-md-9 col-sm-12 main-menu" style="display: block;">
 						<div class="main-menu-item">				 	
-							<ul class="nav nav-ciptasin">
+							<ul class="nav-menu">
 								<li><a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a></li>
-								<li><a href="<?php echo base_url(); ?>about"><?php echo ABOUT; ?></a></li>
-								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo PRODUCT; ?></a>
-									<ul class="dropdown-menu ciptasin-menu">
-										<div class="col-md-7">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>portfolio"><?php echo PORTFOLIO; ?></a>
-												<ul class="csm-content-menu">
-													<?php
-													foreach ($portfolio_category as $row) {
-														?>
-														<li class="csm-category-menu">
-															<a href="<?php echo base_url(); ?>portfolio"><?php echo $row['category_name']; ?></a>
-														</li>
-														<?php
-													}
-													?>
-												</ul>
-											</li>
-										</div>
-										<div class="col-md-5">
-											<div class="col-md-4" style="padding: 0;">
+								<li><a href="<?php echo base_url(); ?>about"><?php echo ABOUT; ?></a></li>		
+								<li class="menu-item-has-children"><a href="javascript:void();"><?php echo PRODUCT; ?></a>
+									<ul class="sub-menu">
+										<li class="submenu-item-has-children">
+											<a href="<?php echo base_url(); ?>portfolio"><?php echo PORTFOLIO; ?></a>
+											<ul class="sub-menu">
 												<?php
-												$i=0;
-												foreach ($product as $row) {
-													$i++;
-													if($i>1) {break;}
+												foreach ($portfolio_category as $row) {
 													?>
-													<div class="product-menu" style="background-image: url(<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>);">
-													</div>
-												</div>
-												<div class="col-md-8" style="padding: 0;">
-													<div class="desc-product-menu">
-														<h4><?php echo NEW_PRODUCT; ?></h4>	
-														<a href="<?php echo base_url(); ?>product">
-															<h5><?php echo $row['product_caption']; ?></h5>	
-															<p><?php echo $row['product_desc']; ?></p>
-														</a>
-													</div>		
-												</div>
-												<?php
-											}
-											?>
-										</div>
-									</ul>
-								</li>
-								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo FACILITY; ?></a>
-									<ul class="dropdown-menu ciptasin-menu">
-										<div class="col-md-6">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?></a>
-												<ul class="csm-content-menu">
+													<li>
+														<a href="<?php echo base_url(); ?>portfolio"><?php echo $row['category_name']; ?></a>
+													</li>
 													<?php
-													foreach ($facility as $row) {
-														?>
-														<li class="csm-category-menu">
-															<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a>
-														</li>
-														<?php
-													}
-													?>
-												</ul>
-											</li>
-										</div>
-										<div class="col-md-6">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>service"><?php echo SERVICE; ?></a>
-												<ul class="csm-content-menu">
-													<?php
-													$i=0;
-													foreach ($service as $row) {
-														$i++;
-														?>
-														<li class="csm-category-menu">
-															<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
-														</li>
-														<?php
-													}
-													?>
-												</ul>
-											</li>
-										</div>
-									</ul>
-								</li>
-								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo ELECTRONICS_DIVISION; ?></a>
-									<ul class="dropdown-menu ciptasin-menu">
-										<div class="col-md-4">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>electronics-division">AVIATION ELECTRONICS</a>
-												<ul class="csm-content-menu">
-													<li class="csm-category-menu">
-														<a href="<?php echo base_url(); ?>electronics-division/post/display-systems-multi-function-display-mfd-moving-map-display-etc.html">Display systems Multi-Function Display-MFD Moving Map Display etc</a>
-													</li>
-													<li class="csm-category-menu">
-														<a href="<?php echo base_url(); ?>electronics-division/post/mission-computers.html">Mission computers</a>
-													</li>
-													<li class="csm-category-menu">
-														<a href="<?php echo base_url(); ?>electronics-division/post/sensor-interface-units.html">Sensor interface units</a>
-													</li>
-												</ul>
-											</li>
-										</div>
-										<div class="col-md-4">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>electronics-division">DEFENSE ELECTRONICS</a>
-												<ul class="csm-content-menu">
-													<li class="csm-category-menu">
-														<a href="<?php echo base_url(); ?>electronics-division/post/ruggedized-electronic-controllers.html">Ruggedized electronic controllers</a>
-													</li>
-													<li class="csm-category-menu">
-														<a href="<?php echo base_url(); ?>electronics-division/post/harsh-environmental-power-drivers.html">Harsh environmental power drivers</a>
-													</li>
-												</ul>
-											</li>
-										</div>
-										<div class="col-md-4">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>electronics-division">INDUSTRIAL ELECTRONICS</a>
-												<ul class="csm-content-menu">
-													<li class="csm-category-menu">
-														<a href="<?php echo base_url(); ?>electronics-division/post/plc-controller-design-and-implementations.html">PLC Controller design and implementations</a>
-													</li>
-													<li class="csm-category-menu">
-														<a href="<?php echo base_url(); ?>electronics-division/post/power-electronics-design-and-manufacturing.html">Power electronics design and manufacturing</a>
-													</li>
-													<li class="csm-category-menu">
-														<a href="<?php echo base_url(); ?>electronics-division/post/man-machine-interface.html">Man-Machine Interface</a>
-													</li>
-												</ul>
-											</li>
-										</div>
+												}
+												?>
+											</ul>
+										</li>
 
+										<li class="submenu-item-has-children">
+											<a href="<?php echo base_url(); ?>product">New Product</a>
+											<ul class="sub-menu">
+												<li>
+													<a href="<?php echo base_url();?>product">
+														<?php
+														$i=0;
+														foreach ($product as $row) {
+															$i++;
+															if($i>1) {break;}
+															?>
+															
+															<div class="latest-news pin">
+																<?php echo NEW_PRODUCT; ?>
+															</div>
+															<a href="<?php echo base_url(); ?>product">
+																<img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>" alt="placeholder+image">
+																<h5><?php echo $row['product_caption']; ?></h5>	
+																<p><?php echo $row['product_desc']; ?></p>
+															</a>
+															<?php
+														}
+														?>
+													</a>
+												</li>
+											</ul>
+										</li>
 									</ul>
 								</li>
-								<li class="dropdown"><a href="javascript:void();" class="dropdown-toggle" data-toggle="dropdown"><?php echo PAGE; ?></a>
-									<ul class="dropdown-menu ciptasin-menu">
-										<div class="col-md-3">
-											<li class="csm-menu">
-											</li>
-										</div>
-										<div class="col-md-2">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>gallery"><?php echo GALLERY; ?></a>
-											</li>
-										</div>
-										<div class="col-md-2">
-											<li class="csm-menu">
-												<a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a>
-											</li>
-										</div>
-										<div class="col-md-5">
-											<div class="col-md-4" style="padding: 0;">
-												<?php
-												$i=0;
-												foreach ($latest_news as $row) {
-													$i++;
-													if($i>1) {break;}
-													?>
-													<div class="product-menu" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>);">
-													</div>
-												</div>
-												<div class="col-md-8" style="padding: 0;">
-													<div class="desc-product-menu">
-														<h4><?php echo LATEST_NEWS; ?></h4>	
-														<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
-															<h5><?php echo $row['news_title']; ?></h5>	
-															<p><?php echo $row['news_short_content']; ?></p>
-														</a>
-													</div>		
-												</div>
+
+								<li class="menu-item-has-children"><a href="javascript:void();"><?php echo FACILITY; ?></a>
+									<ul class="sub-menu">
+										<li class="submenu-item-has-children">
+											<a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?>
+										</a>
+										<ul class="sub-menu">
+											<?php
+											foreach ($facility as $row) {
+												?>
+												<li>
+													<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a>
+												</li>
 												<?php
 											}
 											?>
-										</div>
+										</ul>
+									</li>
+
+									<li class="submenu-item-has-children">
+										<a href="<?php echo base_url(); ?>service"><?php echo SERVICE; ?>
+									</a>
+									<ul class="sub-menu">
+										<?php
+										foreach ($service as $row) {
+											?>
+											<li>
+												<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
+											</li>
+											<?php
+										}
+										?>
 									</ul>
 								</li>
-								<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
 							</ul>
-						</div>
-					</div>
-				</div>
+						</li>
+
+						<li class="menu-item-has-children"><a href="javascript:void();"><?php echo ELECTRONICS_DIVISION; ?></a>
+							<ul class="sub-menu">
+								<li class="submenu-item-has-children">
+									<a href="<?php echo base_url(); ?>electronics-division"><?php echo ELECTRONICS_DIVISION; ?>
+								</a>
+								<ul class="sub-menu">
+									<?php
+									foreach ($electronics_division_category as $row) {
+										?>
+										<li><a href="<?php echo base_url(); ?>electronics-division"><?php echo $row['category_name']; ?></a></li>
+										<?php
+									}
+									?>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="menu-item-has-children"><a href="javascript:void();"><?php echo PAGE; ?></a>
+						<ul class="sub-menu">
+							<li><a href="<?php echo base_url(); ?>gallery"><?php echo GALLERY; ?></a></li>
+							<li class="submenu-item-has-children">
+								<a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a>
+								<ul class="sub-menu">
+									<?php
+									$i=0;
+									foreach ($latest_news as $row) {
+										$i++;
+										if($i>1) {break;}
+										?>
+										<li>
+											<a href="<?php echo base_url();?>news/post">
+												<div class="latest-news pin">
+													<?php echo LATEST_NEWS; ?>
+												</div>
+
+												<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
+													<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
+
+													<h5><?php echo $row['news_title']; ?></h5>	
+													<p><?php echo $row['news_short_content']; ?></p>
+												</a>
+											</a>
+										</li>
+										<?php
+									}
+									?>
+								</ul>
+							</li>
+							<li><a href="<?php echo base_url(); ?>gallery"><?php echo DOWNLOAD; ?></a></li>
+						</ul>
+					</li>
+
+					<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
+
+					<li class="menu-item-has-children">
+						<a href="javascript:void();">
+							<i class="fa fa-globe" aria-hidden="true"></i> 
+							<span>
+								<?php if ($this->session->userdata('language')=='eng') {
+									echo "English";
+								} else {
+									echo "Indonesia";
+								}?>
+							</span>
+						</a>
+
+						<ul class="sub-menu">
+							<li>
+								<?php echo anchor ('language/change/eng','English');?>
+							</li>
+							<li>
+								<?php echo anchor ('language/change/idn','Indonesia');?>
+							</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
 		</div>
+	</div>
+</div>
+</div>
