@@ -87,6 +87,15 @@ class Model_home extends CI_Model
             ORDER BY product_id DESC",array('Yes'));
         return $query->result_array();
     }
+
+     public function get_product_data_star()
+    {
+        $query = $this->db->query("SELECT * 
+            FROM tbl_product
+            WHERE product_star=?
+            ORDER BY product_id DESC",array('Yes'));
+        return $query->result_array();
+    }
     public function get_partner_data()
     {
         $query = $this->db->query("SELECT * FROM tbl_partner ORDER BY id ASC");

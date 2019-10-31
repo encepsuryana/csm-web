@@ -34,6 +34,7 @@ class Home extends CI_Controller {
 		$header['gallery'] = $this->Model_home->get_gallery_data();
 		$header['partner'] = $this->Model_home->get_partner_data();
 		$header['product'] = $this->Model_home->get_product_data();
+		$header['product'] = $this->Model_home->get_product_data_star();
 		
 		$this->load->view('view_header', $header);
 		$this->load->view('view_home');

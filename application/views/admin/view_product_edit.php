@@ -88,6 +88,15 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Produk Unggulan? <span>*</span></label>
+							<div class="col-sm-2" style="padding-top:6px;">
+								<select name="product_star" class="form-control select2">
+									<option value="Yes" <?php if($product['product_star']=='Yes') {echo 'selected';} ?>>Yes</option>
+									<option value="No" <?php if($product['product_star']=='No') {echo 'selected';} ?>>No</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"></label>
 							<div class="col-sm-6">
 								<button type="submit" class="btn btn-success pull-left" name="form1">Update</button>

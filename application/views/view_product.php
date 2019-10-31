@@ -2,7 +2,7 @@
 	<div class="container bannder-table" style="padding: 0;">
 		<div class="col-md-12" style="padding: 0;">
 			<div class="banner-text">
-				<h1><?php echo PRODUCT_HOME; ?></h1>
+				<h1><?php echo OUR_FUTURE_PRODUCT; ?></h1>
 			</div>
 		</div>
 	</div>

@@ -83,11 +83,12 @@ class Product extends CI_Controller
 					move_uploaded_file( $path_tmp, './public/uploads/products/'.$final_name );
 
 					$form_data = array(
-						'product_caption' => $_POST['product_caption'],
-						'product_style' => $_POST['product_style'],
-						'product_name' => $final_name,
-						'product_desc' => $_POST['product_desc'],
-						'product_show_home' => $_POST['product_show_home']
+						'product_caption' 	=> $_POST['product_caption'],
+						'product_style' 	=> $_POST['product_style'],
+						'product_name' 		=> $final_name,
+						'product_desc' 		=> $_POST['product_desc'],
+						'product_show_home' => $_POST['product_show_home'],
+						'product_star' 		=> $_POST['product_star']
 					);
 					$this->Model_product->add($form_data);
 
@@ -174,10 +175,11 @@ class Product extends CI_Controller
 
 					if($path == '') {
 						$form_data = array(
-							'product_caption' => $_POST['product_caption'],
-							'product_style' => $_POST['product_style'],
-							'product_desc' => $_POST['product_desc'],
-							'product_show_home' => $_POST['product_show_home']
+							'product_caption' 	=> $_POST['product_caption'],
+							'product_style' 	=> $_POST['product_style'],
+							'product_desc' 		=> $_POST['product_desc'],
+							'product_show_home' => $_POST['product_show_home'],
+							'product_star' 		=> $_POST['product_star']
 						);
 						$this->Model_product->update($id,$form_data);
 					}
@@ -189,11 +191,12 @@ class Product extends CI_Controller
 						move_uploaded_file( $path_tmp, './public/uploads/products/'.$final_name );
 
 						$form_data = array(
-							'product_caption' => $_POST['product_caption'],
-							'product_style' => $_POST['product_style'],
-							'product_name' => $final_name,
-							'product_desc' => $_POST['product_desc'],
-							'product_show_home' => $_POST['product_show_home']
+							'product_caption' 	=> $_POST['product_caption'],
+							'product_style' 	=> $_POST['product_style'],
+							'product_name' 		=> $final_name,
+							'product_desc' 		=> $_POST['product_desc'],
+							'product_show_home' => $_POST['product_show_home'],
+							'product_star' 		=> $_POST['product_star']
 						);
 						$this->Model_product->update($id,$form_data);
 					}
@@ -249,7 +252,7 @@ class Product extends CI_Controller
 			$this->Model_product->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['product']['product_caption'].' dihapus dari Produk');
+			helper_log("Delete", '[HAPUS] Data : '.$data['product']['product_caption'].' dihapus dari Produk');
 
 			redirect(base_url().'admin/product');
 		} else {

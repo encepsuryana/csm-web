@@ -86,7 +86,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="caption-product-area gridGallery">
 	<section>
 		<div class="container">
-			<h3><?php echo OUR_FUTURE_PRODUCT; ?></h3>
+			<h3><?php echo PRODUCT_HOME; ?></h3>
 			<div class="row-product">		
 				<?php
 				$i=0;
