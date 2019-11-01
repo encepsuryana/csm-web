@@ -79,6 +79,18 @@ if(!$this->session->userdata('id')) {
       <div class="col-md-12">
         <div class="box box-info b-box" style="padding-top: 10px;">
           <div class="box-body table-responsive">
+
+            <?php if ($this->session->userdata('role') == 'admin') { ?>
+              <div class="box-backup">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                <a href="#" data-href="<?php echo base_url(); ?>admin/dashboard/truncate-log" data-toggle="modal" data-target="#confirm-delete">Hapus Data log</a>
+
+
+                <i class="fa fa-download" aria-hidden="true"></i>
+                <a href="<?php echo base_url(); ?>admin/dashboard/ciptasin-log"> Export Data Log </a>
+              </div>
+            <?php } ?>
+
             <table id="example1" class="table table-bordered table-striped">
               <thead>
                 <tr>
@@ -114,6 +126,27 @@ if(!$this->session->userdata('id')) {
       </div>
     </div>
   </section>
+
+
+  <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Konfirmasi Hapus</h4>
+        </div>
+        <div class="modal-body">
+          <p>Anda yakin ingin menghapus?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-danger btn-ok">Delete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <?php } else { ?>
   <div class="forbiden">
     <i class="fa fa-minus-circle" aria-hidden="true"></i>
