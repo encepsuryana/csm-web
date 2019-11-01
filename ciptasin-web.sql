@@ -262,7 +262,7 @@ CREATE TABLE `tbl_language` (
   `eng` text NOT NULL,
   `idn` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=93 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_language` */
 
@@ -356,7 +356,8 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (89,'COMPANY_PROFILE_EN_DE','Company Profile Mechanic & Electronics Division','Profil Perusahaan Mekanik & Divisi Elektronik'),
 (90,'COOKIES_MESSAGE',' We use cookies and other similar technologies, such as pixels or local storage, to help provide you with a better, faster, and safer experience','Kami menggunakan kuki dan teknologi sejenis, seperti piksel atau penyimpanan lokal, untuk membantu memberi Anda pengalaman yang lebih baik, lebih cepat, dan lebih aman.'),
 (91,'COOKIES_MORE','More info','Lebih lanjut'),
-(92,'COOKIES_OK','Got it!','Ok');
+(92,'COOKIES_OK','Got it!','Ok'),
+(93,'FUTURED_PRODUCT','Product futured','Produk Unggulan');
 
 /*Table structure for table `tbl_logging` */
 

@@ -52,7 +52,7 @@
 				<div class="mySlides">
 					<?php if ($row['product_star'] == 'Yes') { ?>
 						<div class="product-star">
-							<i class="fa fa-bookmark" aria-hidden="true"></i> <span>Produk Unggulan</span>
+							<i class="fa fa-bookmark" aria-hidden="true"></i> <span><?php echo FUTURED_PRODUCT; ?></span>
 						</div>
 					<?php } ?>
 					<div class="product-caption">
