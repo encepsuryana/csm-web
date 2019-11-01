@@ -87,14 +87,14 @@ class Service extends CI_Controller
 
 					
 					$form_data = array(
-						'heading' => $_POST['heading'],
-						'short_content' => $_POST['short_content'],
-						'content' => $_POST['content'],
-						'photo' => $final_name,
-						'meta_title' => $_POST['meta_title'],
-						'meta_keyword' => $_POST['meta_keyword'],
-						'meta_description' => $_POST['meta_description'],
-						'slug_service' => $slug
+						'heading' 			=> $_POST['heading'],
+						'short_content' 	=> $_POST['short_content'],
+						'content' 			=> $_POST['content'],
+						'photo' 			=> $final_name,
+						'meta_title' 		=> $_POST['heading'],
+						'meta_keyword' 		=> $_POST['meta_keyword'],
+						'meta_description' 	=> $_POST['meta_description'],
+						'slug_service' 		=> $slug
 					);
 					$this->Model_service->add($form_data);
 					
@@ -105,7 +105,6 @@ class Service extends CI_Controller
 					unset($_POST['heading']);
 					unset($_POST['short_content']);
 					unset($_POST['content']);
-					unset($_POST['meta_title']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
 				} 
@@ -189,13 +188,13 @@ class Service extends CI_Controller
 
 					if($path == '') {
 						$form_data = array(
-							'heading' => $_POST['heading'],
-							'short_content' => $_POST['short_content'],
-							'content' => $_POST['content'],
-							'meta_title' => $_POST['meta_title'],
-							'meta_keyword' => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_service' => $slug
+							'heading' 			=> $_POST['heading'],
+							'short_content' 	=> $_POST['short_content'],
+							'content' 			=> $_POST['content'],
+							'meta_title' 		=> $_POST['heading'],
+							'meta_keyword' 		=> $_POST['meta_keyword'],
+							'meta_description' 	=> $_POST['meta_description'],
+							'slug_service' 		=> $slug
 						);
 						$this->Model_service->update($id,$form_data);
 					} else {
@@ -205,14 +204,14 @@ class Service extends CI_Controller
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
 						$form_data = array(
-							'heading' => $_POST['heading'],
-							'short_content' => $_POST['short_content'],
-							'content' => $_POST['content'],
-							'photo' => $final_name,
-							'meta_title' => $_POST['meta_title'],
-							'meta_keyword' => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_service' => $slug
+							'heading' 			=> $_POST['heading'],
+							'short_content' 	=> $_POST['short_content'],
+							'content' 			=> $_POST['content'],
+							'photo' 			=> $final_name,
+							'meta_title' 		=> $_POST['heading'],
+							'meta_keyword' 		=> $_POST['meta_keyword'],
+							'meta_description'	=> $_POST['meta_description'],
+							'slug_service'		=> $slug
 						);
 						$this->Model_service->update($id,$form_data);
 					}

@@ -95,7 +95,7 @@ class News extends CI_Controller
 						'slug_news_category' => $_POST['slug_news_category'],
 						'total_view'         => '',
 						'comment'            => $_POST['comment'],
-						'meta_title'         => $_POST['meta_title'],
+						'meta_title'         => $_POST['news_title'],
 						'meta_keyword'       => $_POST['meta_keyword'],
 						'meta_description'   => $_POST['meta_description'],
 						'user_update'   	 => $_POST['user_update'],
@@ -111,7 +111,6 @@ class News extends CI_Controller
 					unset($_POST['slug']);
 					unset($_POST['news_content']);
 					unset($_POST['news_short_content']);
-					unset($_POST['meta_title']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
 					unset($_POST['user_update']);
@@ -205,7 +204,7 @@ class News extends CI_Controller
 							'news_date'          => $_POST['news_date'],
 							'slug_news_category' => $_POST['slug_news_category'],
 							'comment'            => $_POST['comment'],
-							'meta_title'         => $_POST['meta_title'],
+							'meta_title'         => $_POST['news_title'],
 							'meta_keyword'       => $_POST['meta_keyword'],
 							'meta_description'   => $_POST['meta_description'],
 							'post_slug'  		 => $slug
@@ -229,7 +228,7 @@ class News extends CI_Controller
 							'photo'              => $final_name,
 							'slug_news_category' => $_POST['slug_news_category'],
 							'comment'            => $_POST['comment'],
-							'meta_title'         => $_POST['meta_title'],
+							'meta_title'         => $_POST['news_title'],
 							'meta_keyword'       => $_POST['meta_keyword'],
 							'meta_description'   => $_POST['meta_description'],
 							'post_slug'  		 => $slug

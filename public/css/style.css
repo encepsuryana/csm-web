@@ -63,6 +63,18 @@ ul {
 	margin-right: auto;
 }
 
+.product-star {
+	background: #fff;
+	padding: 10px 15px;
+	position: absolute;
+	right: 0;
+	color: #134595;
+}
+
+.product-star span {
+	margin-left: 5px;
+}
+
 h2,
 .ms-WPBody h2 {
 	color: #000;
@@ -1172,22 +1184,27 @@ ul.nav-menu li ul li ul li:nth-child(8) {
 .mean-container a.meanmenu-reveal{
 	margin-right: 5px;
 }
+
 .mean-container .mean-nav ul {
 	position: static;
 	display: block;
 }
+
 .mean-container .mean-nav ul li a {
 	background: #0c1923;
 	border-left: 0;
 }
+
 .mean-container .mean-nav ul li:hover {
 	background: none;
 }
+
 .mean-container .mean-nav ul li a:hover {
 	background-color: rgba(255,255,255,0.1)!important;
 }
+
 .mean-container .mean-nav ul li a.mean-expand {
-	height: 24px!important;
+	height: auto !important;
 }
 
 .searchbar .search-button {
@@ -1246,7 +1263,7 @@ Slider
 }
 
 .slider-text {
-	top: 93px;
+	top: 90px;
 	vertical-align: middle;
 	text-align: left;
 	position: relative;
@@ -1264,6 +1281,7 @@ Slider
 	animation-duration: .8s;
 	-webkit-animation-delay: 0s;
 	animation-delay: 0s;
+	text-transform: uppercase;
 }
 
 .slider-animated p {

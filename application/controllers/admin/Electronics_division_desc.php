@@ -111,7 +111,7 @@ class Electronics_division_desc extends CI_Controller
 				$form_data = array(
 					'electronics_division_desc_heading' => $_POST['electronics_division_desc_heading'],
 					'electronics_division_desc_content' => $_POST['electronics_division_desc_content'],
-					'mt_electronics_division_desc'      => $_POST['mt_electronics_division_desc'],
+					'mt_electronics_division_desc'      => $_POST['electronics_division_desc_heading'],
 					'mk_electronics_division_desc'      => $_POST['mk_electronics_division_desc'],
 					'md_electronics_division_desc'      => $_POST['md_electronics_division_desc']
 				);

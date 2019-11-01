@@ -54,10 +54,10 @@ class Setting extends CI_Controller
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
 				if($valid == 1) {
-		    	// removing the existing photo
+		    		// removing the existing photo
 					unlink('./public/uploads/'.$header['setting']['logo']);
 
-		    	// updating the data
+		    		// updating the data
 					$final_name = 'logo'.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 

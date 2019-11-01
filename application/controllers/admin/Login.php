@@ -66,13 +66,13 @@ class Login extends CI_Controller
                             if (isset($response['success']) and $response['success'] === true) {
                                 // When email and password both are correct
                                 $array = array(
-                                    'id' => $pw['id'],
+                                    'id'        => $pw['id'],
                                     'full_name' => $pw['full_name'],
-                                    'email' => $pw['email'],
-                                    'phone' => $pw['phone'],
-                                    'photo' => $pw['photo'],
-                                    'role' => $pw['role'],
-                                    'status' => $pw['status']
+                                    'email'     => $pw['email'],
+                                    'phone'     => $pw['phone'],
+                                    'photo'     => $pw['photo'],
+                                    'role'      => $pw['role'],
+                                    'status'    => $pw['status']
                                 );
 
                                 $this->session->set_userdata($array);

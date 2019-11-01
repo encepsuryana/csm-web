@@ -120,12 +120,6 @@ if(!$this->session->userdata('id')) {
 						</div>
 						<h3 class="seo-info">SEO Information</h3>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Meta Title </label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" name="meta_title" value="<?php echo $news['meta_title']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Meta Keywords </label>
 							<div class="col-sm-9">
 								<input type="text" class="form-control" name="meta_keyword" value="<?php echo $news['meta_keyword']; ?>">

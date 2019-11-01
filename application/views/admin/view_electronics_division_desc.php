@@ -69,114 +69,109 @@ if(!$this->session->userdata('id')) {
 								</div>
 							<?php } else { ?>
 								<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Pilih </label>
-								<div class="col-sm-6">
-									<input type="file" name="electronics_division_desc_photo" class="form-control" disabled="disabled">
+									<label for="" class="col-sm-2 control-label">Pilih </label>
+									<div class="col-sm-6">
+										<input type="file" name="electronics_division_desc_photo" class="form-control" disabled="disabled">
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc_photo" disabled="disabled">Update Photo</button>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label"></label>
+									<div class="col-sm-6">
+										<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc_photo" disabled="disabled">Update Photo</button>
+									</div>
 								</div>
-							</div>
-						<?php } ?>
-						<?php echo form_close(); ?>
+							<?php } ?>
+							<?php echo form_close(); ?>
 
 
-						<h3 class="seo-info">Informasi Elektronik Divisi</h3>
-						<?php echo form_open(base_url().$this->session->userdata('role').'/electronics-division-desc/update',array('class' => 'form-horizontal')); ?>
-						<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Judul </label>
-								<div class="col-sm-6">
-									<input type="text" name="electronics_division_desc_heading" class="form-control" value="<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>">
+							<h3 class="seo-info">Informasi Elektronik Divisi</h3>
+							<?php echo form_open(base_url().$this->session->userdata('role').'/electronics-division-desc/update',array('class' => 'form-horizontal')); ?>
+							<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Judul </label>
+									<div class="col-sm-6">
+										<input type="text" name="electronics_division_desc_heading" class="form-control" value="<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>">
+									</div>
 								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Konten </label>
-								<div class="col-sm-9">
-									<textarea name="electronics_division_desc_content" class="form-control" cols="30" rows="10" id="editor1"><?php echo $electronics_division_desc['electronics_division_desc_content']; ?></textarea>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Konten </label>
+									<div class="col-sm-9">
+										<textarea name="electronics_division_desc_content" class="form-control" cols="30" rows="10" id="editor1"><?php echo $electronics_division_desc['electronics_division_desc_content']; ?></textarea>
+									</div>
 								</div>
-							</div>
 
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Meta Title </label>
-								<div class="col-sm-9">
-									<input type="text" name="mt_electronics_division_desc" class="form-control" value="<?php echo $electronics_division_desc['mt_electronics_division_desc']; ?>">
+								<h3 class="seo-info">SEO Information</h3>     
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Meta Keyword </label>
+									<div class="col-sm-9">
+										<textarea class="form-control" name="mk_electronics_division_desc" style="height:100px;"><?php echo $electronics_division_desc['mk_electronics_division_desc']; ?></textarea>
+									</div>
+								</div>  
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Meta Description </label>
+									<div class="col-sm-9">
+										<textarea class="form-control" name="md_electronics_division_desc" style="height:100px;"><?php echo $electronics_division_desc['md_electronics_division_desc']; ?></textarea>
+									</div>
+								</div>  
+							<?php } else { ?>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Judul </label>
+									<div class="col-sm-6">
+										<input type="text" name="electronics_division_desc_heading" class="form-control" value="<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>" readonly="readonly">
+									</div>
 								</div>
-							</div>      
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Meta Keyword </label>
-								<div class="col-sm-9">
-									<textarea class="form-control" name="mk_electronics_division_desc" style="height:100px;"><?php echo $electronics_division_desc['mk_electronics_division_desc']; ?></textarea>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label"> Content </label>
+									<div class="col-sm-9">
+										<textarea name="electronics_division_desc_content" class="form-control" cols="30" rows="10" id="editor1" disabled="disabled"><?php echo $electronics_division_desc['electronics_division_desc_content']; ?></textarea>
+									</div>
 								</div>
-							</div>  
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Meta Description </label>
-								<div class="col-sm-9">
-									<textarea class="form-control" name="md_electronics_division_desc" style="height:100px;"><?php echo $electronics_division_desc['md_electronics_division_desc']; ?></textarea>
-								</div>
-							</div>  
-						<?php } else { ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Judul </label>
-								<div class="col-sm-6">
-									<input type="text" name="electronics_division_desc_heading" class="form-control" value="<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>" readonly="readonly">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"> Content </label>
-								<div class="col-sm-9">
-									<textarea name="electronics_division_desc_content" class="form-control" cols="30" rows="10" id="editor1" disabled="disabled"><?php echo $electronics_division_desc['electronics_division_desc_content']; ?></textarea>
-								</div>
-							</div>
 
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Meta Title </label>
-								<div class="col-sm-9">
-									<input type="text" name="mt_electronics_division_desc" class="form-control" value="<?php echo $electronics_division_desc['mt_electronics_division_desc']; ?>" readonly="readonly">
-								</div>
-							</div>      
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Meta Keyword </label>
-								<div class="col-sm-9">
-									<textarea class="form-control" name="mk_electronics_division_desc" style="height:100px;" readonly="readonly"><?php echo $electronics_division_desc['mk_electronics_division_desc']; ?></textarea>
-								</div>
-							</div>  
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label">Meta Description </label>
-								<div class="col-sm-9">
-									<textarea class="form-control" name="md_electronics_division_desc" style="height:100px;" readonly="readonly"><?php echo $electronics_division_desc['md_electronics_division_desc']; ?></textarea>
-								</div>
-							</div>  
-						<?php } ?>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Meta Title </label>
+									<div class="col-sm-9">
+										<input type="text" name="mt_electronics_division_desc" class="form-control" value="<?php echo $electronics_division_desc['mt_electronics_division_desc']; ?>" readonly="readonly">
+									</div>
+								</div>      
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Meta Keyword </label>
+									<div class="col-sm-9">
+										<textarea class="form-control" name="mk_electronics_division_desc" style="height:100px;" readonly="readonly"><?php echo $electronics_division_desc['mk_electronics_division_desc']; ?></textarea>
+									</div>
+								</div>  
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Meta Description </label>
+									<div class="col-sm-9">
+										<textarea class="form-control" name="md_electronics_division_desc" style="height:100px;" readonly="readonly"><?php echo $electronics_division_desc['md_electronics_division_desc']; ?></textarea>
+									</div>
+								</div>  
+							<?php } ?>
 
-						<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc">Update Informasi</button>
+							<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label"></label>
+									<div class="col-sm-6">
+										<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc">Update Informasi</button>
+									</div>
 								</div>
-							</div>
-						<?php } else { ?>
-							<div class="form-group">
-								<label for="" class="col-sm-2 control-label"></label>
-								<div class="col-sm-6">
-									<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc" disabled="disabled">Update Informasi</button>
+							<?php } else { ?>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label"></label>
+									<div class="col-sm-6">
+										<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc" disabled="disabled">Update Informasi</button>
+									</div>
 								</div>
-							</div>
-						<?php } ?>                         
-						<?php echo form_close(); ?>
+							<?php } ?>                         
+							<?php echo form_close(); ?>
+						</div>
 					</div>
 				</div>
 			</div>
+		</section>
+	<?php } else { ?>
+		<div class="forbiden">
+			<i class="fa fa-minus-circle" aria-hidden="true"></i>
+			<span>Akses Tidak tersedia</span>
+			<i class="fa fa-minus-circle" aria-hidden="true"></i>
 		</div>
-	</section>
-<?php } else { ?>
-	<div class="forbiden">
-		<i class="fa fa-minus-circle" aria-hidden="true"></i>
-		<span>Akses Tidak tersedia</span>
-		<i class="fa fa-minus-circle" aria-hidden="true"></i>
-	</div>
-<?php } ?>
+	<?php } ?>

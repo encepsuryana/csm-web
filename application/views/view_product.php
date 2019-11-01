@@ -28,6 +28,11 @@
 					$i++;
 					?>
 					<div onclick="openModal();currentSlide(<?php echo $i; ?>)" class="<?php echo $row['product_style']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>)">
+						<?php if ($row['product_star'] == 'Yes') { ?>
+							<div class="product-star">
+								<i class="fa fa-bookmark" aria-hidden="true"></i>
+							</div>
+						<?php } ?>
 						<div class="toggleIcon">
 							<h4><?php echo $row['product_caption']; ?></h4>							
 						</div>
@@ -45,6 +50,11 @@
 			foreach ($product as $row) {
 				?>
 				<div class="mySlides">
+					<?php if ($row['product_star'] == 'Yes') { ?>
+						<div class="product-star">
+							<i class="fa fa-bookmark" aria-hidden="true"></i> <span>Produk Unggulan</span>
+						</div>
+					<?php } ?>
 					<div class="product-caption">
 						<h4><?php echo $row['product_caption']; ?></h4>
 					</div>

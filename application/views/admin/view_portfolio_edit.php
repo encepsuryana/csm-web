@@ -123,12 +123,6 @@ if(!$this->session->userdata('id')) {
 						</div>
 						<h3 class="seo-info">SEO Information</h3>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Meta Title</label>
-							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="meta_title" value="<?php echo $portfolio['meta_title']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Meta Keyword</label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="meta_keyword" style="height:100px;"><?php echo $portfolio['meta_keyword']; ?></textarea>

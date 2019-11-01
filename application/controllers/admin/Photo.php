@@ -80,11 +80,11 @@ class Photo extends CI_Controller
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
 					$form_data = array(
-						'photo_caption' => $_POST['photo_caption'],
-						'photo_style' => $_POST['photo_style'],
-						'photo_name' => $final_name,
-						'photo_desc' => $_POST['photo_desc'],
-						'photo_show_home' => $_POST['photo_show_home']
+						'photo_caption' 	=> $_POST['photo_caption'],
+						'photo_style' 		=> $_POST['photo_style'],
+						'photo_name' 		=> $final_name,
+						'photo_desc'		=> $_POST['photo_desc'],
+						'photo_show_home' 	=> $_POST['photo_show_home']
 					);
 					$this->Model_photo->add($form_data);
 
@@ -170,10 +170,10 @@ class Photo extends CI_Controller
 
 					if($path == '') {
 						$form_data = array(
-							'photo_caption' => $_POST['photo_caption'],
-							'photo_style' => $_POST['photo_style'],
-							'photo_desc' => $_POST['photo_desc'],
-							'photo_show_home' => $_POST['photo_show_home']
+							'photo_caption' 	=> $_POST['photo_caption'],
+							'photo_style' 		=> $_POST['photo_style'],
+							'photo_desc'		=> $_POST['photo_desc'],
+							'photo_show_home' 	=> $_POST['photo_show_home']
 						);
 						$this->Model_photo->update($id,$form_data);
 					}
@@ -185,11 +185,11 @@ class Photo extends CI_Controller
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
 						$form_data = array(
-							'photo_caption' => $_POST['photo_caption'],
-							'photo_style' => $_POST['photo_style'],
-							'photo_name' => $final_name,
-							'photo_desc' => $_POST['photo_desc'],
-							'photo_show_home' => $_POST['photo_show_home']
+							'photo_caption' 	=> $_POST['photo_caption'],
+							'photo_style' 		=> $_POST['photo_style'],
+							'photo_name' 		=> $final_name,
+							'photo_desc' 		=> $_POST['photo_desc'],
+							'photo_show_home' 	=> $_POST['photo_show_home']
 						);
 						$this->Model_photo->update($id,$form_data);
 					}

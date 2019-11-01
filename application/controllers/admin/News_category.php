@@ -57,11 +57,11 @@ class News_category extends CI_Controller
 				if($valid == 1) 
 				{
 					$form_data = array(
-						'category_name'    => $_POST['category_name'],
-						'meta_title'       => $_POST['meta_title'],
-						'meta_keyword'     => $_POST['meta_keyword'],
-						'meta_description' => $_POST['meta_description'],
-						'slug_news_category' => $slug_news_category
+						'category_name'    		=> $_POST['category_name'],
+						'meta_title'      		=> $_POST['meta_title'],
+						'meta_keyword'     		=> $_POST['meta_keyword'],
+						'meta_description' 		=> $_POST['meta_description'],
+						'slug_news_category' 	=> $slug_news_category
 					);
 					$this->Model_news_category->add($form_data);
 
@@ -136,11 +136,11 @@ class News_category extends CI_Controller
 				{
 		    	// Updating Data
 					$form_data = array(
-						'category_name'    => $_POST['category_name'],
-						'meta_title'       => $_POST['meta_title'],
-						'meta_keyword'     => $_POST['meta_keyword'],
-						'meta_description' => $_POST['meta_description'],
-						'slug_news_category' => $slug_news_category
+						'category_name'    		=> $_POST['category_name'],
+						'meta_title'       		=> $_POST['meta_title'],
+						'meta_keyword'     		=> $_POST['meta_keyword'],
+						'meta_description' 		=> $_POST['meta_description'],
+						'slug_news_category' 	=> $slug_news_category
 
 					);
 					$this->Model_news_category->update($id,$form_data);

@@ -78,10 +78,20 @@ class Slider extends CI_Controller
 						'button2_text' => $_POST['button2_text'],
 						'button2_url'  => $_POST['button2_url']
 					);
+					
 					$this->Model_slider->add($form_data);
+					
 					//Add Log User
 					helper_log("add", '[TAMBAH] Data: '.$_POST['heading'].' ditambahkan ke Slider');
+
 					$data['success'] = 'Slider is uploaded successfully!';
+				
+					unset($_POST['heading']);
+					unset($_POST['content']);
+					unset($_POST['button1_text']);
+					unset($_POST['button1_url']);
+					unset($_POST['button2_text']);
+					unset($_POST['button2_url']);
 				}
 
 				$this->load->view('admin/view_header',$header);

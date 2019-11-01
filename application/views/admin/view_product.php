@@ -31,6 +31,7 @@ if(!$this->session->userdata('id')) {
                <th>Judul</th>
                <th>Deskripsi</th>
                <th>Tampilkan?</th>
+               <th>Produk Unggulan?</th>
                <th width="200">Action</th>
              </tr>
            </thead>
@@ -49,6 +50,7 @@ if(!$this->session->userdata('id')) {
               <td><?php echo $row['product_caption']; ?></td>
               <td><?php echo $row['product_desc']; ?></td>
               <td><?php echo $row['product_show_home']; ?></td>
+              <td><?php echo $row['product_star']; ?></td>
               <td>
                 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
 

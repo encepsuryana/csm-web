@@ -5,7 +5,7 @@ class Model_home extends CI_Model
 {
     public function get_slider_data()
     {
-        $query = $this->db->query("SELECT * from tbl_slider ORDER BY id ASC");
+        $query = $this->db->query("SELECT * from tbl_slider ORDER BY id DESC");
         return $query->result_array();
     }
     public function get_content_home_data()

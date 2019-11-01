@@ -90,7 +90,7 @@ class Facility extends CI_Controller
 						'content'          => $_POST['content'],
 						'category_id'      => $_POST['category_id'],
 						'photo'            => $final_name,
-						'meta_title'       => $_POST['meta_title'],
+						'meta_title'       => $_POST['name'],
 						'meta_keyword'     => $_POST['meta_keyword'],
 						'meta_description' => $_POST['meta_description'],
 						'slug_facility'    => $slug
@@ -149,7 +149,6 @@ class Facility extends CI_Controller
 					unset($_POST['name']);
 					unset($_POST['short_content']);
 					unset($_POST['content']);
-					unset($_POST['meta_title']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
 				} 
@@ -237,7 +236,7 @@ class Facility extends CI_Controller
 							'short_content'    => $_POST['short_content'],
 							'content'          => $_POST['content'],
 							'category_id'      => $_POST['category_id'],
-							'meta_title'       => $_POST['meta_title'],
+							'meta_title'       => $_POST['name'],
 							'meta_keyword'     => $_POST['meta_keyword'],
 							'meta_description' => $_POST['meta_description'],
 							'slug_facility'    => $slug
@@ -256,7 +255,7 @@ class Facility extends CI_Controller
 							'content'          => $_POST['content'],
 							'category_id'      => $_POST['category_id'],
 							'photo'            => $final_name,
-							'meta_title'       => $_POST['meta_title'],
+							'meta_title'       => $_POST['name'],
 							'meta_keyword'     => $_POST['meta_keyword'],
 							'meta_description' => $_POST['meta_description'],
 							'slug_facility'    => $slug
