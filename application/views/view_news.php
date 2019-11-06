@@ -79,11 +79,48 @@
 										<img class="" src="<?php echo base_url(); ?>public/uploads/<?php echo $row->photo; ?>">
 									</div>
 									<div class="public-partcsm-home">
-										<h3><?php echo $row->news_title; ?></h3>
-										<p><?php echo $row->news_short_content; ?></p>
+										<h3>
+											<?php 
+											if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+												if ($row->news_title_idn == '') {
+													echo $row->news_title;
+												} else {
+													echo $row->news_title_idn;
+												}
+											} else {
+												echo $row->news_title;
+											}
+											?>
+										</h3>
+										<p>
+											<?php 
+											if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+												if ($row->news_short_content_idn == '') {
+													echo $row->news_short_content;
+												} else {
+													echo $row->news_short_content_idn;
+												}
+											} else {
+												echo $row->news_short_content;
+											}
+											?>
+										</p>
 									</div>
 									<div class="csm-blog-home">
-										<h4><?php echo $row->news_title; ?></h4>
+										<h4>
+											<?php 
+											if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+												if ($row->news_title_idn == '') {
+													echo $row->news_title;
+												} else {
+													echo $row->news_title_idn;
+												}
+											} else {
+												echo $row->news_title;
+											}
+											?>
+										</h4>
+
 										<span><?php echo READ_MORE; ?></span>
 									</div>
 								</a>

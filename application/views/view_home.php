@@ -12,11 +12,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="slider-table">
 					<div class="slider-text">
 						<div class="slider-animated">
-							<h2><?php echo $row['heading']; ?></h2>
+							<h2>
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+									if ($row['heading_idn'] == '') {
+										echo $row['heading'];
+									} else {
+										echo $row['heading_idn']; 
+									}
+								} else {
+									echo $row['heading'];
+								}
+								?>
+							</h2>
 						</div>
 						<div class="slider-animated">
 							<p>
-								<?php echo nl2br($row['content']); ?>
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+									if (nl2br($row['content_idn']) == '') {
+										echo nl2br($row['content']);
+									} else {
+										echo nl2br($row['content_idn']);
+									}
+								} else {
+									echo nl2br($row['content']);
+								}
+								?>
 							</p>
 						</div>
 						<div class="slider-animated">
@@ -35,57 +57,83 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <div class="container">
-	<div class="row">
-		<div class="content-home">
-			<div class="col-md-6 col-sm-6">
-				<div class="home-last">
-					<h3><?php echo LATEST_NEWS; ?></h3>
-					<ul class="timeline">
-						<?php
-						$i=0;				
-						foreach ($latest_news as $row) {
-							$i++;
-							if($i>$setting['total_recent_post']) {break;}
-							?>
-							<li>
-								<a target="_blank" href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>"><?php echo $row['news_title']; ?></a>
-								<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>" target="_blank" style="float: right; font-size: 12px;"><?php echo $row['news_date']; ?></a>
-								<p><?php echo $row['news_short_content']; ?></p>
-							</li>
-							<?php
-						}
+	<div class="content-home">
+		<div class="col-md-6 col-sm-6">
+			<div class="home-last">
+				<h3><?php echo LATEST_NEWS; ?></h3>
+				<ul class="timeline">
+					<?php
+					$i=0;				
+					foreach ($latest_news as $row) {
+						$i++;
+						if($i>$setting['total_recent_post']) {break;}
 						?>
-					</ul>
-					<div class="all-news">
-						<a target="_blank" href="<?php echo base_url(); ?>news/page"><?php echo SEE_MORE; ?></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-6 btn-home">
-				<ul>												
-					<li>
-						<?php
-						foreach ($content_home as $row) {
-							?>
-							<a target="_blank" href="<?php echo base_url().$row['link']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>);" alt="<?php echo $row['photo']; ?>" href="#">
-
-								<i class="fa <?php echo $row['heading']; ?>" aria-hidden="true"></i> 
-								<span><?php echo $row['content']; ?></span>
+						<li>
+							<a target="_blank" href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
+								
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+									if ($row['news_title_idn'] == '') {
+										echo $row['news_title'];
+									} else {
+										echo $row['news_title_idn'];
+									}
+								} else {
+									echo $row['news_title'];
+								}
+								?>
 
 							</a>
-							<?php
-						}
-						?>
-					</li>
+							<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>" target="_blank" style="float: right; font-size: 12px;"><?php echo $row['news_date']; ?></a>
+							
+							<p>
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+									if ($row['news_short_content_idn'] == '') {
+										echo $row['news_short_content'];
+									} else {
+										echo $row['news_short_content_idn'];
+									}
+								} else {
+									echo $row['news_short_content'];
+								}
+								?>
+							</p>
+
+						</li>
+						<?php
+					}
+					?>
 				</ul>
+				<div class="all-news">
+					<a target="_blank" href="<?php echo base_url(); ?>news/page"><?php echo SEE_MORE; ?></a>
+				</div>
 			</div>
+		</div>
+		<div class="col-md-6 col-sm-6 btn-home">
+			<ul>												
+				<li>
+					<?php
+					foreach ($content_home as $row) {
+						?>
+						<a target="_blank" href="<?php echo base_url().$row['link']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>);" alt="<?php echo $row['photo']; ?>" href="#">
+
+							<i class="fa <?php echo $row['heading']; ?>" aria-hidden="true"></i> 
+							<span><?php echo $row['content']; ?></span>
+
+						</a>
+						<?php
+					}
+					?>
+				</li>
+			</ul>
 		</div>
 	</div>
 </div>
 
-<div class="caption-product-area gridGallery">
-	<section>
-		<div class="container">
+<div class="container">
+	<div class="caption-product-area gridGallery">
+		<section>
 			<h3><?php echo PRODUCT_HOME; ?></h3>
 			<div class="row-product">		
 				<?php
@@ -126,12 +174,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 </div>
 
-<div class="caption-product-area gridGallery">
-	<div class="container">
+<div class="container">
+	<div class="caption-product-area gridGallery">
 		<h3><?php echo SERVICES; ?></h3>
 		<div class="row-product">
 
@@ -166,8 +214,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 </div>
 
-<div class="caption-product-area gridGallery">
-	<div class="container recent-works">
+<div class="container recent-works">
+	<div class="caption-product-area gridGallery">
 		<h3>
 			<?php echo FACILITY; ?>
 			<div class="recent-menu">
@@ -202,7 +250,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 								<div class="recent-text">
 									<h5><?php echo $row['name']; ?></h5>
-									<p><?php echo $row['short_content']; ?></p>
+									<p>
+										<?php 
+										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+											if ($row['short_content_idn'] == '') {
+												echo $row['short_content'];
+											} else {
+												echo $row['short_content_idn'];
+											}
+										} else {
+											echo $row['short_content'];
+										}
+										?>
+									</p>
+									
 									<div class="services-link">
 										<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo READ_MORE; ?></a>
 									</div>
@@ -218,8 +279,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 </div>
 
-<div class="caption-product-area gridGallery">
-	<div class="container">
+<div class="container">
+	<div class="caption-product-area gridGallery">
 		<h3><?php echo TESTIMONIAL_SAY; ?></h3>
 		<div class="row-product">
 			<div class="col-md-12">
@@ -252,8 +313,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 </div>
 
-<div class="brand-area">
-	<div class="container">
+<div class="container">
+	<div class="brand-area">
 		<h3><?php echo OUR_PARTNER; ?></h3>
 		<div class="row">
 			<div class="col-md-12">

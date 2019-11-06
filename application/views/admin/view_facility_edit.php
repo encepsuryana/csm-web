@@ -32,112 +32,127 @@ if(!$this->session->userdata('id')) {
 
 				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/facility/edit/'.$facility['id'],array('class' => 'form-horizontal')); ?>
 				<div class="box box-info  b-box">
-					<div class="box-body">
-						
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
-							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="name" value="<?php echo $facility['name']; ?>">
-							</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
+						<div class="col-sm-6">
+							<input type="text" autocomplete="off" class="form-control" name="name" value="<?php echo $facility['name']; ?>">
 						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="short_content" style="height:100px;"><?php echo $facility['short_content']; ?></textarea>
-							</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label"> </label>
+						<div class="col-sm-9" style="padding-top:5px">
+							<img src="<?php echo base_url(); ?>public/uploads/<?php echo $facility['photo']; ?>" alt="" style="width:120px;">
 						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label"> </label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $facility['photo']; ?>" alt="" style="width:120px;">
-							</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Ubah Cover</label>
+						<div class="col-sm-9" style="padding-top:5px">
+							<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Ubah Cover</label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="content" id="editor1"><?php echo $facility['content']; ?></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Pilih Kategori <span>*</span></label>
-							<div class="col-sm-4">
-								<select name="category_id" class="form-control select2">
-									<?php
-									foreach ($all_photo_category as $row) {
-										?>
-										<option value="<?php echo $row['category_id']; ?>" <?php if($row['category_id'] == $facility['category_id']) {echo 'selected';} ?>><?php echo $row['category_name']; ?></option>
-										<?php
-									}
-									?>	
-								</select>
-							</div>
-						</div>
-						<h3 class="seo-info">Foto Galeri</h3>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
-							<div class="col-sm-6" style="padding-top:5px">
-								<table class="table table-bordered">
-									<?php
-									foreach ($all_photos_by_id as $row) {
-										?>
-										<tr>
-											<td>
-												<img src="<?php echo base_url(); ?>public/uploads/facility_photos/<?php echo $row['photo']; ?>" alt="" style="width:120px;">
-											</td>
-											<td><a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/facility/single-photo-delete/<?php echo $row['id']; ?>/<?php echo $facility['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a></td>
-										</tr>
-										<?php
-									}
-									?>
-								</table>								
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Ubah Foto</label>
-							<div class="col-sm-6" style="padding-top:5px">
-								<table id="PhotosTable" style="width:100%;">
-									<tbody>
-										<tr>
-											<td>
-												<div class="upload-btn">
-													<input type="file" name="photos[]">
-												</div>
-											</td>
-											<td style="width:28px;"><a href="javascript:void()" class="Delete btn btn-danger btn-xs">X</a></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="col-sm-2" style="padding-top:5px">
-								<input type="button" id="btnAddNew" value="Add Item"  class="btn btn-warning btn-xs">
-							</div>
-						</div>
-						<h3 class="seo-info">SEO Information</h3>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Meta Keyword</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="meta_keyword" style="height:100px;"><?php echo $facility['meta_keyword']; ?></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Meta Description</label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="meta_description" style="height:100px;"><?php echo $facility['meta_description']; ?></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label"></label>
-							<div class="col-sm-6">
-								<button type="submit" class="btn btn-success pull-left" name="form1">Update</button>
-							</div>
-						</div>
+					</div>
 
+					<h3 class="seo-info">Konten Bahasa Inggris</h3>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
+						<div class="col-sm-8">
+							<textarea class="form-control" name="short_content" style="height:100px;"><?php echo $facility['short_content']; ?></textarea>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
+						<div class="col-sm-8">
+							<textarea class="form-control" name="content" id="editor1"><?php echo $facility['content']; ?></textarea>
+						</div>
+					</div>
+
+					<h3 class="seo-info">Konten Bahasa Indonesia</h3>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
+						<div class="col-sm-8">
+							<textarea class="form-control" name="short_content_idn" style="height:100px;"><?php echo $facility['short_content_idn']; ?></textarea>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
+						<div class="col-sm-8">
+							<textarea class="form-control" name="content_idn" id="editor2"><?php echo $facility['content_idn']; ?></textarea>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Pilih Kategori <span>*</span></label>
+						<div class="col-sm-4">
+							<select name="category_id" class="form-control select2">
+								<?php
+								foreach ($all_photo_category as $row) {
+									?>
+									<option value="<?php echo $row['category_id']; ?>" <?php if($row['category_id'] == $facility['category_id']) {echo 'selected';} ?>><?php echo $row['category_name']; ?></option>
+									<?php
+								}
+								?>	
+							</select>
+						</div>
+					</div>
+					<h3 class="seo-info">Foto Galeri</h3>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
+						<div class="col-sm-6" style="padding-top:5px">
+							<table class="table table-bordered">
+								<?php
+								foreach ($all_photos_by_id as $row) {
+									?>
+									<tr>
+										<td>
+											<img src="<?php echo base_url(); ?>public/uploads/facility_photos/<?php echo $row['photo']; ?>" alt="" style="width:120px;">
+										</td>
+										<td><a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/facility/single-photo-delete/<?php echo $row['id']; ?>/<?php echo $facility['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a></td>
+									</tr>
+									<?php
+								}
+								?>
+							</table>								
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Ubah Foto</label>
+						<div class="col-sm-6" style="padding-top:5px">
+							<table id="PhotosTable" style="width:100%;">
+								<tbody>
+									<tr>
+										<td>
+											<div class="upload-btn">
+												<input type="file" name="photos[]">
+											</div>
+										</td>
+										<td style="width:28px;"><a href="javascript:void()" class="Delete btn btn-danger btn-xs">X</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-sm-2" style="padding-top:5px">
+							<input type="button" id="btnAddNew" value="Add Item"  class="btn btn-warning btn-xs">
+						</div>
+					</div>
+					<h3 class="seo-info">SEO Information</h3>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Meta Keyword</label>
+						<div class="col-sm-8">
+							<textarea class="form-control" name="meta_keyword" style="height:100px;"><?php echo $facility['meta_keyword']; ?></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label">Meta Description</label>
+						<div class="col-sm-8">
+							<textarea class="form-control" name="meta_description" style="height:100px;"><?php echo $facility['meta_description']; ?></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="" class="col-sm-2 control-label"></label>
+						<div class="col-sm-6">
+							<button type="submit" class="btn btn-success pull-left" name="form1">Update</button>
+						</div>
 					</div>
 				</div>
 				<?php echo form_close(); ?>

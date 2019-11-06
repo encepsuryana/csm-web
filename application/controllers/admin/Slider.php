@@ -72,7 +72,9 @@ class Slider extends CI_Controller
 					$form_data = array(
 						'photo'        => $final_name,
 						'heading'      => $_POST['heading'],
+						'heading_idn'  => $_POST['heading_idn'],
 						'content'      => $_POST['content'],
+						'content_idn'  => $_POST['content_idn'],
 						'button1_text' => $_POST['button1_text'],
 						'button1_url'  => $_POST['button1_url'],
 						'button2_text' => $_POST['button2_text'],
@@ -85,9 +87,11 @@ class Slider extends CI_Controller
 					helper_log("add", '[TAMBAH] Data: '.$_POST['heading'].' ditambahkan ke Slider');
 
 					$data['success'] = 'Slider is uploaded successfully!';
-				
+
 					unset($_POST['heading']);
+					unset($_POST['heading_idn']);
 					unset($_POST['content']);
+					unset($_POST['content_idn']);
 					unset($_POST['button1_text']);
 					unset($_POST['button1_url']);
 					unset($_POST['button2_text']);
@@ -157,7 +161,9 @@ class Slider extends CI_Controller
 					if($path == '') {
 						$form_data = array(
 							'heading'      => $_POST['heading'],
+							'heading_idn'  => $_POST['heading_idn'],
 							'content'      => $_POST['content'],
+							'content_idn'  => $_POST['content_idn'],
 							'button1_text' => $_POST['button1_text'],
 							'button1_url'  => $_POST['button1_url'],
 							'button2_text' => $_POST['button2_text'],
@@ -174,7 +180,9 @@ class Slider extends CI_Controller
 						$form_data = array(
 							'photo'        => $final_name,
 							'heading'      => $_POST['heading'],
+							'heading_idn'  => $_POST['heading_idn'],
 							'content'      => $_POST['content'],
+							'content_idn'  => $_POST['content_idn'],
 							'button1_text' => $_POST['button1_text'],
 							'button1_url'  => $_POST['button1_url'],
 							'button2_text' => $_POST['button2_text'],
@@ -230,7 +238,7 @@ class Slider extends CI_Controller
 			$this->Model_slider->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['slider']['heading'].' dihapus dari Slider');
+			helper_log("Delete", '[HAPUS] Data : '.$data['slider']['heading'].' dihapus dari Slider');
 
 			redirect(base_url().'admin/slider');
 		} else {

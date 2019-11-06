@@ -31,7 +31,17 @@
 			<div class="col-md-12">
 				<h3><?php echo ABOUT_COMPANY; ?></h3>
 				<p>
-					<?php echo $page['about_content']; ?>
+					<?php 
+					if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+						if ($page['about_content_idn'] == '') {
+							echo $page['about_content'];
+						} else {
+							echo $page['about_content_idn'];
+						}
+					} else {
+						echo $page['about_content'];
+					}
+					?>
 				</p>
 			</div>
 			<div class="container">
@@ -53,7 +63,17 @@
 						<h2><?php echo PROFILE_IDENTITY; ?></h2>
 						<div class="col-md-10">
 							<p>
-								<?php echo $page['profile_content']; ?>
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+									if ($page['profile_content_idn'] == '') {
+										echo $page['profile_content'];
+									} else {
+										echo $page['profile_content_idn'];
+									}
+								} else {
+									echo $page['profile_content'];
+								}
+								?>
 							</p>
 						</div>
 					</div>
@@ -69,17 +89,37 @@
 
 						<div class="col-md-5 col-sm-5">
 							<div class="about-mission">
-								<h3><?php echo $page['vision_heading']; ?></h3>
+								<h3><?php echo VISION_HEADING; ?></h3>
 								<p>
-									<?php echo $page['vision_content']; ?>
+									<?php 
+									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+										if ($page['vision_content_idn'] == '') {
+											echo $page['vision_content'];
+										} else {
+											echo $page['vision_content_idn'];
+										}
+									} else {
+										echo $page['vision_content'];
+									}
+									?>
 								</p>
 							</div>
 						</div>
 						<div class="col-md-5 col-sm-5">
 							<div class="about-mission">
-								<h3><?php echo $page['mission_heading']; ?></h3>
+								<h3><?php echo MISSION_HEADING; ?></h3>
 								<p>
-									<?php echo $page['mission_content']; ?>
+									<?php 
+									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+										if ($page['mission_content_idn'] == '') {
+											echo $page['mission_content'];
+										} else {
+											echo $page['mission_content_idn'];
+										}
+									} else {
+										echo $page['mission_content'];
+									}
+									?>
 								</p>
 							</div>
 						</div>
@@ -88,7 +128,17 @@
 						<h2><?php echo CULTURE; ?></h2>
 						<div class="col-md-10">
 							<p>
-								<?php echo $page['culture_content']; ?>
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+									if ($page['culture_content_idn'] == '') {
+										echo $page['culture_content'];
+									} else {
+										echo $page['culture_content_idn'];
+									}
+								} else {
+									echo $page['culture_content'];
+								}
+								?>
 							</p>
 						</div>
 					</div>
@@ -96,7 +146,17 @@
 						<h2><?php echo COMMITMENT; ?></h2>
 						<div class="col-md-10">
 							<p>
-								<?php echo $page['quality_content']; ?>
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+									if ($page['quality_content_idn'] == '') {
+										echo $page['quality_content'];
+									} else {
+										echo $page['quality_content_idn'];
+									}
+								} else {
+									echo $page['quality_content'];
+								}
+								?>
 							</p>
 						</div>
 					</div>

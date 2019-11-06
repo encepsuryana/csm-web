@@ -47,6 +47,8 @@ if(!$this->session->userdata('id')) {
 								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
+
+						<h3 class="seo-info">Kontent Bahasa Inggris</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Judul </label>
 							<div class="col-sm-6">
@@ -59,6 +61,21 @@ if(!$this->session->userdata('id')) {
 								<textarea class="form-control" name="content" style="height:140px;"><?php echo $slider['content']; ?></textarea>
 							</div>
 						</div>
+
+						<h3 class="seo-info">Kontent Bahasa Indonesia</h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Judul </label>
+							<div class="col-sm-6">
+								<input type="text" autocomplete="off" class="form-control" name="heading_idn" value="<?php echo $slider['heading_idn']; ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Konten </label>
+							<div class="col-sm-6">
+								<textarea class="form-control" name="content_idn" style="height:140px;"><?php echo $slider['content_idn']; ?></textarea>
+							</div>
+						</div>
+
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Tombol1 Text </label>
 							<div class="col-sm-6">

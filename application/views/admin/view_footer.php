@@ -45,6 +45,15 @@
 			$('#editor5').summernote({
 				height: 300
 			});
+			$('#editor6').summernote({
+				height: 300
+			});
+			$('#editor7').summernote({
+				height: 300
+			});
+			$('#editor8').summernote({
+				height: 300
+			});
 			$('#editor_short').summernote({
 				height: 100
 			});

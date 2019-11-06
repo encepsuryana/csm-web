@@ -33,12 +33,48 @@ if(!$this->session->userdata('id')) {
 				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/news/edit/'.$news['news_id'],array('class' => 'form-horizontal')); ?>
 				<div class="box box-info b-box">
 					<div class="box-body">
+						<h3 class="seo-info">Konten Bahasa Inggris</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
 							<div class="col-sm-9">
 								<input type="text" class="form-control" name="news_title" value="<?php echo $news['news_title']; ?>">
 							</div>
 						</div>
+						
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Berita Singkat <span>*</span></label>
+							<div class="col-sm-9">
+								<textarea class="form-control" name="news_short_content" style="height:100px;"><?php echo $news['news_short_content']; ?></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
+							<div class="col-sm-9">
+								<textarea class="form-control" name="news_content" id="editor1"><?php echo $news['news_content']; ?></textarea>
+							</div>
+						</div>
+
+						<h3 class="seo-info">Konten Bahasa Indonesia</h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" name="news_title_idn" value="<?php echo $news['news_title_idn']; ?>">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Berita Singkat <span>*</span></label>
+							<div class="col-sm-9">
+								<textarea class="form-control" name="news_short_content_idn" style="height:100px;"><?php echo $news['news_short_content_idn']; ?></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
+							<div class="col-sm-9">
+								<textarea class="form-control" name="news_content_idn" id="editor2"><?php echo $news['news_content_idn']; ?></textarea>
+							</div>
+						</div>
+
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Label Berita <span>*</span></label>
 							<div class="col-sm-9">
@@ -74,18 +110,7 @@ if(!$this->session->userdata('id')) {
 								<input type="file" name="photo">
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Berita Singkat <span>*</span></label>
-							<div class="col-sm-9">
-								<textarea class="form-control" name="news_short_content" style="height:100px;"><?php echo $news['news_short_content']; ?></textarea>
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
-							<div class="col-sm-9">
-								<textarea class="form-control" name="news_content" id="editor1"><?php echo $news['news_content']; ?></textarea>
-							</div>
-						</div>
+
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Tanggal <span>*</span></label>
 							<div class="col-sm-2">

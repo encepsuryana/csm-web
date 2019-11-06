@@ -184,16 +184,20 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_about'])) {			
 				$form_data = array(
-					'about_content' 	=> $_POST['about_content'],
-					'profile_content' 	=> $_POST['profile_content'],
-					'culture_content' 	=> $_POST['culture_content'],
-					'quality_content' 	=> $_POST['quality_content'],
-					'mission_heading' 	=> $_POST['mission_heading'],
-					'mission_content' 	=> $_POST['mission_content'],
-					'vision_heading' 	=> $_POST['vision_heading'],
-					'vision_content' 	=> $_POST['vision_content'],
-					'mk_about'      	=> $_POST['mk_about'],
-					'md_about'      	=> $_POST['md_about']
+					'about_content' 		=> $_POST['about_content'],
+					'about_content_idn' 	=> $_POST['about_content_idn'],
+					'profile_content' 		=> $_POST['profile_content'],
+					'profile_content_idn' 	=> $_POST['profile_content_idn'],
+					'culture_content' 		=> $_POST['culture_content'],
+					'culture_content_idn' 	=> $_POST['culture_content_idn'],
+					'quality_content' 		=> $_POST['quality_content'],
+					'quality_content_idn' 	=> $_POST['quality_content_idn'],
+					'mission_content' 		=> $_POST['mission_content'],
+					'mission_content_idn' 	=> $_POST['mission_content_idn'],
+					'vision_content' 		=> $_POST['vision_content'],
+					'vision_content_idn' 	=> $_POST['vision_content_idn'],
+					'mk_about'      		=> $_POST['mk_about'],
+					'md_about'      		=> $_POST['md_about']
 				);
 				$this->Model_page->update($form_data);
 				
@@ -485,16 +489,20 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_about'])) {			
 				$form_data = array(
-					'about_content' 	=> $_POST['about_content'],
-					'profile_content' 	=> $_POST['profile_content'],
-					'culture_content'	=> $_POST['culture_content'],
-					'quality_content' 	=> $_POST['quality_content'],
-					'mission_heading' 	=> $_POST['mission_heading'],
-					'mission_content' 	=> $_POST['mission_content'],
-					'vision_heading' 	=> $_POST['vision_heading'],
-					'vision_content' 	=> $_POST['vision_content'],
-					'mk_about'      	=> $_POST['mk_about'],
-					'md_about'      	=> $_POST['md_about']
+					'about_content' 		=> $_POST['about_content'],
+					'about_content_idn' 	=> $_POST['about_content_idn'],
+					'profile_content' 		=> $_POST['profile_content'],
+					'profile_content_idn' 	=> $_POST['profile_content_idn'],
+					'culture_content' 		=> $_POST['culture_content'],
+					'culture_content_idn' 	=> $_POST['culture_content_idn'],
+					'quality_content' 		=> $_POST['quality_content'],
+					'quality_content_idn' 	=> $_POST['quality_content_idn'],
+					'mission_content' 		=> $_POST['mission_content'],
+					'mission_content_idn' 	=> $_POST['mission_content_idn'],
+					'vision_content' 		=> $_POST['vision_content'],
+					'vision_content_idn' 	=> $_POST['vision_content_idn'],
+					'mk_about'      		=> $_POST['mk_about'],
+					'md_about'      		=> $_POST['md_about']
 				);
 				$this->Model_page->update($form_data);
 

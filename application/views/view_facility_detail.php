@@ -72,7 +72,13 @@
 				<div class="single-service-text recent-single-text pt_30 pb_20">
 					<h4><?php echo DESCRIPTION; ?></h4>
 					<p>
-						<?php echo $facility['content']; ?>
+						<?php 
+						if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+							echo $facility['content_idn'];
+						} else {
+							echo $facility['content'];
+						}
+						?>
 					</p>
 				</div>			
 			</div>

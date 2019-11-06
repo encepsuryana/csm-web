@@ -86,20 +86,23 @@ class News extends CI_Controller
 					$slug=$pre_slug.'.html';
 
 					$form_data = array(
-						'news_title'         => $_POST['news_title'],
-						'slug'          	 => $_POST['slug'],
-						'news_content'       => $_POST['news_content'],
-						'news_short_content' => $_POST['news_short_content'],
-						'news_date'          => $_POST['news_date'],
-						'photo'              => $final_name,
-						'slug_news_category' => $_POST['slug_news_category'],
-						'total_view'         => '',
-						'comment'            => $_POST['comment'],
-						'meta_title'         => $_POST['news_title'],
-						'meta_keyword'       => $_POST['meta_keyword'],
-						'meta_description'   => $_POST['meta_description'],
-						'user_update'   	 => $_POST['user_update'],
-						'post_slug'   	 	 => $slug
+						'news_title'         	=> $_POST['news_title'],
+						'news_title_idn'     	=> $_POST['news_title_idn'],
+						'slug'          	 	=> $_POST['slug'],
+						'news_content'       	=> $_POST['news_content'],
+						'news_content_idn'      => $_POST['news_content_idn'],
+						'news_short_content' 	=> $_POST['news_short_content'],
+						'news_short_content_idn'=> $_POST['news_short_content_idn'],
+						'news_date'          	=> $_POST['news_date'],
+						'photo'              	=> $final_name,
+						'slug_news_category' 	=> $_POST['slug_news_category'],
+						'total_view'         	=> '',
+						'comment'            	=> $_POST['comment'],
+						'meta_title'         	=> $_POST['news_title'],
+						'meta_keyword'       	=> $_POST['meta_keyword'],
+						'meta_description'   	=> $_POST['meta_description'],
+						'user_update'   	 	=> $_POST['user_update'],
+						'post_slug'   	 	 	=> $slug
 					);
 					$this->Model_news->add($form_data);
 
@@ -108,9 +111,12 @@ class News extends CI_Controller
 
 					$data['success'] = 'Berita berhasil ditambahkan!';
 					unset($_POST['news_title']);
+					unset($_POST['news_title_idn']);
 					unset($_POST['slug']);
 					unset($_POST['news_content']);
+					unset($_POST['news_content_idn']);
 					unset($_POST['news_short_content']);
+					unset($_POST['news_short_content_idn']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
 					unset($_POST['user_update']);
@@ -197,17 +203,20 @@ class News extends CI_Controller
 
 					if($path == '') {
 						$form_data = array(
-							'news_title'         => $_POST['news_title'],
-							'slug' 		         => $_POST['slug'],
-							'news_content'       => $_POST['news_content'],
-							'news_short_content' => $_POST['news_short_content'],
-							'news_date'          => $_POST['news_date'],
-							'slug_news_category' => $_POST['slug_news_category'],
-							'comment'            => $_POST['comment'],
-							'meta_title'         => $_POST['news_title'],
-							'meta_keyword'       => $_POST['meta_keyword'],
-							'meta_description'   => $_POST['meta_description'],
-							'post_slug'  		 => $slug
+							'news_title'         	=> $_POST['news_title'],
+							'news_title_idn'     	=> $_POST['news_title_idn'],
+							'slug'          	 	=> $_POST['slug'],
+							'news_content'       	=> $_POST['news_content'],
+							'news_content_idn'      => $_POST['news_content_idn'],
+							'news_short_content' 	=> $_POST['news_short_content'],
+							'news_short_content_idn'=> $_POST['news_short_content_idn'],
+							'news_date'          	=> $_POST['news_date'],
+							'slug_news_category' 	=> $_POST['slug_news_category'],
+							'comment'            	=> $_POST['comment'],
+							'meta_title'         	=> $_POST['news_title'],
+							'meta_keyword'       	=> $_POST['meta_keyword'],
+							'meta_description'   	=> $_POST['meta_description'],
+							'post_slug'  		 	=> $slug
 						);
 						$this->Model_news->update($id,$form_data);
 					}
@@ -220,18 +229,21 @@ class News extends CI_Controller
 						$data['news'] = $this->Model_news->getData($id);
 
 						$form_data = array(
-							'news_title'         => $_POST['news_title'],
-							'slug'	 	         => $_POST['slug'],
-							'news_content'       => $_POST['news_content'],
-							'news_short_content' => $_POST['news_short_content'],
-							'news_date'          => $_POST['news_date'],
-							'photo'              => $final_name,
-							'slug_news_category' => $_POST['slug_news_category'],
-							'comment'            => $_POST['comment'],
-							'meta_title'         => $_POST['news_title'],
-							'meta_keyword'       => $_POST['meta_keyword'],
-							'meta_description'   => $_POST['meta_description'],
-							'post_slug'  		 => $slug
+							'news_title'         	=> $_POST['news_title'],
+							'news_title_idn'     	=> $_POST['news_title_idn'],
+							'slug'          	 	=> $_POST['slug'],
+							'news_content'       	=> $_POST['news_content'],
+							'news_content_idn'      => $_POST['news_content_idn'],
+							'news_short_content' 	=> $_POST['news_short_content'],
+							'news_short_content_idn'=> $_POST['news_short_content_idn'],
+							'news_date'          	=> $_POST['news_date'],
+							'photo'              	=> $final_name,
+							'slug_news_category' 	=> $_POST['slug_news_category'],
+							'comment'            	=> $_POST['comment'],
+							'meta_title'         	=> $_POST['news_title'],
+							'meta_keyword'       	=> $_POST['meta_keyword'],
+							'meta_description'   	=> $_POST['meta_description'],
+							'post_slug'  		 	=> $slug
 						);
 						$this->Model_news->update($id,$form_data);
 					}

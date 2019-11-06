@@ -87,7 +87,9 @@ class Facility extends CI_Controller
 					$form_data = array(
 						'name'             => $_POST['name'],
 						'short_content'    => $_POST['short_content'],
+						'short_content_idn'=> $_POST['short_content_idn'],
 						'content'          => $_POST['content'],
+						'content_idn'      => $_POST['content_idn'],
 						'category_id'      => $_POST['category_id'],
 						'photo'            => $final_name,
 						'meta_title'       => $_POST['name'],
@@ -95,6 +97,7 @@ class Facility extends CI_Controller
 						'meta_description' => $_POST['meta_description'],
 						'slug_facility'    => $slug
 					);
+					
 					$this->Model_facility->add($form_data);
 
 					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) )
@@ -149,6 +152,8 @@ class Facility extends CI_Controller
 					unset($_POST['name']);
 					unset($_POST['short_content']);
 					unset($_POST['content']);
+					unset($_POST['short_content_idn']);
+					unset($_POST['content_idn']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
 				} 
@@ -234,7 +239,9 @@ class Facility extends CI_Controller
 						$form_data = array(
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
+							'short_content_idn'=> $_POST['short_content_idn'],
 							'content'          => $_POST['content'],
+							'content_idn'      => $_POST['content_idn'],
 							'category_id'      => $_POST['category_id'],
 							'meta_title'       => $_POST['name'],
 							'meta_keyword'     => $_POST['meta_keyword'],
@@ -252,7 +259,9 @@ class Facility extends CI_Controller
 						$form_data = array(
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
+							'short_content_idn'=> $_POST['short_content_idn'],
 							'content'          => $_POST['content'],
+							'content_idn'      => $_POST['content_idn'],
 							'category_id'      => $_POST['category_id'],
 							'photo'            => $final_name,
 							'meta_title'       => $_POST['name'],

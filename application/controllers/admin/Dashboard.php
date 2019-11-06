@@ -54,7 +54,7 @@ class Dashboard extends CI_Controller
 			// file creation
 			$file = fopen('php://output', 'w');
 
-			$header = array("No","Waktu","User","Tipe","Deskripsi","IP Address","User Agent");
+			$header = array("Id","Waktu","User","Tipe","Deskripsi","IP Address","User Agent");
 			fputcsv($file, $header);
 
 			foreach ($usersData as $key=>$line){

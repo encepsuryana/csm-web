@@ -140,11 +140,21 @@
 			foreach($single_news_data as $row) {
 				$og_id = $row['post_slug'];
 				$og_photo = $row['photo'];
-				$og_title = $row['news_title'];
+
+				if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+					if ($og_title = $row['news_title_idn'] == '') {
+						$og_title = $row['news_title'];
+					} else {
+						$og_title = $row['news_title_idn'];
+					}
+				} else {
+					$og_title = $row['news_title'];
+				}
+
 				$og_description = $row['news_short_content'];
 				echo '<meta name="description" content="'.$row['meta_description'].'">';
 				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
-				echo '<title>'.$row['meta_title'].' | '.$setting['general_companyname'].'</title>';	
+				echo '<title>'.$og_title.' | '.$setting['general_companyname'].'</title>';	
 			}
 			?>
 			<meta property="og:title" content="<?php echo $og_title; ?>">
@@ -166,7 +176,7 @@
 				$og_description = $row['meta_description'];
 				echo '<meta name="description" content="'.$row['meta_description'].'">';
 				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
-				echo '<title>'.$row['meta_title'].' | '.$setting['general_companyname'].'</title>';	
+				echo '<title>'.$og_title.' | '.$setting['general_companyname'].'</title>';	
 			}
 			?>
 			<meta property="og:title" content="<?php echo $og_title; ?>">
@@ -614,7 +624,21 @@
 									?>
 								</ul>
 							</li>
-							<li><a href="<?php echo base_url(); ?>gallery"><?php echo DOWNLOAD; ?></a></li>
+							<li class="submenu-item-has-children">
+								<a href="<?php echo base_url(); ?>gallery"><?php echo DOWNLOAD; ?></a>
+
+								<ul class="sub-menu">
+									<li>
+										<a href="<?php echo base_url();?>download/file-mechanic"><?php echo COMPANY_PROFILE_ENGINEERING; ?></a>
+									</li>
+									<li>
+										<a href="<?php echo base_url();?>download/file-electronic"><?php echo COMPANY_PROFILE_ELECTRONICS_DIVISION; ?></a>
+									</li>
+									<li>
+										<a href="<?php echo base_url();?>download/file-mechanic-electronic"><?php echo COMPANY_PROFILE_EN_DE; ?></a>
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 
