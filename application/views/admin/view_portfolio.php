@@ -44,7 +44,11 @@ if(!$this->session->userdata('id')) {
 										<td style="width:50px;"><?php echo $i; ?></td>
 										<td style="width:150px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:150px;"></td>
 										<td><?php echo $row['name']; ?></td>
-										<td><?php echo $row['content']; ?></td>
+										<td>
+											<?php echo $row['content_idn']; ?>
+											<hr>
+											<i><?php echo $row['content']; ?></i>
+										</td>
 										<td><?php echo $row['category_name']; ?></td>
 										<td>
 											<?php if ($this->session->userdata('role') == 'admin') { ?>

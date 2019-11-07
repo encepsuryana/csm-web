@@ -51,7 +51,19 @@
 								</div>
 								<div class="recent-text">
 									<h4><?php echo $row['name']; ?></h4>
-									<?php echo $row['short_content']; ?>
+
+									<?php 
+									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+										if ($row['short_content_idn'] == '') {
+											echo $row['short_content'];
+										} else {
+											echo $row['short_content_idn'];
+										}
+									} else {
+										echo $row['short_content'];
+									}
+									?>
+									
 									<div class="services-link">
 										<a href="<?php echo base_url(); ?>portfolio/post/<?php echo $row['slug_portfolio']; ?>"><?php echo READ_MORE; ?></a>
 									</div>

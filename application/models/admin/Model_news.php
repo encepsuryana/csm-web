@@ -15,8 +15,10 @@ class Model_news extends CI_Model
         $sql = "SELECT
         t1.news_id,
         t1.news_title,
+        t1.news_title_idn,
         t1.slug,
-        t1.news_content,
+        t1.news_short_content,
+        t1.news_short_content_idn,
         t1.photo,
         t1.news_date,
         t1.total_view,

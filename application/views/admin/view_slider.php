@@ -38,8 +38,15 @@ if(!$this->session->userdata('id')) {
 									<tr>
 										<td><?php echo $i; ?></td>
 										<td style="width:150px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['heading']; ?>" style="width:140px;"></td>
-										<td><?php echo $row['heading']; ?></td>
-										<td><?php echo $row['content']; ?></td>
+										<td>
+											<?php echo $row['heading_idn']; ?><hr>
+											<i><?php echo $row['heading']; ?></i>
+										</td>
+										<td>
+											<?php echo $row['content_idn']; ?>
+											<hr>
+											<i><?php echo $row['content']; ?></i>
+										</td>
 										<td>										
 											<a href="<?php echo base_url().$this->session->userdata('role'); ?>/slider/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 											<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/slider/delete/<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>  

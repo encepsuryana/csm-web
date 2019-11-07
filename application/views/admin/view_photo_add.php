@@ -35,11 +35,12 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" name="photo_caption">
+							<label for="" class="col-sm-2 control-label">Pilih Foto <span>*</span></label>
+							<div class="col-sm-4" style="padding-top:6px;">
+								<input type="file" name="photo"> (Hanya file: jpg, jpeg, gif dan png yang diperbolehkan) 
 							</div>
 						</div>
+
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Ukuran Foto <span>*</span></label>
 							<div class="col-sm-4">
@@ -57,10 +58,12 @@ if(!$this->session->userdata('id')) {
 								<input id="add" type="button" onclick='ik(this.value);' value='col-sm-3 col-xs-6 box' style="padding: 40px 5px;">
 							</div>
 						</div>
+						
+						<h3 class="seo-info">Konten Bahasa Inggris</h3>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Pilih Foto <span>*</span></label>
-							<div class="col-sm-4" style="padding-top:6px;">
-								<input type="file" name="photo"> (Hanya file: jpg, jpeg, gif dan png yang diperbolehkan) 
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="photo_caption">
 							</div>
 						</div>
 						<div class="form-group">
@@ -69,9 +72,23 @@ if(!$this->session->userdata('id')) {
 								<textarea type="text" class="form-control" name="photo_desc" style="height:100px;"></textarea>
 							</div>
 						</div>
+						<h3 class="seo-info">Konten Bahasa Indonesia</h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="photo_caption_idn">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Deskripsi <span>*</span></label>
+							<div class="col-sm-4">
+								<textarea type="text" class="form-control" name="photo_desc_idn" style="height:100px;"></textarea>
+							</div>
+						</div>
+
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Tampilkan? <span>*</span></label>
-							<div class="col-sm-2" style="padding-top:6px;">
+							<div class="col-sm-6" style="padding-top:6px;">
 								<select name="photo_show_home" class="form-control select2">
 									<option value="Yes">Yes</option>
 									<option value="No">No</option>

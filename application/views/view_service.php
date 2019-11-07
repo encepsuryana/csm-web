@@ -38,7 +38,20 @@
 									</div>
 									<div class="public-partcsm-home">
 										<h3><?php echo $row['heading']; ?></h3>
-										<p><?php echo $row['short_content']; ?></p>
+
+										<p>
+											<?php 
+											if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+												if ($row['short_content_idn'] == '') {
+													echo $row['short_content'];
+												} else {
+													echo $row['short_content_idn'];
+												}
+											} else {
+												echo $row['short_content'];
+											}
+											?>
+										</p>
 									</div>
 									<div class="csm-blog-home" style="top:0;">
 										<h4><?php echo $row['heading']; ?></h4>

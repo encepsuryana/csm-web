@@ -88,7 +88,9 @@ class Electronics_division extends CI_Controller
 					$form_data = array(
 						'name'             => $_POST['name'],
 						'short_content'    => $_POST['short_content'],
+						'short_content_idn'=> $_POST['short_content_idn'],
 						'content'          => $_POST['content'],
+						'content_idn'      => $_POST['content_idn'],
 						'category_id'      => $_POST['category_id'],
 						'photo'            => $final_name,
 						'meta_title'       => $_POST['name'],
@@ -150,7 +152,9 @@ class Electronics_division extends CI_Controller
 
 					unset($_POST['name']);
 					unset($_POST['short_content']);
+					unset($_POST['short_content_idn']);
 					unset($_POST['content']);
+					unset($_POST['content_idn']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
 				} 
@@ -236,7 +240,9 @@ class Electronics_division extends CI_Controller
 						$form_data = array(
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
+							'short_content_idn'=> $_POST['short_content_idn'],
 							'content'          => $_POST['content'],
+							'content_idn'      => $_POST['content_idn'],
 							'category_id'      => $_POST['category_id'],
 							'meta_title'       => $_POST['name'],
 							'meta_keyword'     => $_POST['meta_keyword'],
@@ -254,7 +260,9 @@ class Electronics_division extends CI_Controller
 						$form_data = array(
 							'name'             => $_POST['name'],
 							'short_content'    => $_POST['short_content'],
+							'short_content_idn'=> $_POST['short_content_idn'],
 							'content'          => $_POST['content'],
+							'content_idn'      => $_POST['content_idn'],
 							'category_id'      => $_POST['category_id'],
 							'photo'            => $final_name,
 							'meta_title'       => $_POST['name'],
@@ -370,7 +378,7 @@ class Electronics_division extends CI_Controller
 			$this->Model_electronics_division->delete_photos($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['electronics_division']['name'].' dihapus dari Divisi Elektronik');
+			helper_log("Delete", '[HAPUS] Data: '.$data['electronics_division']['name'].' dihapus dari Divisi Elektronik');
 
 			redirect(base_url().'admin/electronics_division');
 		} else {

@@ -81,9 +81,11 @@ class Photo extends CI_Controller
 
 					$form_data = array(
 						'photo_caption' 	=> $_POST['photo_caption'],
+						'photo_caption_idn'	=> $_POST['photo_caption_idn'],
 						'photo_style' 		=> $_POST['photo_style'],
 						'photo_name' 		=> $final_name,
 						'photo_desc'		=> $_POST['photo_desc'],
+						'photo_desc_idn'	=> $_POST['photo_desc_idn'],
 						'photo_show_home' 	=> $_POST['photo_show_home']
 					);
 					$this->Model_photo->add($form_data);
@@ -171,8 +173,9 @@ class Photo extends CI_Controller
 					if($path == '') {
 						$form_data = array(
 							'photo_caption' 	=> $_POST['photo_caption'],
+							'photo_caption_idn'	=> $_POST['photo_caption_idn'],
 							'photo_style' 		=> $_POST['photo_style'],
-							'photo_desc'		=> $_POST['photo_desc'],
+							'photo_desc_idn'	=> $_POST['photo_desc_idn'],
 							'photo_show_home' 	=> $_POST['photo_show_home']
 						);
 						$this->Model_photo->update($id,$form_data);
@@ -186,9 +189,11 @@ class Photo extends CI_Controller
 
 						$form_data = array(
 							'photo_caption' 	=> $_POST['photo_caption'],
+							'photo_caption_idn'	=> $_POST['photo_caption_idn'],
 							'photo_style' 		=> $_POST['photo_style'],
 							'photo_name' 		=> $final_name,
 							'photo_desc' 		=> $_POST['photo_desc'],
+							'photo_desc_idn'	=> $_POST['photo_desc_idn'],
 							'photo_show_home' 	=> $_POST['photo_show_home']
 						);
 						$this->Model_photo->update($id,$form_data);
@@ -244,7 +249,7 @@ class Photo extends CI_Controller
 			$this->Model_photo->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['photo']['photo_caption'].' dihapus dari Galeri');
+			helper_log("Delete", '[HAPUS] Data: '.$data['photo']['photo_caption'].' dihapus dari Galeri');
 
 			redirect(base_url().'admin/photo');
 		} else {

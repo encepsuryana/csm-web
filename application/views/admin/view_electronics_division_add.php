@@ -43,21 +43,37 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Foto Cover <span>*</span></label>
+							<div class="col-sm-9" style="padding-top:5px">
+								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
+							</div>
+						</div>
+
+						<h3>Konten Bahasa Inggris</h3>
+						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="short_content" style="height:100px;"><?php if(isset($_POST['short_content'])){echo $_POST['short_content'];} ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Foto Cover <span>*</span></label>
-							<div class="col-sm-9" style="padding-top:5px">
-								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
+							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="content" id="editor1"><?php if(isset($_POST['content'])){echo $_POST['content'];} ?></textarea>
+							</div>
+						</div>
+
+						<h3>Konten Bahasa Indonesia</h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="short_content_idn" style="height:100px;"><?php if(isset($_POST['short_content_idn'])){echo $_POST['short_content_idn'];} ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-8">
-								<textarea class="form-control" name="content" id="editor1"><?php if(isset($_POST['content'])){echo $_POST['content'];} ?></textarea>
+								<textarea class="form-control" name="content_idn" id="editor2"><?php if(isset($_POST['content_idn'])){echo $_POST['content_idn'];} ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">

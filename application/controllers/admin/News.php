@@ -300,7 +300,7 @@ class News extends CI_Controller
 			$this->Model_news->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['news']['news_title'].' dihapus dari Berita');
+			helper_log("Delete", '[HAPUS] Data: '.$data['news']['news_title'].' dihapus dari Berita');
 
 			redirect(base_url().'admin/news');
 		} else {

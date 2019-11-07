@@ -193,7 +193,7 @@ class Facility_category extends CI_Controller
 			$this->Model_facility_category->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['facility_category']['category_name'].' dihapus dari Kategori Fasilitas');
+			helper_log("Delete", '[HAPUS] Data: '.$data['facility_category']['category_name'].' dihapus dari Kategori Fasilitas');
 
 			redirect(base_url().'admin/facility-category');
 		} else {

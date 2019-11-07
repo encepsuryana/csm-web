@@ -44,8 +44,16 @@ if(!$this->session->userdata('id')) {
                <td>
                 <img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo_name']; ?>" width="140">
               </td>
-              <td><?php echo $row['photo_caption']; ?></td>
-              <td><?php echo $row['photo_desc']; ?></td>
+              <td>
+                <?php echo $row['photo_caption_idn']; ?>
+                <hr>
+                <i><?php echo $row['photo_caption']; ?></i>
+              </td>
+              <td>
+                <?php echo $row['photo_desc_idn']; ?>
+                <hr>
+                <i><?php echo $row['photo_desc']; ?></i>
+              </td>
               <td><?php echo $row['photo_show_home']; ?></td>
               <td>
                <a href="<?php echo base_url().$this->session->userdata('role'); ?>/photo/edit/<?php echo $row['photo_id']; ?>" class="btn btn-primary btn-xs">Edit</a>

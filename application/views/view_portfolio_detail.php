@@ -69,7 +69,17 @@
 				<div class="single-service-text recent-single-text pt_30 pb_20">
 					<h4><?php echo DESCRIPTION; ?></h4>
 					<p>
-						<?php echo $portfolio['content']; ?>
+						<?php 
+						if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+							if ($portfolio['content_idn'] == '') {
+								echo $portfolio['content'];
+							} else {
+								echo $portfolio['content_idn'];
+							}
+						} else {
+							echo $portfolio['content'];
+						}
+						?>
 					</p>
 				</div>
 				<hr>

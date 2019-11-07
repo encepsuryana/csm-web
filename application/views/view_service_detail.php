@@ -30,7 +30,17 @@
 
 				<div class="single-service-text recent-single-text pt_30 pb_20">
 					<p>
-						<?php echo $res['content']; ?>
+						<?php 
+						if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+							if ($res['content_idn'] == '') {
+								echo $res['content'];
+							} else {
+								echo $res['content_idn'];
+							}
+						} else {
+							echo $res['content'];
+						}
+						?>
 					</p>
 				</div>
 			</div>

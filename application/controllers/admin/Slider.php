@@ -238,7 +238,7 @@ class Slider extends CI_Controller
 			$this->Model_slider->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data : '.$data['slider']['heading'].' dihapus dari Slider');
+			helper_log("Delete", '[HAPUS] Data: '.$data['slider']['heading'].' dihapus dari Slider');
 
 			redirect(base_url().'admin/slider');
 		} else {

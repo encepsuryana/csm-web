@@ -86,7 +86,9 @@ class Testimonial extends CI_Controller
 						'designation' => $_POST['designation'],
 						'company'     => $_POST['company'],
 						'photo'       => $final_name,
-						'comment'     => $_POST['comment']
+						'comment'     => $_POST['comment'],
+						'comment_idn' => $_POST['comment_idn']
+
 					);
 					$this->Model_testimonial->add($form_data);
 
@@ -99,6 +101,7 @@ class Testimonial extends CI_Controller
 					unset($_POST['designation']);
 					unset($_POST['company']);
 					unset($_POST['comment']);
+					unset($_POST['comment_idn']);
 				} 
 				else
 				{
@@ -180,7 +183,8 @@ class Testimonial extends CI_Controller
 							'name'        => $_POST['name'],
 							'designation' => $_POST['designation'],
 							'company'     => $_POST['company'],
-							'comment'     => $_POST['comment']
+							'comment'     => $_POST['comment'],
+							'comment_idn' => $_POST['comment_idn']
 						);
 						$this->Model_testimonial->update($id,$form_data);
 					}
@@ -195,7 +199,8 @@ class Testimonial extends CI_Controller
 							'designation' => $_POST['designation'],
 							'company'     => $_POST['company'],
 							'photo'       => $final_name,
-							'comment'     => $_POST['comment']
+							'comment'     => $_POST['comment'],
+							'comment_idn' => $_POST['comment_idn']
 						);
 						$this->Model_testimonial->update($id,$form_data);
 					}
@@ -252,7 +257,7 @@ class Testimonial extends CI_Controller
 			$this->Model_testimonial->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['testimonial']['company'].' dihapus dari Testimonial');
+			helper_log("Delete", '[HAPUS] Data: '.$data['testimonial']['company'].' dihapus dari Testimonial');
 
 			redirect(base_url().'admin/testimonial');
 		} else {

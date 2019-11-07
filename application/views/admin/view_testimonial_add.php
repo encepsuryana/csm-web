@@ -60,9 +60,16 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>						
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Komentar <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">Komentar Bahasa Inggris<span>*</span></label>
 							<div class="col-sm-6">
 								<textarea class="form-control" name="comment" style="height:200px;"><?php if(isset($_POST['comment'])){echo $_POST['comment'];} ?></textarea>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Komentar Bahasa Indonesia<span>*</span></label>
+							<div class="col-sm-6">
+								<textarea class="form-control" name="comment_idn" style="height:200px;"><?php if(isset($_POST['comment_idn'])){echo $_POST['comment_idn'];} ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">

@@ -84,19 +84,34 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_close(); ?>
 
 
-							<h3 class="seo-info">Informasi Elektronik Divisi</h3>
 							<?php echo form_open(base_url().$this->session->userdata('role').'/electronics-division-desc/update',array('class' => 'form-horizontal')); ?>
 							<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
+
+								<h3 class="seo-info">Informasi Elektronik Divisi Basaha Inggris</h3>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Judul </label>
-									<div class="col-sm-6">
+									<div class="col-sm-9">
 										<input type="text" name="electronics_division_desc_heading" class="form-control" value="<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Konten </label>
 									<div class="col-sm-9">
-										<textarea name="electronics_division_desc_content" class="form-control" cols="30" rows="10" id="editor1"><?php echo $electronics_division_desc['electronics_division_desc_content']; ?></textarea>
+										<textarea name="electronics_division_desc_content" class="form-control" cols="30" rows="10" id="editor2"><?php echo $electronics_division_desc['electronics_division_desc_content']; ?></textarea>
+									</div>
+								</div>
+
+								<h3 class="seo-info">Informasi Elektronik Divisi Basaha Indonesia</h3>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Judul </label>
+									<div class="col-sm-9">
+										<input type="text" name="ed_desc_heading_idn" class="form-control" value="<?php echo $electronics_division_desc['ed_desc_heading_idn']; ?>">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-2 control-label">Konten </label>
+									<div class="col-sm-9">
+										<textarea name="ed_desc_content_idn" class="form-control" cols="30" rows="10" id="editor1"><?php echo $electronics_division_desc['ed_desc_content_idn']; ?></textarea>
 									</div>
 								</div>
 

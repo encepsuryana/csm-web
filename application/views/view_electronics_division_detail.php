@@ -72,7 +72,17 @@
 				<div class="single-service-text recent-single-text pt_30 pb_20">
 					<h4><?php echo DESCRIPTION; ?></h4>
 					<p>
-						<?php echo $electronics_division['content']; ?>
+						<?php 
+						if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+							if ($electronics_division['content_idn'] == '') {
+								echo $electronics_division['content'];
+							} else {
+								echo $electronics_division['content_idn'];
+							}
+						} else {
+							echo $electronics_division['content'];
+						}
+						?>
 					</p>
 				</div>			
 			</div>

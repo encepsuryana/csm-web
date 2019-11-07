@@ -191,7 +191,7 @@ class News_category extends CI_Controller
 			$this->Model_news_category->delete1($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['news_category']['category_name'].' dihapus dari Kategori Berita');
+			helper_log("Delete", '[HAPUS] Data: '.$data['news_category']['category_name'].' dihapus dari Kategori Berita');
 
 			redirect(base_url().'admin/news-category');
 		} else {

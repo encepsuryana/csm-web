@@ -47,7 +47,11 @@ if(!$this->session->userdata('id')) {
 										<td><?php echo $row['name']; ?></td>
 										<td><?php echo $row['designation']; ?></td>
 										<td><?php echo $row['company']; ?></td>
-										<td><?php echo $row['comment']; ?></td>
+										<td>
+											<?php echo $row['comment_idn']; ?>
+											<hr>
+											<i><?php echo $row['comment']; ?></i>
+										</td>
 										<td>
 											<?php if ($this->session->userdata('role') == 'admin') {?>
 												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/testimonial/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>

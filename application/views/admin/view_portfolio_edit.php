@@ -42,12 +42,6 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
-							<div class="col-sm-8">
-								<textarea class="form-control" name="short_content" style="height:100px;"><?php echo $portfolio['short_content']; ?></textarea>
-							</div>
-						</div>
-						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"> </label>
 							<div class="col-sm-9" style="padding-top:5px">
 								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $portfolio['photo']; ?>" alt="" style="width:120px;">
@@ -59,12 +53,36 @@ if(!$this->session->userdata('id')) {
 								<input type="file" name="photo">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
+
+						<h3 class="seo-info">Konten Bahasa Inggris</h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="short_content" style="height:100px;"><?php echo $portfolio['short_content']; ?></textarea>
+							</div>
+						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-8">
 								<textarea class="form-control" name="content" id="editor1"><?php echo $portfolio['content']; ?></textarea>
 							</div>
 						</div>
+
+						<h3 class="seo-info">Konten Bahasa Indonesia</h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="short_content_idn" style="height:100px;"><?php echo $portfolio['short_content_idn']; ?></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
+							<div class="col-sm-8">
+								<textarea class="form-control" name="content_idn" id="editor2"><?php echo $portfolio['content_idn']; ?></textarea>
+							</div>
+						</div>
+
+
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Pilih Kategori <span>*</span></label>
 							<div class="col-sm-4">

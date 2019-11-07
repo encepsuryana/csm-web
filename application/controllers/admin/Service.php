@@ -89,7 +89,9 @@ class Service extends CI_Controller
 					$form_data = array(
 						'heading' 			=> $_POST['heading'],
 						'short_content' 	=> $_POST['short_content'],
+						'short_content_idn'	=> $_POST['short_content_idn'],
 						'content' 			=> $_POST['content'],
+						'content_idn' 		=> $_POST['content_idn'],
 						'photo' 			=> $final_name,
 						'meta_title' 		=> $_POST['heading'],
 						'meta_keyword' 		=> $_POST['meta_keyword'],
@@ -104,7 +106,9 @@ class Service extends CI_Controller
 					$data['success'] = 'Layanan berhasil ditambahkan!';
 					unset($_POST['heading']);
 					unset($_POST['short_content']);
+					unset($_POST['short_content_idn']);
 					unset($_POST['content']);
+					unset($_POST['content_idn']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
 				} 
@@ -190,7 +194,9 @@ class Service extends CI_Controller
 						$form_data = array(
 							'heading' 			=> $_POST['heading'],
 							'short_content' 	=> $_POST['short_content'],
+							'short_content_idn' => $_POST['short_content_idn'],
 							'content' 			=> $_POST['content'],
+							'content_idn'		=> $_POST['content_idn'],
 							'meta_title' 		=> $_POST['heading'],
 							'meta_keyword' 		=> $_POST['meta_keyword'],
 							'meta_description' 	=> $_POST['meta_description'],
@@ -206,7 +212,9 @@ class Service extends CI_Controller
 						$form_data = array(
 							'heading' 			=> $_POST['heading'],
 							'short_content' 	=> $_POST['short_content'],
+							'short_content_idn' => $_POST['short_content_idn'],
 							'content' 			=> $_POST['content'],
+							'content_idn'		=> $_POST['content_idn'],
 							'photo' 			=> $final_name,
 							'meta_title' 		=> $_POST['heading'],
 							'meta_keyword' 		=> $_POST['meta_keyword'],
@@ -268,7 +276,7 @@ class Service extends CI_Controller
 			$this->Model_service->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['service']['heading'].' dihapus dari Layanan');
+			helper_log("Delete", '[HAPUS] Data: '.$data['service']['heading'].' dihapus dari Layanan');
 
 			redirect(base_url().'admin/service');
 		} else {

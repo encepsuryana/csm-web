@@ -374,7 +374,7 @@ class Facility extends CI_Controller
 			$this->Model_facility->delete_photos($id);
 			
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['facility']['name'].' dihapus dari Fasilitas');
+			helper_log("Delete", '[HAPUS] Data: '.$data['facility']['name'].' dihapus dari Fasilitas');
 
 			redirect(base_url().'admin/facility');
 		} else {

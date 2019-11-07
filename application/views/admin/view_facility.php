@@ -40,7 +40,11 @@ if(!$this->session->userdata('id')) {
 										<td style="width:100px;"><?php echo $i; ?></td>
 										<td style="width:150px;"><img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['name']; ?>" style="width:150px;"></td>
 										<td><?php echo $row['name']; ?></td>
-										<td><?php echo $row['content']; ?></td>
+										<td>
+											<?php echo $row['short_content_idn']; ?> ... 
+											<hr>
+											<i><?php echo $row['short_content']; ?> ... </i>
+										</td>
 										<td><?php echo $row['category_name']; ?></td>
 										<td>
 											<a href="<?php echo base_url().$this->session->userdata('role'); ?>/facility/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>

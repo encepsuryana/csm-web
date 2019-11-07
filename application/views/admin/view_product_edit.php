@@ -39,31 +39,25 @@ if(!$this->session->userdata('id')) {
 					<div class="box-body">
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Foto tersedia</label>
-							<div class="col-sm-6" style="padding-top:6px;">
+							<div class="col-sm-5" style="padding-top:6px;">
 								<img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $product['product_name']; ?>" class="existing-photo" style="width:300px;">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Unggah foto baru <span>*</span></label>
-							<div class="col-sm-4" style="padding-top:6px;">
+							<div class="col-sm-5" style="padding-top:6px;">
 								<input type="file" name="product">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" name="product_caption" value="<?php echo $product['product_caption']; ?>">
-							</div>
-						</div>
-						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Ukuran Foto <span>*</span></label>
-							<div class="col-sm-4">
+							<div class="col-sm-5">
 								<input id="style" type="text" class="form-control" name="product_style" value="<?php echo $product['product_style']; ?>" readonly="readonly">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"><span></span></label>
-							<div class="col-sm-4" style="text-align: center;">
+							<div class="col-sm-5" style="text-align: center;">
 								<div class="style-select" > 
 									<i class="fa fa-info-circle" aria-hidden="true"></i>
 									<span>Select Style: </span>
@@ -72,15 +66,39 @@ if(!$this->session->userdata('id')) {
 								<input id="add" type="button" onclick='ik(this.value);' value='col-sm-3 col-xs-6 box' style="padding: 40px 5px;">
 							</div>
 						</div>
+
+						<h3 class="seo-info">Konten Bahasa Inggris</h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="product_caption" value="<?php echo $product['product_caption']; ?>">
+							</div>
+						</div>
+						
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Deskripsi <span>*</span></label>
-							<div class="col-sm-4">
+							<div class="col-sm-5">
 								<textarea type="text" class="form-control" name="product_desc" style="height: 100px;"><?php echo $product['product_desc']; ?></textarea>
+							</div>
+						</div>
+
+						<h3 class="seo-info">Konten Bahasa Indonesia</h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="product_caption_idn" value="<?php echo $product['product_caption_idn']; ?>">
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Deskripsi <span>*</span></label>
+							<div class="col-sm-5">
+								<textarea type="text" class="form-control" name="product_desc_idn" style="height: 100px;"><?php echo $product['product_desc_idn']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Tampilkan? <span>*</span></label>
-							<div class="col-sm-2" style="padding-top:6px;">
+							<div class="col-sm-5" style="padding-top:6px;">
 								<select name="product_show_home" class="form-control select2">
 									<option value="Yes" <?php if($product['product_show_home']=='Yes') {echo 'selected';} ?>>Yes</option>
 									<option value="No" <?php if($product['product_show_home']=='No') {echo 'selected';} ?>>No</option>
@@ -89,7 +107,7 @@ if(!$this->session->userdata('id')) {
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Produk Unggulan? <span>*</span></label>
-							<div class="col-sm-2" style="padding-top:6px;">
+							<div class="col-sm-5" style="padding-top:6px;">
 								<select name="product_star" class="form-control select2">
 									<option value="Yes" <?php if($product['product_star']=='Yes') {echo 'selected';} ?>>Yes</option>
 									<option value="No" <?php if($product['product_star']=='No') {echo 'selected';} ?>>No</option>

@@ -195,7 +195,7 @@ class Portfolio_category extends CI_Controller
 			$this->Model_portfolio_category->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['portfolio_category']['category_name'].' dihapus dari Kategori Portfolio');
+			helper_log("Delete", '[HAPUS] Data: '.$data['portfolio_category']['category_name'].' dihapus dari Kategori Portfolio');
 
 			redirect(base_url().'admin/portfolio-category');
 		} else {

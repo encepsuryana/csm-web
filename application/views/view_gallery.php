@@ -29,7 +29,19 @@
 					?>
 					<div onclick="openModal();currentSlide(<?php echo $i; ?>)" class="<?php echo $row['photo_style']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo_name']; ?>)">
 						<div class="toggleIcon">
-							<h4><?php echo $row['photo_caption']; ?></h4>							
+							<h4>
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+									if ($row['photo_caption_idn'] == '') {
+										echo $row['photo_caption'];
+									} else {
+										echo $row['photo_caption_idn'];
+									}
+								} else {
+									echo $row['photo_caption'];
+								}
+								?>
+							</h4>
 						</div>
 					</div>
 					<?php
@@ -46,10 +58,34 @@
 				?>
 				<div class="mySlides">
 					<div class="product-caption">
-						<h4><?php echo $row['photo_caption']; ?></h4>
+						<h4>
+							<?php 
+							if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+								if ($row['photo_caption_idn'] == '') {
+									echo $row['photo_caption'];
+								} else {
+									echo $row['photo_caption_idn'];
+								}
+							} else {
+								echo $row['photo_caption'];
+							}
+							?>
+						</h4>
 					</div>
 					<div class="product-desc">
-						<p><?php echo $row['photo_desc']; ?></p>
+						<p>
+							<?php 
+							if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+								if ($row['photo_desc_idn'] == '') {
+									echo $row['photo_desc'];
+								} else {
+									echo $row['photo_desc_idn'];
+								}
+							} else {
+								echo $row['photo_desc'];
+							}
+							?>
+						</p>
 					</div>
 					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo_name']; ?>" style="width:100%">
 				</div>

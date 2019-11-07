@@ -36,12 +36,7 @@ if(!$this->session->userdata('id')) {
 				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/photo/edit/'.$photo['photo_id'],array('class' => 'form-horizontal')); ?>
 				<div class="box box-info  b-box">
 					<div class="box-body">
-						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
-							<div class="col-sm-4">
-								<input type="text" class="form-control" name="photo_caption" value="<?php echo $photo['photo_caption']; ?>">
-							</div>
-						</div>
+
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Ukuran Foto <span>*</span></label>
 							<div class="col-sm-4">
@@ -71,15 +66,37 @@ if(!$this->session->userdata('id')) {
 								<input type="file" name="photo"> (Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 							</div>
 						</div>
+
+						<h3 class="seo-info">Konten Bahasa Inggris</h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="photo_caption" value="<?php echo $photo['photo_caption']; ?>">
+							</div>
+						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Deskripsi <span>*</span></label>
 							<div class="col-sm-4">
 								<textarea type="text" class="form-control" name="photo_desc" style="height:100px;"><?php echo $photo['photo_desc']; ?></textarea>
 							</div>
 						</div>
+
+						<h3 class="seo-info">Konten Bahasa Indonesia</h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" name="photo_caption_idn" value="<?php echo $photo['photo_caption_idn']; ?>">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Deskripsi <span>*</span></label>
+							<div class="col-sm-4">
+								<textarea type="text" class="form-control" name="photo_desc_idn" style="height:100px;"><?php echo $photo['photo_desc_idn']; ?></textarea>
+							</div>
+						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Tampilkan? <span>*</span></label>
-							<div class="col-sm-2" style="padding-top:6px;">
+							<div class="col-sm-4" style="padding-top:6px;">
 								<select name="photo_show_home" class="form-control select2">
 									<option value="Yes" <?php if($photo['photo_show_home']=='Yes') {echo 'selected';} ?>>Yes</option>
 									<option value="No" <?php if($photo['photo_show_home']=='No') {echo 'selected';} ?>>No</option>

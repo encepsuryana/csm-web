@@ -25,10 +25,9 @@ if(!$this->session->userdata('id')) {
 							<thead>
 								<tr>
 									<th>No</th>
-									<th>Tanggal</th>
-									<th>Foto</th>
-									<th>Posting</th>
+									<th>Tanggal & User</th>
 									<th>Judul</th>
+									<th>Konten</th>
 									<th>Kategori</th>
 									<th>Jumlah View</th>
 									<th>Action</th>
@@ -42,14 +41,17 @@ if(!$this->session->userdata('id')) {
 									?>
 									<tr>
 										<td><?php echo $i; ?></td>
-										<td><?php echo $row['news_date']; ?></td>
+										<td><?php echo $row['news_date']; ?> (<?php echo $row['user_update'];?>)</td>
 										<td>
-											<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="<?php echo $row['news_title']; ?>" style="width:100px;">
+											<?php echo $row['news_title_idn']; ?>
+											<hr>
+											<i><?php echo $row['news_title']; ?></i>
 										</td>
-										<td style="text-transform: uppercase;">
-											<?php echo $row['user_update']; ?>
+										<td>
+											<?php echo $row['news_short_content_idn']; ?>
+											<hr>
+											<i><?php echo $row['news_short_content']; ?></i>
 										</td>
-										<td><?php echo $row['news_title']; ?></td>
 										<td>
 											<?php echo $row['category_name']; ?>
 										</td>

@@ -190,7 +190,7 @@ class Electronics_division_category extends CI_Controller
 			$this->Model_electronics_division_category->delete($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['electronics_division_category']['category_name'].' dihapus dari kategori Divisi Elektronik');
+			helper_log("Delete", '[HAPUS] Data: '.$data['electronics_division_category']['category_name'].' dihapus dari kategori Divisi Elektronik');
 
 			redirect(base_url().'admin/electronics-division-category');
 		} else {

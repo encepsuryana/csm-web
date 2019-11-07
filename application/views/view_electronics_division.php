@@ -29,10 +29,30 @@
 					<div class="electronic-desc">
 						<h4>
 							<i class="fa fa-microchip" aria-hidden="true"></i>
-							<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>
+							<?php 
+							if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+								if ($electronics_division_desc['ed_desc_heading_idn'] == '') {
+									echo $electronics_division_desc['electronics_division_desc_heading'];
+								} else {
+									echo $electronics_division_desc['ed_desc_heading_idn']; 
+								}
+							} else {
+								echo $electronics_division_desc['electronics_division_desc_heading'];
+							}
+							?>
 						</h4>
 						<p>
-							<?php echo $electronics_division_desc['electronics_division_desc_content']; ?>
+							<?php 
+							if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+								if ($electronics_division_desc['ed_desc_content_idn'] == '') {
+									echo $electronics_division_desc['electronics_division_desc_content'];
+								} else {
+									echo $electronics_division_desc['ed_desc_content_idn']; 
+								}
+							} else {
+								echo $electronics_division_desc['electronics_division_desc_content'];
+							}
+							?>
 						</p>
 					</div>
 				</div>
@@ -74,7 +94,19 @@
 								</div>
 								<div class="recent-text">
 									<h5><?php echo $row['name']; ?></h5>
-									<p><?php echo $row['short_content']; ?></p>
+									<p>
+										<?php 
+										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+											if ($row['short_content_idn'] == '') {
+												echo $row['short_content'];
+											} else {
+												echo $row['short_content_idn'];
+											}
+										} else {
+											echo $row['short_content'];
+										}
+										?>
+									</p>
 									<div class="services-link">
 										<a href="<?php echo base_url(); ?>electronics-division/post/<?php echo $row['slug_electronics']; ?>"><?php echo READ_MORE; ?></a>
 									</div>

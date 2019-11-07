@@ -85,7 +85,9 @@ class Portfolio extends CI_Controller
 					$form_data = array(
 						'name'             	=> $_POST['name'],
 						'short_content'    	=> $_POST['short_content'],
+						'short_content_idn'	=> $_POST['short_content_idn'],
 						'content'          	=> $_POST['content'],
+						'content_idn'      	=> $_POST['content_idn'],
 						'category_id'      	=> $_POST['category_id'],
 						'photo'           	=> $final_name,
 						'meta_title'       	=> $_POST['name'],
@@ -149,7 +151,9 @@ class Portfolio extends CI_Controller
 
 					unset($_POST['name']);
 					unset($_POST['short_content']);
+					unset($_POST['short_content_idn']);
 					unset($_POST['content']);
+					unset($_POST['content_idn']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
 				} 
@@ -231,14 +235,16 @@ class Portfolio extends CI_Controller
 
 					if($path == '') {
 						$form_data = array(
-							'name'             => $_POST['name'],
-							'short_content'    => $_POST['short_content'],
-							'content'          => $_POST['content'],
-							'category_id'      => $_POST['category_id'],
-							'meta_title'       => $_POST['name'],
-							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_portfolio'   => $slug
+							'name'             	=> $_POST['name'],
+							'short_content'    	=> $_POST['short_content'],
+							'short_content_idn'	=> $_POST['short_content_idn'],
+							'content'          	=> $_POST['content'],
+							'content_idn'      	=> $_POST['content_idn'],
+							'category_id'      	=> $_POST['category_id'],
+							'meta_title'       	=> $_POST['name'],
+							'meta_keyword'     	=> $_POST['meta_keyword'],
+							'meta_description' 	=> $_POST['meta_description'],
+							'slug_portfolio'  	=> $slug
 						);
 						$this->Model_portfolio->update($id,$form_data);
 					}
@@ -249,15 +255,17 @@ class Portfolio extends CI_Controller
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
 						$form_data = array(
-							'name'             => $_POST['name'],
-							'short_content'    => $_POST['short_content'],
-							'content'          => $_POST['content'],
-							'category_id'      => $_POST['category_id'],
-							'photo'            => $final_name,
-							'meta_title'       => $_POST['name'],
-							'meta_keyword'     => $_POST['meta_keyword'],
-							'meta_description' => $_POST['meta_description'],
-							'slug_portfolio'   => $slug
+							'name'             	=> $_POST['name'],
+							'short_content'    	=> $_POST['short_content'],
+							'short_content_idn'	=> $_POST['short_content_idn'],
+							'content'          	=> $_POST['content'],
+							'content_idn'      	=> $_POST['content_idn'],
+							'category_id'      	=> $_POST['category_id'],
+							'photo'           	=> $final_name,
+							'meta_title'       	=> $_POST['name'],
+							'meta_keyword'     	=> $_POST['meta_keyword'],
+							'meta_description' 	=> $_POST['meta_description'],
+							'slug_portfolio'   	=> $slug
 						);
 						$this->Model_portfolio->update($id,$form_data);
 					}
@@ -366,7 +374,7 @@ class Portfolio extends CI_Controller
 			$this->Model_portfolio->delete_photos($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data Id: '.$data['portfolio']['name'].' dihapus dari Portofolio');
+			helper_log("Delete", '[HAPUS] Data: '.$data['portfolio']['name'].' dihapus dari Portofolio');
 
 			redirect(base_url().'admin/portfolio');
 		} else {

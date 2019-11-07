@@ -47,8 +47,16 @@ if(!$this->session->userdata('id')) {
                <td>
                 <img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>" width="140">
               </td>
-              <td><?php echo $row['product_caption']; ?></td>
-              <td><?php echo $row['product_desc']; ?></td>
+              <td>
+                <?php echo $row['product_caption_idn']; ?>
+                <hr>
+                <i><?php echo $row['product_caption']; ?></i>
+              </td>
+              <td>
+                <?php echo $row['product_desc_idn']; ?>
+                <hr>
+                <i><?php echo $row['product_desc']; ?></i>
+              </td>
               <td><?php echo $row['product_show_home']; ?></td>
               <td><?php echo $row['product_star']; ?></td>
               <td>

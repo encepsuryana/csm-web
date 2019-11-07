@@ -41,12 +41,6 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
-							<div class="col-sm-5">
-								<input type="text" class="form-control" name="product_caption">
-							</div>
-						</div>
-						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Ukuran Foto <span>*</span></label>
 							<div class="col-sm-5">
 								<input id='style' type="text" class="form-control" name="product_style" readonly="readonly">
@@ -63,15 +57,38 @@ if(!$this->session->userdata('id')) {
 								<input id="add" type="button" onclick='ik(this.value);' value='col-sm-3 col-xs-6 box' style="padding: 35px 5px;">
 							</div>
 						</div>
+
+						<h3 class="seo-info">Konten Bahasa Inggris </h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="product_caption">
+							</div>
+						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Deskripsi <span>*</span></label>
 							<div class="col-sm-5">
 								<textarea type="text" class="form-control" name="product_desc" style="height: 100px;"> </textarea>
 							</div>
 						</div>
+
+						<h3 class="seo-info">Konten Bahasa Indonesia </h3>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
+							<div class="col-sm-5">
+								<input type="text" class="form-control" name="product_caption_idn">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Deskripsi <span>*</span></label>
+							<div class="col-sm-5">
+								<textarea type="text" class="form-control" name="product_desc_idn" style="height: 100px;"> </textarea>
+							</div>
+						</div>
+
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Tampilkan? <span>*</span></label>
-							<div class="col-sm-2" style="padding-top:6px;">
+							<div class="col-sm-5" style="padding-top:6px;">
 								<select name="product_show_home" class="form-control select2">
 									<option value="Yes">Yes</option>
 									<option value="No">No</option>
@@ -80,7 +97,7 @@ if(!$this->session->userdata('id')) {
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Produk Unggulan? <span>*</span></label>
-							<div class="col-sm-2" style="padding-top:6px;">
+							<div class="col-sm-5" style="padding-top:6px;">
 								<select name="product_star" class="form-control select2">
 									<option value="Yes">Yes</option>
 									<option value="No">No</option>
