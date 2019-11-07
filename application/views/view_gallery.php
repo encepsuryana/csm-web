@@ -38,7 +38,11 @@
 										echo $row['photo_caption_idn'];
 									}
 								} else {
-									echo $row['photo_caption'];
+									if ($row['photo_caption'] == '') {
+										echo $row['photo_caption_idn'];
+									} else {
+										echo $row['photo_caption'];
+									}
 								}
 								?>
 							</h4>
@@ -67,7 +71,11 @@
 									echo $row['photo_caption_idn'];
 								}
 							} else {
-								echo $row['photo_caption'];
+								if ($row['photo_caption'] == '') {
+									echo $row['photo_caption_idn'];
+								} else {
+									echo $row['photo_caption'];
+								}
 							}
 							?>
 						</h4>
@@ -82,7 +90,11 @@
 									echo $row['photo_desc_idn'];
 								}
 							} else {
-								echo $row['photo_desc'];
+								if ($row['photo_desc'] == '') {
+									echo $row['photo_desc_idn'];
+								} else {
+									echo $row['photo_desc'];
+								}
 							}
 							?>
 						</p>

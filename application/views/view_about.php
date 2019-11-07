@@ -39,7 +39,11 @@
 							echo $page['about_content_idn'];
 						}
 					} else {
-						echo $page['about_content'];
+						if ($page['about_content'] == '') {
+							echo $page['about_content_idn'];
+						} else {
+							echo $page['about_content'];
+						}
 					}
 					?>
 				</p>
@@ -71,7 +75,11 @@
 										echo $page['profile_content_idn'];
 									}
 								} else {
-									echo $page['profile_content'];
+									if ($page['profile_content'] == '') {
+										echo $page['profile_content_idn'];
+									} else {
+										echo $page['profile_content'];
+									}
 								}
 								?>
 							</p>
@@ -99,7 +107,11 @@
 											echo $page['vision_content_idn'];
 										}
 									} else {
-										echo $page['vision_content'];
+										if ($page['vision_content'] == '') {
+											echo $page['vision_content_idn'];
+										} else {
+											echo $page['vision_content'];
+										}
 									}
 									?>
 								</p>
@@ -117,7 +129,11 @@
 											echo $page['mission_content_idn'];
 										}
 									} else {
-										echo $page['mission_content'];
+										if ($page['mission_content'] == '') {
+											echo $page['mission_content_idn'];
+										} else {
+											echo $page['mission_content'];
+										}
 									}
 									?>
 								</p>
@@ -136,7 +152,11 @@
 										echo $page['culture_content_idn'];
 									}
 								} else {
-									echo $page['culture_content'];
+									if ($page['culture_content'] == '') {
+										echo $page['culture_content_idn'];
+									} else {
+										echo $page['culture_content'];
+									}
 								}
 								?>
 							</p>
@@ -154,15 +174,17 @@
 										echo $page['quality_content_idn'];
 									}
 								} else {
-									echo $page['quality_content'];
+									if ($page['quality_content'] == '') {
+										echo $page['quality_content_idn'];
+									} else {
+										echo $page['quality_content'];
+									}
 								}
 								?>
 							</p>
 						</div>
 					</div>
 				</div>
-
-
 			</div>
 		</div>
 	</div>

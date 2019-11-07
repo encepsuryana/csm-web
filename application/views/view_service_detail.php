@@ -38,7 +38,11 @@
 								echo $res['content_idn'];
 							}
 						} else {
-							echo $res['content'];
+							if ($res['content'] == '') {
+								echo $res['content_idn'];
+							} else {
+								echo $res['content'];
+							}
 						}
 						?>
 					</p>

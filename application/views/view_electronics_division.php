@@ -37,7 +37,11 @@
 									echo $electronics_division_desc['ed_desc_heading_idn']; 
 								}
 							} else {
-								echo $electronics_division_desc['electronics_division_desc_heading'];
+								if ($electronics_division_desc['ed_desc_heading'] == '') {
+									echo $electronics_division_desc['electronics_division_desc_heading_idn'];
+								} else {
+									echo $electronics_division_desc['ed_desc_heading']; 
+								}
 							}
 							?>
 						</h4>
@@ -50,7 +54,11 @@
 									echo $electronics_division_desc['ed_desc_content_idn']; 
 								}
 							} else {
-								echo $electronics_division_desc['electronics_division_desc_content'];
+								if ($electronics_division_desc['ed_desc_content'] == '') {
+									echo $electronics_division_desc['electronics_division_desc_content_idn'];
+								} else {
+									echo $electronics_division_desc['ed_desc_content']; 
+								}
 							}
 							?>
 						</p>
@@ -103,7 +111,11 @@
 												echo $row['short_content_idn'];
 											}
 										} else {
-											echo $row['short_content'];
+											if ($row['short_content'] == '') {
+												echo $row['short_content_idn'];
+											} else {
+												echo $row['short_content'];
+											}
 										}
 										?>
 									</p>

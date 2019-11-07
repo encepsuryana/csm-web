@@ -21,7 +21,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										echo $row['heading_idn']; 
 									}
 								} else {
-									echo $row['heading'];
+									if ($row['heading'] == '') {
+										echo $row['heading_idn'];
+									} else {
+										echo $row['heading']; 
+									}
 								}
 								?>
 							</h2>
@@ -36,7 +40,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										echo nl2br($row['content_idn']);
 									}
 								} else {
-									echo nl2br($row['content']);
+									if (nl2br($row['content']) == '') {
+										echo nl2br($row['content_idn']);
+									} else {
+										echo nl2br($row['content']);
+									}
 								}
 								?>
 							</p>
@@ -79,7 +87,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										echo $row['news_title_idn'];
 									}
 								} else {
-									echo $row['news_title'];
+									if ($row['news_title'] == '') {
+										echo $row['news_title_idn'];
+									} else {
+										echo $row['news_title'];
+									}
 								}
 								?>
 
@@ -95,7 +107,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										echo $row['news_short_content_idn'];
 									}
 								} else {
-									echo $row['news_short_content'];
+									if ($row['news_short_content'] == '') {
+										echo $row['news_short_content_idn'];
+									} else {
+										echo $row['news_short_content'];
+									}
 								}
 								?>
 							</p>
@@ -153,7 +169,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										echo $row['product_caption_idn'];
 									}
 								} else {
-									echo $row['product_caption'];
+									if ($row['product_caption'] == '') {
+										echo $row['product_caption_idn'];
+									} else {
+										echo $row['product_caption'];
+									}
 								}
 								?>
 							</h4>						
@@ -182,7 +202,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												echo $row['product_caption_idn'];
 											}
 										} else {
-											echo $row['product_caption'];
+											if ($row['product_caption'] == '') {
+												echo $row['product_caption_idn'];
+											} else {
+												echo $row['product_caption'];
+											}
 										}
 										?>
 									</h4>
@@ -197,7 +221,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												echo $row['product_desc_idn'];
 											}
 										} else {
-											echo $row['product_desc'];
+											if ($row['product_desc'] == '') {
+												echo $row['product_desc_idn'];
+											} else {
+												echo $row['product_desc'];
+											}
 										}
 										?>
 									</p>
@@ -243,7 +271,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												echo $row['short_content_idn'];
 											}
 										} else {
-											echo $row['short_content'];
+											if ($row['short_content'] == '') {
+												echo $row['short_content_idn'];
+											} else {
+												echo $row['short_content'];
+											}
 										}
 										?>
 									</p>
@@ -308,7 +340,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												echo $row['short_content_idn'];
 											}
 										} else {
-											echo $row['short_content'];
+											if ($row['short_content'] == '') {
+												echo $row['short_content_idn'];
+											} else {
+												echo $row['short_content'];
+											}
 										}
 										?>
 									</p>

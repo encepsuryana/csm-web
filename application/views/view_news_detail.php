@@ -11,7 +11,11 @@
 							echo $news['news_title_idn'];
 						}
 					} else {
-						echo $news['news_title'];
+						if ($news['news_title'] == '') {
+							echo $news['news_title_idn'];
+						} else {
+							echo $news['news_title'];
+						}					
 					}
 					?>
 				</h1>
@@ -64,7 +68,11 @@
 									echo $news['news_content_idn'];
 								}
 							} else {
-								echo $news['news_content'];
+								if ($news['news_content'] == '') {
+									echo $news['news_content_idn'];
+								} else {
+									echo $news['news_content'];
+								}
 							}
 							?>
 						</p>
@@ -159,7 +167,6 @@
 							?>
 						</ul>
 					</div>
-
 
 					<div class="sidebar-item">		
 						<h3><?php echo POPULAR_NEWS; ?></h3>		

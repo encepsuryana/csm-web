@@ -74,9 +74,17 @@
 					<p>
 						<?php 
 						if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-							echo $facility['content_idn'];
+							if ($facility['content_idn'] == '') {
+								echo $facility['content'];
+							} else {
+								echo $facility['content_idn'];
+							}
 						} else {
-							echo $facility['content'];
+							if ($facility['content'] == '') {
+								echo $facility['content_idn'];
+							} else {
+								echo $facility['content'];
+							}
 						}
 						?>
 					</p>

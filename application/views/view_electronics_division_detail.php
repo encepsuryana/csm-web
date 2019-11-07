@@ -80,7 +80,11 @@
 								echo $electronics_division['content_idn'];
 							}
 						} else {
-							echo $electronics_division['content'];
+							if ($electronics_division['content'] == '') {
+								echo $electronics_division['content_idn'];
+							} else {
+								echo $electronics_division['content'];
+							}
 						}
 						?>
 					</p>

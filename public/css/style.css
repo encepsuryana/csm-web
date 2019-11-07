@@ -3639,19 +3639,12 @@ a img.aligncenter {
 }
 
 /*404-Page*/
-.not-found {
-	position: relative;
-	top: 100px;
-	height: 500px;
-	text-align: center;
-	vertical-align: center;
-}
-
 .not-found h2 {
 	padding-left: 10px;
-	color: red;
+	color: #ff0000b3;
 	text-align: left;
-	margin-bottom: 0;
+	margin-top: 45%;
+	margin-bottom: 10px;
 }
 
 .not-found p {

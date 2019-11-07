@@ -77,7 +77,11 @@
 								echo $portfolio['content_idn'];
 							}
 						} else {
-							echo $portfolio['content'];
+							if ($portfolio['content'] == '') {
+								echo $portfolio['content_idn'];
+							} else {
+								echo $portfolio['content'];
+							}
 						}
 						?>
 					</p>

@@ -88,7 +88,11 @@
 													echo $row->news_title_idn;
 												}
 											} else {
-												echo $row->news_title;
+												if ($row->news_title == '') {
+													echo $row->news_title_idn;
+												} else {
+													echo $row->news_title;
+												}
 											}
 											?>
 										</h3>
@@ -101,7 +105,11 @@
 													echo $row->news_short_content_idn;
 												}
 											} else {
-												echo $row->news_short_content;
+												if ($row->news_short_content == '') {
+													echo $row->news_short_content_idn;
+												} else {
+													echo $row->news_short_content;
+												}
 											}
 											?>
 										</p>
@@ -116,11 +124,14 @@
 													echo $row->news_title_idn;
 												}
 											} else {
-												echo $row->news_title;
+												if ($row->news_title == '') {
+													echo $row->news_title_idn;
+												} else {
+													echo $row->news_title;
+												}
 											}
 											?>
 										</h4>
-
 										<span><?php echo READ_MORE; ?></span>
 									</div>
 								</a>

@@ -60,7 +60,11 @@
 											echo $row['short_content_idn'];
 										}
 									} else {
-										echo $row['short_content'];
+										if ($row['short_content'] == '') {
+											echo $row['short_content_idn'];
+										} else {
+											echo $row['short_content'];
+										}
 									}
 									?>
 									
