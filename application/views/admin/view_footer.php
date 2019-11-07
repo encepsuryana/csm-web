@@ -64,9 +64,9 @@
 	    $(".select2").select2();
 
 	    //Datemask dd/mm/yyyy
-	    $("#datemask").inputmask("dd-MM-yyyy", {"placeholder": "dd-MM-yyyy"});
+	    $("#datemask").inputmask("D, dd-M-yyyy", {"placeholder": "D, dd-M-yyyy"});
 	    //Datemask2 mm/dd/yyyy
-	    $("#datemask2").inputmask("MM-dd-yyyy", {"placeholder": "MM-dd-yyyy"});
+	    $("#datemask2").inputmask("D, dd-M-yyyy", {"placeholder": "D, dd-M-yyyy"});
 	    //Money Euro
 	    $("[data-mask]").inputmask();
 
