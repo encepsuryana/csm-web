@@ -43,8 +43,8 @@ class News extends CI_Controller {
 		$header['portfolio'] = $this->Model_news->get_portfolio_data();
 		$header['partner'] = $this->Model_news->get_partner_data();
 		$header['product'] = $this->Model_news->get_product_data();
-		$header['electronics_division'] = $this->Model_news->get_electronics_division_data();
-		$header['electronics_division_category'] = $this->Model_news->get_electronics_division_category();
+		$header['aviation_electronics'] = $this->Model_news->get_aviation_electronics_data();
+		$header['aviation_electronics_category'] = $this->Model_news->get_aviation_electronics_category();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_news',$data);
@@ -71,8 +71,8 @@ class News extends CI_Controller {
 		$header['portfolio'] = $this->Model_news->get_portfolio_data();
 		$header['partner'] = $this->Model_news->get_partner_data();
 		$header['product'] = $this->Model_news->get_product_data();
-		$header['electronics_division'] = $this->Model_news->get_electronics_division_data();
-		$header['electronics_division_category'] = $this->Model_news->get_electronics_division_category();
+		$header['aviation_electronics'] = $this->Model_news->get_aviation_electronics_data();
+		$header['aviation_electronics_category'] = $this->Model_news->get_aviation_electronics_category();
 
 		$this->add_count($slug);
 		$this->load->view('view_header',$header);

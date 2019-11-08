@@ -29,8 +29,8 @@ class Gallery extends CI_Controller {
 		$header['portfolio'] = $this->Model_gallery->get_portfolio_data();
 		$header['partner'] = $this->Model_gallery->get_partner_data();
 		$header['product'] = $this->Model_gallery->get_product_data();
-		$header['electronics_division'] = $this->Model_gallery->get_electronics_division_data();
-		$header['electronics_division_category'] = $this->Model_gallery->get_electronics_division_category();
+		$header['aviation_electronics'] = $this->Model_gallery->get_aviation_electronics_data();
+		$header['aviation_electronics_category'] = $this->Model_gallery->get_aviation_electronics_category();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_gallery');

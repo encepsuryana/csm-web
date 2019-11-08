@@ -33,7 +33,7 @@ if(!$this->session->userdata('id')) {
 							<tbody>
 								<?php
 								$i=0;						
-								foreach ($electronics_division as $row) {
+								foreach ($aviation_electronics as $row) {
 									$i++;
 									?>
 									<tr>

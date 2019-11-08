@@ -326,8 +326,8 @@ class Page extends CI_Controller
 
 			if(isset($_POST['form_electronic_division'])) {			
 				$form_data = array(
-					'mk_electronics_division' => $_POST['mk_electronics_division'],
-					'md_electronics_division' => $_POST['md_electronics_division']
+					'mk_aviation_electronics' => $_POST['mk_aviation_electronics'],
+					'md_aviation_electronics' => $_POST['md_aviation_electronics']
 				);
 				$this->Model_page->update($form_data);
 

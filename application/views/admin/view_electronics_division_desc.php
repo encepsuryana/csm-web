@@ -35,18 +35,18 @@ if(!$this->session->userdata('id')) {
 						<h3 class="seo-info">Deskripsi Gambar</h3>
 						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/electronics-division-desc/update',array('class' => 'form-horizontal')); ?>
 
-						<input type="hidden" name="current_electronics_division_desc_photo" value="<?php echo $electronics_division_desc['electronics_division_desc_photo']; ?>">
+						<input type="hidden" name="current_aviation_electronics_desc_photo" value="<?php echo $aviation_electronics_desc['aviation_electronics_desc_photo']; ?>">
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Gambar </label>
 							<div class="col-sm-9">
 								
-								<?php if($electronics_division_desc['electronics_division_desc_photo'] == ''): ?>
+								<?php if($aviation_electronics_desc['aviation_electronics_desc_photo'] == ''): ?>
 									<div style="padding-top:6px;color:red;">Gambar tidak tersedia</div>
 									<?php else: ?>
-										<img src="<?php echo base_url(); ?>public/uploads/<?php echo $electronics_division_desc['electronics_division_desc_photo']; ?>" style="width:300px;">
+										<img src="<?php echo base_url(); ?>public/uploads/<?php echo $aviation_electronics_desc['aviation_electronics_desc_photo']; ?>" style="width:300px;">
 										<br>
 										<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'staff')) { ?>
-											<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division_desc/delete_electronics_division_desc_photo" class="btn btn-danger btn-xs" onClick="return confirm('Are you sure?');">Hapus Gambar</a>
+											<a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation_electronics_desc/delete_aviation_electronics_desc_photo" class="btn btn-danger btn-xs" onClick="return confirm('Are you sure?');">Hapus Gambar</a>
 										<?php } else { ?>
 
 										<?php } ?>
@@ -58,26 +58,26 @@ if(!$this->session->userdata('id')) {
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Pilih </label>
 									<div class="col-sm-6">
-										<input type="file" name="electronics_division_desc_photo">
+										<input type="file" name="aviation_electronics_desc_photo">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label"></label>
 									<div class="col-sm-6">
-										<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc_photo">Update Photo</button>
+										<button type="submit" class="btn btn-success pull-left" name="form_aviation_electronics_desc_photo">Update Photo</button>
 									</div>
 								</div>
 							<?php } else { ?>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Pilih </label>
 									<div class="col-sm-6">
-										<input type="file" name="electronics_division_desc_photo" class="form-control" disabled="disabled">
+										<input type="file" name="aviation_electronics_desc_photo" class="form-control" disabled="disabled">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label"></label>
 									<div class="col-sm-6">
-										<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc_photo" disabled="disabled">Update Photo</button>
+										<button type="submit" class="btn btn-success pull-left" name="form_aviation_electronics_desc_photo" disabled="disabled">Update Photo</button>
 									</div>
 								</div>
 							<?php } ?>
@@ -91,13 +91,13 @@ if(!$this->session->userdata('id')) {
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Judul </label>
 									<div class="col-sm-9">
-										<input type="text" name="electronics_division_desc_heading" class="form-control" value="<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>">
+										<input type="text" name="aviation_electronics_desc_heading" class="form-control" value="<?php echo $aviation_electronics_desc['aviation_electronics_desc_heading']; ?>">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Konten </label>
 									<div class="col-sm-9">
-										<textarea name="electronics_division_desc_content" class="form-control" cols="30" rows="10" id="editor2"><?php echo $electronics_division_desc['electronics_division_desc_content']; ?></textarea>
+										<textarea name="aviation_electronics_desc_content" class="form-control" cols="30" rows="10" id="editor2"><?php echo $aviation_electronics_desc['aviation_electronics_desc_content']; ?></textarea>
 									</div>
 								</div>
 
@@ -105,13 +105,13 @@ if(!$this->session->userdata('id')) {
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Judul </label>
 									<div class="col-sm-9">
-										<input type="text" name="ed_desc_heading_idn" class="form-control" value="<?php echo $electronics_division_desc['ed_desc_heading_idn']; ?>">
+										<input type="text" name="ed_desc_heading_idn" class="form-control" value="<?php echo $aviation_electronics_desc['ed_desc_heading_idn']; ?>">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Konten </label>
 									<div class="col-sm-9">
-										<textarea name="ed_desc_content_idn" class="form-control" cols="30" rows="10" id="editor1"><?php echo $electronics_division_desc['ed_desc_content_idn']; ?></textarea>
+										<textarea name="ed_desc_content_idn" class="form-control" cols="30" rows="10" id="editor1"><?php echo $aviation_electronics_desc['ed_desc_content_idn']; ?></textarea>
 									</div>
 								</div>
 
@@ -119,45 +119,45 @@ if(!$this->session->userdata('id')) {
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Meta Keyword </label>
 									<div class="col-sm-9">
-										<textarea class="form-control" name="mk_electronics_division_desc" style="height:100px;"><?php echo $electronics_division_desc['mk_electronics_division_desc']; ?></textarea>
+										<textarea class="form-control" name="mk_aviation_electronics_desc" style="height:100px;"><?php echo $aviation_electronics_desc['mk_aviation_electronics_desc']; ?></textarea>
 									</div>
 								</div>  
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Meta Description </label>
 									<div class="col-sm-9">
-										<textarea class="form-control" name="md_electronics_division_desc" style="height:100px;"><?php echo $electronics_division_desc['md_electronics_division_desc']; ?></textarea>
+										<textarea class="form-control" name="md_aviation_electronics_desc" style="height:100px;"><?php echo $aviation_electronics_desc['md_aviation_electronics_desc']; ?></textarea>
 									</div>
 								</div>  
 							<?php } else { ?>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Judul </label>
 									<div class="col-sm-6">
-										<input type="text" name="electronics_division_desc_heading" class="form-control" value="<?php echo $electronics_division_desc['electronics_division_desc_heading']; ?>" readonly="readonly">
+										<input type="text" name="aviation_electronics_desc_heading" class="form-control" value="<?php echo $aviation_electronics_desc['aviation_electronics_desc_heading']; ?>" readonly="readonly">
 									</div>
 								</div>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label"> Content </label>
 									<div class="col-sm-9">
-										<textarea name="electronics_division_desc_content" class="form-control" cols="30" rows="10" id="editor1" disabled="disabled"><?php echo $electronics_division_desc['electronics_division_desc_content']; ?></textarea>
+										<textarea name="aviation_electronics_desc_content" class="form-control" cols="30" rows="10" id="editor1" disabled="disabled"><?php echo $aviation_electronics_desc['aviation_electronics_desc_content']; ?></textarea>
 									</div>
 								</div>
 
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Meta Title </label>
 									<div class="col-sm-9">
-										<input type="text" name="mt_electronics_division_desc" class="form-control" value="<?php echo $electronics_division_desc['mt_electronics_division_desc']; ?>" readonly="readonly">
+										<input type="text" name="mt_aviation_electronics_desc" class="form-control" value="<?php echo $aviation_electronics_desc['mt_aviation_electronics_desc']; ?>" readonly="readonly">
 									</div>
 								</div>      
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Meta Keyword </label>
 									<div class="col-sm-9">
-										<textarea class="form-control" name="mk_electronics_division_desc" style="height:100px;" readonly="readonly"><?php echo $electronics_division_desc['mk_electronics_division_desc']; ?></textarea>
+										<textarea class="form-control" name="mk_aviation_electronics_desc" style="height:100px;" readonly="readonly"><?php echo $aviation_electronics_desc['mk_aviation_electronics_desc']; ?></textarea>
 									</div>
 								</div>  
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label">Meta Description </label>
 									<div class="col-sm-9">
-										<textarea class="form-control" name="md_electronics_division_desc" style="height:100px;" readonly="readonly"><?php echo $electronics_division_desc['md_electronics_division_desc']; ?></textarea>
+										<textarea class="form-control" name="md_aviation_electronics_desc" style="height:100px;" readonly="readonly"><?php echo $aviation_electronics_desc['md_aviation_electronics_desc']; ?></textarea>
 									</div>
 								</div>  
 							<?php } ?>
@@ -166,14 +166,14 @@ if(!$this->session->userdata('id')) {
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label"></label>
 									<div class="col-sm-6">
-										<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc">Update Informasi</button>
+										<button type="submit" class="btn btn-success pull-left" name="form_aviation_electronics_desc">Update Informasi</button>
 									</div>
 								</div>
 							<?php } else { ?>
 								<div class="form-group">
 									<label for="" class="col-sm-2 control-label"></label>
 									<div class="col-sm-6">
-										<button type="submit" class="btn btn-success pull-left" name="form_electronics_division_desc" disabled="disabled">Update Informasi</button>
+										<button type="submit" class="btn btn-success pull-left" name="form_aviation_electronics_desc" disabled="disabled">Update Informasi</button>
 									</div>
 								</div>
 							<?php } ?>                         

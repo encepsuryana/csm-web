@@ -27,8 +27,8 @@ class Site_maps extends CI_Controller {
 		$header['portfolio'] = $this->Model_site->get_portfolio_data();
 		$header['partner'] = $this->Model_site->get_partner_data();
 		$header['product'] = $this->Model_site->get_product_data();
-		$header['electronics_division'] = $this->Model_site->get_electronics_division_data();
-		$header['electronics_division_category'] = $this->Model_site->get_electronics_division_category();
+		$header['aviation_electronics'] = $this->Model_site->get_aviation_electronics_data();
+		$header['aviation_electronics_category'] = $this->Model_site->get_aviation_electronics_category();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_site');

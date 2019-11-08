@@ -50,9 +50,9 @@ class Model_common extends CI_Model
         $query = $this->db->query("SELECT * from tbl_facility WHERE slug_facility='$slug'",array($slug));
         return $query->result_array();
     }
-    public function get_single_electronics_division_data($slug)
+    public function get_single_aviation_electronics_data($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_electronics_division WHERE slug_electronics='$slug'",array($slug));
+        $query = $this->db->query("SELECT * from tbl_aviation_electronics WHERE slug_electronics='$slug'",array($slug));
         return $query->result_array();
     }
     public function get_single_portfolio_data($slug)

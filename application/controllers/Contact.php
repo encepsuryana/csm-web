@@ -28,8 +28,8 @@ class Contact extends CI_Controller {
 		$header['partner'] = $this->Model_contact->get_partner_data();
 		$header['product'] = $this->Model_contact->get_product_data();
 		
-		$header['electronics_division'] = $this->Model_contact->get_electronics_division_data();
-		$header['electronics_division_category'] = $this->Model_contact->get_electronics_division_category();
+		$header['aviation_electronics'] = $this->Model_contact->get_aviation_electronics_data();
+		$header['aviation_electronics_category'] = $this->Model_contact->get_aviation_electronics_category();
 
 		$recaptcha = $this->input->post('g-recaptcha-response');
 		$data = array(

@@ -90,15 +90,15 @@
 		}		
 	}
 
-	if($slug_arr[0] == 'electronics-division')
+	if($slug_arr[0] == 'aviation_electronics')
 	{
 		if(!isset($slug_arr[1])) {
-			echo '<meta name="description" content="'.$page['md_electronics_division'].'">';
-			echo '<meta name="keywords" content="'.$page['mk_electronics_division'].'">';
-			echo '<title>'.ELECTRONICS_DIVISION.' | '.$setting['general_companyname'].'</title>';	
+			echo '<meta name="description" content="'.$page['md_aviation_electronics'].'">';
+			echo '<meta name="keywords" content="'.$page['mk_aviation_electronics'].'">';
+			echo '<title>'.aviation_electronics.' | '.$setting['general_companyname'].'</title>';	
 		} else {
-			$single_electronics_division_data = $this->Model_common->get_single_electronics_division_data($slug_arr[2]);
-			foreach($single_electronics_division_data as $row) {
+			$single_aviation_electronics_data = $this->Model_common->get_single_aviation_electronics_data($slug_arr[2]);
+			foreach($single_aviation_electronics_data as $row) {
 				echo '<meta name="description" content="'.$row['meta_description'].'">';
 				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
 				echo '<title>'.$row['meta_title'].' | '.$setting['general_companyname'].'</title>';	
@@ -445,7 +445,7 @@
 	<div class="header-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-sm-4">
+				<div class="col-md-2 col-sm-4">
 
 				</div>
 				<div class="col-md-8 col-sm-8">
@@ -474,7 +474,7 @@
 		<menu>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3 col-sm-12">
+					<div class="col-md-2 col-sm-12" style="padding: 0;">
 						<div class="logo2">
 							<a href="<?php echo base_url(); ?>">
 								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo2']; ?>" alt="Cipta Sinergi The Art of Manufacturing">
@@ -487,7 +487,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-9 col-sm-12 main-menu" style="display: block;">
+					<div class="col-md-8 col-sm-12 main-menu" style="display: block;">
 						<div class="main-menu-item">				 	
 							<ul class="nav-menu">
 								<li><a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a></li>
@@ -542,132 +542,133 @@
 								<li class="menu-item-has-children"><a href="javascript:void();"><?php echo FACILITY; ?></a>
 									<ul class="sub-menu">
 										<li class="submenu-item-has-children">
-											<a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?>
-										</a>
-										<ul class="sub-menu">
-											<?php
-											foreach ($facility as $row) {
-												?>
-												<li>
-													<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a>
-												</li>
+											<a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?>	</a>
+											<ul class="sub-menu">
 												<?php
-											}
-											?>
-										</ul>
-									</li>
+												foreach ($facility as $row) {
+													?>
+													<li>
+														<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a>
+													</li>
+													<?php
+												}
+												?>
+											</ul>
+										</li>
 
-									<li class="submenu-item-has-children">
-										<a href="<?php echo base_url(); ?>service"><?php echo SERVICE; ?>
-									</a>
+										<li class="submenu-item-has-children">
+											<a href="<?php echo base_url(); ?>service"><?php echo SERVICE; ?></a>
+											<ul class="sub-menu">
+												<?php
+												foreach ($service as $row) {
+													?>
+													<li>
+														<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
+													</li>
+													<?php
+												}
+												?>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<li class="menu-item-has-children"><a href="javascript:void();"><?php echo ELECTRONICS_DIVISION; ?></a>
 									<ul class="sub-menu">
-										<?php
-										foreach ($service as $row) {
-											?>
-											<li>
-												<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
-											</li>
-											<?php
-										}
-										?>
+										<li class="submenu-item-has-children">
+											<a href="<?php echo base_url(); ?>aviation-electronics-department"><?php echo ELECTRONICS_DIVISION; ?></a>
+											<ul class="sub-menu">
+												<?php
+												foreach ($aviation_electronics_category as $row) {
+													?>
+													<li><a href="<?php echo base_url(); ?>aviation-electronics-department"><?php echo $row['category_name']; ?></a></li>
+													<?php
+												}
+												?>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<li class="menu-item-has-children"><a href="javascript:void();"><?php echo PAGE; ?></a>
+									<ul class="sub-menu">
+										<li><a href="<?php echo base_url(); ?>gallery"><?php echo GALLERY; ?></a></li>
+										<li class="submenu-item-has-children">
+											<a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a>
+											<ul class="sub-menu">
+												<?php
+												$i=0;
+												foreach ($latest_news as $row) {
+													$i++;
+													if($i>1) {break;}
+													?>
+													<li>
+														<a href="<?php echo base_url();?>news/post">
+															<div class="latest-news pin">
+																<?php echo LATEST_NEWS; ?>
+															</div>
+
+															<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
+																<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
+
+																<h5><?php echo $row['news_title']; ?></h5>	
+																<p><?php echo $row['news_short_content']; ?></p>
+															</a>
+														</a>
+													</li>
+													<?php
+												}
+												?>
+											</ul>
+										</li>
+										<li class="submenu-item-has-children">
+											<a href="<?php echo base_url(); ?>gallery"><?php echo DOWNLOAD; ?></a>
+
+											<ul class="sub-menu">
+												<li>
+													<a href="<?php echo base_url();?>download/file-mechanic"><?php echo COMPANY_PROFILE_ENGINEERING; ?></a>
+												</li>
+												<li>
+													<a href="<?php echo base_url();?>download/file-electronic"><?php echo COMPANY_PROFILE_aviation_electronics; ?></a>
+												</li>
+												<li>
+													<a href="<?php echo base_url();?>download/file-mechanic-electronic"><?php echo COMPANY_PROFILE_EN_DE; ?></a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
+
+								<li class="menu-item-has-children">
+									<a href="javascript:void();">
+										<i class="fa fa-globe" aria-hidden="true"></i> 
+										<span>
+											<?php if ($this->session->userdata('language')=='eng') {
+												echo "English";
+											} else {
+												echo "Indonesia";
+											}?>
+										</span>
+									</a>
+
+									<ul class="sub-menu">
+										<li>
+											<?php echo anchor ('language/change/eng','English');?>
+										</li>
+										<li>
+											<?php echo anchor ('language/change/idn','Indonesia');?>
+										</li>
 									</ul>
 								</li>
 							</ul>
-						</li>
-
-						<li class="menu-item-has-children"><a href="javascript:void();"><?php echo ELECTRONICS_DIVISION; ?></a>
-							<ul class="sub-menu">
-								<li class="submenu-item-has-children">
-									<a href="<?php echo base_url(); ?>electronics-division"><?php echo ELECTRONICS_DIVISION; ?>
-								</a>
-								<ul class="sub-menu">
-									<?php
-									foreach ($electronics_division_category as $row) {
-										?>
-										<li><a href="<?php echo base_url(); ?>electronics-division"><?php echo $row['category_name']; ?></a></li>
-										<?php
-									}
-									?>
-								</ul>
-							</li>
-						</ul>
-					</li>
-
-					<li class="menu-item-has-children"><a href="javascript:void();"><?php echo PAGE; ?></a>
-						<ul class="sub-menu">
-							<li><a href="<?php echo base_url(); ?>gallery"><?php echo GALLERY; ?></a></li>
-							<li class="submenu-item-has-children">
-								<a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a>
-								<ul class="sub-menu">
-									<?php
-									$i=0;
-									foreach ($latest_news as $row) {
-										$i++;
-										if($i>1) {break;}
-										?>
-										<li>
-											<a href="<?php echo base_url();?>news/post">
-												<div class="latest-news pin">
-													<?php echo LATEST_NEWS; ?>
-												</div>
-
-												<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
-													<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
-
-													<h5><?php echo $row['news_title']; ?></h5>	
-													<p><?php echo $row['news_short_content']; ?></p>
-												</a>
-											</a>
-										</li>
-										<?php
-									}
-									?>
-								</ul>
-							</li>
-							<li class="submenu-item-has-children">
-								<a href="<?php echo base_url(); ?>gallery"><?php echo DOWNLOAD; ?></a>
-
-								<ul class="sub-menu">
-									<li>
-										<a href="<?php echo base_url();?>download/file-mechanic"><?php echo COMPANY_PROFILE_ENGINEERING; ?></a>
-									</li>
-									<li>
-										<a href="<?php echo base_url();?>download/file-electronic"><?php echo COMPANY_PROFILE_ELECTRONICS_DIVISION; ?></a>
-									</li>
-									<li>
-										<a href="<?php echo base_url();?>download/file-mechanic-electronic"><?php echo COMPANY_PROFILE_EN_DE; ?></a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-
-					<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
-
-					<li class="menu-item-has-children">
-						<a href="javascript:void();">
-							<i class="fa fa-globe" aria-hidden="true"></i> 
-							<span>
-								<?php if ($this->session->userdata('language')=='eng') {
-									echo "English";
-								} else {
-									echo "Indonesia";
-								}?>
-							</span>
-						</a>
-
-						<ul class="sub-menu">
-							<li>
-								<?php echo anchor ('language/change/eng','English');?>
-							</li>
-							<li>
-								<?php echo anchor ('language/change/idn','Indonesia');?>
-							</li>
-						</ul>
-					</li>
-				</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-12" style="padding: 0; margin-top: -20px; width: 60px;">
+						<img src="<?php echo base_url(); ?>public/uploads/avatar-4.png" alt="Logo">
+					</div>
+				</div>
 			</div>
-		</div>
+		</menu>
 	</div>
-</div>
-</div>

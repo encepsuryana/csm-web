@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Electronics_division extends CI_Controller 
+class Aviation_electronics_department extends CI_Controller 
 {
 	function __construct() 
 	{
 		parent::__construct();
 		$this->load->model('admin/Model_header');
-		$this->load->model('admin/Model_electronics_division');
+		$this->load->model('admin/Model_aviation');
 		$this->load->model('admin/Model_log');
 	}
 
@@ -16,10 +16,10 @@ class Electronics_division extends CI_Controller
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
-			$data['electronics_division'] = $this->Model_electronics_division->show();
+			$data['aviation_electronics'] = $this->Model_aviation->show();
 
 			$this->load->view('admin/view_header',$header);
-			$this->load->view('admin/view_electronics_division',$data);
+			$this->load->view('admin/view_aviaton_electronics',$data);
 			$this->load->view('admin/view_footer');
 
 		} else {
@@ -77,12 +77,12 @@ class Electronics_division extends CI_Controller
 
 				if($valid == 1) 
 				{
-					$next_id = $this->Model_electronics_division->get_auto_increment_id();
+					$next_id = $this->Model_aviation->get_auto_increment_id();
 					foreach ($next_id as $row) {
 						$ai_id = $row['Auto_increment'];
 					}
 
-					$final_name = 'electronics_division-'.$ai_id.'.'.$ext;
+					$final_name = 'aviation_electronics-'.$ai_id.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
 					$form_data = array(
@@ -98,7 +98,7 @@ class Electronics_division extends CI_Controller
 						'meta_description' => $_POST['meta_description'],
 						'slug_electronics' => $slug
 					);
-					$this->Model_electronics_division->add($form_data);
+					$this->Model_aviation->add($form_data);
 
 					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) )
 					{
@@ -110,7 +110,7 @@ class Electronics_division extends CI_Controller
 						$photos_temp = $_FILES['photos']["tmp_name"];
 						$photos_temp = array_values(array_filter($photos_temp));
 
-						$next_id1 = $this->Model_electronics_division->get_auto_increment_id1();
+						$next_id1 = $this->Model_aviation->get_auto_increment_id1();
 						foreach ($next_id1 as $row1) {
 							$ai_id1 = $row1['Auto_increment'];
 						}
@@ -128,7 +128,7 @@ class Electronics_division extends CI_Controller
 
 							} else {
 								$final_names[$m] = $z.'.'.$ext;
-								move_uploaded_file($photos_temp[$i],"./public/uploads/electronics_division_photos/".$final_names[$m]);
+								move_uploaded_file($photos_temp[$i],"./public/uploads/aviation_electronics_photos/".$final_names[$m]);
 								$m++;
 								$z++;
 							}
@@ -138,17 +138,17 @@ class Electronics_division extends CI_Controller
 					for($i=0;$i<count($final_names);$i++)
 					{
 						$form_data = array(
-							'electronics_division_id' 	=> $ai_id,
+							'aviation_electronics_id' 	=> $ai_id,
 							'slug_electronics' 			=> $slug,
 							'photo'        				=> $final_names[$i]
 						);
-						$this->Model_electronics_division->add_photos($form_data);
+						$this->Model_aviation->add_photos($form_data);
 					}
 
 					//Add Log User
-					helper_log("add", '[TAMBAH] Data: '.$_POST['name'].' ditambahkan ke Divisi Elektronik');
+					helper_log("add", '[TAMBAH] Data: '.$_POST['name'].' ditambahkan ke Departemen Aviasi & Elektronik');
 
-					$data['success'] = 'Divisi Elektronik berhasil ditambahkan!';
+					$data['success'] = 'Departemen Aviasi & Elektronik berhasil ditambahkan!';
 
 					unset($_POST['name']);
 					unset($_POST['short_content']);
@@ -163,15 +163,15 @@ class Electronics_division extends CI_Controller
 					$data['error'] = $error;
 				}
 
-				$data['all_photo_category'] = $this->Model_electronics_division->get_all_photo_category();
+				$data['all_photo_category'] = $this->Model_aviation->get_all_photo_category();
 				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_electronics_division_add',$data);
+				$this->load->view('admin/view_aviation_electronics_add',$data);
 				$this->load->view('admin/view_footer');
 
 			} else {
-				$data['all_photo_category'] = $this->Model_electronics_division->get_all_photo_category();
+				$data['all_photo_category'] = $this->Model_aviation->get_all_photo_category();
 				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_electronics_division_add',$data);
+				$this->load->view('admin/view_aviatio_electronics_add',$data);
 				$this->load->view('admin/view_footer');
 			}
 
@@ -188,9 +188,9 @@ class Electronics_division extends CI_Controller
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
-			$tot = $this->Model_electronics_division->electronics_division_check($id);
+			$tot = $this->Model_aviation->aviation_electronics_check($id);
 			if(!$tot) {
-				redirect(base_url().'admin/electronics-division');
+				redirect(base_url().'admin/aviation-electronics-department');
 				exit;
 			}
 
@@ -234,7 +234,7 @@ class Electronics_division extends CI_Controller
 
 				if($valid == 1) 
 				{
-					$data['electronics_division'] = $this->Model_electronics_division->getData($id);
+					$data['aviation_electronics'] = $this->Model_aviation->getData($id);
 
 					if($path == '') {
 						$form_data = array(
@@ -249,12 +249,12 @@ class Electronics_division extends CI_Controller
 							'meta_description' => $_POST['meta_description'],
 							'slug_electronics' => $slug
 						);
-						$this->Model_electronics_division->update($id,$form_data);
+						$this->Model_aviation->update($id,$form_data);
 					}
 					else {
-						unlink('./public/uploads/'.$data['electronics_division']['photo']);
+						unlink('./public/uploads/'.$data['aviation_electronics']['photo']);
 
-						$final_name = 'electronics_division-'.$id.'.'.$ext;
+						$final_name = 'aviation_electronics-'.$id.'.'.$ext;
 						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
 						$form_data = array(
@@ -270,7 +270,7 @@ class Electronics_division extends CI_Controller
 							'meta_description' => $_POST['meta_description'],
 							'slug_electronics' => $slug
 						);
-						$this->Model_electronics_division->update($id,$form_data);
+						$this->Model_aviation->update($id,$form_data);
 					}
 
 					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) )
@@ -283,7 +283,7 @@ class Electronics_division extends CI_Controller
 						$photos_temp = $_FILES['photos']["tmp_name"];
 						$photos_temp = array_values(array_filter($photos_temp));
 
-						$next_id1 = $this->Model_electronics_division->get_auto_increment_id1();
+						$next_id1 = $this->Model_aviation->get_auto_increment_id1();
 						foreach ($next_id1 as $row1) {
 							$ai_id1 = $row1['Auto_increment'];
 						}
@@ -301,7 +301,7 @@ class Electronics_division extends CI_Controller
 
 							} else {
 								$final_names[$m] = $z.'.'.$ext;
-								move_uploaded_file($photos_temp[$i],"./public/uploads/electronics_division_photos/".$final_names[$m]);
+								move_uploaded_file($photos_temp[$i],"./public/uploads/aviation_electronics_photos/".$final_names[$m]);
 								$m++;
 								$z++;
 							}
@@ -311,36 +311,36 @@ class Electronics_division extends CI_Controller
 					for($i=0;$i<count($final_names);$i++)
 					{
 						$form_data = array(
-							'electronics_division_id' 	=> $id,
+							'aviation_electronics_id' 	=> $id,
 							'slug_electronics' 			=> $slug,
 							'photo'       				=> $final_names[$i]
 						);
-						$this->Model_electronics_division->add_photos($form_data);
+						$this->Model_aviation->add_photos($form_data);
 					}
 
 					//Add Log User
-					helper_log("edit", '[EDIT] Data: '.$_POST['name'].' diupdate pada Divisi Elektronik');
+					helper_log("edit", '[EDIT] Data: '.$_POST['name'].' diupdate pada Departemen Aviasi & Elektronik');
 
-					$data['success'] = 'Divisi Elektronik telah berhasil diupdate';
+					$data['success'] = 'Departemen Aviasi & Elektronik telah berhasil diupdate';
 				}
 				else
 				{
 					$data['error'] = $error;
 				}
 
-				$data['electronics_division'] = $this->Model_electronics_division->getData($id);
-				$data['all_photo_category'] = $this->Model_electronics_division->get_all_photo_category();
-				$data['all_photos_by_id'] = $this->Model_electronics_division->get_all_photos_by_category_id($id);
+				$data['aviation_electronics'] = $this->Model_aviation->getData($id);
+				$data['all_photo_category'] = $this->Model_aviation->get_all_photo_category();
+				$data['all_photos_by_id'] = $this->Model_aviation->get_all_photos_by_category_id($id);
 				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_electronics_division_edit',$data);
+				$this->load->view('admin/view_aviation_electronics_edit',$data);
 				$this->load->view('admin/view_footer');
 
 			} else {
-				$data['electronics_division'] = $this->Model_electronics_division->getData($id);
-				$data['all_photo_category'] = $this->Model_electronics_division->get_all_photo_category();
-				$data['all_photos_by_id'] = $this->Model_electronics_division->get_all_photos_by_category_id($id);
+				$data['aviation_electronics'] = $this->Model_aviation->getData($id);
+				$data['all_photo_category'] = $this->Model_aviation->get_all_photo_category();
+				$data['all_photos_by_id'] = $this->Model_aviation->get_all_photos_by_category_id($id);
 				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_electronics_division_edit',$data);
+				$this->load->view('admin/view_aviation_electronics_edit',$data);
 				$this->load->view('admin/view_footer');
 			}
 
@@ -357,30 +357,30 @@ class Electronics_division extends CI_Controller
 	{
 		if (($this->session->userdata('role') == 'admin')  or ($this->session->userdata('role') == 'staff')) {
 			
-			// If there is no electronics_division in this id, then redirect
-			$tot = $this->Model_electronics_division->electronics_division_check($id);
+			// If there is no aviation electronics in this id, then redirect
+			$tot = $this->Model_aviation->aviation_electronics_check($id);
 			if(!$tot) {
-				redirect(base_url().'admin/electronics_division');
+				redirect(base_url().'admin/aviation-electronics-department');
 				exit;
 			}
 
-			$data['electronics_division'] = $this->Model_electronics_division->getData($id);
-			if($data['electronics_division']) {
-				unlink('./public/uploads/'.$data['electronics_division']['photo']);
+			$data['aviation_electronics'] = $this->Model_aviation->getData($id);
+			if($data['aviation_electronics']) {
+				unlink('./public/uploads/'.$data['aviation_electronics']['photo']);
 			}
 
-			$electronics_division_photos = $this->Model_electronics_division->get_all_photos_by_category_id($id);
-			foreach($electronics_division_photos as $row) {
-				unlink('./public/uploads/electronics_division_photos/'.$row['photo']);
+			$aviation_electronics_photos = $this->Model_aviation->get_all_photos_by_category_id($id);
+			foreach($aviation_electronics_photos as $row) {
+				unlink('./public/uploads/aviation_electronics_photos/'.$row['photo']);
 			}
 
-			$this->Model_electronics_division->delete($id);
-			$this->Model_electronics_division->delete_photos($id);
+			$this->Model_aviation->delete($id);
+			$this->Model_aviation->delete_photos($id);
 
 			//Add Log User
-			helper_log("Delete", '[HAPUS] Data: '.$data['electronics_division']['name'].' dihapus dari Divisi Elektronik');
+			helper_log("Delete", '[HAPUS] Data: '.$data['aviation_electronics']['name'].' dihapus dari Departemen Aviasi & Elektronik');
 
-			redirect(base_url().'admin/electronics_division');
+			redirect(base_url().'admin/aviation-electronics-department');
 		} else {
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
@@ -390,15 +390,15 @@ class Electronics_division extends CI_Controller
 		}
 	}
 
-	public function single_photo_delete($photo_id=0,$electronics_division_id=0) {
+	public function single_photo_delete($photo_id=0,$aviation_electronics_id=0) {
 		if ($this->session->userdata('role') == 'admin') {
 
-			$electronics_division_photo = $this->Model_electronics_division->electronics_division_photo_by_id($photo_id);
-			unlink('./public/uploads/electronics_division_photos/'.$electronics_division_photo['photo']);
+			$aviation_electronics_photo = $this->Model_aviation->aviation_electronics_photo_by_id($photo_id);
+			unlink('./public/uploads/aviation_electronics_photos/'.$aviation_electronics_photo['photo']);
 
-			$this->Model_electronics_division->delete_electronics_division_photo($photo_id);
+			$this->Model_aviation->delete_aviation_electronics_photo($photo_id);
 
-			redirect(base_url().'admin/electronics_division/edit/'.$electronics_division_id);
+			redirect(base_url().'admin/aviation_electronics/edit/'.$aviation_electronics_id);
 
 		} else {
 			if(!$this->session->userdata('id')) {

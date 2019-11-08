@@ -516,13 +516,13 @@ if(!$this->session->userdata('id')) {
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Meta Keyword </label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" name="mk_electronics_division" style="height:100px;"><?php echo $page['mk_electronics_division']; ?></textarea>
+                                <textarea class="form-control" name="mk_aviation_electronics" style="height:100px;"><?php echo $page['mk_aviation_electronics']; ?></textarea>
                             </div>
                         </div>  
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Meta Description </label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" name="md_electronics_division" style="height:100px;"><?php echo $page['md_electronics_division']; ?></textarea>
+                                <textarea class="form-control" name="md_aviation_electronics" style="height:100px;"><?php echo $page['md_aviation_electronics']; ?></textarea>
                             </div>
                         </div>  
                         <div class="form-group">

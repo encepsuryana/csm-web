@@ -1,48 +1,48 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_electronics_division extends CI_Model 
+class Model_aviation extends CI_Model 
 {
-    public function get_electronics_division_category()
+    public function get_ae_category()
     {
-        $query = $this->db->query("SELECT * FROM tbl_electronics_division_category ORDER BY category_name ASC");
+        $query = $this->db->query("SELECT * FROM tbl_aviation_electronics_category ORDER BY category_name ASC");
         return $query->result_array();
     }
-    public function get_electronics_division_data()
+    public function get_ae_data()
     {
        $sql = "SELECT * 
-                FROM tbl_electronics_division t1
-                JOIN tbl_electronics_division_category t2
+                FROM tbl_aviation_electronics t1
+                JOIN tbl_aviation_electronics_category t2
                 ON t1.category_id = t2.category_id
                 ORDER BY t1.id ASC";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
 
-    public function show_electronics_division_desc()
+    public function show_ae_desc()
     {
-        $query = $this->db->query("SELECT * from tbl_electronics_division_desc WHERE id=1");
+        $query = $this->db->query("SELECT * from tbl_aviation_electronics_desc WHERE id=1");
         return $query->first_row('array');
     }
 
-    public function get_electronics_division_data_order_by_name()
+    public function get_ae_data_order_by_name()
     {
-        $query = $this->db->query("SELECT * from tbl_electronics_division ORDER BY name ASC");
+        $query = $this->db->query("SELECT * from tbl_aviation_electronics ORDER BY name ASC");
         return $query->result_array();
     }
-    public function get_electronics_division_detail($slug) {
-    	$sql = "SELECT * FROM tbl_electronics_division WHERE slug_electronics='$slug'";
+    public function get_ae_detail($slug) {
+    	$sql = "SELECT * FROM tbl_aviation_electronics WHERE slug_electronics='$slug'";
         $query = $this->db->query($sql,array($slug));
         return $query->first_row('array');
     }
-    public function get_electronics_division_photo($slug)
+    public function get_ae_photo($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_electronics_division_photo WHERE slug_electronics='$slug'",array($slug));
+        $query = $this->db->query("SELECT * from tbl_aviation_electronics_photo WHERE slug_electronics='$slug'",array($slug));
         return $query->result_array();
     }
-    public function get_electronics_division_photo_number($slug)
+    public function get_ae_photo_number($slug)
     {
-        $query = $this->db->query("SELECT * from tbl_electronics_division_photo WHERE  slug_electronics='$slug'",array($slug));
+        $query = $this->db->query("SELECT * from tbl_aviation_electronics_photo WHERE  slug_electronics='$slug'",array($slug));
         return $query->num_rows();
     }
     public function get_facility_category()

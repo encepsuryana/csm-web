@@ -32,7 +32,7 @@ if(!$this->session->userdata('id')) {
 					</div>
 				<?php endif; ?>
 
-				<?php echo form_open(base_url().$this->session->userdata('role').'/electronics-division-category/edit/'.$electronics_division_category['category_id'],array('class' => 'form-horizontal')); ?>
+				<?php echo form_open(base_url().$this->session->userdata('role').'/electronics-division-category/edit/'.$aviation_electronics_category['category_id'],array('class' => 'form-horizontal')); ?>
 
 				<div class="box box-info  b-box">
 
@@ -40,15 +40,15 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Nama ategori <span>*</span></label>
 							<div class="col-sm-4">
-								<input type="text" class="form-control" name="category_name" value="<?php echo $electronics_division_category['category_name']; ?>">
+								<input type="text" class="form-control" name="category_name" value="<?php echo $aviation_electronics_category['category_name']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Status <span>*</span></label>
 							<div class="col-sm-4">
 								<select name="status" class="form-control select2">
-									<option value="Active" <?php if($electronics_division_category['status']=='Active') {echo 'selected';} ?>>Active</option>
-									<option value="Inactive" <?php if($electronics_division_category['status']=='Inactive') {echo 'selected';} ?>>Inactive</option>
+									<option value="Active" <?php if($aviation_electronics_category['status']=='Active') {echo 'selected';} ?>>Active</option>
+									<option value="Inactive" <?php if($aviation_electronics_category['status']=='Inactive') {echo 'selected';} ?>>Inactive</option>
 								</select>
 							</div>
 						</div>

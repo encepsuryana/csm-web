@@ -50,19 +50,19 @@ class Model_gallery extends CI_Model
 		$query = $this->db->query("SELECT * FROM tbl_partner ORDER BY id ASC");
 		return $query->result_array();
 	}
-	public function get_electronics_division_data()
+	public function get_aviation_electronics_data()
 	{
 		$sql = "SELECT * 
-                FROM tbl_electronics_division t1
-                JOIN tbl_electronics_division_category t2
+                FROM tbl_aviation_electronics t1
+                JOIN tbl_aviation_electronics_category t2
                 ON t1.category_id = t2.category_id
                 ORDER BY t1.id ASC";
         $query = $this->db->query($sql);
         return $query->result_array();
 	}
-	public function get_electronics_division_category()
+	public function get_aviation_electronics_category()
 	{
-		$query = $this->db->query("SELECT * FROM tbl_electronics_division_category ORDER BY category_name ASC");
+		$query = $this->db->query("SELECT * FROM tbl_aviation_electronics_category ORDER BY category_name ASC");
 		return $query->result_array();
 	}
 }

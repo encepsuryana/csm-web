@@ -21,26 +21,26 @@
 	</div>
 	<div class="container bg-about">
 		<div class="row">
-			<?php if($electronics_division_desc['electronics_division_desc_photo']!=""): ?>
+			<?php if($aviation_electronics_desc['aviation_electronics_desc_photo']!=""): ?>
 				<div class="col-md-12">
 					<div class="image-electronic">
-						<img src="<?php echo base_url(); ?>public/uploads/<?php echo $electronics_division_desc['electronics_division_desc_photo']; ?>" alt="">
+						<img src="<?php echo base_url(); ?>public/uploads/<?php echo $aviation_electronics_desc['aviation_electronics_desc_photo']; ?>" alt="">
 					</div>	
 					<div class="electronic-desc">
 						<h4>
 							<i class="fa fa-microchip" aria-hidden="true"></i>
 							<?php 
 							if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-								if ($electronics_division_desc['ed_desc_heading_idn'] == '') {
-									echo $electronics_division_desc['electronics_division_desc_heading'];
+								if ($aviation_electronics_desc['ed_desc_heading_idn'] == '') {
+									echo $aviation_electronics_desc['aviation_electronics_desc_heading'];
 								} else {
-									echo $electronics_division_desc['ed_desc_heading_idn']; 
+									echo $aviation_electronics_desc['ed_desc_heading_idn']; 
 								}
 							} else {
-								if ($electronics_division_desc['ed_desc_heading'] == '') {
-									echo $electronics_division_desc['electronics_division_desc_heading_idn'];
+								if ($aviation_electronics_desc['aviation_electronics_desc_heading'] == '') {
+									echo $aviation_electronics_desc['ed_desc_heading_idn'];
 								} else {
-									echo $electronics_division_desc['ed_desc_heading']; 
+									echo $aviation_electronics_desc['aviation_electronics_desc_heading']; 
 								}
 							}
 							?>
@@ -48,16 +48,16 @@
 						<p>
 							<?php 
 							if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-								if ($electronics_division_desc['ed_desc_content_idn'] == '') {
-									echo $electronics_division_desc['electronics_division_desc_content'];
+								if ($aviation_electronics_desc['ed_desc_content_idn'] == '') {
+									echo $aviation_electronics_desc['aviation_electronics_desc_content'];
 								} else {
-									echo $electronics_division_desc['ed_desc_content_idn']; 
+									echo $aviation_electronics_desc['ed_desc_content_idn']; 
 								}
 							} else {
-								if ($electronics_division_desc['ed_desc_content'] == '') {
-									echo $electronics_division_desc['electronics_division_desc_content_idn'];
+								if ($aviation_electronics_desc['aviation_electronics_desc_content'] == '') {
+									echo $aviation_electronics_desc['ed_desc_content_idn'];
 								} else {
-									echo $electronics_division_desc['ed_desc_content']; 
+									echo $aviation_electronics_desc['aviation_electronics_desc_content']; 
 								}
 							}
 							?>
@@ -70,7 +70,7 @@
 					<ul>
 						<li data-filter="all"><?php echo ALL; ?></li>
 						<?php
-						foreach ($electronics_division_category as $row) {
+						foreach ($aviation_electronics_category as $row) {
 							?>
 							<li data-filter="<?php echo $row['category_id']; ?>"><?php echo $row['category_name']; ?></li>
 							<?php
@@ -86,7 +86,7 @@
 
 			<div class="filtr-container">			
 				<?php
-				foreach ($electronics_division as $row) {
+				foreach ($aviation_electronics as $row) {
 					?>
 					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item clear-three bg-about" data-category="<?php echo $row['category_id']; ?>" data-sort="value">
 						<div class="recent-item">
@@ -120,7 +120,7 @@
 										?>
 									</p>
 									<div class="services-link">
-										<a href="<?php echo base_url(); ?>electronics-division/post/<?php echo $row['slug_electronics']; ?>"><?php echo READ_MORE; ?></a>
+										<a href="<?php echo base_url(); ?>aviation-electronics-department/post/<?php echo $row['slug_electronics']; ?>"><?php echo READ_MORE; ?></a>
 									</div>
 								</div>
 							</div>

@@ -35,7 +35,7 @@ if(!$this->session->userdata('id')) {
            <tbody>
              <?php
              $i=0;
-             foreach ($electronics_division_category as $row) {
+             foreach ($aviation_electronics_category as $row) {
               $i++;
               ?>
               <tr>

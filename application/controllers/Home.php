@@ -24,8 +24,8 @@ class Home extends CI_Controller {
 		$header['content_home'] = $this->Model_home->get_content_home_data();
 		$header['content_home_photo'] = $this->Model_home->get_content_home_photo();
 		$header['service'] = $this->Model_home->get_service_data();
-		$header['electronics_division'] = $this->Model_home->get_electronics_division_data();
-		$header['electronics_division_category'] = $this->Model_home->get_electronics_division_category();
+		$header['aviation_electronics'] = $this->Model_home->get_aviation_electronics_data();
+		$header['aviation_electronics_category'] = $this->Model_home->get_aviation_electronics_category();
 		$header['facility'] = $this->Model_home->get_facility_data();
 		$header['facility_category'] = $this->Model_home->get_facility_category();
 		$header['portfolio_category'] = $this->Model_home->get_portfolio_category();

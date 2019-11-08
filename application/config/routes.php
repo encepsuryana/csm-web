@@ -59,7 +59,7 @@ $route['service/post/(:any)'] = 'service/view/$1';
 $route['facility/post/(:any)'] = 'facility/view/$1';
 $route['category/post/(:any)'] = 'category/view/$1';
 $route['portfolio/post/(:any)'] = 'portfolio/view/$1';
-$route['electronics-division/post/(:any)'] = 'electronics-division/view/$1';
+$route['aviation-electronics-department/post/(:any)'] = 'aviation-electronics-department/view/$1';
 $route['admin'] = 'admin/login';
 
 /** HRD ROLE **/
@@ -84,13 +84,13 @@ $route['hrd/facility-category/add'] = 'admin/facility-category/add';
 $route['hrd/facility-category/edit/(:any)'] = 'admin/facility-category/edit/$1';
 $route['hrd/facility-category/delete/(:any)'] = 'admin/facility-category/delete/$1';
 
-$route['hrd/electronics-division'] = 'admin/electronics-division';
-$route['hrd/electronics-division/add'] = 'admin/electronics-division/add';
-$route['hrd/electronics-division/edit/(:any)'] = 'admin/electronics-division/edit/$1';
-$route['hrd/electronics-division-category'] = 'admin/electronics-division-category';
-$route['hrd/electronics-division-category/add'] = 'admin/electronics-division-category/add';
-$route['hrd/electronics-division-category/edit/(:any)'] = 'admin/electronics-division-category/edit/$1';
-$route['hrd/electronics-division-desc'] = 'admin/electronics-division-desc';
+$route['hrd/aviation-electronics-department'] = 'admin/aviation-electronics-department';
+$route['hrd/aviation-electronics-department/add'] = 'admin/aviation-electronics-department/add';
+$route['hrd/aviation-electronics-department/edit/(:any)'] = 'admin/aviation-electronics-department/edit/$1';
+$route['hrd/aviation-electronics-department-category'] = 'admin/aviation-electronics-department-category';
+$route['hrd/aviation-electronics-department-category/add'] = 'admin/aviation-electronics-department-category/add';
+$route['hrd/aviation-electronics-department-category/edit/(:any)'] = 'admin/aviation-electronics-department-category/edit/$1';
+$route['hrd/aviation-electronics-department-desc'] = 'admin/aviation-electronics-department-desc';
 
 $route['hrd/photo'] = 'admin/photo';
 $route['hrd/photo/add'] = 'admin/photo/add';
@@ -141,16 +141,16 @@ $route['staff/facility-category'] = 'admin/facility-category';
 $route['staff/facility-category/add'] = 'admin/facility-category/add';
 $route['staff/facility-category/edit/(:any)'] = 'admin/facility-category/edit/$1';
 
-$route['staff/electronics-division'] = 'admin/electronics-division';
-$route['staff/electronics-division/add'] = 'admin/electronics-division/add';
-$route['staff/electronics-division/edit/(:any)'] = 'admin/electronics-division/edit/$1';
-$route['staff/electronics-division/delete/(:any)'] = 'admin/electronics-division/delete/$1';
-$route['staff/electronics-division-category'] = 'admin/electronics-division-category';
-$route['staff/electronics-division-category/add'] = 'admin/electronics-division-category/add';
-$route['staff/electronics-division-category/edit/(:any)'] = 'admin/electronics-division-category/edit/$1';
-$route['staff/electronics-division-category/delete/(:any)'] = 'admin/electronics-division-category/delete/$1';
-$route['staff/electronics-division-desc'] = 'admin/electronics-division-desc';
-$route['staff/electronics-division-desc/update'] = 'admin/electronics-division-desc/update';
+$route['staff/aviation-electronics-department'] = 'admin/aviation-electronics-department';
+$route['staff/aviation-electronics-department/add'] = 'admin/aviation-electronics-department/add';
+$route['staff/aviation-electronics-department/edit/(:any)'] = 'admin/aviation-electronics-department/edit/$1';
+$route['staff/aviation-electronics-department/delete/(:any)'] = 'admin/aviation-electronics-department/delete/$1';
+$route['staff/aviation-electronics-department-category'] = 'admin/aviation-electronics-department-category';
+$route['staff/aviation-electronics-department-category/add'] = 'admin/aviation-electronics-department-category/add';
+$route['staff/aviation-electronics-department-category/edit/(:any)'] = 'admin/aviation-electronics-department-category/edit/$1';
+$route['staff/aviation-electronics-department-category/delete/(:any)'] = 'admin/aviation-electronics-department-category/delete/$1';
+$route['staff/aviation-electronics-department-desc'] = 'admin/aviation-electronics-department-desc';
+$route['staff/aviation-electronics-department-desc/update'] = 'admin/aviation-electronics-department-desc/update';
 
 
 $route['staff/photo'] = 'admin/photo';

@@ -32,20 +32,20 @@ if(!$this->session->userdata('id')) {
 					</div>
 				<?php endif; ?>
 
-				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/electronics-division/edit/'.$electronics_division['id'],array('class' => 'form-horizontal')); ?>
+				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/electronics-division/edit/'.$aviation_electronics['id'],array('class' => 'form-horizontal')); ?>
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Judul <span>*</span></label>
 							<div class="col-sm-6">
-								<input type="text" autocomplete="off" class="form-control" name="name" value="<?php echo $electronics_division['name']; ?>">
+								<input type="text" autocomplete="off" class="form-control" name="name" value="<?php echo $aviation_electronics['name']; ?>">
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label"> </label>
 							<div class="col-sm-9" style="padding-top:5px">
-								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $electronics_division['photo']; ?>" alt="" style="width:120px;">
+								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $aviation_electronics['photo']; ?>" alt="" style="width:120px;">
 							</div>
 						</div>
 						<div class="form-group">
@@ -59,13 +59,13 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
 							<div class="col-sm-8">
-								<textarea class="form-control" name="short_content" style="height:100px;"><?php echo $electronics_division['short_content']; ?></textarea>
+								<textarea class="form-control" name="short_content" style="height:100px;"><?php echo $aviation_electronics['short_content']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-8">
-								<textarea class="form-control" name="content" id="editor1"><?php echo $electronics_division['content']; ?></textarea>
+								<textarea class="form-control" name="content" id="editor1"><?php echo $aviation_electronics['content']; ?></textarea>
 							</div>
 						</div>
 
@@ -73,13 +73,13 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
 							<div class="col-sm-8">
-								<textarea class="form-control" name="short_content_idn" style="height:100px;"><?php echo $electronics_division['short_content_idn']; ?></textarea>
+								<textarea class="form-control" name="short_content_idn" style="height:100px;"><?php echo $aviation_electronics['short_content_idn']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Konten <span>*</span></label>
 							<div class="col-sm-8">
-								<textarea class="form-control" name="content_idn" id="editor2"><?php echo $electronics_division['content_idn']; ?></textarea>
+								<textarea class="form-control" name="content_idn" id="editor2"><?php echo $aviation_electronics['content_idn']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
@@ -89,7 +89,7 @@ if(!$this->session->userdata('id')) {
 									<?php
 									foreach ($all_photo_category as $row) {
 										?>
-										<option value="<?php echo $row['category_id']; ?>" <?php if($row['category_id'] == $electronics_division['category_id']) {echo 'selected';} ?>><?php echo $row['category_name']; ?></option>
+										<option value="<?php echo $row['category_id']; ?>" <?php if($row['category_id'] == $aviation_electronics['category_id']) {echo 'selected';} ?>><?php echo $row['category_name']; ?></option>
 										<?php
 									}
 									?>	
@@ -106,9 +106,9 @@ if(!$this->session->userdata('id')) {
 										?>
 										<tr>
 											<td>
-												<img src="<?php echo base_url(); ?>public/uploads/electronics_division_photos/<?php echo $row['photo']; ?>" alt="" style="width:120px;">
+												<img src="<?php echo base_url(); ?>public/uploads/aviation_electronics_photos/<?php echo $row['photo']; ?>" alt="" style="width:120px;">
 											</td>
-											<td><a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics_division/single-photo-delete/<?php echo $row['id']; ?>/<?php echo $electronics_division['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a></td>
+											<td><a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation_electronics/single-photo-delete/<?php echo $row['id']; ?>/<?php echo $aviation_electronics['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a></td>
 										</tr>
 										<?php
 									}
@@ -140,13 +140,13 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Meta Keyword</label>
 							<div class="col-sm-8">
-								<textarea class="form-control" name="meta_keyword" style="height:100px;"><?php echo $electronics_division['meta_keyword']; ?></textarea>
+								<textarea class="form-control" name="meta_keyword" style="height:100px;"><?php echo $aviation_electronics['meta_keyword']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Meta Description</label>
 							<div class="col-sm-8">
-								<textarea class="form-control" name="meta_description" style="height:100px;"><?php echo $electronics_division['meta_description']; ?></textarea>
+								<textarea class="form-control" name="meta_description" style="height:100px;"><?php echo $aviation_electronics['meta_description']; ?></textarea>
 							</div>
 						</div>
 						<div class="form-group">

@@ -25,8 +25,8 @@ class Download extends CI_Controller{
 		$header['portfolio'] = $this->Model_download->get_portfolio_data();
 		$header['partner'] = $this->Model_download->get_partner_data();
 		$header['product'] = $this->Model_download->get_product_data();
-		$header['electronics_division'] = $this->Model_download->get_electronics_division_data();
-		$header['electronics_division_category'] = $this->Model_download->get_electronics_division_category();
+		$header['aviation_electronics'] = $this->Model_download->get_aviation_electronics_data();
+		$header['aviation_electronics_category'] = $this->Model_download->get_aviation_electronics_category();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_download');
