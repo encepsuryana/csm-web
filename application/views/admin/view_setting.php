@@ -112,6 +112,28 @@ if(!$this->session->userdata('id')) {
 								</div>
 							</div>
 							<?php echo form_close(); ?>
+
+							<h3 class="seo-info">CEO & Deputy</h3>
+							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/setting/update',array('class' => 'form-horizontal')); ?>								
+							<div class="form-group">
+								<label for="" class="col-sm-2 control-label">Foto Tersedia</label>
+								<div class="col-sm-6" style="padding-top:6px;background: #f2f2f2;">
+									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['company_ceo']; ?>" class="existing-photo" style="height:80px;">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-2 control-label">Ubah</label>
+								<div class="col-sm-6" style="padding-top:6px;">
+									<input type="file" name="photo_ceo">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-2 control-label"></label>
+								<div class="col-sm-6">
+									<button type="submit" class="btn btn-success pull-left" name="form_ceo">Update Logo Art</button>
+								</div>									
+							</div>
+							<?php echo form_close(); ?>
 						</div>
 
 						<div class="tab-pane" id="tab_favicon">

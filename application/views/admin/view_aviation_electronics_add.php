@@ -10,7 +10,7 @@ if(!$this->session->userdata('id')) {
 			<h1>Tambah Divisi Elektronik</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division" class="btn btn-primary btn-sm">Lihat Semua</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -32,7 +32,7 @@ if(!$this->session->userdata('id')) {
 					</div>
 				<?php endif; ?>
 
-				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/electronics-division/add',array('class' => 'form-horizontal')); ?>
+				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/aviation-electronics-department/add',array('class' => 'form-horizontal')); ?>
 				<div class="box box-info  b-box">
 					<div class="box-body">
 						
@@ -49,7 +49,7 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 
-						<h3>Konten Bahasa Inggris</h3>
+						<h3 class="seo-info">Konten Bahasa Inggris</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
 							<div class="col-sm-8">
@@ -63,7 +63,7 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 
-						<h3>Konten Bahasa Indonesia</h3>
+						<h3 class="seo-info">Konten Bahasa Indonesia</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Konten Singkat <span>*</span></label>
 							<div class="col-sm-8">

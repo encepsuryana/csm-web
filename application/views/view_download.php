@@ -32,8 +32,8 @@
 					</div>
 					<div class="col-md-4 col-sm-4 bg-about" style="padding: 5px">
 						<div class="ciptasin-spanduk-download">
-							<a href="<?php echo base_url();?>download/file-electronic" style="background-image: url(<?php echo base_url(); ?>public/uploads/file/<?php echo $content_home['spanduk2']; ?>);" title="<?php echo CLICK_FOR_DOWNLOAD; ?>: <?php echo COMPANY_PROFILE_aviation_electronics; ?>" data-toggle="tooltip" data-placement="top">
-								<span><?php echo COMPANY_PROFILE_aviation_electronics; ?></span>
+							<a href="<?php echo base_url();?>download/file-electronic" style="background-image: url(<?php echo base_url(); ?>public/uploads/file/<?php echo $content_home['spanduk2']; ?>);" title="<?php echo CLICK_FOR_DOWNLOAD; ?>: <?php echo COMPANY_PROFILE_AVIATION_ELECTRONICS; ?>" data-toggle="tooltip" data-placement="top">
+								<span><?php echo COMPANY_PROFILE_AVIATION_ELECTRONICS; ?></span>
 							</a>
 						</div>
 					</div>

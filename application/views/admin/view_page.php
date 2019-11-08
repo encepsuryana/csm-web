@@ -511,7 +511,7 @@ if(!$this->session->userdata('id')) {
                         </div>                              
                         <?php echo form_close(); ?>
 
-                        <h3 class="seo-info">Divisi Elektronik</h3>
+                        <h3 class="seo-info">Departemen Aviasi & Elektronik</h3>
                         <?php echo form_open(base_url().$this->session->userdata('role').'/page/update',array('class' => 'form-horizontal')); ?>     
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label">Meta Keyword </label>
@@ -528,7 +528,7 @@ if(!$this->session->userdata('id')) {
                         <div class="form-group">
                             <label for="" class="col-sm-2 control-label"></label>
                             <div class="col-sm-6">
-                                <button type="submit" class="btn btn-success pull-left" name="form_electronic_division">Update</button>
+                                <button type="submit" class="btn btn-success pull-left" name="form_aviation_electronics">Update</button>
                             </div>
                         </div>                              
                         <?php echo form_close(); ?>

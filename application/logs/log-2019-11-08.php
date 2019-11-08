@@ -1,195 +1,55 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
-ERROR - 2019-11-08 10:46:12 --> Query error: Table 'csm_web.tbl_aviation_electronics' doesn't exist - Invalid query: SELECT * 
-		FROM tbl_aviation_electronics t1
-		JOIN tbl_aviation_electronics_category t2
-		ON t1.category_id = t2.category_id
-		ORDER BY t1.id ASC
-ERROR - 2019-11-08 10:46:12 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\csm-web\application\models\Model_about.php 52
-ERROR - 2019-11-08 10:46:16 --> Query error: Table 'csm_web.tbl_aviation_electronics' doesn't exist - Invalid query: SELECT * 
-                FROM tbl_aviation_electronics t1
-                JOIN tbl_aviation_electronics_category t2
-                ON t1.category_id = t2.category_id
-                ORDER BY t1.id ASC
-ERROR - 2019-11-08 10:46:16 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\csm-web\application\models\Model_home.php 45
-ERROR - 2019-11-08 10:46:29 --> Query error: Table 'csm_web.tbl_aviation_electronics' doesn't exist - Invalid query: SELECT * 
-                FROM tbl_aviation_electronics t1
-                JOIN tbl_aviation_electronics_category t2
-                ON t1.category_id = t2.category_id
-                ORDER BY t1.id ASC
-ERROR - 2019-11-08 10:46:29 --> Severity: error --> Exception: Call to a member function result_array() on bool C:\xampp\htdocs\csm-web\application\models\Model_home.php 45
-ERROR - 2019-11-08 11:05:42 --> Severity: Notice --> Undefined index: mk_aviation_electronics C:\xampp\htdocs\csm-web\application\views\admin\view_page.php 519
-ERROR - 2019-11-08 11:05:42 --> Severity: Notice --> Undefined index: md_aviation_electronics C:\xampp\htdocs\csm-web\application\views\admin\view_page.php 525
-ERROR - 2019-11-08 11:06:06 --> 404 Page Not Found: Electronics_division/index
-ERROR - 2019-11-08 11:07:31 --> Severity: Warning --> Use of undefined constant aviation_electronics - assumed 'aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 576
-ERROR - 2019-11-08 11:07:31 --> Severity: Warning --> Use of undefined constant aviation_electronics - assumed 'aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 579
-ERROR - 2019-11-08 11:07:31 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:08:02 --> Severity: Warning --> Use of undefined constant aviation_electronics - assumed 'aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 579
-ERROR - 2019-11-08 11:08:02 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:08:20 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:08:27 --> 404 Page Not Found: Aviation_electronics_department/index
-ERROR - 2019-11-08 11:08:57 --> Severity: Notice --> Undefined variable: aviation_electronics_category C:\xampp\htdocs\csm-web\application\views\view_header.php 582
-ERROR - 2019-11-08 11:08:57 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 582
-ERROR - 2019-11-08 11:08:57 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined variable: aviation_electronics_category C:\xampp\htdocs\csm-web\application\views\view_header.php 582
-ERROR - 2019-11-08 11:09:31 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 582
-ERROR - 2019-11-08 11:09:31 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:09:31 --> Severity: Warning --> Use of undefined constant aviation_electronics - assumed 'aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 5
-ERROR - 2019-11-08 11:09:31 --> Severity: Warning --> Use of undefined constant aviation_electronics - assumed 'aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 16
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined variable: aviation_electronics_desc C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 24
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined variable: aviation_electronics_category C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 73
-ERROR - 2019-11-08 11:09:31 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 73
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 94
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 98
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 104
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: short_content_idn C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 108
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: short_content C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 109
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 123
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 94
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 98
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 104
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: short_content_idn C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 108
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: short_content C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 109
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 123
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 94
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 98
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 104
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: short_content_idn C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 108
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: short_content C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 109
-ERROR - 2019-11-08 11:09:31 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 123
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined variable: aviation_electronics_category C:\xampp\htdocs\csm-web\application\views\view_header.php 582
-ERROR - 2019-11-08 11:10:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 582
-ERROR - 2019-11-08 11:10:44 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:10:44 --> Severity: Warning --> Use of undefined constant aviation_electronics - assumed 'aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 16
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined variable: aviation_electronics_desc C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 24
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined variable: aviation_electronics_category C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 73
-ERROR - 2019-11-08 11:10:44 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 73
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 94
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 98
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 104
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: short_content_idn C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 108
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: short_content C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 109
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 123
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 94
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 98
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 104
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: short_content_idn C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 108
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: short_content C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 109
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 123
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 94
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 98
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 104
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: short_content_idn C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 108
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: short_content C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 109
-ERROR - 2019-11-08 11:10:44 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 123
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined variable: aviation_electronics_category C:\xampp\htdocs\csm-web\application\views\view_header.php 582
-ERROR - 2019-11-08 11:10:56 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 582
-ERROR - 2019-11-08 11:10:56 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined variable: aviation_electronics_desc C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 24
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined variable: aviation_electronics_category C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 73
-ERROR - 2019-11-08 11:10:56 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 73
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 94
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 98
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 104
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: short_content_idn C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 108
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: short_content C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 109
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 123
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 94
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 98
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 104
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: short_content_idn C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 108
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: short_content C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 109
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 123
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 94
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: photo C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 98
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: name C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 104
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: short_content_idn C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 108
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: short_content C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 109
-ERROR - 2019-11-08 11:10:56 --> Severity: Notice --> Undefined index: slug_electronics C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics.php 123
-ERROR - 2019-11-08 11:13:30 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:14:15 --> 404 Page Not Found: Electronics_division/view
-ERROR - 2019-11-08 11:14:18 --> 404 Page Not Found: Electronics_division/view
-ERROR - 2019-11-08 11:14:36 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:14:41 --> 404 Page Not Found: Aviation_electronics_department/post
-ERROR - 2019-11-08 11:17:16 --> Severity: Notice --> Undefined variable: aviation_electronics_category C:\xampp\htdocs\csm-web\application\views\view_header.php 582
-ERROR - 2019-11-08 11:17:16 --> Severity: Warning --> Invalid argument supplied for foreach() C:\xampp\htdocs\csm-web\application\views\view_header.php 582
-ERROR - 2019-11-08 11:17:16 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:18:56 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:18:56 --> Severity: Warning --> Use of undefined constant aviation_electronics - assumed 'aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics_detail.php 97
-ERROR - 2019-11-08 11:18:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:57 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:57 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:57 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:57 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:57 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:18:57 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:13 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:18 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:23 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:29 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:19:29 --> Severity: Warning --> Use of undefined constant aviation_electronics - assumed 'aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics_detail.php 97
-ERROR - 2019-11-08 11:19:29 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:29 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:29 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:29 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:29 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:29 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:29 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:29 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:30 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:30 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:30 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:30 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:30 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:30 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:30 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:30 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:36 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:41 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:46 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:51 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:19:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:20:01 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:20:09 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:20:14 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:55 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:21:55 --> Severity: Warning --> Use of undefined constant aviation_electronics - assumed 'aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics_detail.php 97
-ERROR - 2019-11-08 11:21:55 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:55 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:55 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:55 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:55 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:55 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:55 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:55 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:21:56 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:22:14 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:22:24 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:22:25 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:22:31 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:22:35 --> 404 Page Not Found: Public/uploads
-ERROR - 2019-11-08 11:22:41 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:22:41 --> Severity: Warning --> Use of undefined constant aviation_electronics - assumed 'aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_aviation_electronics_detail.php 97
-ERROR - 2019-11-08 11:24:07 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:24:14 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:24:34 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:24:37 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:24:40 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:24:49 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:24:55 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:25:01 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
-ERROR - 2019-11-08 11:26:48 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
+ERROR - 2019-11-08 13:54:09 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
+ERROR - 2019-11-08 13:54:40 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
+ERROR - 2019-11-08 13:54:48 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
+ERROR - 2019-11-08 13:55:22 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
+ERROR - 2019-11-08 13:55:38 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
+ERROR - 2019-11-08 13:58:33 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
+ERROR - 2019-11-08 13:58:33 --> 404 Page Not Found: Public/uploads
+ERROR - 2019-11-08 13:59:56 --> Severity: error --> Exception: Unable to locate the model you have specified: Model_electronics_desc C:\xampp\htdocs\csm-web\system\core\Loader.php 348
+ERROR - 2019-11-08 14:01:03 --> 404 Page Not Found: Public/uploads
+ERROR - 2019-11-08 14:01:34 --> 404 Page Not Found: admin/Electronics_division_desc/update
+ERROR - 2019-11-08 14:02:40 --> 404 Page Not Found: Public/uploads
+ERROR - 2019-11-08 14:02:44 --> Severity: Warning --> unlink(./public/uploads/aviation_electronics_desc_photo.png): No such file or directory C:\xampp\htdocs\csm-web\application\controllers\admin\Aviation_electronics_department_desc.php 91
+ERROR - 2019-11-08 14:03:06 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
+ERROR - 2019-11-08 14:10:09 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
+ERROR - 2019-11-08 14:10:49 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
+ERROR - 2019-11-08 14:13:07 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 632
+ERROR - 2019-11-08 14:14:13 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:14:50 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:15:01 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:15:17 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:16:56 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:17:04 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:17:16 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:18:23 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:19:03 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:19:16 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:19:39 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:19:51 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:20:02 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:21:20 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:21:52 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:24:25 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:24:44 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:27:51 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:28:15 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:29:23 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:29:50 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:31:04 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:31:24 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:32:44 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:35:06 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:35:44 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:35:57 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:36:18 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:37:05 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:37:30 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:37:52 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:38:54 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:39:12 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:41:57 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:43:59 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 14:55:42 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633
+ERROR - 2019-11-08 15:30:52 --> Severity: Warning --> Use of undefined constant COMPANY_PROFILE_aviation_electronics - assumed 'COMPANY_PROFILE_aviation_electronics' (this will throw an Error in a future version of PHP) C:\xampp\htdocs\csm-web\application\views\view_header.php 633

@@ -324,7 +324,7 @@ class Page extends CI_Controller
 				$data['success'] = 'Setting Halaman Karir telah berhasil diupdate!';
 			}
 
-			if(isset($_POST['form_electronic_division'])) {			
+			if(isset($_POST['form_aviation_electronics'])) {			
 				$form_data = array(
 					'mk_aviation_electronics' => $_POST['mk_aviation_electronics'],
 					'md_aviation_electronics' => $_POST['md_aviation_electronics']
@@ -332,9 +332,9 @@ class Page extends CI_Controller
 				$this->Model_page->update($form_data);
 
 				//Add Log User
-				helper_log("edit", '[EDIT] Halaman Divisi Elektronik telah diupdate');
+				helper_log("edit", '[EDIT] Halaman Departemen Aviasi & Elektronik telah diupdate');
 
-				$data['success'] = 'Setting Halaman Divisi Elektronik telah berhasil diupdate!';
+				$data['success'] = 'Setting Halaman Departemen Aviasi & Elektronik telah berhasil diupdate!';
 			}
 
 

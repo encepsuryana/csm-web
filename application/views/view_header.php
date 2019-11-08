@@ -323,7 +323,8 @@
 		.bg-choose {
 			background-color: #<?php echo $setting['theme_color_2']; ?>!important;	
 		}
-
+		
+		.ceo-style,
 		.recent-text,
 		.map-main-home,
 		.blog-text,
@@ -665,8 +666,10 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-md-2 col-sm-12" style="padding: 0; margin-top: -20px; width: 60px;">
-						<img src="<?php echo base_url(); ?>public/uploads/avatar-4.png" alt="Logo">
+					<div class="col-md-2 col-sm-12" style="padding: 0;">
+						<div class="ceo-style">
+							<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['company_ceo']; ?>" alt="CEO & Depouty">
+						</div>
 					</div>
 				</div>
 			</div>

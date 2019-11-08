@@ -11,51 +11,55 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="bg"></div>
 				<div class="slider-table">
 					<div class="slider-text">
-						<div class="slider-animated">
-							<h2>
-								<?php 
-								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-									if ($row['heading_idn'] == '') {
-										echo $row['heading'];
+						<div class="col-sm-6 col-md-12">
+							<div class="slider-animated">
+								<h2>
+									<?php 
+									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+										if ($row['heading_idn'] == '') {
+											echo $row['heading'];
+										} else {
+											echo $row['heading_idn']; 
+										}
 									} else {
-										echo $row['heading_idn']; 
+										if ($row['heading'] == '') {
+											echo $row['heading_idn'];
+										} else {
+											echo $row['heading']; 
+										}
 									}
-								} else {
-									if ($row['heading'] == '') {
-										echo $row['heading_idn'];
-									} else {
-										echo $row['heading']; 
-									}
-								}
-								?>
-							</h2>
+									?>
+								</h2>
+							</div>
 						</div>
-						<div class="slider-animated">
-							<p>
-								<?php 
-								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-									if (nl2br($row['content_idn']) == '') {
-										echo nl2br($row['content']);
+
+						<div class="col-md-6 col-md-12">
+							<div class="slider-animated">
+								<p>
+									<?php 
+									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+										if (nl2br($row['content_idn']) == '') {
+											echo nl2br($row['content']);
+										} else {
+											echo nl2br($row['content_idn']);
+										}
 									} else {
-										echo nl2br($row['content_idn']);
+										if (nl2br($row['content']) == '') {
+											echo nl2br($row['content_idn']);
+										} else {
+											echo nl2br($row['content']);
+										}
 									}
-								} else {
-									if (nl2br($row['content']) == '') {
-										echo nl2br($row['content_idn']);
-									} else {
-										echo nl2br($row['content']);
-									}
-								}
-								?>
-							</p>
+									?>
+								</p>
+							</div>
+							<div class="slider-animated">
+								<ul>
+									<li><a href="<?php echo $row['button1_url']; ?>"><?php echo $row['button1_text']; ?></a></li>
+									<li><a href="<?php echo $row['button2_url']; ?>"><?php echo $row['button2_text']; ?></a></li>
+								</ul>
+							</div>
 						</div>
-						<div class="slider-animated">
-							<ul>
-								<li><a href="<?php echo $row['button1_url']; ?>"><?php echo $row['button1_text']; ?></a></li>
-								<li><a href="<?php echo $row['button2_url']; ?>"><?php echo $row['button2_text']; ?></a></li>
-							</ul>
-						</div>
-					</div>
 				</div>
 			</div>
 			<?php

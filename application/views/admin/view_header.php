@@ -222,7 +222,7 @@
 							</ul>
 						</li>
 
-						<li class="treeview <?php if(($final_url_other == 'admin/electronics-division/add')||($final_url_other == 'admin/electronics-division')||($final_url_other == 'admin/electronics-division/edit')||($final_url_other == 'admin/electronics-division-category/add')||($final_url_other == 'admin/electronics-division-category')||($final_url_other == 'admin/electronics-division-category/edit')||($final_url_other == 'admin/electronics-division-desc')||($final_url_other == 'admin/electronics-division-desc/update')||($final_url_other == 'admin/electronics-division-category/update')) {echo 'active';} ?>">
+						<li class="treeview <?php if(($final_url_other == 'admin/aviation-electronics-department/add')||($final_url_other == 'admin/aviation-electronics-department')||($final_url_other == 'admin/aviation-electronics-department/edit')||($final_url_other == 'admin/aviation-electronics-department-category/add')||($final_url_other == 'admin/aviation-electronics-department-category')||($final_url_other == 'admin/aviation-electronics-department-category/edit')||($final_url_other == 'admin/aviation-electronics-department-desc')||($final_url_other == 'admin/aviation-electronics-department-desc/update')||($final_url_other == 'admin/aviation-electronics-department-category/update')) {echo 'active';} ?>">
 							<a href="#">
 								<i class="fa fa-microchip"></i>
 								<span>Divisi Elektronik</span>
@@ -231,9 +231,9 @@
 								</span>
 							</a>
 							<ul class="treeview-menu">
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i> Kategori Divisi Elektronik</a></li>
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Des. Divisi Elektronik</a></li>
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Divisi Elektronik</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department-category"><i class="fa fa-braille"></i> Kategori Divisi Elektronik</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department-desc"><i class="fa fa-pencil-square-o"></i> Des. Divisi Elektronik</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department"><i class="fa fa-trello"></i> Divisi Elektronik</a></li>
 							</ul>
 						</li>
 
@@ -380,7 +380,7 @@
 							</ul>
 						</li>
 
-						<li class="treeview <?php if( ($final_url_other == 'hrd/electronics-division/add')||($final_url_other == 'hrd/electronics-division')||($final_url_other == 'hrd/electronics-division/edit')||($final_url_other == 'hrd/electronics-division-category/add')||($final_url_other == 'hrd/electronics-division-category')||($final_url_other == 'hrd/electronics-division-category/edit')||($final_url_other == 'hrd/electronics-division-desc/update')||($final_url_other == 'hrd/electronics-division-desc') ) {echo 'active';} ?>">
+						<li class="treeview <?php if( ($final_url_other == 'hrd/aviation-electronics-department/add')||($final_url_other == 'hrd/aviation-electronics-department')||($final_url_other == 'hrd/aviation-electronics-department/edit')||($final_url_other == 'hrd/aviation-electronics-department-category/add')||($final_url_other == 'hrd/aviation-electronics-department-category')||($final_url_other == 'hrd/aviation-electronics-department-category/edit')||($final_url_other == 'hrd/aviation-electronics-department-desc/update')||($final_url_other == 'hrd/aviation-electronics-department-desc') ) {echo 'active';} ?>">
 							<a href="#">
 								<i class="fa fa-microchip"></i>
 								<span>Divisi Elektronik</span>
@@ -389,9 +389,9 @@
 								</span>
 							</a>
 							<ul class="treeview-menu">
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i>Kategori Divisi Elektronik</a></li>
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Des. Divisi Elektronik</a></li>
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Divisi Elektronik</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department-category"><i class="fa fa-braille"></i>Kategori Divisi Elektronik</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department-desc"><i class="fa fa-pencil-square-o"></i> Des. Divisi Elektronik</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department"><i class="fa fa-trello"></i> Divisi Elektronik</a></li>
 							</ul>
 						</li>
 
@@ -518,7 +518,7 @@
 							</ul>
 						</li>
 
-						<li class="treeview <?php if( ($final_url_other == 'staff/electronics-division/add')||($final_url_other == 'staff/electronics-division')||($final_url_other == 'staff/electronics-division/edit')||($final_url_other == 'staff/electronics-division-category/add')||($final_url_other == 'staff/electronics-division-category')||($final_url_other == 'staff/electronics-division-category/edit')||($final_url_other == 'staff/electronics-division-desc/update')||($final_url_other == 'staff/electronics-division-desc') ) {echo 'active';} ?>">
+						<li class="treeview <?php if( ($final_url_other == 'staff/aviation-electronics-department/add')||($final_url_other == 'staff/aviation-electronics-department')||($final_url_other == 'staff/aviation-electronics-department/edit')||($final_url_other == 'staff/aviation-electronics-department-category/add')||($final_url_other == 'staff/aviation-electronics-department-category')||($final_url_other == 'staff/aviation-electronics-department-category/edit')||($final_url_other == 'staff/aviation-electronics-department-desc/update')||($final_url_other == 'staff/aviation-electronics-department-desc') ) {echo 'active';} ?>">
 							<a href="#">
 								<i class="fa fa-microchip"></i>
 								<span>Divisi Elektronik</span>
@@ -527,9 +527,9 @@
 								</span>
 							</a>
 							<ul class="treeview-menu">
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category"><i class="fa fa-braille"></i> Kategori Divisi Elektronik</a></li>
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-desc"><i class="fa fa-pencil-square-o"></i> Des. Divisi Elektronik</a></li>
-								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division"><i class="fa fa-trello"></i> Divisi Elektronik</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department-category"><i class="fa fa-braille"></i> Kategori Divisi Elektronik</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department-desc"><i class="fa fa-pencil-square-o"></i> Des. Divisi Elektronik</a></li>
+								<li><a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department"><i class="fa fa-trello"></i> Divisi Elektronik</a></li>
 							</ul>
 						</li>
 

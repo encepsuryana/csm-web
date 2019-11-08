@@ -7,7 +7,7 @@ class Aviation_electronics_department_desc extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('admin/Model_header');
-		$this->load->model('admin/Model_electronics_desc');
+		$this->load->model('admin/Model_aviation_desc');
 		$this->load->model('admin/Model_log');
 	}
 
@@ -18,7 +18,7 @@ class Aviation_electronics_department_desc extends CI_Controller
 			$data['success'] = '';
 
 			$header['setting'] = $this->Model_header->get_setting_data();
-			$data['aviation_electronics_desc'] = $this->Model_electronics_desc->show();
+			$data['aviation_electronics_desc'] = $this->Model_aviation_desc->show();
 
 			$this->load->view('admin/view_header',$header);
 			$this->load->view('admin/view_aviation_electronics_desc',$data);
@@ -37,13 +37,13 @@ class Aviation_electronics_department_desc extends CI_Controller
 	{
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd'))  {
 
-			$t = $this->Model_electronics_desc->get_aviation_electronics_desc_photo_name();
+			$t = $this->Model_aviation_desc->get_aviation_electronics_desc_photo_name();
 			unlink('./public/uploads/'.$t['aviation_electronics_desc_photo']);
 
 			$form_data = array(
 				'aviation_electronics_desc_photo' => ''
 			);
-			$this->Model_electronics_desc->aviation_electronics_desc_photo_update($form_data);
+			$this->Model_aviation_desc->aviation_electronics_desc_photo_update($form_data);
 
 			//Add Log User
 			helper_log("Delete", '[HAPUS] Deskripsi Foto Departemen Aviasi & Elektronik dihapus');
@@ -64,7 +64,7 @@ class Aviation_electronics_department_desc extends CI_Controller
 			$data['error'] = '';
 			$data['success'] = '';
 
-			$data['aviation_electronics_desc'] = $this->Model_electronics_desc->show();
+			$data['aviation_electronics_desc'] = $this->Model_aviation_desc->show();
 
 			if(isset($_POST['form_aviation_electronics_desc_photo'])) {
 				$valid = 1;
@@ -98,7 +98,7 @@ class Aviation_electronics_department_desc extends CI_Controller
 					$form_data = array(
 						'aviation_electronics_desc_photo' => $final_name
 					);
-					$this->Model_electronics_desc->update($form_data);
+					$this->Model_aviation_desc->update($form_data);
 
 					//Add Log User
 					helper_log("edit", '[EDIT] Foto Des. Departemen Aviasi & Elektronik diupdate');
@@ -117,7 +117,7 @@ class Aviation_electronics_department_desc extends CI_Controller
 					'mk_aviation_electronics_desc'      => $_POST['mk_aviation_electronics_desc'],
 					'md_aviation_electronics_desc'      => $_POST['md_aviation_electronics_desc']
 				);
-				$this->Model_electronics_desc->update($form_data);
+				$this->Model_aviation_desc->update($form_data);
 
 				//Add Log User
 				helper_log("edit", '[EDIT] Des. Departemen Aviasi & Elektronik diupdate');        	
@@ -126,7 +126,7 @@ class Aviation_electronics_department_desc extends CI_Controller
 			}
 
 			$header['setting'] = $this->Model_header->get_setting_data();
-			$data['aviation_electronics_desc'] = $this->Model_electronics_desc->show();
+			$data['aviation_electronics_desc'] = $this->Model_aviation_desc->show();
 
 			$this->load->view('admin/view_header',$header);
 			$this->load->view('admin/view_aviation_electronics_desc',$data);

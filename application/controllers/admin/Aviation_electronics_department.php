@@ -19,7 +19,7 @@ class Aviation_electronics_department extends CI_Controller
 			$data['aviation_electronics'] = $this->Model_aviation->show();
 
 			$this->load->view('admin/view_header',$header);
-			$this->load->view('admin/view_aviaton_electronics',$data);
+			$this->load->view('admin/view_aviation_electronics',$data);
 			$this->load->view('admin/view_footer');
 
 		} else {
@@ -171,7 +171,7 @@ class Aviation_electronics_department extends CI_Controller
 			} else {
 				$data['all_photo_category'] = $this->Model_aviation->get_all_photo_category();
 				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_aviatio_electronics_add',$data);
+				$this->load->view('admin/view_aviation_electronics_add',$data);
 				$this->load->view('admin/view_footer');
 			}
 
