@@ -84,7 +84,7 @@
 					</div>
 					<div class="col-md-4">
 						<ul>
-							<li><a href="<?php echo base_url(); ?>electronic-division"><?php echo aviation_electronics; ?></a>
+							<li><a href="<?php echo base_url(); ?>electronic-division"><?php echo ELECTRONICS_DIVISION; ?></a>
 								<ul>
 									<li>
 										<a href="<?php echo base_url(); ?>electronics-division">AVIATION ELECTRONICS</a>

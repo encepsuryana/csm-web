@@ -46,7 +46,7 @@ class Download extends CI_Controller{
 		$this->load->helper('download');
 
 		$data = file_get_contents(base_url().'public/uploads/file/profile_perusahaan2.pdf');
-		$name = 'CV. Cipta Sinergi Manufacturing Electronics Division Company Profile.pdf';
+		$name = 'CV. Cipta Sinergi Manufacturing Aviation & Electronics Departement Company Profile.pdf';
 
 		force_download($name,$data);
 	}
@@ -55,7 +55,7 @@ class Download extends CI_Controller{
 		$this->load->helper('download');
 
 		$data = file_get_contents(base_url().'public/uploads/file/profile_perusahaan3.pdf');
-		$name = 'CV. Cipta Sinergi Manufacturing Mechanic & Electronics Division Company Profile.pdf';
+		$name = 'CV. Cipta Sinergi Manufacturing Mechanic & Aviation & Electronics Departement Company Profile.pdf';
 
 		force_download($name,$data);
 	}

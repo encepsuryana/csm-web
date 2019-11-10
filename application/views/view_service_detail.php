@@ -32,17 +32,21 @@
 					<p>
 						<?php 
 						if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-							if ($res['content_idn'] == '') {
+
+							if ($res['content_idn'] == "") {
 								echo $res['content'];
-							} else {
+							} else { 
 								echo $res['content_idn'];
 							}
+
 						} else {
-							if ($res['content'] == '') {
+
+							if ($res['content'] == "") {
 								echo $res['content_idn'];
-							} else {
+							} else { 
 								echo $res['content'];
 							}
+
 						}
 						?>
 					</p>

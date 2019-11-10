@@ -9,7 +9,7 @@ if(!$this->session->userdata('id')) {
     <h1>Lihat Kategori Divisi Elektronik</h1>
   </div>
   <div class="content-header-right">
-    <a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category/add" class="btn btn-primary btn-sm">Tambah Baru</a>
+    <a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department-category/add" class="btn btn-primary btn-sm">Tambah Baru</a>
   </div>
 </section>
 
@@ -44,10 +44,10 @@ if(!$this->session->userdata('id')) {
                <td><?php echo $row['status']; ?></td>
                <td>
                 <?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
-                 <a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
-                 <a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category/delete/<?php echo $row['category_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
+                 <a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department-category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
+                 <a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department-category/delete/<?php echo $row['category_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
                <?php } elseif ($this->session->userdata('role') == 'hrd') { ?>
-                <a href="<?php echo base_url().$this->session->userdata('role'); ?>/electronics-division-category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
+                <a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department-category/edit/<?php echo $row['category_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
               <?php } else { ?>
                 <div class="forbiden">
                   <i class="fa fa-minus-circle" aria-hidden="true"></i>

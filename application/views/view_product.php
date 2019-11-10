@@ -34,86 +34,94 @@
 							</div>
 						<?php } ?>
 						<div class="toggleIcon">
-							<h4>
+							<h4>								
 								<?php 
 								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-									if ($row['product_caption_idn'] == '') {
+
+									if ($row['product_caption_idn'] == "") {
 										echo $row['product_caption'];
 									} else {
 										echo $row['product_caption_idn'];
 									}
+
 								} else {
-									if ($row['product_caption'] == '') {
+
+									if ($row['product_caption'] == "") {
+										echo $row['product_caption_idn'];
+									} else {
+										echo $row['product_caption'];
+									}
+								}
+								?></h4>							
+							</div>
+						</div>			
+						<?php
+					}
+					?>
+				</div>
+			</div>
+		</section>
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<?php
+				foreach ($product as $row) {
+					?>
+					<div class="mySlides">
+						<?php if ($row['product_star'] == 'Yes') { ?>
+							<div class="product-star">
+								<i class="fa fa-bookmark" aria-hidden="true"></i> <span><?php echo FUTURED_PRODUCT; ?></span>
+							</div>
+						<?php } ?>
+						<div class="product-caption">
+							<h4>
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+									if ($row['product_caption_idn'] == "") {
+										echo $row['product_caption'];
+									} else {
+										echo $row['product_caption_idn'];
+									}
+
+								} else {
+
+									if ($row['product_caption'] == "") {
 										echo $row['product_caption_idn'];
 									} else {
 										echo $row['product_caption'];
 									}
 								}
 								?>
-							</h4>							
+							</h4>
 						</div>
-					</div>			
-					<?php
-				}
-				?>
+						<div class="product-desc">
+							<p>
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+									if ($row['product_desc_idn'] == "") {
+										echo $row['product_desc'];
+									} else { 
+										echo $row['product_desc_idn'];
+									}
+
+								} else {
+
+									if ($row['product_desc'] == "") {
+										echo $row['product_desc_idn'];
+									} else { 
+										echo $row['product_desc'];
+									}
+								}
+								?>
+							</p>
+						</div>
+						<img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>" style="width:100%">
+					</div>
+				<?php }	?>
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
 		</div>
-	</section>
-	<div id="myModal" class="modal">
-		<span class="close cursor" onclick="closeModal()">&times;</span>
-		<div class="modal-content">
-			<?php
-			foreach ($product as $row) {
-				?>
-				<div class="mySlides">
-					<?php if ($row['product_star'] == 'Yes') { ?>
-						<div class="product-star">
-							<i class="fa fa-bookmark" aria-hidden="true"></i> <span><?php echo FUTURED_PRODUCT; ?></span>
-						</div>
-					<?php } ?>
-					<div class="product-caption">
-						<h4>
-							<?php 
-							if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-								if ($row['product_caption_idn'] == '') {
-									echo $row['product_caption'];
-								} else {
-									echo $row['product_caption_idn'];
-								}
-							} else {
-								if ($row['product_caption'] == '') {
-									echo $row['product_caption_idn'];
-								} else {
-									echo $row['product_caption'];
-								}
-							}
-							?>
-						</h4>
-					</div>
-					<div class="product-desc">
-						<p>
-							<?php 
-							if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-								if ($row['product_desc_idn'] == '') {
-									echo $row['product_desc'];
-								} else {
-									echo $row['product_desc_idn'];
-								}
-							} else {
-								if ($row['product_desc'] == '') {
-									echo $row['product_desc_idn'];
-								} else {
-									echo $row['product_desc'];
-								}
-							}
-							?>
-						</p>
-					</div>
-					<img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>" style="width:100%">
-				</div>
-			<?php }	?>
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-		</div>
 	</div>
-</div>

@@ -25,21 +25,21 @@
 				<div class="col-md-12 col-sm-12">
 					<div class="col-md-4 col-sm-4 bg-about" style="padding: 5px">
 						<div class="ciptasin-spanduk-download">
-							<a href="<?php echo base_url();?>download/file-mechanic" style="background-image: url(<?php echo base_url(); ?>public/uploads/file/<?php echo $content_home['spanduk1']; ?>);" title="<?php echo CLICK_FOR_DOWNLOAD; ?>: <?php echo COMPANY_PROFILE_ENGINEERING; ?>" data-toggle="tooltip" data-placement="top">
+							<a href="<?php echo base_url();?>download/file_mechanic" style="background-image: url(<?php echo base_url(); ?>public/uploads/file/<?php echo $content_home['spanduk1']; ?>);" title="<?php echo CLICK_FOR_DOWNLOAD; ?>: <?php echo COMPANY_PROFILE_ENGINEERING; ?>" data-toggle="tooltip" data-placement="top">
 								<span><?php echo COMPANY_PROFILE_ENGINEERING; ?></span>
 							</a>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 bg-about" style="padding: 5px">
 						<div class="ciptasin-spanduk-download">
-							<a href="<?php echo base_url();?>download/file-electronic" style="background-image: url(<?php echo base_url(); ?>public/uploads/file/<?php echo $content_home['spanduk2']; ?>);" title="<?php echo CLICK_FOR_DOWNLOAD; ?>: <?php echo COMPANY_PROFILE_AVIATION_ELECTRONICS; ?>" data-toggle="tooltip" data-placement="top">
-								<span><?php echo COMPANY_PROFILE_AVIATION_ELECTRONICS; ?></span>
+							<a href="<?php echo base_url();?>download/file_electronic" style="background-image: url(<?php echo base_url(); ?>public/uploads/file/<?php echo $content_home['spanduk2']; ?>);" title="<?php echo CLICK_FOR_DOWNLOAD; ?>: <?php echo COMPANY_PROFILE_ELECTRONICS_DIVISION; ?>" data-toggle="tooltip" data-placement="top">
+								<span><?php echo COMPANY_PROFILE_ELECTRONICS_DIVISION; ?></span>
 							</a>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 bg-about" style="padding: 5px">
 						<div class="ciptasin-spanduk-download">
-							<a href="<?php echo base_url();?>download/file-mechanic-electronic" style="background-image: url(<?php echo base_url(); ?>public/uploads/file/<?php echo $content_home['spanduk3']; ?>);" title="<?php echo CLICK_FOR_DOWNLOAD; ?>: <?php echo COMPANY_PROFILE_EN_DE; ?>" data-toggle="tooltip" data-placement="top">
+							<a href="<?php echo base_url();?>download/file_mechanic_electronic" style="background-image: url(<?php echo base_url(); ?>public/uploads/file/<?php echo $content_home['spanduk3']; ?>);" title="<?php echo CLICK_FOR_DOWNLOAD; ?>: <?php echo COMPANY_PROFILE_EN_DE; ?>" data-toggle="tooltip" data-placement="top">
 								<span><?php echo COMPANY_PROFILE_EN_DE; ?></span>
 							</a>
 						</div>

@@ -54,13 +54,13 @@
 					<?php if($facility_photo_total>=1): ?>
 						<ul class="carousel-indicators single-carousel owl-carousel">
 
-							<li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive" src="<?php echo base_url(); ?>public/uploads/<?php echo $facility['photo']; ?>" alt=""></li>
+							<li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-facilityponsive" src="<?php echo base_url(); ?>public/uploads/<?php echo $facility['photo']; ?>" alt=""></li>
 
 							<?php
 							foreach ($facility_photo as $row) {
 								$j++;
 								?>
-								<li data-target="#quote-carousel" data-slide-to="<?php echo $j; ?>"><img class="img-responsive" src="<?php echo base_url(); ?>public/uploads/facility_photos/<?php echo $row['photo']; ?>" alt=""></li>
+								<li data-target="#quote-carousel" data-slide-to="<?php echo $j; ?>"><img class="img-facilityponsive" src="<?php echo base_url(); ?>public/uploads/facility_photos/<?php echo $row['photo']; ?>" alt=""></li>
 								<?php
 							}
 							?>
@@ -74,17 +74,21 @@
 					<p>
 						<?php 
 						if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-							if ($facility['content_idn'] == '') {
+
+							if ($facility['content_idn'] == "") {
 								echo $facility['content'];
-							} else {
+							} else { 
 								echo $facility['content_idn'];
 							}
+
 						} else {
-							if ($facility['content'] == '') {
+
+							if ($facility['content'] == "") {
 								echo $facility['content_idn'];
-							} else {
+							} else { 
 								echo $facility['content'];
 							}
+
 						}
 						?>
 					</p>

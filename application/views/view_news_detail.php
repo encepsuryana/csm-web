@@ -2,23 +2,7 @@
 	<div class="container bannder-table" style="padding: 0;">
 		<div class="col-md-12" style="padding: 0;">
 			<div class="banner-text">
-				<h1>
-					<?php 
-					if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-						if ($news['news_title_idn'] == '') {
-							echo $news['news_title'];
-						} else {
-							echo $news['news_title_idn'];
-						}
-					} else {
-						if ($news['news_title'] == '') {
-							echo $news['news_title_idn'];
-						} else {
-							echo $news['news_title'];
-						}					
-					}
-					?>
-				</h1>
+				<h1><?php echo $news['news_title']; ?></h1>
 			</div>
 		</div>
 	</div>
@@ -62,17 +46,21 @@
 						<p>
 							<?php 
 							if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-								if ($news['news_content_idn'] == '') {
+
+								if ($news['news_content_idn'] == "") {
 									echo $news['news_content'];
-								} else {
+								} else { 
 									echo $news['news_content_idn'];
 								}
+
 							} else {
-								if ($news['news_content'] == '') {
-									echo $news['news_content_idn'];
-								} else {
+
+								if ($news['news_content_idn'] == "") {
 									echo $news['news_content'];
+								} else { 
+									echo $news['news_content_idn'];
 								}
+
 							}
 							?>
 						</p>
@@ -161,30 +149,73 @@
 								$i++;
 								if($i>$setting['total_recent_post']) {break;}
 								?>
-								<li><a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>"><?php echo $row['news_title']; ?></a></li>
-								<?php
-							}
-							?>
-						</ul>
-					</div>
+								<li><a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
+									<?php 
+									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
 
-					<div class="sidebar-item">		
-						<h3><?php echo POPULAR_NEWS; ?></h3>		
-						<ul>
+										if ($row['news_title_idn'] == "") {
+											echo $row['news_title'];
+										} else { 
+											echo $row['news_title_idn'];
+										}
+
+									} else {
+
+										if ($row['news_title'] == "") {
+											echo $row['news_title_idn'];
+										} else { 
+											echo $row['news_title'];
+										}
+
+									}
+									?>
+								</a>
+							</li>
 							<?php
-							$i=0;
-							foreach ($popular_news as $row) {
-								$i++;
-								if($i>$setting['total_popular_post']) {break;}
-								?>
-								<li><a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>"><?php echo $row['news_title']; ?></a></li>
-								<?php
-							}
-							?>
-						</ul>
-					</div>
+						}
+						?>
+					</ul>
 				</div>
+
+
+				<div class="sidebar-item">		
+					<h3><?php echo POPULAR_NEWS; ?></h3>		
+					<ul>
+						<?php
+						$i=0;
+						foreach ($popular_news as $row) {
+							$i++;
+							if($i>$setting['total_popular_post']) {break;}
+							?>
+							<li><a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+									if ($row['news_title_idn'] == "") {
+										echo $row['news_title'];
+									} else { 
+										echo $row['news_title_idn'];
+									}
+
+								} else {
+
+									if ($row['news_title'] == "") {
+										echo $row['news_title_idn'];
+									} else { 
+										echo $row['news_title'];
+									}
+
+								}
+								?>		
+							</a>
+						</li>
+						<?php
+					}
+					?>
+				</ul>
 			</div>
 		</div>
 	</div>
+</div>
+</div>
 </div>

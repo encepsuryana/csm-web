@@ -13,7 +13,7 @@
 					<li class="gro" style="padding-right: 0; padding-top: 5px;">
 						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
-						<a href="<?php echo base_url(); ?>electronics-division"><span><?php echo AVIATION_ELECTRONICS; ?></span></a>
+						<a href="<?php echo base_url(); ?>aviation-electronics-department"><span><?php echo AVIATION_ELECTRONICS; ?></span></a>
 					</li>
 				</div>
 			</ul>
@@ -31,34 +31,42 @@
 							<i class="fa fa-microchip" aria-hidden="true"></i>
 							<?php 
 							if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
 								if ($aviation_electronics_desc['ed_desc_heading_idn'] == '') {
 									echo $aviation_electronics_desc['aviation_electronics_desc_heading'];
 								} else {
 									echo $aviation_electronics_desc['ed_desc_heading_idn']; 
 								}
+
 							} else {
+
 								if ($aviation_electronics_desc['aviation_electronics_desc_heading'] == '') {
 									echo $aviation_electronics_desc['ed_desc_heading_idn'];
 								} else {
 									echo $aviation_electronics_desc['aviation_electronics_desc_heading']; 
 								}
+
 							}
 							?>
 						</h4>
 						<p>
 							<?php 
 							if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
 								if ($aviation_electronics_desc['ed_desc_content_idn'] == '') {
 									echo $aviation_electronics_desc['aviation_electronics_desc_content'];
 								} else {
 									echo $aviation_electronics_desc['ed_desc_content_idn']; 
 								}
+
 							} else {
+
 								if ($aviation_electronics_desc['aviation_electronics_desc_content'] == '') {
 									echo $aviation_electronics_desc['ed_desc_content_idn'];
 								} else {
 									echo $aviation_electronics_desc['aviation_electronics_desc_content']; 
 								}
+
 							}
 							?>
 						</p>
@@ -105,17 +113,21 @@
 									<p>
 										<?php 
 										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+											
 											if ($row['short_content_idn'] == '') {
 												echo $row['short_content'];
 											} else {
 												echo $row['short_content_idn'];
 											}
+
 										} else {
+											
 											if ($row['short_content'] == '') {
 												echo $row['short_content_idn'];
 											} else {
 												echo $row['short_content'];
 											}
+											
 										}
 										?>
 									</p>

@@ -82,34 +82,42 @@
 										<h3>
 											<?php 
 											if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-												if ($row->news_title_idn == '') {
+
+												if ($row->news_title_idn == "") {
 													echo $row->news_title;
-												} else {
+												} else { 
 													echo $row->news_title_idn;
 												}
+
 											} else {
-												if ($row->news_title == '') {
+
+												if ($row->news_title == "") {
 													echo $row->news_title_idn;
-												} else {
+												} else { 
 													echo $row->news_title;
 												}
+
 											}
 											?>
 										</h3>
 										<p>
 											<?php 
 											if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-												if ($row->news_short_content_idn == '') {
+
+												if ($row->news_short_content_idn == "") {
 													echo $row->news_short_content;
-												} else {
+												} else { 
 													echo $row->news_short_content_idn;
 												}
+
 											} else {
-												if ($row->news_short_content == '') {
+
+												if ($row->news_short_content == "") {
 													echo $row->news_short_content_idn;
-												} else {
+												} else { 
 													echo $row->news_short_content;
 												}
+
 											}
 											?>
 										</p>
@@ -118,17 +126,21 @@
 										<h4>
 											<?php 
 											if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-												if ($row->news_title_idn == '') {
+
+												if ($row->news_title_idn == "") {
 													echo $row->news_title;
-												} else {
+												} else { 
 													echo $row->news_title_idn;
 												}
+
 											} else {
-												if ($row->news_title == '') {
+
+												if ($row->news_title == "") {
 													echo $row->news_title_idn;
-												} else {
+												} else { 
 													echo $row->news_title;
 												}
+
 											}
 											?>
 										</h4>

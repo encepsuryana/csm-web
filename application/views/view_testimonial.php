@@ -24,7 +24,27 @@
 									</div>
 									<div class="testimonial-post">
 										<i class="fa fa-quote-left"></i>
-										<p><?php echo nl2br($row['comment']); ?></p>
+										<p>
+											<?php 
+											if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+												if (nl2br($row['comment_idn']) == "") {
+													echo nl2br($row['comment']);
+												} else { 
+													echo nl2br($row['comment_idn']);
+												}
+
+											} else {
+
+												if (nl2br($row['comment']) == "") {
+													echo nl2br($row['comment_idn']);
+												} else { 
+													echo nl2br($row['comment']);
+												}
+
+											}
+											?>
+										</p>
 									</div>
 								</div>
 								<div class="testimonial-photo">

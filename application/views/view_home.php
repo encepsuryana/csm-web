@@ -16,35 +16,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<h2>
 									<?php 
 									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-										if ($row['heading_idn'] == '') {
+
+										if ($row['heading_idn'] == "") {
 											echo $row['heading'];
 										} else {
-											echo $row['heading_idn']; 
+											echo $row['heading_idn'];
 										}
+
 									} else {
-										if ($row['heading'] == '') {
+										
+										if ($row['heading'] == "") {
 											echo $row['heading_idn'];
 										} else {
-											echo $row['heading']; 
+											echo $row['heading'];
 										}
 									}
 									?>
 								</h2>
 							</div>
 						</div>
-
 						<div class="col-md-6 col-md-12">
 							<div class="slider-animated">
 								<p>
 									<?php 
 									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-										if (nl2br($row['content_idn']) == '') {
+
+										if (nl2br($row['content_idn']) == "") {
 											echo nl2br($row['content']);
 										} else {
 											echo nl2br($row['content_idn']);
 										}
+
 									} else {
-										if (nl2br($row['content']) == '') {
+
+										if (nl2br($row['content']) == "") {
 											echo nl2br($row['content_idn']);
 										} else {
 											echo nl2br($row['content']);
@@ -60,6 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</ul>
 							</div>
 						</div>
+					</div>
 				</div>
 			</div>
 			<?php
@@ -69,91 +75,98 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <div class="container">
-	<div class="content-home">
-		<div class="col-md-6 col-sm-6">
-			<div class="home-last">
-				<h3><?php echo LATEST_NEWS; ?></h3>
-				<ul class="timeline">
-					<?php
-					$i=0;				
-					foreach ($latest_news as $row) {
-						$i++;
-						if($i>$setting['total_recent_post']) {break;}
-						?>
-						<li>
-							<a target="_blank" href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
-								
-								<?php 
-								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-									if ($row['news_title_idn'] == '') {
-										echo $row['news_title'];
-									} else {
-										echo $row['news_title_idn'];
-									}
-								} else {
-									if ($row['news_title'] == '') {
-										echo $row['news_title_idn'];
-									} else {
-										echo $row['news_title'];
-									}
-								}
-								?>
-
-							</a>
-							<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>" target="_blank" style="float: right; font-size: 12px;"><?php echo $row['news_date']; ?></a>
-							
-							<p>
-								<?php 
-								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-									if ($row['news_short_content_idn'] == '') {
-										echo $row['news_short_content'];
-									} else {
-										echo $row['news_short_content_idn'];
-									}
-								} else {
-									if ($row['news_short_content'] == '') {
-										echo $row['news_short_content_idn'];
-									} else {
-										echo $row['news_short_content'];
-									}
-								}
-								?>
-							</p>
-
-						</li>
+	<div class="row">
+		<div class="content-home">
+			<div class="col-md-6 col-sm-6">
+				<div class="home-last">
+					<h3><?php echo LATEST_NEWS; ?></h3>
+					<ul class="timeline">
 						<?php
-					}
-					?>
-				</ul>
-				<div class="all-news">
-					<a target="_blank" href="<?php echo base_url(); ?>news/page"><?php echo SEE_MORE; ?></a>
+						$i=0;				
+						foreach ($latest_news as $row) {
+							$i++;
+							if($i>$setting['total_recent_post']) {break;}
+							?>
+							<li>
+								<a target="_blank" href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
+									
+									<?php 
+									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+										if ($row['news_title_idn'] == "") {
+											echo $row['news_title'];
+										} else {
+											echo $row['news_title_idn'];
+										}
+
+									} else {
+										
+										if ($row['news_title'] == "") {
+											echo $row['news_title_idn'];
+										} else {
+											echo $row['news_title'];
+										}
+									}
+									?>
+
+								</a>
+								<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>" target="_blank" style="float: right; font-size: 12px;"><?php echo $row['news_date']; ?></a>
+								<p>
+									<?php 
+									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+										if ($row['news_short_content_idn'] == "") {
+											echo $row['news_short_content'];
+										} else {
+											echo $row['news_short_content_idn'];
+										}
+
+									} else {
+										
+										if ($row['news_short_content'] == "") {
+											echo $row['news_short_content_idn'];
+										} else {
+											echo $row['news_short_content'];
+										}
+
+									}
+									?>
+								</p>
+							</li>
+							<?php
+						}
+						?>
+					</ul>
+					<div class="all-news">
+						<a target="_blank" href="<?php echo base_url(); ?>news/page"><?php echo SEE_MORE; ?></a>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-md-6 col-sm-6 btn-home">
-			<ul>												
-				<li>
-					<?php
-					foreach ($content_home as $row) {
-						?>
-						<a target="_blank" href="<?php echo base_url().$row['link']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>);" alt="<?php echo $row['photo']; ?>" href="#">
-
-							<i class="fa <?php echo $row['heading']; ?>" aria-hidden="true"></i> 
-							<span><?php echo $row['content']; ?></span>
-
-						</a>
+			<div class="col-md-6 col-sm-6 btn-home">
+				<ul>												
+					<li>
 						<?php
-					}
-					?>
-				</li>
-			</ul>
+						foreach ($content_home as $row) {
+							?>
+							<a target="_blank" href="<?php echo base_url().$row['link']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>);" alt="<?php echo $row['photo']; ?>" href="#">
+
+								<i class="fa <?php echo $row['heading']; ?>" aria-hidden="true"></i> 
+								<span><?php echo $row['content']; ?></span>
+
+							</a>
+							<?php
+						}
+						?>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
 
-<div class="container">
-	<div class="caption-product-area gridGallery">
-		<section>
+<div class="caption-product-area gridGallery">
+	<section>
+		<div class="container">
 			<h3><?php echo PRODUCT_HOME; ?></h3>
 			<div class="row-product">		
 				<?php
@@ -167,13 +180,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<h4>
 								<?php 
 								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-									if ($row['product_caption_idn'] == '') {
+
+									if ($row['product_caption_idn'] == "") {
 										echo $row['product_caption'];
 									} else {
 										echo $row['product_caption_idn'];
 									}
+
 								} else {
-									if ($row['product_caption'] == '') {
+
+									if ($row['product_caption'] == "") {
 										echo $row['product_caption_idn'];
 									} else {
 										echo $row['product_caption'];
@@ -200,13 +216,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<h4>
 										<?php 
 										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-											if ($row['product_caption_idn'] == '') {
+
+											if ($row['product_caption_idn'] == "") {
 												echo $row['product_caption'];
 											} else {
 												echo $row['product_caption_idn'];
 											}
+
 										} else {
-											if ($row['product_caption'] == '') {
+
+											if ($row['product_caption'] == "") {
 												echo $row['product_caption_idn'];
 											} else {
 												echo $row['product_caption'];
@@ -219,15 +238,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<p>
 										<?php 
 										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-											if ($row['product_desc_idn'] == '') {
+
+											if ($row['product_desc_idn'] == "") {
 												echo $row['product_desc'];
-											} else {
+											} else { 
 												echo $row['product_desc_idn'];
 											}
+
 										} else {
-											if ($row['product_desc'] == '') {
+
+											if ($row['product_desc'] == "") {
 												echo $row['product_desc_idn'];
-											} else {
+											} else { 
 												echo $row['product_desc'];
 											}
 										}
@@ -242,12 +264,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</div>
-		</section>
-	</div>
+		</div>
+	</section>
 </div>
 
-<div class="container">
-	<div class="caption-product-area gridGallery">
+<div class="caption-product-area gridGallery">
+	<div class="container">
 		<h3><?php echo SERVICES; ?></h3>
 		<div class="row-product">
 
@@ -269,17 +291,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<p>
 										<?php 
 										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-											if ($row['short_content_idn'] == '') {
+
+											if ($row['short_content_idn'] == "") {
 												echo $row['short_content'];
-											} else {
+											} else { 
 												echo $row['short_content_idn'];
 											}
+
 										} else {
-											if ($row['short_content'] == '') {
+
+											if ($row['short_content'] == "") {
 												echo $row['short_content_idn'];
-											} else {
+											} else { 
 												echo $row['short_content'];
 											}
+
 										}
 										?>
 									</p>
@@ -299,8 +325,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 </div>
 
-<div class="container recent-works">
-	<div class="caption-product-area gridGallery">
+<div class="caption-product-area gridGallery">
+	<div class="container recent-works">
 		<h3>
 			<?php echo FACILITY; ?>
 			<div class="recent-menu">
@@ -338,21 +364,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<p>
 										<?php 
 										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-											if ($row['short_content_idn'] == '') {
+
+											if ($row['short_content_idn'] == "") {
 												echo $row['short_content'];
-											} else {
+											} else { 
 												echo $row['short_content_idn'];
 											}
+
 										} else {
-											if ($row['short_content'] == '') {
+
+											if ($row['short_content'] == "") {
 												echo $row['short_content_idn'];
-											} else {
+											} else { 
 												echo $row['short_content'];
 											}
+
 										}
 										?>
 									</p>
-									
 									<div class="services-link">
 										<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo READ_MORE; ?></a>
 									</div>
@@ -368,8 +397,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 </div>
 
-<div class="container">
-	<div class="caption-product-area gridGallery">
+<div class="caption-product-area gridGallery">
+	<div class="container">
 		<h3><?php echo TESTIMONIAL_SAY; ?></h3>
 		<div class="row-product">
 			<div class="col-md-12">
@@ -385,7 +414,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 								<div class="testimonial-post">
 									<i class="fa fa-quote-left"></i>
-									<p><?php echo nl2br($row['comment']); ?></p>
+									<p>
+										<?php 
+										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+											if (nl2br($row['comment_idn']) == "") {
+												echo nl2br($row['comment']);
+											} else { 
+												echo nl2br($row['comment_idn']);
+											}
+
+										} else {
+
+											if (nl2br($row['comment']) == "") {
+												echo nl2br($row['comment_idn']);
+											} else { 
+												echo nl2br($row['comment']);
+											}
+
+										}
+										?>
+									</p>
 								</div>
 							</div>
 							<div class="testimonial-photo">
@@ -402,8 +451,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 </div>
 
-<div class="container">
-	<div class="brand-area">
+<div class="brand-area">
+	<div class="container">
 		<h3><?php echo OUR_PARTNER; ?></h3>
 		<div class="row">
 			<div class="col-md-12">

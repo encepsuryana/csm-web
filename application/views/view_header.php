@@ -95,7 +95,7 @@
 		if(!isset($slug_arr[1])) {
 			echo '<meta name="description" content="'.$page['md_aviation_electronics'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_aviation_electronics'].'">';
-			echo '<title>'.aviation_electronics.' | '.$setting['general_companyname'].'</title>';	
+			echo '<title>'.AVIATION_ELECTRONICS_TITLE.' | '.$setting['general_companyname'].'</title>';	
 		} else {
 			$single_aviation_electronics_data = $this->Model_common->get_single_aviation_electronics_data($slug_arr[2]);
 			foreach($single_aviation_electronics_data as $row) {
@@ -142,13 +142,21 @@
 				$og_photo = $row['photo'];
 
 				if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+					
 					if ($og_title = $row['news_title_idn'] == '') {
 						$og_title = $row['news_title'];
 					} else {
 						$og_title = $row['news_title_idn'];
 					}
+
 				} else {
-					$og_title = $row['news_title'];
+					
+					if ($og_title = $row['news_title'] == '') {
+						$og_title = $row['news_title_idn'];
+					} else {
+						$og_title = $row['news_title'];
+					}
+
 				}
 
 				$og_description = $row['news_short_content'];
@@ -574,10 +582,10 @@
 									</ul>
 								</li>
 
-								<li class="menu-item-has-children"><a href="javascript:void();"><?php echo ELECTRONICS_DIVISION; ?></a>
+								<li class="menu-item-has-children"><a href="javascript:void();"><?php echo AVIATION_ELECTRONICS_TITLE; ?></a>
 									<ul class="sub-menu">
 										<li class="submenu-item-has-children">
-											<a href="<?php echo base_url(); ?>aviation-electronics-department"><?php echo ELECTRONICS_DIVISION; ?></a>
+											<a href="<?php echo base_url(); ?>aviation-electronics-department"><?php echo AVIATION_ELECTRONICS_TITLE; ?></a>
 											<ul class="sub-menu">
 												<?php
 												foreach ($aviation_electronics_category as $row) {
@@ -612,8 +620,48 @@
 															<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>">
 																<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
 
-																<h5><?php echo $row['news_title']; ?></h5>	
-																<p><?php echo $row['news_short_content']; ?></p>
+																<h5>
+																	<?php 
+																	if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+																		if ($row['news_title_idn'] == "") {
+																			echo $row['news_title'];
+																		} else { 
+																			echo $row['news_title_idn'];
+																		}
+
+																	} else {
+
+																		if ($row['news_title'] == "") {
+																			echo $row['news_title_idn'];
+																		} else { 
+																			echo $row['news_title'];
+																		}
+
+																	}
+																	?>
+																</h5>	
+																<p>
+																	<?php 
+																	if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+																		if ($row['news_short_content_idn'] == "") {
+																			echo $row['news_short_content'];
+																		} else { 
+																			echo $row['news_short_content_idn'];
+																		}
+
+																	} else {
+
+																		if ($row['news_short_content'] == "") {
+																			echo $row['news_short_content_idn'];
+																		} else { 
+																			echo $row['news_short_content'];
+																		}
+
+																	}
+																	?>
+																</p>
 															</a>
 														</a>
 													</li>
@@ -630,7 +678,7 @@
 													<a href="<?php echo base_url();?>download/file-mechanic"><?php echo COMPANY_PROFILE_ENGINEERING; ?></a>
 												</li>
 												<li>
-													<a href="<?php echo base_url();?>download/file-electronic"><?php echo COMPANY_PROFILE_aviation_electronics; ?></a>
+													<a href="<?php echo base_url();?>download/file-electronic"><?php echo COMPANY_PROFILE_AVIATION_ELECTRONICS; ?></a>
 												</li>
 												<li>
 													<a href="<?php echo base_url();?>download/file-mechanic-electronic"><?php echo COMPANY_PROFILE_EN_DE; ?></a>
@@ -646,7 +694,7 @@
 									<a href="javascript:void();">
 										<i class="fa fa-globe" aria-hidden="true"></i> 
 										<span>
-											<?php if ($this->session->userdata('language')=='eng') {
+											<?php if ($this->session->userdata('language') == 'eng') {
 												echo "English";
 											} else {
 												echo "Indonesia";

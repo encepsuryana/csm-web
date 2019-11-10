@@ -1280,10 +1280,8 @@ Slider
 
 .slider-text {
 	vertical-align: middle;
-	text-align: left;
-	position: relative;
 	display: table-cell;
-	margin: 0px 10px;
+	padding: 180px 0;
 }
 
 .slider-animated h2 {
@@ -1353,7 +1351,7 @@ Slider
 .slide-carousel.owl-carousel .owl-nav {
 	position: absolute;
 	width: 100%;
-	top: 155px;
+	top: 32%;
 	left: 0;
 }
 

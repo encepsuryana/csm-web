@@ -52,18 +52,23 @@
 								<div class="recent-text">
 									<h4><?php echo $row['name']; ?></h4>
 									<p>
-										<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-											if ($row['short_content_idn'] == '') {
+										<?php 
+										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+											if ($row['short_content_idn'] == "") {
 												echo $row['short_content'];
-											} else {
+											} else { 
 												echo $row['short_content_idn'];
 											}
+
 										} else {
-											if ($row['short_content'] == '') {
+
+											if ($row['short_content'] == "") {
 												echo $row['short_content_idn'];
-											} else {
+											} else { 
 												echo $row['short_content'];
 											}
+
 										}
 										?>
 									</p>
