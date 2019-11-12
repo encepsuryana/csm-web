@@ -220,12 +220,6 @@ if(!$this->session->userdata('id')) {
 									</div>
 								</div>
 								<div class="form-group">
-									<label for="" class="col-sm-3 control-label">Top Bar - Email </label>
-									<div class="col-sm-6">
-										<input type="text" class="form-control" name="top_bar_email" value="<?php echo $setting['top_bar_email']; ?>">
-									</div>
-								</div>
-								<div class="form-group">
 									<label for="" class="col-sm-3 control-label">Top Bar - No. Telp </label>
 									<div class="col-sm-6">
 										<input type="text" class="form-control" name="top_bar_phone" value="<?php echo $setting['top_bar_phone']; ?>">

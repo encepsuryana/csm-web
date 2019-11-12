@@ -470,13 +470,15 @@
 							</li>
 							<li>
 								<i class="fa fa-envelope-o" aria-hidden="true"></i>
-								<span title="<?php echo COMPANY_EMAIL; ?>" data-toggle="tooltip" data-placement="bottom"><a href="mailto:<?php echo $setting['top_bar_email']; ?>"><?php echo $setting['top_bar_email']; ?></a></span>
+								<span title="<?php echo COMPANY_CONTACT; ?>" data-toggle="tooltip" data-placement="bottom"><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></span>
 							</li>
 							<li>
-								<img src="<?php echo base_url(); ?>public/img/icon_png/idn.png" alt="Indonesia"> <span title="Indoneisa" data-toggle="tooltip" data-placement="bottom"> <?php echo anchor ('language/change/idn','Indonesia');?> </span>
+								<img src="<?php echo base_url(); ?>public/img/icon_png/idn.png" alt="Indonesia">
+								<span title="Bahasa Indonesia" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/change/idn','ID');?></span>
 							</li>
 							<li>
-								<img src="<?php echo base_url(); ?>public/img/icon_png/eng.png" alt="Indonesia"> <span title="English" data-toggle="tooltip" data-placement="bottom"> <?php echo anchor ('language/change/eng','English');?> </span>
+								<img src="<?php echo base_url(); ?>public/img/icon_png/eng.png" alt="English">
+								<span title="English Language" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/change/eng','EN');?></span>
 							</li>
 						</ul>
 					</div>
@@ -535,7 +537,7 @@
 															$i++;
 															if($i>1) {break;}
 															?>
-															
+
 															<div class="latest-news pin">
 																<?php echo NEW_PRODUCT; ?>
 															</div>
@@ -677,7 +679,7 @@
 											</ul>
 										</li>
 										<li class="submenu-item-has-children">
-											<a href="<?php echo base_url(); ?>gallery"><?php echo DOWNLOAD; ?></a>
+											<a href="<?php echo base_url(); ?>download"><?php echo DOWNLOAD; ?></a>
 
 											<ul class="sub-menu">
 												<li>
@@ -693,8 +695,7 @@
 										</li>
 									</ul>
 								</li>
-
-								<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
+								<li></li>
 							</ul>
 						</div>
 					</div>

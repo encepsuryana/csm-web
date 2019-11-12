@@ -244,7 +244,6 @@ class Setting extends CI_Controller
 					'footer_address'      => $_POST['footer_address'],
 					'footer_phone'        => $_POST['footer_phone'],
 					'footer_working_hour' => $_POST['footer_working_hour'],
-					'top_bar_email'       => $_POST['top_bar_email'],
 					'top_bar_phone'       => $_POST['top_bar_phone'],
 					'contact_map_iframe'  => $_POST['contact_map_iframe']
 				);

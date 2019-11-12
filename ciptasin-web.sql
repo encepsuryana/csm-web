@@ -273,25 +273,25 @@ CREATE TABLE `tbl_facility_photo` (
   `slug_facility` varchar(255) DEFAULT NULL,
   `photo` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_facility_photo` */
 
 insert  into `tbl_facility_photo`(`id`,`facility_id`,`slug_facility`,`photo`) values 
+(1,1,'high-speed-cnc-milling-machining-center.html','1.jpg'),
 (2,1,'high-speed-cnc-milling-machining-center.html','2.jpg'),
 (3,1,'high-speed-cnc-milling-machining-center.html','3.jpg'),
 (4,1,'high-speed-cnc-milling-machining-center.html','4.jpg'),
-(5,1,'high-speed-cnc-milling-machining-center.html','5.jpg'),
-(6,2,'high-speed-cnc-turning-machining-center.html','6.jpg'),
+(5,2,'high-speed-cnc-turning-machining-center.html','5.jpg'),
+(6,4,'production-workshop-and-parking-area.html','6.jpg'),
+(7,4,'production-workshop-and-parking-area.html','7.jpg'),
 (8,4,'production-workshop-and-parking-area.html','8.jpg'),
-(9,4,'production-workshop-and-parking-area.html','9.jpg'),
-(10,4,'production-workshop-and-parking-area.html','10.jpg'),
+(9,3,'conv-machining-center-and-surf-grinding.html','9.jpg'),
+(10,3,'conv-machining-center-and-surf-grinding.html','10.jpg'),
+(11,3,'conv-machining-center-and-surf-grinding.html','11.jpg'),
 (12,3,'conv-machining-center-and-surf-grinding.html','12.jpg'),
 (13,3,'conv-machining-center-and-surf-grinding.html','13.jpg'),
-(14,3,'conv-machining-center-and-surf-grinding.html','14.jpg'),
-(15,3,'conv-machining-center-and-surf-grinding.html','15.jpg'),
-(16,3,'conv-machining-center-and-surf-grinding.html','16.jpg'),
-(17,4,'production-workshop-and-parking-area.html','17.jpg');
+(14,4,'production-workshop-and-parking-area.html','14.jpg');
 
 /*Table structure for table `tbl_language` */
 
@@ -303,7 +303,7 @@ CREATE TABLE `tbl_language` (
   `eng` text NOT NULL,
   `idn` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_language` */
 
@@ -338,74 +338,74 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (29,'CLIENT_COMPANY','Client Company','Perusahaan Klien'),
 (30,'PROJECT_START_DATE','Project Start Date','Waktu Mulai Proyek'),
 (31,'PROJECT_END_DATE','Project End Date','Waktu Selesai Proyek'),
-(33,'CLIENT_COMMENT','Client Comment','Komentar Klien'),
-(34,'SEARCH_NEWS','Search News','Pencarian Berita'),
-(35,'CATEGORY','Category','Kategori'),
-(36,'SHARE_THIS','Share This','Bagikan ini'),
-(37,'COMMENTS','Comments','Komentar'),
-(38,'SEARCH_BY','Search by:','Pencarian Berdasarkan:'),
-(39,'NO_RESULT_FOUND','No Result Found!','Pencarian tidak ditemukan!'),
-(40,'CONTACT_US_PAGE_FORM_HEADING_TEXT','Contact us through the following form:','Kontak kami melalui form berikut:'),
-(41,'PREVIOUS','Previos','Sebelumnya'),
-(42,'NEXT','Next','Selanjutnya'),
-(43,'FIND_US_ON_MAP','Find Us on Map:','Tentukan Kami di Maps:'),
-(44,'NAME','Name','Nama'),
-(45,'EMAIL_ADDRESS','Email Address','Alamat Email'),
-(46,'PHONE','Phone Number','Nomor Telp'),
-(47,'MESSAGE','Message','Pesan'),
-(48,'SEND_MESSAGE','Send Message','Kirim Pesan'),
-(49,'EMPTY_ERROR_NAME','Name can not be empty','Nama tidak boleh kosong!'),
-(50,'EMPTY_ERROR_PHONE','Phone number can not be empty','Telp tidak boleh kosong!'),
-(51,'EMPTY_ERROR_EMAIL','Email address can not be empty','Alamat Email tidak boleh kosong!'),
-(52,'VALID_ERROR_EMAIL','Email address is invalid','Alamat Email tidak benar!'),
-(53,'EMPTY_ERROR_COMMENT','Comment can not be empty','Komentar tidak boleh kosong!'),
-(54,'CONTACT_FORM_EMAIL_SUBJECT','Contact Form Email - www.ciptasinergi.com','Pesan dari Email - www.ciptasinergi.com'),
-(55,'CONTACT_FORM_EMAIL_SUCCESS_MESSAGE','Thank you for sending us the email. We will contact you shortly.','Terima kasih telah mengirim pesan, tunggu balasan dari kami..'),
-(56,'PASSWORD_REQUEST_EMAIL_SUBJECT','Password Request - www.ciptasinergi.com','Password Request -  www.ciptasinergi.com'),
-(57,'PRODUCT','Product','Produk'),
-(58,'COMPANY_PROFILE','Company Profile','Profil Perusahaan'),
-(59,'CAREER','Career','Karir'),
-(60,'OUR_PRODUCT','Our Product','Produk Kami'),
-(61,'FACILITY','Facility','Fasilitas'),
-(62,'SEE_MORE','See More','Lihat Semua'),
-(63,'COMPANY_EMAIL','Company Email','Email Perusahaan'),
-(64,'COMPANY_PHONE','Company Phone/Fax','No.Telp/Fax Perusahaan'),
-(65,'AVIATION_ELECTRONICS_TITLE','Aviation & Electronics Department','Departemen Aviasi & Elektronik'),
-(66,'NEW_PRODUCT','New Product','Produk Baru'),
-(67,'TESTIMONIAL_SAY','What a Client Say','Apa yang klien katakan '),
-(68,'PRODUCT_HOME','Our Featured Products','Produk Unggulan Kami'),
-(69,'OUR_PARTNER','Our Customers','Pelanggan Kami'),
-(70,'OUR_FUTURE_PRODUCT','Our Products','Semua Produk Kami'),
-(71,'INSTITUTE','Institute / Company','Institut / Perusahaan'),
-(72,'HAVE_A_MORE_QUETIONS','Have more questions? Just Contact Us','Punya pertanyaan lain? Hubungi Kami'),
-(73,'PROFILE','Profile','Profil'),
-(74,'STRUCTURE','Structure','Struktur'),
-(75,'CULTURE','Values and Culture','Nilai dan Budaya'),
-(76,'COMMITMENT','Quality Commitment','Komitmen Mutu'),
-(77,'VISION_MISION','Vision & Mission','Visi & Misi'),
-(78,'PROFILE_IDENTITY','Company Identity','Identitas Perusahaan'),
-(79,'STRUCTURE_ORGANIZATION','Structure Organization','Struktur Organisasi'),
-(80,'VISION_AND_MISSION','Vision & Mission','Visi & Misi'),
-(81,'ABOUT_COMPANY','About Company ','Tentang Perusahaan Kami'),
-(82,'SITE_MAPS','Site Maps','Site Maps'),
-(83,'MONDAY_FRIDAY','Monday - Friday','Senin - Jumat'),
-(84,'DOWNLOAD_COMPANY_PROFILE','Download Company Profile','Unduh Profile Perusahaan'),
-(85,'DOWNLOAD','Download','Unduh'),
-(86,'CLICK_FOR_DOWNLOAD','Click for Download','Klik untuk unduh'),
-(87,'COMPANY_PROFILE_ENGINEERING','Company Profile Mechanic','Profil Perusahaan Mekanik'),
-(88,'COMPANY_PROFILE_AVIATION_ELECTRONICS','Company Profile Aviation & Electronics Department','Profil Perusahaan Departemen Aviasi & Elektronik'),
-(89,'COMPANY_PROFILE_EN_DE','Company Profile Mechanic & Electronics Division','Profil Perusahaan Mekanik & Divisi Elektronik'),
-(90,'COOKIES_MESSAGE',' We use cookies and other similar technologies, such as pixels or local storage, to help provide you with a better, faster, and safer experience','Kami menggunakan kuki dan teknologi sejenis, seperti piksel atau penyimpanan lokal, untuk membantu memberi Anda pengalaman yang lebih baik, lebih cepat, dan lebih aman.'),
-(91,'COOKIES_MORE','More info','Lebih lanjut'),
-(92,'COOKIES_OK','Got it!','Ok'),
-(93,'FUTURED_PRODUCT','Product futured','Produk Unggulan'),
-(94,'VISION_HEADING','Vision','Visi'),
-(95,'MISSION_HEADING','Mission','Misi'),
-(97,'SORRY_NOT_FOUND','Sorry, no content found.','Mohon maaf, pencarian tidak ditemukan.'),
-(98,'CH_COMPANY_PROFILE','Company Profile','Profil Perusahaan'),
-(99,'CH_OUR_PRODUCT','Our Product','Produk Kami'),
-(100,'CH_CAREER','Career','Karir'),
-(101,'CH_FACILITY','Facility','Fasilitas');
+(32,'CLIENT_COMMENT','Client Comment','Komentar Klien'),
+(33,'SEARCH_NEWS','Search News','Pencarian Berita'),
+(34,'CATEGORY','Category','Kategori'),
+(35,'SHARE_THIS','Share This','Bagikan ini'),
+(36,'COMMENTS','Comments','Komentar'),
+(37,'SEARCH_BY','Search by:','Pencarian Berdasarkan:'),
+(38,'NO_RESULT_FOUND','No Result Found!','Pencarian tidak ditemukan!'),
+(39,'CONTACT_US_PAGE_FORM_HEADING_TEXT','Contact us through the following form:','Kontak kami melalui form berikut:'),
+(40,'PREVIOUS','Previos','Sebelumnya'),
+(41,'NEXT','Next','Selanjutnya'),
+(42,'FIND_US_ON_MAP','Find Us on Map:','Tentukan Kami di Maps:'),
+(43,'NAME','Name','Nama'),
+(44,'EMAIL_ADDRESS','Email Address','Alamat Email'),
+(45,'PHONE','Phone Number','Nomor Telp'),
+(46,'MESSAGE','Message','Pesan'),
+(47,'SEND_MESSAGE','Send Message','Kirim Pesan'),
+(48,'EMPTY_ERROR_NAME','Name can not be empty','Nama tidak boleh kosong!'),
+(49,'EMPTY_ERROR_PHONE','Phone number can not be empty','Telp tidak boleh kosong!'),
+(50,'EMPTY_ERROR_EMAIL','Email address can not be empty','Alamat Email tidak boleh kosong!'),
+(51,'VALID_ERROR_EMAIL','Email address is invalid','Alamat Email tidak benar!'),
+(52,'EMPTY_ERROR_COMMENT','Comment can not be empty','Komentar tidak boleh kosong!'),
+(53,'CONTACT_FORM_EMAIL_SUBJECT','Contact Form Email - www.ciptasinergi.com','Pesan dari Email - www.ciptasinergi.com'),
+(54,'CONTACT_FORM_EMAIL_SUCCESS_MESSAGE','Thank you for sending us the email. We will contact you shortly.','Terima kasih telah mengirim pesan, tunggu balasan dari kami..'),
+(55,'PASSWORD_REQUEST_EMAIL_SUBJECT','Password Request - www.ciptasinergi.com','Password Request -  www.ciptasinergi.com'),
+(56,'PRODUCT','Product','Produk'),
+(57,'COMPANY_PROFILE','Company Profile','Profil Perusahaan'),
+(58,'CAREER','Career','Karir'),
+(59,'OUR_PRODUCT','Our Product','Produk Kami'),
+(60,'FACILITY','Facility','Fasilitas'),
+(61,'SEE_MORE','See More','Lihat Semua'),
+(62,'COMPANY_CONTACT','Company Contact','Kontak Perusahaan'),
+(63,'COMPANY_PHONE','Company Phone/Fax','No.Telp/Fax Perusahaan'),
+(64,'AVIATION_ELECTRONICS_TITLE','Aviation & Electronics Department','Departemen Aviasi & Elektronik'),
+(65,'NEW_PRODUCT','New Product','Produk Baru'),
+(66,'TESTIMONIAL_SAY','What a Client Say','Apa yang klien katakan '),
+(67,'PRODUCT_HOME','Our Featured Products','Produk Unggulan Kami'),
+(68,'OUR_PARTNER','Our Customers','Pelanggan Kami'),
+(69,'OUR_FUTURE_PRODUCT','Our Products','Semua Produk Kami'),
+(70,'INSTITUTE','Institute / Company','Institut / Perusahaan'),
+(71,'HAVE_A_MORE_QUETIONS','Have more questions? Just Contact Us','Punya pertanyaan lain? Hubungi Kami'),
+(72,'PROFILE','Profile','Profil'),
+(73,'STRUCTURE','Structure','Struktur'),
+(74,'CULTURE','Values and Culture','Nilai dan Budaya'),
+(75,'COMMITMENT','Quality Commitment','Komitmen Mutu'),
+(76,'VISION_MISION','Vision & Mission','Visi & Misi'),
+(77,'PROFILE_IDENTITY','Company Identity','Identitas Perusahaan'),
+(78,'STRUCTURE_ORGANIZATION','Structure Organization','Struktur Organisasi'),
+(79,'VISION_AND_MISSION','Vision & Mission','Visi & Misi'),
+(80,'ABOUT_COMPANY','About Company ','Tentang Perusahaan Kami'),
+(81,'SITE_MAPS','Site Maps','Site Maps'),
+(82,'MONDAY_FRIDAY','Monday - Friday','Senin - Jumat'),
+(83,'DOWNLOAD_COMPANY_PROFILE','Download Company Profile','Unduh Profile Perusahaan'),
+(84,'DOWNLOAD','Download','Unduh'),
+(85,'CLICK_FOR_DOWNLOAD','Click for Download','Klik untuk unduh'),
+(86,'COMPANY_PROFILE_ENGINEERING','Company Profile Mechanic','Profil Perusahaan Mekanik'),
+(87,'COMPANY_PROFILE_AVIATION_ELECTRONICS','Company Profile Aviation & Electronics Department','Profil Perusahaan Departemen Aviasi & Elektronik'),
+(88,'COMPANY_PROFILE_EN_DE','Company Profile Mechanic & Electronics Division','Profil Perusahaan Mekanik & Divisi Elektronik'),
+(89,'COOKIES_MESSAGE',' We use cookies and other similar technologies, such as pixels or local storage, to help provide you with a better, faster, and safer experience','Kami menggunakan kuki dan teknologi sejenis, seperti piksel atau penyimpanan lokal, untuk membantu memberi Anda pengalaman yang lebih baik, lebih cepat, dan lebih aman.'),
+(90,'COOKIES_MORE','More info','Lebih lanjut'),
+(91,'COOKIES_OK','Got it!','Ok'),
+(92,'FUTURED_PRODUCT','Product futured','Produk Unggulan'),
+(93,'VISION_HEADING','Vision','Visi'),
+(94,'MISSION_HEADING','Mission','Misi'),
+(95,'SORRY_NOT_FOUND','Sorry, no content found.','Mohon maaf, pencarian tidak ditemukan.'),
+(96,'CH_COMPANY_PROFILE','Company Profile','Profil Perusahaan'),
+(97,'CH_OUR_PRODUCT','Our Product','Produk Kami'),
+(98,'CH_CAREER','Career','Karir'),
+(99,'CH_FACILITY','Facility','Fasilitas');
 
 /*Table structure for table `tbl_logging` */
 
@@ -420,7 +420,7 @@ CREATE TABLE `tbl_logging` (
   `log_ipaddress` varchar(15) DEFAULT NULL,
   `log_useragen` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_logging` */
 
@@ -503,7 +503,8 @@ insert  into `tbl_logging`(`log_id`,`log_time`,`log_user`,`log_tipe`,`log_desc`,
 (76,'2019-11-12 13:52:27','Encep Suryana',3,'[EDIT] Label Produk Kami diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
 (77,'2019-11-12 13:52:29','Encep Suryana',3,'[EDIT] Label Produk Kami diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
 (78,'2019-11-12 13:52:33','Encep Suryana',3,'[EDIT] Label Karir diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
-(79,'2019-11-12 13:52:35','Encep Suryana',3,'[EDIT] Label Fasilitas diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>');
+(79,'2019-11-12 13:52:35','Encep Suryana',3,'[EDIT] Label Fasilitas diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(80,'2019-11-12 14:17:39','Encep Suryana',3,'[EDIT] Data: General diupdate pada Settings','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>');
 
 /*Table structure for table `tbl_news` */
 
@@ -919,7 +920,6 @@ CREATE TABLE `tbl_settings` (
   `footer_address` text NOT NULL,
   `footer_phone` text NOT NULL,
   `footer_working_hour` text NOT NULL,
-  `top_bar_email` varchar(255) NOT NULL,
   `top_bar_phone` varchar(255) NOT NULL,
   `contact_map_iframe` text NOT NULL,
   `receive_email` varchar(255) NOT NULL,
@@ -957,8 +957,8 @@ CREATE TABLE `tbl_settings` (
 
 /*Data for the table `tbl_settings` */
 
-insert  into `tbl_settings`(`id`,`logo`,`logo2`,`logo_admin`,`company_ceo`,`favicon`,`counter_bg`,`login_bg`,`general_companyname`,`footer_copyright`,`footer_address`,`footer_phone`,`footer_working_hour`,`top_bar_email`,`top_bar_phone`,`contact_map_iframe`,`receive_email`,`receive_password`,`protocol`,`smtp_host`,`smtp_port`,`logo_image`,`logo_alt`,`background`,`text_color`,`company_name`,`company_address`,`company_telp`,`company_website`,`reset_password_email_subject`,`total_recent_post`,`total_popular_post`,`total_recent_post_home`,`total_product_post`,`theme_color_1`,`theme_color_2`,`counter1_text`,`counter1_value`,`counter2_text`,`counter2_value`,`counter3_text`,`counter3_value`,`counter4_text`,`counter4_value`,`counter_status`,`banner`) values 
-(1,'logo.png','logo2.png','logo_admin.png','company_ceo.png','favicon.png','counter_bg.JPG','login_bg.png','CV. Cipta Sinergi Manufacturing','Copyright © 2019 | CV. Cipta Sinergi Manufacturing','Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512','(022) 6647945','(8:00 AM - 5:00 PM)','marketing@ciptasinergi.com','(022) 6647945','<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.177204490785!2d107.551033!3d-6.8552849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x602a56a5b8d7e0cc!2sCV.+Cipta+Sinergi+Manufacturing!5e0!3m2!1sid!2sid!4v1565082522509!5m2!1sid!2sid\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>','pkl.ciptasinergi@gmail.com','Bee9509*#','smtp','ssl://smtp.gmail.com','465','https://www.ciptasinergi.com/public/uploads/logo.png','Logo CV. Cipta Sinergi Manufacturing','134595','FFFFFF','CV. Cipta Sinergi Manufacturing','Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat - Indonesia (40512)','(022) 6647945','www.ciptasinergi.com','Password Reset Request - www.ciptasinergi.com',4,4,10,6,'134595','FFFFFF','Employee\'s',50,'Project Finish',1200,'Projects On-going',800,'Award\'s',1200,'','banner.png');
+insert  into `tbl_settings`(`id`,`logo`,`logo2`,`logo_admin`,`company_ceo`,`favicon`,`counter_bg`,`login_bg`,`general_companyname`,`footer_copyright`,`footer_address`,`footer_phone`,`footer_working_hour`,`top_bar_phone`,`contact_map_iframe`,`receive_email`,`receive_password`,`protocol`,`smtp_host`,`smtp_port`,`logo_image`,`logo_alt`,`background`,`text_color`,`company_name`,`company_address`,`company_telp`,`company_website`,`reset_password_email_subject`,`total_recent_post`,`total_popular_post`,`total_recent_post_home`,`total_product_post`,`theme_color_1`,`theme_color_2`,`counter1_text`,`counter1_value`,`counter2_text`,`counter2_value`,`counter3_text`,`counter3_value`,`counter4_text`,`counter4_value`,`counter_status`,`banner`) values 
+(1,'logo.png','logo2.png','logo_admin.png','company_ceo.png','favicon.png','counter_bg.JPG','login_bg.png','CV. Cipta Sinergi Manufacturing','Copyright © 2019 | CV. Cipta Sinergi Manufacturing','Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40512','(022) 6647945','(8:00 AM - 5:00 PM)','(022) 6647945','<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.177204490785!2d107.551033!3d-6.8552849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x602a56a5b8d7e0cc!2sCV.+Cipta+Sinergi+Manufacturing!5e0!3m2!1sid!2sid!4v1565082522509!5m2!1sid!2sid\" width=\"600\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>','pkl.ciptasinergi@gmail.com','Bee9509*#','smtp','ssl://smtp.gmail.com','465','https://www.ciptasinergi.com/public/uploads/logo.png','Logo CV. Cipta Sinergi Manufacturing','134595','FFFFFF','CV. Cipta Sinergi Manufacturing','Jl. Kamarung No.88 B, RT.004/RW.04, Citeureup, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat - Indonesia (40512)','(022) 6647945','www.ciptasinergi.com','Password Reset Request - www.ciptasinergi.com',4,4,10,6,'134595','FFFFFF','Employee\'s',50,'Project Finish',1200,'Projects On-going',800,'Award\'s',1200,'','banner.png');
 
 /*Table structure for table `tbl_slider` */
 
