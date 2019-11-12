@@ -321,13 +321,9 @@ class Setting extends CI_Controller
 
 			if(isset($_POST['form_counter'])) {			
 				$form_data = array(
-					'counter1_text'  => $_POST['counter1_text'],
 					'counter1_value' => $_POST['counter1_value'],
-					'counter2_text'  => $_POST['counter2_text'],
 					'counter2_value' => $_POST['counter2_value'],
-					'counter3_text'  => $_POST['counter3_text'],
 					'counter3_value' => $_POST['counter3_value'],
-					'counter4_text'  => $_POST['counter4_text'],
 					'counter4_value' => $_POST['counter4_value']
 				);
 				$this->Model_setting->update($form_data);

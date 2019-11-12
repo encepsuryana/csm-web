@@ -267,15 +267,7 @@ if(!$this->session->userdata('id')) {
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="" class="col-sm-6 control-label">Counter1 Text <span>*</span></label>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" name="counter1_text" value="<?php echo $setting['counter1_text']; ?>">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label">Counter1 Value <span>*</span></label>
+										<label for="" class="col-sm-6 control-label">Jumlah Pekerja</label>
 										<div class="col-sm-4">
 											<input type="text" class="form-control" name="counter1_value" value="<?php echo $setting['counter1_value']; ?>">
 										</div>
@@ -286,15 +278,7 @@ if(!$this->session->userdata('id')) {
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="" class="col-sm-6 control-label">Counter2 Text <span>*</span></label>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" name="counter2_text" value="<?php echo $setting['counter2_text']; ?>">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label">Counter2 Value <span>*</span></label>
+										<label for="" class="col-sm-6 control-label">Proyek Selesai</label>
 										<div class="col-sm-4">
 											<input type="text" class="form-control" name="counter2_value" value="<?php echo $setting['counter2_value']; ?>">
 										</div>
@@ -305,15 +289,7 @@ if(!$this->session->userdata('id')) {
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="" class="col-sm-6 control-label">Counter3 Text <span>*</span></label>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" name="counter3_text" value="<?php echo $setting['counter3_text']; ?>">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label">Counter3 Value <span>*</span></label>
+										<label for="" class="col-sm-6 control-label">Proyek Berjalan</label>
 										<div class="col-sm-4">
 											<input type="text" class="form-control" name="counter3_value" value="<?php echo $setting['counter3_value']; ?>">
 										</div>
@@ -324,15 +300,8 @@ if(!$this->session->userdata('id')) {
 							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label for="" class="col-sm-6 control-label">Counter4 Text <span>*</span></label>
-										<div class="col-sm-4">
-											<input type="text" class="form-control" name="counter4_text" value="<?php echo $setting['counter4_text']; ?>">
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="" class="col-sm-3 control-label">Counter4 Value <span>*</span></label>
+										<label for="" class="col-sm-6 control-label">Penghargaan</label>
+										
 										<div class="col-sm-4">
 											<input type="text" class="form-control" name="counter4_value" value="<?php echo $setting['counter4_value']; ?>">
 										</div>

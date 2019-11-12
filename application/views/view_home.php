@@ -491,25 +491,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="col-md-3 col-sm-6 counter-border">
 				<div class="counter-item">
 					<h2 class="counter"><?php echo $setting['counter1_value']; ?></h2>
-					<h4><?php echo $setting['counter1_text']; ?></h4>
+					<h4><?php echo COUNT_EMPLOYEES; ?></h4>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 counter-border">
 				<div class="counter-item">
 					<h2 class="counter"><?php echo $setting['counter2_value']; ?></h2>
-					<h4><?php echo $setting['counter2_text']; ?></h4>
+					<h4><?php echo COUNT_PROJECT; ?></h4>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 counter-border">
 				<div class="counter-item">
 					<h2 class="counter"><?php echo $setting['counter3_value']; ?></h2>
-					<h4><?php echo $setting['counter3_text']; ?></h4>
+					<h4><?php echo COUNT_ONGOING; ?></h4>
 				</div>
 			</div>
 			<div class="col-md-3 col-sm-6 counter-border">
 				<div class="counter-item">
 					<h2 class="counter"><?php echo $setting['counter4_value']; ?></h2>
-					<h4><?php echo $setting['counter4_text']; ?></h4>
+					<h4><?php echo COUNT_AWARDS; ?></h4>
 				</div>
 			</div>
 		</div>
