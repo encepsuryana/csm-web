@@ -45,9 +45,9 @@
 	}
 	
 	.slider-text {
-		top: 0;
 		vertical-align: middle;
 		text-align: center;
+		padding: 10px 0;
 	}
 
 	.slider-animated ul {
@@ -177,6 +177,7 @@
 	.product-desc p {
 		bottom: -90%;
 	}
+	.footer-contact-item,
 	.menu-link-content,
 	.blog-author,
 	.footer-social {
@@ -273,9 +274,9 @@
 	}
 
 	.slider-text {
-		top: 0;
 		vertical-align: middle;
 		text-align: center;
+		padding: 10px 0;
 	}
 	.slider-animated ul {
 		margin-left: 0;
@@ -359,27 +360,13 @@
 		padding: 10px 20px;
 	}
 	.slide-carousel.owl-carousel .owl-nav {
-		text-align: center;
-		width: 100%;
-		top: 85%;
+		display: none;
 	}
-	.slide-carousel.owl-carousel .owl-nav .owl-prev,
-	.slide-carousel.owl-carousel .owl-nav .owl-next {
-		width: 45px;
-		height: 45px;
-		line-height: 40px;
-		font-size: 16px;
+
+	.slider-animated p {
+		padding: 10px;
 	}
-	.slide-carousel.owl-carousel .owl-nav .owl-prev {
-		margin-left: -50px;
-		margin-right: 5px;
-	}
-	.slide-carousel.owl-carousel .owl-nav .owl-next {
-		position: inherit;
-		margin-right: 0px;
-		margin-left: 5px;
-		right: inherit;
-	}
+
 	.choose-right {
 		width: 100%;
 	}
@@ -466,6 +453,7 @@
 	.product-desc p {
 		bottom: -90%;
 	}
+	.footer-contact-item,
 	.menu-link-content,
 	.blog-author,
 	.footer-social {
@@ -542,9 +530,7 @@
 	.logo2 img {
 		height: 0px;
 	}
-	.slider-text {
-		top:0;
-	}
+
 	.slider-animated ul {
 		margin-left: 0;
 	}
@@ -609,8 +595,13 @@
 		height: 420px;
 	}
 	.slide-carousel.owl-carousel .owl-nav {
-		top: 80%;
+		display: none;
 	}
+
+	.slider-animated p {
+		padding: 10px;
+	}
+	
 	.slider-animated h2 {
 		font-size: 32px;
 	}
@@ -640,6 +631,7 @@
 	.product-desc p {
 		bottom: -90%;
 	}
+	.footer-contact-item,
 	.menu-link-content,
 	.blog-author,
 	.footer-social {
@@ -722,7 +714,7 @@
 		margin-left: 0;
 	}
 	.slider-text {
-		top: 0;
+		padding: 10px 0;
 		vertical-align: middle;
 		text-align: center;
 	}

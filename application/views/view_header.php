@@ -474,11 +474,11 @@
 							</li>
 							<li>
 								<img src="<?php echo base_url(); ?>public/img/icon_png/idn.png" alt="Indonesia">
-								<span title="Bahasa Indonesia" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/change/idn','ID');?></span>
+								<span title="Bahasa Indonesia" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/idn','ID');?></span>
 							</li>
 							<li>
 								<img src="<?php echo base_url(); ?>public/img/icon_png/eng.png" alt="English">
-								<span title="English Language" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/change/eng','EN');?></span>
+								<span title="English Language" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/eng','EN');?></span>
 							</li>
 						</ul>
 					</div>

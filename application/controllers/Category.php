@@ -12,7 +12,7 @@ class Category extends CI_Controller {
 
 	public function view($slug)
 	{
-		// If there is no id after category in URL, redirect to the category page
+		// If there is no slug after category in URL, redirect to the category page
 		if(!$slug)
 		{
 			redirect(base_url());

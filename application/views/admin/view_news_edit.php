@@ -56,7 +56,7 @@ if(!$this->session->userdata('id')) {
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Label Berita <span>*</span></label>
 							<div class="col-sm-4">
-								<input id="style" readonly="readonly" type="text" class="form-control" name="slug" value="<?php echo $news['slug']; ?>">
+								<input id="style" readonly="readonly" type="text" class="form-control" name="news_style" value="<?php echo $news['news_style']; ?>">
 							</div>
 						</div>
 						<div class="form-group">

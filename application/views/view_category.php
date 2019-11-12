@@ -39,7 +39,7 @@ foreach($category as $row) {
 						foreach ($news as $row) {
 							$i++;
 							?>
-							<div class="<?php echo $row['slug']; ?> no-merg">
+							<div class="<?php echo $row['news_style']; ?> no-merg">
 								<a href="<?php echo base_url(); ?>news/post/<?php echo $row['post_slug']; ?>" class="public-csm-home">
 									<div class="blog-author ">
 										<ul>

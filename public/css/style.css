@@ -2757,7 +2757,6 @@ span.page-numbers.current {
 .copyright-text p {
 	color: #fff;
 	margin: 0;
-	margin-top: 95px;
 	text-align: right;
 	margin-right: 60px;
 }
@@ -2768,7 +2767,6 @@ span.page-numbers.current {
 	margin-top: 5px;
 	text-align: right;
 	margin-right: 60px;
-	margin-bottom: 10px;
 }
 
 .link-footer a {

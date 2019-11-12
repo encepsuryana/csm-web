@@ -60,7 +60,7 @@
 						foreach ($results as $row) {
 							$i++;
 							?>
-							<div class="<?php echo $row->slug; ?> no-merg">
+							<div class="<?php echo $row->news_style; ?> no-merg">
 								<a href="<?php echo base_url(); ?>news/post/<?php echo $row->post_slug; ?>" class="public-csm-home">
 									<div class="blog-author ">
 										<ul>
@@ -144,6 +144,9 @@
 											}
 											?>
 										</h4>
+										<p style="margin-bottom: 30px;">
+											<?php echo VIEW_MOMENT; ?> (<?php echo $row->total_view; ?>)
+										</p>
 										<span><?php echo READ_MORE; ?></span>
 									</div>
 								</a>

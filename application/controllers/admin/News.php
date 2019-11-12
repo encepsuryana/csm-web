@@ -43,7 +43,7 @@ class News extends CI_Controller
 
 				$valid = 1;
 				$this->form_validation->set_rules('news_title', 'Judul', 'trim|required');
-				$this->form_validation->set_rules('slug', 'Label Berita', 'trim|required');
+				$this->form_validation->set_rules('news_style', 'Gaya Berita', 'trim|required');
 				$this->form_validation->set_rules('news_short_content', 'Berita Singkat', 'trim|required');
 				$this->form_validation->set_rules('news_content', 'Konten', 'trim|required');
 				$this->form_validation->set_rules('news_date', 'Tanggal', 'trim|required');
@@ -88,7 +88,7 @@ class News extends CI_Controller
 					$form_data = array(
 						'news_title'         	=> $_POST['news_title'],
 						'news_title_idn'     	=> $_POST['news_title_idn'],
-						'slug'          	 	=> $_POST['slug'],
+						'news_style'          	=> $_POST['news_style'],
 						'news_content'       	=> $_POST['news_content'],
 						'news_content_idn'      => $_POST['news_content_idn'],
 						'news_short_content' 	=> $_POST['news_short_content'],
@@ -112,7 +112,7 @@ class News extends CI_Controller
 					$data['success'] = 'Berita berhasil ditambahkan!';
 					unset($_POST['news_title']);
 					unset($_POST['news_title_idn']);
-					unset($_POST['slug']);
+					unset($_POST['news_style']);
 					unset($_POST['news_content']);
 					unset($_POST['news_content_idn']);
 					unset($_POST['news_short_content']);
@@ -175,7 +175,7 @@ class News extends CI_Controller
 
 				$valid = 1;
 				$this->form_validation->set_rules('news_title', 'News Title', 'trim|required');
-				$this->form_validation->set_rules('slug', 'Slug News', 'trim|required');
+				$this->form_validation->set_rules('news_style', 'Gaya Berita', 'trim|required');
 				$this->form_validation->set_rules('news_short_content', 'News Short Content', 'trim|required');
 				$this->form_validation->set_rules('news_content', 'News Content', 'trim|required');
 
@@ -205,7 +205,7 @@ class News extends CI_Controller
 						$form_data = array(
 							'news_title'         	=> $_POST['news_title'],
 							'news_title_idn'     	=> $_POST['news_title_idn'],
-							'slug'          	 	=> $_POST['slug'],
+							'news_style'          	=> $_POST['news_style'],
 							'news_content'       	=> $_POST['news_content'],
 							'news_content_idn'      => $_POST['news_content_idn'],
 							'news_short_content' 	=> $_POST['news_short_content'],
@@ -231,7 +231,7 @@ class News extends CI_Controller
 						$form_data = array(
 							'news_title'         	=> $_POST['news_title'],
 							'news_title_idn'     	=> $_POST['news_title_idn'],
-							'slug'          	 	=> $_POST['slug'],
+							'news_style'          	=> $_POST['news_style'],
 							'news_content'       	=> $_POST['news_content'],
 							'news_content_idn'      => $_POST['news_content_idn'],
 							'news_short_content' 	=> $_POST['news_short_content'],
