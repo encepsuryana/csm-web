@@ -175,20 +175,25 @@ DROP TABLE IF EXISTS `tbl_content_home`;
 
 CREATE TABLE `tbl_content_home` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `photo` varchar(255) NOT NULL,
-  `heading` varchar(255) NOT NULL,
-  `content` varchar(255) NOT NULL,
-  `link` varchar(255) NOT NULL,
+  `bg_download` varchar(100) NOT NULL,
+  `icon_download` varchar(100) NOT NULL,
+  `link_download` varchar(100) NOT NULL,
+  `bg_product` varchar(100) NOT NULL,
+  `icon_product` varchar(100) NOT NULL,
+  `link_product` varchar(100) NOT NULL,
+  `bg_career` varchar(100) NOT NULL,
+  `icon_career` varchar(100) NOT NULL,
+  `link_career` varchar(100) NOT NULL,
+  `bg_facility` varchar(100) NOT NULL,
+  `icon_facility` varchar(100) NOT NULL,
+  `link_facility` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_content_home` */
 
-insert  into `tbl_content_home`(`id`,`photo`,`heading`,`content`,`link`) values 
-(1,'content-home-1.png','fa-cloud-download','Company Profile','download'),
-(2,'content-home-2.png','fa-archive','Our Products','product'),
-(3,'content-home-3.png','fa-briefcase','Career','ciptasinergi-career.html'),
-(4,'content-home-4.png','fa-industry','Facility','facility');
+insert  into `tbl_content_home`(`id`,`bg_download`,`icon_download`,`link_download`,`bg_product`,`icon_product`,`link_product`,`bg_career`,`icon_career`,`link_career`,`bg_facility`,`icon_facility`,`link_facility`) values 
+(1,'bg-download.png','fa-cloud-download','download','bg-product.png','fa-archive','product','bg-career.png','fa-briefcase','ciptasinergi-career.html','bg-facility.png','fa-industry','facility');
 
 /*Table structure for table `tbl_content_home_company_profile` */
 
@@ -298,7 +303,7 @@ CREATE TABLE `tbl_language` (
   `eng` text NOT NULL,
   `idn` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=98 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_language` */
 
@@ -369,7 +374,7 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (66,'NEW_PRODUCT','New Product','Produk Baru'),
 (67,'TESTIMONIAL_SAY','What a Client Say','Apa yang klien katakan '),
 (68,'PRODUCT_HOME','Our Featured Products','Produk Unggulan Kami'),
-(69,'OUR_PARTNER','Our Partner','Partner Kami'),
+(69,'OUR_PARTNER','Our Customers','Pelanggan Kami'),
 (70,'OUR_FUTURE_PRODUCT','Our Products','Semua Produk Kami'),
 (71,'INSTITUTE','Institute / Company','Institut / Perusahaan'),
 (72,'HAVE_A_MORE_QUETIONS','Have more questions? Just Contact Us','Punya pertanyaan lain? Hubungi Kami'),
@@ -396,7 +401,11 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (93,'FUTURED_PRODUCT','Product futured','Produk Unggulan'),
 (94,'VISION_HEADING','Vision','Visi'),
 (95,'MISSION_HEADING','Mission','Misi'),
-(97,'SORRY_NOT_FOUND','Sorry, no content found.','Mohon maaf, pencarian tidak ditemukan.');
+(97,'SORRY_NOT_FOUND','Sorry, no content found.','Mohon maaf, pencarian tidak ditemukan.'),
+(98,'CH_COMPANY_PROFILE','Company Profile','Profil Perusahaan'),
+(99,'CH_OUR_PRODUCT','Our Product','Produk Kami'),
+(100,'CH_CAREER','Career','Karir'),
+(101,'CH_FACILITY','Facility','Fasilitas');
 
 /*Table structure for table `tbl_logging` */
 
@@ -411,7 +420,7 @@ CREATE TABLE `tbl_logging` (
   `log_ipaddress` varchar(15) DEFAULT NULL,
   `log_useragen` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_logging` */
 
@@ -469,7 +478,32 @@ insert  into `tbl_logging`(`log_id`,`log_time`,`log_user`,`log_tipe`,`log_desc`,
 (51,'2019-11-08 14:10:04','Encep Suryana',3,'[EDIT] Data: Company CEO diupdate pada Settings','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
 (52,'2019-11-08 16:40:47','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
 (53,'2019-11-08 16:41:00','Encep Suryana',3,'[EDIT] Data: Industrial Electronics diupdate pada Kategori Departemen Aviasi & Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
-(54,'2019-11-08 16:41:56','Encep Suryana',3,'[EDIT] Data: Industrial Electronics diupdate pada Kategori Departemen Aviasi & Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>');
+(54,'2019-11-08 16:41:56','Encep Suryana',3,'[EDIT] Data: Industrial Electronics diupdate pada Kategori Departemen Aviasi & Elektronik','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(55,'2019-11-12 08:37:13','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(56,'2019-11-12 08:37:45','Encep Suryana',3,'[EDIT] Database Bahasa Inggris diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(57,'2019-11-12 08:38:27','Encep Suryana',3,'[EDIT] Database Bahasa Indonesia diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(58,'2019-11-12 10:38:29','Encep Suryana',3,'[EDIT] Background Download diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(59,'2019-11-12 10:57:23','Encep Suryana',3,'[EDIT] Background Karir diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(60,'2019-11-12 10:57:45','Encep Suryana',3,'[EDIT] Background Karir diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(61,'2019-11-12 11:00:18','Encep Suryana',3,'[EDIT] Background Karir diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(62,'2019-11-12 11:00:25','Encep Suryana',3,'[EDIT] Background Karir diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(63,'2019-11-12 11:02:54','Encep Suryana',3,'[EDIT] Background Karir diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(64,'2019-11-12 13:30:50','Encep Suryana',3,'[EDIT] Label Profile Perusahaan diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(65,'2019-11-12 13:33:02','Encep Suryana',3,'[EDIT] Label Profile Perusahaan diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(66,'2019-11-12 13:33:27','Encep Suryana',3,'[EDIT] Label Profile Perusahaan diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(67,'2019-11-12 13:33:29','Encep Suryana',3,'[EDIT] Label Profile Perusahaan diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(68,'2019-11-12 13:46:49','Encep Suryana',3,'[EDIT] Label Profile Perusahaan diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(69,'2019-11-12 13:46:52','Encep Suryana',3,'[EDIT] Label Profile Perusahaan diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(70,'2019-11-12 13:49:03','Encep Suryana',3,'[EDIT] Label Profile Perusahaan diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(71,'2019-11-12 13:49:05','Encep Suryana',3,'[EDIT] Label Profile Perusahaan diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(72,'2019-11-12 13:49:12','Encep Suryana',3,'[EDIT] Label Profile Perusahaan diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(73,'2019-11-12 13:50:26','Encep Suryana',3,'[EDIT] Label Produk Kami diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(74,'2019-11-12 13:51:57','Encep Suryana',3,'[EDIT] Label Karir diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(75,'2019-11-12 13:52:01','Encep Suryana',3,'[EDIT] Label Fasilitas diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(76,'2019-11-12 13:52:27','Encep Suryana',3,'[EDIT] Label Produk Kami diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(77,'2019-11-12 13:52:29','Encep Suryana',3,'[EDIT] Label Produk Kami diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(78,'2019-11-12 13:52:33','Encep Suryana',3,'[EDIT] Label Karir diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(79,'2019-11-12 13:52:35','Encep Suryana',3,'[EDIT] Label Fasilitas diupdate pada Konten Utama','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>');
 
 /*Table structure for table `tbl_news` */
 
