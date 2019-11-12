@@ -2,7 +2,25 @@
 	<div class="container bannder-table" style="padding: 0;">
 		<div class="col-md-12" style="padding: 0;">
 			<div class="banner-text">
-				<h1><?php echo $news['news_title']; ?></h1>
+				<h1>
+					<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+						if ($news['news_title_idn'] == '') {
+							echo $news['news_title'];
+						} else {
+							echo $news['news_title_idn'];
+						}
+
+					} else {
+
+						if ($news['news_title'] == '') {
+							echo $news['news_title_idn'];
+						} else {
+							echo $news['news_title'];
+						}
+
+					}?>
+				</h1>
 			</div>
 		</div>
 	</div>
