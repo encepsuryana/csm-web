@@ -10,8 +10,9 @@ class Model_home extends CI_Model
     }
     public function get_content_home_data()
     {
-        $query = $this->db->query("SELECT * from tbl_content_home ORDER BY id ASC");
-        return $query->result_array();
+        $sql = 'SELECT * FROM tbl_content_home WHERE id=?';
+        $query = $this->db->query($sql,array(1));
+        return $query->first_row('array');
     }
     public function get_content_home_photo()
     {
@@ -36,69 +37,69 @@ class Model_home extends CI_Model
 
     public function get_aviation_electronics_data()
     {
-       $sql = "SELECT * 
-                FROM tbl_aviation_electronics t1
-                JOIN tbl_aviation_electronics_category t2
-                ON t1.category_id = t2.category_id
-                ORDER BY t1.id ASC";
-        $query = $this->db->query($sql);
-        return $query->result_array();
-    }
-    public function get_aviation_electronics_category()
-    {
-        $query = $this->db->query("SELECT * FROM tbl_aviation_electronics_category ORDER BY category_name ASC");
-        return $query->result_array();
-    }
-    
-    public function get_portfolio_category()
-    {
-        $query = $this->db->query("SELECT * FROM tbl_portfolio_category ORDER BY category_name ASC");
-        return $query->result_array();
-    }
-    public function get_portfolio_data()
-    {
-        $query = $this->db->query("SELECT * from tbl_portfolio");
-        return $query->result_array();
-    }
+     $sql = "SELECT * 
+     FROM tbl_aviation_electronics t1
+     JOIN tbl_aviation_electronics_category t2
+     ON t1.category_id = t2.category_id
+     ORDER BY t1.id ASC";
+     $query = $this->db->query($sql);
+     return $query->result_array();
+ }
+ public function get_aviation_electronics_category()
+ {
+    $query = $this->db->query("SELECT * FROM tbl_aviation_electronics_category ORDER BY category_name ASC");
+    return $query->result_array();
+}
 
-    public function get_testimonial_data()
-    {
-        $query = $this->db->query("SELECT * from tbl_testimonial ORDER BY id ASC");
-        return $query->result_array();
-    }
-    public function get_testimonial_photo()
-    {
-        $query = $this->db->query("SELECT * FROM tbl_testimonial_photo WHERE id=1");
-        return $query->result_array();
-    }
-    public function get_gallery_data()
-    {
-        $query = $this->db->query("SELECT * 
-            FROM tbl_photo
-            WHERE photo_show_home=?
-            ORDER BY photo_id ASC",array('Yes'));
-        return $query->result_array();
-    }
-    public function get_product_data()
-    {
-        $query = $this->db->query("SELECT * 
-            FROM tbl_product
-            WHERE product_show_home=?
-            ORDER BY product_id DESC",array('Yes'));
-        return $query->result_array();
-    }
+public function get_portfolio_category()
+{
+    $query = $this->db->query("SELECT * FROM tbl_portfolio_category ORDER BY category_name ASC");
+    return $query->result_array();
+}
+public function get_portfolio_data()
+{
+    $query = $this->db->query("SELECT * from tbl_portfolio");
+    return $query->result_array();
+}
 
-     public function get_product_data_star()
-    {
-        $query = $this->db->query("SELECT * 
-            FROM tbl_product
-            WHERE product_star=?
-            ORDER BY product_id DESC",array('Yes'));
-        return $query->result_array();
-    }
-    public function get_partner_data()
-    {
-        $query = $this->db->query("SELECT * FROM tbl_partner ORDER BY id ASC");
-        return $query->result_array();
-    }
+public function get_testimonial_data()
+{
+    $query = $this->db->query("SELECT * from tbl_testimonial ORDER BY id ASC");
+    return $query->result_array();
+}
+public function get_testimonial_photo()
+{
+    $query = $this->db->query("SELECT * FROM tbl_testimonial_photo WHERE id=1");
+    return $query->result_array();
+}
+public function get_gallery_data()
+{
+    $query = $this->db->query("SELECT * 
+        FROM tbl_photo
+        WHERE photo_show_home=?
+        ORDER BY photo_id ASC",array('Yes'));
+    return $query->result_array();
+}
+public function get_product_data()
+{
+    $query = $this->db->query("SELECT * 
+        FROM tbl_product
+        WHERE product_show_home=?
+        ORDER BY product_id DESC",array('Yes'));
+    return $query->result_array();
+}
+
+public function get_product_data_star()
+{
+    $query = $this->db->query("SELECT * 
+        FROM tbl_product
+        WHERE product_star=?
+        ORDER BY product_id DESC",array('Yes'));
+    return $query->result_array();
+}
+public function get_partner_data()
+{
+    $query = $this->db->query("SELECT * FROM tbl_partner ORDER BY id ASC");
+    return $query->result_array();
+}
 }

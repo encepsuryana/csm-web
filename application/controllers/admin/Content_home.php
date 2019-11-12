@@ -14,13 +14,16 @@ class content_home extends CI_Controller
 	public function index()
 	{
 		if ($this->session->userdata('role') == 'admin') {
-			$header['setting'] = $this->Model_header->get_setting_data();
+			$data['error'] = '';
+			$data['success'] = '';
 
-			$data['content_home'] = $this->Model_content_home->show();
+			$header['setting'] = $this->Model_header->get_setting_data();
+			$data['content_home'] = $this->Model_content_home->get_content_home();
 
 			$this->load->view('admin/view_header',$header);
 			$this->load->view('admin/view_content_home',$data);
 			$this->load->view('admin/view_footer');
+
 		} else {
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
@@ -30,102 +33,232 @@ class content_home extends CI_Controller
 		}
 	}
 
-	public function edit($id)
+	public function update()
 	{
 		if ($this->session->userdata('role') == 'admin') {
-
-			$tot = $this->Model_content_home->content_home_check($id);
-			if(!$tot) {
-				redirect(base_url().'admin/content-home');
-				exit;
-			}
-
-			$header['setting'] = $this->Model_header->get_setting_data();
 			$data['error'] = '';
 			$data['success'] = '';
-			$error = '';
 
-			if(isset($_POST['form1'])) 
-			{
+			$data['content_home'] = $this->Model_content_home->get_content_home();
+
+			if(isset($_POST['form_download'])) {
+				
 				$valid = 1;
-
-				$this->form_validation->set_rules('heading', 'Ikon', 'trim|required');
-				$this->form_validation->set_rules('content', 'Judul', 'trim|required');
-				$this->form_validation->set_rules('link', 'Link', 'trim|required');
-
-				if($this->form_validation->run() == FALSE) {
-					$valid = 0;
-					$error .= validation_errors();
-				}
-
-				$path = $_FILES['photo']['name'];
-				$path_tmp = $_FILES['photo']['tmp_name'];
-
+				$path = $_FILES['bg_download']['name'];
+				$path_tmp = $_FILES['bg_download']['tmp_name'];
 				if($path!='') {
 					$ext = pathinfo( $path, PATHINFO_EXTENSION );
 					$file_name = basename( $path, '.' . $ext );
 					$ext_check = $this->Model_header->extension_check_photo($ext);
 					if($ext_check == FALSE) {
 						$valid = 0;
-						$error .= 'Anda harus mengunggah file jpg, jpeg, gif atau png untuk foto unggulan<br>';
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
 					}
+				} else {
+					$valid = 0;
+					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+				if($valid == 1) {
 
-				if($valid == 1) 
-				{
-					$data['content_home'] = $this->Model_content_home->getData($id);
+					// removing the existing photo
+					unlink('./public/uploads/'.$data['content_home']['bg_download']);
 
-					if($path == '') {
-						$form_data = array(
-							'heading' => $_POST['heading'],
-							'content' => $_POST['content'],
-							'link'    => $_POST['link']
-						);
-						$this->Model_content_home->update($id,$form_data);
-					}
-					else {
-						unlink('./public/uploads/'.$data['content_home']['photo']);
+		    		// updating the data
+					$final_name = 'bg-download'.'.'.$ext;
+					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
-						$final_name = 'content-home-'.$id.'.'.$ext;
-						move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
-
-						$form_data = array(
-							'photo'   => $final_name,
-							'heading' => $_POST['heading'],
-							'content' => $_POST['content'],
-							'link'    => $_POST['link']
-						);
-						$this->Model_content_home->update($id,$form_data);
-					}
+					$form_data = array(
+						'bg_download' => $final_name
+					);
+					$this->Model_content_home->update($form_data);
 
 					//Add Log User
-					helper_log("edit", '[EDIT] Data: '.$_POST['content'].' Berhasil diupdate');
+					helper_log("edit", '[EDIT] Background Download diupdate pada Konten Utama');
 
-					$data['success'] = ' Konten Beranda telah berhasil diupdate';
-				}
-				else
-				{
-					$data['error'] = $error;
-				}
-
-				$data['content_home'] = $this->Model_content_home->getData($id);
-
-				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_content_home_edit',$data);
-				$this->load->view('admin/view_footer');
-
-			} else {
-				$data['content_home'] = $this->Model_content_home->getData($id);
-				$this->load->view('admin/view_header',$header);
-				$this->load->view('admin/view_content_home_edit',$data);
-				$this->load->view('admin/view_footer');
+					$data['success'] = 'Background Download telah berhasil diupdate!';    	
+				}        	
 			}
+
+			if(isset($_POST['form_product'])) {
+				
+				$valid = 1;
+				$path = $_FILES['bg_product']['name'];
+				$path_tmp = $_FILES['bg_product']['tmp_name'];
+				if($path!='') {
+					$ext = pathinfo( $path, PATHINFO_EXTENSION );
+					$file_name = basename( $path, '.' . $ext );
+					$ext_check = $this->Model_header->extension_check_photo($ext);
+					if($ext_check == FALSE) {
+						$valid = 0;
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
+					}
+				} else {
+					$valid = 0;
+					$data['error'] = 'Anda harus memilih foto<br>';
+				}
+				if($valid == 1) {
+
+					// removing the existing photo
+					unlink('./public/uploads/'.$data['content_home']['bg_product']);
+
+		    		// updating the data
+					$final_name = 'bg-product'.'.'.$ext;
+					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
+
+					$form_data = array(
+						'bg_product' => $final_name
+					);
+					$this->Model_content_home->update($form_data);
+
+					//Add Log User
+					helper_log("edit", '[EDIT] Background Produk diupdate pada Konten Utama');
+
+					$data['success'] = 'Background Produk telah berhasil diupdate!';    	
+				}        	
+			}
+
+			if(isset($_POST['form_career'])) {
+				
+				$valid = 1;
+				$path = $_FILES['bg_career']['name'];
+				$path_tmp = $_FILES['bg_career']['tmp_name'];
+				if($path!='') {
+					$ext = pathinfo( $path, PATHINFO_EXTENSION );
+					$file_name = basename( $path, '.' . $ext );
+					$ext_check = $this->Model_header->extension_check_photo($ext);
+					if($ext_check == FALSE) {
+						$valid = 0;
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
+					}
+				} else {
+					$valid = 0;
+					$data['error'] = 'Anda harus memilih foto<br>';
+				}
+				if($valid == 1) {
+
+					// removing the existing photo
+					unlink('./public/uploads/'.$data['content_home']['bg_career']);
+
+		    		// updating the data
+					$final_name = 'bg-career'.'.'.$ext;
+					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
+
+					$form_data = array(
+						'bg_career' => $final_name
+					);
+					$this->Model_content_home->update($form_data);
+
+					//Add Log User
+					helper_log("edit", '[EDIT] Background Karir diupdate pada Konten Utama');
+
+					$data['success'] = 'Background Karir telah berhasil diupdate!';    	
+				}        	
+			}
+
+			if(isset($_POST['form_facility'])) {
+				
+				$valid = 1;
+				$path = $_FILES['bg_facility']['name'];
+				$path_tmp = $_FILES['bg_facility']['tmp_name'];
+				if($path!='') {
+					$ext = pathinfo( $path, PATHINFO_EXTENSION );
+					$file_name = basename( $path, '.' . $ext );
+					$ext_check = $this->Model_header->extension_check_photo($ext);
+					if($ext_check == FALSE) {
+						$valid = 0;
+						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
+					}
+				} else {
+					$valid = 0;
+					$data['error'] = 'Anda harus memilih foto<br>';
+				}
+				if($valid == 1) {
+
+					// removing the existing photo
+					unlink('./public/uploads/'.$data['content_home']['bg_facility']);
+
+		    		// updating the data
+					$final_name = 'bg-facility'.'.'.$ext;
+					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
+
+					$form_data = array(
+						'bg_facility' => $final_name
+					);
+					$this->Model_content_home->update($form_data);
+
+					//Add Log User
+					helper_log("edit", '[EDIT] Background Fasilitas diupdate pada Konten Utama');
+
+					$data['success'] = 'Background Fasilitas telah berhasil diupdate!';    	
+				}        	
+			}
+
+			if(isset($_POST['label_download'])) {			
+				$form_data = array(
+					'icon_download'	=> $_POST['icon_download'],
+					'link_download' => $_POST['link_download']
+				);
+				$this->Model_content_home->update($form_data);
+
+				//Add Log User
+				helper_log("edit", '[EDIT] Label Profil Perusahaan diupdate pada Konten Utama');        	
+				
+				$data['success'] = 'Label Profil Perusahaan telah berhasil diupdate!';
+			}
+
+			if(isset($_POST['label_product'])) {			
+				$form_data = array(
+					'icon_product'	=> $_POST['icon_product'],
+					'link_product'	=> $_POST['link_product']
+				);
+				$this->Model_content_home->update($form_data);
+
+				//Add Log User
+				helper_log("edit", '[EDIT] Label Produk Kami diupdate pada Konten Utama');        	
+				
+				$data['success'] = 'Label Produk Kami telah berhasil diupdate!';
+			}
+
+			if(isset($_POST['label_career'])) {			
+				$form_data = array(
+					'icon_career'	=> $_POST['icon_career'],
+					'link_career'	=> $_POST['link_career']
+				);
+				$this->Model_content_home->update($form_data);
+
+				//Add Log User
+				helper_log("edit", '[EDIT] Label Karir diupdate pada Konten Utama');        	
+				
+				$data['success'] = 'Label Karir telah berhasil diupdate!';
+			}
+
+			if(isset($_POST['label_facility'])) {			
+				$form_data = array(
+					'icon_facility'	=> $_POST['icon_facility'],
+					'link_facility'	=> $_POST['link_facility']
+				);
+				$this->Model_content_home->update($form_data);
+
+				//Add Log User
+				helper_log("edit", '[EDIT] Label Fasilitas diupdate pada Konten Utama');        	
+				
+				$data['success'] = 'Label Fasilitas telah berhasil diupdate!';
+			}
+
+			$header['setting'] = $this->Model_header->get_setting_data();
+			$data['content_home'] = $this->Model_content_home->get_content_home();
+			$this->load->view('admin/view_header',$header);
+			$this->load->view('admin/view_content_home',$data);
+			$this->load->view('admin/view_footer');
+
 		} else {
+
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
 				show_404();
 			}
+
 		}
 	}
 	

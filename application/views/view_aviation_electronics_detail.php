@@ -13,7 +13,7 @@
 					<li class="gro" style="padding-right: 0; padding-top: 5px;">
 						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
-						<a href="<?php echo base_url(); ?>aviation-electronics-department"><span><?php echo AVIATION_ELECTRONICS; ?></span></a>
+						<a href="<?php echo base_url(); ?>aviation-electronics-department"><span><?php echo AVIATION_ELECTRONICS_TITLE; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
 						<a href="<?php echo base_url(); ?>aviation-electronics-department/post/<?php echo $aviation_electronics['slug_electronics']; ?>"><span><?php echo $aviation_electronics['name']; ?></span></a>
 					</li>
@@ -98,7 +98,7 @@
 			<div class="col-lg-3 col-md-4">
 				<div class="sidebar">
 					<div class="sidebar-item category">
-						<h3><?php echo AVIATION_ELECTRONICS; ?></h3>
+						<h3><?php echo AVIATION_ELECTRONICS_TITLE; ?></h3>
 						<ul>
 							<?php
 							foreach ($aviation_electronics_order_by_name as $row) {

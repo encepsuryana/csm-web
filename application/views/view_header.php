@@ -28,7 +28,7 @@
 			define($lang['name'], $lang['eng']);
 		}
 	}
-	
+
 	if($slug_arr[0] == '')
 	{
 		echo '<meta name="description" content="'.$page['md_home'].'">';
@@ -472,6 +472,12 @@
 								<i class="fa fa-envelope-o" aria-hidden="true"></i>
 								<span title="<?php echo COMPANY_EMAIL; ?>" data-toggle="tooltip" data-placement="bottom"><a href="mailto:<?php echo $setting['top_bar_email']; ?>"><?php echo $setting['top_bar_email']; ?></a></span>
 							</li>
+							<li>
+								<img src="<?php echo base_url(); ?>public/img/icon_png/idn.png" alt="Indonesia"> <span title="Indoneisa" data-toggle="tooltip" data-placement="bottom"> <?php echo anchor ('language/change/idn','Indonesia');?> </span>
+							</li>
+							<li>
+								<img src="<?php echo base_url(); ?>public/img/icon_png/eng.png" alt="Indonesia"> <span title="English" data-toggle="tooltip" data-placement="bottom"> <?php echo anchor ('language/change/eng','English');?> </span>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -689,28 +695,6 @@
 								</li>
 
 								<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
-
-								<li class="menu-item-has-children">
-									<a href="javascript:void();">
-										<i class="fa fa-globe" aria-hidden="true"></i> 
-										<span>
-											<?php if ($this->session->userdata('language') == 'eng') {
-												echo "English";
-											} else {
-												echo "Indonesia";
-											}?>
-										</span>
-									</a>
-
-									<ul class="sub-menu">
-										<li>
-											<?php echo anchor ('language/change/eng','English');?>
-										</li>
-										<li>
-											<?php echo anchor ('language/change/idn','Indonesia');?>
-										</li>
-									</ul>
-								</li>
 							</ul>
 						</div>
 					</div>

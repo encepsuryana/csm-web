@@ -143,22 +143,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-6 btn-home">
-				<ul>												
-					<li>
-						<?php
-						foreach ($content_home as $row) {
-							?>
-							<a target="_blank" href="<?php echo base_url().$row['link']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>);" alt="<?php echo $row['photo']; ?>" href="#">
 
-								<i class="fa <?php echo $row['heading']; ?>" aria-hidden="true"></i> 
-								<span><?php echo $row['content']; ?></span>
+				<li>
+					<a target="_blank" href="<?php echo base_url(); ?><?php echo $content_home['link_download']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $content_home['bg_download']; ?>);" alt="<?php echo $content_home['bg_download']; ?>">
 
-							</a>
-							<?php
-						}
-						?>
-					</li>
-				</ul>
+						<i class="fa <?php echo $content_home['icon_download']; ?>" aria-hidden="true"></i> 
+						<span><?php echo CH_COMPANY_PROFILE; ?></span>
+
+					</a>
+					<a target="_blank" href="<?php echo base_url(); ?><?php echo $content_home['link_product']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $content_home['bg_product']; ?>);" alt="<?php echo $content_home['bg_product']; ?>">
+
+						<i class="fa <?php echo $content_home['icon_product']; ?>" aria-hidden="true"></i> 
+						<span><?php echo CH_OUR_PRODUCT; ?></span>
+
+					</a>
+					<a target="_blank" href="<?php echo base_url(); ?><?php echo $content_home['link_career']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $content_home['bg_career']; ?>);" alt="<?php echo $content_home['bg_career']; ?>">
+
+						<i class="fa <?php echo $content_home['icon_career']; ?>" aria-hidden="true"></i> 
+						<span><?php echo CH_CAREER; ?></span>
+
+					</a>
+					<a target="_blank" href="<?php echo base_url(); ?><?php echo $content_home['link_facility']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $content_home['bg_facility']; ?>);" alt="<?php echo $content_home['bg_facility']; ?>">
+
+						<i class="fa <?php echo $content_home['icon_facility']; ?>" aria-hidden="true"></i> 
+						<span><?php echo CH_FACILITY; ?></span>
+
+					</a>
+				</li>
+				
 			</div>
 		</div>
 	</div>
