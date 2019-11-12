@@ -1,7 +1,13 @@
 <div class="footer-copyrignt">
 	<div class="container" style="width: 100%">
 		<div class="row">
-			<div class="col-md-6">
+
+			<div class="col-md-5">
+				<div class="footer-contact-item">
+					<ul>
+						<li><h4><?php echo nl2br($setting['general_companyname']); ?></h4></li>
+					</ul>
+				</div>
 				<div class="footer-social">
 					<ul>
 						<?php
@@ -18,23 +24,28 @@
 				<div class="footer-contact-item">
 					<ul>
 						<li>
-							<h4><?php echo nl2br($setting['general_companyname']); ?></h4>
 							<p>
-								<i class="fa fa-map-marker" aria-hidden="true"></i>
 								<span><?php echo nl2br($setting['footer_address']); ?></span>
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
 							</p>
 						</li>
 					</ul>
 					<ul>
 						<li>
 							<p>
-								<i class="fa fa-phone" aria-hidden="true"></i> <span><?php echo nl2br($setting['footer_phone']); ?></span>
+								<span><?php echo nl2br($setting['footer_phone']); ?></span>
+								<i class="fa fa-phone" aria-hidden="true"></i>
 							</p>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<div class="col-md-6">
+
+			<div class="col-md-3">
+				<img src="https://s01.flagcounter.com/count2/k3Ul/bg_134595/txt_FFFFFF/border_134595/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0" style="margin-top: 5px;">
+			</div>
+
+			<div class="col-md-4">
 				<div class="copyright-text">
 					<p><?php echo $setting['footer_copyright']; ?></p>
 				</div>

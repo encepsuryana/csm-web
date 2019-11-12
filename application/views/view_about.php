@@ -29,10 +29,12 @@
 			<?php endif; ?>
 
 			<div class="col-md-12">
-				<h3><?php echo ABOUT_COMPANY; ?></h3>
-				<p>
+				<div class="about_heading">
+					<h3><?php echo ABOUT_COMPANY; ?></h3>
+				</div>
+				<div class="about_style">
 					<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-						
+
 						if ($page['about_content_idn'] == '') {
 							echo $page['about_content'];
 						} else {
@@ -48,7 +50,7 @@
 						}
 
 					}?>
-				</p>
+				</div>
 			</div>
 			<div class="container">
 				<div class="col-sm-2 about-fade" style="padding-left: 0;">
