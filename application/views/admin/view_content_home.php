@@ -47,7 +47,7 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/update',array('class' => 'form-horizontal')); ?>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Latar tersedia </label>
-								<div class="col-sm-9" style="padding-top:5px;">
+								<div class="col-sm-4" style="padding-top:5px;">
 									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $content_home['bg_download']; ?>" alt="Latar Download" style="width:100px;background: #ddd;padding:5px;">
 								</div>
 							</div>
@@ -69,13 +69,13 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/update',array('class' => 'form-horizontal')); ?>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Icon <span>*</span></label>
-								<div class="col-sm-9">
+								<div class="col-sm-4">
 									<input type="text" class="form-control" name="icon_download" value="<?php echo $content_home['icon_download']; ?>">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Link <span>*</span></label>
-								<div class="col-sm-9">
+								<div class="col-sm-4">
 									<input type="text" class="form-control" name="link_download" value="<?php echo $content_home['link_download']; ?>">
 								</div>
 							</div>
@@ -93,7 +93,7 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/update',array('class' => 'form-horizontal')); ?>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Latar tersedia </label>
-								<div class="col-sm-9" style="padding-top:5px;">
+								<div class="col-sm-4" style="padding-top:5px;">
 									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $content_home['bg_product']; ?>" alt="Latar Produk" style="width:100px;background: #ddd;padding:5px;">
 								</div>
 							</div>
@@ -115,13 +115,13 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/update',array('class' => 'form-horizontal')); ?>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Icon <span>*</span></label>
-								<div class="col-sm-9">
+								<div class="col-sm-4">
 									<input type="text" class="form-control" name="icon_product" value="<?php echo $content_home['icon_product']; ?>">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Link <span>*</span></label>
-								<div class="col-sm-9">
+								<div class="col-sm-4">
 									<input type="text" class="form-control" name="link_product" value="<?php echo $content_home['link_product']; ?>">
 								</div>
 							</div>
@@ -139,7 +139,7 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/update',array('class' => 'form-horizontal')); ?>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Latar tersedia </label>
-								<div class="col-sm-9" style="padding-top:5px;">
+								<div class="col-sm-4" style="padding-top:5px;">
 									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $content_home['bg_career']; ?>" alt="Latar Karir" style="width:100px;background: #ddd;padding:5px;">
 								</div>
 							</div>
@@ -161,13 +161,13 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/update',array('class' => 'form-horizontal')); ?>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Icon <span>*</span></label>
-								<div class="col-sm-9">
+								<div class="col-sm-4">
 									<input type="text" class="form-control" name="icon_career" value="<?php echo $content_home['icon_career']; ?>">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Link <span>*</span></label>
-								<div class="col-sm-9">
+								<div class="col-sm-4">
 									<input type="text" class="form-control" name="link_career" value="<?php echo $content_home['link_career']; ?>">
 								</div>
 							</div>
@@ -185,7 +185,7 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/update',array('class' => 'form-horizontal')); ?>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Latar tersedia </label>
-								<div class="col-sm-9" style="padding-top:5px;">
+								<div class="col-sm-4" style="padding-top:5px;">
 									<img src="<?php echo base_url(); ?>public/uploads/<?php echo $content_home['bg_facility']; ?>" alt="Latar Fasilitas" style="width:100px;background: #ddd;padding:5px;">
 								</div>
 							</div>
@@ -207,13 +207,13 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/content-home/update',array('class' => 'form-horizontal')); ?>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Icon <span>*</span></label>
-								<div class="col-sm-9">
+								<div class="col-sm-4">
 									<input type="text" class="form-control" name="icon_facility" value="<?php echo $content_home['icon_facility']; ?>">
 								</div>
 							</div>
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Link <span>*</span></label>
-								<div class="col-sm-9">
+								<div class="col-sm-4">
 									<input type="text" class="form-control" name="link_facility" value="<?php echo $content_home['link_facility']; ?>">
 								</div>
 							</div>
