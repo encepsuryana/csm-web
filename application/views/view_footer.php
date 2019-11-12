@@ -25,16 +25,16 @@
 					<ul>
 						<li>
 							<p>
-								<span><?php echo nl2br($setting['footer_address']); ?></span>
 								<i class="fa fa-map-marker" aria-hidden="true"></i>
+								<span><?php echo nl2br($setting['footer_address']); ?></span>
 							</p>
 						</li>
 					</ul>
 					<ul>
 						<li>
 							<p>
-								<span><?php echo nl2br($setting['footer_phone']); ?></span>
 								<i class="fa fa-phone" aria-hidden="true"></i>
+								<span><?php echo nl2br($setting['footer_phone']); ?></span>
 							</p>
 						</li>
 					</ul>

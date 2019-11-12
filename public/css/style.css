@@ -2460,7 +2460,7 @@ span.page-numbers.current {
 /*Footer-Contact*/
 
 .footer-social {
-	text-align: right;
+	text-align: left;
 }
 
 .footer-social ul{
@@ -2604,8 +2604,8 @@ span.page-numbers.current {
 }
 
 .footer-contact-item ul span {
-	margin-right: 5px;
-	font-size: 13px;
+	margin-left: 5px;
+	font-size: 12px;
 }
 
 .footer-contact-area {
@@ -2616,7 +2616,7 @@ span.page-numbers.current {
 
 .footer-contact-item {
 	margin-top: 5px;
-	text-align: right;
+	text-align: left;
 }
 
 .footer-contact-item ul {
@@ -2757,7 +2757,7 @@ span.page-numbers.current {
 .copyright-text p {
 	color: #fff;
 	margin: 0;
-	margin-top: 75px;
+	margin-top: 95px;
 	text-align: right;
 	margin-right: 60px;
 }
