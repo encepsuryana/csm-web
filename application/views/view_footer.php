@@ -42,7 +42,7 @@
 			</div>
 
 			<div class="col-md-3">
-				<img src="https://s01.flagcounter.com/count2/k3Ul/bg_134595/txt_FFFFFF/border_134595/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0" style="margin-top: 5px;">
+				<img src="https://s01.flagcounter.com/count2/k3Ul/bg_134595/txt_FFFFFF/border_134595/columns_2/maxflags_10/viewers_<?php echo VISITOR;?>/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0" style="margin-top: 5px;">
 			</div>
 
 			<div class="col-md-4">
