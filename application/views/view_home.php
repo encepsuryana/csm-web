@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="slider-animated">
 								<h2>
 									<?php 
-									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+									if (empty($this->session->userdata('language')) or ($this->session->userdata('language') == 'idn')) {
 
 										if ($row['heading_idn'] == "") {
 											echo $row['heading'];
