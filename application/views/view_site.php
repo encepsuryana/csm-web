@@ -84,46 +84,46 @@
 					</div>
 					<div class="col-md-4">
 						<ul>
-							<li><a href="<?php echo base_url(); ?>electronic-division"><?php echo ELECTRONICS_DIVISION; ?></a>
+							<li><a href="<?php echo base_url(); ?>aviation-electronics-department"><?php echo AVIATION_ELECTRONICS_TITLE; ?></a>
 								<ul>
 									<li>
-										<a href="<?php echo base_url(); ?>electronics-division">AVIATION ELECTRONICS</a>
+										<a href="<?php echo base_url(); ?>aviation-electronics-department">AVIATION ELECTRONICS</a>
 										<ul>
 											<li>
-												<a href="<?php echo base_url(); ?>electronics-division/post/display-systems-multi-function-display-mfd-moving-map-display-etc.html">Display systems Multi-Function Display-MFD Moving Map Display etc</a>
+												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/display-systems-multi-function-display-mfd-moving-map-display-etc.html">Display systems Multi-Function Display-MFD Moving Map Display etc</a>
 											</li>
 											<li>
-												<a href="<?php echo base_url(); ?>electronics-division/post/mission-computers.html">Mission computers</a>
+												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/mission-computers.html">Mission computers</a>
 											</li>
 											<li>
-												<a href="<?php echo base_url(); ?>electronics-division/post/sensor-interface-units.html">Sensor interface units</a>
+												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/sensor-interface-units.html">Sensor interface units</a>
 											</li>
 										</ul>
 									</li>
 									<li>
-										<a href="<?php echo base_url(); ?>electronics-division">DEFENSE ELECTRONICS</a>
+										<a href="<?php echo base_url(); ?>aviation-electronics-department">DEFENSE ELECTRONICS</a>
 										<ul>
 											<li>
-												<a href="<?php echo base_url(); ?>electronics-division/post/ruggedized-electronic-controllers.html">Ruggedized electronic controllers</a>
+												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/ruggedized-electronic-controllers.html">Ruggedized electronic controllers</a>
 											</li>
 											<li>
-												<a href="<?php echo base_url(); ?>electronics-division/post/harsh-environmental-power-drivers.html">Harsh environmental power drivers</a>
+												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/harsh-environmental-power-drivers.html">Harsh environmental power drivers</a>
 												
 											</li>
 										</ul>
 									</li>
 									<li>
-										<a href="<?php echo base_url(); ?>electronics-division">INDUSTRIAL ELECTRONICS</a>
+										<a href="<?php echo base_url(); ?>aviation-electronics-department">INDUSTRIAL ELECTRONICS</a>
 										<ul>
 											<li>
-												<a href="<?php echo base_url(); ?>electronics-division/post/plc-controller-design-and-implementations.html">PLC Controller design and implementations</a>
+												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/plc-controller-design-and-implementations.html">PLC Controller design and implementations</a>
 											</li>
 											<li>
-												<a href="<?php echo base_url(); ?>electronics-division/post/power-electronics-design-and-manufacturing.html">Power electronics design and manufacturing</a>
+												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/power-electronics-design-and-manufacturing.html">Power electronics design and manufacturing</a>
 												
 											</li>
 											<li>
-												<a href="<?php echo base_url(); ?>electronics-division/post/man-machine-interface.html">Man-Machine Interface</a>
+												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/man-machine-interface.html">Man-Machine Interface</a>
 												
 											</li>
 										</ul>
@@ -140,6 +140,21 @@
 									<li>
 										<a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a>
 
+									</li>
+									<li>
+										<a href="<?php echo base_url(); ?>download"><?php echo DOWNLOAD; ?></a>
+
+										<ul>
+											<li>
+												<a href="<?php echo base_url();?>download/file-mechanic"><?php echo COMPANY_PROFILE_ENGINEERING; ?></a>
+											</li>
+											<li>
+												<a href="<?php echo base_url();?>download/file-electronic"><?php echo COMPANY_PROFILE_AVIATION_ELECTRONICS; ?></a>
+											</li>
+											<li>
+												<a href="<?php echo base_url();?>download/file-mechanic-electronic"><?php echo COMPANY_PROFILE_EN_DE; ?></a>
+											</li>
+										</ul>
 									</li>
 								</ul>
 							</li>

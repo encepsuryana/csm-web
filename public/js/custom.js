@@ -142,8 +142,8 @@
 		}
 	});
 	
-	//Brand
-	$('.brand-carousel').owlCarousel({
+	//customers
+	$('.customers-carousel').owlCarousel({
 		loop: false,
 		autoplay: true,
 		autoplayHoverPause: true,

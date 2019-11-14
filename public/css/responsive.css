@@ -57,7 +57,8 @@
 	.btn-home {
 		top: 0;
 	}
-	
+	.footer-visitor,
+	.footer-contact-item,
 	.footer-social,
 	.copyright-text p,
 	.link-footer p {
@@ -177,6 +178,8 @@
 	.product-desc p {
 		bottom: -90%;
 	}
+
+	.footer-visitor,
 	.footer-contact-item,
 	.menu-link-content,
 	.blog-author,
@@ -281,7 +284,7 @@
 	.slider-animated ul {
 		margin-left: 0;
 	}
-	.brand-area h3,
+	.customers-area h3,
 	.content-home h3 {
 		vertical-align: middle;
 		text-align: center;
@@ -303,7 +306,7 @@
 	.counter-item {
 		margin-top: 30px;
 	}
-	.brand-area {
+	.customers-area {
 		margin-top: 50px;
 	}
 	.home-maps-main iframe {
@@ -407,7 +410,7 @@
 	}
 	.team-carousel.owl-carousel .owl-nav,
 	.blog-carousel.owl-carousel .owl-nav,
-	.brand-carousel.owl-carousel .owl-nav {
+	.customers-carousel.owl-carousel .owl-nav {
 		left: -20px;
 		width: 112%;
 	}
@@ -415,8 +418,8 @@
 	.team-carousel.owl-carousel .owl-nav .owl-next,
 	.blog-carousel.owl-carousel .owl-nav .owl-prev,
 	.blog-carousel.owl-carousel .owl-nav .owl-next,
-	.brand-carousel.owl-carousel .owl-nav .owl-prev,
-	.brand-carousel.owl-carousel .owl-nav .owl-next {
+	.customers-carousel.owl-carousel .owl-nav .owl-prev,
+	.customers-carousel.owl-carousel .owl-nav .owl-next {
 		width: 28px;
 		height: 28px;
 		line-height: 26px;
@@ -453,6 +456,7 @@
 	.product-desc p {
 		bottom: -90%;
 	}
+
 	.footer-contact-item,
 	.menu-link-content,
 	.blog-author,
@@ -534,7 +538,7 @@
 	.slider-animated ul {
 		margin-left: 0;
 	}
-	.brand-area h3,
+	.customers-area h3,
 	.content-home h3 {
 		vertical-align: middle;
 		text-align: center;
@@ -556,7 +560,7 @@
 	.counter-item {
 		margin-top: 30px;
 	}
-	.brand-area {
+	.customers-area {
 		margin-top: 50px;
 	}
 	.home-maps-main iframe{
@@ -631,6 +635,7 @@
 	.product-desc p {
 		bottom: -90%;
 	}
+	.footer-visitor,
 	.footer-contact-item,
 	.menu-link-content,
 	.blog-author,
@@ -718,7 +723,7 @@
 		vertical-align: middle;
 		text-align: center;
 	}
-	.brand-area h3,
+	.customers-area h3,
 	.content-home h3 {
 		vertical-align: middle;
 		text-align: center;
@@ -740,7 +745,7 @@
 	.counter-item {
 		margin-top: 30px;
 	}
-	.brand-area {
+	.customers-area {
 		margin-top: 50px;
 	}
 	.home-maps-main iframe{

@@ -257,7 +257,7 @@
 		.lightbox-item:hover .lightbox-icon,
 		.process-row::before,
 		.csm-blog-home,
-		.footer-copyrignt,
+		.footer-copyright,
 		.mean-container .mean-bar,
 		.faq-gallery .panel-group .panel-heading a:after,
 		.services-text,
@@ -284,7 +284,7 @@
 		.caption-product-area h3,
 		.recent-text h4,
 		.slider-animated li:last-child a,
-		.brand-area h3,
+		.customers-area h3,
 		.banner-text h1,
 		.counter-item a,
 		.content-home h3,
@@ -296,10 +296,10 @@
 		.team-carousel.owl-carousel .owl-nav .owl-next,
 		.blog-carousel.owl-carousel .owl-nav .owl-prev, 
 		.blog-carousel.owl-carousel .owl-nav .owl-next,
-		.brand-carousel.owl-carousel .owl-nav .owl-prev, 
-		.brand-carousel.owl-carousel .owl-nav .owl-next,
-		.brand-carousel.owl-carousel .owl-nav .owl-prev:hover, 
-		.brand-carousel.owl-carousel .owl-nav .owl-next:hover {
+		.customers-carousel.owl-carousel .owl-nav .owl-prev, 
+		.customers-carousel.owl-carousel .owl-nav .owl-next,
+		.customers-carousel.owl-carousel .owl-nav .owl-prev:hover, 
+		.customers-carousel.owl-carousel .owl-nav .owl-next:hover {
 			color: #<?php echo $setting['theme_color_1']; ?>!important;
 		}
 		.team-carousel.owl-carousel .owl-nav .owl-prev, 

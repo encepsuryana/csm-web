@@ -342,7 +342,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="container recent-works">
 		<h3>
 			<?php echo FACILITY; ?>
-			<div class="recent-menu">
+			<div class="recent-menu recent-facility">
 				<ul>
 					<li data-filter="all"><?php echo ALL; ?></li>
 					<?php
@@ -464,16 +464,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 </div>
 
-<div class="brand-area">
+<div class="customers-area">
 	<div class="container">
 		<h3><?php echo OUR_PARTNER; ?></h3>
 		<div class="row">
 			<div class="col-md-12">
-				<div class="brand-carousel owl-carousel">					
+				<div class="customers-carousel owl-carousel">					
 					<?php
 					foreach ($partner as $row) {
 						?>
-						<div class="brand-item" style="background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>)">
+						<div class="customers-item">
+
+							<img src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>" alt="">
+							<div class="customers-text">
+								<?php echo $row['name'];?>	
+							</div>
+
 						</div>
 						<?php
 					}

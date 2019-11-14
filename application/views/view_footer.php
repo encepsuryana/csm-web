@@ -1,13 +1,8 @@
-<div class="footer-copyrignt">
+<div class="footer-copyright">
 	<div class="container" style="width: 100%">
 		<div class="row">
 
 			<div class="col-md-8">
-				<div class="footer-contact-item">
-					<ul>
-						<li><h4><?php echo nl2br($setting['general_companyname']); ?></h4></li>
-					</ul>
-				</div>
 				<div class="footer-social">
 					<ul>
 						<?php
@@ -39,14 +34,18 @@
 						</li>
 					</ul>
 				</div>
+				<div class="footer-contact-item">
+					<ul>
+						<li><h4><?php echo $setting['footer_copyright']; ?></h4></li>
+					</ul>
+				</div>
 			</div>
 
 			<div class="col-md-4">
-				<img src="https://s01.flagcounter.com/count2/k3Ul/bg_134595/txt_FFFFFF/border_134595/columns_2/maxflags_10/viewers_<?php echo VISITOR;?>/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0" style="margin: 5px 0; margin-left: 40px;">
-
-				<div class="copyright-text">
-					<p><?php echo $setting['footer_copyright']; ?></p>
+				<div class="footer-visitor">
+					<img src="https://s01.flagcounter.com/count2/k3Ul/bg_134595/txt_FFFFFF/border_134595/columns_2/maxflags_10/viewers_<?php echo VISITOR;?>/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0">
 				</div>
+
 				<div class="link-footer">
 					<p>
 						<a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a> | <a href="<?php echo base_url(); ?>terms-and-conditions"><?php echo TERMS_AND_CONDITIONS; ?></a> | <a href="<?php echo base_url(); ?>privacy-policy"><?php echo PRIVACY_POLICY; ?> | <a href="<?php echo base_url(); ?>site-maps"><?php echo SITE_MAPS; ?></a>

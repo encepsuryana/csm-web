@@ -1698,7 +1698,7 @@ div.wpcf7-response-output {
 	color: #f8be2e;
 }
 
-/*brand-carousel Button*/
+/*customers-carousel Button*/
 
 .blog-carousel.owl-carousel .owl-nav {
 	position: absolute;
@@ -1784,9 +1784,9 @@ span.page-numbers.current {
 }
 
 
-/*Brand-Area*/
+/*customers-Area*/
 
-.brand-item {
+.customers-item {
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -1794,9 +1794,9 @@ span.page-numbers.current {
 	margin-top: 30px;
 }
 
-/*brand-carousel Button*/
+/*customers-carousel Button*/
 
-.brand-carousel.owl-carousel .owl-nav {
+.customers-carousel.owl-carousel .owl-nav {
 	position: absolute;
 	width: 85px;
 	top: 0;
@@ -1808,8 +1808,8 @@ span.page-numbers.current {
 	-webkit-transition: all 0.3s;
 }
 
-.brand-carousel.owl-carousel .owl-nav .owl-prev,
-.brand-carousel.owl-carousel .owl-nav .owl-next {
+.customers-carousel.owl-carousel .owl-nav .owl-prev,
+.customers-carousel.owl-carousel .owl-nav .owl-next {
 	text-align: center;
 	display: inline-block;
 	width: 36px;
@@ -1824,24 +1824,24 @@ span.page-numbers.current {
 	-webkit-transition: all 0.3s;
 }
 
-.brand-area:hover .owl-nav,
-.brand-area:hover .owl-nav {
+.customers-area:hover .owl-nav,
+.customers-area:hover .owl-nav {
 	right: 0;
 	visibility: visible;
 	opacity: 1;
 }
 
-.brand-carousel.owl-carousel .owl-nav .owl-prev {
+.customers-carousel.owl-carousel .owl-nav .owl-prev {
 	left: 0px;
 }
 
-.brand-carousel.owl-carousel .owl-nav .owl-next {
+.customers-carousel.owl-carousel .owl-nav .owl-next {
 	position: absolute;
 	right: 0px;
 }
 
-.brand-carousel.owl-carousel .owl-nav .owl-prev:hover,
-.brand-carousel.owl-carousel .owl-nav .owl-next:hover {
+.customers-carousel.owl-carousel .owl-nav .owl-prev:hover,
+.customers-carousel.owl-carousel .owl-nav .owl-next:hover {
 	color: #f8be2e;
 	border: 2px solid #13233b;
 }
