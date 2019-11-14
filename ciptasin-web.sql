@@ -364,7 +364,7 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (85,'CLICK_FOR_DOWNLOAD','Click for Download','Klik untuk unduh'),
 (86,'COMPANY_PROFILE_ENGINEERING','Company Profile Mechanic','Profil Perusahaan Mekanik'),
 (87,'COMPANY_PROFILE_AVIATION_ELECTRONICS','Company Profile Aviation & Electronics Department','Profil Perusahaan Departemen Aviasi & Elektronik'),
-(88,'COMPANY_PROFILE_EN_DE','Company Profile Mechanic & Electronics Division','Profil Perusahaan Mekanik & Divisi Elektronik'),
+(88,'COMPANY_PROFILE_EN_DE','Company Profile Mechanic & Aviation Electronics Department','Profil Perusahaan Mekanik & Departemen Aviasi Elektronik'),
 (89,'COOKIES_MESSAGE',' We use cookies and other similar technologies, such as pixels or local storage, to help provide you with a better, faster, and safer experience','Kami menggunakan kuki dan teknologi sejenis, seperti piksel atau penyimpanan lokal, untuk membantu memberi Anda pengalaman yang lebih baik, lebih cepat, dan lebih aman.'),
 (90,'COOKIES_MORE','More info','Lebih lanjut'),
 (91,'COOKIES_OK','Got it!','Ok'),
@@ -396,7 +396,7 @@ CREATE TABLE `tbl_logging` (
   `log_ipaddress` varchar(15) DEFAULT NULL,
   `log_useragen` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=103 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=105 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_logging` */
 
@@ -502,7 +502,9 @@ insert  into `tbl_logging`(`log_id`,`log_time`,`log_user`,`log_tipe`,`log_desc`,
 (99,'2019-11-14 08:45:02','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
 (100,'2019-11-14 08:46:14','Encep Suryana',2,'[TAMBAH] Data: PT. Pindad ditambahkan ke Partner','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
 (101,'2019-11-14 08:53:27','Encep Suryana',2,'[TAMBAH] Data: PT. Radar Telekomunikasi Indonesia ditambahkan ke Partner','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
-(102,'2019-11-14 09:54:55','Encep Suryana',3,'[EDIT] Database Bahasa Inggris diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>');
+(102,'2019-11-14 09:54:55','Encep Suryana',3,'[EDIT] Database Bahasa Inggris diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(103,'2019-11-14 10:18:36','Encep Suryana',3,'[EDIT] Database Bahasa Inggris diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(104,'2019-11-14 10:19:03','Encep Suryana',3,'[EDIT] Database Bahasa Indonesia diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>');
 
 /*Table structure for table `tbl_news` */
 
