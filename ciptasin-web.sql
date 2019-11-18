@@ -383,7 +383,7 @@ insert  into `tbl_language`(`id`,`name`,`eng`,`idn`) values
 (104,'COUNT_ONGOING','Projects On-going','Proyek Berjalan'),
 (105,'COUNT_AWARDS','Award\'s','Penghargaan'),
 (106,'CAPABILITIES','Capabilities','Kapabilitas'),
-(107,'MORE_INFO_AE','More information about Aeronautical & Electronics Engineering','Detail informasi tentang Aeronautika & Elektronik Engineering'),
+(107,'MORE_INFO_AE','Read more','Selengkapnya'),
 (109,'CONTACT_US','Contact Us','Hubungi Kami');
 
 /*Table structure for table `tbl_logging` */

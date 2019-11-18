@@ -394,7 +394,7 @@
 			border-bottom-color: #<?php echo $setting['theme_color_2']; ?>!important;
 		}
 
-		.contact-button-home a:hover,
+		.contact-button-home a,
 		.contact-area button:hover {
 			background: #<?php echo $setting['theme_color_2']; ?>!important;
 			color: #<?php echo $setting['theme_color_1']; ?>!important;
@@ -410,7 +410,7 @@
 		.btn-info:hover,
 		.btn-info:active,
 		.contact-area button,
-		.contact-button-home a {
+		.contact-button-home a:hover {
 			background: #<?php echo $setting['theme_color_1']; ?>!important;
 			color: #<?php echo $setting['theme_color_2']; ?>!important;
 			border-color: #<?php echo $setting['theme_color_1']; ?>!important;;
@@ -587,7 +587,7 @@
 												<?php
 												foreach ($aviation_electronics_category as $row) {
 													?>
-													<li><a href="<?php echo base_url(); ?>aeronautical-electronics-engineering"><?php echo $row['category_name']; ?></a></li>
+													<li><a href="<?php echo base_url(); ?>aeronautical-electronics-engineering#content-list"><?php echo $row['category_name']; ?></a></li>
 													<?php
 												}
 												?>

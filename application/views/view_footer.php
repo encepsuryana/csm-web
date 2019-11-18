@@ -43,7 +43,7 @@
 
 			<div class="col-md-4">
 				<div class="footer-visitor">
-					<img src="https://s01.flagcounter.com/count2/k3Ul/bg_134595/txt_FFFFFF/border_134595/columns_2/maxflags_10/viewers_<?php echo VISITOR;?>/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0">
+					<img src="https://s01.flagcounter.com/count2/k3Ul/bg_134595/txt_FFFFFF/border_134595/columns_3/maxflags_10/viewers_<?php echo VISITOR;?>/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0">
 				</div>
 
 				<div class="link-footer">

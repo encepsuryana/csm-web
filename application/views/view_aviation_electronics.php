@@ -73,7 +73,7 @@
 					</div>
 				</div>
 			<?php endif; ?>
-			<div class="col-md-12">
+			<div id="content-list" class="col-md-12">
 				<div class="recent-menu" style="text-align: right;">
 					<ul>
 						<li data-filter="all"><?php echo ALL; ?></li>

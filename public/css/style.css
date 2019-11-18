@@ -2821,7 +2821,8 @@ span.page-numbers.current {
 }
 
 .footer-visitor {
-	margin-left: 75px;
+	text-align: right;
+	margin-right: 60px;
 	padding: 5px 0;
 	margin-bottom: 10px;
 }
