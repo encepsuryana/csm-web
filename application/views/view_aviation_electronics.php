@@ -13,7 +13,7 @@
 					<li class="gro" style="padding-right: 0; padding-top: 5px;">
 						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
-						<a href="<?php echo base_url(); ?>aviation-electronics-department"><span><?php echo AVIATION_ELECTRONICS_TITLE; ?></span></a>
+						<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering"><span><?php echo AVIATION_ELECTRONICS_TITLE; ?></span></a>
 					</li>
 				</div>
 			</ul>
@@ -132,7 +132,7 @@
 										?>
 									</p>
 									<div class="services-link">
-										<a href="<?php echo base_url(); ?>aviation-electronics-department/post/<?php echo $row['slug_electronics']; ?>"><?php echo READ_MORE; ?></a>
+										<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering/post/<?php echo $row['slug_electronics']; ?>"><?php echo READ_MORE; ?></a>
 									</div>
 								</div>
 							</div>

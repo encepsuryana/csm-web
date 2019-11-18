@@ -72,7 +72,7 @@
 										foreach ($service as $row) {
 											?>
 											<li>
-												<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
+												<a href="<?php echo base_url(); ?>capabilities/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
 											</li>
 											<?php
 										}
@@ -84,46 +84,46 @@
 					</div>
 					<div class="col-md-4">
 						<ul>
-							<li><a href="<?php echo base_url(); ?>aviation-electronics-department"><?php echo AVIATION_ELECTRONICS_TITLE; ?></a>
+							<li><a href="<?php echo base_url(); ?>aeronautical-electronics-engineering"><?php echo AVIATION_ELECTRONICS_TITLE; ?></a>
 								<ul>
 									<li>
-										<a href="<?php echo base_url(); ?>aviation-electronics-department">AVIATION ELECTRONICS</a>
+										<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering">AVIATION ELECTRONICS</a>
 										<ul>
 											<li>
-												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/display-systems-multi-function-display-mfd-moving-map-display-etc.html">Display systems Multi-Function Display-MFD Moving Map Display etc</a>
+												<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering/post/display-systems-multi-function-display-mfd-moving-map-display-etc.html">Display systems Multi-Function Display-MFD Moving Map Display etc</a>
 											</li>
 											<li>
-												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/mission-computers.html">Mission computers</a>
+												<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering/post/mission-computers.html">Mission computers</a>
 											</li>
 											<li>
-												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/sensor-interface-units.html">Sensor interface units</a>
+												<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering/post/sensor-interface-units.html">Sensor interface units</a>
 											</li>
 										</ul>
 									</li>
 									<li>
-										<a href="<?php echo base_url(); ?>aviation-electronics-department">DEFENSE ELECTRONICS</a>
+										<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering">DEFENSE ELECTRONICS</a>
 										<ul>
 											<li>
-												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/ruggedized-electronic-controllers.html">Ruggedized electronic controllers</a>
+												<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering/post/ruggedized-electronic-controllers.html">Ruggedized electronic controllers</a>
 											</li>
 											<li>
-												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/harsh-environmental-power-drivers.html">Harsh environmental power drivers</a>
+												<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering/post/harsh-environmental-power-drivers.html">Harsh environmental power drivers</a>
 												
 											</li>
 										</ul>
 									</li>
 									<li>
-										<a href="<?php echo base_url(); ?>aviation-electronics-department">INDUSTRIAL ELECTRONICS</a>
+										<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering">INDUSTRIAL ELECTRONICS</a>
 										<ul>
 											<li>
-												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/plc-controller-design-and-implementations.html">PLC Controller design and implementations</a>
+												<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering/post/plc-controller-design-and-implementations.html">PLC Controller design and implementations</a>
 											</li>
 											<li>
-												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/power-electronics-design-and-manufacturing.html">Power electronics design and manufacturing</a>
+												<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering/post/power-electronics-design-and-manufacturing.html">Power electronics design and manufacturing</a>
 												
 											</li>
 											<li>
-												<a href="<?php echo base_url(); ?>aviation-electronics-department/post/man-machine-interface.html">Man-Machine Interface</a>
+												<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering/post/man-machine-interface.html">Man-Machine Interface</a>
 												
 											</li>
 										</ul>

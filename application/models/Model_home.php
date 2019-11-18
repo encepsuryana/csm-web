@@ -51,6 +51,12 @@ class Model_home extends CI_Model
     return $query->result_array();
 }
 
+public function show_ae_desc()
+{
+    $query = $this->db->query("SELECT * from tbl_aviation_electronics_desc WHERE id=1");
+    return $query->first_row('array');
+}
+
 public function get_portfolio_category()
 {
     $query = $this->db->query("SELECT * FROM tbl_portfolio_category ORDER BY category_name ASC");

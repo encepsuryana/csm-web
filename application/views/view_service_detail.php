@@ -13,9 +13,9 @@
 					<li class="gro" style="padding-right: 0; padding-top: 5px;">
 						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
-						<a href="<?php echo base_url(); ?>service"><span><?php echo SERVICES; ?></span></a>
+						<a href="<?php echo base_url(); ?>capabilities"><span><?php echo CAPABILITIES; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
-						<a href="<?php echo base_url(); ?>service/post/<?php echo $res['slug_service']; ?>"><span><?php echo $res['heading']; ?></span></a>
+						<a href="<?php echo base_url(); ?>capabilities/<?php echo $res['slug_service']; ?>"><span><?php echo $res['heading']; ?></span></a>
 					</li>
 				</div>
 			</ul>
@@ -56,12 +56,12 @@
 			<div class="col-lg-3 col-md-4">
 				<div class="sidebar">
 					<div class="sidebar-item category">
-						<h3><?php echo SERVICES; ?></h3>
+						<h3><?php echo CAPABILITIES; ?></h3>
 						<ul>
 							<?php
 							foreach ($service_by_heading as $row) {
 								?>
-								<li><a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>capabilities/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a></li>
 								<?php
 							}
 							?>

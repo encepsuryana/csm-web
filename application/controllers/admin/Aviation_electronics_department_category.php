@@ -91,7 +91,7 @@ class Aviation_electronics_department_category extends CI_Controller
 
     		$tot = $this->Model_aviation_category->aviation_electronics_category_check($id);
 			if(!$tot) {
-				redirect(base_url().'admin/aviation-electronics-department-category');
+				redirect(base_url().'admin/aeronautical-electronics-engineering-category');
 				exit;
 			}
 
@@ -163,7 +163,7 @@ class Aviation_electronics_department_category extends CI_Controller
 			// If there is no aviation_electronics category in this id, then redirect
 			$tot = $this->Model_aviation_category->aviation_electronics_category_check($id);
 			if(!$tot) {
-				redirect(base_url().'admin/aviation-electronics-department-category');
+				redirect(base_url().'admin/aeronautical-electronics-engineering-category');
 				exit;
 			}
 
@@ -192,7 +192,7 @@ class Aviation_electronics_department_category extends CI_Controller
 			//Add Log User
 			helper_log("Delete", '[HAPUS] Data: '.$data['aviation_electronics_category']['category_name'].' dihapus dari kategori Departemen Aviasi & Elektronik');
 
-			redirect(base_url().'admin/aviation-electronics-department-category');
+			redirect(base_url().'admin/aeronautical-electronics-engineering-category');
 		} else {
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');

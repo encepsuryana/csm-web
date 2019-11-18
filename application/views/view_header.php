@@ -59,14 +59,14 @@
 		echo '<meta name="keywords" content="'.$page['mk_gallery'].'">';
 		echo '<title>'.PRODUCT.' | '.$setting['general_companyname'].'</title>';
 	}
-	if($slug_arr[0] == 'service')
+	if($slug_arr[0] == 'capabilities')
 	{
 		if(!isset($slug_arr[1])) {
 			echo '<meta name="description" content="'.$page['md_service'].'">';
 			echo '<meta name="keywords" content="'.$page['mk_service'].'">';
-			echo '<title>'.SERVICE.' | '.$setting['general_companyname'].'</title>';	
+			echo '<title>'.CAPABILITIES.' | '.$setting['general_companyname'].'</title>';	
 		} else {
-			$single_service_data = $this->Model_common->get_single_service_data($slug_arr[2]);
+			$single_service_data = $this->Model_common->get_single_service_data($slug_arr[1]);
 			foreach($single_service_data as $row) {
 				echo '<meta name="description" content="'.$row['meta_description'].'">';
 				echo '<meta name="keywords" content="'.$row['meta_keyword'].'">';
@@ -90,7 +90,7 @@
 		}		
 	}
 
-	if($slug_arr[0] == 'aviation_electronics')
+	if($slug_arr[0] == 'aeronautical-electronics-engineering')
 	{
 		if(!isset($slug_arr[1])) {
 			echo '<meta name="description" content="'.$page['md_aviation_electronics'].'">';
@@ -470,7 +470,7 @@
 							</li>
 							<li>
 								<i class="fa fa-envelope-o" aria-hidden="true"></i>
-								<span title="<?php echo COMPANY_CONTACT; ?>" data-toggle="tooltip" data-placement="bottom"><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></span>
+								<span title="<?php echo COMPANY_CONTACT; ?>" data-toggle="tooltip" data-placement="bottom"><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT_US; ?></a></span>
 							</li>
 							<li>
 								<img src="<?php echo base_url(); ?>public/img/icon_png/idn.png" alt="Indonesia">
@@ -558,47 +558,36 @@
 
 								<li class="menu-item-has-children"><a href="javascript:void();"><?php echo FACILITY; ?></a>
 									<ul class="sub-menu">
-										<li class="submenu-item-has-children">
-											<a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?>	</a>
-											<ul class="sub-menu">
-												<?php
-												foreach ($facility as $row) {
-													?>
-													<li>
-														<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a>
-													</li>
-													<?php
-												}
-												?>
-											</ul>
-										</li>
-
-										<li class="submenu-item-has-children">
-											<a href="<?php echo base_url(); ?>service"><?php echo SERVICE; ?></a>
-											<ul class="sub-menu">
-												<?php
-												foreach ($service as $row) {
-													?>
-													<li>
-														<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
-													</li>
-													<?php
-												}
-												?>
-											</ul>
-										</li>
+										<?php
+										foreach ($facility as $row) {
+											?>
+											<li>
+												<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a>
+											</li>
+											<?php
+										}
+										?>
 									</ul>
 								</li>
 
-								<li class="menu-item-has-children"><a href="javascript:void();"><?php echo AVIATION_ELECTRONICS_TITLE; ?></a>
+								<li class="menu-item-has-children"><a href="javascript:void();"><?php echo CAPABILITIES; ?></a>
 									<ul class="sub-menu">
+										<?php
+										foreach ($service as $row) {
+											?>
+											<li>
+												<a href="<?php echo base_url(); ?>capabilities/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
+											</li>
+											<?php
+										}
+										?>
 										<li class="submenu-item-has-children">
-											<a href="<?php echo base_url(); ?>aviation-electronics-department"><?php echo AVIATION_ELECTRONICS_TITLE; ?></a>
+											<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering"><?php echo AVIATION_ELECTRONICS_TITLE; ?></a>
 											<ul class="sub-menu">
 												<?php
 												foreach ($aviation_electronics_category as $row) {
 													?>
-													<li><a href="<?php echo base_url(); ?>aviation-electronics-department"><?php echo $row['category_name']; ?></a></li>
+													<li><a href="<?php echo base_url(); ?>aeronautical-electronics-engineering"><?php echo $row['category_name']; ?></a></li>
 													<?php
 												}
 												?>
@@ -695,7 +684,7 @@
 										</li>
 									</ul>
 								</li>
-								<li></li>
+								<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
 							</ul>
 						</div>
 					</div>

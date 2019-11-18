@@ -190,7 +190,7 @@ class Aviation_electronics_department extends CI_Controller
 
 			$tot = $this->Model_aviation->aviation_electronics_check($id);
 			if(!$tot) {
-				redirect(base_url().'admin/aviation-electronics-department');
+				redirect(base_url().'admin/aeronautical-electronics-engineering');
 				exit;
 			}
 
@@ -360,7 +360,7 @@ class Aviation_electronics_department extends CI_Controller
 			// If there is no aviation electronics in this id, then redirect
 			$tot = $this->Model_aviation->aviation_electronics_check($id);
 			if(!$tot) {
-				redirect(base_url().'admin/aviation-electronics-department');
+				redirect(base_url().'admin/aeronautical-electronics-engineering');
 				exit;
 			}
 
@@ -380,7 +380,7 @@ class Aviation_electronics_department extends CI_Controller
 			//Add Log User
 			helper_log("Delete", '[HAPUS] Data: '.$data['aviation_electronics']['name'].' dihapus dari Departemen Aviasi & Elektronik');
 
-			redirect(base_url().'admin/aviation-electronics-department');
+			redirect(base_url().'admin/aeronautical-electronics-engineering');
 		} else {
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');

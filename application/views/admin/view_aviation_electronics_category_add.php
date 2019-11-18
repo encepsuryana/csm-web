@@ -9,7 +9,7 @@ if(!$this->session->userdata('id')) {
 			<h1>Tambah Kategori Divisi Elektronik</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department-category" class="btn btn-primary btn-sm">Lihat Semua</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/aeronautical-electronics-engineering-category" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
 
@@ -31,7 +31,7 @@ if(!$this->session->userdata('id')) {
 					</div>
 				<?php endif; ?>
 
-				<?php echo form_open(base_url().$this->session->userdata('role').'/aviation-electronics-department-category/add',array('class' => 'form-horizontal')); ?>
+				<?php echo form_open(base_url().$this->session->userdata('role').'/aeronautical-electronics-engineering-category/add',array('class' => 'form-horizontal')); ?>
 
 				<div class="box box-info  b-box">
 					<div class="box-body">

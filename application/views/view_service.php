@@ -3,7 +3,7 @@
 	<div class="container bannder-table" style="padding: 0;">
 		<div class="col-md-12" style="padding: 0;">
 			<div class="banner-text">
-				<h1><?php echo SERVICE; ?></h1>
+				<h1><?php echo CAPABILITIES; ?></h1>
 			</div>
 		</div>
 	</div>
@@ -14,7 +14,7 @@
 					<li class="gro" style="padding-right: 0; padding-top: 5px;">
 						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
-						<a href="<?php echo base_url(); ?>service"><span><?php echo SERVICE; ?></span></a>
+						<a href="<?php echo base_url(); ?>capabilities"><span><?php echo CAPABILITIES; ?></span></a>
 					</li>
 				</div>
 			</ul>
@@ -32,7 +32,7 @@
 							$i++;
 							?>
 							<div class="col-page col-sm-6 col-md-4 no-merg">
-								<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>" class="public-csm-home">
+								<a href="<?php echo base_url(); ?>capabilities/<?php echo $row['slug_service']; ?>" class="public-csm-home">
 									<div class="img-publicacion-home">
 										<img class="" src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
 									</div>

@@ -33,7 +33,7 @@ if(!$this->session->userdata('id')) {
 				<div class="box box-info b-box">
 					<div class="box-body table-responsive">
 						<h3 class="seo-info">Deskripsi Gambar</h3>
-						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/aviation-electronics-department-desc/update',array('class' => 'form-horizontal')); ?>
+						<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/aeronautical-electronics-engineering-desc/update',array('class' => 'form-horizontal')); ?>
 
 						<input type="hidden" name="current_aviation_electronics_desc_photo" value="<?php echo $aviation_electronics_desc['aviation_electronics_desc_photo']; ?>">
 						<div class="form-group">
@@ -84,7 +84,7 @@ if(!$this->session->userdata('id')) {
 							<?php echo form_close(); ?>
 
 
-							<?php echo form_open(base_url().$this->session->userdata('role').'/aviation-electronics-department-desc/update',array('class' => 'form-horizontal')); ?>
+							<?php echo form_open(base_url().$this->session->userdata('role').'/aeronautical-electronics-engineering-desc/update',array('class' => 'form-horizontal')); ?>
 							<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) { ?>
 
 								<h3 class="seo-info">Informasi Elektronik Divisi Basaha Inggris</h3>

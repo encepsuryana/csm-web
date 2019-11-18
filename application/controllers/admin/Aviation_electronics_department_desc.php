@@ -48,7 +48,7 @@ class Aviation_electronics_department_desc extends CI_Controller
 			//Add Log User
 			helper_log("Delete", '[HAPUS] Deskripsi Foto Departemen Aviasi & Elektronik dihapus');
 			
-			redirect(base_url().'admin/aviation-electronics-department-desc');
+			redirect(base_url().'admin/aeronautical-electronics-engineering-desc');
 		} else {
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');

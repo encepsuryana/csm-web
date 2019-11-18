@@ -178,6 +178,97 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <div class="caption-product-area gridGallery">
+	<div class="container">
+		<h3><?php echo CAPABILITIES; ?></h3>
+		<div class="row-product">
+
+			<section class="csmpublic-home">
+				<div class="row-page">
+					<?php
+					$i=0;
+					foreach ($service as $row) {
+						$i++;
+						?>
+						<div class="col-page col-sm-6 col-md-4 no-merg no-merg">
+							<a href="<?php echo base_url(); ?>capabilities/<?php echo $row['slug_service']; ?>" class="public-csm-home">
+								<div class="img-publicacion-home">
+									<img class="" src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
+								</div>
+								<div class="public-partcsm-home">
+									<h3 style="border-bottom: 0;"><?php echo $row['heading']; ?></h3>
+
+									<p>
+										<?php 
+										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+											if ($row['short_content_idn'] == "") {
+												echo $row['short_content'];
+											} else { 
+												echo $row['short_content_idn'];
+											}
+
+										} else {
+
+											if ($row['short_content'] == "") {
+												echo $row['short_content_idn'];
+											} else { 
+												echo $row['short_content'];
+											}
+
+										}
+										?>
+									</p>
+								</div>
+								<div class="csm-blog-home" style="top:0;">
+									<h4><?php echo $row['heading']; ?></h4>
+									<span><?php echo READ_MORE; ?></span>
+								</div>
+							</a>
+						</div>
+						<?php
+					}
+					?>	
+				</div>
+			</section>
+
+			<?php if($aviation_electronics_desc['aviation_electronics_desc_photo']!=""): ?>
+				
+				<div class="electronic-desc">
+					<h4>
+						<i class="fa fa-microchip" aria-hidden="true"></i>
+						<?php echo AVIATION_ELECTRONICS_TITLE; ?>
+					</h4>
+					<p>
+						<?php 
+						if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+							if ($aviation_electronics_desc['ed_desc_content_idn'] == '') {
+								echo $aviation_electronics_desc['aviation_electronics_desc_content'];
+							} else {
+								echo $aviation_electronics_desc['ed_desc_content_idn']; 
+							}
+
+						} else {
+
+							if ($aviation_electronics_desc['aviation_electronics_desc_content'] == '') {
+								echo $aviation_electronics_desc['ed_desc_content_idn'];
+							} else {
+								echo $aviation_electronics_desc['aviation_electronics_desc_content']; 
+							}
+
+						}
+						?>
+						<div class="all-product">
+						<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering" target="_blank"><?php echo MORE_INFO_AE; ?></a>
+						</div>
+					</p>
+				</div>
+			<?php endif; ?>
+		</div>
+	</div>
+</div>
+
+<div class="caption-product-area gridGallery">
 	<section>
 		<div class="container">
 			<h3><?php echo PRODUCT_HOME; ?></h3>
@@ -279,63 +370,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 		</div>
 	</section>
-</div>
-
-<div class="caption-product-area gridGallery">
-	<div class="container">
-		<h3><?php echo SERVICES; ?></h3>
-		<div class="row-product">
-
-			<section class="csmpublic-home">
-				<div class="row-page">
-					<?php
-					$i=0;
-					foreach ($service as $row) {
-						$i++;
-						?>
-						<div class="col-page col-sm-6 col-md-4 no-merg no-merg">
-							<a href="<?php echo base_url(); ?>service/post/<?php echo $row['slug_service']; ?>" class="public-csm-home">
-								<div class="img-publicacion-home">
-									<img class="" src="<?php echo base_url(); ?>public/uploads/<?php echo $row['photo']; ?>">
-								</div>
-								<div class="public-partcsm-home">
-									<h3 style="border-bottom: 0;"><?php echo $row['heading']; ?></h3>
-
-									<p>
-										<?php 
-										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-
-											if ($row['short_content_idn'] == "") {
-												echo $row['short_content'];
-											} else { 
-												echo $row['short_content_idn'];
-											}
-
-										} else {
-
-											if ($row['short_content'] == "") {
-												echo $row['short_content_idn'];
-											} else { 
-												echo $row['short_content'];
-											}
-
-										}
-										?>
-									</p>
-								</div>
-								<div class="csm-blog-home" style="top:0;">
-									<h4><?php echo $row['heading']; ?></h4>
-									<span><?php echo READ_MORE; ?></span>
-								</div>
-							</a>
-						</div>
-						<?php
-					}
-					?>	
-				</div>
-			</section>
-		</div>
-	</div>
 </div>
 
 <div class="caption-product-area gridGallery">

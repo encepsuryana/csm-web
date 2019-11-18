@@ -10,7 +10,7 @@ if(!$this->session->userdata('id')) {
 			<h1>Lihat Divisi Elektronik</h1>
 		</div>
 		<div class="content-header-right">
-			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department/add" class="btn btn-primary btn-sm">Tambah Baru</a>
+			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/aeronautical-electronics-engineering/add" class="btn btn-primary btn-sm">Tambah Baru</a>
 		</div>
 	</section>
 
@@ -48,10 +48,10 @@ if(!$this->session->userdata('id')) {
 										<td><?php echo $row['category_name']; ?></td>
 										<td>
 											<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') ){ ?>
-												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
-												<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department/delete/<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
+												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/aeronautical-electronics-engineering/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
+												<a href="#" class="btn btn-danger btn-xs" data-href="<?php echo base_url().$this->session->userdata('role'); ?>/aeronautical-electronics-engineering/delete/<?php echo $row['id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
 											<?php } elseif ($this->session->userdata('role') == 'hrd') {?>
-												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/aviation-electronics-department/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
+												<a href="<?php echo base_url().$this->session->userdata('role'); ?>/aeronautical-electronics-engineering/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-xs">Edit</a>
 											<?php } else {?>
 												<div class="forbiden">
 													<i class="fa fa-minus-circle" aria-hidden="true"></i>

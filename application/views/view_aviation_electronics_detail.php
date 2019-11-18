@@ -13,9 +13,9 @@
 					<li class="gro" style="padding-right: 0; padding-top: 5px;">
 						<a href="<?php echo base_url(); ?>"><span><?php echo HOME; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
-						<a href="<?php echo base_url(); ?>aviation-electronics-department"><span><?php echo AVIATION_ELECTRONICS_TITLE; ?></span></a>
+						<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering"><span><?php echo AVIATION_ELECTRONICS_TITLE; ?></span></a>
 						<i class="fa fa-caret-right" aria-hidden="true"></i>
-						<a href="<?php echo base_url(); ?>aviation-electronics-department/post/<?php echo $aviation_electronics['slug_electronics']; ?>"><span><?php echo $aviation_electronics['name']; ?></span></a>
+						<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering/post/<?php echo $aviation_electronics['slug_electronics']; ?>"><span><?php echo $aviation_electronics['name']; ?></span></a>
 					</li>
 				</div>
 			</ul>
@@ -103,7 +103,7 @@
 							<?php
 							foreach ($aviation_electronics_order_by_name as $row) {
 								?>
-								<li><a href="<?php echo base_url(); ?>aviation-electronics-department/post/<?php echo $row['slug_electronics']; ?>"><?php echo $row['name']; ?></a></li>
+								<li><a href="<?php echo base_url(); ?>aeronautical-electronics-engineering/post/<?php echo $row['slug_electronics']; ?>"><?php echo $row['name']; ?></a></li>
 								<?php
 							}
 							?>
