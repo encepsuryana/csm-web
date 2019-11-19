@@ -609,7 +609,7 @@
 													if($i>1) {break;}
 													?>
 													<li>
-														<a href="<?php echo base_url();?>news/post">
+														<a href="<?php echo base_url();?>news/page">
 															<div class="latest-news pin">
 																<?php echo LATEST_NEWS; ?>
 															</div>

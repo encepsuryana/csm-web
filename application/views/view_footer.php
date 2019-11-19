@@ -1,3 +1,46 @@
+<div class="footer-owner-style">
+	<div class="container" >
+		<div class="col-md-3 col-sm-12">
+			
+			<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner1']; ?>" alt="<?php echo $owner['des_owner1']; ?>">
+			
+			<div class="footer-owner-info">
+				<h4><?php echo $owner['des_owner1']; ?></h4>
+			</div>
+
+		</div>
+		<div class="col-md-3 col-sm-12">
+			
+			<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner2']; ?>" alt="<?php echo $owner['des_owner2']; ?>">
+			
+			<div class="footer-owner-info">
+				<h4><?php echo $owner['des_owner2']; ?></h4>
+			</div>
+
+		</div>
+
+		<div class="col-md-3 col-sm-12">
+			
+			<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner3']; ?>" alt="<?php echo $owner['des_owner3']; ?>">
+			
+			<div class="footer-owner-info">
+				<h4><?php echo $owner['des_owner3']; ?></h4>
+			</div>
+
+		</div>
+
+		<div class="col-md-3 col-sm-12">
+			
+			<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner4']; ?>" alt="<?php echo $owner['des_owner4']; ?>">
+			
+			<div class="footer-owner-info">
+				<h4><?php echo $owner['des_owner4']; ?></h4>
+			</div>
+
+		</div>
+		
+	</div>
+</div>
 <div class="footer-copyright">
 	<div class="container" style="width: 100%">
 		<div class="row">
