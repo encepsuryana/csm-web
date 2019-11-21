@@ -44,48 +44,35 @@
 								</ul>
 							</li>
 						</ul>
-					</div>
-					<div class="col-md-4">
 						<ul>
 							<li><a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?></a></li>
 							<ul>
-								<li>
-									<a href="<?php echo base_url(); ?>facility"><?php echo FACILITY; ?></a>
-									<ul>
-										<?php
-										foreach ($facility as $row) {
-											?>
-											<li>
-												<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a>
-											</li>
-											<?php
-										}
-										?>
-									</ul>
-								</li>
-							</ul>
-							<ul>
-								<li>
-									<a href="<?php echo base_url(); ?>service"><?php echo SERVICE; ?></a>
-									<ul>
-										<?php
-										foreach ($service as $row) {
-											?>
-											<li>
-												<a href="<?php echo base_url(); ?>capabilities/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
-											</li>
-											<?php
-										}
-										?>
-									</ul>
-								</li>
+								
+								<?php
+								foreach ($facility as $row) {
+									?>
+									<li>
+										<a href="<?php echo base_url(); ?>facility/post/<?php echo $row['slug_facility']; ?>"><?php echo $row['name']; ?></a>
+									</li>
+									<?php
+								}
+								?>
 							</ul>
 						</ul>
 					</div>
 					<div class="col-md-4">
 						<ul>
-							<li><a href="<?php echo base_url(); ?>aeronautical-electronics-engineering"><?php echo AVIATION_ELECTRONICS_TITLE; ?></a>
+							<li><a href="<?php echo base_url(); ?>aeronautical-electronics-engineering"><?php echo CAPABILITIES; ?></a>
 								<ul>
+									<?php
+									foreach ($service as $row) {
+										?>
+										<li>
+											<a href="<?php echo base_url(); ?>capabilities/<?php echo $row['slug_service']; ?>"><?php echo $row['heading']; ?></a>
+										</li>
+										<?php
+									}
+									?>
 									<li>
 										<a href="<?php echo base_url(); ?>aeronautical-electronics-engineering">AVIATION ELECTRONICS</a>
 										<ul>
@@ -131,6 +118,11 @@
 								</ul>
 
 							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul>
+							
 							<li>
 								<a href="#page"><?php echo PAGE; ?></a>
 								<ul>

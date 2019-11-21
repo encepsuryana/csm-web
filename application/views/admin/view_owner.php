@@ -137,7 +137,7 @@ if(!$this->session->userdata('id')) {
 							<div class="form-group">
 								<label for="" class="col-sm-2 control-label">Pilih </label>
 								<div class="col-sm-6" style="padding-top:5px">
-									<input type="file" name="img_owner2">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
+									<input type="file" name="img_owner3">(Hanya file: jpg, jpeg, gif dan png yang diperbolehkan)
 								</div>
 							</div>
 							<div class="form-group">

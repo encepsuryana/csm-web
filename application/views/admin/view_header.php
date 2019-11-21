@@ -243,6 +243,12 @@
 							</a>
 						</li>
 
+						<li class="treeview <?php if( ($final_url_other == 'admin/owner') || ($final_url_other == 'admin/owner/update') ) {echo 'active';} ?>">
+							<a href="<?php echo base_url().$this->session->userdata('role'); ?>/owner">
+								<i class="fa fa-user-o"></i> <span>Owner</span>
+							</a>
+						</li>
+
 						<li class="treeview <?php if( ($final_url_other == 'admin/product/add')||($final_url_other == 'admin/product')||($final_url_other == 'admin/product/edit') ) {echo 'active';} ?>">
 							<a href="#">
 								<i class="fa fa-cubes"></i>

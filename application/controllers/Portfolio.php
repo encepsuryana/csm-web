@@ -56,6 +56,7 @@ class Portfolio extends CI_Controller {
 		$header['product'] 							= $this->Model_common->get_product_data();
 		$header['aviation_electronics'] 			= $this->Model_common->get_aviation_electronics_data();
 		$header['aviation_electronics_category'] 	= $this->Model_common->get_aviation_electronics_category();
+		$header['owner'] 							= $this->Model_common->get_owner_data();
 
 		$header['portfolio_order_by_name'] 			= $this->Model_portfolio->get_portfolio_data_order_by_name();
 

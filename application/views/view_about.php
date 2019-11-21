@@ -30,30 +30,38 @@
 
 			<div class="col-md-12">
 				<div class="about_heading">
-					<h3><?php echo ABOUT_COMPANY; ?></h3>
+					<div data-aos="fade-left">
+						<h3><?php echo ABOUT_COMPANY; ?></h3>
+					</div>
 				</div>
-				<div class="about_style">
-					<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
 
-						if ($page['about_content_idn'] == '') {
-							echo $page['about_content'];
+				<div data-aos="fade-up">
+					<div class="about_style">
+						<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+							if ($page['about_content_idn'] == '') {
+								echo $page['about_content'];
+							} else {
+								echo $page['about_content_idn'];
+							}
+
 						} else {
-							echo $page['about_content_idn'];
-						}
 
-					} else {
+							if ($page['about_content'] == '') {
+								echo $page['about_content_idn'];
+							} else {
+								echo $page['about_content'];
+							}
 
-						if ($page['about_content'] == '') {
-							echo $page['about_content_idn'];
-						} else {
-							echo $page['about_content'];
-						}
-
-					}?>
+						}?>
+					</div>
 				</div>
 			</div>
-			<div class="container">
-				<div class="col-sm-2 about-fade" style="padding-left: 0;">
+		</div>
+
+		<div class="container">
+			<div data-aos="fade-left">
+				<div class="col-sm-2 about-fade pl-0">
 					<nav class="nav-sidebar">
 						<ul class="nav tabs">
 							<li class="active"><a href="#profile" data-toggle="tab"><?php echo PROFILE; ?></a></li>
@@ -65,11 +73,14 @@
 					</nav>
 					<div class="add"></div>
 				</div>
+			</div>
+
+			<div data-aos="fade-up">
 				<!-- tab content -->
 				<div class="tab-content">
 					<div class="tab-pane active text-style" id="profile">
-						<h2><?php echo PROFILE_IDENTITY; ?></h2>
 						<div class="col-md-10">
+						<h2><?php echo PROFILE_IDENTITY; ?></h2>
 							<p>
 								<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
 
@@ -91,17 +102,17 @@
 							</p>
 						</div>
 					</div>
-					<div class="tab-pane " id="structure">
-						<h2><?php echo STRUCTURE_ORGANIZATION; ?></h2>
+					<div class="tab-pane" id="structure">
 						<div class="col-md-10">
+						<h2><?php echo STRUCTURE_ORGANIZATION; ?></h2>
 							<img src="<?php echo base_url(); ?>public/uploads/<?php echo $page['structure_photo']; ?>">
 						</div>
 					</div>
 					<div class="tab-pane" id="vision-mission">
 						<!-- Vision & Mision Area-->
-						<h2><?php echo VISION_AND_MISSION ?></h2>
 
 						<div class="col-md-5 col-sm-5">
+						<h2><?php echo VISION_AND_MISSION ?></h2>
 							<div class="about-mission">
 								<h3><?php echo VISION_HEADING ?></h3>
 								<p>
@@ -151,8 +162,8 @@
 						</div>
 					</div>
 					<div class="tab-pane" id="culture">
-						<h2><?php echo CULTURE; ?></h2>
 						<div class="col-md-10">
+						<h2><?php echo CULTURE; ?></h2>
 							<p>
 								<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
 
@@ -174,8 +185,8 @@
 						</div>
 					</div>
 					<div class="tab-pane" id="commitment">
-						<h2><?php echo COMMITMENT; ?></h2>
 						<div class="col-md-10">
+						<h2><?php echo COMMITMENT; ?></h2>
 							<p>
 								<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
 
@@ -198,8 +209,6 @@
 						</div>
 					</div>
 				</div>
-
-
 			</div>
 		</div>
 	</div>

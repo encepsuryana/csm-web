@@ -1,50 +1,66 @@
 <div class="footer-owner-style">
-	<div class="container" >
-		<div class="col-md-3 col-sm-12">
-			
-			<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner1']; ?>" alt="<?php echo $owner['des_owner1']; ?>">
-			
-			<div class="footer-owner-info">
-				<h4><?php echo $owner['des_owner1']; ?></h4>
-			</div>
-
+	<div class="container pd-0">
+		<div class="heading-owner">
+			<h3><?php echo OUR_TEAM; ?></h3>
 		</div>
 		<div class="col-md-3 col-sm-12">
-			
-			<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner2']; ?>" alt="<?php echo $owner['des_owner2']; ?>">
-			
-			<div class="footer-owner-info">
-				<h4><?php echo $owner['des_owner2']; ?></h4>
+			<div class="card-owner">
+				<div class="col-md-5 col-sm-12">
+					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner1']; ?>" alt="<?php echo $owner['des_owner1']; ?>">
+				</div>
+				
+				<div class="col-md-7 col-sm-12">
+					<div class="footer-owner-info">
+						<?php echo $owner['des_owner1']; ?>
+					</div>
+				</div>
 			</div>
-
 		</div>
-
 		<div class="col-md-3 col-sm-12">
-			
-			<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner3']; ?>" alt="<?php echo $owner['des_owner3']; ?>">
-			
-			<div class="footer-owner-info">
-				<h4><?php echo $owner['des_owner3']; ?></h4>
+			<div class="card-owner">
+				<div class="col-md-5 col-sm-12 pd-0">
+					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner2']; ?>" alt="<?php echo $owner['des_owner2']; ?>">
+				</div>
+				
+				<div class="col-md-7 col-sm-12 pd-0">
+					<div class="footer-owner-info">
+						<?php echo $owner['des_owner2']; ?>
+					</div>
+				</div>
 			</div>
-
 		</div>
-
 		<div class="col-md-3 col-sm-12">
-			
-			<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner4']; ?>" alt="<?php echo $owner['des_owner4']; ?>">
-			
-			<div class="footer-owner-info">
-				<h4><?php echo $owner['des_owner4']; ?></h4>
+			<div class="card-owner">
+				<div class="col-md-5 col-sm-12">
+					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner3']; ?>" alt="<?php echo $owner['des_owner3']; ?>">
+				</div>
+				
+				<div class="col-md-7 col-sm-12">
+					<div class="footer-owner-info">
+						<?php echo $owner['des_owner3']; ?>
+					</div>
+				</div>
 			</div>
-
 		</div>
-		
+		<div class="col-md-3 col-sm-12">
+			<div class="card-owner">
+				<div class="col-md-5 col-sm-12 pd-0">
+					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $owner['img_owner4']; ?>" alt="<?php echo $owner['des_owner4']; ?>">
+				</div>
+				
+				<div class="col-md-7 col-sm-12">
+					<div class="footer-owner-info">
+						<?php echo $owner['des_owner4']; ?>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
+
 <div class="footer-copyright">
 	<div class="container" style="width: 100%">
 		<div class="row">
-
 			<div class="col-md-8">
 				<div class="footer-social">
 					<ul>
@@ -61,6 +77,7 @@
 				</div>
 				<div class="footer-contact-item">
 					<ul>
+						<li><h4><?php echo $setting['general_companyname']; ?></h4></li>
 						<li>
 							<p>
 								<i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -77,11 +94,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="footer-contact-item">
-					<ul>
-						<li><h4><?php echo $setting['footer_copyright']; ?></h4></li>
-					</ul>
-				</div>
+
 			</div>
 
 			<div class="col-md-4">
@@ -90,14 +103,18 @@
 				</div>
 
 				<div class="link-footer">
-					<p>
-						<a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a> | <a href="<?php echo base_url(); ?>terms-and-conditions"><?php echo TERMS_AND_CONDITIONS; ?></a> | <a href="<?php echo base_url(); ?>privacy-policy"><?php echo PRIVACY_POLICY; ?> | <a href="<?php echo base_url(); ?>site-maps"><?php echo SITE_MAPS; ?></a>
-					</p>
+					<p> <a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a> | <a href="<?php echo base_url(); ?>terms-and-conditions"><?php echo TERMS_AND_CONDITIONS; ?></a> | <a href="<?php echo base_url(); ?>privacy-policy"><?php echo PRIVACY_POLICY; ?> | <a href="<?php echo base_url(); ?>site-maps"><?php echo SITE_MAPS; ?></a> </p>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<div class="container" style="width: 100%; padding: 0;">
+	<div class="footer-copyright-bottom">
+		<span><?php echo $setting['footer_copyright']; ?></span>
+	</div>
+</div>
+
 
 <div class="scroll-top" style="display: block;">
 	<i class="fa fa-angle-up"></i>
@@ -113,6 +130,7 @@
 <script src='<?php echo base_url(); ?>public/js/waypoints.min.js'></script>
 <script src='<?php echo base_url(); ?>public/js/jquery.counterup.min.js'></script>
 <script src='<?php echo base_url(); ?>public/js/custom.js'></script>
+<script src='<?php echo base_url(); ?>public/js/aos.js'></script>
 <script type="text/javascript" id="cookieinfo" 
 src="//cookieinfoscript.com/js/cookieinfo.min.js" 
 data-moreinfo="<?php base_url();?>privacy-policy"
@@ -129,6 +147,12 @@ data-linkmsg="<?php echo COOKIES_MORE; ?>">
 		google_ad_client: "ca-pub-3809700210298618",
 		enable_page_level_ads: true
 	});
+</script>
+
+<script>   
+	AOS.init({
+		duration: 1200,
+	}); 
 </script>
 
 <script type="text/javascript">

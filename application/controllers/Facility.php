@@ -56,6 +56,7 @@ class Facility extends CI_Controller {
 		$header['aviation_electronics'] 			= $this->Model_common->get_aviation_electronics_data();
 		$header['aviation_electronics_category'] 	= $this->Model_common->get_aviation_electronics_category();
 		$header['product'] 							= $this->Model_common->get_product_data();
+		$header['owner'] 							= $this->Model_common->get_owner_data();
 
 		$header['facility_order_by_name'] 			= $this->Model_facility->get_facility_data_order_by_name();
 		$data['facility'] 							= $this->Model_facility->get_facility_detail($slug);

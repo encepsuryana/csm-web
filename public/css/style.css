@@ -26,6 +26,10 @@ ul {
 	outline: none;
 }
 
+.tab-content {
+	transition: all 0.35s;
+}
+
 .blog-link-content {
 	text-align: left; 
 	padding-left: 0;
@@ -45,6 +49,18 @@ ul {
 
 .site-maps ul li a {
 	color: #333;
+}
+
+.pd-0 {
+	padding: 0 !important; 
+}
+
+.pl-10 {
+	padding-left: 10px !important;
+}
+
+.pr-10 {
+	padding-right: 10px !important;
 }
 
 .site-maps ul li a:hover {
@@ -759,7 +775,7 @@ img {
 .header-contact {
 	color: #fff;
 	float: right;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 
 .header-contact ul {
@@ -782,6 +798,19 @@ img {
 	margin-left: 5px;
 	cursor: help;
 	font-size: 12px;
+}
+
+.language-style {
+	padding: 0 5px;
+	padding-bottom: 3px;
+}
+
+.language-style a {
+	color: #fff !important;
+}
+
+.header-contact li span a {
+	color: #134595;
 }
 
 /*Menu-Area*/
@@ -810,7 +839,7 @@ img {
 	text-align: right;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
-	margin-top: -20px;
+	margin-top: -25px;
 }
 
 .logo2 img {
@@ -935,6 +964,7 @@ ul.nav-menu li ul li a {
 	color: #333;
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
+	box-shadow: 0 2px 6px 0 rgba(49,53,59,.2);
 }
 
 ul.nav-menu li ul li a:before {
@@ -2829,19 +2859,56 @@ span.page-numbers.current {
 
 .footer-owner-style {
 	text-align: center;
-	margin: 10px 0;
-	margin-top: 40px;
+	padding: 20px 0;
+	background: #f9fafb;
+}
+
+.footer-owner-style img {
+	width: 80px;
+	height: auto;
 }
 
 .footer-owner-info {
+	padding-top: 10px;
+	text-transform: capitalize;
+	color:	#333;
+	font-size: 12px;
+	font-weight: 800;
+	text-align: left;
+}
+
+.footer-copyright-bottom {
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	background-color: #214175 !important;
+	padding: 8px 20px;
+}
+
+.card-owner {
+	width: 100%;
+	min-height: 100px;
+	background-color: #fff;
+	border-radius: 4px;
 	padding: 5px;
+	cursor: pointer;
+	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+	box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+}
+.card-owner:hover {
+	transform: scale(1.05);
+	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-.footer-owner-info h4 {
-	text-transform: uppercase;
+.heading-owner {
+	margin-bottom: 20px;
 }
 
-
+.heading-owner h3 {
+	text-align: left;
+	color: #134595;
+	border-bottom: 1px solid #f81c51;
+}
 /*scroll-top*/
 
 .scroll-top {

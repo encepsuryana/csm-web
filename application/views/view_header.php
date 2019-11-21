@@ -249,9 +249,11 @@
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/spacing.css'>
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/style.css'>
 	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/responsive.css'>
+	<link rel='stylesheet' href='<?php echo base_url(); ?>public/css/aos.css'>
 
 	<style>
 		/* Theme Color 1 */
+		.language-style,
 		ul.nav-menu li ul li a:before,
 		.tooltip.bottom .tooltip-inner,
 		.lightbox-item:hover .lightbox-icon,
@@ -270,7 +272,7 @@
 		.main-testimonial .testimonial-carousel .owl-dots .owl-dot {
 			background: #<?php echo $setting['theme_color_1']; ?>!important;
 		}
-		.header-contact li span a,
+
 		.dropdown a,
 		.blog-text h3 a,
 		.box h3,
@@ -454,10 +456,7 @@
 	<div class="header-area">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2 col-sm-4">
-
-				</div>
-				<div class="col-md-8 col-sm-8">
+				<div class="col-md-12 col-sm-12">
 					<div class="header-contact">
 						<ul>
 							<li>
@@ -472,14 +471,47 @@
 								<i class="fa fa-envelope-o" aria-hidden="true"></i>
 								<span title="<?php echo COMPANY_CONTACT; ?>" data-toggle="tooltip" data-placement="bottom"><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT_US; ?></a></span>
 							</li>
-							<li>
-								<img src="<?php echo base_url(); ?>public/img/icon_png/idn.png" alt="Indonesia">
-								<span title="Bahasa Indonesia" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/idn','ID');?></span>
-							</li>
-							<li>
-								<img src="<?php echo base_url(); ?>public/img/icon_png/eng.png" alt="English">
-								<span title="English Language" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/eng','EN');?></span>
-							</li>
+							<?php 
+							if (empty($this->session->userdata('language')) or ($this->session->userdata('language') == 'idn')) {
+								?>
+
+								<li>
+									<div class="language-style">
+										<img src="<?php echo base_url(); ?>public/img/icon_png/idn.png" alt="Indonesia">
+
+										<span title="Bahasa Indonesia" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/idn','ID');?></span>
+									</div>
+								</li>
+
+							<?php } else { ?>
+
+								<li>
+									<img src="<?php echo base_url(); ?>public/img/icon_png/idn.png" alt="Indonesia">
+
+									<span title="Bahasa Indonesia" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/idn','ID');?></span>
+								</li>
+
+							<?php } ?>
+							
+							<?php 
+							if (empty($this->session->userdata('language')) or ($this->session->userdata('language') == 'eng')) {
+								?>
+
+								<li>
+									<div class="language-style">
+										<img src="<?php echo base_url(); ?>public/img/icon_png/eng.png" alt="English">
+										<span title="English Language" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/eng','EN');?></span>
+									</div>
+								</li>
+
+							<?php } else { ?>
+
+								<li>
+									<img src="<?php echo base_url(); ?>public/img/icon_png/eng.png" alt="English">
+									<span title="English Language" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/eng','EN');?></span>
+								</li>
+								
+							<?php } ?>
 						</ul>
 					</div>
 				</div>
@@ -491,7 +523,7 @@
 		<menu>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2 col-sm-12" style="padding: 0;">
+					<div class="col-md-3 col-sm-12" style="padding: 0;">
 						<div class="logo2">
 							<a href="<?php echo base_url(); ?>">
 								<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo2']; ?>" alt="Cipta Sinergi The Art of Manufacturing">
@@ -504,7 +536,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-8 col-sm-12 main-menu" style="display: block;">
+					<div class="col-md-9 col-sm-12 main-menu" style="display: block;">
 						<div class="main-menu-item">				 	
 							<ul class="nav-menu">
 								<li><a href="<?php echo base_url(); ?>"><?php echo HOME; ?></a></li>
@@ -684,13 +716,8 @@
 										</li>
 									</ul>
 								</li>
-								<li><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
+								<li><a class="pr-0" href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
 							</ul>
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-12" style="padding: 0;">
-						<div class="ceo-style">
-							<img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['company_ceo']; ?>" alt="CEO & Depouty">
 						</div>
 					</div>
 				</div>

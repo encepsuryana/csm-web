@@ -30,6 +30,7 @@ class Aviation_electronics_department extends CI_Controller {
 		$header['aviation_electronics'] 			= $this->Model_aviation->get_ae_data();
 		$header['aviation_electronics_desc'] 		= $this->Model_aviation->show_ae_desc();
 		$header['aviation_electronics_category'] 	= $this->Model_aviation->get_ae_category();
+		$header['owner'] 							= $this->Model_common->get_owner_data();
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_aviation_electronics');

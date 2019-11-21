@@ -19,7 +19,6 @@ class Service extends CI_Controller {
 		$header['language'] 						= $this->Model_common->get_language_data();
 		$header['latest_news'] 						= $this->Model_common->get_latest_news();
 		$header['popular_news'] 					= $this->Model_common->get_popular_news();
-		$header['service'] 							= $this->Model_common->get_service_data();
 		$header['facility'] 						= $this->Model_common->get_facility_data();
 		$header['facility_category'] 				= $this->Model_common->get_facility_category();
 		$header['portfolio_category'] 				= $this->Model_common->get_portfolio_category();
@@ -29,6 +28,7 @@ class Service extends CI_Controller {
 		$header['aviation_electronics']				= $this->Model_common->get_aviation_electronics_data();
 		$header['aviation_electronics_category'] 	= $this->Model_common->get_aviation_electronics_category();
 		$header['owner'] 							= $this->Model_common->get_owner_data();
+
 		$header['service'] 							= $this->Model_service->get_service_data();
 
 		$this->load->view('view_header',$header);
@@ -54,6 +54,7 @@ class Service extends CI_Controller {
 		$header['product'] 							= $this->Model_common->get_product_data();
 		$header['aviation_electronics']				= $this->Model_common->get_aviation_electronics_data();
 		$header['aviation_electronics_category'] 	= $this->Model_common->get_aviation_electronics_category();
+		$header['owner'] 							= $this->Model_common->get_owner_data();
 
 		$header['service_by_heading'] 				= $this->Model_service->get_service_data_order_by_heading();
 
