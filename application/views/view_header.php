@@ -474,7 +474,6 @@
 							<?php 
 							if (empty($this->session->userdata('language')) or ($this->session->userdata('language') == 'idn')) {
 								?>
-
 								<li>
 									<div class="language-style">
 										<img src="<?php echo base_url(); ?>public/img/icon_png/idn.png" alt="Indonesia">
@@ -482,15 +481,12 @@
 										<span title="Bahasa Indonesia" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/idn','ID');?></span>
 									</div>
 								</li>
-
 							<?php } else { ?>
-
 								<li>
 									<img src="<?php echo base_url(); ?>public/img/icon_png/idn.png" alt="Indonesia">
 
 									<span title="Bahasa Indonesia" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/idn','ID');?></span>
 								</li>
-
 							<?php } ?>
 							
 							<?php 
@@ -503,9 +499,7 @@
 										<span title="English Language" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/eng','EN');?></span>
 									</div>
 								</li>
-
 							<?php } else { ?>
-
 								<li>
 									<img src="<?php echo base_url(); ?>public/img/icon_png/eng.png" alt="English">
 									<span title="English Language" data-toggle="tooltip" data-placement="bottom"><?php echo anchor ('language/lang/eng','EN');?></span>

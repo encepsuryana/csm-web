@@ -136,41 +136,7 @@ class Setting extends CI_Controller
 					$data['success'] = 'Admin Logo telah berhasil diupdate!';		    	
 				}        	
 			}
-
-			if(isset($_POST['form_ceo'])) {
-				$valid = 1;
-				$path = $_FILES['photo_ceo']['name'];
-				$path_tmp = $_FILES['photo_ceo']['tmp_name'];
-				if($path!='') {
-					$ext = pathinfo( $path, PATHINFO_EXTENSION );
-					$file_name = basename( $path, '.' . $ext );
-					$ext_check = $this->Model_header->extension_check_photo($ext);
-					if($ext_check == FALSE) {
-						$valid = 0;
-						$data['error'] = 'Anda harus mengunggah file jpg, jpeg, gif atau png<br>';
-					}
-				} else {
-					$valid = 0;
-					$data['error'] = 'Anda harus memilih foto<br>';
-				}
-				if($valid == 1) {
-		    		// removing the existing photo
-					unlink('./public/uploads/'.$header['setting']['company_ceo']);
-
-		    		// updating the data
-					$final_name = 'company_ceo'.'.'.$ext;
-					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
-
-					$form_data = array(
-						'company_ceo' => $final_name
-					);
-					$this->Model_setting->update($form_data);
-					//Add Log User
-					helper_log("edit", '[EDIT] Data: Company CEO diupdate pada Settings');
-					$data['success'] = 'Company CEO telah berhasil diupdate!';		    
-				}        	
-			}
-
+			
 			if(isset($_POST['form_favicon'])) {
 				$valid = 1;
 				$path = $_FILES['photo_favicon']['name'];
