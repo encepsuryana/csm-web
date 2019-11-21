@@ -494,7 +494,7 @@
 							<?php } ?>
 							
 							<?php 
-							if (empty($this->session->userdata('language')) or ($this->session->userdata('language') == 'eng')) {
+							if ($this->session->userdata('language') == 'eng') {
 								?>
 
 								<li>
