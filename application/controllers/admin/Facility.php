@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Facility extends CI_Controller 
-{
-	function __construct() 
-	{
+class Facility extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_facility');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
@@ -22,6 +20,7 @@ class Facility extends CI_Controller
 			$this->load->view('admin/view_facility',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+		
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -30,8 +29,7 @@ class Facility extends CI_Controller
 		} 
 	}
 
-	public function add()
-	{
+	public function add() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
@@ -74,8 +72,7 @@ class Facility extends CI_Controller
 					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$next_id = $this->Model_facility->get_auto_increment_id();
 					foreach ($next_id as $row) {
 						$ai_id = $row['Auto_increment'];
@@ -100,8 +97,7 @@ class Facility extends CI_Controller
 					
 					$this->Model_facility->add($form_data);
 
-					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) )
-					{
+					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) ) {
 						$photos = array();
 						$photos = $_FILES['photos']["name"];
 						$photos = array_values(array_filter($photos));
@@ -119,8 +115,7 @@ class Facility extends CI_Controller
 
 						$m=0;
 						$final_names = array();
-						for($i=0;$i<count($photos);$i++)
-						{
+						for($i=0;$i<count($photos);$i++) {
 
 							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
 							$ext_check = $this->Model_header->extension_check_photo($ext);
@@ -134,8 +129,7 @@ class Facility extends CI_Controller
 						}
 					}
 
-					for($i=0;$i<count($final_names);$i++)
-					{
+					for($i=0;$i<count($final_names);$i++) {
 						$form_data = array(
 							'facility_id' => $ai_id,
 							'slug_facility' => $slug,
@@ -156,9 +150,7 @@ class Facility extends CI_Controller
 					unset($_POST['content_idn']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
-				} 
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 
@@ -184,8 +176,7 @@ class Facility extends CI_Controller
 		}
 	}
 
-	public function edit($id)
-	{
+	public function edit($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
 			$tot = $this->Model_facility->facility_check($id);
@@ -199,8 +190,7 @@ class Facility extends CI_Controller
 			$data['success'] = '';
 			$error = '';
 
-			if(isset($_POST['form1'])) 
-			{
+			if(isset($_POST['form1'])) {
 				$valid = 1;
 
 				$judul = $_POST['name'];
@@ -231,8 +221,7 @@ class Facility extends CI_Controller
 					}
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$data['facility'] = $this->Model_facility->getData($id);
 
 					if($path == '') {
@@ -249,8 +238,7 @@ class Facility extends CI_Controller
 							'slug_facility'    => $slug
 						);
 						$this->Model_facility->update($id,$form_data);
-					}
-					else {
+					} else {
 						unlink('./public/uploads/'.$data['facility']['photo']);
 
 						$final_name = 'facility-'.$id.'.'.$ext;
@@ -272,8 +260,7 @@ class Facility extends CI_Controller
 						$this->Model_facility->update($id,$form_data);
 					}
 
-					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) )
-					{
+					if ( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) ) {
 						$photos = array();
 						$photos = $_FILES['photos']["name"];
 						$photos = array_values(array_filter($photos));
@@ -291,10 +278,10 @@ class Facility extends CI_Controller
 
 						$m=0;
 						$final_names = array();
-						for($i=0;$i<count($photos);$i++)
-						{
+						for($i=0;$i<count($photos);$i++) {
 							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
 							$ext_check = $this->Model_header->extension_check_photo($ext);
+							
 							if($ext_check == FALSE) {
 				        	// Nothing to do, just skip
 							} else {
@@ -306,8 +293,7 @@ class Facility extends CI_Controller
 						}
 					}
 
-					for($i=0;$i<count($final_names);$i++)
-					{
+					for($i=0;$i<count($final_names);$i++) {
 						$form_data = array(
 							'facility_id' => $id,
 							'slug_facility' => $slug,
@@ -332,6 +318,7 @@ class Facility extends CI_Controller
 				$this->load->view('admin/view_footer');
 
 			} else {
+				
 				$data['facility'] = $this->Model_facility->getData($id);
 				$data['all_photo_category'] = $this->Model_facility->get_all_photo_category();
 				$data['all_photos_by_id'] = $this->Model_facility->get_all_photos_by_category_id($id);
@@ -341,6 +328,7 @@ class Facility extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -350,8 +338,7 @@ class Facility extends CI_Controller
 	}
 
 
-	public function delete($id) 
-	{
+	public function delete($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) {
 
 			$tot = $this->Model_facility->facility_check($id);
@@ -378,6 +365,7 @@ class Facility extends CI_Controller
 
 			redirect(base_url().'admin/facility');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -397,6 +385,7 @@ class Facility extends CI_Controller
 			redirect(base_url().'admin/facility/edit/'.$facility_id);
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

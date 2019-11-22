@@ -2,26 +2,24 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Social_media extends CI_Controller 
-{
-	function __construct() 
-	{
+class Social_media extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_social_media');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
+		
 		if ($this->session->userdata('role') == 'admin') {
 			$header['setting'] = $this->Model_header->get_setting_data();
 			$data['error'] = '';
 			$data['success'] = '';
 			$error = '';
 
-			if(isset($_POST['form1'])) 
-			{
+			if(isset($_POST['form1'])) {
 				$this->Model_social_media->update('Facebook',array('social_url'    => $_POST['facebook']));
 				$this->Model_social_media->update('Twitter',array('social_url'     => $_POST['twitter']));
 				$this->Model_social_media->update('LinkedIn',array('social_url'    => $_POST['linkedin']));
@@ -51,6 +49,7 @@ class Social_media extends CI_Controller
 				$this->load->view('admin/view_footer');
 
 			} else {
+				
 				$data['social'] = $this->Model_social_media->show();
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_social_media',$data);
@@ -58,6 +57,7 @@ class Social_media extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

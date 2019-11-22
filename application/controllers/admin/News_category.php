@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class News_category extends CI_Controller 
-{
-	function __construct() 
-	{
+class News_category extends CI_Controller  {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_news_category');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
@@ -30,8 +28,7 @@ class News_category extends CI_Controller
 		}
 	}
 
-	public function add()
-	{
+	public function add() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
@@ -54,8 +51,7 @@ class News_category extends CI_Controller
 					$data['error'] = validation_errors();
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$form_data = array(
 						'category_name'    		=> $_POST['category_name'],
 						'meta_title'      		=> $_POST['meta_title'],
@@ -83,6 +79,7 @@ class News_category extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -91,10 +88,10 @@ class News_category extends CI_Controller
 		} 
 	}
 
-	public function edit($id)
-	{
+	public function edit($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-    	// If there is no new category in this id, then redirect
+    		
+    		// If there is no new category in this id, then redirect
 			$tot = $this->Model_news_category->news_category_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/news-category');
@@ -107,8 +104,7 @@ class News_category extends CI_Controller
 			$error = '';
 
 
-			if(isset($_POST['form1'])) 
-			{
+			if(isset($_POST['form1'])) {
 
 				$valid = 1;
 				$judul = $_POST['category_name'];
@@ -123,7 +119,7 @@ class News_category extends CI_Controller
 					$data['error'] = validation_errors();
 				} else {
 
-            	// Duplicate category Checking
+            		// Duplicate category Checking
 					$data['news_category'] = $this->Model_news_category->getData($id);
 					$total = $this->Model_news_category->duplicate_check($_POST['category_name'],$data['news_category']['category_name']);
 					if($total) {
@@ -132,9 +128,8 @@ class News_category extends CI_Controller
 					}
 				}
 
-				if($valid == 1) 
-				{
-		    	// Updating Data
+				if($valid == 1) {
+		    		// Updating Data
 					$form_data = array(
 						'category_name'    		=> $_POST['category_name'],
 						'meta_title'       		=> $_POST['meta_title'],
@@ -163,6 +158,7 @@ class News_category extends CI_Controller
 				$this->load->view('admin/view_footer');
 			}
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -172,8 +168,7 @@ class News_category extends CI_Controller
 	}
 
 
-	public function delete($id) 
-	{
+	public function delete($id) {
 		if ($this->session->userdata('role') == 'admin') {
 			$tot = $this->Model_news_category->news_category_check($id);
 			if(!$tot) {
@@ -195,6 +190,7 @@ class News_category extends CI_Controller
 
 			redirect(base_url().'admin/news-category');
 		} else {
+		
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

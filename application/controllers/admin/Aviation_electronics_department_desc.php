@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Aviation_electronics_department_desc extends CI_Controller 
-{
-	function __construct() 
-	{
+class Aviation_electronics_department_desc extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_aviation_desc');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd'))  {
 			$data['error'] = '';
 			$data['success'] = '';
@@ -25,6 +23,7 @@ class Aviation_electronics_department_desc extends CI_Controller
 			$this->load->view('admin/view_footer');
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -33,8 +32,7 @@ class Aviation_electronics_department_desc extends CI_Controller
 		}
 	}
 
-	public function delete_aviation_electronics_desc_photo()
-	{
+	public function delete_aviation_electronics_desc_photo() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd'))  {
 
 			$t = $this->Model_aviation_desc->get_aviation_electronics_desc_photo_name();
@@ -50,6 +48,7 @@ class Aviation_electronics_department_desc extends CI_Controller
 			
 			redirect(base_url().'admin/aeronautical-electronics-engineering-desc');
 		} else {
+		
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -58,8 +57,7 @@ class Aviation_electronics_department_desc extends CI_Controller
 		}
 	}
 
-	public function update()
-	{
+	public function update() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff'))  {
 			$data['error'] = '';
 			$data['success'] = '';
@@ -82,10 +80,10 @@ class Aviation_electronics_department_desc extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+
 				if($valid == 1) {
 
-					if($_POST['current_aviation_electronics_desc_photo'] != '')
-					{
+					if($_POST['current_aviation_electronics_desc_photo'] != '') {
 			    	
 			    	// removing the existing photo
 						unlink('./public/uploads/'.$_POST['current_aviation_electronics_desc_photo']);	

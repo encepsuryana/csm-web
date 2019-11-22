@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Portfolio_category extends CI_Controller 
-{
-	function __construct() 
-	{
+class Portfolio_category extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_portfolio_category');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -23,6 +21,7 @@ class Portfolio_category extends CI_Controller
 			$this->load->view('admin/view_portfolio_category',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -31,8 +30,7 @@ class Portfolio_category extends CI_Controller
 		}
 	}
 
-	public function add()
-	{
+	public function add() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -51,8 +49,7 @@ class Portfolio_category extends CI_Controller
 					$data['error'] = validation_errors();
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 
 					$form_data = array(
 						'category_name'=> $_POST['category_name'],
@@ -77,6 +74,7 @@ class Portfolio_category extends CI_Controller
 				$this->load->view('admin/view_footer');
 			}
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -86,12 +84,12 @@ class Portfolio_category extends CI_Controller
 	}
 
 
-	public function edit($id)
-	{
+	public function edit($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
 
-    	// If there is no service in this id, then redirect
+    		// If there is no service in this id, then redirect
 			$tot = $this->Model_portfolio_category->portfolio_category_check($id);
+			
 			if(!$tot) {
 				redirect(base_url().'admin/portfolio-category');
 				exit;
@@ -103,8 +101,7 @@ class Portfolio_category extends CI_Controller
 			$error = '';
 
 
-			if(isset($_POST['form1'])) 
-			{
+			if(isset($_POST['form1'])) {
 
 				$valid = 1;
 
@@ -124,8 +121,7 @@ class Portfolio_category extends CI_Controller
 					}
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 		    		// Updating Data
 					$form_data = array(
 						'category_name'=> $_POST['category_name'],
@@ -145,6 +141,7 @@ class Portfolio_category extends CI_Controller
 				$this->load->view('admin/view_footer');
 
 			} else {
+				
 				$data['portfolio_category'] = $this->Model_portfolio_category->getData($id);
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_portfolio_category_edit',$data);
@@ -152,6 +149,7 @@ class Portfolio_category extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -161,12 +159,12 @@ class Portfolio_category extends CI_Controller
 	}
 
 
-	public function delete($id) 
-	{
+	public function delete($id) {
 		if ($this->session->userdata('role') == 'admin') {
 
-		// If there is no portfolio category in this id, then redirect
+			// If there is no portfolio category in this id, then redirect
 			$tot = $this->Model_portfolio_category->portfolio_category_check($id);
+			
 			if(!$tot) {
 				redirect(base_url().'admin/portfolio-category');
 				exit;
@@ -180,9 +178,11 @@ class Portfolio_category extends CI_Controller
 				foreach ($result1 as $row1) {
 					$photo = $row1['photo'];
 				}
+			
 				if($photo!='') {
 					unlink('./public/uploads/'.$photo);
 				}
+				
 				$result1 = $this->Model_portfolio_category->show_portfolio_photo_by_portfolio_id($row['id']);
 				foreach ($result1 as $row1) {
 					$photo = $row1['photo'];
@@ -192,6 +192,7 @@ class Portfolio_category extends CI_Controller
 				$this->Model_portfolio_category->delete1($row['id']);
 				$this->Model_portfolio_category->delete2($row['id']);
 			}
+			
 			$this->Model_portfolio_category->delete($id);
 
 			//Add Log User
@@ -199,6 +200,7 @@ class Portfolio_category extends CI_Controller
 
 			redirect(base_url().'admin/portfolio-category');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

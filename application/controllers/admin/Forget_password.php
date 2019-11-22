@@ -1,11 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Forget_password extends CI_Controller 
-{
+class Forget_password extends CI_Controller {
 
-    function __construct() 
-    {
+    function __construct() {
         parent::__construct();
         $this->load->model('Model_common');
         $this->load->model('admin/Model_forget_password');
@@ -13,8 +11,7 @@ class Forget_password extends CI_Controller
         $this->load->library('recaptcha');
     }
 
-    public function index()
-    {
+    public function index() {
         $recaptcha = $this->input->post('g-recaptcha-response');
         $data = array(
             'widget' => $this->recaptcha->getWidget(),
@@ -68,7 +65,7 @@ class Forget_password extends CI_Controller
             if (!empty($recaptcha)) {
                 $response = $this->recaptcha->verifyResponse($recaptcha);
                 if (isset($response['success']) and $response['success'] === true) {
-                 if($valid == 1) {
+                   if($valid == 1) {
                     $token = md5(rand());
 
                     // Update Database
@@ -119,6 +116,5 @@ class Forget_password extends CI_Controller
     } else {
         $this->load->view('admin/view_forget_password',$data);    
     }
-
 }
 }

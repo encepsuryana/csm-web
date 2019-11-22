@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Testimonial extends CI_Controller 
-{
-	function __construct() 
-	{
+class Testimonial extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_testimonial');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -23,6 +21,7 @@ class Testimonial extends CI_Controller
 			$this->load->view('admin/view_testimonial',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -31,8 +30,7 @@ class Testimonial extends CI_Controller
 		}
 	}
 
-	public function add()
-	{
+	public function add() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -71,8 +69,7 @@ class Testimonial extends CI_Controller
 					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$next_id = $this->Model_testimonial->get_auto_increment_id();
 					foreach ($next_id as $row) {
 						$ai_id = $row['Auto_increment'];
@@ -102,9 +99,7 @@ class Testimonial extends CI_Controller
 					unset($_POST['company']);
 					unset($_POST['comment']);
 					unset($_POST['comment_idn']);
-				} 
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 
@@ -120,6 +115,7 @@ class Testimonial extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

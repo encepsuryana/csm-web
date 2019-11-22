@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Slider extends CI_Controller 
-{
-	function __construct() 
-	{
+class Slider extends CI_Controller {
+
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_slider');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) {		
 			$header['setting'] = $this->Model_header->get_setting_data();
 
@@ -22,6 +20,7 @@ class Slider extends CI_Controller
 			$this->load->view('admin/view_slider',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -30,8 +29,7 @@ class Slider extends CI_Controller
 		}
 	}
 
-	public function add()
-	{
+	public function add() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) {		
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -102,7 +100,6 @@ class Slider extends CI_Controller
 				$this->load->view('admin/view_slider_add',$data);
 				$this->load->view('admin/view_footer');
 
-
 			} else {
 
 				$this->load->view('admin/view_header',$header);
@@ -111,6 +108,7 @@ class Slider extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -120,11 +118,10 @@ class Slider extends CI_Controller
 	}
 
 
-	public function edit($id)
-	{
+	public function edit($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
-    	// If there is no slider in this id, then redirect
+    		// If there is no slider in this id, then redirect
 			$tot = $this->Model_slider->slider_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/slider');
@@ -137,8 +134,7 @@ class Slider extends CI_Controller
 			$error = '';
 
 
-			if(isset($_POST['form1'])) 
-			{
+			if(isset($_POST['form1'])) {
 				$valid = 1;
 
 				$path = $_FILES['photo']['name'];
@@ -154,8 +150,7 @@ class Slider extends CI_Controller
 					}
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$data['slider'] = $this->Model_slider->getData($id);
 
 					if($path == '') {
@@ -170,8 +165,7 @@ class Slider extends CI_Controller
 							'button2_url'  => $_POST['button2_url']
 						);
 						$this->Model_slider->update($id,$form_data);
-					}
-					else {
+					} else {
 						unlink('./public/uploads/'.$data['slider']['photo']);
 
 						$final_name = 'slider-'.$id.'.'.$ext;
@@ -204,6 +198,7 @@ class Slider extends CI_Controller
 				$this->load->view('admin/view_footer');
 
 			} else {
+				
 				$data['slider'] = $this->Model_slider->getData($id);
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_slider_edit',$data);
@@ -211,6 +206,7 @@ class Slider extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -220,17 +216,20 @@ class Slider extends CI_Controller
 	}
 
 
-	public function delete($id) 
-	{
+	public function delete($id) {
+		
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-		// If there is no slider in this id, then redirect
+			
+			// If there is no slider in this id, then redirect
 			$tot = $this->Model_slider->slider_check($id);
+			
 			if(!$tot) {
 				redirect(base_url().'admin/slider');
 				exit;
 			}
 
 			$data['slider'] = $this->Model_slider->getData($id);
+			
 			if($data['slider']) {
 				unlink('./public/uploads/'.$data['slider']['photo']);
 			}
@@ -242,6 +241,7 @@ class Slider extends CI_Controller
 
 			redirect(base_url().'admin/slider');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

@@ -2,26 +2,23 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Language extends CI_Controller 
-{
-	function __construct() 
-	{
+class Language extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_language');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if ($this->session->userdata('role') == 'admin') {
 			$header['setting'] = $this->Model_header->get_setting_data();
 			$data['error'] = '';
 			$data['success'] = '';
 			$error = '';
 
-			if(isset($_POST['form1'])) 
-			{
+			if(isset($_POST['form1'])) {
 				foreach ($_POST['new_arr'] as $val) {
 					$new_arr2[] = $val;
 				}
@@ -80,8 +77,8 @@ class Language extends CI_Controller
 				$this->load->view('admin/view_footer');
 			}
 
-		}
-		else {
+		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

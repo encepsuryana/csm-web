@@ -1,18 +1,15 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Reset_password extends CI_Controller 
-{
+class Reset_password extends CI_Controller {
 
-    function __construct() 
-    {
+    function __construct() {
         parent::__construct();
         $this->load->model('admin/Model_reset_password');
         $this->load->model('admin/Model_log');
     }
 
-    public function index($email=0,$token=0)
-    {
+    public function index($email=0,$token=0) {
         $tot = $this->Model_reset_password->check_url($email,$token);
         if(!$tot) {
             redirect(base_url().'admin/login');

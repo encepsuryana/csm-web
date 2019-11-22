@@ -1,19 +1,16 @@
 <?php
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Product extends CI_Controller 
-{
-	function __construct() 
-	{
+class Product extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_product');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -24,6 +21,7 @@ class Product extends CI_Controller
 			$this->load->view('admin/view_product',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -32,8 +30,7 @@ class Product extends CI_Controller
 		}
 	}
 
-	public function add()
-	{
+	public function add() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -72,8 +69,7 @@ class Product extends CI_Controller
 					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$next_id = $this->Model_product->get_auto_increment_id();
 					foreach ($next_id as $row) {
 						$ai_id = $row['Auto_increment'];
@@ -90,6 +86,7 @@ class Product extends CI_Controller
 						'product_show_home' => $_POST['product_show_home'],
 						'product_star' 		=> $_POST['product_star']
 					);
+					
 					$this->Model_product->add($form_data);
 
 					//Add Log User
@@ -97,9 +94,7 @@ class Product extends CI_Controller
 					
 					$data['success'] = 'Produk berhasil ditambahkan!';
 
-				} 
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 
@@ -115,6 +110,7 @@ class Product extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -124,12 +120,12 @@ class Product extends CI_Controller
 	}
 
 
-	public function edit($id)
-	{
+	public function edit($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
 
-    	// If there is no service in this id, then redirect
+	    	// If there is no service in this id, then http_redirect()
 			$tot = $this->Model_product->product_check($id);
+	
 			if(!$tot) {
 				redirect(base_url().'admin/product');
 				exit;
@@ -141,8 +137,7 @@ class Product extends CI_Controller
 			$error = '';
 
 
-			if(isset($_POST['form1'])) 
-			{
+			if(isset($_POST['form1'])) {
 
 				$valid = 1;
 
@@ -169,8 +164,7 @@ class Product extends CI_Controller
 				}
 
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$data['product'] = $this->Model_product->getData($id);
 
 					if($path == '') {
@@ -182,8 +176,7 @@ class Product extends CI_Controller
 							'product_star' 		=> $_POST['product_star']
 						);
 						$this->Model_product->update($id,$form_data);
-					}
-					else {
+					} else {
 
 						unlink('./public/uploads/products/'.$data['product']['product_name']);
 
@@ -205,9 +198,7 @@ class Product extends CI_Controller
 					helper_log("edit", '[EDIT] Data: '.$_POST['product_caption'].' diupdate pada Produk');
 
 					$data['success'] = 'Produk telah berhasil diupdate';
-				}
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 
@@ -224,6 +215,7 @@ class Product extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -233,12 +225,12 @@ class Product extends CI_Controller
 	}
 
 
-	public function delete($id) 
-	{
+	public function delete($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
 
-		// If there is no product in this id, then redirect
+			// If there is no product in this id, then redirect
 			$tot = $this->Model_product->product_check($id);
+			
 			if(!$tot) {
 				redirect(base_url().'admin/product');
 				exit;
@@ -256,6 +248,7 @@ class Product extends CI_Controller
 
 			redirect(base_url().'admin/product');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

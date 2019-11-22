@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Owner extends CI_Controller 
-{
-	function __construct() 
-	{
+class Owner extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_owner');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if ($this->session->userdata('role') == 'admin') {
 			$data['error'] = '';
 			$data['success'] = '';
@@ -33,8 +31,8 @@ class Owner extends CI_Controller
 		}
 	}
 
-	public function update()
-	{
+	public function update() {
+
 		if ($this->session->userdata('role') == 'admin') {
 			$data['error'] = '';
 			$data['success'] = '';
@@ -57,8 +55,8 @@ class Owner extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
-				if($valid == 1) {
 
+				if($valid == 1) {
 					// removing the existing photo
 					unlink('./public/uploads/'.$data['owner']['img_owner1']);
 
@@ -79,8 +77,6 @@ class Owner extends CI_Controller
 			}
 
 			if(isset($_POST['form_owner2'])) {
-				
-				$valid = 1;
 				$path = $_FILES['img_owner2']['name'];
 				$path_tmp = $_FILES['img_owner2']['tmp_name'];
 				if($path!='') {
@@ -95,8 +91,8 @@ class Owner extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+				
 				if($valid == 1) {
-
 					// removing the existing photo
 					unlink('./public/uploads/'.$data['owner']['img_owner2']);
 
@@ -117,7 +113,6 @@ class Owner extends CI_Controller
 			}
 
 			if(isset($_POST['form_owner3'])) {
-				
 				$valid = 1;
 				$path = $_FILES['img_owner3']['name'];
 				$path_tmp = $_FILES['img_owner3']['tmp_name'];
@@ -133,8 +128,8 @@ class Owner extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
-				if($valid == 1) {
 
+				if($valid == 1) {
 					// removing the existing photo
 					unlink('./public/uploads/'.$data['owner']['img_owner3']);
 
@@ -171,8 +166,8 @@ class Owner extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+				
 				if($valid == 1) {
-
 					// removing the existing photo
 					unlink('./public/uploads/'.$data['owner']['img_owner4']);
 

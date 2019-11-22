@@ -1,17 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Profile extends CI_Controller 
-{
-	function __construct() 
-	{
+class Profile extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_profile');
 		$this->load->model('admin/Model_log');
 	}
-	public function index()
-	{
+	
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$data['error'] = '';
 			$data['success'] = '';
@@ -23,6 +22,7 @@ class Profile extends CI_Controller
 			$this->load->view('admin/view_profile',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -31,8 +31,7 @@ class Profile extends CI_Controller
 		}
 	}
 
-	public function update()
-	{
+	public function update() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$data['error'] = '';
 			$data['success'] = '';
@@ -86,11 +85,12 @@ class Profile extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+
 				if($valid == 1) {
-		    	// removing the existing photo
+		    		// removing the existing photo
 					unlink('./public/uploads/'.$this->session->userdata('photo'));
 
-		    	// updating the data
+		    		// updating the data
 					$final_name = 'avatar-'.$this->session->userdata('id').'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
@@ -141,6 +141,7 @@ class Profile extends CI_Controller
 			$this->load->view('admin/view_profile',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -149,8 +150,7 @@ class Profile extends CI_Controller
 		}
 	}
 
-	public function add()
-	{
+	public function add() {
 		if ($this->session->userdata('role') == 'admin') {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -190,8 +190,7 @@ class Profile extends CI_Controller
 					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$next_id = $this->Model_profile->get_auto_increment_id();
 					foreach ($next_id as $row) {
 						$ai_id = $row['Auto_increment'];
@@ -225,9 +224,7 @@ class Profile extends CI_Controller
 					unset($_POST['role']);
 					unset($_POST['status']);
 					unset($_POST['token']);
-				} 
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 
@@ -243,6 +240,7 @@ class Profile extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

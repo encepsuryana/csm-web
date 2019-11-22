@@ -3,15 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Aviation_electronics_department extends CI_Controller {
 
-	function __construct() 
-	{
+	function __construct() {
 		parent::__construct();
 		$this->load->model('Model_common');
 		$this->load->model('Model_aviation');
 	}
 
-	public function index()
-	{
+	public function index() {
 		$header['setting'] 							= $this->Model_common->get_setting_data();
 		$header['page'] 							= $this->Model_common->get_page_data();
 		$header['comment'] 							= $this->Model_common->get_comment_code();
@@ -37,8 +35,7 @@ class Aviation_electronics_department extends CI_Controller {
 		$this->load->view('view_footer');
 	}
 
-	public function view($slug)
-	{
+	public function view($slug) {
 		$header['setting'] 								= $this->Model_common->get_setting_data();
 		$header['page'] 								= $this->Model_common->get_page_data();
 		$header['comment'] 								= $this->Model_common->get_comment_code();

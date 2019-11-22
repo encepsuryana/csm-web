@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Partner extends CI_Controller 
-{
-	function __construct() 
-	{
+class Partner extends CI_Controller {
+
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_partner');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
@@ -22,6 +20,7 @@ class Partner extends CI_Controller
 			$this->load->view('admin/view_partner',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -30,8 +29,7 @@ class Partner extends CI_Controller
 		}
 	}
 
-	public function add()
-	{
+	public function add() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
@@ -66,8 +64,7 @@ class Partner extends CI_Controller
 					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$next_id = $this->Model_partner->get_auto_increment_id();
 					foreach ($next_id as $row) {
 						$ai_id = $row['Auto_increment'];
@@ -88,9 +85,7 @@ class Partner extends CI_Controller
 					$data['success'] = 'Partner berhasil ditambahkan!';
 
 					unset($_POST['name']);
-				} 
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 
@@ -105,6 +100,7 @@ class Partner extends CI_Controller
 				$this->load->view('admin/view_footer');
 			}		
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -114,10 +110,9 @@ class Partner extends CI_Controller
 	}
 
 
-	public function edit($id)
-	{
+	public function edit($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-    	// If there is no partner in this id, then redirect
+    		// If there is no partner in this id, then redirect
 			$tot = $this->Model_partner->partner_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/partner');
@@ -130,9 +125,7 @@ class Partner extends CI_Controller
 			$error = '';
 
 
-			if(isset($_POST['form1'])) 
-			{
-
+			if(isset($_POST['form1'])) {
 				$valid = 1;
 
 				$this->form_validation->set_rules('name', 'Name', 'trim|required');
@@ -155,8 +148,7 @@ class Partner extends CI_Controller
 					}
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$data['partner'] = $this->Model_partner->getData($id);
 
 					if($path == '') {
@@ -164,8 +156,7 @@ class Partner extends CI_Controller
 							'name' => $_POST['name']
 						);
 						$this->Model_partner->update($id,$form_data);
-					}
-					else {
+					} else {
 						unlink('./public/uploads/'.$data['partner']['photo']);
 
 						$final_name = 'partner-'.$id.'.'.$ext;
@@ -182,9 +173,7 @@ class Partner extends CI_Controller
 					helper_log("edit", '[EDIT] Data: '.$_POST['name'].' diupdate pada Partner');
 
 					$data['success'] = 'Partner telah berhasil diupdate';
-				}
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 
@@ -201,6 +190,7 @@ class Partner extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -210,10 +200,10 @@ class Partner extends CI_Controller
 	}
 
 
-	public function delete($id) 
-	{
+	public function delete($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-		// If there is no partner in this id, then redirect
+			
+			// If there is no partner in this id, then redirect
 			$tot = $this->Model_partner->partner_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/partner');
@@ -232,6 +222,7 @@ class Partner extends CI_Controller
 
 			redirect(base_url().'admin/partner');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

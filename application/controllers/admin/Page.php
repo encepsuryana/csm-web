@@ -1,17 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Page extends CI_Controller 
-{
-	function __construct() 
-	{
+class Page extends CI_Controller {
+
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_page');
 		$this->load->model('admin/Model_log');
 	}
-	public function index()
-	{
+
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd'))  {
 			$data['error'] = '';
 			$data['success'] = '';
@@ -31,8 +30,7 @@ class Page extends CI_Controller
 		}
 	}
 
-	public function delete_about_photo()
-	{
+	public function delete_about_photo() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd'))  {
 
 			$t = $this->Model_page->get_about_photo_name();
@@ -48,6 +46,7 @@ class Page extends CI_Controller
 
 			redirect(base_url().'admin/page');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -56,8 +55,8 @@ class Page extends CI_Controller
 		}
 	}
 
-	public function delete_structure_photo()
-	{
+	public function delete_structure_photo() {
+		
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
 			$t = $this->Model_page->get_structure_photo_name();
@@ -81,8 +80,7 @@ class Page extends CI_Controller
 		} 
 	}
 
-	public function update()
-	{
+	public function update() {
 		if ($this->session->userdata('role') == 'admin')  {
 			$data['error'] = '';
 			$data['success'] = '';
@@ -105,15 +103,15 @@ class Page extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+
 				if($valid == 1) {
 
-					if($_POST['current_about_photo'] != '')
-					{
+					if($_POST['current_about_photo'] != '') {
 			    	// removing the existing photo
 						unlink('./public/uploads/'.$_POST['current_about_photo']);	
 					}
 
-		    	// updating the data
+		    		// updating the data
 					$final_name = 'about_photo'.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
@@ -145,6 +143,7 @@ class Page extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+
 				if($valid == 1) {
 
 					if($_POST['current_structure_photo'] != '')
@@ -153,13 +152,14 @@ class Page extends CI_Controller
 						unlink('./public/uploads/'.$_POST['current_structure_photo']);	
 					}
 
-		    	// updating the data
+		    		// updating the data
 					$final_name = 'structure_photo'.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
 					$form_data = array(
 						'structure_photo' => $final_name
 					);
+					
 					$this->Model_page->update($form_data);
 
 					//Add Log User
@@ -351,7 +351,6 @@ class Page extends CI_Controller
 				$data['success'] = 'Setting Halaman Pencarian telah berhasil diupdate!';
 			}
 
-
 			if(isset($_POST['form_term'])) {			
 				$form_data = array(
 					'term_content' => $_POST['term_content'],
@@ -463,15 +462,15 @@ class Page extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+				
 				if($valid == 1) {
 
-					if($_POST['current_structure_photo'] != '')
-					{
+					if($_POST['current_structure_photo'] != '') {
 			    	// removing the existing photo
 						unlink('./public/uploads/'.$_POST['current_structure_photo']);	
 					}
 
-		    	// updating the data
+		    		// updating the data
 					$final_name = 'structure_photo'.'.'.$ext;
 					move_uploaded_file( $path_tmp, './public/uploads/'.$final_name );
 
@@ -520,6 +519,7 @@ class Page extends CI_Controller
 			$this->load->view('admin/view_page',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

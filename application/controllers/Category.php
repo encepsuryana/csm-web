@@ -3,15 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Category extends CI_Controller {
 
-	function __construct() 
-	{
+	function __construct() {
 		parent::__construct();
 		$this->load->model('Model_common');
 		$this->load->model('Model_category');
 	}
 
-	public function view($slug)
-	{
+	public function view($slug) {
 		// If there is no slug after category in URL, redirect to the category page
 		if(!$slug)
 		{
@@ -36,7 +34,6 @@ class Category extends CI_Controller {
 		$header['aviation_electronics'] 			= $this->Model_common->get_aviation_electronics_data();
 		$header['aviation_electronics_category'] 	= $this->Model_common->get_aviation_electronics_category();
 		$header['owner'] 							= $this->Model_common->get_owner_data();
-
 
 		$data['category'] 							= $this->Model_category->get_category_data($slug);
 		$data['news'] 								= $this->Model_category->get_news_data($slug);

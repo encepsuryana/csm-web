@@ -1,7 +1,6 @@
 <?php 
 class Download extends CI_Controller{
-	function __construct()
-	{
+	function __construct() {
 		parent::__construct();
 		$this->load->model('Model_common');
 		$this->load->model('Model_download');
@@ -28,7 +27,6 @@ class Download extends CI_Controller{
 		$header['aviation_electronics_category'] 	= $this->Model_common->get_aviation_electronics_category();
 		$header['owner'] 							= $this->Model_common->get_owner_data();
 
-		
 		$header['content_home'] 					= $this->Model_download->get_dataspanduk();
 
 		$this->load->view('view_header',$header);
@@ -57,4 +55,3 @@ class Download extends CI_Controller{
 		force_download($name,$data);
 	}
 }
-?>

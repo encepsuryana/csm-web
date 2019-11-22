@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Portfolio extends CI_Controller 
-{
-	function __construct() 
-	{
+class Portfolio extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_portfolio');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
@@ -22,6 +20,7 @@ class Portfolio extends CI_Controller
 			$this->load->view('admin/view_portfolio',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -30,8 +29,7 @@ class Portfolio extends CI_Controller
 		} 
 	}
 
-	public function add()
-	{
+	public function add() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
@@ -72,8 +70,7 @@ class Portfolio extends CI_Controller
 					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$next_id = $this->Model_portfolio->get_auto_increment_id();
 					foreach ($next_id as $row) {
 						$ai_id = $row['Auto_increment'];
@@ -99,8 +96,7 @@ class Portfolio extends CI_Controller
 					$this->Model_portfolio->add($form_data);
 
 
-					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) )
-					{
+					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) ) {
 						$photos = array();
 						$photos = $_FILES['photos']["name"];
 						$photos = array_values(array_filter($photos));
@@ -134,8 +130,7 @@ class Portfolio extends CI_Controller
 						}
 					}
 
-					for($i=0;$i<count($final_names);$i++)
-					{
+					for($i=0;$i<count($final_names);$i++) {
 						$form_data = array(
 							'product_id' 	 => $ai_id,
 							'slug_portfolio' => $slug,
@@ -156,9 +151,7 @@ class Portfolio extends CI_Controller
 					unset($_POST['content_idn']);
 					unset($_POST['meta_keyword']);
 					unset($_POST['meta_description']);
-				} 
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 
@@ -175,6 +168,7 @@ class Portfolio extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -183,10 +177,10 @@ class Portfolio extends CI_Controller
 		}
 	}
 
-	public function edit($id)
-	{
+	public function edit($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
 			$tot = $this->Model_portfolio->portfolio_check($id);
+			
 			if(!$tot) {
 				redirect(base_url().'admin/portfolio');
 				exit;
@@ -197,8 +191,7 @@ class Portfolio extends CI_Controller
 			$data['success'] = '';
 			$error = '';
 
-			if(isset($_POST['form1'])) 
-			{
+			if(isset($_POST['form1'])) {
 				$valid = 1;
 
 				$this->form_validation->set_rules('name', 'Judul', 'trim|required');
@@ -229,8 +222,7 @@ class Portfolio extends CI_Controller
 					}
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$data['portfolio'] = $this->Model_portfolio->getData($id);
 
 					if($path == '') {
@@ -247,8 +239,7 @@ class Portfolio extends CI_Controller
 							'slug_portfolio'  	=> $slug
 						);
 						$this->Model_portfolio->update($id,$form_data);
-					}
-					else {
+					} else {
 						unlink('./public/uploads/'.$data['portfolio']['photo']);
 
 						$final_name = 'portfolio-'.$id.'.'.$ext;
@@ -270,8 +261,7 @@ class Portfolio extends CI_Controller
 						$this->Model_portfolio->update($id,$form_data);
 					}
 
-					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) )
-					{
+					if( isset($_FILES['photos']["name"]) && isset($_FILES['photos']["tmp_name"]) ) {
 						$photos = array();
 						$photos = $_FILES['photos']["name"];
 						$photos = array_values(array_filter($photos));
@@ -289,11 +279,12 @@ class Portfolio extends CI_Controller
 
 						$m=0;
 						$final_names = array();
-						for($i=0;$i<count($photos);$i++)
-						{
+						
+						for($i=0;$i<count($photos);$i++) {
 
 							$ext = pathinfo( $photos[$i], PATHINFO_EXTENSION );
 							$ext_check = $this->Model_header->extension_check_photo($ext);
+							
 							if($ext_check == FALSE) {
 							} else {
 								$final_names[$m] = $z.'.'.$ext;
@@ -304,8 +295,7 @@ class Portfolio extends CI_Controller
 						}
 					}
 
-					for($i=0;$i<count($final_names);$i++)
-					{
+					for($i=0;$i<count($final_names);$i++) {
 						$form_data = array(
 							'portfolio_id' => $id,
 							'slug_portfolio' => $slug,
@@ -318,9 +308,7 @@ class Portfolio extends CI_Controller
 					helper_log("edit", '[EDIT] Data: '.$_POST['name'].' diupdate pada Portofolio');
 
 					$data['success'] = 'Portofolio telah berhasil diupdate';
-				}
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 
@@ -332,6 +320,7 @@ class Portfolio extends CI_Controller
 				$this->load->view('admin/view_footer');
 
 			} else {
+
 				$data['portfolio'] = $this->Model_portfolio->getData($id);
 				$data['all_photo_category'] = $this->Model_portfolio->get_all_photo_category();
 				$data['all_photos_by_id'] = $this->Model_portfolio->get_all_photos_by_category_id($id);
@@ -341,6 +330,7 @@ class Portfolio extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -350,17 +340,19 @@ class Portfolio extends CI_Controller
 	}
 
 
-	public function delete($id) 
-	{
+	public function delete($id) {
 		if ($this->session->userdata('role') == 'admin') {
-		// If there is no portfolio in this id, then redirect
+		
+			// If there is no portfolio in this id, then redirect
 			$tot = $this->Model_portfolio->portfolio_check($id);
+			
 			if(!$tot) {
 				redirect(base_url().'admin/portfolio');
 				exit;
 			}
 
 			$data['portfolio'] = $this->Model_portfolio->getData($id);
+			
 			if($data['portfolio']) {
 				unlink('./public/uploads/'.$data['portfolio']['photo']);
 			}
@@ -378,6 +370,7 @@ class Portfolio extends CI_Controller
 
 			redirect(base_url().'admin/portfolio');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -387,6 +380,7 @@ class Portfolio extends CI_Controller
 	}
 
 	public function single_photo_delete($photo_id=0,$portfolio_id=0) {
+		
 		if ($this->session->userdata('role') == 'admin') {
 
 			$portfolio_photo = $this->Model_portfolio->portfolio_photo_by_id($photo_id);
@@ -397,6 +391,7 @@ class Portfolio extends CI_Controller
 			redirect(base_url().'admin/portfolio/edit/'.$portfolio_id);
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

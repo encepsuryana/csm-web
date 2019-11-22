@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Aviation_electronics_department_category extends CI_Controller 
-{
-	function __construct() 
-	{
+class Aviation_electronics_department_category extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_aviation_category');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -31,8 +29,7 @@ class Aviation_electronics_department_category extends CI_Controller
 		}
 	}
 
-	public function add()
-	{
+	public function add() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -41,7 +38,6 @@ class Aviation_electronics_department_category extends CI_Controller
 			$data['success'] = '';
 
 			if(isset($_POST['form1'])) {
-
 				$valid = 1;
 
 				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
@@ -51,9 +47,7 @@ class Aviation_electronics_department_category extends CI_Controller
 					$data['error'] = validation_errors();
 				}
 
-				if($valid == 1) 
-				{
-
+				if($valid == 1) {
 					$form_data = array(
 						'category_name'=> $_POST['category_name'],
 						'status'       => $_POST['status']
@@ -76,7 +70,9 @@ class Aviation_electronics_department_category extends CI_Controller
 				$this->load->view('admin/view_aviation_electronics_category_add',$data);
 				$this->load->view('admin/view_footer');
 			}
+
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -85,11 +81,10 @@ class Aviation_electronics_department_category extends CI_Controller
 		}
 	}
 
-	public function edit($id)
-	{
+	public function edit($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
-    		$tot = $this->Model_aviation_category->aviation_electronics_category_check($id);
+			$tot = $this->Model_aviation_category->aviation_electronics_category_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/aeronautical-electronics-engineering-category');
 				exit;
@@ -100,8 +95,7 @@ class Aviation_electronics_department_category extends CI_Controller
 			$data['success'] = '';
 			$error = '';
 
-			if(isset($_POST['form1'])) 
-			{
+			if(isset($_POST['form1'])) {
 				$valid = 1;
 
 				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
@@ -109,6 +103,7 @@ class Aviation_electronics_department_category extends CI_Controller
 				if($this->form_validation->run() == FALSE) {
 					$valid = 0;
 					$data['error'] = validation_errors();
+					
 				} else {
 
             		// Duplicate Category Checking
@@ -120,8 +115,7 @@ class Aviation_electronics_department_category extends CI_Controller
 					}
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 		    		// Updating Data
 					$form_data = array(
 						'category_name'=> $_POST['category_name'],
@@ -141,6 +135,7 @@ class Aviation_electronics_department_category extends CI_Controller
 				$this->load->view('admin/view_footer');
 
 			} else {
+				
 				$data['aviation_electronics_category'] = $this->Model_aviation_category->getData($id);
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_aviation_electronics_category_edit',$data);
@@ -148,6 +143,7 @@ class Aviation_electronics_department_category extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -156,12 +152,11 @@ class Aviation_electronics_department_category extends CI_Controller
 		}
 	}
 
-	public function delete($id) 
-	{
+	public function delete($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff')) {
-
 			// If there is no aviation_electronics category in this id, then redirect
 			$tot = $this->Model_aviation_category->aviation_electronics_category_check($id);
+			
 			if(!$tot) {
 				redirect(base_url().'admin/aeronautical-electronics-engineering-category');
 				exit;
@@ -175,9 +170,11 @@ class Aviation_electronics_department_category extends CI_Controller
 				foreach ($result1 as $row1) {
 					$photo = $row1['photo'];
 				}
+				
 				if($photo!='') {
 					unlink('./public/uploads/'.$photo);
 				}
+				
 				$result1 = $this->Model_aviation_category->show_aviation_electronics_photo_by_aviation_electronics_id($row['id']);
 				foreach ($result1 as $row1) {
 					$photo = $row1['photo'];
@@ -187,13 +184,16 @@ class Aviation_electronics_department_category extends CI_Controller
 				$this->Model_aviation_category->delete1($row['id']);
 				$this->Model_aviation_category->delete2($row['id']);
 			}
+			
 			$this->Model_aviation_category->delete($id);
 
 			//Add Log User
 			helper_log("Delete", '[HAPUS] Data: '.$data['aviation_electronics_category']['category_name'].' dihapus dari kategori Departemen Aviasi & Elektronik');
 
 			redirect(base_url().'admin/aeronautical-electronics-engineering-category');
+		
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -201,5 +201,4 @@ class Aviation_electronics_department_category extends CI_Controller
 			}
 		}
 	}
-
 }

@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Facility_category extends CI_Controller 
-{
-	function __construct() 
-	{
+class Facility_category extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_facility_category');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -23,6 +21,7 @@ class Facility_category extends CI_Controller
 			$this->load->view('admin/view_facility_category',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -31,8 +30,7 @@ class Facility_category extends CI_Controller
 		}
 	}
 
-	public function add()
-	{
+	public function add() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
 			$header['setting'] = $this->Model_header->get_setting_data();
@@ -51,8 +49,7 @@ class Facility_category extends CI_Controller
 					$data['error'] = validation_errors();
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 
 					$form_data = array(
 						'category_name'=> $_POST['category_name'],
@@ -77,6 +74,7 @@ class Facility_category extends CI_Controller
 				$this->load->view('admin/view_footer');
 			}
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -86,11 +84,10 @@ class Facility_category extends CI_Controller
 	}
 
 
-	public function edit($id)
-	{
+	public function edit($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 
-    	// If there is no service in this id, then redirect
+    		// If there is no service in this id, then redirect
 			$tot = $this->Model_facility_category->facility_category_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/facility-category');
@@ -102,10 +99,7 @@ class Facility_category extends CI_Controller
 			$data['success'] = '';
 			$error = '';
 
-
-			if(isset($_POST['form1'])) 
-			{
-
+			if(isset($_POST['form1'])) {
 				$valid = 1;
 
 				$this->form_validation->set_rules('category_name', 'Nama Kategori', 'trim|required');
@@ -115,7 +109,7 @@ class Facility_category extends CI_Controller
 					$data['error'] = validation_errors();
 				} else {
 
-            	// Duplicate Category Checking
+            		// Duplicate Category Checking
 					$data['facility_category'] = $this->Model_facility_category->getData($id);
 					$total = $this->Model_facility_category->duplicate_check($_POST['category_name'],$data['facility_category']['category_name']);				
 					if($total) {
@@ -124,9 +118,8 @@ class Facility_category extends CI_Controller
 					}
 				}
 
-				if($valid == 1) 
-				{
-		    	// Updating Data
+				if($valid == 1) {
+		    		// Updating Data
 					$form_data = array(
 						'category_name'=> $_POST['category_name'],
 						'status'       => $_POST['status']
@@ -145,6 +138,7 @@ class Facility_category extends CI_Controller
 				$this->load->view('admin/view_footer');
 
 			} else {
+				
 				$data['facility_category'] = $this->Model_facility_category->getData($id);
 				$this->load->view('admin/view_header',$header);
 				$this->load->view('admin/view_facility_category_edit',$data);
@@ -152,6 +146,7 @@ class Facility_category extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -161,8 +156,7 @@ class Facility_category extends CI_Controller
 	}
 
 
-	public function delete($id) 
-	{
+	public function delete($id) {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) {
 
 			$tot = $this->Model_facility_category->facility_category_check($id);
@@ -197,6 +191,7 @@ class Facility_category extends CI_Controller
 
 			redirect(base_url().'admin/facility-category');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

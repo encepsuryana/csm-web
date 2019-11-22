@@ -1,18 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class News extends CI_Controller 
-{
-	function __construct() 
-	{
+class News extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_news');
 		$this->load->model('admin/Model_log');
 	}
 
-	public function index()
-	{
+	public function index() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
@@ -30,8 +28,7 @@ class News extends CI_Controller
 		}
 	}
 
-	public function add()
-	{
+	public function add() {
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
 			$header['setting'] = $this->Model_header->get_setting_data();
 
@@ -69,8 +66,8 @@ class News extends CI_Controller
 					$valid = 0;
 					$error .= 'Anda harus memilih foto untuk foto unggulan<br>';
 				}
-				if($valid == 1) 
-				{
+
+				if($valid == 1) {
 					$next_id = $this->Model_news->get_auto_increment_id();
 					foreach ($next_id as $row) {
 						$ai_id = $row['Auto_increment'];
@@ -121,9 +118,7 @@ class News extends CI_Controller
 					unset($_POST['meta_description']);
 					unset($_POST['user_update']);
 					unset($_POST['post_slug']);
-				} 
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 
@@ -140,6 +135,7 @@ class News extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -149,10 +145,11 @@ class News extends CI_Controller
 	}
 
 
-	public function edit($id)
-	{
+	public function edit($id) {
+
 		if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) {
-    	// If there is no news in this id, then redirect
+    		
+    		// If there is no news in this id, then redirect
 			$tot = $this->Model_news->news_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/news');
@@ -164,8 +161,7 @@ class News extends CI_Controller
 			$data['success'] = '';
 			$error = '';
 
-			if(isset($_POST['form1'])) 
-			{
+			if(isset($_POST['form1'])) {
 
 				$judul = $_POST['news_title'];
 				$string=preg_replace('/[^A-Za-z0-9\- ]/', '', $judul);
@@ -197,8 +193,7 @@ class News extends CI_Controller
 					}
 				}
 
-				if($valid == 1) 
-				{
+				if($valid == 1) {
 					$data['news'] = $this->Model_news->getData($id);
 
 					if($path == '') {
@@ -219,8 +214,7 @@ class News extends CI_Controller
 							'post_slug'  		 	=> $slug
 						);
 						$this->Model_news->update($id,$form_data);
-					}
-					else {
+					} else {
 						unlink('./public/uploads/'.$data['news']['photo']);
 
 						$final_name = 'news-'.$id.'.'.$ext;
@@ -252,9 +246,7 @@ class News extends CI_Controller
 					helper_log("edit", '[EDIT] Data: '.$_POST['news_title'].' diupdate pada Berita');
 
 					$data['success'] = 'News telah berhasil diupdate';
-				}
-				else
-				{
+				} else {
 					$data['error'] = $error;
 				}
 
@@ -273,6 +265,7 @@ class News extends CI_Controller
 			}
 
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -282,10 +275,10 @@ class News extends CI_Controller
 	}
 
 
-	public function delete($id) 
-	{
+	public function delete($id) {
+	
 		if ($this->session->userdata('role') == 'admin') {
-		// If there is no team member in this id, then redirect
+			// If there is no team member in this id, then redirect
 			$tot = $this->Model_news->news_check($id);
 			if(!$tot) {
 				redirect(base_url().'admin/news');
@@ -304,6 +297,7 @@ class News extends CI_Controller
 
 			redirect(base_url().'admin/news');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

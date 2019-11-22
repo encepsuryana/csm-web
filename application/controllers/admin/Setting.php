@@ -1,17 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Setting extends CI_Controller 
-{
-	function __construct() 
-	{
+class Setting extends CI_Controller {
+	
+	function __construct() {
 		parent::__construct();
 		$this->load->model('admin/Model_header');
 		$this->load->model('admin/Model_setting');
 		$this->load->model('admin/Model_log');
 	}
-	public function index()
-	{
+	
+	public function index() {
 		if ($this->session->userdata('role') == 'admin') {
 			$data['error'] = '';
 			$data['success'] = '';
@@ -22,6 +21,7 @@ class Setting extends CI_Controller
 			$this->load->view('admin/view_setting',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {
@@ -29,8 +29,8 @@ class Setting extends CI_Controller
 			}
 		}
 	}
-	public function update()
-	{
+
+	public function update() {
 		if ($this->session->userdata('role') == 'admin') {
 			$data['error'] = '';
 			$data['success'] = '';
@@ -53,6 +53,7 @@ class Setting extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+
 				if($valid == 1) {
 		    		// removing the existing photo
 					unlink('./public/uploads/'.$header['setting']['logo']);
@@ -87,6 +88,7 @@ class Setting extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+
 				if($valid == 1) {
 		    		// removing the existing photo
 					unlink('./public/uploads/'.$header['setting']['logo2']);
@@ -120,6 +122,7 @@ class Setting extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+
 				if($valid == 1) {
 		    		// removing the existing photo
 					unlink('./public/uploads/'.$header['setting']['logo_admin']);
@@ -153,6 +156,7 @@ class Setting extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+
 				if($valid == 1) {
 		    		// removing the existing photo
 					unlink('./public/uploads/'.$header['setting']['favicon']);
@@ -186,6 +190,7 @@ class Setting extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+				
 				if($valid == 1) {
 		    		// removing the existing photo
 					unlink('./public/uploads/'.$header['setting']['login_bg']);
@@ -268,6 +273,7 @@ class Setting extends CI_Controller
 					$valid = 0;
 					$data['error'] = 'Anda harus memilih foto<br>';
 				}
+				
 				if($valid == 1) {
 		    		// removing the existing photo
 					unlink('./public/uploads/'.$header['setting']['counter_bg']);
@@ -343,6 +349,7 @@ class Setting extends CI_Controller
 			$this->load->view('admin/view_setting',$data);
 			$this->load->view('admin/view_footer');
 		} else {
+			
 			if(!$this->session->userdata('id')) {
 				redirect(base_url().'admin/login');
 			} else {

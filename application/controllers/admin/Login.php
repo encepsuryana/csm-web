@@ -1,19 +1,16 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Login extends CI_Controller 
-{
+class Login extends CI_Controller {
 
-    function __construct() 
-    {
+    function __construct() {
         parent::__construct();
         $this->load->model('admin/Model_login');
         $this->load->model('admin/Model_log');
         $this->load->library('recaptcha');
     }
 
-    public function index()
-    {
+    public function index() {
         $recaptcha = $this->input->post('g-recaptcha-response');
         $data = array(
             'widget' => $this->recaptcha->getWidget(),
