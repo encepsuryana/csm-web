@@ -21,40 +21,38 @@
 	</div>
 
 	<div class="container pt_15 bg-about">
-		<div class="row">
-			<?php if($page['about_photo']!=""): ?>
-				<div class="col-md-12">
-					<img src="<?php echo base_url(); ?>public/uploads/<?php echo $page['about_photo']; ?>" alt=""><br>
-				</div>
-			<?php endif; ?>
-
+		<?php if($page['about_photo']!=""): ?>
 			<div class="col-md-12">
-				<div class="about_heading">
-					<div data-aos="fade-left">
-						<h3><?php echo ABOUT_COMPANY; ?></h3>
-					</div>
+				<img src="<?php echo base_url(); ?>public/uploads/<?php echo $page['about_photo']; ?>" alt=""><br>
+			</div>
+		<?php endif; ?>
+
+		<div class="col-md-12">
+			<div class="about_heading">
+				<div data-aos="fade-left">
+					<h3><?php echo ABOUT_COMPANY; ?></h3>
 				</div>
+			</div>
 
-				<div data-aos="fade-up">
-					<div class="about_style">
-						<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+			<div data-aos="fade-up">
+				<div class="about_style">
+					<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
 
-							if ($page['about_content_idn'] == '') {
-								echo $page['about_content'];
-							} else {
-								echo $page['about_content_idn'];
-							}
-
+						if ($page['about_content_idn'] == '') {
+							echo $page['about_content'];
 						} else {
+							echo $page['about_content_idn'];
+						}
 
-							if ($page['about_content'] == '') {
-								echo $page['about_content_idn'];
-							} else {
-								echo $page['about_content'];
-							}
+					} else {
 
-						}?>
-					</div>
+						if ($page['about_content'] == '') {
+							echo $page['about_content_idn'];
+						} else {
+							echo $page['about_content'];
+						}
+
+					}?>
 				</div>
 			</div>
 		</div>
@@ -80,7 +78,7 @@
 				<div class="tab-content">
 					<div class="tab-pane active text-style" id="profile">
 						<div class="col-md-10">
-						<h2><?php echo PROFILE_IDENTITY; ?></h2>
+							<h2><?php echo PROFILE_IDENTITY; ?></h2>
 							<p>
 								<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
 
@@ -104,7 +102,7 @@
 					</div>
 					<div class="tab-pane" id="structure">
 						<div class="col-md-10">
-						<h2><?php echo STRUCTURE_ORGANIZATION; ?></h2>
+							<h2><?php echo STRUCTURE_ORGANIZATION; ?></h2>
 							<img src="<?php echo base_url(); ?>public/uploads/<?php echo $page['structure_photo']; ?>">
 						</div>
 					</div>
@@ -112,7 +110,7 @@
 						<!-- Vision & Mision Area-->
 
 						<div class="col-md-5 col-sm-5">
-						<h2><?php echo VISION_AND_MISSION ?></h2>
+							<h2><?php echo VISION_AND_MISSION ?></h2>
 							<div class="about-mission">
 								<h3><?php echo VISION_HEADING ?></h3>
 								<p>
@@ -163,7 +161,7 @@
 					</div>
 					<div class="tab-pane" id="culture">
 						<div class="col-md-10">
-						<h2><?php echo CULTURE; ?></h2>
+							<h2><?php echo CULTURE; ?></h2>
 							<p>
 								<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
 
@@ -186,7 +184,7 @@
 					</div>
 					<div class="tab-pane" id="commitment">
 						<div class="col-md-10">
-						<h2><?php echo COMMITMENT; ?></h2>
+							<h2><?php echo COMMITMENT; ?></h2>
 							<p>
 								<?php if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
 

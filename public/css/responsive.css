@@ -186,6 +186,9 @@
 /*mobile small layout*/
 
 @media only screen and (max-width:767px) {
+	.header-contact {
+		margin-top: 10px;
+	}
 	.footer-owner-info {
 		text-align: center;
 	}
@@ -512,6 +515,9 @@
 
 /*mobile large layout*/
 @media only screen and (min-width: 480px) and (max-width:767px) {
+	.header-contact {
+		margin-top: 10px;
+	}
 	.footer-owner-info {
 		text-align: center;
 	}
@@ -697,6 +703,9 @@
 
 /*Other*/
 @media only screen and (min-width: 660px) and (max-width:767px) {
+	.header-contact {
+		margin-top: 10px;
+	}
 	.pd-0 {
 		padding-left: 15px !important;
 		padding-right: 15px !important;

@@ -242,7 +242,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</section>
 
-				
 			</div>
 		</div>
 		
@@ -299,104 +298,102 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<h3><?php echo PRODUCT_HOME; ?></h3>
 			</div>
 
-			<div data-aos="fade-up">
-				<div class="row-product">		
-					<?php
-					$i=0;
-					foreach ($product as $row) {
-						$i++;
-						if($i>$setting['total_product_post']) {break;}
-						?>
-						<div onclick="openModal();currentSlide(<?php echo $i ?>)" class="<?php echo $row['product_style']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>)">
-							<div class="toggleIcon">
-								<h4>
-									<?php 
-									if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
-
-										if ($row['product_caption_idn'] == "") {
-											echo $row['product_caption'];
-										} else {
-											echo $row['product_caption_idn'];
-										}
-
-									} else {
-
-										if ($row['product_caption'] == "") {
-											echo $row['product_caption_idn'];
-										} else {
-											echo $row['product_caption'];
-										}
-									}
-									?>
-								</h4>						
-							</div>
-						</div>
-						<?php
-					}
+			<div class="row-product">		
+				<?php
+				$i=0;
+				foreach ($product as $row) {
+					$i++;
+					if($i>$setting['total_product_post']) {break;}
 					?>
-					<div data-aos="fade-right">
-						<div class="all-product">
-							<a target="_blank" href="<?php echo base_url(); ?>product"><?php echo SEE_MORE; ?> <?php echo OUR_PRODUCT; ?></a>
+					<div onclick="openModal();currentSlide(<?php echo $i ?>)" class="<?php echo $row['product_style']; ?>" style="background-image: url(<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>)">
+						<div class="toggleIcon">
+							<h4>
+								<?php 
+								if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+									if ($row['product_caption_idn'] == "") {
+										echo $row['product_caption'];
+									} else {
+										echo $row['product_caption_idn'];
+									}
+
+								} else {
+
+									if ($row['product_caption'] == "") {
+										echo $row['product_caption_idn'];
+									} else {
+										echo $row['product_caption'];
+									}
+								}
+								?>
+							</h4>						
 						</div>
 					</div>
-					
-					<div id="myModal" class="modal">
-						<span class="close cursor" onclick="closeModal()">&times;</span>
-						<div class="modal-content">
-							<?php
-							foreach ($product as $row) {
-								?>
-								<div class="mySlides">
-									<div class="product-caption">
-										<h4>
-											<?php 
-											if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+					<?php
+				}
+				?>
+				<div data-aos="fade-right">
+					<div class="all-product">
+						<a target="_blank" href="<?php echo base_url(); ?>product"><?php echo SEE_MORE; ?> <?php echo OUR_PRODUCT; ?></a>
+					</div>
+				</div>
+				
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+						<?php
+						foreach ($product as $row) {
+							?>
+							<div class="mySlides">
+								<div class="product-caption">
+									<h4>
+										<?php 
+										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
 
-												if ($row['product_caption_idn'] == "") {
-													echo $row['product_caption'];
-												} else {
-													echo $row['product_caption_idn'];
-												}
-
+											if ($row['product_caption_idn'] == "") {
+												echo $row['product_caption'];
 											} else {
-
-												if ($row['product_caption'] == "") {
-													echo $row['product_caption_idn'];
-												} else {
-													echo $row['product_caption'];
-												}
+												echo $row['product_caption_idn'];
 											}
-											?>
-										</h4>
-									</div>
-									<div class="product-desc">
-										<p>
-											<?php 
-											if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
 
-												if ($row['product_desc_idn'] == "") {
-													echo $row['product_desc'];
-												} else { 
-													echo $row['product_desc_idn'];
-												}
+										} else {
 
+											if ($row['product_caption'] == "") {
+												echo $row['product_caption_idn'];
 											} else {
-
-												if ($row['product_desc'] == "") {
-													echo $row['product_desc_idn'];
-												} else { 
-													echo $row['product_desc'];
-												}
+												echo $row['product_caption'];
 											}
-											?>
-										</p>
-									</div>
-									<img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>" style="width:100%">
+										}
+										?>
+									</h4>
 								</div>
-							<?php }	?>
-							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="next" onclick="plusSlides(1)">&#10095;</a>
-						</div>
+								<div class="product-desc">
+									<p>
+										<?php 
+										if (empty($this->session->userdata('language')) or ($this->session->userdata('language')=='idn')) {
+
+											if ($row['product_desc_idn'] == "") {
+												echo $row['product_desc'];
+											} else { 
+												echo $row['product_desc_idn'];
+											}
+
+										} else {
+
+											if ($row['product_desc'] == "") {
+												echo $row['product_desc_idn'];
+											} else { 
+												echo $row['product_desc'];
+											}
+										}
+										?>
+									</p>
+								</div>
+								<img src="<?php echo base_url(); ?>public/uploads/products/<?php echo $row['product_name']; ?>" style="width:100%">
+							</div>
+						<?php }	?>
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
 					</div>
 				</div>
 			</div>

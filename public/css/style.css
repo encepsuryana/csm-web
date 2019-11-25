@@ -9,9 +9,11 @@ body {
 	line-height: 1.5;
 	color: #333;
 }
+
 .link-post {
 	padding: 0;
 }
+
 ol {
 	padding-left: 40px;
 }
@@ -19,6 +21,7 @@ ol {
 ul {
 	padding-left: 40px;
 }
+
 * {
 	margin: 0;
 	padding: 0;
@@ -35,14 +38,17 @@ ul {
 	padding-left: 0;
 	font-size: 10px;
 }
+
 .menu-link-content {
 	text-align: right; 
 	padding-right: 0;
 	font-size: 10px;
 }
+
 .input-group .form-control {
 	border-right: 0;
 }
+
 .site-maps {
 	margin: 0;
 }
@@ -61,6 +67,14 @@ ul {
 
 .pr-10 {
 	padding-right: 10px !important;
+}
+
+.pr-0 {
+	padding-right: 0 !important;
+}
+
+.pl-0 {
+	padding-left: 0 !important;
 }
 
 .site-maps ul li a:hover {
@@ -162,8 +176,8 @@ section {
 .modal {
 	display: none;
 	position: fixed;
-	z-index: 1;
-	padding-top: 100px;
+	z-index: 1 !important;
+	padding-top: 110px;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -186,7 +200,7 @@ section {
 .close {
 	color: black;
 	position: absolute;
-	top: 15px;
+	top: 70px;
 	right: 15px;
 	font-size: 35px;
 	font-weight: normal;
@@ -745,15 +759,14 @@ img {
 	margin-bottom: 45px;
 }
 
-
 /*Header-Area*/
 .tooltip.bottom .tooltip-inner{
 	max-width:310px;
-	padding:3px 8px;
+	padding:5px 10px;
 	color:#fff;
 	text-align:center;
 	background-color:#134595;
-	border-radius:20px;
+	border-radius:0;
 }
 
 .tooltip.top .tooltip-inner{
@@ -775,19 +788,18 @@ img {
 .header-contact {
 	color: #fff;
 	float: right;
-	padding-bottom: 5px;
 }
 
 .header-contact ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	margin-top: -15px;
 }
 
 .header-contact li {
 	display: inline-block;
 	margin-left: 15px;
-	margin-top: 5px;
 }
 
 .header-contact li i {
@@ -840,7 +852,7 @@ img {
 	text-align: right;
 	transition: all 0.3s;
 	-webkit-transition: all 0.3s;
-	margin-top: -25px;
+	margin-top: -20px;
 }
 
 .logo2 img {
@@ -2889,16 +2901,13 @@ span.page-numbers.current {
 .card-owner {
 	width: 100%;
 	min-height: 100px;
-	background-color: #fff;
 	border-radius: 4px;
 	padding: 5px;
 	cursor: pointer;
 	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-	box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
 }
 .card-owner:hover {
 	transform: scale(1.05);
-	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
 .heading-owner {
@@ -4952,4 +4961,53 @@ ul.timeline li a:hover {
 	.modal-content {
 		width: 100%;
 	}
+}
+
+/* Slider */
+.scroller {
+	height: 12pt;
+	line-height: 12pt;
+	overflow: hidden;
+}
+
+.slideCol {
+	text-align: left;
+	overflow: hidden;
+	font-weight: 900;
+	display: block;
+	white-space: nowrap;
+	color: #fff;
+	padding: 5px 10px;
+	position: relative;
+	top: 10px;
+	cursor: help;
+}
+.slideCol p { 
+	margin: 0px !important;
+ }
+
+.scroller .inner { animation: 20s normal infinite running scroll; }
+@keyframes scroll {
+	0%  	{margin-top: 0px;}
+	7% 		{margin-top: 0px;}
+
+	14%		{margin-top: -13pt;}
+	21% 	{margin-top: -13pt;}
+
+	28% 	{margin-top: -25pt;}
+	35% 	{margin-top: -25pt;}
+
+	42% 	{margin-top: -37pt;}
+	49% 	{margin-top: -37pt;}
+
+	56%		{margin-top: -49pt;}
+	63%		{margin-top: -49pt;}
+
+	70% 	{margin-top: -61pt;}
+	77% 	{margin-top: -61pt;}
+
+	84% 	{margin-top: -73pt;}
+	91% 	{margin-top: -73pt;}
+
+	100%	{margin-top: 0px;}
 }
