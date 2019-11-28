@@ -1,19 +1,15 @@
 <?php
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_aviation extends CI_Model 
-{
+class Model_aviation extends CI_Model {
 
-	function get_auto_increment_id()
-    {
+	function get_auto_increment_id() {
         $sql = "SHOW TABLE STATUS LIKE 'tbl_aviation_electronics'";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
 
-    function get_auto_increment_id1()
-    {
+    function get_auto_increment_id1() {
         $sql = "SHOW TABLE STATUS LIKE 'tbl_aviation_electronics_photo'";
         $query = $this->db->query($sql);
         return $query->result_array();
@@ -29,8 +25,7 @@ class Model_aviation extends CI_Model
         return $query->result_array();
     }
 
-    function get_all_photos_by_category_id($id)
-    {
+    function get_all_photos_by_category_id($id) {
         $sql = "SELECT * 
     			FROM tbl_aviation_electronics_photo 
     			WHERE aviation_electronics_id=?";
@@ -38,8 +33,7 @@ class Model_aviation extends CI_Model
         return $query->result_array();
     }
 
-    function get_all_photo_category()
-    {
+    function get_all_photo_category() {
         $sql = "SELECT * 
 				FROM tbl_aviation_electronics_category
 				ORDER BY category_name ASC";
@@ -62,40 +56,35 @@ class Model_aviation extends CI_Model
         $this->db->update('tbl_aviation_electronics',$data);
     }
 
-    function delete($id)
-    {
+    function delete($id) {
         $this->db->where('id',$id);
         $this->db->delete('tbl_aviation_electronics');
     }
 
-    function delete_photos($id)
-    {
+    function delete_photos($id) {
         $this->db->where('aviation_electronics_id',$id);
         $this->db->delete('tbl_aviation_electronics_photo');
     }
 
-    function getData($id)
-    {
+    function getData($id) {
         $sql = 'SELECT * FROM tbl_aviation_electronics WHERE id=?';
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }
 
-    function aviation_electronics_check($id)
-    {
+    function aviation_electronics_check($id) {
         $sql = 'SELECT * FROM tbl_aviation_electronics WHERE id=?';
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }
 
-    function aviation_electronics_photo_by_id($id)
-    {
+    function aviation_electronics_photo_by_id($id) {
         $sql = 'SELECT * FROM tbl_aviation_electronics_photo WHERE id=?';
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }
-    function delete_aviation_electronics_photo($id)
-    {
+    
+    function delete_aviation_electronics_photo($id) {
         $this->db->where('id',$id);
         $this->db->delete('tbl_aviation_electronics_photo');
     }

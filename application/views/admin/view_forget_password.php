@@ -28,7 +28,6 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 			background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['login_bg']; ?>)!important;
 		}
 	</style>
-
 </head>
 
 <body class="hold-transition login-page sidebar-mini">
@@ -89,6 +88,5 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 		<script src="<?php echo base_url(); ?>public/admin/js/jquery.slimscroll.min.js"></script>
 		<script src="<?php echo base_url(); ?>public/admin/js/app.min.js"></script>
 		<script src="<?php echo base_url(); ?>public/admin/js/demo.js"></script>
-
 	</body>
 	</html>

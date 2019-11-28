@@ -12,7 +12,6 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="testimonial-carousel owl-carousel owl-loaded owl-drag">
-
 						<?php
 						foreach ($testimonial as $row) {
 							?>

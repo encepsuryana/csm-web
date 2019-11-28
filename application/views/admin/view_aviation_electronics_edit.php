@@ -2,8 +2,8 @@
 if(!$this->session->userdata('id')) {
 	redirect(base_url().'admin/login');
 }
-?>
-<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
+
+if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
 			<h1>Edit Divisi Elektronik</h1>
@@ -14,7 +14,6 @@ if(!$this->session->userdata('id')) {
 	</section>
 
 	<section class="content">
-
 		<div class="row">
 			<div class="col-md-12">
 
@@ -155,7 +154,6 @@ if(!$this->session->userdata('id')) {
 								<button type="submit" class="btn btn-success pull-left" name="form1">Update</button>
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<?php echo form_close(); ?>

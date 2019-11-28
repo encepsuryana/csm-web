@@ -1,22 +1,19 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_page extends CI_Model 
-{
-	public function show()
-	{
+class Model_page extends CI_Model {
+	
+    public function show() {
         $query = $this->db->query("SELECT * from tbl_page WHERE id=1");
         return $query->first_row('array');
     }
 
-    public function update($data)
-	{
+    public function update($data) {
         $this->db->where('id',1);
         $this->db->update('tbl_page',$data);
     }
 
-    public function get_about_photo_name()
-    {
+    public function get_about_photo_name() {
         $query = $this->db->query("SELECT * from tbl_page WHERE id=1");
         return $query->first_row('array');
     }
@@ -26,8 +23,7 @@ class Model_page extends CI_Model
         $this->db->update('tbl_page',$data);
     }
 
-      public function get_structure_photo_name()
-    {
+    public function get_structure_photo_name() {
         $query = $this->db->query("SELECT * from tbl_page WHERE id=1");
         return $query->first_row('array');
     }

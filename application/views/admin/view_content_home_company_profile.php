@@ -2,32 +2,32 @@
 if(!$this->session->userdata('id')) {
 	redirect(base_url().'admin/login');
 }
-?>
-<section class="content-header">
-	<div class="content-header-left">
-		<h1>File: Profil Perusahaan (pdf)</h1>
-	</div>
-</section>
 
-<section class="content" style="min-height:auto;margin-bottom: -30px;">
-	<div class="row">
-		<div class="col-md-12">
-			<?php if($error): ?>
-				<div class="callout callout-danger">
-					<p><?php echo $error; ?></p>
-				</div>
-			<?php endif; ?>
-			<?php if($success): ?>
-				<div class="callout callout-success">
-					<p><?php echo $success; ?></p>
-				</div>
-			<?php endif; ?>
+if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')){ ?>
+
+	<section class="content-header">
+		<div class="content-header-left">
+			<h1>File: Profil Perusahaan (pdf)</h1>
 		</div>
-	</div>
-</section>
+	</section>
 
-<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')){ ?>
-	
+	<section class="content" style="min-height:auto;margin-bottom: -30px;">
+		<div class="row">
+			<div class="col-md-12">
+				<?php if($error): ?>
+					<div class="callout callout-danger">
+						<p><?php echo $error; ?></p>
+					</div>
+				<?php endif; ?>
+				<?php if($success): ?>
+					<div class="callout callout-success">
+						<p><?php echo $success; ?></p>
+					</div>
+				<?php endif; ?>
+			</div>
+		</div>
+	</section>
+
 	<section class="content">
 		<div class="row">
 			<div class="col-md-12">

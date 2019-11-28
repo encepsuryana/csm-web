@@ -2,8 +2,8 @@
 if(!$this->session->userdata('id')) {
   redirect(base_url().'admin/login');
 }
-?>
-<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
+
+if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
   <section class="content-header">
    <div class="content-header-left">
     <h1>Lihat Galeri</h1>
@@ -13,12 +13,9 @@ if(!$this->session->userdata('id')) {
   </div>
 </section>
 
-
 <section class="content">
-
   <div class="row">
     <div class="col-md-12">
-
       <div class="box box-info  b-box">
         <div class="box-body table-responsive">
           <table id="example1" class="table table-bordered table-striped">
@@ -67,7 +64,6 @@ if(!$this->session->userdata('id')) {
      </table>
    </div>
  </div> 
-
 </section>
 
 

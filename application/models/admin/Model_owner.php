@@ -1,8 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_owner extends CI_Model 
-{
+class Model_owner extends CI_Model {
     
     function get_owner() {
         $sql = 'SELECT * FROM tbl_owner WHERE id=?';
@@ -10,8 +9,7 @@ class Model_owner extends CI_Model
         return $query->first_row('array');
     }
 
-    function update($data)
-    {
+    function update($data) {
         $this->db->where('id',1);
         $this->db->update('tbl_owner',$data);
     }

@@ -50,12 +50,15 @@ class Aviation_electronics_department extends CI_Controller {
 		$header['portfolio'] 							= $this->Model_common->get_portfolio_data();
 		$header['partner'] 								= $this->Model_common->get_partner_data();
 		$header['product'] 								= $this->Model_common->get_product_data();
+		$header['owner'] 								= $this->Model_common->get_owner_data();
 
 		$header['aviation_electronics_order_by_name'] 	= $this->Model_aviation->get_ae_data_order_by_name();
 		$data['aviation_electronics'] 					= $this->Model_aviation->get_ae_detail($slug);
 		$data['aviation_electronics_photo'] 			= $this->Model_aviation->get_ae_photo($slug);
 		$data['aviation_electronics_photo_total'] 		= $this->Model_aviation->get_ae_photo_number($slug);
 		$header['aviation_electronics_category'] 		= $this->Model_aviation->get_ae_category();
+		
+
 
 		$this->load->view('view_header',$header);
 		$this->load->view('view_aviation_electronics_detail',$data);

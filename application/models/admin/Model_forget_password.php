@@ -1,11 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_forget_password extends CI_Model 
-{
+class Model_forget_password extends CI_Model {
 
-    public function get_setting_data()
-    {
+    public function get_setting_data() {
         $query = $this->db->query("SELECT * from tbl_settings WHERE id=1");
         return $query->first_row('array');
     }
@@ -21,8 +19,7 @@ class Model_forget_password extends CI_Model
         $this->db->update('tbl_user',$data);
     }
 
-    function check_status($email,$status)
-    {      
+    function check_status($email,$status) {      
         $where = array(
             'email' => $email,
             'status' => $status

@@ -28,7 +28,6 @@ if(($this->session->userdata('role') == 'admin') or ($this->session->userdata('r
 			background-image: url(<?php echo base_url(); ?>public/uploads/<?php echo $setting['login_bg']; ?>)!important;
 		}
 	</style>
-
 </head>
 
 <body class="hold-transition login-page sidebar-mini">

@@ -1,8 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_aviation_category extends CI_Model 
-{
+class Model_aviation_category extends CI_Model {
 	
     function show() {
         $sql = "SELECT * FROM tbl_aviation_electronics_category ORDER BY category_id ASC";
@@ -32,20 +31,17 @@ class Model_aviation_category extends CI_Model
         $this->db->update('tbl_aviation_electronics_category',$data);
     }
 
-    function delete($id)
-    {
+    function delete($id) {
         $this->db->where('category_id',$id);
         $this->db->delete('tbl_aviation_electronics_category');
     }
 
-    function delete1($id)
-    {
+    function delete1($id) {
         $this->db->where('id',$id);
         $this->db->delete('tbl_aviation_electronics');
     }
 
-    function delete2($id)
-    {
+    function delete2($id) {
         $this->db->where('aviation_electronics_id',$id);
         $this->db->delete('tbl_aviation_electronics_photo');
     }
@@ -57,15 +53,13 @@ class Model_aviation_category extends CI_Model
         return $query->first_row('array');
     }
 
-    function getData1($id)
-    {
+    function getData1($id) {
         $sql = 'SELECT * FROM tbl_aviation_electronics WHERE category_id=?';
         $query = $this->db->query($sql,array($id));
         return $query->result_array();
     }
 
-    function aviation_electronics_category_check($id)
-    {
+    function aviation_electronics_category_check($id) {
         $sql = 'SELECT * FROM tbl_aviation_electronics_category WHERE category_id=?';
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');

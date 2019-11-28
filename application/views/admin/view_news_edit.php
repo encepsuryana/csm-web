@@ -2,8 +2,8 @@
 if(!$this->session->userdata('id')) {
 	redirect(base_url().'admin/login');
 }
-?>
-<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) { ?>
+
+if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
 			<h1>Edit Berita</h1>
@@ -14,7 +14,6 @@ if(!$this->session->userdata('id')) {
 	</section>
 
 	<section class="content">
-
 		<div class="row">
 			<div class="col-md-12">
 
@@ -33,7 +32,6 @@ if(!$this->session->userdata('id')) {
 				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/news/edit/'.$news['news_id'],array('class' => 'form-horizontal')); ?>
 				<div class="box box-info b-box">
 					<div class="box-body">
-						
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Cover</label>
 							<div class="col-sm-4" style="padding-top:6px;">

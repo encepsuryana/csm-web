@@ -1,17 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_login extends CI_Model 
-{
+class Model_login extends CI_Model {
 
-    public function get_setting_data()
-    {
+    public function get_setting_data() {
         $query = $this->db->query("SELECT * from tbl_settings WHERE id=1");
         return $query->first_row('array');
     }
 
-    function check_email($email) 
-    {
+    function check_email($email) {
         $where = array(
            'email' => $email
        );
@@ -22,8 +19,7 @@ class Model_login extends CI_Model
         return $query->first_row('array');
     }
 
-    function check_password($email,$password)
-    {      
+    function check_password($email,$password) {      
         $where = array(
             'email' => $email,
             'password' => md5($password)
@@ -35,8 +31,7 @@ class Model_login extends CI_Model
         return $query->first_row('array');
     }
 
-    function check_status($email,$status)
-    {      
+    function check_status($email,$status) {      
         $where = array(
             'email' => $email,
             'status' => $status

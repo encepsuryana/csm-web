@@ -2,8 +2,8 @@
 if(!$this->session->userdata('id')) {
 	redirect(base_url().'admin/login');
 }
-?>
-<?php if ($this->session->userdata('role') == 'admin') { ?>
+
+if ($this->session->userdata('role') == 'admin') { ?>
 
 	<section class="content-header">
 		<div class="content-header-left">
@@ -115,8 +115,8 @@ if(!$this->session->userdata('id')) {
 				<?php echo form_close(); ?>
 			</div>
 		</div>
-
 	</section>
+	
 <?php } else { ?>
 	<div class="forbiden">
 		<i class="fa fa-minus-circle" aria-hidden="true"></i>

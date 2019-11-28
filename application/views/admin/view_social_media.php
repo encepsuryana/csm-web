@@ -2,8 +2,8 @@
 if(!$this->session->userdata('id')) {
 	redirect(base_url().'admin/login');
 }
-?>
-<?php if ($this->session->userdata('role') == 'admin') { ?>
+
+if ($this->session->userdata('role') == 'admin') { ?>
 	<section class="content-header">
 		<div class="content-header-left">
 			<h1>Media Sosial</h1>
@@ -66,7 +66,6 @@ if(!$this->session->userdata('id')) {
 	<section class="content">
 		<div class="row">
 			<div class="col-md-12">
-
 				<?php if($error): ?>
 					<div class="callout callout-danger">
 						<p>
@@ -194,7 +193,6 @@ if(!$this->session->userdata('id')) {
 					<?php echo form_close(); ?>
 				</div>
 			</div>
-
 		</section>
 	<?php } else { ?>
 		<div class="forbiden">

@@ -1,4 +1,6 @@
-<?php 
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
 class Download extends CI_Controller{
 	function __construct() {
 		parent::__construct();
@@ -8,7 +10,6 @@ class Download extends CI_Controller{
 	}
 
 	public function index() {
-		
 		$header['setting'] 							= $this->Model_common->get_setting_data();
 		$header['page'] 							= $this->Model_common->get_page_data();
 		$header['comment'] 							= $this->Model_common->get_comment_code();
@@ -43,14 +44,14 @@ class Download extends CI_Controller{
 
 	public function file_electronic() {
 		$data = file_get_contents(base_url().'public/uploads/file/profile_perusahaan2.pdf');
-		$name = 'CV. Cipta Sinergi Manufacturing Aviation & Electronics Departement Company Profile.pdf';
+		$name = 'CV. Cipta Sinergi Manufacturing Aeronutical & Electronics Engineering Company Profile.pdf';
 
 		force_download($name,$data);
 	}
 
 	public function file_mechanic_electronic() {
 		$data = file_get_contents(base_url().'public/uploads/file/profile_perusahaan3.pdf');
-		$name = 'CV. Cipta Sinergi Manufacturing Mechanic & Aviation & Electronics Departement Company Profile.pdf';
+		$name = 'CV. Cipta Sinergi Manufacturing Mechanic & Aeronutical & Electronics Engineering Company Profile.pdf';
 
 		force_download($name,$data);
 	}

@@ -1,11 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_news extends CI_Model 
-{
+class Model_news extends CI_Model {
 
-	function get_auto_increment_id()
-    {
+	function get_auto_increment_id() {
         $sql = "SHOW TABLE STATUS LIKE 'tbl_news'";
         $query = $this->db->query($sql);
         return $query->result_array();
@@ -35,7 +33,6 @@ class Model_news extends CI_Model
         return $query->result_array();
     }
 
-
     function add($data) {
         $this->db->insert('tbl_news',$data);
         return $this->db->insert_id();
@@ -46,28 +43,24 @@ class Model_news extends CI_Model
         $this->db->update('tbl_news',$data);
     }
 
-    function delete($id)
-    {
+    function delete($id) {
         $this->db->where('news_id',$id);
         $this->db->delete('tbl_news');
     }
 
-    function getData($id)
-    {
+    function getData($id) {
         $sql = 'SELECT * FROM tbl_news WHERE news_id=?';
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }
 
-    function get_category()
-    {
+    function get_category() {
         $sql = 'SELECT * FROM tbl_news_category ORDER BY category_name ASC';
         $query = $this->db->query($sql);
         return $query->result_array();
     }
 
-    function news_check($id)
-    {
+    function news_check($id) {
         $sql = 'SELECT * FROM tbl_news WHERE news_id=?';
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');

@@ -2,9 +2,8 @@
 if(!$this->session->userdata('id')) {
 	redirect(base_url().'admin/login');
 }
-?>
 
-<?php if ($this->session->userdata('role') == 'admin') { ?>
+if ($this->session->userdata('role') == 'admin') { ?>
 	<section class="content-header">
 		<div class="content-header-left">
 			<h1>Informasi Konten Beranda</h1>

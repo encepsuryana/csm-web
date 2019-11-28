@@ -54,7 +54,6 @@
 		}
 
 	</style>
-	
 </head>
 
 <body class="hold-transition fixed skin-blue sidebar-mini">
@@ -74,7 +73,6 @@
 
 				<div class="navbar-custom-menu">
 					<ul class="nav navbar-nav link-visit">
-
 						<li>
 							<a href="<?php echo base_url(); ?>" target="_blank"> <i class="fa fa-sign-in" aria-hidden="true"></i> <span>Lihat Website</span></a>
 						</li>
@@ -134,10 +132,8 @@
 								</li>
 							</ul>
 						</li>
-
 					</ul>
 				</div>
-
 			</nav>
 		</header>
 
@@ -469,7 +465,6 @@
 					<?php endif; ?> 
 					<!--End HRD Role --> 
 
-
 					<!-- Staff Role -->
 					<?php if( $this->session->userdata('role') == 'staff' ): ?>
 						<li class="treeview <?php if($final_url_other == 'staff/content-home/company-profile') {echo 'active';} ?>">
@@ -596,5 +591,4 @@
 				</ul>
 			</section>
 		</aside>
-
 		<div class="content-wrapper">

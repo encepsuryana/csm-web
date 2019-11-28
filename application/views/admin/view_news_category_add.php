@@ -2,8 +2,8 @@
 if(!$this->session->userdata('id')) {
 	redirect(base_url().'admin/login');
 }
-?>
-<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) { ?>
+
+if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'hrd') or ($this->session->userdata('role') == 'staff')) { ?>
 
 	<section class="content-header">
 		<div class="content-header-left">
@@ -69,10 +69,7 @@ if(!$this->session->userdata('id')) {
 						</div>
 					</div>
 				</div>
-
 				<?php echo form_close(); ?>
-
-
 			</div>
 		</div>
 

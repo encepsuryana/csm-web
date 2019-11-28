@@ -1,10 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_header extends CI_Model 
-{
-	public function get_setting_data()
-    {
+class Model_header extends CI_Model  {
+    
+	public function get_setting_data() {
         $query = $this->db->query("SELECT * from tbl_settings WHERE id=1");
         return $query->first_row('array');
     }
@@ -24,8 +23,8 @@ class Model_header extends CI_Model
             return true;
         }
     }
-    public function get_language_data()
-    {
+
+    public function get_language_data() {
         $query = $this->db->query("SELECT * from tbl_language");
         return $query->result_array();
     }

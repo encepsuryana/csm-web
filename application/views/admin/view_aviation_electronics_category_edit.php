@@ -2,8 +2,8 @@
 if(!$this->session->userdata('id')) {
 	redirect(base_url().'admin/login');
 }
-?>
-<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
+
+if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
 			<h1>Edit Kategori Divisi Elektronik</h1>
@@ -14,10 +14,8 @@ if(!$this->session->userdata('id')) {
 	</section>
 
 	<section class="content">
-
 		<div class="row">
 			<div class="col-md-12">
-
 				<?php if($error): ?>
 					<div class="callout callout-danger">
 						<p>
@@ -35,7 +33,6 @@ if(!$this->session->userdata('id')) {
 				<?php echo form_open(base_url().$this->session->userdata('role').'/aeronautical-electronics-engineering-category/edit/'.$aviation_electronics_category['category_id'],array('class' => 'form-horizontal')); ?>
 
 				<div class="box box-info  b-box">
-
 					<div class="box-body">
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Nama ategori <span>*</span></label>
@@ -58,16 +55,11 @@ if(!$this->session->userdata('id')) {
 								<button type="submit" class="btn btn-success pull-left" name="form1">Update</button>
 							</div>
 						</div>
-
 					</div>
-
 				</div>
-
 				<?php echo form_close(); ?>
-
 			</div>
 		</div>
-
 	</section>
 
 	<div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

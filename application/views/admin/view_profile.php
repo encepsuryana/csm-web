@@ -2,8 +2,8 @@
 if(!$this->session->userdata('id')) {
 	redirect(base_url().'admin/login');
 }
-?>
-<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
+
+if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
 	<section class="content-header">
 		<div class="content-header-left">
 			<h1>Edit Profil</h1>
@@ -79,7 +79,6 @@ if(!$this->session->userdata('id')) {
 								<?php echo form_close(); ?>
 							</div>
 
-
 							<div class="tab-pane active" id="tab_2">
 								<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/profile/update',array('class' => 'form-horizontal')); ?>
 								<div class="box-body">
@@ -108,7 +107,6 @@ if(!$this->session->userdata('id')) {
 									</div>
 									<?php echo form_close(); ?>
 								</div>
-
 
 								<div class="tab-pane" id="tab_3">
 									<?php echo form_open(base_url().$this->session->userdata('role').'/profile/update',array('class' => 'form-horizontal')); ?>

@@ -1,9 +1,7 @@
 <?php
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_social_media extends CI_Model 
-{
+class Model_social_media extends CI_Model {
 
     function show() {
         $sql = "SELECT * FROM tbl_social";

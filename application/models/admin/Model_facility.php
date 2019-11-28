@@ -1,19 +1,15 @@
 <?php
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_facility extends CI_Model 
-{
+class Model_facility extends CI_Model {
 
-	function get_auto_increment_id()
-    {
+	function get_auto_increment_id() {
         $sql = "SHOW TABLE STATUS LIKE 'tbl_facility'";
         $query = $this->db->query($sql);
         return $query->result_array();
     }
 
-    function get_auto_increment_id1()
-    {
+    function get_auto_increment_id1() {
         $sql = "SHOW TABLE STATUS LIKE 'tbl_facility_photo'";
         $query = $this->db->query($sql);
         return $query->result_array();
@@ -29,8 +25,7 @@ class Model_facility extends CI_Model
         return $query->result_array();
     }
 
-    function get_all_photos_by_category_id($id)
-    {
+    function get_all_photos_by_category_id($id) {
         $sql = "SELECT * 
     			FROM tbl_facility_photo 
     			WHERE facility_id=?";
@@ -38,8 +33,7 @@ class Model_facility extends CI_Model
         return $query->result_array();
     }
 
-    function get_all_photo_category()
-    {
+    function get_all_photo_category() {
         $sql = "SELECT * 
 				FROM tbl_facility_category
 				ORDER BY category_name ASC";
@@ -62,40 +56,35 @@ class Model_facility extends CI_Model
         $this->db->update('tbl_facility',$data);
     }
 
-    function delete($id)
-    {
+    function delete($id) {
         $this->db->where('id',$id);
         $this->db->delete('tbl_facility');
     }
 
-    function delete_photos($id)
-    {
+    function delete_photos($id) {
         $this->db->where('facility_id',$id);
         $this->db->delete('tbl_facility_photo');
     }
 
-    function getData($id)
-    {
+    function getData($id) {
         $sql = 'SELECT * FROM tbl_facility WHERE id=?';
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }
 
-    function facility_check($id)
-    {
+    function facility_check($id) {
         $sql = 'SELECT * FROM tbl_facility WHERE id=?';
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }
 
-    function facility_photo_by_id($id)
-    {
+    function facility_photo_by_id($id) {
         $sql = 'SELECT * FROM tbl_facility_photo WHERE id=?';
         $query = $this->db->query($sql,array($id));
         return $query->first_row('array');
     }
-    function delete_facility_photo($id)
-    {
+    
+    function delete_facility_photo($id) {
         $this->db->where('id',$id);
         $this->db->delete('tbl_facility_photo');
     }

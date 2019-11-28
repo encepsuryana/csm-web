@@ -1,9 +1,7 @@
 <?php
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_comment extends CI_Model 
-{
+class Model_comment extends CI_Model {
 
     function show() {
         $sql = "SELECT * FROM tbl_comment WHERE id=?";

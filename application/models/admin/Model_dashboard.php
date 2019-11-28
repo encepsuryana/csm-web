@@ -1,41 +1,39 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Model_dashboard extends CI_Model 
-{
-	public function show_total_news_category()
-	{
+class Model_dashboard extends CI_Model {
+
+	public function show_total_news_category() {
 		$sql = 'SELECT * from tbl_news_category';
         $query = $this->db->query($sql);
         return $query->num_rows();
     }
-    public function show_total_log()
-    {
+
+    public function show_total_log() {
         $sql = 'SELECT * from tbl_logging';
         $query = $this->db->query($sql);
         return $query->num_rows();
     }
-    public function show_total_news()
-	{
+
+    public function show_total_news() {
 		$sql = 'SELECT * FROM tbl_news';
         $query = $this->db->query($sql);
         return $query->num_rows();
     }
 
-    public function show_total_portfolio()
-    {
+    public function show_total_portfolio() {
         $sql = 'SELECT * from tbl_portfolio';
         $query = $this->db->query($sql);
         return $query->num_rows();
     }
-    public function show_total_testimonial()
-    {
+
+    public function show_total_testimonial() {
         $sql = 'SELECT * from tbl_testimonial';
         $query = $this->db->query($sql);
         return $query->num_rows();
     }
-    public function show_total_slider()
-	{
+
+    public function show_total_slider() {
 		$sql = 'SELECT * from tbl_slider';
         $query = $this->db->query($sql);
         return $query->num_rows();

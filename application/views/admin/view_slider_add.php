@@ -2,8 +2,8 @@
 if(!$this->session->userdata('id')) {
 	redirect(base_url().'admin/login');
 }
-?>
-<?php if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
+
+if (($this->session->userdata('role') == 'admin') or ($this->session->userdata('role') == 'staff') or ($this->session->userdata('role') == 'hrd')) { ?>
 
 	<section class="content-header">
 		<div class="content-header-left">
@@ -13,7 +13,6 @@ if(!$this->session->userdata('id')) {
 			<a href="<?php echo base_url().$this->session->userdata('role'); ?>/slider" class="btn btn-primary btn-sm">Lihat Semua</a>
 		</div>
 	</section>
-
 
 	<section class="content">
 		<div class="row">
@@ -32,7 +31,6 @@ if(!$this->session->userdata('id')) {
 						<p><?php echo $success; ?></p>
 					</div>
 				<?php endif; ?>
-
 				
 				<?php echo form_open_multipart(base_url().$this->session->userdata('role').'/slider/add',array('class' => 'form-horizontal'));?>
 				<div class="box box-info b-box">
@@ -104,8 +102,8 @@ if(!$this->session->userdata('id')) {
 			</div>
 			<?php echo form_close(); ?>
 		</div>
-
 	</section>
+	
 <?php } else { ?>
 	<div class="forbiden">
 		<i class="fa fa-minus-circle" aria-hidden="true"></i>

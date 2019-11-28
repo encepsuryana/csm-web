@@ -118,7 +118,6 @@
 </script>
 
 <script type="text/javascript">
-
 	$(document).ready(function () {
 		$("#btnAddNew").click(function () {
 			var rowNumber = $("#PhotosTable tbody tr").length;
@@ -136,7 +135,6 @@
 			return false;
 		});
 	});
-
 </script>
 
 <script>
