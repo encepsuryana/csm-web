@@ -571,7 +571,7 @@
 											</li>
 
 											<li class="submenu-item-has-children">
-												<a href="<?php echo base_url(); ?>product">New Product</a>
+												<a href="<?php echo base_url(); ?>product"><?php echo PRODUCT; ?></a>
 												<ul class="sub-menu">
 													<li>
 														<a href="<?php echo base_url();?>product">

@@ -4981,6 +4981,7 @@ ul.timeline li a:hover {
 	position: relative;
 	top: 10px;
 	cursor: help;
+	font-size: 12px;
 }
 .slideCol p { 
 	margin: 0px !important;

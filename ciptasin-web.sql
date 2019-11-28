@@ -400,7 +400,7 @@ CREATE TABLE `tbl_logging` (
   `log_ipaddress` varchar(15) DEFAULT NULL,
   `log_useragen` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`log_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=156 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=160 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_logging` */
 
@@ -559,7 +559,11 @@ insert  into `tbl_logging`(`log_id`,`log_time`,`log_user`,`log_tipe`,`log_desc`,
 (152,'2019-11-22 10:20:17','Encep Suryana',3,'[EDIT] Data: Precision Part Manufacturing diupdate pada Layanan','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
 (153,'2019-11-22 10:23:08','Encep Suryana',3,'[EDIT] Data: Precision Part Manufacturing diupdate pada Layanan','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
 (154,'2019-11-23 11:14:57','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
-(155,'2019-11-23 11:19:06','Encep Suryana',3,'[EDIT] Halaman Tentang Perusahaan telah diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>');
+(155,'2019-11-23 11:19:06','Encep Suryana',3,'[EDIT] Halaman Tentang Perusahaan telah diupdate','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(156,'2019-11-28 13:46:39','Encep Suryana',0,'[LOGIN] User: Encep Suryana Berhasil Login','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(157,'2019-11-28 14:13:29','Encep Suryana',4,'[HAPUS] Data: PT. Yangtze Optics Indonesia dihapus dari Partner','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(158,'2019-11-28 14:13:41','Encep Suryana',4,'[HAPUS] Data: PT. Deksafindo Pratama Abadi dihapus dari Partner','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>'),
+(159,'2019-11-28 14:13:59','Encep Suryana',4,'[HAPUS] Data: PT. Madawikri Tunggal dihapus dari Partner','192.168.1.216','<i>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0</i>');
 
 /*Table structure for table `tbl_news` */
 
@@ -711,7 +715,7 @@ CREATE TABLE `tbl_partner` (
   `name` varchar(255) NOT NULL,
   `photo` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_partner` */
 
@@ -721,20 +725,17 @@ insert  into `tbl_partner`(`id`,`name`,`photo`) values
 (3,'PT. INFRA RCS','partner-3.png'),
 (4,'PT. Medion Jaya Farma','partner-4.png'),
 (5,'PT. Hini Daiki Indonesia','partner-5.png'),
-(6,'PT. Madawikri Tunggal','partner-6.png'),
-(7,'PT. Belfoods Indonesia','partner-7.png'),
-(8,'PT. Nusantara Turbin Dan Propulsi','partner-8.png'),
-(9,'PT. Heinz ABC Indonesia','partner-9.png'),
-(10,'PT. Inkoasku','partner-10.png'),
-(11,'PT. Deksafindo Pratama Abadi','partner-11.png'),
-(12,'PT. Sentra Usahatama Jaya','partner-12.png'),
-(13,'PT. Andalan Furnindo','partner-13.png'),
-(14,'PT. Sorin Maharasa','partner-14.png'),
-(15,'PT. Ultrajaya Milk Industry Tbk','partner-15.png'),
-(16,'PT. King Plastic','partner-16.png'),
-(17,'PT. Yangtze Optics Indonesia','partner-17.png'),
-(18,'PT. Pindad','partner-18.png'),
-(19,'PT. Radar Telekomunikasi Indonesia','partner-19.png');
+(6,'PT. Belfoods Indonesia','partner-6.png'),
+(7,'PT. Nusantara Turbin Dan Propulsi','partner-7.png'),
+(8,'PT. Heinz ABC Indonesia','partner-8.png'),
+(9,'PT. Inkoasku','partner-9.png'),
+(10,'PT. Sentra Usahatama Jaya','partner-10.png'),
+(11,'PT. Andalan Furnindo','partner-11.png'),
+(12,'PT. Sorin Maharasa','partner-12.png'),
+(13,'PT. Ultrajaya Milk Industry Tbk','partner-13.png'),
+(14,'PT. King Plastic','partner-14.png'),
+(15,'PT. Pindad','partner-15.png'),
+(16,'PT. Radar Telekomunikasi Indonesia','partner-16.png');
 
 /*Table structure for table `tbl_photo` */
 
