@@ -1,10 +1,6 @@
 # Ciptasin-Web
 > Website CV. Cipta Sinergi Manufacturing
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 ![](public/uploads/logo.png)
 
 ## Table of Contents
@@ -136,10 +132,3 @@ Thank you for using this script. We are always here to give you necessary suppor
 
 * v.1.0
 	* Release all future
-
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
